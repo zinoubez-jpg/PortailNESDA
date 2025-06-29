@@ -1,0 +1,581 @@
+﻿@{
+    ViewData["Title"] = "إدارة المقالات";
+}
+
+@section head {
+    <partial name="_datatables.style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        
+
+        /* Main Content Styles */
+        .main-content {
+            padding: 3rem 0;
+            min-height: 80vh;
+        }
+
+        .table-container {
+            background: var(--surface-color);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: -2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-color), transparent);
+            border-radius: 2px;
+        }
+
+        /* Button Styles */
+        .add-article-btn {
+            background: linear-gradient(135deg, var(--accent-color) 0%, #36a8a2 100%);
+            color: var(--contrast-color);
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(65, 193, 186, 0.3);
+            margin-bottom: 2rem;
+        }
+
+        .add-article-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(65, 193, 186, 0.4);
+            color: var(--contrast-color);
+            text-decoration: none;
+        }
+
+        /* Table Styles */
+        .matable {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border: none;
+        }
+
+        .matable thead th {
+          
+          
+            font-weight: 600;
+            padding: 1rem;
+            border: none;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .matable tbody td {
+            padding: 1rem;
+            vertical-align: middle;
+            border-bottom: 1px solid #f8f9fa;
+           
+        }
+
+        .matable tbody tr {
+            transition: all 0.3s ease;
+        }
+
+        .matable tbody tr:hover {
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+            transform: translateX(5px);
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .thm-btnrg {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: linear-gradient(135deg, var(--accent-color), #36a8a2);
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-view {
+            background: linear-gradient(135deg, var(--info-color), #138496);
+        }
+
+        .btn-edit {
+            background: linear-gradient(135deg, var(--warning-color), #e0a800);
+        }
+
+        .btn-publish {
+            background: linear-gradient(135deg, var(--success-color), #1e7e34);
+        }
+
+        .btn-unpublish {
+            background: linear-gradient(135deg, var(--danger-color), #c82333);
+        }
+
+        .btn-pin, .btn-unpin {
+            background: linear-gradient(135deg, var(--accent-color), #36a8a2);
+        }
+
+        .btn-delete {
+            background: linear-gradient(135deg, var(--danger-color), #c82333);
+        }
+
+        .thm-btnrg:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Status Badges */
+        .status-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-published {
+            background: color-mix(in srgb, var(--success-color), transparent 85%);
+            color: var(--success-color);
+        }
+
+        .status-unpublished {
+            background: color-mix(in srgb, var(--danger-color), transparent 85%);
+            color: var(--danger-color);
+        }
+
+        .status-pinned {
+            background: color-mix(in srgb, var(--info-color), transparent 85%);
+            color: var(--info-color);
+        }
+
+        .status-unpinned {
+            background: color-mix(in srgb, #6c757d, transparent 85%);
+            color: #6c757d;
+        }
+
+        /* DataTables Custom Styles */
+        .dataTables_wrapper .dataTables_length,
+        .dataTables_wrapper .dataTables_filter,
+        .dataTables_wrapper .dataTables_info,
+        .dataTables_wrapper .dataTables_paginate {
+            font-family: var(--default-font);
+        }
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button {
+            border-radius: 8px;
+            margin: 0 2px;
+            transition: all 0.3s ease;
+        }
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+            background: var(--accent-color) !important;
+            border-color: var(--accent-color) !important;
+            color: var(--contrast-color) !important;
+        }
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+            background: var(--accent-color) !important;
+            border-color: var(--accent-color) !important;
+            color: var(--contrast-color) !important;
+        }
+
+        /* DataTables Buttons */
+        .dt-button {
+            background: linear-gradient(135deg, var(--success-color), #1e7e34) !important;
+            color: var(--contrast-color) !important;
+            border: none !important;
+            border-radius: 20px !important;
+            padding: 0.5rem 1.5rem !important;
+            font-weight: 600 !important;
+            transition: all 0.3s ease !important;
+            margin-bottom: 1rem !important;
+        }
+
+        .dt-button:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3) !important;
+        }
+
+        /* Responsive Design */
+        @@media (max-width: 768px) {
+            .page-header h2 {
+                font-size: 2rem;
+            }
+
+            .table-container {
+                padding: 1rem;
+                margin-top: -1rem;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .thm-btnrg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        /* Loading Animation */
+        .dataTables_processing {
+            background: rgba(255, 255, 255, 0.9) !important;
+            border-radius: 10px !important;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        /* Custom Scrollbar */
+        .dataTables_scrollBody::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        .dataTables_scrollBody::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .dataTables_scrollBody::-webkit-scrollbar-thumb {
+            background: var(--accent-color);
+            border-radius: 10px;
+        }
+
+        .dataTables_scrollBody::-webkit-scrollbar-thumb:hover {
+            background: #36a8a2;
+        }
+    </style>
+}
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/nesdaTitle.jpg);">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <div class="table-container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title mb-0">قائمة المقالات</h2>
+                <a asp-action="Create" class="add-article-btn">
+                    <i class="fa fa-plus"></i> إضافة مقال جديد
+                </a>
+            </div>
+
+            <partial name="_Message" />
+
+            <table class="matable table-bordered table dataTable" id="consultationTable">
+                <thead>
+                    <tr>
+                        <th>الرقم التسلسلي</th>
+                        <th>عنوان المقال</th>
+                        <th>تاريخ الإنشاء</th>
+                        <th>حالة النشر</th>
+                        <th>حالة التثبيت</th>
+                        <th>الإجراءات</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_datatables.script" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#consultationTable').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "lengthMenu": [[10, 20, 50, 9999], [10, 20, 50, "الكل"]],
+                "ajax": {
+                    "url": `/Article/GetAllArticlesDataTable`,
+                    "type": "POST",
+                },
+                "columns": [
+                    { "data": "id", "visible": false, "searchable": false },
+                    {
+                        "data": "title",
+                        "render": function (data, type, row) {
+                            return `<div style="font-weight: 600; color: var(--heading-color);">${data}</div>`;
+                        }
+                    },
+                    {
+                        "data": "createdAt",
+                        "render": function (data, type, row) {
+                            if (data) {
+                                var date = new Date(data);
+                                return `<span style="color: var(--default-color); font-size: 0.9rem;">${date.toLocaleDateString('ar-DZ')}</span>`;
+                            }
+                            return '';
+                        }
+                    },
+                    {
+                        "data": "isPublished",
+                        "render": function (data, type, row) {
+                            return data ?
+                                '<span class="status-badge status-published">منشور</span>' :
+                                '<span class="status-badge status-unpublished">غير منشور</span>';
+                        }
+                    },
+                    {
+                        "data": "isPinned",
+                        "render": function (data, type, row) {
+                            return data ?
+                                '<span class="status-badge status-pinned">مثبت</span>' :
+                                '<span class="status-badge status-unpinned">غير مثبت</span>';
+                        }
+                    },
+                    {
+                        "data": null,
+                        "sortable": false,
+                        "render": function (data, type, row) {
+                            return `<div class="action-buttons">
+                                            <a href="/Article/Details?name=${row.slug}" class="thm-btnrg btn-view" target="_blank" title="عرض">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                            <a href="/Article/Edit/${row.id}" class="thm-btnrg btn-edit" target="_blank" title="تحرير">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                            <button onclick="confirmTogglePublishArticle(${row.id}, '${row.title.replace(/'/g, "\\'")}', ${row.isPublished})"
+                                                    class="thm-btnrg ${row.isPublished ? 'btn-unpublish' : 'btn-publish'}"
+                                                    title="${row.isPublished ? 'إلغاء النشر' : 'نشر'}">
+                                                <i class="fa ${row.isPublished ? 'fa-eye-slash' : 'fa-eye'}"></i>
+                                            </button>
+                                            <button onclick="confirmTogglePinArticle(${row.id}, '${row.title.replace(/'/g, "\\'")}', ${row.isPinned})"
+                                                    class="thm-btnrg ${row.isPinned ? 'btn-unpin' : 'btn-pin'}"
+                                                    title="${row.isPinned ? 'إلغاء التثبيت' : 'تثبيت'}">
+                                                <i class="fa fa-thumbtack"></i>
+                                            </button>
+                                            <button onclick="confirmDeleteArticle(${row.id}, '${row.title}')"
+                                                    class="thm-btnrg btn-delete" title="حذف">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </div>`;
+                        }
+                    },
+                ],
+                dom: 'Blfrtip',
+                buttons: [
+                    {
+                        extend: 'excelHtml5',
+                        title: 'قائمة المقالات',
+                        text: '<i class="fa fa-file-excel"></i> تصدير Excel',
+                        className: 'dt-button',
+                        autoFilter: true,
+                        exportOptions: {
+                            columns: [1, 2, 3, 4]
+                        }
+                    }
+                ],
+                "language": {
+                    "sProcessing": "جاري المعالجة...",
+                    "sSearch": "بحث:",
+                    "sLengthMenu": "عرض _MENU_ مقال لكل صفحة",
+                    "sInfo": "عرض _START_ إلى _END_ من _TOTAL_ مقال",
+                    "sInfoEmpty": "لا توجد مقالات",
+                    "sInfoFiltered": "(تم التصفية من _MAX_ مقال إجمالي)",
+                    "sZeroRecords": "لم يتم العثور على أي مقال",
+                    "sEmptyTable": "لا توجد بيانات متاحة",
+                    "oPaginate": {
+                        "sFirst": "الأول",
+                        "sPrevious": "السابق",
+                        "sNext": "التالي",
+                        "sLast": "الأخير"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": تفعيل لترتيب العمود تصاعدياً",
+                        "sSortDescending": ": تفعيل لترتيب العمود تنازلياً"
+                    }
+                }
+            });
+        });
+
+        // SweetAlert2 Functions
+        function confirmDeleteArticle(id, title) {
+            Swal.fire({
+                title: 'حذف المقال؟',
+                html: `<strong style="color: var(--heading-color);">${title}</strong>`,
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: 'var(--danger-color)',
+                cancelButtonColor: '#6c757d',
+                confirmButtonText: 'نعم، احذف',
+                cancelButtonText: 'إلغاء',
+                customClass: {
+                    popup: 'swal-rtl'
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.post(`/Article/Delete/${id}`, function () {
+                        Swal.fire({
+                            title: 'تم الحذف!',
+                            text: 'تم حذف المقال بنجاح.',
+                            icon: 'success',
+                            timer: 1500,
+                            showConfirmButton: false,
+                            customClass: {
+                                popup: 'swal-rtl'
+                            }
+                        });
+                        $('#consultationTable').DataTable().ajax.reload();
+                    }).fail(function () {
+                        Swal.fire({
+                            title: 'خطأ',
+                            text: 'حدث خطأ أثناء الحذف.',
+                            icon: 'error',
+                            customClass: {
+                                popup: 'swal-rtl'
+                            }
+                        });
+                    });
+                }
+            });
+        }
+
+        function confirmTogglePublishArticle(id, title, isPublished) {
+            const action = isPublished ? 'إلغاء نشر' : 'نشر';
+            const icon = isPublished ? 'warning' : 'info';
+
+            Swal.fire({
+                title: `${action} هذا المقال؟`,
+                html: `<strong style="color: var(--heading-color);">${title}</strong>`,
+                icon: icon,
+                showCancelButton: true,
+                confirmButtonColor: 'var(--accent-color)',
+                cancelButtonColor: '#6c757d',
+                confirmButtonText: `نعم، ${action}`,
+                cancelButtonText: 'إلغاء',
+                customClass: {
+                    popup: 'swal-rtl'
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.post(`/Article/TogglePublish/${id}`, function () {
+                        Swal.fire({
+                            title: 'تم بنجاح!',
+                            text: `تم ${isPublished ? 'إلغاء نشر' : 'نشر'} المقال.`,
+                            icon: 'success',
+                            timer: 2000,
+                            showConfirmButton: false,
+                            customClass: {
+                                popup: 'swal-rtl'
+                            }
+                        });
+                        $('#consultationTable').DataTable().ajax.reload();
+                    }).fail(function () {
+                        Swal.fire({
+                            title: 'خطأ',
+                            text: 'فشل في تحديث المقال.',
+                            icon: 'error',
+                            customClass: {
+                                popup: 'swal-rtl'
+                            }
+                        });
+                    });
+                }
+            });
+        }
+
+        function confirmTogglePinArticle(id, title, isPinned) {
+            const action = isPinned ? 'إلغاء تثبيت' : 'تثبيت';
+            const icon = isPinned ? 'question' : 'info';
+
+            Swal.fire({
+                title: `${action} المقال؟`,
+                html: `<strong style="color: var(--heading-color);">${title}</strong>`,
+                icon: icon,
+                showCancelButton: true,
+                confirmButtonColor: 'var(--accent-color)',
+                cancelButtonColor: '#6c757d',
+                confirmButtonText: `نعم، ${action}`,
+                cancelButtonText: 'إلغاء',
+                customClass: {
+                    popup: 'swal-rtl'
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.post(`/Article/TogglePin/${id}`, function () {
+                        Swal.fire({
+                            title: 'تم بنجاح!',
+                            text: `تم ${isPinned ? 'إلغاء تثبيت' : 'تثبيت'} المقال.`,
+                            icon: 'success',
+                            timer: 2000,
+                            showConfirmButton: false,
+                            customClass: {
+                                popup: 'swal-rtl'
+                            }
+                        });
+                        $('#consultationTable').DataTable().ajax.reload();
+                    }).fail(function () {
+                        Swal.fire({
+                            title: 'خطأ',
+                            text: 'فشل في تحديث حالة التثبيت.',
+                            icon: 'error',
+                            customClass: {
+                                popup: 'swal-rtl'
+                            }
+                        });
+                    });
+                }
+            });
+        }
+    </script>
+
+    <style>
+        /* SweetAlert2 RTL Support */
+        .swal-rtl {
+            direction: rtl !important;
+            text-align: right !important;
+            font-family: var(--default-font) !important;
+        }
+
+            .swal-rtl .swal2-title,
+            .swal-rtl .swal2-content {
+                text-align: center !important;
+            }
+    </style>
+}

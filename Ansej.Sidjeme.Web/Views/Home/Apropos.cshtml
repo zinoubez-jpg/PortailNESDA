@@ -1,0 +1,138 @@
+﻿
+
+
+@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["Apropos"];
+}
+
+
+
+
+<!--Page Header Start-->
+<section class="page-header">
+    <div class="page-header-bg" style="background-image: url(/assets/images/backgrounds/page-header-bg.png)">
+    </div>
+    <div class="container">
+        <div class="page-header__inner">
+            <h2>@ViewData["Title"]</h2>
+            <ul class="thm-breadcrumb list-unstyled">
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li><span>/</span></li>
+                <li> @ViewData["Title"]</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--About One Start-->
+<section class="about-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="about-one__left">
+                    <div class="about-one__img-box wow slideInUp" data-wow-delay="100ms"
+                         data-wow-duration="2500ms">
+                        <div class="about-one__img">
+                            <img src="~/Nesdatp/assets/images/resources/about-one-img-1.jpg" alt="">
+                        </div>
+                        <div class="about-one__img-two">
+                            <img src="~/Nesdatp/assets/images/resources/about-one-img-2.jpg" alt="">
+                            <div class="about-one__experience">
+                                <div class="about-one__experience-year">
+                                    <h3 style="direction:ltr;" class="odometer" data-count="28">00</h3>
+                                    <span class="about-one__experience-year-plus">+</span>
+                                </div>
+                                <div class="about-one__experience-text-box">
+                                    <p class="about-one__experience-text"> @messageslocalizer["Années"] <br>  @messageslocalizer["Expérience"]</p>
+                                </div>
+                                <div class="about-one__icon-like">
+                                    <img src="~/Nesdatp/assets/images/icon/about-one-icon-like.png" alt="">
+                                </div>
+                                <div class="about-one__icon-like-2">
+                                    <img src="~/Nesdatp/assets/images/icon/about-one-icon-like.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-one__video-link">
+                            <a href="https://www.youtube.com/" class="video-popup">
+                                <div class="about-one__video-icon">
+                                    <span class="fa fa-play"></span>
+                                    <i class="ripple"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="about-one__big-text">about NESDA</div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="about-one__right">
+                    <div class="section-title text-left">
+                        <span class="section-title__tagline">@messageslocalizer["Àpropos"]</span>
+                        <h2 class="section-title__titleab">
+                            @messageslocalizer["NesdaNomination"]
+                        </h2>
+                    </div>
+                    <p class="about-one__text-1 ">
+                        @messageslocalizer["Aproposdetails"]
+
+                    </p>
+                    <ul class="list-unstyled about-one__points">
+                        <li>
+                            <div class="icon"
+                                 style="background-image: url(/Nesdatp/assets/images/shapes/about-one-points-shape-2.png);">
+                                <span class="fas fa-chalkboard-teacher"></span>
+                            </div>
+                            <div class="content">
+                                <h4> @messageslocalizer["FORMATION"]</h4>
+                                <p>
+                                    @messageslocalizer["FORMATIONDETAILS"]
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon"
+                                 style="background-image: url(/Nesdatp/assets/images/shapes/about-one-points-shape-2.png); ">
+                                <span class="fas fa-hands-helping"></span>
+                            </div>
+                            <div class="content">
+                                <h4>@messageslocalizer["ACCOMPAGNEMENT"]</h4>
+                                <p>
+                                    @messageslocalizer["ACCOMPAGNEMENTDETAILS"]
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon"
+                                 style="background-image: url(/Nesdatp/assets/images/shapes/about-one-points-shape-2.png);">
+                                <span class="fas fa-hand-holding-usd"></span>
+                            </div>
+                            <div class="content">
+                                <h4>@messageslocalizer["FINANCEMENT"]</h4>
+                                <p>
+                                    @messageslocalizer["FINANCEMENTDETAIS"]
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <hr />
+        <p class="about-one__text-1 ">
+            @messageslocalizer["AproposD2"]
+        </p>
+        <p class="about-one__text-1 ">
+            @messageslocalizer["AproposD3"]
+        </p>
+    </div>
+</section>
+<!--About One End-->
+
+
+

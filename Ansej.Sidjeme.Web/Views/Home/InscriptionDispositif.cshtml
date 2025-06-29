@@ -1,0 +1,413 @@
+﻿@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["Inscriptionsdispositif"];
+}
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+
+
+    .registration-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .intro-card {
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        padding: 2.5rem;
+        margin-bottom: 3rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        border-bottom: 3px solid var(--accent-color);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+        .intro-card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+            z-index: -1;
+        }
+
+    .section-text2 {
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        font-size: 1.125rem;
+        text-align: justify;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .registration-card {
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        padding: 2rem;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        border-bottom: 3px solid var(--accent-color);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+        .registration-card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+            transition: height 0.5s ease;
+            z-index: -1;
+        }
+
+        .registration-card:hover {
+            transform: translateY(-5px);
+        }
+
+            .registration-card:hover:before {
+                height: 100%;
+            }
+
+    .card-title {
+        color: var(--heading-color);
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .card-description {
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        text-align: justify;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        flex-grow: 1;
+    }
+
+    .thm-btnrg {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        text-align: center;
+        margin-top: auto;
+    }
+
+        .thm-btnrg:hover {
+            color: var(--contrast-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(65, 193, 186, 0.3);
+        }
+
+    .additional-benefits {
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        border-bottom: 3px solid var(--accent-color);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+        .additional-benefits:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+            z-index: -1;
+        }
+
+    .benefits-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .benefits-list li {
+            padding: 0.5rem 0;
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            position: relative;
+            padding-right: 1.5rem;
+        }
+
+            .benefits-list li:before {
+                content: "✓";
+                position: absolute;
+                right: 0;
+                color: var(--accent-color);
+                font-weight: bold;
+            }
+
+    .additional-info {
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        padding: 2.5rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        border-bottom: 3px solid var(--accent-color);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+        .additional-info:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+            z-index: -1;
+        }
+
+    .info-title {
+        color: var(--heading-color);
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .info-text {
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        text-align: justify;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .highlight-text {
+        color: var(--accent-color);
+        font-weight: 600;
+    }
+
+    .section-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+
+    .display-6 {
+        line-height: 1.2;
+    }
+
+        .display-6 span {
+            position: relative;
+            color: var(--accent-color);
+        }
+
+            .display-6 span:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 10px;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+                left: 0;
+                bottom: 5px;
+                z-index: -1;
+            }
+
+    @@media (max-width: 768px) {
+        .cards-container {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .registration-card, .intro-card, .additional-benefits, .additional-info {
+            padding: 1.5rem;
+        }
+
+        .card-title, .info-title {
+            font-size: 1.3rem;
+        }
+    }
+
+    @@media (max-width: 576px) {
+        .cards-container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+<section id="campus-facilities" class="campus-facilities section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Introduction -->
+        <div class="intro-row">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="intro-content">
+                        <h2 class="fw-bold">
+                            التسجيل في الجهاز
+                           
+
+                        </h2>
+                        <p class="lead">
+                            توفر الوكالة الوطنية لدعم وتنمية المقاولاتية منصة رقمية خاصة لحاملي المشاريع الراغبين في انشاء مؤسسات مصغرة او توسعة نشاطاتهم، من اجل التسجيل عن بعد للاستفادة من مزايا جهاز الوكالة من مرافقة وتمويل.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="intro-image-container">
+                        <div class="intro-image main-image">
+                            <img src="~/NesdaTMP/assets/img/NesdaImg/Inscription cnrc.png" alt="call center" class="img-fluid rounded">
+                        </div>
+                       
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+
+<section class="registration-section">
+    <div class="container">
+     
+      
+
+        <div class="cards-container">
+            <!-- Carte Création -->
+            <div class="registration-card">
+                <h2 class="card-title">إنشاء مؤسسة مصغرة</h2>
+                <p class="card-description">
+                    يستفيد من تمويل المشاريع الجديدة جميع الشباب حاملي أفكار المشاريع الذين استفادوا من تكوين في مراكز تطوير المقاولاتية الخاصة بالجامعيين أو خريجي معاهد التكوين المهني.
+                </p>
+                <a href="https://promoteur.nesda.dz/Inscription/Inscription_Non_SI" class="thm-btnrg" target="_blank">
+                    التسجيل لإنشاء مؤسسة مصغرة
+                </a>
+            </div>
+
+            <!-- Carte Extension -->
+            <div class="registration-card">
+                <h2 class="card-title">توسعة النشاط</h2>
+                <p class="card-description">
+                    يستفيد من تمويل المشاريع التوسعية جميع أصحاب المشاريع، سواء كانوا مستفيدين سابقين من خدمات الوكالة أو من أنشأوا مشاريعهم بشكل مستقل أو بدعم من أجهزة أخرى.
+                </p>
+                <a href="https://machrou3i.nesda.dz/Inscription/CreateInscription/2" class="thm-btnrg" target="_blank">
+                    التسجيل لتوسعة النشاط
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="additional-benefits">
+                    <h4 style="color: var(--meciy-base); font-weight: 600; margin-bottom: 1rem;">المستفيدون:</h4>
+                    <ul class="benefits-list">
+                        <li>الشباب حاملو أفكار المشاريع</li>
+                        <li>المتكونون في مراكز تطوير المقاولاتية</li>
+                        <li>خريجو الجامعات</li>
+                        <li>خريجو معاهد التكوين المهني</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="additional-benefits">
+                    <h4 style="color: var(--meciy-base); font-weight: 600; margin-bottom: 1rem;">المستفيدون:</h4>
+                    <ul class="benefits-list">
+                        <li>المستفيدون السابقون من الوكالة</li>
+                        <li>مستفيدو أونجام (ANGEM)</li>
+                        <li>مستفيدو كناك (CNAC)</li>
+                        <li>الفلاحون</li>
+                        <li>الحرفيون</li>
+                        <li>أصحاب السجلات التجارية</li>
+                        <li>أصحاب التراخيص</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="additional-info">
+            <h3 class="info-title">مزايا المنصة الرقمية</h3>
+            <p class="info-text">
+                تسمح المنصة الرقمية من <span class="highlight-text">ربح الوقت وتوفير جهد التنقل</span> لمباشرة الإجراءات المتعلقة بجهاز الوكالة، بالإضافة الى السرعة والسهولة في الولوج والاستخدام، وكذا ضمان <span class="highlight-text">الشفافية والأمان</span> في معالجة البيانات خلال كافة مراحل الإجراءات.
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>// Add hover effects for buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.thm-btnrg');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 8px 25px rgba(65, 193, 186, 0.3)';
+                });
+
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+
+            // Add hover effects for cards
+            const cards = document.querySelectorAll('.registration-card, .additional-benefits, .intro-card, .additional-info');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });</script>

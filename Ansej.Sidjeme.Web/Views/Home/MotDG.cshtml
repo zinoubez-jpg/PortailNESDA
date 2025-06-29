@@ -1,0 +1,147 @@
+﻿
+
+
+@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["MessageDG"];
+}
+
+<style>
+
+
+    .welcome-message {
+        background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+        border-right: 5px solid #41c1ba;
+        padding: 45px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .quote-mark {
+        position: absolute;
+        top: -10px;
+        right: 20px;
+        font-size: 4rem;
+        color: #41c1ba;
+        opacity: 0.3;
+        font-family: Georgia, serif;
+    }
+
+        .message-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            text-align:justify;
+        }
+    .highlight {
+        color: #2d465e;
+        font-weight: 600;
+    }
+       
+        @@media (max-width: 768px) {
+           
+            .content-section {
+                padding: 40px 20px;
+            }
+
+          
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @@keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+</style>
+
+
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/dgpg.png); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+<!-- Leadership Section -->
+<section id="leadership" class="leadership section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    
+
+        <div class="leadership-team">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="~/NesdaTMP/assets/img/NesdaImg/achacha.jpg" alt="achacha" class="img-fluid">
+                            <div class="social-links">
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-info">
+                            <h4>السيد بلال عشاشة</h4>
+                            <p class="position">المدير العام</p>
+                            <p class="bio">الوكالة الوطنية لدعم وتنمية المقاولاتية</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                   
+                    
+                    
+                    
+                    <div class="container">
+
+                        <div class="welcome-message">
+                            <div class="quote-mark">"</div>
+                            <p class="message-text">
+                                السيدات والسادة، رائدات الأعمال المحترمات، رواد الأعمال المحترمون
+                            </p>
+                            <p class="message-text">
+                                يسعدني أن أرحب بكم في الموقع الرسمي لـ <span class="highlight">الوكالة الوطنية لدعم وتنمية المقاولاتية (NESDA)</span>، حيث نقف إلى جانبكم لدعم وتثمين مشاريعكم، ومرافقة الابتكار، وتنشيط الاقتصاد الوطني من خلال ريادة الأعمال.
+                            </p>
+                            <p class="message-text">
+                                كل فكرة، كل مبادرة يمكن أن تصبح رافعة للنمو ومحركاً للازدهار لبلدنا. نحن في <span class="highlight">الوكالة الوطنية لدعم وتنمية المقاولاتية</span> نؤمن بقدرتكم على تحويل الأحلام إلى واقع ملموس.
+                            </p>
+                            <p class="message-text">
+                                من خلال هذه المنصة، نضع تحت تصرفكم مجموعة شاملة من برامج الدعم والأدوات والموارد لتحويل طموحاتكم إلى حقيقة. فريقنا ملتزم بشكل كامل بتوجيهكم وتدريبكم ومرافقتكم طوال رحلتكم في عالم ريادة الأعمال.
+                            </p>
+                            <p class="message-text">
+                                معاً، لنجعل من ريادة الأعمال محركاً للتنمية المستدامة والشاملة. <span class="highlight">الوكالة الوطنية لدعم وتنمية المقاولاتية</span> هي وستبقى شريككم الموثوق للنجاح والابتكار.
+                            </p>
+                            <div class="signature-section">
+                                <p class="highlight" style="text-align:left;">نجاحكم هو نجاحنا. معاً، لنبني المستقبل</p>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

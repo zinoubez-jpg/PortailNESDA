@@ -1,0 +1,20 @@
+﻿@model IEnumerable<string>
+@using System.Globalization
+
+<a class="btn btnbloc btn-block btn-secondary"
+   asp-action="List"
+   asp-controller="DownloadForm"
+   asp-route-category="">
+    @messageslocalizer["All"]
+</a>
+
+@foreach (string category in Model) {
+    <a class="btn btnbloc btn-block
+       @(category == ViewBag.SelectedCategory ? "btn-primary": "btn-secondary")"
+       asp-action="List"
+       asp-controller="DownloadForm"
+       asp-route-category="@category"
+       asp-route-sousTypeDemandePage="1">
+        @category 
+    </a>
+}

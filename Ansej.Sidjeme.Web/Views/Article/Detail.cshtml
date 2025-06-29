@@ -1,0 +1,32 @@
+﻿@model Ansej.Sidjeme.Domain.Entities.Article
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+@section Head {
+    <title>@Model.Title - MonSite</title>
+}
+
+<div class="container mt-4">
+    <h1>@Model.Title</h1>
+
+    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+    {
+        <img src="@Model.ImageUrl" alt="@Model.Title" class="img-fluid my-3" />
+    }
+
+    @if (!string.IsNullOrWhiteSpace(Model.Summary))
+    {
+        <p class="lead">@Model.Summary</p>
+    }
+
+    <div class="text-muted mb-3">
+        Publié le @Model.CreatedAt.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("fr-FR"))
+        par <strong>@Model.AuthorId</strong>
+    </div>
+
+    <div class="content">
+        @Html.Raw(Model.Content)
+    </div>
+</div>

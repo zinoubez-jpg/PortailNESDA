@@ -1,0 +1,377 @@
+﻿@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["Partenariats"];
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+
+    .partnerships {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+        .partnerships .display-6 {
+            line-height: 1.2;
+        }
+
+            .partnerships .display-6 span {
+                position: relative;
+                color: var(--accent-color);
+            }
+
+                .partnerships .display-6 span:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+                    left: 0;
+                    bottom: 5px;
+                    z-index: -1;
+                }
+
+        .partnerships .lead {
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            font-size: 1.125rem;
+            text-align: justify;
+        }
+
+        .partnerships .partnership-item {
+            background-color: var(--surface-color);
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            z-index: 1;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+            .partnerships .partnership-item:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+                transition: height 0.5s ease;
+                z-index: -1;
+            }
+
+            .partnerships .partnership-item:hover {
+                transform: translateY(-5px);
+            }
+
+                .partnerships .partnership-item:hover:before {
+                    height: 100%;
+                }
+
+        .partnerships .partnership-header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .partnerships .partnership-header h3 {
+                margin: 0;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--heading-color);
+                flex: 1;
+            }
+
+            .partnerships .partnership-header .partnership-icon {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+                border-radius: 50%;
+                margin-left: 1rem;
+                transition: all 0.3s ease;
+                flex-shrink: 0;
+            }
+
+                .partnerships .partnership-header .partnership-icon i {
+                    font-size: 1.25rem;
+                    color: var(--accent-color);
+                    transition: all 0.3s ease;
+                }
+
+        .partnerships .partnership-item:hover .partnership-header .partnership-icon {
+            background-color: var(--accent-color);
+        }
+
+            .partnerships .partnership-item:hover .partnership-header .partnership-icon i {
+                color: var(--contrast-color);
+            }
+
+        .partnerships .partnership-content {
+            padding: 0 2rem 2rem 2rem;
+        }
+
+            .partnerships .partnership-content p {
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                text-align: justify;
+                line-height: 1.6;
+                margin-bottom: 1rem;
+            }
+
+            .partnerships .partnership-content ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .partnerships .partnership-content li {
+                position: relative;
+                padding: 0.5rem 1.5rem 0.5rem 2rem;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                line-height: 1.6;
+            }
+
+                .partnerships .partnership-content li:before {
+                    content: "\f00c";
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    position: absolute;
+                    right: 0;
+                    color: var(--accent-color);
+                    font-size: 0.9rem;
+                }
+
+        .partnerships .stats-row {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .partnerships .stat-box {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--surface-color);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            min-width: 110px;
+            border-bottom: 3px solid var(--accent-color);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+            .partnerships .stat-box:hover {
+                transform: translateY(-5px);
+            }
+
+            .partnerships .stat-box .stat-number {
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 1;
+                color: var(--heading-color);
+            }
+
+            .partnerships .stat-box .stat-label {
+                font-size: 0.875rem;
+                color: color-mix(in srgb, var(--default-color), transparent 30%);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 5px;
+            }
+
+    @@media (max-width: 768px) {
+        .partnerships .partnership-header {
+            padding: 1rem 1.5rem;
+        }
+
+        .partnerships .partnership-content {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+        }
+
+        .partnerships .partnership-header h3 {
+            font-size: 1.25rem;
+        }
+    }
+</style>
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+<section id="campus-facilities" class="campus-facilities section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Introduction -->
+        <div class="intro-row">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="intro-content">
+                        <h2 class="fw-bold">
+                            برنامج <span>@messageslocalizer["Partenariats"]</span>
+
+
+                        </h2>
+                        <p class="lead">
+                            في إطار تعزيز المحيط البيئي للمقاولاتية والمؤسسات المصغرة، تحرص الوكالة الوطنية لدعم وتنمية المقاولاتية على التنسيق المستمر، تحت إشراف الوزارة الوصية، مع مختلف الأطراف الفاعلة فيه
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="intro-image-container">
+                        <div class="intro-image main-image">
+                            <img src="~/NesdaTMP/assets/img/NesdaImg/aide.png" alt="call center" class="img-fluid rounded">
+                        </div>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+<section class="partnerships">
+    <div class="container">
+     
+        <!-- Partnership Items -->
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+
+                <!-- Higher Education and Scientific Research -->
+                <div class="partnership-item">
+                    <div class="partnership-header">
+                        <h3>مؤسسات التعليم العالي والبحث العلمي</h3>
+                        <div class="partnership-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                    <div class="partnership-content">
+                        <p>تندرج الشراكة مع مؤسسات قطاع التعليم العالي والبحث العلمي، تحت إشراف الوزارة الوصية، في إطار فتح مراكز تطوير المقاولاتية عبر الشبكة الجامعية، بهدف تنسيق تسييرها وتنظيم الدورات التكوينية على مستواها، والتي تتم بصفة مشتركة بين أساتذة جامعيين ومدربين من الوكالة وفق برامج العمل المسطرة.</p>
+                        <p>حيث تلعب مراكز تطوير المقاولاتية دورًا حيويًا في تعزيز المقاولاتية وريادة الأعمال في الوسط الجامعي، من خلال بعثات التدريب، التوعية والدعم التي توفرها.</p>
+                    </div>
+                </div>
+
+                <!-- Professional Education and Training -->
+                <div class="partnership-item">
+                    <div class="partnership-header">
+                        <h3>مؤسسات التعليم والتكوين المهني</h3>
+                        <div class="partnership-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                    </div>
+                    <div class="partnership-content">
+                        <p>في إطار تعميم تجربة مراكز تطوير المقاولاتية على مستوى شبكة مؤسسات التعليم والتكوين المهني، تندرج هذه الشراكة، تحت إشراف الوزارة الوصية، والتي تهدف إلى تنسيق عملية فتح هذه المراكز، وضبط تسييرها وتنظيم الدورات التكوينية على مستواها، بالإضافة إلى تكوين المكونين من القطاع ومرافقتهم من طرف مدربين من الوكالة.</p>
+                        <p>حيث تعتبر مراكز تطوير المقاولاتية عامل مهم في تعزيز الفكر المقاولاتي وريادة الأعمال في مسار التعليم والتكوين المهني، من خلال أنشطة التدريب، التوعية والدعم التي توفرها.</p>
+                    </div>
+                </div>
+
+                <!-- Banking Institutions -->
+                <div class="partnership-item">
+                    <div class="partnership-header">
+                        <h3>المؤسسات البنكية</h3>
+                        <div class="partnership-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                    <div class="partnership-content">
+                        <p>تندرج الشراكة مع المؤسسات البنكية العمومية في إطار جهاز الوكالة وتتجلى في صيغة التمويل الثلاثي، أين يمثل القرض البنكي نسبة 70% من الاستثمار، بالإضافة إلى نسبة فائدة القرض المخفضة بنسبة مئة بالمئة، التي تعتبر حافز لإنشاء المؤسسات المصغرة وتوسعة نشاطها.</p>
+                        <p>يلعب التمويل البنكي دور محوري في جهاز الوكالة بالنظر لأهمية التمويل في مسار مشاريع إنشاء المؤسسات المصغرة وتوسعة نشاطها.</p>
+                    </div>
+                </div>
+
+                <!-- Economic Institutions -->
+                <div class="partnership-item">
+                    <div class="partnership-header">
+                        <h3>المؤسسات الاقتصادية</h3>
+                        <div class="partnership-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                    </div>
+                    <div class="partnership-content">
+                        <p>في إطار مرافقة المؤسسات المصغرة ودعم نشاطها، تحرص الوكالة على التعاون مع المتعاملين الاقتصاديين، العموميين والخواص، للترويج لمنتجات وخدمات المؤسسات المصغرة وللمزايا التي تقدمها عبر سلسلة القيم الاقتصادية من توفير مدخلات النشاط، خدمات مساعدة ومناولة باطنية.</p>
+                        <p>حيث سمحت الشراكة مع المتعاملين الاقتصاديين من تقريب المؤسسات المصغرة وتبادل الخبرات واستغلال فرص التعاون التجاري، من توريد المواد الأولية إلى مناولة بعض النشاطات.</p>
+                        <p>في هذا الصدد، تسهر الوكالة على إبرام اتفاقيات شراكة مع مختلف المتعاملين الاقتصاديين، حيث تم إبرام عدة اتفاقيات على المستوى المحلي والوطني، على غرار المتعاملين:</p>
+                        <ul>
+                            <li>الفروع الجهوية لمجلس التجديد الاقتصادي الجزائري</li>
+                            <li>الصندوق الوطني للتعاون الفلاحي</li>
+                            <li>شركة المياه والتطهير للجزائر - سيال</li>
+                            <li>شركة الجزائرية للمياه</li>
+                            <li>شركات اقتصادية محلية في مجال الصناعات الغذائية، الصناعات التحويلية والخدمات</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Public Institutions and Bodies -->
+                <div class="partnership-item">
+                    <div class="partnership-header">
+                        <h3>المؤسسات والهيئات العمومية</h3>
+                        <div class="partnership-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="partnership-content">
+                        <p>حرصا على التنسيق المتواصل مع مختلف المؤسسات والهيئات العمومية الفاعلة في مرافقة المؤسسات المصغرة عبر مختلف مراحل إنشاءها وسيرها، وسعيا منها إلى إرساء نظام بيئي للمقاولاتية محفز لريادة الأعمال ويخلق الفرص، تهدف الوكالة من خلال هذه الشراكات إلى تبسيط الإجراءات وتحسينها، تبادل الخبرات والبيانات، تنسيق النشاطات ولاسيما تلك المتعلقة بالتحسيس، الاتصال والمرافقة، وفق التشريعات والتنظيمات السارية.</p>
+                        <p>في هذا الإطار، تسهر الوكالة على إبرام اتفاقيات شراكة مع مختلف المؤسسات والهيئات العمومية، على غرار:</p>
+                        <ul>
+                            <li>الوكالة الوطنية لتسيير القرض المصغر</li>
+                            <li>وكالة تطوير المؤسسات الصغيرة والمتوسطة وترقية الابتكار</li>
+                            <li>الوكالة الوطنية للتشغيل</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8 text-center">
+                <div class="value-card" style="background-color: var(--surface-color); border-radius: 15px; padding: 2rem; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);">
+                    <div class="card-icon" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background-color: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 50%; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-handshake" style="font-size: 1.75rem; color: var(--accent-color);"></i>
+                    </div>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700; color: var(--heading-color);">هل تريد تطوير شراكة معنا؟</h3>
+                    <p style="margin-bottom: 1.5rem; color: color-mix(in srgb, var(--default-color), transparent 20%);">تواصل معنا لاستكشاف فرص الشراكة والتعاون في دعم المقاولاتية وريادة الأعمال</p>
+                    <a asp-controller="Contactus" asp-action="Index" id="Contact" class="btn btn-lg" style="background-color: var(--accent-color); color: var(--contrast-color); padding: 0.75rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                        تواصل للشراكة
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>// Add hover effects for buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctaButton = document.getElementById('Contact');
+            if (ctaButton) {
+                ctaButton.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 8px 25px rgba(65, 193, 186, 0.3)';
+                });
+
+                ctaButton.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            }
+        });</script>

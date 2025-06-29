@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
+        <EntityContainer Name="ModelTargetContainer" >
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="ModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Promoteurs" EntityType="Model.Promoteur" />
+          <EntitySet Name="Projets" EntityType="Model.Projet" />
+          <EntitySet Name="PromoteursProjets" EntityType="Model.PromoteurProjet" />
+          <EntitySet Name="Factures" EntityType="Model.Facture" />
+          <EntitySet Name="Articles" EntityType="Model.Article" />
+          <EntitySet Name="SessionsValidation" EntityType="Model.SessionValidation" />
+          <EntitySet Name="Referentiels" EntityType="Model.Referentiel" />
+          <EntitySet Name="Structures" EntityType="Model.Structure" />
+          <EntitySet Name="Documents" EntityType="Model.Document" />
+          <AssociationSet Name="WilayaCommune" Association="Model.WilayaCommune">
+            <End Role="Wilaya" EntitySet="Referentiels" />
+            <End Role="Commune" EntitySet="Referentiels" />
+          </AssociationSet>
+          <AssociationSet Name="StructureParentStructure" Association="Model.StructureParentStructure">
+            <End Role="Structure" EntitySet="Structures" />
+            <End Role="Structure1" EntitySet="Structures" />
+          </AssociationSet>
+          <AssociationSet Name="PromoteurPromoteurProjet" Association="Model.PromoteurPromoteurProjet">
+            <End Role="Promoteur" EntitySet="Promoteurs" />
+            <End Role="PromoteurProjet" EntitySet="PromoteursProjets" />
+          </AssociationSet>
+          <AssociationSet Name="ProjetPromoteurProjet" Association="Model.ProjetPromoteurProjet">
+            <End Role="Projet" EntitySet="Projets" />
+            <End Role="PromoteurProjet" EntitySet="PromoteursProjets" />
+          </AssociationSet>
+          <AssociationSet Name="QualitePromoteurProjet" Association="Model.QualitePromoteurProjet">
+            <End Role="Qualite" EntitySet="Referentiels" />
+            <End Role="PromoteurProjet" EntitySet="PromoteursProjets" />
+          </AssociationSet>
+          <AssociationSet Name="PhaseProjetProjet" Association="Model.PhaseProjetProjet">
+            <End Role="PhaseProjet" EntitySet="Referentiels" />
+            <End Role="Projet" EntitySet="Projets" />
+          </AssociationSet>
+          <AssociationSet Name="ProjetProjetExtension" Association="Model.ProjetProjetExtension">
+            <End Role="Projet" EntitySet="Projets" />
+            <End Role="Projet1" EntitySet="Projets" />
+          </AssociationSet>
+          <AssociationSet Name="TypeSessionSessionValidation" Association="Model.TypeSessionSessionValidation">
+            <End Role="TypeSession" EntitySet="Referentiels" />
+            <End Role="SessionValidation" EntitySet="SessionsValidation" />
+          </AssociationSet>
+          <EntitySet Name="SessionsValidationDetails" EntityType="Model.SessionValidationDetails" />
+          <AssociationSet Name="ProjetSessionValidationDetails" Association="Model.ProjetSessionValidationDetails">
+            <End Role="Projet" EntitySet="Projets" />
+            <End Role="SessionValidationDetails" EntitySet="SessionsValidationDetails" />
+          </AssociationSet>
+          <AssociationSet Name="SecteurActiviteActivite" Association="Model.SecteurActiviteActivite">
+            <End Role="SecteurActivite" EntitySet="Referentiels" />
+            <End Role="Activite" EntitySet="Referentiels" />
+          </AssociationSet>
+          <AssociationSet Name="SessionValidationSessionValidationDetails" Association="Model.SessionValidationSessionValidationDetails">
+            <End Role="SessionValidation" EntitySet="SessionsValidation" />
+            <End Role="SessionValidationDetails" EntitySet="SessionsValidationDetails" />
+          </AssociationSet>
+          <AssociationSet Name="TypeDocumentDocument" Association="Model.TypeDocumentDocument">
+            <End Role="TypeDocument" EntitySet="Referentiels" />
+            <End Role="Document" EntitySet="Documents" />
+          </AssociationSet>
+          <AssociationSet Name="ProjetDocument" Association="Model.ProjetDocument">
+            <End Role="Projet" EntitySet="Projets" />
+            <End Role="Document" EntitySet="Documents" />
+          </AssociationSet>
+          <EntitySet Name="Fournisseurs" EntityType="Model.Fournisseur" />
+          <AssociationSet Name="FournisseurFacture" Association="Model.FournisseurFacture">
+            <End Role="Fournisseur" EntitySet="Fournisseurs" />
+            <End Role="Facture" EntitySet="Factures" />
+          </AssociationSet>
+          <AssociationSet Name="FactureArticle" Association="Model.FactureArticle">
+            <End Role="Facture" EntitySet="Factures" />
+            <End Role="Article" EntitySet="Articles" />
+          </AssociationSet>
+          <EntitySet Name="User" EntityType="Model.User" />
+          <EntitySet Name="UserStructures" EntityType="Model.UserStructure" />
+          <AssociationSet Name="UserUserStructure" Association="Model.UserUserStructure">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserStructure" EntitySet="UserStructures" />
+          </AssociationSet>
+          <AssociationSet Name="StructureUserStructure" Association="Model.StructureUserStructure">
+            <End Role="Structure" EntitySet="Structures" />
+            <End Role="UserStructure" EntitySet="UserStructures" />
+          </AssociationSet>
+          <AssociationSet Name="NiveauInstructionPromoteur" Association="Model.NiveauInstructionPromoteur">
+            <End Role="NiveauInstruction" EntitySet="Referentiels" />
+            <End Role="Promoteur" EntitySet="Promoteurs" />
+          </AssociationSet>
+          <AssociationSet Name="TypeFactureFacture" Association="Model.TypeFactureFacture">
+            <End Role="TypeFacture" EntitySet="Referentiels" />
+            <End Role="Facture" EntitySet="Factures" />
+          </AssociationSet>
+          <AssociationSet Name="ActiviteProjet" Association="Model.ActiviteProjet">
+            <End Role="Activite" EntitySet="Referentiels" />
+            <End Role="Projet" EntitySet="Projets" />
+          </AssociationSet>
+          <AssociationSet Name="TypeFinancementProjet" Association="Model.TypeFinancementProjet">
+            <End Role="TypeFinancement" EntitySet="Referentiels" />
+            <End Role="Projet" EntitySet="Projets" />
+          </AssociationSet>
+          <AssociationSet Name="ProjetFacture" Association="Model.ProjetFacture">
+            <End Role="Projet" EntitySet="Projets" />
+            <End Role="Facture" EntitySet="Factures" />
+          </AssociationSet>
+          <EntitySet Name="EtatsProjet" EntityType="Model.EtatProjet" />
+          <AssociationSet Name="ProjetEtatProjet" Association="Model.ProjetEtatProjet">
+            <End Role="Projet" EntitySet="Projets" />
+            <End Role="EtatProjet" EntitySet="EtatsProjet" />
+          </AssociationSet>
+          <EntitySet Name="EtapesProjet" EntityType="Model.EtapeProjet" />
+          <AssociationSet Name="ProjetEtapeProjet" Association="Model.ProjetEtapeProjet">
+            <End Role="Projet" EntitySet="Projets" />
+            <End Role="EtapeProjet" EntitySet="EtapesProjet" />
+          </AssociationSet>
+          <EntitySet Name="ProjetsStructures" EntityType="Model.ProjetStructure" />
+          <AssociationSet Name="StructureProjetStructure" Association="Model.StructureProjetStructure">
+            <End Role="Structure" EntitySet="Structures" />
+            <End Role="ProjetStructure" EntitySet="ProjetsStructures" />
+          </AssociationSet>
+          <AssociationSet Name="ProjetProjetStructure" Association="Model.ProjetProjetStructure">
+            <End Role="Projet" EntitySet="Projets" />
+            <End Role="ProjetStructure" EntitySet="ProjetsStructures" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Promoteur">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NIN" Type="String" Nullable="false" FixedLength="true" MaxLength="18" />
+          <Property Name="Nom" Type="String" Nullable="false" MaxLength="128" />
+          <Property Name="Prenom" Type="String" Nullable="false" MaxLength="128" />
+          <Property Name="DateNaissance" Type="DateTime" Nullable="false" />
+          <Property Name="PrenomPere" Type="String" Nullable="false" MaxLength="128" />
+          <Property Name="NomPrenomMere" Type="String" Nullable="false" MaxLength="256" />
+          <Property Name="Genre" Type="Model.Genre" Nullable="false" />
+          <Property Name="Adresse" Type="String" Nullable="false" MaxLength="256" />
+          <Property Name="NumeroCarteANEM" Type="String" Nullable="false" MaxLength="20" />
+          <NavigationProperty Name="Projets" Relationship="Model.PromoteurPromoteurProjet" FromRole="Promoteur" ToRole="PromoteurProjet" />
+          <NavigationProperty Name="NiveauInstruction" Relationship="Model.NiveauInstructionPromoteur" FromRole="Promoteur" ToRole="NiveauInstruction" />
+          <Property Name="NiveauInstructionId" Type="Int32" Nullable="false" />
+          <Property Name="LieuNaissance" Type="Model.Lieu" Nullable="false" />
+          <Property Name="LieuResidence" Type="Model.Lieu" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Projet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Promoteurs" Relationship="Model.ProjetPromoteurProjet" FromRole="Projet" ToRole="PromoteurProjet" />
+          <Property Name="Numero" Type="String" Nullable="false" MaxLength="20" />
+          <NavigationProperty Name="PhaseProjet" Relationship="Model.PhaseProjetProjet" FromRole="Projet" ToRole="PhaseProjet" />
+          <Property Name="PhaseProjetId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ProjetsExtension" Relationship="Model.ProjetProjetExtension" FromRole="Projet" ToRole="Projet1" />
+          <NavigationProperty Name="ProjetCreation" Relationship="Model.ProjetProjetExtension" FromRole="Projet1" ToRole="Projet" />
+          <Property Name="ProjetCreationId" Type="Int32" Nullable="true" />
+          <NavigationProperty Name="SessionsValidation" Relationship="Model.ProjetSessionValidationDetails" FromRole="Projet" ToRole="SessionValidationDetails" />
+          <NavigationProperty Name="Documents" Relationship="Model.ProjetDocument" FromRole="Projet" ToRole="Document" />
+          <Property Name="MontantPNR" Type="Decimal" Nullable="false" />
+          <Property Name="MontantPretBancaire" Type="Decimal" Nullable="false" />
+          <Property Name="MontantSubvention" Type="Decimal" Nullable="false" />
+          <Property Name="MontantApportPersonnel" Type="Decimal" Nullable="false" />
+          <NavigationProperty Name="Activite" Relationship="Model.ActiviteProjet" FromRole="Projet" ToRole="Activite" />
+          <Property Name="ActiviteId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TypeFinancement" Relationship="Model.TypeFinancementProjet" FromRole="Projet" ToRole="TypeFinancement" />
+          <Property Name="TypeFinancementId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Factures" Relationship="Model.ProjetFacture" FromRole="Projet" ToRole="Facture" />
+          <NavigationProperty Name="Etats" Relationship="Model.ProjetEtatProjet" FromRole="Projet" ToRole="EtatProjet" />
+          <Property Name="Etat" Type="Model.ProjetEtat" Nullable="false" />
+          <NavigationProperty Name="EtapeProjet" Relationship="Model.ProjetEtapeProjet" FromRole="Projet" ToRole="EtapeProjet" />
+          <Property Name="Etape" Type="Model.ProjetEtape" Nullable="false" />
+          <NavigationProperty Name="Structures" Relationship="Model.ProjetProjetStructure" FromRole="Projet" ToRole="ProjetStructure" />
+        </EntityType>
+        <EntityType Name="PromoteurProjet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Promoteur" Relationship="Model.PromoteurPromoteurProjet" FromRole="PromoteurProjet" ToRole="Promoteur" />
+          <Property Name="PromoteurId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Projet" Relationship="Model.ProjetPromoteurProjet" FromRole="PromoteurProjet" ToRole="Projet" />
+          <Property Name="ProjetId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Qualite" Relationship="Model.QualitePromoteurProjet" FromRole="PromoteurProjet" ToRole="Qualite" />
+          <Property Name="QualiteId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Facture">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Numero" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="Fournisseur" Relationship="Model.FournisseurFacture" FromRole="Facture" ToRole="Fournisseur" />
+          <Property Name="FournisseurId" Type="Int32" Nullable="true" />
+          <NavigationProperty Name="Articles" Relationship="Model.FactureArticle" FromRole="Facture" ToRole="Article" />
+          <NavigationProperty Name="TypeFacture" Relationship="Model.TypeFactureFacture" FromRole="Facture" ToRole="TypeFacture" />
+          <Property Name="TypeFactureId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Projet" Relationship="Model.ProjetFacture" FromRole="Facture" ToRole="Projet" />
+          <Property Name="ProjetId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Article">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Facture" Relationship="Model.FactureArticle" FromRole="Article" ToRole="Facture" />
+          <Property Name="FactureId" Type="Int32" Nullable="false" />
+          <Property Name="DesignationArticle" Type="String" Nullable="false" MaxLength="1024" />
+          <Property Name="Quantite" Type="Double" Nullable="false" />
+          <Property Name="PrixUnitaire" Type="Decimal" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Decision" BaseType="Model.Document">
+        </EntityType>
+        <EntityType Name="OrdreEnlevement" BaseType="Model.Document">
+          </EntityType>
+        <EntityType Name="SessionValidation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Numero" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="TypeSession" Relationship="Model.TypeSessionSessionValidation" FromRole="SessionValidation" ToRole="TypeSession" />
+          <Property Name="TypeSessionId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Details" Relationship="Model.SessionValidationSessionValidationDetails" FromRole="SessionValidation" ToRole="SessionValidationDetails" />
+        </EntityType>
+        <EnumType Name="Genre" UnderlyingType="Byte">
+          <Member Name="Homme" Value="1" />
+          <Member Name="Femme" Value="2" />
+        </EnumType>
+        <EntityType Name="Referentiel" Abstract="true">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="10" />
+          <Property Name="Designation" Type="String" Nullable="false" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="Structure">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Children" Relationship="Model.StructureParentStructure" FromRole="Structure" ToRole="Structure1" />
+          <NavigationProperty Name="Parent" Relationship="Model.StructureParentStructure" FromRole="Structure1" ToRole="Structure" />
+          <Property Name="ParentId" Type="Int32" Nullable="true" />
+          <NavigationProperty Name="Users" Relationship="Model.StructureUserStructure" FromRole="Structure" ToRole="UserStructure" />
+          <Property Name="Designation" Type="String" Nullable="false" MaxLength="128" />
+          <NavigationProperty Name="Projets" Relationship="Model.StructureProjetStructure" FromRole="Structure" ToRole="ProjetStructure" />
+        </EntityType>
+        <EntityType Name="Qualite" BaseType="Model.Referentiel" >
+          <NavigationProperty Name="PromoteurProjet" Relationship="Model.QualitePromoteurProjet" FromRole="Qualite" ToRole="PromoteurProjet" />
+        </EntityType>
+        <EntityType Name="TypeSession" BaseType="Model.Referentiel" >
+          <NavigationProperty Name="SessionsValidation" Relationship="Model.TypeSessionSessionValidation" FromRole="TypeSession" ToRole="SessionValidation" />
+        </EntityType>
+        <EntityType Name="TypeFacture" BaseType="Model.Referentiel" >
+          <NavigationProperty Name="Facture" Relationship="Model.TypeFactureFacture" FromRole="TypeFacture" ToRole="Facture" />
+        </EntityType>
+        <EntityType Name="Document" Abstract="true">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="TypeDocument" Relationship="Model.TypeDocumentDocument" FromRole="Document" ToRole="TypeDocument" />
+          <Property Name="TypeDocumentId" Type="Int32" Nullable="false" />
+          <Property Name="Numero" Type="String" Nullable="false" MaxLength="20" />
+          <NavigationProperty Name="Projet" Relationship="Model.ProjetDocument" FromRole="Document" ToRole="Projet" />
+          <Property Name="ProjetId" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TypeDocument" BaseType="Model.Referentiel" >
+          <NavigationProperty Name="Documents" Relationship="Model.TypeDocumentDocument" FromRole="TypeDocument" ToRole="Document" />
+        </EntityType>
+        <EntityType Name="PhaseProjet" BaseType="Model.Referentiel" >
+          <NavigationProperty Name="Projet" Relationship="Model.PhaseProjetProjet" FromRole="PhaseProjet" ToRole="Projet" />
+        </EntityType>
+        <EntityType Name="NiveauInstruction" BaseType="Model.Referentiel" >
+          <NavigationProperty Name="Promoteurs" Relationship="Model.NiveauInstructionPromoteur" FromRole="NiveauInstruction" ToRole="Promoteur" />
+        </EntityType>
+        <EntityType Name="Wilaya" BaseType="Model.Referentiel" >
+          <NavigationProperty Name="Communes" Relationship="Model.WilayaCommune" FromRole="Wilaya" ToRole="Commune" />
+        </EntityType>
+        <EntityType Name="Commune" BaseType="Model.Referentiel" >
+          <NavigationProperty Name="Wilaya" Relationship="Model.WilayaCommune" FromRole="Commune" ToRole="Wilaya" />
+          <Property Name="WilayaId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="WilayaCommune">
+          <End Type="Model.Wilaya" Role="Wilaya" Multiplicity="1" />
+          <End Type="Model.Commune" Role="Commune" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Wilaya">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Commune">
+              <PropertyRef Name="WilayaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="StructureParentStructure">
+          <End Type="Model.Structure" Role="Structure" Multiplicity="0..1" />
+          <End Type="Model.Structure" Role="Structure1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Structure">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Structure1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PromoteurPromoteurProjet">
+          <End Type="Model.Promoteur" Role="Promoteur" Multiplicity="1" />
+          <End Type="Model.PromoteurProjet" Role="PromoteurProjet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Promoteur">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PromoteurProjet">
+              <PropertyRef Name="PromoteurId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ProjetPromoteurProjet">
+          <End Type="Model.Projet" Role="Projet" Multiplicity="1" />
+          <End Type="Model.PromoteurProjet" Role="PromoteurProjet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PromoteurProjet">
+              <PropertyRef Name="ProjetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="QualitePromoteurProjet">
+          <End Type="Model.Qualite" Role="Qualite" Multiplicity="1" />
+          <End Type="Model.PromoteurProjet" Role="PromoteurProjet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Qualite">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PromoteurProjet">
+              <PropertyRef Name="QualiteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PhaseProjetProjet">
+          <End Type="Model.PhaseProjet" Role="PhaseProjet" Multiplicity="1" />
+          <End Type="Model.Projet" Role="Projet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PhaseProjet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Projet">
+              <PropertyRef Name="PhaseProjetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ProjetProjetExtension">
+          <End Type="Model.Projet" Role="Projet" Multiplicity="0..1" />
+          <End Type="Model.Projet" Role="Projet1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Projet1">
+              <PropertyRef Name="ProjetCreationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TypeSessionSessionValidation">
+          <End Type="Model.TypeSession" Role="TypeSession" Multiplicity="1" />
+          <End Type="Model.SessionValidation" Role="SessionValidation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TypeSession">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SessionValidation">
+              <PropertyRef Name="TypeSessionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SessionValidationDetails">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Projet" Relationship="Model.ProjetSessionValidationDetails" FromRole="SessionValidationDetails" ToRole="Projet" />
+          <Property Name="ProjetId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="SessionValidation" Relationship="Model.SessionValidationSessionValidationDetails" FromRole="SessionValidationDetails" ToRole="SessionValidation" />
+          <Property Name="SessionValidationId" Type="Int32" Nullable="false" />
+          <Property Name="Resultat" Type="Model.ResultatSessionValidation" Nullable="false" />
+        </EntityType>
+        <Association Name="ProjetSessionValidationDetails">
+          <End Type="Model.Projet" Role="Projet" Multiplicity="1" />
+          <End Type="Model.SessionValidationDetails" Role="SessionValidationDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SessionValidationDetails">
+              <PropertyRef Name="ProjetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SecteurActivite" BaseType="Model.Referentiel" >
+          <NavigationProperty Name="Activites" Relationship="Model.SecteurActiviteActivite" FromRole="SecteurActivite" ToRole="Activite" />
+        </EntityType>
+        <EntityType Name="Activite" BaseType="Model.Referentiel" >
+          <NavigationProperty Name="SecteurActivite" Relationship="Model.SecteurActiviteActivite" FromRole="Activite" ToRole="SecteurActivite" />
+          <Property Name="SecteurActiviteId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Projets" Relationship="Model.ActiviteProjet" FromRole="Activite" ToRole="Projet" />
+        </EntityType>
+        <Association Name="SecteurActiviteActivite">
+          <End Type="Model.SecteurActivite" Role="SecteurActivite" Multiplicity="1" />
+          <End Type="Model.Activite" Role="Activite" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SecteurActivite">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Activite">
+              <PropertyRef Name="SecteurActiviteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SessionValidationSessionValidationDetails">
+          <End Type="Model.SessionValidation" Role="SessionValidation" Multiplicity="1" />
+          <End Type="Model.SessionValidationDetails" Role="SessionValidationDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SessionValidation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SessionValidationDetails">
+              <PropertyRef Name="SessionValidationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TypeDocumentDocument">
+          <End Type="Model.TypeDocument" Role="TypeDocument" Multiplicity="1" />
+          <End Type="Model.Document" Role="Document" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TypeDocument">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Document">
+              <PropertyRef Name="TypeDocumentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ProjetDocument">
+          <End Type="Model.Projet" Role="Projet" Multiplicity="1" />
+          <End Type="Model.Document" Role="Document" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Document">
+              <PropertyRef Name="ProjetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Fournisseur">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Factures" Relationship="Model.FournisseurFacture" FromRole="Fournisseur" ToRole="Facture" />
+          <Property Name="DenominationCommercial" Type="String" Nullable="false" MaxLength="1024" />
+        </EntityType>
+        <Association Name="FournisseurFacture">
+          <End Type="Model.Fournisseur" Role="Fournisseur" Multiplicity="0..1" />
+          <End Type="Model.Facture" Role="Facture" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Fournisseur">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Facture">
+              <PropertyRef Name="FournisseurId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FactureArticle">
+          <End Type="Model.Facture" Role="Facture" Multiplicity="1" />
+          <End Type="Model.Article" Role="Article" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facture">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Article">
+              <PropertyRef Name="FactureId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Structures" Relationship="Model.UserUserStructure" FromRole="User" ToRole="UserStructure" />
+          <Property Name="Nom" Type="String" Nullable="false" MaxLength="56" />
+          <Property Name="Prenom" Type="String" Nullable="false" MaxLength="56" />
+          <Property Name="Tel" Type="String" Nullable="false" MaxLength="10" />
+          <Property Name="Username" Type="String" Nullable="true" MaxLength="128" />
+        </EntityType>
+        <EntityType Name="UserStructure">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="User" Relationship="Model.UserUserStructure" FromRole="UserStructure" ToRole="User" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Structure" Relationship="Model.StructureUserStructure" FromRole="UserStructure" ToRole="Structure" />
+          <Property Name="StructureId" Type="Int32" Nullable="false" />
+          <Property Name="DateAffectation" Type="DateTime" Nullable="false" />
+          <Property Name="DateSortie" Type="DateTime" Nullable="true" />
+          <Property Name="Actuelle" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <Association Name="UserUserStructure">
+          <End Type="Model.User" Role="User" Multiplicity="1" />
+          <End Type="Model.UserStructure" Role="UserStructure" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserStructure">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="StructureUserStructure">
+          <End Type="Model.Structure" Role="Structure" Multiplicity="1" />
+          <End Type="Model.UserStructure" Role="UserStructure" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Structure">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserStructure">
+              <PropertyRef Name="StructureId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TypeFinancement" BaseType="Model.Referentiel" >
+          <NavigationProperty Name="Projets" Relationship="Model.TypeFinancementProjet" FromRole="TypeFinancement" ToRole="Projet" />
+        </EntityType>
+        <EnumType Name="ProjetEtape" UnderlyingType="Byte">
+        <Member Name="Depot" Value="1" />
+          <Member Name="ValidationCSVF" Value="2" />
+          <Member Name="Eligibilite" Value="3" />
+          <Member Name="CreationJuridique" Value="5" />
+          <Member Name="DepotBanquaire" Value="4" />
+          <Member Name="Financement" Value="6" />
+          <Member Name="Realisation" Value="7" />
+          <Member Name="Exploitation" Value="8" />
+        </EnumType>
+        <Association Name="NiveauInstructionPromoteur">
+          <End Type="Model.NiveauInstruction" Role="NiveauInstruction" Multiplicity="1" />
+          <End Type="Model.Promoteur" Role="Promoteur" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NiveauInstruction">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Promoteur">
+              <PropertyRef Name="NiveauInstructionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TypeFactureFacture">
+          <End Type="Model.TypeFacture" Role="TypeFacture" Multiplicity="1" />
+          <End Type="Model.Facture" Role="Facture" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TypeFacture">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Facture">
+              <PropertyRef Name="TypeFactureId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ActiviteProjet">
+          <End Type="Model.Activite" Role="Activite" Multiplicity="1" />
+          <End Type="Model.Projet" Role="Projet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Activite">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Projet">
+              <PropertyRef Name="ActiviteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TypeFinancementProjet">
+          <End Type="Model.TypeFinancement" Role="TypeFinancement" Multiplicity="1" />
+          <End Type="Model.Projet" Role="Projet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TypeFinancement">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Projet">
+              <PropertyRef Name="TypeFinancementId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ProjetFacture">
+          <End Type="Model.Projet" Role="Projet" Multiplicity="1" />
+          <End Type="Model.Facture" Role="Facture" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Facture">
+              <PropertyRef Name="ProjetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EnumType Name="ResultatSessionValidation" UnderlyingType="Byte">
+          <Member Name="Accepte" Value="1" />
+          <Member Name="Rejete" Value="2" />
+        </EnumType>
+        <EntityType Name="EtatProjet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Projet" Relationship="Model.ProjetEtatProjet" FromRole="EtatProjet" ToRole="Projet" />
+          <Property Name="ProjetId" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <Property Name="Motif" Type="String" Nullable="true" MaxLength="1024" />
+          <Property Name="Etat" Type="Model.ProjetEtat" Nullable="false" />
+        </EntityType>
+        <Association Name="ProjetEtatProjet">
+          <End Type="Model.Projet" Role="Projet" Multiplicity="1" />
+          <End Type="Model.EtatProjet" Role="EtatProjet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EtatProjet">
+              <PropertyRef Name="ProjetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EnumType Name="ProjetEtat" UnderlyingType="Byte">
+          <Member Name="Actif" Value="1" />
+          <Member Name="Annule" Value="2" />
+          <Member Name="Rejete" Value="3" />
+        </EnumType>
+        <EntityType Name="EtapeProjet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Projet" Relationship="Model.ProjetEtapeProjet" FromRole="EtapeProjet" ToRole="Projet" />
+          <Property Name="ProjetId" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <Property Name="Etape" Type="Model.ProjetEtape" Nullable="false" />
+        </EntityType>
+        <Association Name="ProjetEtapeProjet">
+          <End Type="Model.Projet" Role="Projet" Multiplicity="1" />
+          <End Type="Model.EtapeProjet" Role="EtapeProjet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EtapeProjet">
+              <PropertyRef Name="ProjetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Pays" BaseType="Model.Referentiel" >
+        </EntityType>
+        <ComplexType Name="Lieu">
+          <Property Type="Int32" Name="CommuneId" Nullable="true" />
+          <Property Type="Int32" Name="PaysId" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="ProjetStructure">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Structure" Relationship="Model.StructureProjetStructure" FromRole="ProjetStructure" ToRole="Structure" />
+          <Property Name="StructureId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Projet" Relationship="Model.ProjetProjetStructure" FromRole="ProjetStructure" ToRole="Projet" />
+          <Property Name="ProjetId" Type="Int32" Nullable="false" />
+          <Property Name="Observation" Type="String" Nullable="false" MaxLength="1024" />
+        </EntityType>
+        <Association Name="StructureProjetStructure">
+          <End Type="Model.Structure" Role="Structure" Multiplicity="1" />
+          <End Type="Model.ProjetStructure" Role="ProjetStructure" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Structure">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProjetStructure">
+              <PropertyRef Name="StructureId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ProjetProjetStructure">
+          <End Type="Model.Projet" Role="Projet" Multiplicity="1" />
+          <End Type="Model.ProjetStructure" Role="ProjetStructure" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProjetStructure">
+              <PropertyRef Name="ProjetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="Model" />
+        <Alias Key="Target" Value="Model.Store" />
+        <EntityContainerMapping CdmEntityContainer="ModelContainer" StorageEntityContainer="ModelTargetContainer">
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

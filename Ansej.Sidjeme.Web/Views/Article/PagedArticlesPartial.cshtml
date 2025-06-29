@@ -1,0 +1,61 @@
+﻿@model List<Ansej.Sidjeme.Domain.Entities.Article>
+
+    <style>
+        .read-more-link {
+            font-size: 0.6rem;
+            text-decoration: none;
+            margin-right: 1px;
+            font-weight: bold;
+        }
+
+            .read-more-link:hover {
+                text-decoration: underline;
+            }
+    </style>
+
+@foreach (var post in Model)
+{
+    <div class="col-lg-4 col-md-6">
+        <article>
+
+            <!-- Image principale de l'article -->
+            <div class="post-img">
+                <img src="@post.ImageUrl" alt="Image article" class="img-fluid" />
+            </div>
+
+            <h2 class="title">
+                <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">
+                    @post.Title
+                </a>
+            </h2>
+            <!-- Catégorie -->
+            <p class="post-category">
+                @{
+                    var summary = !string.IsNullOrWhiteSpace(post.Summary) ? post.Summary : "خلية الإتصال";
+                    var truncated = summary.Length > 100 ? summary.Substring(0, 100) : summary;
+                }
+                @truncated
+                @if (post.Summary != null && post.Summary.Length > 100)
+                {
+                    <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug" class="read-more-link"> [قراءة المزيد] </a>
+                }
+            </p>
+
+            <!-- Titre de l'article -->
+            <!-- Auteur + date -->
+            <div class="d-flex align-items-center">
+                <img src="~/NesdaTMP/assets/img/NesdaImg/LogoNesda.png" alt="nesdaLogo" class="img-fluid post-author-img flex-shrink-0">
+
+                <div class="post-meta">
+                    <p class="post-author">خلية الإتصال</p>
+                    <p class="post-date">
+                        <time datetime="@post.CreatedAt.ToString("yyyy-MM-dd")">
+                            @post.CreatedAt.ToString("MMM d, yyyy", new System.Globalization.CultureInfo("ar-DZ"))
+                        </time>
+                    </p>
+                </div>
+            </div>
+
+        </article>
+    </div>
+}

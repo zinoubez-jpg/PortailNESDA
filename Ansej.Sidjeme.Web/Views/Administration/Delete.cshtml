@@ -1,0 +1,76 @@
+﻿@model Ansej.Sidjeme.Identity.UserStructure
+
+
+@{
+    ViewData["Title"] = localizer["DeleteA", localizer["User"]];
+}
+
+
+<br />
+<!-- ======= Breadcrumbs ======= -->
+<section class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="arabic-text">@ViewData["Title"]</h2>
+            <ol>
+                <li><a asp-action="Index" asp-controller="Home"> @localizer["Home"]</a></li>
+                <li>@ViewData["Title"]</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<br />
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-text"><h3>@messageslocalizer["Êtes vous sûres de supprimer cet enregistrement ?"]</h3></div>
+            <dl class="row">
+
+
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Id)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Id)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.User.UserName)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.User.UserName)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Structure.Designation)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Structure.Designation)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.DateAffectation)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.DateAffectation.Date)
+                </dd>
+
+
+            </dl>
+
+
+            <form asp-action="Delete">
+                <input asp-for="Id" type="hidden" />
+                <input type="submit" value="@localizer["Delete"]" class="btn btn-outline-danger" />
+                <a asp-action="Index" class="btn btn-outline-dark">@localizer["Return"]</a>
+            </form>
+
+
+        </div>
+
+    </div>
+</div>
+<br />
+<br />
+

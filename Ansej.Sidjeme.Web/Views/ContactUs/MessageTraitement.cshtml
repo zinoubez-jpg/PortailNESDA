@@ -1,0 +1,649 @@
+﻿@model Ansej.Sidjeme.Domain.Entities.ContactUs
+@using System.Globalization
+@{
+    ViewData["Title"] = "معالجة الرسالة";
+}
+
+
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+       
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+    .section-title2 {
+        font-size: 1.8rem;
+        color: var(--meciy-base);
+        margin-top: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        position: relative;
+    }
+
+        .section-title2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--meciy-primary);
+            border-radius: 2px;
+        }
+
+        /* Page Title */
+        .page-title-section {
+            background: var(--meciy-white);
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--meciy-bdr-color);
+        }
+
+        .page-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--meciy-base);
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--meciy-base), var(--meciy-primary));
+            border-radius: 2px;
+        }
+
+        /* Statistics Cards */
+        .stats-section {
+            padding: 2rem 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: var(--meciy-white);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-right: 5px solid var(--meciy-base);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 80px;
+            height: 80px;
+            background: var(--meciy-primary);
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+
+        .stat-card.total {
+            border-right-color: var(--meciy-base);
+        }
+
+        .stat-card.unread {
+            border-right-color: var(--meciy-extra);
+        }
+
+        .stat-card.read {
+            border-right-color: var(--meciy-warning);
+        }
+
+        .stat-card.treated {
+            border-right-color: var(--meciy-success);
+        }
+
+        .stat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stat-card.total .stat-icon {
+            color: var(--meciy-base);
+        }
+
+        .stat-card.unread .stat-icon {
+            color: var(--meciy-extra);
+        }
+
+        .stat-card.read .stat-icon {
+            color: var(--meciy-warning);
+        }
+
+        .stat-card.treated .stat-icon {
+            color: var(--meciy-success);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--meciy-base);
+            display: block;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--meciy-gray);
+            font-weight: 500;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Messages Section */
+        .messages-section {
+            padding: 2rem 0;
+        }
+
+        .message-container {
+            background: var(--meciy-white);
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid var(--meciy-bdr-color);
+        }
+
+        /* Message Info Card */
+        .message-info-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 2rem;
+            border-bottom: 1px solid var(--meciy-bdr-color);
+        }
+
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .message-id {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--meciy-base);
+        }
+
+        .status-badges {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .status-badge {
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .badge-unread {
+            background: rgba(215, 13, 56, 0.1);
+            color: var(--meciy-extra);
+            border: 1px solid var(--meciy-extra);
+        }
+
+        .badge-read {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--meciy-warning);
+            border: 1px solid var(--meciy-warning);
+        }
+
+        .badge-treated {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--meciy-success);
+            border: 1px solid var(--meciy-success);
+        }
+
+        .sender-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .info-group {
+            background: var(--meciy-white);
+            padding: 1rem;
+            border-radius: 10px;
+            border-right: 3px solid var(--meciy-primary);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-icon {
+            color: var(--meciy-base);
+            font-size: 1.1rem;
+            width: 20px;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: var(--meciy-base);
+            min-width: 80px;
+        }
+
+        .info-value {
+            color: #2d3748;
+            font-weight: 500;
+        }
+
+        /* Message Content */
+        .message-content-card {
+            padding: 2rem;
+            background: var(--meciy-white);
+            border-bottom: 1px solid var(--meciy-bdr-color);
+        }
+
+        .message-subject {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--meciy-base);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--meciy-primary);
+            display: inline-block;
+        }
+
+        .message-text {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-right: 4px solid var(--meciy-primary);
+            color: #2d3748;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* Admin Treatment Card */
+        .admin-treatment-card {
+            background: linear-gradient(135deg, var(--meciy-base) 0%, rgba(25, 119, 107, 0.95) 100%);
+            padding: 2rem;
+            color: var(--meciy-white);
+        }
+
+        .admin-card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        color: var(--meciy-white);
+        }
+
+        .admin-card-title i {
+            color: var(--meciy-white);
+        }
+
+        .treatment-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: var(--meciy-white);
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            padding: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #2d3748;
+            font-family: var(--meciy-font-arabic);
+            resize: vertical;
+            transition: all 0.3s ease;
+        }
+
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--meciy-primary);
+            background: var(--meciy-white);
+        }
+
+        .form-textarea::placeholder {
+            color: #6b7280;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: end;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: var(--meciy-font-arabic);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .btn-read {
+            background: var(--meciy-warning);
+            color: var(--meciy-white);
+        }
+
+        .btn-read:hover {
+            background: #d97706;
+            transform: translateY(-2px);
+        }
+
+        .btn-treat {
+            background: var(--meciy-success);
+            color: var(--meciy-white);
+        }
+
+        .btn-treat:hover {
+            background: #059669;
+            transform: translateY(-2px);
+        }
+
+        .btn-save {
+            background: var(--meciy-primary);
+            color: var(--meciy-white);
+        }
+
+        .btn-save:hover {
+            background: #e09770;
+            transform: translateY(-2px);
+        }
+
+        /* Readonly Treatment Display */
+        .readonly-treatment {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .readonly-label {
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: var(--meciy-white);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .readonly-content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            border-radius: 8px;
+            color: #2d3748;
+            line-height: 1.7;
+        }
+
+        .treatment-date {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 0.5rem;
+        }
+
+        /* Success Message */
+        .success-message {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--meciy-success);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-right: 3px solid var(--meciy-success);
+            display: none;
+        }
+
+        /* Pagination */
+        .pagination-section {
+            padding: 2rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pagination {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .pagination-btn {
+            padding: 0.8rem 1.2rem;
+            border: 1px solid #e2e8f0;
+            background: var(--meciy-white);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: var(--meciy-font-arabic);
+            font-weight: 500;
+        }
+
+        .pagination-btn:hover {
+            background: var(--meciy-base);
+            color: var(--meciy-white);
+            transform: translateY(-2px);
+        }
+
+        .pagination-btn.active {
+            background: var(--meciy-base);
+            color: var(--meciy-white);
+        }
+
+      
+        /* Loading State */
+        .loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .spinner {
+            animation: spin 1s linear infinite;
+        }
+
+       
+    </style>
+
+<!--Page Header Start-->
+<section class="page-header">
+    <div class="page-header-bg" style="background-image: url(/assets/images/backgrounds/page-header-bg.png)">
+    </div>
+    <div class="container">
+        <div class="page-header__inner">
+            <h2>@ViewData["Title"]</h2>
+            <ul class="thm-breadcrumb list-unstyled">
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li><span>/</span></li>
+                <li> @ViewData["Title"]</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Page Title -->
+<div class="title-section">
+    <div class="container">
+        <h2 class="section-title2">معالجة رسائل الاتصال</h2>
+    </div>
+</div>
+
+
+<!-- Messages Section -->
+<div class="messages-section">
+    <div class="container">
+        <!-- Message 1 - Unread -->
+        <div class="message-container">
+            <!-- Message Info Card -->
+            <div class="message-info-card">
+                <div class="message-header">
+                    <div class="message-id">
+                        <i class="fas fa-hashtag"></i>
+                        رسالة رقم: @Model.Id
+                    </div>
+                   
+
+
+
+
+                    <div class="status-badges">
+                       
+                       @if (Model.IsTraited)
+                        {
+                            <span class="status-badge badge-treated">تمت المعالجة</span>
+                        }
+                        else
+                        {
+                            <span class="status-badge badge-unread">في انتظار المعالجة</span>
+                        }
+                    </div>
+                </div>
+
+                <div class="sender-info">
+                    <div class="info-group">
+                        <div class="info-item">
+                            <i class="fas fa-user info-icon"></i>
+                            <span class="info-label">الاسم:</span>
+                            <span class="info-value">@Model.FullName</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope info-icon"></i>
+                            <span class="info-label">البريد:</span>
+                            <span class="info-value">@Model.Email</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone info-icon"></i>
+                            <span class="info-label">الهاتف:</span>
+                            <span class="info-value">@Model.Phone</span>
+                        </div>
+                    </div>
+
+                    <div class="info-group">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt info-icon"></i>
+                            <span class="info-label">الولاية:</span>
+                            <span class="info-value">@Model.Wilaya.DesignationAr</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar info-icon"></i>
+                            <span class="info-label">التاريخ:</span>
+                            <span class="info-value">@Model.CreatedAt</span>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message Content Card -->
+            <div class="message-content-card">
+                <div class="message-subject">
+                    <i class="fas fa-comment-alt"></i>
+                    @Model.Subject
+                </div>
+                <div class="message-text">
+                    @Model.Message
+                </div>
+            </div>
+
+            <!-- Admin Treatment Card -->
+            <div class="admin-treatment-card">
+                <h3 class="admin-card-title">
+                    <i class="fas fa-user-shield"></i>
+                    قسم المعالجة الإدارية
+                </h3>
+
+             
+
+                <form asp-action="MessageTraitement" asp-controller="ContactUs" class="treatment-form" id="treatmentForm1">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="hidden" asp-for="IsTraited" value="true" />
+                    <input type="hidden" asp-for="CreatedAt"  />
+                    <input type="hidden" asp-for="TraitedAt" value="@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture)" />
+                    <input type="hidden" asp-for="IsRead" value="true" />
+                    <input type="hidden" asp-for="FullName"  />
+                    <input type="hidden" asp-for="Email"  />
+                    <input type="hidden" asp-for="Phone" />
+                    <input type="hidden" asp-for="Subject"  />
+                    <input type="hidden" asp-for="Message" />
+                    <input type="hidden" asp-for="IpAddress"  />
+                    <input type="hidden" asp-for="WilayaId" />
+                    <input type="hidden" asp-for="UserAgent"  />
+
+
+
+                    
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-edit"></i>
+                            الملاحظات والرد على الرسالة
+                        </label>
+                        <textarea asp-for="Observation" class="form-textarea"
+                                  placeholder="اكتب ملاحظاتك أو ردك على هذه الرسالة هنا..."
+                                  rows="5" required></textarea>
+                    </div>
+
+                    <div class="action-buttons">
+                       
+                        <button type="submit" class="btn btn-save" >
+                            <i class="fas fa-save"></i>
+                            حفظ الملاحظات
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Ansej.Sidjeme.Identity
+
+@inject UserService Userservice
+
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        var user = await Userservice.GetUserEagerLoadedAsync(User);
+        var str = await Userservice.GetStructureFromUserAsync(user.Id);
+
+        <li class="dropdown">
+           <a href="#"><span style="color:coral"> Hello @User.Identity.Name!</span> <i class="bi bi-chevron-down"></i></a>
+           <ul>
+               <li><a asp-area="Identity" asp-page="/Account/Manage/Index"> <i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+               <li> <a href="#"><i class="lnr lnr-users"></i> @str.Designation - @str.CodeStructure </a> </li>
+
+               <li> <a href="#"><i class="lnr lnr-heart"></i> @str.Niveau.Designation</a> </li>
+               <li>
+                   <form class="text-center" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                        <button type="submit" class="info-button">logout</button>
+
+                   </form>
+               </li>
+           </ul>
+        </li>
+    }
+    else
+    {
+        <li><a class="getstarted scrollto" id="login" asp-area="Identity" asp-page="/Account/Login">CP Connect</a></li>
+
+    }
+</ul>

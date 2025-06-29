@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ansej.Business.Core\Ansej.Business.Core.csproj" />
+    <ProjectReference Include="..\Ansej.Data.Abstractions\Ansej.Data.Abstractions.csproj" />
+    <ProjectReference Include="..\Ansej.Sidjeme.Business\Ansej.Sidjeme.Business.csproj" />
+    <ProjectReference Include="..\Ansej.Sidjeme.Data\Ansej.Sidjeme.Data.csproj" />
+    <ProjectReference Include="..\Ansej.Sidjeme.Domain\Ansej.Sidjeme.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

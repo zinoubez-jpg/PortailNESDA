@@ -1,0 +1,329 @@
+﻿@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["Avantage"];
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+
+    .advantages {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+        .advantages .display-6 {
+            line-height: 1.2;
+        }
+
+            .advantages .display-6 span {
+                position: relative;
+                color: var(--accent-color);
+            }
+
+                .advantages .display-6 span:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+                    left: 0;
+                    bottom: 5px;
+                    z-index: -1;
+                }
+
+        .advantages .lead {
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            font-size: 1.125rem;
+            text-align: justify;
+        }
+
+        .advantages .advantage-item {
+            background-color: var(--surface-color);
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            z-index: 1;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+            .advantages .advantage-item:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+                transition: height 0.5s ease;
+                z-index: -1;
+            }
+
+            .advantages .advantage-item:hover {
+                transform: translateY(-5px);
+            }
+
+                .advantages .advantage-item:hover:before {
+                    height: 100%;
+                }
+
+        .advantages .advantage-header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .advantages .advantage-header h3 {
+                margin: 0;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--heading-color);
+                flex: 1;
+            }
+
+            .advantages .advantage-header .advantage-icon {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+                border-radius: 50%;
+                margin-left: 1rem;
+                transition: all 0.3s ease;
+                flex-shrink: 0;
+            }
+
+                .advantages .advantage-header .advantage-icon i {
+                    font-size: 1.25rem;
+                    color: var(--accent-color);
+                    transition: all 0.3s ease;
+                }
+
+        .advantages .advantage-item:hover .advantage-header .advantage-icon {
+            background-color: var(--accent-color);
+        }
+
+            .advantages .advantage-item:hover .advantage-header .advantage-icon i {
+                color: var(--contrast-color);
+            }
+
+        .advantages .advantage-content {
+            padding: 0 2rem 2rem 2rem;
+        }
+
+            .advantages .advantage-content p {
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                text-align: justify;
+                line-height: 1.6;
+                margin-bottom: 1rem;
+            }
+
+            .advantages .advantage-content ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .advantages .advantage-content li {
+                position: relative;
+                padding: 0.5rem 0 0.5rem 2rem;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                line-height: 1.6;
+            }
+
+                .advantages .advantage-content li:before {
+                    content: "\f00c";
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    position: absolute;
+                    right: 0;
+                    color: var(--accent-color);
+                    font-size: 0.9rem;
+                }
+
+        .advantages .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            position: relative;
+        }
+
+            .advantages .warning-box:before {
+                content: "\f071";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                position: absolute;
+                top: 1.5rem;
+                right: 1.5rem;
+                color: #856404;
+                font-size: 1.25rem;
+            }
+
+            .advantages .warning-box p {
+                margin: 0;
+                padding-right: 3rem;
+                color: #856404;
+                font-weight: 600;
+            }
+
+        .advantages .stats-row {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .advantages .stat-box {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--surface-color);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            min-width: 110px;
+            border-bottom: 3px solid var(--accent-color);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+            .advantages .stat-box:hover {
+                transform: translateY(-5px);
+            }
+
+            .advantages .stat-box .stat-number {
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 1;
+                color: var(--heading-color);
+            }
+
+            .advantages .stat-box .stat-label {
+                font-size: 0.875rem;
+                color: color-mix(in srgb, var(--default-color), transparent 30%);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 5px;
+            }
+
+    @@media (max-width: 768px) {
+        .advantages .advantage-header {
+            padding: 1rem 1.5rem;
+        }
+
+        .advantages .advantage-content {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+        }
+
+        .advantages .advantage-header h3 {
+            font-size: 1.25rem;
+        }
+    }
+</style>
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+<section id="campus-facilities" class="campus-facilities section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Introduction -->
+        <div class="intro-row">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="intro-content">
+                        <h2 class="fw-bold">
+                            <span>المزايا</span> الضريبية
+
+                        </h2>
+                        <p class="lead">
+                            يستفيد صاحب المشروع من امتيازات ضريبية خلال مرحلتي إنشاء المشروع وتوسيع طاقته الإنتاجية، مما يساهم في تخفيف الأعباء المالية وتشجيع الاستثمار في المشاريع الاقتصادية المختلفة.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="intro-image-container">
+                        <div class="intro-image main-image">
+                            <img src="~/NesdaTMP/assets/img/NesdaImg/aventage.png" alt="call center" class="img-fluid rounded">
+                        </div>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+<section class="advantages">
+    <div class="container">
+   
+        <!-- Advantages Items -->
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+
+                <!-- Stage 1: Implementation Phase -->
+                <div class="advantage-item">
+                    <div class="advantage-header">
+                        <h3>المرحلة الأولى: مرحلة الإنجاز</h3>
+                        <div class="advantage-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="advantage-content">
+                        <ul>
+                            <li>الاعفاء من حقوق نقل الملكية بمقابل مالي للإكتسابات العقارية الخاصة في اطار إنشاء نشاط صناعي</li>
+                            <li>الاعفاء من الرسم على القيمة المضافة لمقتنيات التجهيزات والخدمات التي تدخل مباشرة في انجاز الاستثمار الخاص بمرحلتي الانشاء والتوسيع بالنسبة للنشاطات الخاضعة للنظام الضريبي الحقيقي (لا تستفيد السيارات السياحية من هذا التدبير إلا اذا كانت تشكل الأداة الرئيسية للنشاط)</li>
+                            <li>تطبيق نسبة مخفضة بـ 5% تخص الحقوق الجمركية للتجهيزات المستوردة والداخلة مباشرة في انجاز الاستثمار</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stage 2: Exploitation Phase -->
+                <div class="advantage-item">
+                    <div class="advantage-header">
+                        <h3>المرحلة الثانية: مرحلة الاستغلال</h3>
+                        <div class="advantage-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="advantage-content">
+                        <ul>
+                            <li>الاعفاء من الرسم العقاري على البناءات والبناءات الاضافية لمدة 03 سنوات، 06 سنوات أو 10 سنوات حسب موقع المشروع، ابتداءا من تاريخ اتمامها</li>
+                            <li>الاعفاء من الضريبة الجزافية الوحيدة أو حسب الحالة (الضريبة على الدخل الإجمالي او الضريبة على أرباح الشركات) لمدة 03 سنوات، 06 سنوات أو 10 سنوات، حسب موقع المشروع ابتداءا من تاريخ الاستغلال</li>
+                            <li>عند انتهاء فترة الاعفاء المذكورة في المطة السابقة، يمكن تمديدها لسنتين (02) عندما يتعهد المستثمر بتوظيف ثلاثة (03) عمال على الأقل لمدة غير محددة</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Warning Box -->
+                <div class="warning-box">
+                    <p>عدم احترام التعهد الخاص بخلق مناصب الشغل يؤدي الى سحب الامتيازات الممنوحة والمطالبة بالحقوق والرسوم الواجب دفعها</p>
+                </div>
+
+            </div>
+        </div>
+
+      
+    </div>
+</section>

@@ -1,0 +1,426 @@
+﻿@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["InscriptionsCNRC"];
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+    :root {
+        --default-font: "Noto Kufi Arabic", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        --heading-font: "Noto Kufi Arabic", sans-serif;
+        --nav-font: "Noto Kufi Arabic", sans-serif;
+    }
+
+    :root {
+        --background-color: #f1f5f4;
+        --default-color: #212529;
+        --heading-color: #2d465e;
+        --accent-color: #41c1ba;
+        --surface-color: #ffffff;
+        --contrast-color: #ffffff;
+    }
+
+    body {
+        font-family: var(--default-font);
+        background-color: var(--background-color);
+        color: var(--default-color);
+        direction: rtl;
+    }
+
+    .cnrc-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+        .cnrc-section .display-6 {
+            line-height: 1.2;
+        }
+
+            .cnrc-section .display-6 span {
+                position: relative;
+                color: var(--accent-color);
+            }
+
+                .cnrc-section .display-6 span:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+                    left: 0;
+                    bottom: 5px;
+                    z-index: -1;
+                }
+
+        .cnrc-section .lead {
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            font-size: 1.125rem;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+    .info-card {
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        border-bottom: 3px solid var(--accent-color);
+        padding: 2rem;
+    }
+
+        .info-card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+            transition: height 0.5s ease;
+            z-index: -1;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+            .info-card:hover:before {
+                height: 100%;
+            }
+
+        .info-card h3 {
+            color: var(--heading-color);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .info-card p {
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+    .register-link {
+        display: inline-flex;
+        align-items: center;
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        margin-top: 1rem;
+    }
+
+        .register-link:hover {
+            color: var(--contrast-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(65, 193, 186, 0.3);
+        }
+
+        .register-link i {
+            margin-left: 0.5rem;
+        }
+
+    .faq-item {
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        margin-bottom: 1.5rem;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        border-bottom: 3px solid var(--accent-color);
+    }
+
+        .faq-item:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+            transition: height 0.5s ease;
+            z-index: -1;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-5px);
+        }
+
+            .faq-item:hover:before {
+                height: 100%;
+            }
+
+    .faq-question {
+        padding: 1.5rem 2rem;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: none;
+        border: none;
+        width: 100%;
+        text-align: right;
+        transition: all 0.3s ease;
+    }
+
+        .faq-question h5 {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            flex: 1;
+        }
+
+        .faq-question .faq-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+            border-radius: 50%;
+            margin-left: 1rem;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+            .faq-question .faq-icon i {
+                font-size: 1rem;
+                color: var(--accent-color);
+                transition: all 0.3s ease;
+            }
+
+    .faq-item:hover .faq-question .faq-icon {
+        background-color: var(--accent-color);
+    }
+
+        .faq-item:hover .faq-question .faq-icon i {
+            color: var(--contrast-color);
+        }
+
+    .faq-answer {
+        padding: 0 2rem 1.5rem 2rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        opacity: 0;
+    }
+
+        .faq-answer p {
+            margin: 0;
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+    .faq-item.active .faq-answer {
+        max-height: 300px;
+        opacity: 1;
+        padding-top: 0;
+    }
+
+    .faq-item.active .faq-question .faq-icon i {
+        transform: rotate(180deg);
+    }
+
+    .section-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+
+    .partners-list {
+        list-style: none;
+        padding: 0;
+        margin: 1.5rem 0;
+    }
+
+        .partners-list li {
+            padding: 0.5rem 0;
+            padding-right: 2rem;
+            position: relative;
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+        }
+
+            .partners-list li:before {
+                content: "▪";
+                position: absolute;
+                right: 0;
+                color: var(--accent-color);
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+    @@media (max-width: 768px) {
+        .info-card {
+            padding: 1.5rem;
+        }
+
+        .faq-question {
+            padding: 1rem 1.5rem;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1rem 1.5rem;
+        }
+
+        .faq-question h5 {
+            font-size: 1.1rem;
+        }
+    }
+</style>
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+<section id="campus-facilities" class="campus-facilities section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Introduction -->
+        <div class="intro-row">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="intro-content">
+                        <h2 class="fw-bold">
+                            التسجيل في <span>المركز الوطني للسجل التجاري</span>
+
+
+                        </h2>
+                        <p class="lead">
+                            في إطار تدابير القانون رقم 04-08 المؤرخ في 27 جمادى الثانية عام 1425 الموافق 14 غشت سنة 2004، المعدل و المتمم و كذا المرسوم التنفيذي رقم 23-169 مؤرخ في 24 أفريل سنة 2023، يحدد كيفيات تسيير و سير البوابة الالكترونية المخصصة لانشاء المؤسسات و كذا كيفيات التسجيل و التحويل و استلام الوثائق الالكترونية و منح رقم التعريف المشترك.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="intro-image-container">
+                        <div class="intro-image main-image">
+                            <img src="~/NesdaTMP/assets/img/NesdaImg/cnrc.jpeg" alt="cnrcnesda " class="img-fluid rounded">
+                        </div>
+                    
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>
+<section class="cnrc-section">
+    <div class="container">
+      
+
+        <!-- Main Information -->
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+
+
+                <!-- Electronic Portal Information -->
+                <div class="info-card">
+                    <h3><i class="fas fa-globe" style="color: var(--accent-color); margin-left: 1rem;"></i>البوابة الإلكترونية لإنشاء المؤسسات</h3>
+                    <p>
+                        يوفر المركز الوطني للسجل التجاري بوابة الكترونية خاصة للإجراءات المتعلقة بإنشاء المؤسسات، وذلك بالتنسيق مع المصالح ذات الصلة ولا سيما:
+                    </p>
+                    <ul class="partners-list">
+                        <li>المديرية العامة للضرائب</li>
+                        <li>الصندوق الوطني للضمان الخاص بغير الأجراء</li>
+                        <li>الصندوق الوطني للضمان الإجتماعي للعمال الأجراء</li>
+                        <li>الديوان الوطني للإحصائيات</li>
+                    </ul>
+                </div>
+
+                <!-- Portal Services -->
+                <div class="info-card">
+                    <h3><i class="fas fa-cogs" style="color: var(--accent-color); margin-left: 1rem;"></i>خدمات البوابة</h3>
+                    <p>
+                        حيث تقدم البوابة الالكترونية مختلف المعلومات والإجراءات المتعلقة بإنشاء مؤسسة، وفق التشريع المعمول به، في مجال السجل التجاري، الضرائب، الضمان الاجتماعي والاحصاء الاقتصادي.
+                    </p>
+                    <p>
+                        كما يشكل تسجيل المؤسسة عن طريق البوابة الإلكترونية لإنشاء المؤسسات التسجيل الوحيد بعد المصادقة عليه من طرف المركز الوطني للسجل التجاري و تأكيده من طرف المصالح المختصة.
+                    </p>
+                </div>
+
+                <!-- Registration Link -->
+                <div class="info-card">
+                    <h3><i class="fas fa-link" style="color: var(--accent-color); margin-left: 1rem;"></i>الوصول إلى البوابة الإلكترونية</h3>
+                    <p>
+                        للولوج الى البوابة الإلكترونية لإنشاء المؤسسات الرابط التالي:
+                    </p>
+                    <a href="https://sidjilcom-entreprise.cnrc.dz/ar/acceuil2" target="_blank" class="register-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        رابط التسجيل: sidjilcom-entreprise.cnrc.dz/ar/acceuil2
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+       
+    </div>
+</section>
+
+<script>
+    function toggleFaq(element) {
+        // Close all other FAQ items
+        const allFaqItems = document.querySelectorAll('.faq-item');
+        allFaqItems.forEach(item => {
+            if (item !== element) {
+                item.classList.remove('active');
+            }
+        });
+
+        // Toggle the clicked item
+        element.classList.toggle('active');
+    }
+
+    // Add hover effects for buttons
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.register-link, a[href*="sidjilcom-entreprise"]');
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = '0 8px 25px rgba(65, 193, 186, 0.3)';
+            });
+
+            button.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+    });
+</script>

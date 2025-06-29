@@ -1,0 +1,383 @@
+﻿@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["FCMG"];
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+
+
+    .guarantee-fund {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+        .guarantee-fund .display-6 {
+            line-height: 1.2;
+        }
+
+            .guarantee-fund .display-6 span {
+                position: relative;
+                color: var(--accent-color);
+            }
+
+                .guarantee-fund .display-6 span:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+                    left: 0;
+                    bottom: 5px;
+                    z-index: -1;
+                }
+
+        .guarantee-fund .lead {
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            font-size: 1.125rem;
+            text-align: justify;
+        }
+
+        .guarantee-fund .info-item {
+            background-color: var(--surface-color);
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            z-index: 1;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+            .guarantee-fund .info-item:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+                transition: height 0.5s ease;
+                z-index: -1;
+            }
+
+            .guarantee-fund .info-item:hover {
+                transform: translateY(-5px);
+            }
+
+                .guarantee-fund .info-item:hover:before {
+                    height: 100%;
+                }
+
+        .guarantee-fund .info-header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .guarantee-fund .info-header h5 {
+                margin: 0;
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: var(--heading-color);
+                flex: 1;
+            }
+
+            .guarantee-fund .info-header .info-icon {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+                border-radius: 50%;
+                margin-left: 1rem;
+                transition: all 0.3s ease;
+                flex-shrink: 0;
+            }
+
+                .guarantee-fund .info-header .info-icon i {
+                    font-size: 1rem;
+                    color: var(--accent-color);
+                    transition: all 0.3s ease;
+                }
+
+        .guarantee-fund .info-item:hover .info-header .info-icon {
+            background-color: var(--accent-color);
+        }
+
+            .guarantee-fund .info-item:hover .info-header .info-icon i {
+                color: var(--contrast-color);
+            }
+
+        .guarantee-fund .info-content {
+            padding: 0 2rem 1.5rem 2rem;
+        }
+
+            .guarantee-fund .info-content p {
+                margin: 0 0 1rem 0;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                text-align: justify;
+                line-height: 1.6;
+            }
+
+            .guarantee-fund .info-content ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .guarantee-fund .info-content li {
+                position: relative;
+                padding-right: 1.5rem;
+                margin-bottom: 0.75rem;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                line-height: 1.6;
+            }
+
+                .guarantee-fund .info-content li:before {
+                    content: "•";
+                    position: absolute;
+                    right: 0;
+                    color: var(--accent-color);
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
+
+        .guarantee-fund .stats-row {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .guarantee-fund .stat-box {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--surface-color);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            min-width: 110px;
+            border-bottom: 3px solid var(--accent-color);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+            .guarantee-fund .stat-box:hover {
+                transform: translateY(-5px);
+            }
+
+            .guarantee-fund .stat-box .stat-number {
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 1;
+                color: var(--heading-color);
+            }
+
+            .guarantee-fund .stat-box .stat-label {
+                font-size: 0.875rem;
+                color: color-mix(in srgb, var(--default-color), transparent 30%);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 5px;
+            }
+
+        .guarantee-fund .percentage-highlight {
+            background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+            color: var(--accent-color);
+            padding: 0.25rem 0.5rem;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+
+    @@media (max-width: 768px) {
+        .guarantee-fund .info-header {
+            padding: 1rem 1.5rem;
+        }
+
+        .guarantee-fund .info-content {
+            padding: 0 1.5rem 1rem 1.5rem;
+        }
+
+        .guarantee-fund .info-header h5 {
+            font-size: 1.1rem;
+        }
+    }
+</style>
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/Fonddegarantie2.png); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+<section id="campus-facilities" class="campus-facilities section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Introduction -->
+        <div class="intro-row">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="intro-content">
+                        <h2 class="fw-bold">
+                            صندوق <span>الضمان</span>
+
+                        </h2>
+                        <p class="lead">
+                            يسهر صندوق الكفالة المشترك لضمان أخطار القروض الممنوحة لحاملي المشاريع على تغطية المخاطر المرتبطة بالقروض البنكية الممنوحة لفائدة المؤسسات المصغرة الممولة في إطار جهاز الوكالة الوطنية لدعم وتنمية المقاولاتية، حيث يشكل الصندوق ضمانا مُكملا لفائدة البنوك، إلى جانب الضمانات المقدمة من المؤسسات المصغرة، مما يساهم في تعزيز ثقة البنوك في تمويل المشاريع المقاولاتية.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="intro-image-container">
+                        <div class="intro-image main-image">
+                            <img src="~/NesdaTMP/assets/img/NesdaImg/Fonddegarantie.png" alt="call center" class="img-fluid rounded">
+                        </div>
+                     
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>
+<section class="guarantee-fund">
+    <div class="container">
+
+
+    
+
+        <!-- Information Items -->
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+
+                <!-- مهام صندوق الضمان -->
+                <div class="info-item">
+                    <div class="info-header">
+                        <h5>مهام صندوق الضمان</h5>
+                        <div class="info-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="info-content">
+                        <p>يعتبر صندوق الضمان أداة لتقليل المخاطر المالية المرتبطة بتمويل المؤسسات المصغرة، حيث يوفر ضمانا إضافيا للبنوك، إلى جانب الضمانات المقدمة من طرف المقاولين أنفسهم، والتي تشمل:</p>
+                        <ul>
+                            <li>الرهن الحيازي للتجهيزات، لفائدة البنك في الدرجة الأولى، و الوكالة الوطنية لدعم وتنمية المقاولاتية في الدرجة الثانية</li>
+                            <li>الرهن الحيازي للعتاد المتنقل</li>
+                            <li>تأمين شامل لكافة تجهيزات المشروع ضد مختلف الأخطار</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- كيفية الاشتراك في صندوق الضمان -->
+                <div class="info-item">
+                    <div class="info-header">
+                        <h5>كيفية الاشتراك في صندوق الضمان</h5>
+                        <div class="info-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="info-content">
+                        <ul>
+                            <li>يتم انخراط المؤسسة المصغرة بعد الموافقة البنكية</li>
+                            <li>نسبة اشتراك المؤسسة المصغرة في الصندوق محددة بـ <span class="percentage-highlight">0.35%</span> سنويا، تحسب على أساس مبلغ وقيمة القرض البنكي، وتدفع كاملا مرة واحدة</li>
+                            <li>نسبة اشتراك البنوك في الصندوق محددة بـ <span class="percentage-highlight">1%</span> من الباقي من الدين سنويا</li>
+                            <li>
+                                في حالة تعثر الدفع (3 أقساط سداسية غير مدفوعة):
+                                <ul style="margin-top: 0.5rem;">
+                                    <li>يقوم الصندوق بزيارة ميدانية</li>
+                                    <li>يعوض البنك بنسبة <span class="percentage-highlight">70%</span> من المبلغ المتبقي</li>
+                                    <li>يتكفل بمتابعة المؤسسة المتعثرة</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- آلية عمل صندوق الضمان -->
+                <div class="info-item">
+                    <div class="info-header">
+                        <h5>آلية عمل صندوق الضمان</h5>
+                        <div class="info-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <div class="info-content">
+                        <p>يتدخل صندوق الكفالة المشتركة عند تسجيل تعثر في السداد، وفقا لسلسلة من الإجراءات المنظمة كما يلي:</p>
+                        <ul>
+                            <li>يتلقى الصندوق طلبا رسميا من البنك بعد التصريح بعدم دفع ثلاثة أقساط سداسية</li>
+                            <li>يقوم الصندوق بـزيارة ميدانية للتحقق من وضعية المؤسسة المصغرة ومدى عجزها عن السداد</li>
+                            <li>يتم تعويض البنك بنسبة <span class="percentage-highlight">70%</span> من الدين المتبقي (أصل + فوائد)</li>
+                            <li>بعد التعويض، يقوم البنك بتحويل حقوق الدين المتبقية لصالح الصندوق</li>
+                            <li>يتولى الصندوق مهام مرافقة ومتابعة المؤسسة المتعثرة بعد التعويض، من اجل بعث نشاطها وتمكينها من سداد التزاماتها المالية</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8 text-center">
+                <div class="value-card" style="background-color: var(--surface-color); border-radius: 15px; padding: 2rem; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);">
+                    <div class="card-icon" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background-color: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 50%; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-handshake" style="font-size: 1.75rem; color: var(--accent-color);"></i>
+                    </div>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700; color: var(--heading-color);">هل تحتاج إلى مزيد من المعلومات؟</h3>
+                    <p style="margin-bottom: 1.5rem; color: color-mix(in srgb, var(--default-color), transparent 20%);">تواصل معنا للحصول على تفاصيل أكثر حول صندوق الضمان وكيفية الاستفادة من خدماته</p>
+                    <a  id="Contact" asp-controller="Contactus" asp-action="Index" class="btn btn-lg" style="background-color: var(--accent-color); color: var(--contrast-color); padding: 0.75rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                        تواصل معنا الآن
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>// Add hover effects for buttons
+    document.addEventListener('DOMContentLoaded', function () {
+        const ctaButton = document.getElementById('Contact');
+            if (ctaButton) {
+                ctaButton.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 8px 25px rgba(65, 193, 186, 0.3)';
+                });
+
+                ctaButton.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            }
+
+            // Add hover effects for info items
+            const infoItems = document.querySelectorAll('.info-item');
+            infoItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+

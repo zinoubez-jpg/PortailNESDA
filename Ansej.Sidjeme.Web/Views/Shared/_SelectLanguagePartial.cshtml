@@ -1,0 +1,132 @@
+﻿@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Options
+
+@inject IViewLocalizer Localizer
+@inject IOptions<RequestLocalizationOptions> LocOptions
+
+<style>
+    /* Language Buttons Container */
+    .language-btn-group {
+        display: flex; /* Use flexbox for horizontal arrangement */
+        gap: 5px; /* Small space between buttons */
+        background-color: var(--meciy-white, #fff); /* White background */
+        border-radius: 8px; /* Rounded corners for the group */
+        padding: 6px; /* Padding around the buttons */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+        font-family: var(--meciy-font, 'Poppins', sans-serif);
+    }
+
+        /* Individual Language Button Style */
+        .language-btn-group button {
+            display: flex; /* Use flexbox for icon and text alignment */
+            align-items: center;
+            justify-content: center;
+            padding: 10px 15px;
+            border: 1px solid var(--meciy-bdr-color, #e6e6e6); /* Border from meciy.css */
+            border-radius: 5px; /* Rounded corners for individual buttons */
+            background-color: transparent; /* Transparent background by default */
+            color: var(--meciy-black, #333); /* Text color */
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out; /* Smooth transitions */
+            min-width: 60px; /* Ensure minimum width for smaller languages */
+        }
+
+            .language-btn-group button:hover {
+                border-color: var(--meciy-base, #19776b); /* Highlight border on hover */
+                color: var(--meciy-base, #19776b); /* Text color change on hover */
+                background-color: rgba(var(--meciy-base-rgb, 25, 119, 107), 0.05); /* Very light background on hover */
+            }
+
+            /* Active Language Button Style */
+            .language-btn-group button.active {
+                background-color: var(--meciy-base, #19776b); /* Solid background for active button */
+                color: var(--meciy-white, #fff); /* White text for active button */
+                border-color: var(--meciy-base, #19776b); /* Matching border for active button */
+                box-shadow: 0 2px 8px rgba(var(--meciy-base-rgb, 25, 119, 107), 0.3); /* Stronger shadow for active */
+            }
+
+            /* Icon within the button */
+            .language-btn-group button .lang-icon {
+                margin-right: 8px; /* Space between icon and text */
+                font-size: 18px; /* Icon size */
+                color: inherit; /* Inherit color from parent button */
+            }
+
+            .language-btn-group button.active .lang-icon {
+                color: var(--meciy-white, #fff); /* White icon for active button */
+            }
+
+        .language-btn-group form {
+            display: contents; /* Makes the form's children flow as if the form element wasn't there */
+        }
+
+        .language-btn-group .form-control[hidden] {
+            display: none !important;
+        }
+</style>
+
+@{
+    var requestCulture = Context.Features.Get<IRequestCultureFeature>();
+    var cultureItems = LocOptions.Value.SupportedUICultures
+        .Select(c => new SelectListItem { Value = c.Name, Text = c.DisplayName })
+        .ToList();
+    var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}";
+}
+
+<div title="@Localizer["Request culture provider:"] @requestCulture?.Provider?.GetType().Name" class="language-btn-group">
+    <form id="selectLanguageForm" asp-controller="Home"
+          asp-action="SetLanguage" asp-route-returnUrl="@returnUrl"
+          method="post" role="form">
+        <input type="hidden" name="culture" id="selectedCulture" value="@requestCulture.RequestCulture.UICulture.Name" />
+
+        @if (requestCulture.RequestCulture.UICulture.Name != "ar-DZ")
+        {
+            <button type="button" data-culture="ar-DZ">AR</button>
+        }
+        @if (requestCulture.RequestCulture.UICulture.Name != "fr")
+        {
+            <button type="button" data-culture="fr">FR</button>
+        }
+        @if (requestCulture.RequestCulture.UICulture.Name != "en")
+        {
+            <button type="button" data-culture="en">EN</button>
+        }
+    </form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const langButtons = document.querySelectorAll('.language-btn-group button');
+        const selectedCultureInput = document.getElementById('selectedCulture');
+        const selectLanguageForm = document.getElementById('selectLanguageForm');
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const newCulture = this.dataset.culture;
+
+                selectedCultureInput.value = newCulture;
+
+                // Optionnel : tu peux commenter cette partie si tu veux garder l'effet visuel
+                langButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    const icon = btn.querySelector('.lang-icon');
+                    if (icon) {
+                        icon.remove();
+                    }
+                });
+
+                this.classList.add('active');
+                const checkIcon = document.createElement('i');
+                checkIcon.classList.add('fas', 'fa-check', 'lang-icon');
+                this.prepend(checkIcon);
+
+                selectLanguageForm.submit();
+            });
+        });
+    });
+</script>

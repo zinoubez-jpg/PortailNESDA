@@ -1,0 +1,434 @@
+﻿@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["ACCOMPAGNEMENT"];
+}
+
+
+<style>
+
+
+
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+    .col-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 15px;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        padding: 0 15px;
+    }
+
+    @@media (max-width: 992px) {
+        .col-lg-6, .col-lg-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .accompaniment .intro-wrapper {
+        margin-bottom: 70px;
+    }
+
+        .accompaniment .intro-wrapper .intro-image {
+            position: relative;
+        }
+
+            .accompaniment .intro-wrapper .intro-image img {
+                border-radius: 15px;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                height: auto;
+            }
+
+            .accompaniment .intro-wrapper .intro-image .accent-shape {
+                position: absolute;
+                width: 120px;
+                height: 120px;
+                background-color: var(--accent-color);
+                border-radius: 20px;
+                bottom: -30px;
+                left: -30px;
+                z-index: -1;
+                opacity: 0.15;
+            }
+
+        .accompaniment .intro-wrapper .intro-content {
+            padding-left: 20px;
+        }
+
+            .accompaniment .intro-wrapper .intro-content .subtitle {
+                display: inline-block;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+                color: var(--accent-color);
+                padding: 8px 16px;
+                border-radius: 50px;
+                font-weight: 500;
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+
+            .accompaniment .intro-wrapper .intro-content h2 {
+                font-size: 36px;
+                margin-bottom: 20px;
+                font-weight: 700;
+                color: var(--heading-color);
+            }
+
+            .accompaniment .intro-wrapper .intro-content .intro-text {
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                font-size: 17px;
+                margin-bottom: 25px;
+                line-height: 1.7;
+            }
+
+            .accompaniment .intro-wrapper .intro-content .key-highlights .highlight-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+            }
+
+                .accompaniment .intro-wrapper .intro-content .key-highlights .highlight-item i {
+                    color: var(--accent-color);
+                    font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 0;
+                }
+
+                .accompaniment .intro-wrapper .intro-content .key-highlights .highlight-item span {
+                    font-weight: 500;
+                }
+
+    @@media (max-width: 992px) {
+        .accompaniment .intro-wrapper .intro-content {
+            padding-left: 0;
+            margin-top: 30px;
+        }
+
+            .accompaniment .intro-wrapper .intro-content h2 {
+                font-size: 30px;
+            }
+    }
+
+    .accompaniment .phases-content {
+        margin-bottom: 80px;
+    }
+
+        .accompaniment .phases-content .phase-item {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background-color: var(--surface-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+            .accompaniment .phases-content .phase-item:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            }
+
+            .accompaniment .phases-content .phase-item .phase-header {
+                padding: 25px 25px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+                .accompaniment .phases-content .phase-item .phase-header .phase-icon {
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 12px;
+                    font-size: 28px;
+                }
+
+                .accompaniment .phases-content .phase-item .phase-header .phase-type {
+                    font-size: 13px;
+                    font-weight: 600;
+                    padding: 6px 14px;
+                    border-radius: 50px;
+                }
+
+            .accompaniment .phases-content .phase-item .phase-body {
+                padding: 10px 25px 20px;
+                flex-grow: 1;
+            }
+
+                .accompaniment .phases-content .phase-item .phase-body h3 {
+                    font-size: 22px;
+                    margin-bottom: 12px;
+                    color: var(--heading-color);
+                }
+
+                .accompaniment .phases-content .phase-item .phase-body p {
+                    font-size: 15px;
+                    color: color-mix(in srgb, var(--default-color), transparent 20%);
+                    margin-bottom: 20px;
+                    line-height: 1.6;
+                }
+
+                .accompaniment .phases-content .phase-item .phase-body .phase-details {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                    .accompaniment .phases-content .phase-item .phase-body .phase-details li {
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        margin-bottom: 8px;
+                        color: color-mix(in srgb, var(--heading-color), transparent 20%);
+                    }
+
+                        .accompaniment .phases-content .phase-item .phase-body .phase-details li i {
+                            margin-left: 8px;
+                            margin-right: 0;
+                            font-size: 16px;
+                            min-width: 20px;
+                        }
+
+            .accompaniment .phases-content .phase-item.preparation .phase-header .phase-icon {
+                background-color: color-mix(in srgb, #4CAF50, transparent 88%);
+                color: #4CAF50;
+            }
+
+            .accompaniment .phases-content .phase-item.preparation .phase-header .phase-type {
+                background-color: color-mix(in srgb, #4CAF50, transparent 85%);
+                color: #4CAF50;
+            }
+
+            .accompaniment .phases-content .phase-item.post-creation .phase-header .phase-icon {
+                background-color: color-mix(in srgb, #2196F3, transparent 88%);
+                color: #2196F3;
+            }
+
+            .accompaniment .phases-content .phase-item.post-creation .phase-header .phase-type {
+                background-color: color-mix(in srgb, #2196F3, transparent 85%);
+                color: #2196F3;
+            }
+
+    .section-padding {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            font-size: 18px;
+            color: color-mix(in srgb, var(--default-color), transparent 30%);
+        }
+
+    @@media (max-width: 768px) {
+        .section-title h2 {
+            font-size: 28px;
+        }
+
+        .section-title p {
+            font-size: 16px;
+        }
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .service-card {
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        padding: 30px 25px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+    }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card .service-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
+            background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+            .service-card .service-icon i {
+                font-size: 32px;
+                color: var(--accent-color);
+            }
+
+        .service-card h3 {
+            font-size: 20px;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: color-mix(in srgb, var(--default-color), transparent 30%);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+
+    @@media (max-width: 768px) {
+        .hero-section h1 {
+            font-size: 36px;
+        }
+
+        .hero-section .hero-subtitle {
+            font-size: 18px;
+        }
+    }
+</style>
+<!-- Page Title -->
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+       
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+
+<div class="accompaniment">
+
+
+
+    <div class="container">
+        <!-- Section d'introduction -->
+        <section class="intro-wrapper">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="intro-image">
+                        <img src="~/NesdaTMP/assets/img/NesdaImg/acc2.jpg" alt="المرافقة والدعم">
+                        <div class="accent-shape"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="intro-content">
+                        <span class="subtitle">المرافقةالقبلية والبعدية</span>
+                        <h2>مرافقة شاملة لإنجاح مشروعك</h2>
+                        <p class="intro-text">
+                            الوكالة الوطنية لدعم وتنمية المقاولاتية ترافقكم في كل مراحل مشروعكم، من بزوغ الفكرة إلى استقرار المؤسسة. سواء كنتم تبحثون عن أفكار مشاريع، أو تسعون للحصول على تمويل، فنحن هنا لتقديم الدعم اللازم عبر مرافقة متخصصة وشاملة.
+                        </p>
+                        <div class="key-highlights">
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>مرافقة من الفكرة إلى التجسيد</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>دعم متخصص ومستمر</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>متابعة نمو واستدامة المشروع</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- مراحل المرافقة -->
+        <div class="section-title">
+            <h2>مراحل المرافقة الشاملة</h2>
+            <p>ندعمكم في كل خطوة من خطوات مشروعكم من خلال مرافقة متخصصة ومدروسة</p>
+        </div>
+
+        <section class="phases-content">
+            <div class="row">
+                <!-- المرافقة في مرحلة الإعداد والتأطير -->
+                <div class="col-lg-6">
+                    <div class="phase-item preparation">
+                        <div class="phase-header">
+                            <div class="phase-icon">
+                                <i class="bi bi-1-circle"></i>
+                            </div>
+                            <div class="phase-type">مرحلة الإعداد</div>
+                        </div>
+                        <div class="phase-body">
+                            <h3>المرافقة في مرحلة الإعداد والتأطير</h3>
+                            <p>نضع ضمن أولوياتنا مرافقة حاملي أفكار المشاريع قبل مرحلة الإنشاء، بهدف تحويل الطموحات إلى مؤسسات فعلية تقوم على أسس متينة.</p>
+                            <ul class="phase-details">
+                                <li> <i class="bi bi-check-circle-fill"></i>التحسيس بروح ريادة الأعمال</li>
+                                <li> <i class="bi bi-check-circle-fill"></i>الاستقبال والتوجيه المتخصص</li>
+                                <li> <i class="bi bi-check-circle-fill"></i>دورات تكوينية قصيرة</li>
+                                <li><i class="bi bi-check-circle-fill"></i>تعلم المحاسبة والتسويق</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- المرافقة بعد الإنشاء -->
+                <div class="col-lg-6">
+                    <div class="phase-item post-creation">
+                        <div class="phase-header">
+                            <div class="phase-icon">
+                                <i class="bi bi-2-circle"></i>
+                            </div>
+                            <div class="phase-type">ما بعد الإنشاء</div>
+                        </div>
+                        <div class="phase-body">
+                            <h3>المرافقة بعد الإنشاء</h3>
+                            <p>لا تتوقف مرافقة الوكالة بعد إنشاء المؤسسة، بل نواصل دعمنا لضمان استدامة المشروع وتوسعه.</p>
+                            <ul class="phase-details">
+                                <li><i class="bi bi-check-circle-fill"></i>زيارات ميدانية دورية</li>
+                                <li><i class="bi bi-check-circle-fill"></i>المساعدة في تجاوز الصعوبات</li>
+                                <li><i class="bi bi-check-circle-fill"></i>دعم التوسعة والتمويل الإضافي</li>
+                                <li><i class="bi bi-check-circle-fill"></i>تشجيع المبادرة والابتكار</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>

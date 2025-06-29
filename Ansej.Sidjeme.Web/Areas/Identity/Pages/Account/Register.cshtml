@@ -1,0 +1,90 @@
+﻿
+@page
+
+@model RegisterModel
+@{
+    ViewData["Title"] = "Nouveau Utilisateur";
+}
+
+
+<br />
+<!-- ======= Breadcrumbs ======= -->
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="arabic-text">@ViewData["Title"]</h2>
+            <ol>
+                <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                <li><a asp-controller="Administration" asp-action="ListUsers">Utilisateurs</a></li>
+                <li>@ViewData["Title"]</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<br />
+
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-4 offset-4 ">
+            <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <h4>Creer un nouveau utilisateur</h4>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    @*<label asp-for="Input.TypeUserId" class="control-label input__label"> Type Utilisateur</label>*@
+                    <select asp-for="Input.TypeUserId" asp-items="@ViewBag.TypeUserId as SelectList" class="custom-select input-style" required hidden>
+                    </select>
+                    <span asp-validation-for="Input.TypeUserId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Input.StructureId" class="control-label input__label"> Structure</label>
+                    <select asp-for="Input.StructureId" asp-items="@ViewBag.StructureId as SelectList" class="custom-select input-style" required>
+                        <option value="">Sélectionné </option>
+
+                    </select>
+                    <span asp-validation-for="Input.StructureId" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label asp-for="Input.Nom"></label>
+                    <input asp-for="Input.Nom" class="form-control" />
+                    <span asp-validation-for="Input.Nom" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.Prenom"></label>
+                    <input asp-for="Input.Prenom" class="form-control" />
+                    <span asp-validation-for="Input.Prenom" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.MatriculeERP"></label>
+                    <input asp-for="Input.MatriculeERP" class="form-control" />
+                    <span asp-validation-for="Input.MatriculeERP" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.Password"></label>
+                    <input asp-for="Input.Password" class="form-control" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.ConfirmPassword"></label>
+                    <input asp-for="Input.ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+                <hr />
+                <div class="text-center col-12 ">
+                    <button type="submit" class="info-button">Register</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

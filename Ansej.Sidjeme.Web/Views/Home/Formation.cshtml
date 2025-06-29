@@ -1,0 +1,285 @@
+﻿@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["FORMATION"];
+}
+
+<style>
+    .academics .programs-content {
+        margin-bottom: 80px;
+    }
+
+        .academics .programs-content .program-item {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background-color: var(--surface-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+            .academics .programs-content .program-item:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            }
+
+            .academics .programs-content .program-item .program-header {
+                padding: 25px 25px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+                .academics .programs-content .program-item .program-header .program-icon {
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 12px;
+                    font-size: 28px;
+                }
+
+                .academics .programs-content .program-item .program-header .program-type {
+                    font-size: 13px;
+                    font-weight: 600;
+                    padding: 6px 14px;
+                    border-radius: 50px;
+                }
+
+            .academics .programs-content .program-item .program-body {
+                padding: 10px 25px 20px;
+                flex-grow: 1;
+            }
+
+                .academics .programs-content .program-item .program-body h3 {
+                    font-size: 22px;
+                    margin-bottom: 12px;
+                    color: var(--heading-color);
+                }
+
+                .academics .programs-content .program-item .program-body p {
+                    font-size: 15px;
+                    color: color-mix(in srgb, var(--default-color), transparent 20%);
+                    margin-bottom: 20px;
+                    line-height: 1.6;
+                }
+
+                .academics .programs-content .program-item .program-body .program-details {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                    .academics .programs-content .program-item .program-body .program-details li {
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        margin-bottom: 8px;
+                        color: color-mix(in srgb, var(--heading-color), transparent 20%);
+                    }
+
+                        .academics .programs-content .program-item .program-body .program-details li i {
+                            margin-left: 8px;
+                            margin-right: 0;
+                            font-size: 16px;
+                            min-width: 20px;
+                        }
+
+            .academics .programs-content .program-item.ilo .program-header .program-icon {
+                background-color: color-mix(in srgb, #4CAF50, transparent 88%);
+                color: #4CAF50;
+            }
+
+            .academics .programs-content .program-item.ilo .program-header .program-type {
+                background-color: color-mix(in srgb, #4CAF50, transparent 85%);
+                color: #4CAF50;
+            }
+
+            .academics .programs-content .program-item.development .program-header .program-icon {
+                background-color: color-mix(in srgb, #2196F3, transparent 88%);
+                color: #2196F3;
+            }
+
+            .academics .programs-content .program-item.development .program-header .program-type {
+                background-color: color-mix(in srgb, #2196F3, transparent 85%);
+                color: #2196F3;
+            }
+
+            .academics .programs-content .program-item.thematic .program-header .program-icon {
+                background-color: color-mix(in srgb, #9C27B0, transparent 88%);
+                color: #9C27B0;
+            }
+
+            .academics .programs-content .program-item.thematic .program-header .program-type {
+                background-color: color-mix(in srgb, #9C27B0, transparent 85%);
+                color: #9C27B0;
+            }
+
+    .academics .stats-wrapper .stats-content {
+        padding-right: 30px;
+    }
+
+        .academics .stats-wrapper .stats-content .subtitle {
+            display: inline-block;
+            background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+            color: var(--accent-color);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .academics .stats-wrapper .stats-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: var(--heading-color);
+        }
+
+        .academics .stats-wrapper .stats-content p {
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+</style>
+
+<!-- Page Title -->
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/cdepg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+<!-- Academics Section -->
+<section id="academics" class="academics section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="intro-wrapper">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
+                    <div class="intro-image">
+                        <img src="~/NesdaTMP/assets/img/NesdaImg/CDE (1).jpg" alt="NesdaCDE" class="img-fluid rounded-lg shadow">
+                        <div class="accent-shape"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="intro-content">
+                        <span class="subtitle">برامج التكوين</span>
+                        <h2>الوكالة الوطنية لدعم وتنمية المقاولاتية</h2>
+                        <p class="intro-text">
+                            تولي الوكالة الوطنية لدعم وتنمية المقاولاتية أهمية بالغة لمرحلة التكوين باعتبارها حجر الأساس في مسار إنشاء وتطوير المؤسسات المصغرة. وتندرج هذه المرحلة ضمن مقاربة شاملة تهدف إلى تمكين حاملي المشاريع من اكتساب المعارف والمهارات اللازمة لتحويل أفكارهم إلى مشاريع واقعية ناجحة ومستدامة.
+                        </p>
+                        <div class="key-highlights">
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>برامج تكوينية متخصصة ومتكاملة</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>مدربين معتمدين من منظمة العمل الدولية</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>تحويل الأفكار إلى مشاريع ناجحة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- عنوان البرامج -->
+        <div class="section-title">
+            <h2>برامج تكوينية متخصصة ومتكاملة</h2>
+            <p>تعد برامج التكوين من الركائز الأساسية التي تعتمد عليها الوكالة الوطنية لدعم وتنمية المقاولاتية في مرافقة حاملي الأفكار والمشاريع</p>
+        </div>
+
+        <!-- البرامج التكوينية -->
+        <section class="programs-content">
+            <div class="row">
+                <!-- دورات منظمة العمل الدولية -->
+                <div class="col-lg-4">
+                    <div class="program-item ilo">
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="bi bi-globe"></i>
+                            </div>
+                            <div class="program-type">منظمة العمل الدولية</div>
+                        </div>
+                        <div class="program-body">
+                            <h3>دورات وفق برامج منظمة العمل الدولية</h3>
+                            <p>برامج تكوينية معتمدة من منظمة العمل الدولية تهدف إلى تطوير مهارات المقاولاتية وتسيير المؤسسات المصغرة</p>
+                            <ul class="program-details">
+                                <li><i class="bi bi-clock"></i>دورة "اوجد فكرة مشروعك" - 3 أيام</li>
+                                <li><i class="bi bi-clock"></i>دورة "ابدأ وحسن مشروعك" - 7 أيام</li>
+                                <li><i class="bi bi-calendar-check"></i>أكثر من 107 مدرب معتمد</li>
+                                <li><i class="bi bi-calendar-check"></i>متابعة ما بعد التدريب</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مراكز تطوير المقاولاتية -->
+                <div class="col-lg-4">
+                    <div class="program-item development">
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <div class="program-type">مراكز تطوير المقاولاتية</div>
+                        </div>
+                        <div class="program-body">
+                            <h3>مراكز تطوير المقاولاتية</h3>
+                            <p>دورات تكوينية بالشراكة مع مؤسسات التعليم العالي والتكوين المهني لتطوير المهارات الأساسية</p>
+                            <ul class="program-details">
+                                <li><i class="bi bi-clock"></i>مدة التكوين: 5 إلى 15 يوم</li>
+                                <li><i class="bi bi-calendar-check"></i>التخطيط الاستراتيجي</li>
+                                <li><i class="bi bi-calendar-check"></i>التسيير العملياتي</li>
+                                <li><i class="bi bi-calendar-check"></i>الجوانب القانونية</li>
+                                <li><i class="bi bi-calendar-check"></i>استراتيجيات النمو والابتكار</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الدورات الموضوعاتية -->
+                <div class="col-lg-4">
+                    <div class="program-item thematic">
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="bi bi-book"></i>
+                            </div>
+                            <div class="program-type">دورات متخصصة</div>
+                        </div>
+                        <div class="program-body">
+                            <h3>دورات تكوينية موضوعاتية</h3>
+                            <p>دورات متخصصة بالشراكة مع المصالح العمومية حول مواضيع محل اهتمام المؤسسات المصغرة</p>
+                            <ul class="program-details">
+                                <li><i class="bi bi-calendar-check"></i>الضرائب والمنازعات الجبائية</li>
+                                <li><i class="bi bi-calendar-check"></i>الضمان الاجتماعي</li>
+                                <li><i class="bi bi-calendar-check"></i>التأمين الفلاحي</li>
+                                <li><i class="bi bi-calendar-check"></i>بالشراكة مع المصالح العمومية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+</section><!-- /Academics Section -->

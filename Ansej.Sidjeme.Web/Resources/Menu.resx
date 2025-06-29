@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accompagnement" xml:space="preserve">
+    <value>Accompagnement</value>
+  </data>
+  <data name="Activité" xml:space="preserve">
+    <value>Activité</value>
+  </data>
+  <data name="Actualités" xml:space="preserve">
+    <value>Actualités</value>
+  </data>
+  <data name="Agence" xml:space="preserve">
+    <value>L'Agence</value>
+  </data>
+  <data name="Annonces" xml:space="preserve">
+    <value>Annonces</value>
+  </data>
+  <data name="Apropos" xml:space="preserve">
+    <value>Définition / À propos de l'agence</value>
+  </data>
+  <data name="Avantages" xml:space="preserve">
+    <value>Avantages</value>
+  </data>
+  <data name="Chiffres" xml:space="preserve">
+    <value>Chiffres clés</value>
+  </data>
+  <data name="Consultations" xml:space="preserve">
+    <value>Consultations</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="ContactDGAWAntennes" xml:space="preserve">
+    <value>Contact DG/Agences wilayas</value>
+  </data>
+  <data name="Coopérations" xml:space="preserve">
+    <value>Coopérations</value>
+  </data>
+  <data name="Dispositif" xml:space="preserve">
+    <value>Le Dispositif</value>
+  </data>
+  <data name="Doléances" xml:space="preserve">
+    <value>Doléances</value>
+  </data>
+  <data name="FCMG" xml:space="preserve">
+    <value>Fonds de Garantie</value>
+  </data>
+  <data name="Financement" xml:space="preserve">
+    <value>Financement</value>
+  </data>
+  <data name="Formation" xml:space="preserve">
+    <value>Formation</value>
+  </data>
+  <data name="InscriptionCNRC" xml:space="preserve">
+    <value>Inscription CNRC</value>
+  </data>
+  <data name="InscriptionDispositif" xml:space="preserve">
+    <value>Inscription Dispositif</value>
+  </data>
+  <data name="InscriptionportailMP" xml:space="preserve">
+    <value>Inscription portail MP</value>
+  </data>
+  <data name="InscriptionsCDE" xml:space="preserve">
+    <value>Inscriptions CDE</value>
+  </data>
+  <data name="Inscriptionsous-traitance" xml:space="preserve">
+    <value>Inscription sous-traitance</value>
+  </data>
+  <data name="Localisation" xml:space="preserve">
+    <value>Alger, Algèrie</value>
+  </data>
+  <data name="Missions" xml:space="preserve">
+    <value>Missions et Vision</value>
+  </data>
+  <data name="MotDG" xml:space="preserve">
+    <value>Mot du DG</value>
+  </data>
+  <data name="Médiathèque" xml:space="preserve">
+    <value>Médiathèque</value>
+  </data>
+  <data name="NesdaExtension" xml:space="preserve">
+    <value>Nesda Extension</value>
+  </data>
+  <data name="NesdaSous-Traitance" xml:space="preserve">
+    <value>Nesda Sous-Traitance</value>
+  </data>
+  <data name="Organigramme" xml:space="preserve">
+    <value>Organigramme</value>
+  </data>
+  <data name="Organisation" xml:space="preserve">
+    <value>Organisation</value>
+  </data>
+  <data name="Ouverture" xml:space="preserve">
+    <value>Dim-Jeu 8:00-16:30</value>
+  </data>
+  <data name="Partenariats" xml:space="preserve">
+    <value>Partenariats</value>
+  </data>
+  <data name="Politique" xml:space="preserve">
+    <value>Politique de Traitement des Données</value>
+  </data>
+  <data name="Principal" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="Programmes" xml:space="preserve">
+    <value>Programmes</value>
+  </data>
+  <data name="QuestionnaireQualité" xml:space="preserve">
+    <value>Questionnaire Qualité</value>
+  </data>
+  <data name="ServicesDigitaux" xml:space="preserve">
+    <value>Services Digitaux</value>
+  </data>
+  <data name="SuccessStories" xml:space="preserve">
+    <value>Success Stories</value>
+  </data>
+  <data name="Tel" xml:space="preserve">
+    <value>0770 033 033</value>
+  </data>
+  <data name="Textes" xml:space="preserve">
+    <value>Textes juridiques</value>
+  </data>
+</root>

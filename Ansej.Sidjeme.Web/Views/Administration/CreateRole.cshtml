@@ -1,0 +1,59 @@
+﻿@model CreateRoleViewModel
+
+@{
+    ViewBag.Title = "Create New Role";
+}
+
+<br />
+<!-- ======= Breadcrumbs ======= -->
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="arabic-text">@ViewData["Title"]</h2>
+            <ol>
+                <li><a asp-action="Index" asp-controller="Home"> @localizer["Home"]</a></li>
+                <li><a asp-controller="Administration" asp-action="ListRoles">@localizer["ListRoles"]</a></li>
+                <li>@ViewData["Title"]</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<br />
+
+
+
+<div class="container">
+    <partial name="_Message" />
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <form asp-action="CreateRole">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="form-group">
+                            <label asp-for="RoleName" class="control-label"></label>
+                            <input asp-for="RoleName" class="form-control" />
+                            <span asp-validation-for="RoleName" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="@localizer["Create"]" class="btn btn-primary" />
+                            <a asp-action="ListRoles" class="btn btn-outline-dark">@localizer["Return"]</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

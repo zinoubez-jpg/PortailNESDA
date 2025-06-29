@@ -1,0 +1,514 @@
+﻿@model Ansej.Domain.Core.PagedResult<Ansej.Sidjeme.Domain.Entities.Article>
+
+@{
+    ViewData["Title"] = "الأخبار والمستجدات";
+}
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<style>
+
+
+    .blog-two {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section-title-two {
+        margin-bottom: 3rem;
+    }
+
+    .section-title__tagline {
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+        color: var(--accent-color);
+        border-radius: 25px;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+
+        .section-title__tagline::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: var(--accent-color);
+            left: 0;
+            bottom: -5px;
+            border-radius: 2px;
+        }
+
+    .section-title__title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--heading-color);
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+
+        .section-title__title span {
+            position: relative;
+            color: var(--accent-color);
+        }
+
+            .section-title__title span:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 10px;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+                left: 0;
+                bottom: 5px;
+                z-index: -1;
+            }
+
+    .search-section {
+        background-color: var(--surface-color);
+        border-radius: 20px;
+        padding: 2.5rem;
+        margin-bottom: 3rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        position: relative;
+        overflow: hidden;
+        border-bottom: 4px solid var(--accent-color);
+    }
+
+        .search-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 0%, transparent 100%);
+            z-index: -1;
+        }
+
+    .search-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: var(--heading-color);
+        margin-bottom: 1.5rem;
+        text-align: center;
+        position: relative;
+    }
+
+        .search-title::after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+            border-radius: 2px;
+        }
+
+    .search-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .search-input-group {
+        position: relative;
+        display: flex;
+        background-color: var(--surface-color);
+        border-radius: 25px;
+        padding: 0.5rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        border: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+        transition: all 0.3s ease;
+    }
+
+        .search-input-group:focus-within {
+            border-color: var(--accent-color);
+            box-shadow: 0 8px 25px rgba(65, 193, 186, 0.2);
+            transform: translateY(-2px);
+        }
+
+    .search-input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+        background: transparent;
+        color: var(--default-color);
+        font-family: var(--default-font);
+    }
+
+        .search-input::placeholder {
+            color: color-mix(in srgb, var(--default-color), transparent 50%);
+        }
+
+    .search-button {
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: var(--default-font);
+    }
+
+        .search-button:hover {
+            background-color: color-mix(in srgb, var(--accent-color), black 10%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(65, 193, 186, 0.3);
+        }
+
+        .search-button::before {
+            content: "\f002";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+        }
+
+    .search-stats {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .search-stat {
+        text-align: center;
+        padding: 1rem;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+        border-radius: 15px;
+        min-width: 120px;
+        transition: transform 0.3s ease;
+    }
+
+        .search-stat:hover {
+            transform: translateY(-3px);
+        }
+
+    .search-stat-number {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--accent-color);
+        display: block;
+    }
+
+    .search-stat-label {
+        font-size: 0.875rem;
+        color: color-mix(in srgb, var(--default-color), transparent 30%);
+        margin-top: 0.25rem;
+    }
+
+    .search-features {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .search-feature {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.25rem;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+        border-radius: 20px;
+        font-size: 0.9rem;
+        color: var(--default-color);
+        transition: all 0.3s ease;
+    }
+
+        .search-feature:hover {
+            background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+            transform: translateY(-2px);
+        }
+
+        .search-feature i {
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+    @@media (max-width: 768px) {
+        .section-title__title {
+            font-size: 2rem;
+        }
+
+        .search-section {
+            padding: 1.5rem;
+        }
+
+        .search-input-group {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .search-button {
+            border-radius: 15px;
+            justify-content: center;
+        }
+
+        .search-stats {
+            gap: 1rem;
+        }
+
+        .search-features {
+            gap: 0.75rem;
+        }
+
+        .search-feature {
+            font-size: 0.8rem;
+            padding: 0.5rem 1rem;
+        }
+    }
+
+    @@media (max-width: 576px) {
+        .search-input-group {
+            padding: 0.25rem;
+        }
+
+        .search-input {
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+        }
+
+        .search-button {
+            padding: 0.75rem 1.5rem;
+        }
+    }
+
+
+    #pagination-2 ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 5px;
+    }
+
+        #pagination-2 ul li a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+            #pagination-2 ul li a:hover {
+                background-color: #f0f0f0;
+            }
+
+            #pagination-2 ul li a.active {
+                background-color: #41c1ba;
+                color: white;
+                border-color: #007bff;
+            }
+
+        #pagination-2 ul li.disabled a {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+</style>
+
+
+
+
+
+
+
+
+<!-- Page Title -->
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/newspg.jpg);">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+
+
+
+
+<section class="blog-two">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="section-title section-title-two text-center">
+            <span class="section-title__tagline">الأخبار</span>
+            <h2 class="section-title__title">آخر <span>التحديثات</span></h2>
+        </div>
+        <!-- Search Section -->
+        <div class="search-section">
+            <h2 class="search-title">البحث في المقالات والأخبار</h2>
+
+            <form class="search-form" asp-action="Paged" method="get">
+                <div class="search-input-group">
+                    <input type="text"
+                           name="search"
+                           class="search-input"
+                           placeholder="ابحث عن مقال أو خبر..."
+                           value="@ViewBag.search"
+                           autocomplete="off">
+                    <button class="search-button" type="submit">
+                        <span>بحث</span>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section id="news-posts" class="news-posts section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        @if (Model != null && Model.Items.Any())
+        {
+            <div class="row gy-4">
+                @foreach (var post in Model.Items)
+                {
+                    <div class="col-lg-4">
+                        <article>
+
+                            <div class="post-img position-relative">
+                                <img src="@post.ImageUrl" alt="" class="img-fluid" loading="lazy">
+                                <div class="post-content">
+                                    <p class="post-category">خلية الإتصال</p>
+                                    <h2 class="title">
+                                        <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">@post.Title</a>
+                                    </h2>
+                                    <div class="post-meta">
+                                        <time datetime="2025-01-01">@post.CreatedAt.ToString("dd MMM yyyy")</time>
+                                        <span class="px-2"></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div><!-- End post list item -->
+                }
+            </div>
+        }
+
+        else
+        {
+            <div class="no-articles">
+                <i class="bi bi-newspaper"></i>
+                <h3 class="empty-state-title">لا توجد مقالات متاحة حالياً</h3>
+                <p>سيتم نشر الأخبار والمستجدات قريباً</p>
+            </div>
+        }
+
+    </div>
+
+
+</section><!-- /News Posts Section -->
+<!-- Pagination 2 Section -->
+
+<section id="pagination-2" class="pagination-2 section">
+    <div class="container">
+        @{
+            int totalPages = (int)Math.Ceiling((double)Model.TotalCount / Model.PageSize);
+            bool previousEnabled = Model.Page > 1;
+            bool nextEnabled = Model.Page < totalPages;
+        }
+
+        <nav class="d-flex justify-content-center" aria-label="Page navigation">
+            <ul class="pagination-list">
+
+                @* Lien "Précédent" *@
+                <li class="@(previousEnabled ? "" : "disabled")">
+                    <a asp-action="Paged"
+                       asp-route-page="@(Model.Page - 1)"
+                       asp-route-search="@ViewBag.search"
+                       aria-label="Previous page">
+                        <i class="bi bi-arrow-right"></i>
+                        <span class="d-none d-sm-inline">السابق</span>
+                    </a>
+                </li>
+
+                @* Liste des pages *@
+                @for (int i = 1; i <= totalPages; i++)
+                {
+                    bool isActive = i == Model.Page;
+                    <li>
+                        <a class="@(isActive ? "active" : "")"
+                           asp-action="Paged"
+                           asp-route-page="@i"
+                           asp-route-search="@ViewBag.search">@i</a>
+                    </li>
+                }
+
+                @* Lien "Suivant" *@
+                <li class="@(nextEnabled ? "" : "disabled")">
+                    <a asp-action="Paged"
+                       asp-route-page="@(Model.Page + 1)"
+                       asp-route-search="@ViewBag.search"
+                       aria-label="Next page">
+                        <span class="d-none d-sm-inline">التالي</span>
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</section>
+
+
+
+@section Scripts {
+    <script>
+        // Animation au focus
+        document.querySelectorAll('.search-input').forEach(input => {
+            input.addEventListener('focus', function () {
+                this.parentElement.style.transform = 'scale(1.02)';
+            });
+
+            input.addEventListener('blur', function () {
+                this.parentElement.style.transform = 'scale(1)';
+            });
+        });
+
+        // Effet de typing pour le placeholder
+        const placeholders = [
+            "اكتب كلمة مفتاحية للبحث...",
+            "أدخل عنوان المقال هنا...",
+            "ابحث حسب الموضوع..."
+        ];
+
+        let currentPlaceholder = 0;
+        const mainInput = document.querySelector('.search-section .search-input');
+
+        if (mainInput) {
+            setInterval(() => {
+                currentPlaceholder = (currentPlaceholder + 1) % placeholders.length;
+                mainInput.placeholder = placeholders[currentPlaceholder];
+            }, 3000);
+        }
+    </script>
+}
+

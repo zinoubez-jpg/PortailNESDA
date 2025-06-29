@@ -1,0 +1,156 @@
+﻿
+@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["Mission"];
+}
+
+<style>
+    .custom-list {
+        list-style: none;
+        padding-right: 60px;
+        position: relative;
+    }
+
+        .custom-list li {
+            position: relative;
+            padding-right: 60px; /* Pour que le texte ne chevauche pas le rond */
+            margin-bottom: 10px;
+        }
+
+            .custom-list li::before {
+                content: "";
+                position: absolute;
+                right: -1px;
+                top: 5px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: var(--accent-color);
+            }
+</style>
+<!-- Page Title -->
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/nesdaTitle.jpg);">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+<!-- History Section -->
+<section id="history" class="history section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center g-5">
+            <div class="col-lg-8">
+                <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                    <h3>@ViewData["Title"]</h3>
+                    <br />
+                    <h2> @messageslocalizer["NesdaNomination"]</h2>
+                    <br />
+                    <p>
+                        تعتمد الوكالة الوطنية لدعم وتنمية المقاولاتية على توجيهات رئيس الجمهورية السيد عبد المجيد تبون الرامية الى رفع رهان الإنعاش الاقتصادي وبناء اقتصاد منتج ومتنوع يخلق القيمة وفرص عمل ذات جودة، في اطار تطوير نمــوذج اقتصــادي جديــد قائــم علــى تنويــع النمـو و اقتصـاد المعرفـة
+
+                    </p>
+                    <br />
+                    <p>
+                        تقوم التوجهات الاستراتيجية للوكالة حول مايلي:
+
+                    </p>
+
+                </div>
+                <div class="about-image" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="mission-vision" data-aos="fade-up" data-aos-delay="400">
+                        <div class="mission">
+                            <h3>المهمة</h3>
+                            <p>
+                                ترقية نظام بيئي للمقاولاتية يحفز على إنشاء، تمويل وتطوير المؤسسات المُصغّرة عالية الأداء، ذات صمود وتخلق قيمة مُضافة مستدامة للمواطنين وللوطن.
+                            </p>
+                        </div>
+
+                        <div class="vision">
+                            <h3>المبادئ</h3>
+                            <ul class="custom-list">
+                                <li>
+                                    الشمولية  
+                                </li>
+                                <li>
+                                      المصداقية  
+                                </li>
+                                <li>
+                                       الصمود 
+                                </li>
+                                <li>
+                                        الابتكار
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="about-image" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="~/Nesdatp/assets/images/team/Président.png" alt="AlgeriaPresident" class="img-fluid rounded">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="core-values" data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="text-center mb-4">المحاور الاستراتيجية</h3>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="value-card">
+                                <div class="value-icon">
+                                    <i class="bi bi-1-circle"></i>
+                                </div>
+                                <h4>تعزيز مرافقة حاملي المشاريع</h4>
+                                <p>
+                                    مواصلة وتعزيز مرافقة الشباب حاملي المشاريع وتطوير سبل الدعم، من حيث برامج التكوين المتخصصة وكذا تنويع صيغ التمويل وادراج حلول نوعية ومبتكرة.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="value-card">
+                                <div class="value-icon">
+                                    <i class="bi bi-2-circle"></i>
+                                </div>
+                                <h4>المساهمة في ترقية نظام بيئي للمقاولاتية</h4>
+                                <p>
+                                    تكثيف العمل المُشترك مع مختلف الفاعلين من هيئات ومؤسسات حكومية، مؤسسات عمومية وخاصة، شركاء اجتماعيين ومجتمع مدني، بهدف تطوير نظام بيئي للمقاولاتية والمؤسسات المصغرة مستقر ودائم؛ والذي من شأنه رفع قدرة المؤسسات المصغرة على النمو والصمود، وخاصة التنافسية.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="value-card">
+                                <div class="value-icon">
+                                    <i class="bi bi-3-circle"></i>
+                                </div>
+                                <h4>تعزيز قدرات الوكالة وتحسين تسييرها للمخاطر</h4>
+                                <p>
+                                    تطوير الوكالة ودعم قدراتها العملية من خلال مراجعة مخطط العمل وتقييم المشاريع، تحسين مهارات المستخدمين، رقمنة الخدمات وتعزيز الوسائل والمنشآت لتحسين ظروف العمل والاستقبال والتي ستنعكس على اداءها.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section><!-- /History Section -->

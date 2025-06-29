@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> NESDA </title>
+    <!-- Favicons -->
+    <link href="~/NesdaTMP/assets/img/favicon.png" rel="icon">
+    <link href="~/NesdaTMP/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/NesdaTMP/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/NesdaTMP/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/NesdaTMP/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/NesdaTMP/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="~/NesdaTMP/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    @inject IStringLocalizer<Menu> menuLocalizer
+
+    @using System.Globalization
+
+
+    @{
+        var culture = CultureInfo.CurrentCulture;
+        
+    }
+
+
+    @if (System.Threading.Thread.CurrentThread.CurrentCulture.Name == "ar-DZ")
+    {
+
+
+        <!-- Main CSS File -->
+        <link href="~/NesdaTMP/assets/css/mainRtl.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap" rel="stylesheet">
+
+
+    }
+    else
+    {
+        <!-- Main CSS File -->
+        <link href="~/NesdaTMP/assets/css/main.css" rel="stylesheet">
+
+    }
+
+    @RenderSection("head", false)
+
+
+</head>
+<body>
+
+
+    @await Component.InvokeAsync("Menu")
+
+
+    <main class="main">
+
+
+        @RenderSection("breadcrumb", false)
+        @RenderBody()
+
+
+    </main>
+
+    <footer id="footer" class="footer position-relative dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a asp-action="index" asp-controller="home" class="logo d-flex align-items-center">
+                        <img src="~/NesdaTMP/assets/img/NesdaImg/LogoNesda.png" />
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>شارع محمد ارزقي بن بوزيد، العناصر</p>
+                        <p>
+                            الجزائر العاصمة، الجزائر
+                        </p>
+                        <p class="mt-3"><strong>مركز الإتصالات:</strong> <span>033 033 0770</span></p>
+                        <p><strong>البريد الإلكتروني:</strong> <span>contact@nesda.dz</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://x.com/NesdaDg"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/Cc.nesda.dz"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/nesda_dz/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/nesda-%D8%A7%D9%84%D9%88%D9%83%D8%A7%D9%84%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D9%84%D8%AF%D8%B9%D9%85-%D9%88-%D8%AA%D9%86%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%D9%8A%D8%A9/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@@Nesda27/featured"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@@nesda.dz?_t=ZM-8xN1oP4AT38&_r=1"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>@menuLocalizer["Agence"]</h4>
+                        <ul>
+                            <li><a asp-controller="Home" asp-action="MotDG">@menuLocalizer["MotDG"]</a></li>
+                            <li><a asp-controller="Home" asp-action="Mission">@menuLocalizer["Missions"]</a></li>
+                            <li><a asp-controller="Home" asp-action="Organisation">@menuLocalizer["Organisation"]</a></li>
+                            <li><a asp-controller="Home" asp-action="Organigramme">@menuLocalizer["Organigramme"]</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>@menuLocalizer["Dispositif"]</h4>
+                        <ul>
+                            <li><a asp-controller="Home" asp-action="Formation">@menuLocalizer["Formation"]</a></li>
+                            <li><a asp-controller="Home" asp-action="Accompagnement">@menuLocalizer["Accompagnement"]</a></li>
+                            <li><a asp-controller="Home" asp-action="Financement">@menuLocalizer["Financement"]</a></li>
+                            <li><a asp-controller="Home" asp-action="Activite">@menuLocalizer["Activité"]</a></li>
+                            <li><a asp-controller="Home" asp-action="FCMG">@menuLocalizer["FCMG"]</a></li>
+                            <li><a asp-controller="Home" asp-action="Avantage">@menuLocalizer["Avantages"]</a></li>
+                            <li><a asp-controller="Home" asp-action="legislativeTexts">@menuLocalizer["Textes"]</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>@menuLocalizer["ServicesDigitaux"]</h4>
+                        <ul>
+                            <li><a asp-controller="Home" asp-action="RegistrationCDE">@menuLocalizer["InscriptionsCDE"]</a></li>
+                            <li><a asp-controller="Home" asp-action="InscriptionDispositif">@menuLocalizer["InscriptionDispositif"]</a></li>
+                            <li><a asp-controller="Home" asp-action="InscriptionCNRC">@menuLocalizer["InscriptionCNRC"]</a></li>
+                            <li><a asp-controller="Home" asp-action="InscriptionMPDZ">@menuLocalizer["InscriptionportailMP"]</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>@menuLocalizer["Programmes"]</h4>
+                        <ul>
+                            <li><a asp-controller="Home" asp-action="NesdaExtension">@menuLocalizer["NesdaExtension"]</a></li>
+                            <li><a asp-controller="Home" asp-action="Impact70">Impact 70</a></li>
+                            <li><a asp-controller="Home" asp-action="SousTraitance">@menuLocalizer["NesdaSous-Traitance"]</a></li>
+                            <li><a asp-controller="Home" asp-action="Partenariat">@menuLocalizer["Partenariats"]</a></li>
+                            <li><a asp-controller="Home" asp-action="Cooperation">@menuLocalizer["Coopérations"]</a></li>
+
+                        </ul>
+                    </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Nesda</strong> <span>All Rights Reserved</span></p>
+
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="~/NesdaTMP/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/NesdaTMP/assets/vendor/php-email-form/validate.js"></script>
+    <script src="~/NesdaTMP/assets/vendor/aos/aos.js"></script>
+    <script src="~/NesdaTMP/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="~/NesdaTMP/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="~/NesdaTMP/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/NesdaTMP/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/NesdaTMP/assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="~/NesdaTMP/assets/js/main.js"></script>
+    <script src='https://cdn.jotfor.ms/agent/embedjs/019661e2861270fdbdebdc4fa5d836e55217/embed.js?skipWelcome=1&maximizable=1'>
+    </script>
+
+
+
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+
+</html>

@@ -1,0 +1,475 @@
+﻿@model Ansej.Sidjeme.Web.Views.ViewModels.ConsultationUploadModel
+@{
+    ViewData["Title"] = "تعديل الإستشارة";
+}
+
+<style>
+    .main-content {
+        padding: 3rem 0;
+    }
+
+    .form-container {
+        background: var(--meciy-white);
+        border-radius: 15px;
+        padding: 3rem;
+        margin: 2rem 0;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        border-right: 5px solid var(--meciy-base);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .form-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: var(--meciy-primary);
+            border-radius: 50%;
+            transform: translate(50px, -50px);
+            opacity: 0.05;
+        }
+
+    .form-group {
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .form-label {
+        display: block;
+        font-weight: 600;
+        color: var(--meciy-base);
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    .form-control, .form-select {
+        width: 100%;
+        padding: 0.875rem 1rem;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background: #f8fafc;
+        text-align: right;
+    }
+
+        .form-control:focus, .form-select:focus {
+            outline: none;
+            border-color: var(--meciy-base);
+            background: var(--meciy-white);
+            box-shadow: 0 0 0 3px rgba(25, 119, 107, 0.1);
+        }
+
+        .form-control:hover, .form-select:hover {
+            border-color: var(--meciy-primary);
+        }
+
+    textarea.form-control {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem;
+        background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+        border-radius: 8px;
+        border-left: 3px solid var(--meciy-primary);
+        direction: rtl;
+    }
+
+    .form-check-input {
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 2px solid var(--meciy-base);
+        border-radius: 4px;
+        cursor: pointer;
+        order: 1;
+    }
+
+        .form-check-input:checked {
+            background: var(--meciy-base);
+            border-color: var(--meciy-base);
+        }
+
+    .form-check-label {
+        color: #2d3748;
+        font-weight: 500;
+        cursor: pointer;
+        order: 2;
+        margin-right: 20px;
+    }
+
+    .btn {
+        padding: 0.875rem 2rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, var(--meciy-base) 0%, rgba(25, 119, 107, 0.9) 100%);
+        color: var(--meciy-white);
+        box-shadow: 0 4px 15px rgba(25, 119, 107, 0.3);
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(25, 119, 107, 0.4);
+        }
+
+    .btn-secondary {
+        background: #6b7280;
+        color: var(--meciy-white);
+        margin-right: 1rem;
+    }
+
+        .btn-secondary:hover {
+            background: #4b5563;
+            transform: translateY(-2px);
+        }
+
+    .text-danger {
+        color: var(--meciy-extra);
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+        display: block;
+        text-align: right;
+    }
+
+    .form-section {
+        background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 2rem 0;
+        border-right: 4px solid var(--meciy-primary);
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+        color: var(--meciy-base);
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        position: relative;
+        text-align: right;
+    }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--meciy-primary);
+            border-radius: 2px;
+        }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .file-input-wrapper {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        width: 100%;
+    }
+
+        .file-input-wrapper input[type=file] {
+            position: absolute;
+            right: -9999px;
+        }
+
+    .file-input-display {
+        display: block;
+        padding: 0.875rem 1rem;
+        border: 2px dashed #cbd5e0;
+        border-radius: 8px;
+        background: #f8fafc;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        color: var(--meciy-gray);
+    }
+
+        .file-input-display:hover {
+            border-color: var(--meciy-primary);
+            background: #f0f9ff;
+        }
+
+        .file-input-display.has-file {
+            border-color: var(--meciy-base);
+            background: #f0fdf4;
+            color: var(--meciy-base);
+        }
+
+    .buttons-container {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+        color: var(--meciy-base);
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--meciy-primary);
+            border-radius: 2px;
+        }
+
+    .loading-spinner {
+        display: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .error-message {
+        color: #e53e3e;
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+        display: none;
+    }
+</style>
+
+<section class="page-header">
+    <div class="page-header-bg" style="background-image: url(/assets/images/backgrounds/page-header-bg.png)">
+    </div>
+    <div class="container">
+        <div class="page-header__inner">
+            <h2>@ViewData["Title"]</h2>
+            <ul class="thm-breadcrumb list-unstyled">
+                <li><a asp-controller="home" asp-action="Index">Principal</a></li>
+                <li><span>/</span></li>
+                <li><a asp-controller="Consultation" asp-action="Index">Consultations</a></li>
+                <li><span>/</span></li>
+                <li>@ViewData["Title"]</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="main-content">
+    <div class="container">
+        <div class="form-container">
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="id" value="@ViewBag.ConsultationId" />
+
+                <div class="form-section">
+                    <h3 class="section-title">المعلومات الأساسية</h3>
+
+                    <div class="form-group">
+                        <label asp-for="TitleAr" class="form-label">العنوان بالعربية</label>
+                        <input asp-for="TitleAr" class="form-control" placeholder="أدخل عنوان الاستشارة بالعربية" />
+                        <span asp-validation-for="TitleAr" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="TitleFr" class="form-label">العنوان بالفرنسية</label>
+                        <input asp-for="TitleFr" class="form-control" placeholder="أدخل العنوان بالفرنسية" />
+                        <span asp-validation-for="TitleFr" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="TitleEn" class="form-label">العنوان بالإنجليزية</label>
+                        <input asp-for="TitleEn" class="form-control" placeholder="أدخل العنوان بالإنجليزية" />
+                        <span asp-validation-for="TitleEn" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Description" class="form-label">وصف الاستشارة</label>
+                        <textarea asp-for="Description" class="form-control" rows="4" placeholder="اكتب وصفاً مفصلاً للاستشارة..."></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3 class="section-title">إعدادات النشر</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label asp-for="PublishDate" class="form-label">تاريخ النشر</label>
+                            <input asp-for="PublishDate" class="form-control" type="date" />
+                            <span asp-validation-for="PublishDate" class="text-danger small"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="AdministrativeStructureId" class="form-label">Structure</label>
+                            <select asp-for="AdministrativeStructureId" id="AdministrativeStructureId" asp-items="@ViewBag.Structures" class="form-select">
+                            </select>
+                            <span asp-validation-for="AdministrativeStructureId" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="SubStructureContainer" style="display: none;">
+                        <label class="form-label" for="SubAdministrativeStructureId">الهيكل الفرعي / Sous-structure</label>
+                        <select id="SubAdministrativeStructureId" name="SubAdministrativeStructureId" class="form-select">
+                        </select>
+                        <div class="loading-spinner" id="loadingSpinner">
+                            <span>جاري التحميل... / Chargement en cours...</span>
+                        </div>
+                        <div class="error-message" id="errorMessage">
+                            خطأ في تحميل الهياكل الفرعية / Erreur lors du chargement des sous-structures
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3 class="section-title">المستند والخيارات</h3>
+
+                    <div class="form-group">
+                        <label class="form-label">استبدال الملف (اختياري)</label>
+                        <div class="file-input-wrapper">
+                            <input asp-for="File" type="file" id="file" class="form-control-file" />
+                            <label for="file" class="file-input-display" id="fileDisplay">
+                                📎 انقر لاختيار ملف جديد أو اسحبه هنا
+                            </label>
+                        </div>
+                        <span asp-validation-for="File" class="text-danger"></span>
+                        <small class="text-muted" style="display: block; margin-top: 0.5rem; text-align: right;">
+                            ملاحظة: إذا لم تقم بتحديد ملف جديد، سيتم الاحتفاظ بالملف الحالي
+                        </small>
+                    </div>
+
+                    <div class="form-check">
+                        <input asp-for="IsArchived" class="form-check-input" type="checkbox" id="isArchived" />
+                        <label asp-for="IsArchived" class="form-check-label" for="isArchived">
+                            أرشفة هذه الاستشارة
+                        </label>
+                    </div>
+                </div>
+
+                <div class="buttons-container">
+                    <button type="submit" class="btn btn-primary">💾 حفظ التعديلات</button>
+                    <a asp-action="Index" class="btn btn-secondary">إلغاء</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Gestion du changement de fichier
+            $('#file').on('change', function () {
+                const fileDisplay = $('#fileDisplay');
+                if (this.files.length > 0) {
+                    fileDisplay.text(`📎 ${this.files[0].name}`);
+                    fileDisplay.addClass('has-file');
+                } else {
+                    fileDisplay.text('📎 انقر لاختيار ملف جديد أو اسحبه هنا');
+                    fileDisplay.removeClass('has-file');
+                }
+            });
+
+            // Animation légère sur focus
+            $('.form-control, .form-select').on('focus', function () {
+                $(this).parent().css('transform', 'translateY(-2px)');
+            }).on('blur', function () {
+                $(this).parent().css('transform', 'translateY(0)');
+            });
+
+            // Gestion des structures et sous-structures
+            $('#AdministrativeStructureId').on('change', function () {
+                var selectedId = $(this).val();
+                var subStructureContainer = $('#SubStructureContainer');
+                var subStructureSelect = $('#SubAdministrativeStructureId');
+                var loadingSpinner = $('#loadingSpinner');
+                var errorMessage = $('#errorMessage');
+
+                // Reset
+                errorMessage.hide();
+                subStructureSelect.prop('disabled', false);
+
+                if (!selectedId || selectedId === '') {
+                    subStructureContainer.hide();
+                    subStructureSelect.empty().append('<option value="">اختر الهيكل الفرعي / Sélectionnez une sous-structure</option>');
+                    return;
+                }
+
+                // Afficher le spinner de chargement
+                loadingSpinner.show();
+                subStructureSelect.prop('disabled', true);
+
+                // Appel AJAX
+                $.ajax({
+                    url: '@Url.Action("GetSubStructures", "Consultation")',
+                    type: 'GET',
+                    data: { parentId: selectedId },
+                    dataType: 'json',
+                    timeout: 10000, // 10 secondes timeout
+                    success: function (data) {
+                        loadingSpinner.hide();
+                        subStructureSelect.prop('disabled', false);
+
+                        if (data && data.length > 0) {
+                            let options = '<option value="">اختر الهيكل الفرعي / Sélectionnez une sous-structure</option>';
+                            $.each(data, function(index, item) {
+                                options += `<option value="${item.id}">${item.nameFr || item.nameAr || 'Sans nom'}</option>`;
+                            });
+
+                            subStructureSelect.html(options);
+                            subStructureContainer.show();
+                        } else {
+                            subStructureContainer.hide();
+                            subStructureSelect.empty().append('<option value="">اختر الهيكل الفرعي / Sélectionnez une sous-structure</option>');
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        loadingSpinner.hide();
+                        subStructureSelect.prop('disabled', false);
+                        errorMessage.show();
+
+                        console.error('Erreur AJAX:', {
+                            status: status,
+                            error: error,
+                            responseText: xhr.responseText,
+                            url: '@Url.Action("GetSubStructures", "Consultation")',
+                            parentId: selectedId
+                        });
+
+                        // Masquer le conteneur en cas d'erreur
+                        subStructureContainer.hide();
+                    }
+                });
+            });
+
+            // Si il y a une valeur pré-sélectionnée au chargement de la page, déclencher le changement
+            var initialStructureId = $('#AdministrativeStructureId').val();
+            if (initialStructureId && initialStructureId !== '') {
+                $('#AdministrativeStructureId').trigger('change');
+            }
+        });
+    </script>
+}

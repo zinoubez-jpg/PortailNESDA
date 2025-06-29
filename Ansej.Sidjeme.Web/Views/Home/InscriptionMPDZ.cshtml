@@ -1,0 +1,426 @@
+﻿@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["InscriptionsMPDZ"];
+}
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+
+    .cnrc-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+        .cnrc-section .display-6 {
+            line-height: 1.2;
+        }
+
+            .cnrc-section .display-6 span {
+                position: relative;
+                color: var(--accent-color);
+            }
+
+                .cnrc-section .display-6 span:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+                    left: 0;
+                    bottom: 5px;
+                    z-index: -1;
+                }
+
+        .cnrc-section .lead {
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            font-size: 1.125rem;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+    .info-card {
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        border-bottom: 3px solid var(--accent-color);
+        padding: 2rem;
+    }
+
+        .info-card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+            transition: height 0.5s ease;
+            z-index: -1;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+            .info-card:hover:before {
+                height: 100%;
+            }
+
+        .info-card h3 {
+            color: var(--heading-color);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .info-card p {
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+    .register-link {
+        display: inline-flex;
+        align-items: center;
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        margin-top: 1rem;
+    }
+
+        .register-link:hover {
+            color: var(--contrast-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(65, 193, 186, 0.3);
+        }
+
+        .register-link i {
+            margin-left: 0.5rem;
+        }
+
+    .section-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+
+    .advantage-list {
+        list-style: none;
+        padding: 0;
+        margin: 1.5rem 0;
+    }
+
+        .advantage-list li {
+            padding: 0.75rem 0;
+            padding-right: 2rem;
+            position: relative;
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            line-height: 1.6;
+        }
+
+            .advantage-list li:before {
+                content: "✓";
+                position: absolute;
+                right: 0;
+                color: var(--accent-color);
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+    .example-item {
+        background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+        padding: 1rem 1.5rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        border-right: 4px solid var(--accent-color);
+        color: color-mix(in srgb, var(--default-color), transparent 10%);
+        line-height: 1.6;
+    }
+
+        .example-item strong {
+            color: var(--accent-color);
+        }
+
+    .intro-card {
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        border-bottom: 3px solid var(--accent-color);
+    }
+
+    .content-section {
+        margin-bottom: 2rem;
+    }
+
+    .link-section {
+        text-align: center;
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        padding: 2rem;
+        margin: 2rem 0;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        border-bottom: 3px solid var(--accent-color);
+    }
+
+    .section-title2 {
+        color: var(--heading-color);
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .section-text2 {
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        text-align: justify;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    .thm-btnrg {
+        display: inline-flex;
+        align-items: center;
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        padding: 0.75rem 2rem;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        margin-top: 1rem;
+    }
+
+        .thm-btnrg:hover {
+            color: var(--contrast-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(65, 193, 186, 0.3);
+        }
+
+    @@media (max-width: 768px) {
+        .info-card, .intro-card, .link-section {
+            padding: 1.5rem;
+        }
+
+        .section-title2 {
+            font-size: 1.3rem;
+        }
+    }
+</style>
+
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+<section id="campus-facilities" class="campus-facilities section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Introduction -->
+        <div class="intro-row">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="intro-content">
+                        <h2 class="fw-bold">
+                            البوابة الإلكترونية <span>للصفقات العمومية</span>
+
+
+                        </h2>
+                        <p class="lead">
+                            توفر البوابة الإلكترونية للصفقات العمومية منهج الجديد للعمل يطمح إلى تكريس إجراءات أكثر حداثة، بساطة، سهولة و سرعة بين المتعاملين الاقتصاديين والمصالح المتعاقدة في مجال الطلب العمومي. حيث تهدف الى توفير ضمان احترام أكبر لمبادئ حرية الوصول إلى الطلب العمومي، المساواة بين المرشحين و شفافية الإجراءات.
+                        </p>
+                        <p class="lead">
+                            كما تقدم البوابة الالكترونية للمتعاملين الاقتصاديين وأصحاب المؤسسات المصغرة مختلف المعلومات والبيانات المتعلقة بالطلب العمومي على كافة مستوى الوطن، ولاسيما الاستشارات والصفقات العمومية، بالإضافة الى توفير خدمات أخرى على غرار الإطلاع على مختلف دعوات المنافسة وكذا تحميل دفاتر الشروط.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="intro-image-container">
+                        <div class="intro-image main-image">
+                            <img src="~/NesdaTMP/assets/img/NesdaImg/mp.png" alt="mp nesda" class="img-fluid rounded">
+                        </div>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+<section class="cnrc-section">
+    <div class="container">
+     
+
+        <!-- Main Information -->
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+
+
+                <!-- Portal Objectives -->
+                <div class="info-card">
+                    <h3><i class="fas fa-bullseye" style="color: var(--accent-color); margin-left: 1rem;"></i>أهداف البوابة الإلكترونية للصفقات العمومية</h3>
+                    <div class="subsection">
+                        <ul class="advantage-list">
+                            <li>تكريس إجراءات أكثر حداثة وبساطة في التعامل</li>
+                            <li>ضمان المساواة بين جميع المرشحين والمتعاملين</li>
+                            <li>توفير الشفافية الكاملة في جميع الإجراءات</li>
+                            <li>تسهيل الوصول إلى الطلب العمومي لجميع المتعاملين</li>
+                            <li>تسريع عمليات التعاقد والمناقصات العمومية</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Available Services -->
+                <div class="info-card">
+                    <h3><i class="fas fa-cogs" style="color: var(--accent-color); margin-left: 1rem;"></i>الخدمات المتاحة عبر البوابة</h3>
+                    <div class="examples-section">
+                        <div class="example-item">
+                            الإطلاع على جميع الاستشارات والصفقات العمومية على المستوى الوطني
+                        </div>
+                        <div class="example-item">
+                            متابعة مختلف دعوات المنافسة والمناقصات الجارية
+                        </div>
+                        <div class="example-item">
+                            تحميل كافة دفاتر الشروط والوثائق المطلوبة
+                        </div>
+                        <div class="example-item">
+                            تقديم العروض والمشاركة في المناقصات إلكترونياً
+                        </div>
+                        <div class="example-item">
+                            متابعة حالة العروض المقدمة والنتائج
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Registration Benefits -->
+                <div class="info-card">
+                    <h3><i class="fas fa-star" style="color: var(--accent-color); margin-left: 1rem;"></i>مزايا التسجيل في البوابة</h3>
+                    <div class="subsection">
+                        <ul class="advantage-list">
+                            <li>الوصول المباشر إلى جميع الفرص التجارية الحكومية</li>
+                            <li>توفير الوقت والجهد في البحث عن المناقصات</li>
+                            <li>ضمان عدم تفويت أي فرصة استثمارية مهمة</li>
+                            <li>سهولة تقديم العروض والمتابعة الإلكترونية</li>
+                            <li>الحصول على إشعارات فورية للمناقصات الجديدة</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Registration Steps -->
+                <div class="info-card">
+                    <h3><i class="fas fa-list-ol" style="color: var(--accent-color); margin-left: 1rem;"></i>خطوات التسجيل</h3>
+                    <div class="examples-section">
+                        <div class="example-item">
+                            <strong>الخطوة الأولى:</strong> الدخول إلى البوابة الإلكترونية للصفقات العمومية
+                        </div>
+                        <div class="example-item">
+                            <strong>الخطوة الثانية:</strong> النقر على "إنشاء حساب جديد" أو "التسجيل"
+                        </div>
+                        <div class="example-item">
+                            <strong>الخطوة الثالثة:</strong> ملء البيانات المطلوبة (معلومات المؤسسة، بيانات الاتصال)
+                        </div>
+                        <div class="example-item">
+                            <strong>الخطوة الرابعة:</strong> رفع الوثائق المطلوبة (السجل التجاري، بطاقة المؤسسة...)
+                        </div>
+                        <div class="example-item">
+                            <strong>الخطوة الخامسة:</strong> تأكيد التسجيل وانتظار الموافقة
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portal Access Link -->
+                <div class="link-section">
+                    <h2 class="section-title2"><i class="fas fa-link" style="color: var(--accent-color); margin-left: 1rem;"></i>الولوج إلى البوابة الإلكترونية</h2>
+                    <p class="section-text2">
+                        للولوج الى البوابة الإلكترونية للصفقات العمومية والبدء في عملية التسجيل، يرجى النقر على الرابط التالي:
+                    </p>
+                    <a href="https://marches-publics.gov.dz" class="thm-btnrg" target="_blank">
+                        رابط التسجيل الإلكتروني
+                    </a>
+                    <div style="margin-top: 1.5rem; font-size: 0.9rem; color: color-mix(in srgb, var(--default-color), transparent 40%);">
+                        https://marches-publics.gov.dz
+                    </div>
+                </div>
+
+                <!-- Support and Assistance -->
+                <div class="info-card">
+                    <h3><i class="fas fa-hands-helping" style="color: var(--accent-color); margin-left: 1rem;"></i>الدعم والمساعدة</h3>
+                    <p class="section-text2">
+                        تحرص الوكالة الوطنية لدعم وتنمية المقاولاتية على تقديم الدعم اللازم للمؤسسات المصغرة في عملية التسجيل والاستفادة من خدمات البوابة الإلكترونية للصفقات العمومية، من خلال تنظيم دورات تدريبية وورش عمل تعريفية بكيفية الاستفادة المثلى من هذه الخدمات الرقمية.
+                    </p>
+                    <p class="section-text2">
+                        كما تسعى الوكالة إلى تسهيل عملية الولوج إلى السوق العمومية للمؤسسات المصغرة من خلال التنسيق مع الجهات المختصة وتقديم الإرشادات والتوجيهات اللازمة لضمان المشاركة الفعالة في الصفقات العمومية.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+       
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>// Add hover effects for buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.register-link, .thm-btnrg, a[href*="marches-publics"]');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 8px 25px rgba(65, 193, 186, 0.3)';
+                });
+
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+
+            // Add hover effects for cards
+            const cards = document.querySelectorAll('.info-card, .intro-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });</script>

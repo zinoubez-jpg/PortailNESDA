@@ -1,0 +1,347 @@
+﻿
+@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["Politique"];
+}
+
+<style>
+    
+
+    .privacy {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+        .privacy .privacy-header {
+            margin-bottom: 60px;
+            text-align: center;
+            border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+            padding-bottom: 40px;
+        }
+
+            .privacy .privacy-header .header-content {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+                .privacy .privacy-header .header-content .last-updated {
+                    font-size: 0.95rem;
+                    color: color-mix(in srgb, var(--default-color), transparent 40%);
+                    margin-bottom: 20px;
+                }
+
+                .privacy .privacy-header .header-content h1 {
+                    font-size: 2.8rem;
+                    color: var(--heading-color);
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                }
+
+                .privacy .privacy-header .header-content .intro-text {
+                    font-size: 1.2rem;
+                    color: color-mix(in srgb, var(--default-color), transparent 20%);
+                    line-height: 1.6;
+                }
+
+        .privacy .privacy-content {
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+
+            .privacy .privacy-content .content-section {
+                margin-bottom: 50px;
+            }
+
+                .privacy .privacy-content .content-section:last-child {
+                    margin-bottom: 0;
+                }
+
+                .privacy .privacy-content .content-section h2 {
+                    font-size: 1.8rem;
+                    color: var(--heading-color);
+                    margin-bottom: 25px;
+                    font-weight: 600;
+                }
+
+                .privacy .privacy-content .content-section h3 {
+                    font-size: 1.4rem;
+                    color: var(--heading-color);
+                    margin: 30px 0 20px;
+                    font-weight: 500;
+                }
+
+                .privacy .privacy-content .content-section p {
+                    margin-bottom: 20px;
+                }
+
+                    .privacy .privacy-content .content-section p:last-child {
+                        margin-bottom: 0;
+                    }
+
+                .privacy .privacy-content .content-section ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0 0 20px;
+                }
+
+                    .privacy .privacy-content .content-section ul li {
+                        position: relative;
+                        padding-right: 25px;
+                        margin-bottom: 12px;
+                    }
+
+                        .privacy .privacy-content .content-section ul li:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .privacy .privacy-content .content-section ul li::before {
+                            content: "•";
+                            position: absolute;
+                            right: 8px;
+                            color: var(--accent-color);
+                        }
+
+        .privacy .privacy-contact {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 40px;
+            border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+        }
+
+            .privacy .privacy-contact h2 {
+                font-size: 1.8rem;
+                color: var(--heading-color);
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+
+            .privacy .privacy-contact p {
+                margin-bottom: 20px;
+            }
+
+            .privacy .privacy-contact .contact-details {
+                background-color: var(--surface-color);
+                padding: 25px;
+                border-radius: 10px;
+               justify-items:center;
+            }
+
+                .privacy .privacy-contact .contact-details p {
+                    margin-bottom: 10px;
+                }
+
+                    .privacy .privacy-contact .contact-details p:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .privacy .privacy-contact .contact-details p strong {
+                        color: var(--heading-color);
+                        font-weight: 600;
+                    }
+
+    @@media print {
+        .privacy {
+            font-size: 12pt;
+            line-height: 1.5;
+        }
+
+            .privacy .privacy-header {
+                text-align: left;
+                border-bottom: 1pt solid #000;
+                padding-bottom: 20pt;
+                margin-bottom: 30pt;
+            }
+
+            .privacy h1 {
+                font-size: 24pt;
+            }
+
+            .privacy h2 {
+                font-size: 18pt;
+                page-break-after: avoid;
+            }
+
+            .privacy h3 {
+                font-size: 14pt;
+                page-break-after: avoid;
+            }
+
+            .privacy p,
+            .privacy ul {
+                page-break-inside: avoid;
+            }
+
+            .privacy .contact-details {
+                border: 1pt solid #000;
+                padding: 15pt;
+            }
+    }
+
+    @@media (max-width: 767px) {
+        .privacy .privacy-header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+        }
+
+            .privacy .privacy-header .header-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .privacy .privacy-header .header-content .intro-text {
+                font-size: 1.1rem;
+            }
+
+        .privacy .privacy-content .content-section {
+            margin-bottom: 40px;
+        }
+
+            .privacy .privacy-content .content-section h2 {
+                font-size: 1.6rem;
+            }
+
+            .privacy .privacy-content .content-section h3 {
+                font-size: 1.3rem;
+            }
+    }
+</style>
+
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/nesdaTitle.jpg);">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+
+
+    <section class="privacy">
+        <div class="privacy-header">
+            <div class="header-content">
+                <div class="last-updated">آخر تحديث: مارس 2025</div>
+                <h1>سياسة حماية البيانات الشخصية وملفات تعريف الارتباط</h1>
+                <div class="intro-text">
+                    تُعد حماية بياناتكم الشخصية التزامًا مطلقًا بالنسبة لنا. تهدف هذه السياسة إلى إعلامكم بشكل واضح وشفاف حول كيفيات جمع ومعالجة بياناتكم الشخصية من قبل الوكالة الوطنية لدعم وتنمية المقاولاتية.
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-content">
+            <div class="content-section">
+                <h2>1. مقدمة والتزام</h2>
+                <p>في إطار أنشطتها، تُعنى الوكالة الوطنية لدعم وتنمية المقاولاتية، والتي يُشار إليها أسفلها بـ "NESDA"، بجمع ومعالجة وتخزين بيانات ذات طابع شخصي. تُعد حماية هذه البيانات التزامًا مطلقًا على جميع موظفي NESDA، وذلك امتثالًا تامًا لأحكام القانون رقم 18-07 المؤرخ في 10 جوان 2018 والمتعلق بحماية الأشخاص الطبيعيين في مجال معالجة البيانات ذات الطابع الشخصي.</p>
+                <p>تعمل NESDA، التي يقع مقرها الاجتماعي في 8، شارع أرزقي بن بوزيد -- العناصر الجزائر -- الجزائر، بصفتها مسؤول المعالجة للبيانات التي يتم جمعها عبر موقعها الإلكتروني.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>2. الموافقة وقبول السياسة</h2>
+                <p>باستخدام موقع الويب www.nesda.dz والروابط المتاحة عليه، فإنكم تقرون بأنكم قرأتم وفهمتم هذه السياسة وتوافقون على جمع ومعالجة واستخدام وحفظ معلوماتكم وفقًا للطرق الموضحة أدناه، وذلك امتثالًا لأحكام القانون رقم 18-07 المؤرخ في 25 رمضان 1439 الموافق لـ 10 جوان 2018 والمتعلق بحماية الأشخاص الطبيعيين في مجال معالجة البيانات ذات الطابع الشخصي.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>3. مبادئ حماية البيانات الشخصية</h2>
+                <p>تلتزم NESDA باحترام جميع المبادئ الأساسية المتعلقة بحماية البيانات الشخصية وفقًا للتشريعات المعمول بها، ولا سيما فيما يتعلق بما يلي:</p>
+                <ul>
+                    <li>شرعية المعالجة ونزاهتها وشفافيتها</li>
+                    <li>تحديد أغراض المعالجة وحصرها</li>
+                    <li>تقليل البيانات التي يتم جمعها</li>
+                    <li>دقة البيانات وتحديثها بانتظام</li>
+                    <li>تحديد مدة الاحتفاظ بالبيانات</li>
+                    <li>سلامة البيانات وسريتها، بما في ذلك أمن المعالجة</li>
+                    <li>احترام حقوق الأشخاص المعنيين</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>4. فئات البيانات الشخصية التي يتم جمعها</h2>
+                <p>عند استخدامكم لخدمات NESDA وموقعها الإلكتروني، قد يتم جمع فئات البيانات الشخصية التالية:</p>
+
+                <h3>بيانات التعريف</h3>
+                <p>الاسم، اللقب، الاسم المستعار، تاريخ الميلاد، الرقم الوطني للتعريف (NIN)، رقم الحساب البنكي (RIB) / رقم الحساب الجاري البريدي (CCP)، رقم الضمان الاجتماعي.</p>
+
+                <h3>بيانات الاتصال</h3>
+                <p>رقم الهاتف الثابت أو المحمول، العنوان البريدي، عنوان البريد الإلكتروني.</p>
+
+                <h3>بيانات العمليات والمعاملات المصرفية</h3>
+                <p>طبيعة العمليات، التاريخ، تفاصيل المدفوعات بالبطاقة، التحويلات، الاقتطاعات، المبلغ، البيان.</p>
+
+                <h3>بيانات الاتصال التقنية</h3>
+                <p>معرفات وبيانات المصادقة الخاصة بكم في مساحاتكم المتصلة، سجلات الدخول (logs)، ملفات تعريف الارتباط (cookies) وغيرها من أدوات التتبع، بيانات التصفح على الموقع الإلكتروني (عنوان IP، نوع المتصفح، الصفحات التي تمت زيارتها، إلخ).</p>
+            </div>
+
+            <div class="content-section">
+                <h2>5. أغراض معالجة البيانات الشخصية</h2>
+                <p>تعالج NESDA البيانات الشخصية التي يتم جمعها من أجل تحقيق مهامها وفي إطار واحد أو أكثر من الأغراض التالية:</p>
+                <ul>
+                    <li>الامتثال للالتزامات القانونية والتنظيمية</li>
+                    <li>التكوين والمرافقة وإنشاء وترقية المؤسسات المصغرة</li>
+                    <li>إدارة الحسابات والعلاقة مع المرقين والشركاء</li>
+                    <li>تقييم وإدارة المخاطر</li>
+                    <li>منع وكشف وتحري حالات عدم الدفع والاحتيال</li>
+                    <li>التحصيل</li>
+                    <li>التوظيف وإدارة شؤون الموظفين</li>
+                    <li>تقديم المشورة والمعلومات</li>
+                    <li>أمن نظام المعلومات والأشخاص والممتلكات</li>
+                    <li>حفظ وأرشفة المعلومات</li>
+                    <li>التشغيل السليم لنظام المعلومات</li>
+                    <li>التعاون مع شركاء NESDA</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>6. ملفات تعريف الارتباط (Cookies)</h2>
+                <p>يستخدم موقع الويب www.nesda.dz ملفات تعريف الارتباط وتقنيات تتبع أخرى لتحسين تجربة المستخدم، وتخصيص المحتوى، وتحليل حركة المرور على الموقع.</p>
+
+                <h3>أنواع ملفات تعريف الارتباط المستخدمة:</h3>
+                <ul>
+                    <li><strong>ملفات تعريف الارتباط الضرورية:</strong> ضرورية للتشغيل السليم للموقع وتمكنك من استخدام وظائفه الأساسية</li>
+                    <li><strong>ملفات تعريف الارتباط التحليلية:</strong> تجمع معلومات حول كيفية استخدام الزوار لموقعنا</li>
+                    <li><strong>ملفات تعريف الارتباط الوظيفية:</strong> تسمح للموقع بتذكر اختياراتك وتفضيلاتك</li>
+                    <li><strong>ملفات تعريف الارتباط الإعلانية:</strong> تُستخدم لعرض إعلانات أكثر ملاءمة لك</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>7. حقوق الأشخاص المعنيين</h2>
+                <p>وفقًا للقانون رقم 18-07 المتعلق بحماية البيانات الشخصية، لديكم الحقوق التالية فيما يتعلق ببياناتكم الشخصية:</p>
+                <ul>
+                    <li><strong>حق الوصول:</strong> الحصول على تأكيد ما إذا كانت بيانات شخصية تتعلق بكم قيد المعالجة</li>
+                    <li><strong>حق التصحيح:</strong> طلب تصحيح البيانات الشخصية غير الدقيقة أو غير الكاملة</li>
+                    <li><strong>حق المحو:</strong> طلب محو بياناتكم الشخصية في بعض الحالات</li>
+                    <li><strong>حق تقييد المعالجة:</strong> طلب تقييد معالجة بياناتكم في ظروف معينة</li>
+                    <li><strong>حق الاعتراض:</strong> الاعتراض على معالجة بياناتكم لأسباب مشروعة</li>
+                    <li><strong>حق نقل البيانات:</strong> الحصول على بياناتكم بتنسيق منظم وقابل للقراءة آليًا</li>
+                    <li><strong>حق سحب الموافقة:</strong> سحب موافقتكم في أي وقت عندما تستند المعالجة إلى هذه الموافقة</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>8. أمن البيانات الشخصية</h2>
+                <p>تتخذ NESDA تدابير تقنية وتنظيمية مناسبة لضمان مستوى من الأمان يتناسب مع المخاطر، وذلك لحماية بياناتكم الشخصية من التدمير أو الفقدان أو التغيير أو الكشف غير المصرح به.</p>
+                <p>تشمل هذه التدابير استخدام تقنيات إخفاء الهوية وتشفير البيانات، وضمان سرية وسلامة أنظمة المعالجة، وإجراءات استعادة البيانات، بالإضافة إلى بنود سرية صارمة للموظفين.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>9. مدة الاحتفاظ بالبيانات</h2>
+                <p>تحتفظ NESDA ببياناتكم الشخصية فقط للمدة اللازمة للأغراض التي جمعت وعولجت من أجلها، وفقًا للالتزامات القانونية والتنظيمية المعمول بها. يتم تحديد مدة الاحتفاظ بناءً على أغراض المعالجة، والقيود التشغيلية، وكذلك فترات التقادم القانونية.</p>
+            </div>
+        </div>
+
+        <div class="privacy-contact">
+            <h2>الاتصال</h2>
+            <p>لأية أسئلة تتعلق بسياسة حماية البيانات الشخصية وملفات تعريف الارتباط الحالية، أو لممارسة حقوقكم، يمكنكم الاتصال بـ NESDA:</p>
+            <div class="contact-details">
+                <p><strong>الوكالة الوطنية لدعم وتنمية المقاولاتية (NESDA)</strong></p>
+                <p><strong>العنوان:</strong> 8، شارع أرزقي بن بوزيد – العناصر الجزائر – الجزائر</p>
+                <p><strong>البريد الإلكتروني:</strong> dpo@nesda.dz</p>
+                <p><strong>الموقع الإلكتروني:</strong> www.nesda.dz</p>
+            </div>
+        </div>
+    </section>

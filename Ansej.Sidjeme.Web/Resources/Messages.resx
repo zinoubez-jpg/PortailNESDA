@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCOMPAGNEMENT" xml:space="preserve">
+    <value>ACCOMPAGNEMENT</value>
+  </data>
+  <data name="ACCOMPAGNEMENTDETAILS" xml:space="preserve">
+    <value>Un accompagnement durant tout le processus de création et d'exploitation de votre microentreprise</value>
+  </data>
+  <data name="ActDetails1" xml:space="preserve">
+    <value>Durant le mois sacré du Ramadhan, Nesda organise des expo-vente des microentreprises.</value>
+  </data>
+  <data name="ActDetails2" xml:space="preserve">
+    <value>Signature d'une convention de partenariat entre NESDA et CNMA.</value>
+  </data>
+  <data name="ActDetails3" xml:space="preserve">
+    <value>Le Wali de Tissemsilt inaugaure le nouveau siège de l'Antenne locale de Tissemsilt.</value>
+  </data>
+  <data name="Activite" xml:space="preserve">
+    <value>Activité</value>
+  </data>
+  <data name="Actualités" xml:space="preserve">
+    <value>Actualités</value>
+  </data>
+  <data name="AgenceWAntennes" xml:space="preserve">
+    <value>Agences Wilaya
+et Antennes Locales</value>
+  </data>
+  <data name="Agricole" xml:space="preserve">
+    <value>Secteur agricole</value>
+  </data>
+  <data name="AgricoleT1" xml:space="preserve">
+    <value>Cultivez Succès &amp;</value>
+  </data>
+  <data name="AgricoleT2" xml:space="preserve">
+    <value>Faites Grandir.</value>
+  </data>
+  <data name="Années" xml:space="preserve">
+    <value>Années</value>
+  </data>
+  <data name="AntenneTissemsilt" xml:space="preserve">
+    <value>Antenne Tissemsilt</value>
+  </data>
+  <data name="Apropos" xml:space="preserve">
+    <value>Définition / À propos de l'agence</value>
+  </data>
+  <data name="AproposD2" xml:space="preserve">
+    <value>hjhjkqsdhjqshdjkqhsjkdhqsjkhdjkqshdjkqhdjhqsjkdhqksjdhkjqshdjkqsd</value>
+  </data>
+  <data name="AproposD3" xml:space="preserve">
+    <value>hjhjkqsdhjqshdjkqhsjkdhqsjkhdjkqshdjkqhdjhqsjkdhqksjdhkjqshdjkqsd</value>
+  </data>
+  <data name="Aproposdetails" xml:space="preserve">
+    <value>Promouvoir un écosystème entrepreneurial favorisant la création,                 le financement et le développement de microentreprises performantes,
+ résilientes et créatrices de valeur ajoutée durable pour les citoyens
+ et pour la nation.</value>
+  </data>
+  <data name="Avantage" xml:space="preserve">
+    <value>Avantages</value>
+  </data>
+  <data name="Avril2025" xml:space="preserve">
+    <value>Avril 2025</value>
+  </data>
+  <data name="BienvenueFAQ" xml:space="preserve">
+    <value>Bienvenue dans notre section FAQ</value>
+  </data>
+  <data name="BTP" xml:space="preserve">
+    <value>Secteur du Bâtiment et des Travaux Publics</value>
+  </data>
+  <data name="BTPT1" xml:space="preserve">
+    <value>Votre vision</value>
+  </data>
+  <data name="BTPT2" xml:space="preserve">
+    <value>notre fondation</value>
+  </data>
+  <data name="commentpeut-onvousaider?" xml:space="preserve">
+    <value>comment peut-on vous aider?</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Coopérations" xml:space="preserve">
+    <value>Coopérations</value>
+  </data>
+  <data name="CreationAgence" xml:space="preserve">
+    <value>la création de l'Agence</value>
+  </data>
+  <data name="CSVF" xml:space="preserve">
+    <value>CSVF</value>
+  </data>
+  <data name="Depuis" xml:space="preserve">
+    <value>Depuis</value>
+  </data>
+  <data name="desExpo-Vente" xml:space="preserve">
+    <value>des Expo-Vente</value>
+  </data>
+  <data name="Enligne" xml:space="preserve">
+    <value>En ligne</value>
+  </data>
+  <data name="Etapes" xml:space="preserve">
+    <value>Principales étapes</value>
+  </data>
+  <data name="Evaluation" xml:space="preserve">
+    <value>Evaluation</value>
+  </data>
+  <data name="Expérience" xml:space="preserve">
+    <value>Expérience</value>
+  </data>
+  <data name="FCMG" xml:space="preserve">
+    <value>Fonds de Garantie</value>
+  </data>
+  <data name="Financement" xml:space="preserve">
+    <value>FINANCEMENT</value>
+  </data>
+  <data name="FinancementAlloue" xml:space="preserve">
+    <value>Financement alloué aux Microentreprises</value>
+  </data>
+  <data name="FINANCEMENTDETAIS" xml:space="preserve">
+    <value>Des formules de financement par des prêts non rémunérés (PNR)
+ adaptées pour la création et l'extension de votre activité microentreprise</value>
+  </data>
+  <data name="FORMATION" xml:space="preserve">
+    <value>FORMATION</value>
+  </data>
+  <data name="FORMATIONDETAILS" xml:space="preserve">
+    <value>Des formations sur l'entreprenariat et la gestion
+des microentreprises à travers les CDE</value>
+  </data>
+  <data name="Formationenligne" xml:space="preserve">
+    <value>Formation en ligne</value>
+  </data>
+  <data name="Impact70" xml:space="preserve">
+    <value>Impact 70</value>
+  </data>
+  <data name="Impact70Details" xml:space="preserve">
+    <value>Le programme national de NESDA destiné à la microentreprise engagée dans le développement local</value>
+  </data>
+  <data name="Inaugurationnouveausiège" xml:space="preserve">
+    <value>Inauguration nouveau siège</value>
+  </data>
+  <data name="Industrie" xml:space="preserve">
+    <value>Secteur de l'Industrie</value>
+  </data>
+  <data name="IndustrieT1" xml:space="preserve">
+    <value>Innovez &amp;</value>
+  </data>
+  <data name="IndustrieT2" xml:space="preserve">
+    <value>Produisez Local.</value>
+  </data>
+  <data name="Inscription" xml:space="preserve">
+    <value>Inscription</value>
+  </data>
+  <data name="Inscriptionenligne" xml:space="preserve">
+    <value>Inscription en ligne</value>
+  </data>
+  <data name="InscriptionsCDE" xml:space="preserve">
+    <value>Inscriptions CDE</value>
+  </data>
+  <data name="InscriptionsCNRC" xml:space="preserve">
+    <value>Inscriptions CNRC</value>
+  </data>
+  <data name="Inscriptionsdispositif" xml:space="preserve">
+    <value>Inscriptions dispositif</value>
+  </data>
+  <data name="InscriptionsMPDZ" xml:space="preserve">
+    <value>Inscription portail marchés publics</value>
+  </data>
+  <data name="Lancement" xml:space="preserve">
+    <value>Lancement</value>
+  </data>
+  <data name="Lesmisesàjourrécentes" xml:space="preserve">
+    <value>Les mises à jour récentes</value>
+  </data>
+  <data name="lireSuite" xml:space="preserve">
+    <value>Lire la suite</value>
+  </data>
+  <data name="Marketplace" xml:space="preserve">
+    <value>Market place</value>
+  </data>
+  <data name="Mars2025" xml:space="preserve">
+    <value>Mars 2025</value>
+  </data>
+  <data name="MdDA" xml:space="preserve">
+    <value>MdDA</value>
+  </data>
+  <data name="MessageDG" xml:space="preserve">
+    <value>Mot du Directeur Général</value>
+  </data>
+  <data name="Mission" xml:space="preserve">
+    <value>Missions et vision</value>
+  </data>
+  <data name="NESDA" xml:space="preserve">
+    <value>NESDA</value>
+  </data>
+  <data name="NesdaExtension" xml:space="preserve">
+    <value>Nesda Extension</value>
+  </data>
+  <data name="NesdaNomination" xml:space="preserve">
+    <value>Agence Nationale d'Appui et de Développement de l'Entreprenariat</value>
+  </data>
+  <data name="Nesdaorganise" xml:space="preserve">
+    <value>Nesda organise</value>
+  </data>
+  <data name="NosPartenaires" xml:space="preserve">
+    <value>Nos Partenaires</value>
+  </data>
+  <data name="Nosservices" xml:space="preserve">
+    <value>Nos services</value>
+  </data>
+  <data name="Organigramme" xml:space="preserve">
+    <value>Organigramme</value>
+  </data>
+  <data name="Organisation" xml:space="preserve">
+    <value>Organisation</value>
+  </data>
+  <data name="Partenariat" xml:space="preserve">
+    <value>Partenariat</value>
+  </data>
+  <data name="Partenariats" xml:space="preserve">
+    <value>Partenariats</value>
+  </data>
+  <data name="PLT1" xml:space="preserve">
+    <value>Expertise Libre,</value>
+  </data>
+  <data name="PLT2" xml:space="preserve">
+    <value>Réussite Assurée.</value>
+  </data>
+  <data name="Politique" xml:space="preserve">
+    <value>Politique</value>
+  </data>
+  <data name="Principal" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="Professionslibérales" xml:space="preserve">
+    <value>Professions libérales</value>
+  </data>
+  <data name="ProjetsFinancees" xml:space="preserve">
+    <value>Projets Microentreprises Financés</value>
+  </data>
+  <data name="Q1" xml:space="preserve">
+    <value>Quelles sont les conditions d'éligibilité pour le dispositif NESDA ?</value>
+  </data>
+  <data name="Q2" xml:space="preserve">
+    <value>Quelles sont les démarches nécessaires pour créer une microentreprise ?</value>
+  </data>
+  <data name="Q3" xml:space="preserve">
+    <value>Quels sont les documents composant le dossier à déposer à NESDA ?</value>
+  </data>
+  <data name="Q4" xml:space="preserve">
+    <value>Quelles sont les conditions pour bénéficier de l'extension de mon activité ?</value>
+  </data>
+  <data name="R1" xml:space="preserve">
+    <value>Les conditions d'éligibilité au dispositif de NESDA sont
+                                        : l'âge, la compétence reconnue (formation CDE, attestation.)</value>
+  </data>
+  <data name="R2" xml:space="preserve">
+    <value>Pour la création d'une microentreprise : formation CDE, inscription en ligne, dépôt dossier et entretien, CSVF.</value>
+  </data>
+  <data name="R3" xml:space="preserve">
+    <value>Le dossier est composé des documents suivants : business plan, facture proforma.</value>
+  </data>
+  <data name="R4" xml:space="preserve">
+    <value>Les conditions communes pour bénéficier de l'extension d'activité sont : l'âge, la justification de 2 années d'activité effective.</value>
+  </data>
+  <data name="Scoring" xml:space="preserve">
+    <value>Scoring</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Secteur des services</value>
+  </data>
+  <data name="Servicesdigitaux" xml:space="preserve">
+    <value>Services digitaux</value>
+  </data>
+  <data name="ServicesT1" xml:space="preserve">
+    <value>Offrez Solution &amp;</value>
+  </data>
+  <data name="ServicesT2" xml:space="preserve">
+    <value>Facilitez la Vie</value>
+  </data>
+  <data name="SimulateurBP" xml:space="preserve">
+    <value>Simulateur Busines Plan</value>
+  </data>
+  <data name="Sous-traitence" xml:space="preserve">
+    <value>Sous-traitence</value>
+  </data>
+  <data name="SousTraitance" xml:space="preserve">
+    <value>Nesda Sous-Traitance</value>
+  </data>
+  <data name="Suivivotredemande" xml:space="preserve">
+    <value>Suivi votre demande</value>
+  </data>
+  <data name="Àpropos" xml:space="preserve">
+    <value>À propos</value>
+  </data>
+</root>

@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Not Found";
+}
+
+<br />
+<section class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="arabic-text">@ViewData["Title"]</h2>
+            <ol>
+                @* <li><a asp-action="Index" asp-controller="Home"> @localizer["Home"]</a></li>
+                <li>@ViewData["Title"]</li> *@
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<br />
+
+<div class="container">
+
+<h1>@ViewBag.ErrorMessage</h1>
+
+<a asp-action="index" asp-controller="home">
+    Click here to navigate to the home page
+</a>
+</div>

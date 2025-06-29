@@ -1,0 +1,109 @@
+﻿@inject SignInManager<User> SignInManager
+@inject IStringLocalizer<Menu> menuLocalizer
+
+@using System.Globalization
+@using Ansej.Sidjeme.Identity
+@using Microsoft.AspNetCore.Identity
+@{
+    var culture = CultureInfo.CurrentCulture;
+    var user = await SignInManager.UserManager.GetUserAsync(User);
+}
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+        <!-- Logo -->
+        <a asp-controller="Home" asp-action="Index" class="logo d-flex align-items-center">
+            <img src="~/NesdaTMP/assets/img/NesdaImg/LogoNesda.png" />
+        </a>
+
+        <!-- Menu intégré dans la structure NiceSchool -->
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li class="dropdown">
+                    <a asp-controller="Home" asp-action="Index">
+                        <span>@menuLocalizer["Principal"]</span>
+                        
+                    </a>
+                   
+                </li>
+                <li class="dropdown">
+                    <a href="#">
+                        <span>@menuLocalizer["Agence"]</span>
+                        <i class="bi bi-chevron-down toggle-dropdown"></i>
+                    </a>
+                    <ul>
+                        @*<li><a asp-controller="Home" asp-action="Apropos">@menuLocalizer["Apropos"]</a></li>*@
+                        <li><a asp-controller="Home" asp-action="MotDG">@menuLocalizer["MotDG"]</a></li>
+                        <li><a asp-controller="Home" asp-action="Mission">@menuLocalizer["Missions"]</a></li>
+                        <li><a asp-controller="Home" asp-action="Organisation">@menuLocalizer["Organisation"]</a></li>
+                        <li><a asp-controller="Home" asp-action="Organigramme">@menuLocalizer["Organigramme"]</a></li>
+                        @*<li><a>@menuLocalizer["Chiffres"]</a></li>*@
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#"><span>@menuLocalizer["Dispositif"]</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Formation">@menuLocalizer["Formation"]</a></li>
+                        <li><a asp-controller="Home" asp-action="Accompagnement">@menuLocalizer["Accompagnement"]</a></li>
+                        <li><a asp-controller="Home" asp-action="Financement">@menuLocalizer["Financement"]</a></li>
+                        <li><a asp-controller="Home" asp-action="Activite">@menuLocalizer["Activité"]</a></li>
+                        <li><a asp-controller="Home" asp-action="FCMG">@menuLocalizer["FCMG"]</a></li>
+                        <li><a asp-controller="Home" asp-action="Avantage">@menuLocalizer["Avantages"]</a></li>
+                        <li><a asp-controller="Home" asp-action="legislativeTexts">@menuLocalizer["Textes"]</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#"><span>@menuLocalizer["ServicesDigitaux"]</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="RegistrationCDE">@menuLocalizer["InscriptionsCDE"]</a></li>
+                        <li><a asp-controller="Home" asp-action="InscriptionDispositif">@menuLocalizer["InscriptionDispositif"]</a></li>
+                        @*<li><a asp-controller="Home" asp-action="">@menuLocalizer["Inscriptionsous-traitance"]</a></li>*@
+                        <li><a asp-controller="Home" asp-action="InscriptionCNRC">@menuLocalizer["InscriptionCNRC"]</a></li>
+                        <li><a asp-controller="Home" asp-action="InscriptionMPDZ">@menuLocalizer["InscriptionportailMP"]</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#"><span>@menuLocalizer["Programmes"]</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="NesdaExtension">@menuLocalizer["NesdaExtension"]</a></li>
+                        <li><a asp-controller="Home" asp-action="Impact70">Impact 70</a></li>
+                        <li><a asp-controller="Home" asp-action="SousTraitance">@menuLocalizer["NesdaSous-Traitance"]</a></li>
+                        <li><a asp-controller="Home" asp-action="Partenariat">@menuLocalizer["Partenariats"]</a></li>
+                        <li><a asp-controller="Home" asp-action="Cooperation">@menuLocalizer["Coopérations"]</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#"><span>@menuLocalizer["Annonces"]</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a asp-action="Index" asp-controller="Consultation">@menuLocalizer["Consultations"]</a></li>
+                        <li><a asp-action="Paged" asp-controller="Article">@menuLocalizer["Actualités"]</a></li>
+                        @*<li><a>@menuLocalizer["SuccessStories"]</a></li>
+                        <li><a>@menuLocalizer["Médiathèque"]</a></li>*@
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#"><span>@menuLocalizer["Contact"]</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a asp-action="Index" asp-controller="Contactus">@menuLocalizer["ContactDGAWAntennes"]</a></li>
+                        @*<li><a>@menuLocalizer["Doléances"]</a></li>
+                        <li><a>@menuLocalizer["QuestionnaireQualité"]</a></li>*@
+                        <li><a asp-action="Privacy" asp-controller="Home">@menuLocalizer["Politique"]</a></li>
+                    </ul>
+                </li>
+
+                @*<li>
+            @await Html.PartialAsync("_LoginPartial")
+        </li>*@
+            </ul>
+
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+    </div>
+</header>
+

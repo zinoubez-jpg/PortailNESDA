@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="afdf165fb7f445e691828a2651aafdf4" Name="Default" ZoomLevel="68" >
+        <EntityTypeShape EntityType="Model.Promoteur" Width="1.75" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="Model.Projet" Width="1.875" PointX="6.75" PointY="4.375" />
+        <EntityTypeShape EntityType="Model.PromoteurProjet" Width="1.875" PointX="6.75" PointY="1" />
+        <EntityTypeShape EntityType="Model.Facture" Width="1.5" PointX="0.5" PointY="6.125" />
+        <EntityTypeShape EntityType="Model.Article" Width="1.5" PointX="0.5" PointY="9.25" />
+        <EntityTypeShape EntityType="Model.Decision" Width="1.875" PointX="13.375" PointY="5" />
+        <EntityTypeShape EntityType="Model.OrdreEnlevement" Width="1.875" PointX="13.25" PointY="3.5" />
+        <EntityTypeShape EntityType="Model.SessionValidation" Width="1.875" PointX="14" PointY="7.125" />
+        <EntityTypeShape EntityType="Model.Referentiel" Width="1.5" PointX="13" PointY="10.625" FillColor="255, 255, 192" />
+        <EntityTypeShape EntityType="Model.Structure" Width="1.5" PointX="2.875" PointY="9.375" FillColor="255, 224, 192" />
+        <EntityTypeShape EntityType="Model.Qualite" Width="1.5" PointX="15.75" PointY="15.125" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.Qualite" />
+        <EntityTypeShape EntityType="Model.TypeSession" Width="1.5" PointX="16.125" PointY="13.5" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.TypeSession" />
+        <EntityTypeShape EntityType="Model.TypeFacture" Width="1.5" PointX="10.125" PointY="13.75" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.TypeFacture" />
+        <EntityTypeShape EntityType="Model.Document" Width="1.5" PointX="10.875" PointY="3.875" />
+        <EntityTypeShape EntityType="Model.TypeDocument" Width="1.5" PointX="13.75" PointY="15.125" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.TypeDocument" />
+        <InheritanceConnector EntityType="Model.Decision" />
+        <InheritanceConnector EntityType="Model.OrdreEnlevement" />
+        <EntityTypeShape EntityType="Model.PhaseProjet" Width="1.5" PointX="11.5" PointY="15.125" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.PhaseProjet" />
+        <EntityTypeShape EntityType="Model.NiveauInstruction" Width="1.5" PointX="13.625" PointY="17" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.NiveauInstruction" />
+        <EntityTypeShape EntityType="Model.Wilaya" Width="1.5" PointX="7.375" PointY="14" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.Wilaya" />
+        <EntityTypeShape EntityType="Model.Commune" Width="1.5" PointX="8.375" PointY="16.25" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.Commune" />
+        <AssociationConnector Association="Model.WilayaCommune" />
+        <AssociationConnector Association="Model.StructureParentStructure" />
+        <AssociationConnector Association="Model.PromoteurPromoteurProjet" />
+        <AssociationConnector Association="Model.ProjetPromoteurProjet" />
+        <AssociationConnector Association="Model.QualitePromoteurProjet" />
+        <AssociationConnector Association="Model.PhaseProjetProjet" />
+        <AssociationConnector Association="Model.ProjetProjetExtension" />
+        <AssociationConnector Association="Model.TypeSessionSessionValidation" />
+        <EntityTypeShape EntityType="Model.SessionValidationDetails" Width="2.125" PointX="11.25" PointY="7.25" />
+        <AssociationConnector Association="Model.ProjetSessionValidationDetails" />
+        <EntityTypeShape EntityType="Model.SecteurActivite" Width="1.5" PointX="15.75" PointY="16.875" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.SecteurActivite" />
+        <EntityTypeShape EntityType="Model.Activite" Width="2" PointX="15.375" PointY="18.5" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.Activite" />
+        <AssociationConnector Association="Model.SecteurActiviteActivite" />
+        <AssociationConnector Association="Model.SessionValidationSessionValidationDetails" />
+        <AssociationConnector Association="Model.TypeDocumentDocument" />
+        <AssociationConnector Association="Model.ProjetDocument" />
+        <EntityTypeShape EntityType="Model.Fournisseur" Width="1.5" PointX="0.5" PointY="3.5" />
+        <AssociationConnector Association="Model.FournisseurFacture" />
+        <AssociationConnector Association="Model.FactureArticle" />
+        <EntityTypeShape EntityType="Model.User" Width="1.5" PointX="7.25" PointY="9.375" FillColor="255, 224, 192" />
+        <EntityTypeShape EntityType="Model.UserStructure" Width="1.5" PointX="5.125" PointY="9.375" FillColor="255, 224, 192" />
+        <AssociationConnector Association="Model.UserUserStructure" />
+        <AssociationConnector Association="Model.StructureUserStructure" />
+        <EntityTypeShape EntityType="Model.TypeFinancement" Width="1.5" PointX="11.5" PointY="17" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.TypeFinancement" />
+        <AssociationConnector Association="Model.NiveauInstructionPromoteur" />
+        <AssociationConnector Association="Model.TypeFactureFacture" />
+        <AssociationConnector Association="Model.ActiviteProjet" />
+        <AssociationConnector Association="Model.TypeFinancementProjet" />
+        <AssociationConnector Association="Model.ProjetFacture" />
+      </Diagram>
+      <Diagram DiagramId="5232671e995e45b3afd9adab24325c60" Name="Organization" ZoomLevel="148" >
+        <EntityTypeShape EntityType="Model.Structure" Width="1.5" PointX="3.25" PointY="1.625" />
+        <AssociationConnector Association="Model.StructureParentStructure" />
+        <EntityTypeShape EntityType="Model.User" Width="1.5" PointX="8" PointY="2.125" />
+        <EntityTypeShape EntityType="Model.UserStructure" Width="1.5" PointX="5.75" PointY="1.75" />
+        <AssociationConnector Association="Model.UserUserStructure" />
+        <AssociationConnector Association="Model.StructureUserStructure" />
+      </Diagram>
+      <Diagram DiagramId="225b4e7f2980407bb6a53ce5a0f2b4a3" Name="Promoteur" ZoomLevel="99" >
+        <EntityTypeShape EntityType="Model.PhaseProjet" Width="1.5" PointX="11" PointY="1.125" FillColor="255, 255, 192" />
+        <EntityTypeShape EntityType="Model.Projet" Width="1.5" PointX="8.5" PointY="2.375" />
+        <AssociationConnector Association="Model.PhaseProjetProjet" />
+        <AssociationConnector Association="Model.ProjetProjetExtension" />
+        <EntityTypeShape EntityType="Model.Promoteur" Width="1.875" PointX="2.75" PointY="1.5" />
+        <EntityTypeShape EntityType="Model.PromoteurProjet" Width="1.875" PointX="5.625" PointY="1.5" IsExpanded="false" />
+        <AssociationConnector Association="Model.PromoteurPromoteurProjet" />
+        <AssociationConnector Association="Model.ProjetPromoteurProjet" />
+        <EntityTypeShape EntityType="Model.Commune" Width="1.5" PointX="0.5" PointY="1.375" FillColor="255, 255, 192" />
+        <EntityTypeShape EntityType="Model.SessionValidation" Width="1.875" PointX="2.375" PointY="6.75" />
+        <EntityTypeShape EntityType="Model.SessionValidationDetails" Width="2.25" PointX="5.25" PointY="5.375" />
+        <AssociationConnector Association="Model.ProjetSessionValidationDetails" />
+        <AssociationConnector Association="Model.SessionValidationSessionValidationDetails" />
+        <EntityTypeShape EntityType="Model.EtatProjet" Width="1.5" PointX="10.875" PointY="2.625" />
+        <AssociationConnector Association="Model.ProjetEtatProjet" />
+        <EntityTypeShape EntityType="Model.EtapeProjet" Width="1.5" PointX="11.125" PointY="5.25" />
+        <AssociationConnector Association="Model.ProjetEtapeProjet" />
+        <EntityTypeShape EntityType="Model.NiveauInstruction" Width="1.5" PointX="0.5" PointY="3.5" />
+        <AssociationConnector Association="Model.NiveauInstructionPromoteur" />
+        <EntityTypeShape EntityType="Model.Pays" Width="1.5" PointX="0.5" PointY="5" />
+        <EntityTypeShape EntityType="Model.ProjetStructure" Width="1.5" PointX="6.25" PointY="3.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="Model.Structure" Width="1.5" PointX="4" PointY="2.75" />
+        <AssociationConnector Association="Model.StructureParentStructure" />
+        <AssociationConnector Association="Model.StructureProjetStructure" />
+        <AssociationConnector Association="Model.ProjetProjetStructure" />
+      </Diagram>
+      <Diagram DiagramId="ccb03031551a4134a3833ec1330c35b9" Name="Refrentiel" ZoomLevel="108" >
+        <EntityTypeShape EntityType="Model.Referentiel" Width="1.5" PointX="5.375" PointY="0.875" FillColor="255, 255, 192" />
+        <EntityTypeShape EntityType="Model.SecteurActivite" Width="1.5" PointX="1.125" PointY="3.375" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.SecteurActivite" />
+        <EntityTypeShape EntityType="Model.TypeFinancement" Width="1.5" PointX="3.75" PointY="3.125" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.TypeFinancement" />
+        <EntityTypeShape EntityType="Model.Wilaya" Width="1.5" PointX="6.125" PointY="4.125" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.Wilaya" />
+        <EntityTypeShape EntityType="Model.Commune" Width="1.5" PointX="3.75" PointY="5.125" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.Commune" />
+        <AssociationConnector Association="Model.WilayaCommune" />
+        <EntityTypeShape EntityType="Model.Activite" Width="1.5" PointX="1" PointY="5.375" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.Activite" />
+        <AssociationConnector Association="Model.SecteurActiviteActivite" />
+        <EntityTypeShape EntityType="Model.TypeDocument" Width="1.5" PointX="8.125" PointY="3.75" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.TypeDocument" />
+        <EntityTypeShape EntityType="Model.TypeFacture" Width="1.5" PointX="10.625" PointY="4.625" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.TypeFacture" />
+        <EntityTypeShape EntityType="Model.TypeSession" Width="1.5" PointX="8.375" PointY="5.625" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.TypeSession" />
+        <EntityTypeShape EntityType="Model.Qualite" Width="1.5" PointX="10.5" PointY="6.375" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.Qualite" />
+        <EntityTypeShape EntityType="Model.Pays" Width="1.5" PointX="5" PointY="7" FillColor="255, 255, 192" />
+        <InheritanceConnector EntityType="Model.Pays" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,617 @@
+﻿@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["FINANCEMENT"];
+}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<style>
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+    .col-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 15px;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        padding: 0 15px;
+    }
+
+    @@media (max-width: 992px) {
+        .col-lg-6, .col-lg-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .financing .intro-wrapper {
+        margin-bottom: 70px;
+    }
+
+        .financing .intro-wrapper .intro-image {
+            position: relative;
+        }
+
+            .financing .intro-wrapper .intro-image img {
+                border-radius: 15px;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                height: auto;
+            }
+
+            .financing .intro-wrapper .intro-image .accent-shape {
+                position: absolute;
+                width: 120px;
+                height: 120px;
+                background-color: var(--accent-color);
+                border-radius: 20px;
+                bottom: -30px;
+                left: -30px;
+                z-index: -1;
+                opacity: 0.15;
+            }
+
+        .financing .intro-wrapper .intro-content {
+            padding-left: 20px;
+        }
+
+            .financing .intro-wrapper .intro-content .subtitle {
+                display: inline-block;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+                color: var(--accent-color);
+                padding: 8px 16px;
+                border-radius: 50px;
+                font-weight: 500;
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+
+            .financing .intro-wrapper .intro-content h2 {
+                font-size: 36px;
+                margin-bottom: 20px;
+                font-weight: 700;
+                color: var(--heading-color);
+            }
+
+            .financing .intro-wrapper .intro-content .intro-text {
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                font-size: 17px;
+                margin-bottom: 25px;
+                line-height: 1.7;
+                text-align:justify;
+            }
+
+    @@media (max-width: 992px) {
+        .financing .intro-wrapper .intro-content {
+            padding-left: 0;
+            margin-top: 30px;
+        }
+
+            .financing .intro-wrapper .intro-content h2 {
+                font-size: 30px;
+            }
+    }
+
+    .financing .features-content {
+        margin-bottom: 80px;
+    }
+
+        .financing .features-content .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            background-color: var(--surface-color);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+            .financing .features-content .feature-item:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            }
+
+            .financing .features-content .feature-item i {
+                color: var(--accent-color);
+                font-size: 20px;
+                margin-left: 15px;
+                margin-right: 0;
+                min-width: 30px;
+            }
+
+            .financing .features-content .feature-item span {
+                font-weight: 500;
+                font-size: 16px;
+            }
+
+    .financing .types-content {
+        margin-bottom: 80px;
+    }
+
+        .financing .types-content .type-item {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background-color: var(--surface-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+            .financing .types-content .type-item:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            }
+
+            .financing .types-content .type-item .type-header {
+                padding: 25px 25px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+                .financing .types-content .type-item .type-header .type-icon {
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 12px;
+                    font-size: 28px;
+                }
+
+                .financing .types-content .type-item .type-header .type-label {
+                    font-size: 13px;
+                    font-weight: 600;
+                    padding: 6px 14px;
+                    border-radius: 50px;
+                }
+
+            .financing .types-content .type-item .type-body {
+                padding: 10px 25px 25px;
+                flex-grow: 1;
+            }
+
+                .financing .types-content .type-item .type-body h3 {
+                    font-size: 22px;
+                    margin-bottom: 12px;
+                    color: var(--heading-color);
+                }
+
+                .financing .types-content .type-item .type-body p {
+                    font-size: 15px;
+                    color: color-mix(in srgb, var(--default-color), transparent 20%);
+                    margin-bottom: 20px;
+                    line-height: 1.6;
+                }
+
+                .financing .types-content .type-item .type-body .percentage-display {
+                    text-align: center;
+                    margin: 20px 0;
+                    padding: 20px;
+                    background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+                    border-radius: 10px;
+                }
+
+                    .financing .types-content .type-item .type-body .percentage-display .percentage {
+                        font-size: 36px;
+                        font-weight: 700;
+                        color: var(--accent-color);
+                        margin-bottom: 5px;
+                    }
+
+                    .financing .types-content .type-item .type-body .percentage-display .label {
+                        font-size: 14px;
+                        color: color-mix(in srgb, var(--default-color), transparent 30%);
+                    }
+
+            .financing .types-content .type-item.self .type-header .type-icon {
+                background-color: color-mix(in srgb, #FF9800, transparent 88%);
+                color: #FF9800;
+            }
+
+            .financing .types-content .type-item.self .type-header .type-label {
+                background-color: color-mix(in srgb, #FF9800, transparent 85%);
+                color: #FF9800;
+            }
+
+            .financing .types-content .type-item.bilateral .type-header .type-icon {
+                background-color: color-mix(in srgb, #2196F3, transparent 88%);
+                color: #2196F3;
+            }
+
+            .financing .types-content .type-item.bilateral .type-header .type-label {
+                background-color: color-mix(in srgb, #2196F3, transparent 85%);
+                color: #2196F3;
+            }
+
+            .financing .types-content .type-item.trilateral .type-header .type-icon {
+                background-color: color-mix(in srgb, #4CAF50, transparent 88%);
+                color: #4CAF50;
+            }
+
+            .financing .types-content .type-item.trilateral .type-header .type-label {
+                background-color: color-mix(in srgb, #4CAF50, transparent 85%);
+                color: #4CAF50;
+            }
+
+    .financing .table-wrapper {
+        margin-bottom: 80px;
+    }
+
+    .financing .comparison-table {
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+
+        .financing .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .financing .comparison-table th,
+        .financing .comparison-table td {
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+        }
+
+        .financing .comparison-table th {
+            background-color: var(--accent-color);
+            color: var(--contrast-color);
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .financing .comparison-table td {
+            font-weight: 500;
+        }
+
+        .financing .comparison-table tr:hover {
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+        }
+
+    .financing .additional-loans {
+        margin-bottom: 80px;
+    }
+
+        .financing .additional-loans .loan-card {
+            background-color: var(--surface-color);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+            .financing .additional-loans .loan-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            }
+
+            .financing .additional-loans .loan-card .loan-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+            }
+
+                .financing .additional-loans .loan-card .loan-header i {
+                    color: var(--accent-color);
+                    font-size: 24px;
+                    margin-left: 15px;
+                    margin-right: 0;
+                }
+
+                .financing .additional-loans .loan-card .loan-header h4 {
+                    color: var(--heading-color);
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+            .financing .additional-loans .loan-card .amount {
+                display: inline-block;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+                color: var(--accent-color);
+                padding: 8px 16px;
+                border-radius: 50px;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+
+    .section-padding {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            font-size: 18px;
+            color: color-mix(in srgb, var(--default-color), transparent 30%);
+        }
+
+    @@media (max-width: 768px) {
+        .section-title h2 {
+            font-size: 28px;
+        }
+
+        .section-title p {
+            font-size: 16px;
+        }
+
+        .financing .comparison-table {
+            font-size: 14px;
+        }
+
+            .financing .comparison-table th,
+            .financing .comparison-table td {
+                padding: 10px 8px;
+            }
+    }
+</style>
+<!-- Page Title -->
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/financementpg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+
+<div class="financing">
+    <div class="container">
+        <!-- Section d'introduction -->
+        <section class="intro-wrapper section-padding">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="intro-image">
+                        <img src="~/NesdaTMP/assets/img/NesdaImg/financement.jpg" alt="التمويل في المقاولاتية">
+                        <div class="accent-shape"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="intro-content">
+                        <span class="subtitle">التمويل الذاتي، الثنائي، الثلاثي</span>
+                        <h2>حلول التمويل</h2>
+                      
+                        <p class="intro-text">
+                            تلعب الوكالة الوطنية لدعم وتنمية المقاولاتية دوراً محورياً في تمويل المؤسسات المصغرة، عبر مرافقة حاملي الأفكار الريادية الراغبين في تحويلها إلى مشاريع واقعية تخلق الثروة ومناصب الشغل، وفقا للمقاربة الاقتصادية المنتهجة الرامية الى تعزيز آليات التمويل وتسيير المخاطر المتعلقة بها، بهدف تحريك عجلة التنمية الوطنية.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- مميزات التمويل -->
+        <section class="features-content">
+            <div class="section-title">
+                <h2>التمويل ينقلك من الفكرة إلى تجسيد مشروع</h2>
+                <p>تتميز الحلول التمويلية التي تقدمها الوكالة بالمميزات التالية</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="feature-item">
+                        <i class="fas fa-handshake"></i>
+                        <span>قرض غير مكافئ لتمويل مشاريع انشاء مؤسسات مصغرة وتوسعة نشاطها</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>تمويل المشاريع قد يصل الى غاية 10.000.000 دج</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <span>صيغ تمويل مشتركة ثنائية وثلاثية بين صاحب المشروع، الوكالة والبنك</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-percentage"></i>
+                        <span>قروض بنسبة فائدة مخفضة بنسبة مئة بالمئة</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <span>مدة سداد القروض مغرية</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>قروض غير مكافئة إضافية: للاستغلال والكراء</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- أنواع التمويل -->
+        <section class="types-content">
+            <div class="section-title">
+                <h2>صيغ التمويل</h2>
+                <p>تعرض الوكالة عدة صيغ تمويلية لانشاء وتوسعة المؤسسات المُصغّرة عبر 3 تركيبات مالية</p>
+            </div>
+            <div class="row">
+                <!-- التمويل الذاتي -->
+                <div class="col-lg-4">
+                    <div class="type-item self">
+                        <div class="type-header">
+                            <div class="type-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="type-label">التمويل الذاتي</div>
+                        </div>
+                        <div class="type-body">
+                            <h3>التمويل الذاتي</h3>
+                            <p>حيث يقوم صاحب المشروع بتمويل الاستثمار بالكامل بشكل مستقل، دون اللجوء إلى مصادر خارجية</p>
+                            <br />
+                            <div class="percentage-display">
+                                <div class="label">المساهمة الشخصية</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- التمويل الثنائي -->
+                <div class="col-lg-4">
+                    <div class="type-item bilateral">
+                        <div class="type-header">
+                            <div class="type-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="type-label">التمويل الثنائي</div>
+                        </div>
+                        <div class="type-body">
+                            <h3>التمويل الثنائي</h3>
+                            <p>حيث يساهم كل من صاحب المشروع والوكالة بنسبة 50% من مبلغ الاستثمار</p>
+                            <br />
+                            <div class="percentage-display">
+                                <div class="label">صاحب المشروع + الوكالة</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- التمويل الثلاثي -->
+                <div class="col-lg-4">
+                    <div class="type-item trilateral">
+                        <div class="type-header">
+                            <div class="type-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="type-label">تمويل ثلاثي</div>
+                        </div>
+                        <div class="type-body">
+                            <h3>التمويل الثلاثي</h3>
+                            <p>يساهم حامل المشروع بنسبة ما بين 5 و15% في حين الوكالة تساهم بنسبة ما بين 15 و25%، والبنك يغطي نسبة 70% المتبقية</p>
+                            <div class="percentage-display">
+                                <div class="label">صاحب المشروع + الوكالة + البنك</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- جدول مقارنة التمويل -->
+        <section class="table-wrapper">
+            <div class="section-title">
+                <h2>جدول  صيغ التمويل</h2>
+                <p>تفاصيل نسب المساهمة لكل نوع من صيغ التمويل المتاحة</p>
+            </div>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>نوع التمويل</th>
+                            <th>المساهمة الشخصية</th>
+                            <th>الوكالة (قرض غير مكافئ)</th>
+                            <th>البنك (قرض بنكي)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>التمويل الثلاثي - الطلبة والبطالين</strong></td>
+                            <td>5%</td>
+                            <td>25%</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>التمويل الثلاثي - غير البطالين (مناطق الجنوب)</strong></td>
+                            <td>10%</td>
+                            <td>20%</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>التمويل الثلاثي - غير البطالين (الهضاب العليا والمناطق الخاصة)</strong></td>
+                            <td>12%</td>
+                            <td>18%</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>التمويل الثلاثي - غير البطالين (باقي المناطق)</strong></td>
+                            <td>15%</td>
+                            <td>15%</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>التمويل الثنائي</strong></td>
+                            <td>50%</td>
+                            <td>50%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>التمويل الذاتي</strong></td>
+                            <td>100%</td>
+                            <td>0%</td>
+                            <td>0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- القروض الإضافية -->
+        <section class="additional-loans">
+            <div class="section-title">
+                <h2>تمويل الاستغلال والكراء</h2>
+                <p>قروض إضافية غير مكافئة لتغطية احتياجات خاصة</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="loan-card">
+                        <div class="loan-header">
+                            <i class="fas fa-store"></i>
+                            <h4>قرض إضافي غير مكافئ لكراء محل</h4>
+                        </div>
+                        <div class="amount">500.000 دج</div>
+                        <p>عند الضرورة يمكن لحاملي المشاريع الإستفادة من قرض إضافي غير مكافئ للتكفل بإيجار المحل أو مكان الرسو على مستوى الموانئ المخصص لإحداث أنشطة إنتاج السلع والخدمات بإستثناء الأنشطة غير المقيمة</p>
+                        <p><strong>شرط:</strong> يمنح هذا القرض عندما يلجأ حاملي المشاريع الى التمويل البنكي في مرحلة إحداث النشاطات</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="loan-card">
+                        <div class="loan-header">
+                            <i class="fas fa-cogs"></i>
+                            <h4>قرض إضافي غير مكافئ للإستغلال</h4>
+                        </div>
+                        <div class="amount">1.000.000 دج</div>
+                        <p>يمكن لحاملي المشاريع من الاستفادة من قرض اضافي غير مكافئ للإستغلال بصفة استثنائية</p>
+                      <br />
+                        <br />
+                        <p><strong>طبيعة القرض:</strong> استثنائي لتغطية احتياجات الاستغلال والتشغيل</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+

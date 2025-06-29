@@ -1,0 +1,356 @@
+﻿@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["Organisation"];
+}
+
+<style>
+
+
+    .aboutOrg {
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+
+        .aboutOrg .display-6 {
+            line-height: 1.2;
+        }
+
+            .aboutOrg .display-6 span {
+                position: relative;
+                color: var(--accent-color);
+            }
+
+                .aboutOrg .display-6 span:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+                    left: 0;
+                    bottom: 5px;
+                    z-index: -1;
+                }
+
+        .aboutOrg .lead {
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            font-size: 1.125rem;
+            text-align: justify;
+        }
+
+        .aboutOrg .stat-box {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--surface-color);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            min-width: 110px;
+            border-bottom: 3px solid var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+
+            .aboutOrg .stat-box:hover {
+                transform: translateY(-5px);
+            }
+
+            .aboutOrg .stat-box .stat-number {
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 1;
+                color: var(--heading-color);
+            }
+
+            .aboutOrg .stat-box .stat-label {
+                font-size: 0.875rem;
+                color: color-mix(in srgb, var(--default-color), transparent 30%);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 5px;
+            }
+
+        .aboutOrg .signature-block {
+            border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+            padding-top: 1.5rem;
+        }
+
+            .aboutOrg .signature-block img {
+                transition: transform 0.3s ease;
+            }
+
+                .aboutOrg .signature-block img:hover {
+                    transform: scale(1.05);
+                }
+
+        .aboutOrg .image-stack {
+            position: relative;
+            height: 500px;
+        }
+
+    @@media (max-width: 992px) {
+        .aboutOrg .image-stack {
+            height: 400px;
+            margin-top: 3rem;
+        }
+    }
+
+    @@media (max-width: 576px) {
+        .aboutOrg .image-stack {
+            height: 350px;
+        }
+    }
+
+    .aboutOrg .image-stack .image-stack-item {
+        position: absolute;
+        width: 80%;
+        height: auto;
+        transition: transform 0.5s ease;
+    }
+
+        .aboutOrg .image-stack .image-stack-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .aboutOrg .image-stack .image-stack-item img {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+    .aboutOrg .image-stack .image-stack-item-top {
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .aboutOrg .image-stack .image-stack-item-bottom {
+        z-index: 2;
+        bottom: 0;
+        right: 0;
+    }
+
+    .aboutOrg .mission-vision-row {
+        margin-top: 2rem;
+    }
+
+        .aboutOrg .mission-vision-row .value-card {
+            background-color: var(--surface-color);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            z-index: 1;
+            height: 100%;
+        }
+
+            .aboutOrg .mission-vision-row .value-card:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+                transition: height 0.5s ease;
+                z-index: -1;
+            }
+
+            .aboutOrg .mission-vision-row .value-card:hover {
+                transform: translateY(-10px);
+            }
+
+                .aboutOrg .mission-vision-row .value-card:hover:before {
+                    height: 100%;
+                }
+
+                .aboutOrg .mission-vision-row .value-card:hover .card-icon {
+                    background-color: var(--accent-color);
+                }
+
+                    .aboutOrg .mission-vision-row .value-card:hover .card-icon i {
+                        color: var(--contrast-color);
+                    }
+
+            .aboutOrg .mission-vision-row .value-card .card-icon {
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+                border-radius: 50%;
+                margin-bottom: 1.5rem;
+                transition: all 0.3s ease;
+            }
+
+                .aboutOrg .mission-vision-row .value-card .card-icon i {
+                    font-size: 1.75rem;
+                    color: var(--accent-color);
+                    transition: color 0.3s ease;
+                }
+
+            .aboutOrg .mission-vision-row .value-card h3 {
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--heading-color);
+            }
+
+            .aboutOrg .mission-vision-row .value-card p {
+                margin-bottom: 0;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                text-align: justify;
+            }
+
+    .organization-content {
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        padding: 2.5rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        color: var(--accent-color);
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 0.5rem;
+        display: inline-block;
+    }
+
+    .list-item {
+        margin-bottom: 0.5rem;
+        padding-right: 1rem;
+        position: relative;
+    }
+
+        .list-item:before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+        }
+
+    .members-list {
+        background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+        border-radius: 10px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+</style>
+
+<!-- Page Title -->
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/7.png);">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+<!-- Academics Section -->
+<section id="academics" class="academics section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="intro-wrapper">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
+                    <div class="intro-image">
+                        <img src="~/NesdaTMP/assets/img/NesdaImg/Organisation.png" alt="OrganisationNesda" class="img-fluid rounded-lg shadow">
+                        <div class="accent-shape"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <section class="about">
+                        <div class="container">
+
+                            <h1 class="display-6 fw-bold mb-4">
+                                تنظيم <span>الوكالة الوطنية</span> لدعم وتنمية المقاولاتية
+                            </h1>
+                            <p class="lead">
+                                بموجب تدابير المرسوم التنفيذي رقم 96-296 المؤرخ في 24 ربيع الثاني عام 1417 الموافق 8 سبتمبر سنة 1996، المعدل والمتمم، والمتضمن إنشاء الوكالة الوطنية لدعم وتنمية المقاولاتية وتحديد قانونها الأساسي، يسير الوكالة مجلس إدارة ويديرها مدير عام، كما هي مزودة بلجنة مراقبة.
+                            </p>
+                        </div>
+                    </section>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section><!-- /Academics Section -->
+
+
+<section class="aboutOrg">
+    <div class="container">
+
+        <!-- Organization Cards -->
+        <div class="row mission-vision-row">
+            <div class="col-lg-6 mb-4">
+                <div class="value-card">
+                    <div class="card-icon">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h3>مجلس الإدارة</h3>
+                    <p>يتداول مجلس الإدارة وفقا للقوانين والتنظيمات المعمول بها، حول برنامج نشاط الوكالة، الميزانية التقديرية، تنظيم الوكالة ونظامها الداخليان، والمخطط السنوي لتمويل نشاطات الوكالة، بالإضافة إلى استعمال الوسائل المالية وإنشاء الملاحق وإنجاز الاستثمارات.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="value-card">
+                    <div class="card-icon">
+                        <i class="bi bi-person-workspace"></i>
+                    </div>
+                    <h3>لجنة المراقبة</h3>
+                    <p>تكلف لجنة المراقبة بممارسة الرقابة اللاحقة لتطبيق قرارات مجلس الإدارة، حيث تجتمع في نهاية كل ثلاثي وتقدم الملاحظات والتوصيات المفيدة عن أحسن الكيفيات لتطبيق البرامج والمشاريع التي شرعت فيها الوكالة.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Content -->
+        <div class="organization-content">
+            <h2 class="section-title">تشكيلة مجلس الإدارة</h2>
+            <div class="members-list">
+                <div class="list-item">ممثلان (2) عن الوزير المكلف بالمؤسسات المصغرة، أحدهما رئيس</div>
+                <div class="list-item">ممثل الوزير المكلف بالشؤون الخارجية</div>
+                <div class="list-item">ممثل الوزير المكلف بالداخلية والجماعات المحلية</div>
+                <div class="list-item">ممثلان (2) عن الوزير المكلف بالمالية</div>
+                <div class="list-item">ممثل الوزير المكلف بالتجارة</div>
+                <div class="list-item">ممثل الوزير المكلف بالعمل والتشغيل والضمان الاجتماعي</div>
+                <div class="list-item">ممثل الوزير المكلف بالتضامن الوطني وشؤون المرأة</div>
+                <div class="list-item">ممثل الوزير المكلف بالصناعة</div>
+                <div class="list-item">الأمين الدائم لصندوق الكفالة المشتركة لضمان أخطار القروض الممنوحة للشباب ذوو المشاريع، أو ممثله</div>
+                <div class="list-item">رئيس جمعية البنوك والمؤسسات المالية، أو ممثله</div>
+                <div class="list-item">ممثل عن منظمة الشباب ذوي المشاريع، الأكثر تمثيلا على المستوى الوطني</div>
+            </div>
+
+            <h3 class="section-title mt-4">اجتماعات مجلس الإدارة</h3>
+            <p>يجتمع مجلس الإدارة في دورة عادية أربع مرات في السنة، على الأقل، بناء على استدعاء من رئيسه الذي يحدد جدول الأعمال بناء على اقتراح من المدير العام للوكالة. ويمكن أن يجتمع في دورة غير عادية بناء على استدعاء من رئيسه أو بطلب من السلطة الوصية أو المدير العام للوكالة أو أغلبية أعضائه.</p>
+
+            <h3 class="section-title mt-4">مهام لجنة المراقبة</h3>
+            <div class="members-list">
+                <div class="list-item">ممارسة الرقابة اللاحقة لتطبيق قرارات مجلس الإدارة</div>
+                <div class="list-item">تقديم الملاحظات والتوصيات للمدير العام</div>
+                <div class="list-item">إبداء الرأي في التقارير الدورية عن المتابعة والتنفيذ والتقييم</div>
+                <div class="list-item">مراقبة وتدقيق الحسابات لاستعمال أموال الوكالة</div>
+                <div class="list-item">تقديم الملاحظات حول البيانات التقديرية للإيرادات والنفقات</div>
+            </div>
+        </div>
+    </div>
+</section>
+
