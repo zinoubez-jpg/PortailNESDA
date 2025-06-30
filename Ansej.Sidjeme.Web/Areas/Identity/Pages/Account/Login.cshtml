@@ -4,90 +4,347 @@
 
 @{
     ViewData["Title"] = "Log in";
+    Layout = null;
 }
 
-<br />
-<br />
-<br />
-<br />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-@*<div class="container">
-        <div class="row">
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-4 col-md-offset-2">
-                <section>
-                    <form id="account" method="post">
-                        <h4>log in</h4>
-                        <hr />
-                        <div asp-validation-summary="All" class="text-danger"></div>
-                        <div class="form-group">
-                            <label asp-for="Input.UserName"></label>
-                            <input asp-for="Input.UserName" class="form-control" />
-                            <span asp-validation-for="Input.UserName" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <label asp-for="Input.Password"></label>
-                            <input asp-for="Input.Password" class="form-control" />
-                            <span asp-validation-for="Input.Password" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <div class="checkbox">
-                                <label asp-for="Input.RememberMe">
-                                    <input asp-for="Input.RememberMe" />
-                                    @Html.DisplayNameFor(m => m.Input.RememberMe)
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group ">
-                            <button type="submit" class="btn-get-started col-12">Log in</button>
-                        </div>
-                    </form>
-                </section>
+<style>
+    :root {
+        --default-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        --background-color: #f1f5f4;
+        --default-color: #212529;
+        --heading-color: #2d465e;
+        --accent-color: #41c1ba;
+        --surface-color: #ffffff;
+        --contrast-color: #ffffff;
+        --error-color: #dc3545;
+        --border-color: #e9ecef;
+    }
 
-            </div>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: var(--default-font);
+        background-color: var(--background-color);
+        color: var(--default-color);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    .login-container {
+        background-color: var(--surface-color);
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        position: relative;
+        max-width: 450px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+        .login-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--accent-color) 0%, #36a8a2 100%);
+        }
+
+    .login-header {
+        text-align: center;
+        padding: 3rem 3rem 1rem;
+        position: relative;
+    }
+
+    .login-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, var(--accent-color), #36a8a2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        box-shadow: 0 8px 25px rgba(65, 193, 186, 0.3);
+    }
+
+        .login-icon i {
+            font-size: 2rem;
+            color: var(--contrast-color);
+        }
+
+    .login-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--heading-color);
+        margin-bottom: 0.5rem;
+        position: relative;
+    }
+
+    .login-subtitle {
+        color: color-mix(in srgb, var(--default-color), transparent 30%);
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .login-form {
+        padding: 1rem 3rem 3rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: var(--heading-color);
+        font-size: 0.95rem;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 0.875rem 1rem;
+        border: 2px solid var(--border-color);
+        border-radius: 12px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background-color: #fafbfc;
+    }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            background-color: var(--surface-color);
+            box-shadow: 0 0 0 3px rgba(65, 193, 186, 0.1);
+        }
+
+        .form-control:hover {
+            border-color: color-mix(in srgb, var(--accent-color), transparent 50%);
+        }
+
+    .checkbox-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+        .checkbox-wrapper input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-right: 0.75rem;
+            accent-color: var(--accent-color);
+            cursor: pointer;
+        }
+
+        .checkbox-wrapper label {
+            font-size: 0.95rem;
+            color: var(--default-color);
+            cursor: pointer;
+            user-select: none;
+        }
+
+    .login-button {
+        width: 100%;
+        padding: 1rem;
+        background: linear-gradient(135deg, var(--accent-color), #36a8a2);
+        color: var(--contrast-color);
+        border: none;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .login-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .login-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(65, 193, 186, 0.4);
+        }
+
+            .login-button:hover::before {
+                left: 100%;
+            }
+
+        .login-button:active {
+            transform: translateY(0);
+        }
+
+    .validation-summary {
+        background-color: color-mix(in srgb, var(--error-color), transparent 90%);
+        border: 1px solid color-mix(in srgb, var(--error-color), transparent 70%);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+        .validation-summary ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            color: var(--error-color);
+        }
+
+    .text-danger {
+        color: var(--error-color) !important;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+        display: block;
+    }
+
+    .input-icon {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: color-mix(in srgb, var(--default-color), transparent 50%);
+        font-size: 1.1rem;
+        pointer-events: none;
+        transition: color 0.3s ease;
+    }
+
+    .form-control:focus + .input-icon {
+        color: var(--accent-color);
+    }
+
+    .form-control.with-icon {
+        padding-left: 3rem;
+    }
+
+    @@media (max-width: 576px) {
+        body {
+            padding: 1rem;
+        }
+
+        .login-header {
+            padding: 2rem 2rem 1rem;
+        }
+
+        .login-form {
+            padding: 1rem 2rem 2rem;
+        }
+
+        .login-title {
+            font-size: 1.75rem;
+        }
+    }
+
+    /* Animation d'entrée */
+    @@keyframes slideInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .login-container {
+        animation: slideInUp 0.6s ease-out;
+    }
+</style>
+
+
+<div class="login-container">
+    <div class="login-header">
+        <div class="login-icon">
+            <i class="fas fa-lock"></i>
         </div>
-    </div>*@
-
-
-
-
-<section id="contact" class="contact">
-    <div class="container" data-aos="fade-up">
-        <div class="col-lg-4 offset-4 mt-5 mt-lg-0">
-            <form id="account" method="post" >
-                <h2>Authentification</h2>
-                <hr />
-                <div asp-validation-summary="All" class="text-danger"></div>
-                <div class="form-group">
-                    <label asp-for="Input.UserName"></label>
-                    <input asp-for="Input.UserName" class="form-control" />
-                    <span asp-validation-for="Input.UserName" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Input.Password"></label>
-                    <input asp-for="Input.Password" class="form-control" />
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <div class="checkbox">
-                        <label asp-for="Input.RememberMe">
-                            <input asp-for="Input.RememberMe" />
-                            @Html.DisplayNameFor(m => m.Input.RememberMe)
-                        </label>
-                    </div>
-                </div>
-                <div class="text-center col-12 ">
-                    <button type="submit" class="info-button">Log in</button>
-                </div>
-            </form>
-
-        </div>
+        <h1 class="login-title">Authentification</h1>
+        <p class="login-subtitle">Connectez-vous à votre compte</p>
     </div>
-</section><!-- End Contact Section -->
+
+    <div class="login-form">
+        <form id="account" method="post">
+            <div asp-validation-summary="All" class="validation-summary text-danger" style="display: none;"></div>
+
+            <div class="form-group">
+                <label asp-for="Input.UserName" class="form-label"></label>
+                <div style="position: relative;">
+                    <input asp-for="Input.UserName" class="form-control with-icon" placeholder="Entrez votre nom d'utilisateur" />
+                    <i class="fas fa-user input-icon"></i>
+                </div>
+                <span asp-validation-for="Input.UserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Input.Password" class="form-label"></label>
+                <div style="position: relative;">
+                    <input asp-for="Input.Password" class="form-control with-icon" placeholder="Entrez votre mot de passe" />
+                    <i class="fas fa-key input-icon"></i>
+                </div>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+
+            <div class="checkbox-wrapper">
+                <input asp-for="Input.RememberMe" type="checkbox" />
+                <label asp-for="Input.RememberMe">
+                    @Html.DisplayNameFor(m => m.Input.RememberMe)
+                </label>
+            </div>
+
+            <button type="submit" class="login-button">
+                <i class="fas fa-sign-in-alt" style="margin-right: 0.5rem;"></i>
+                Se connecter
+            </button>
+        </form>
+    </div>
+</div>
+
+
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Afficher les erreurs de validation si présentes
+        document.addEventListener('DOMContentLoaded', function () {
+            const validationSummary = document.querySelector('.validation-summary');
+            if (validationSummary && validationSummary.querySelector('ul li')) {
+                validationSummary.style.display = 'block';
+            }
+
+            // Animation au focus des champs
+            const formControls = document.querySelectorAll('.form-control');
+            formControls.forEach(control => {
+                control.addEventListener('focus', function () {
+                    this.parentElement.style.transform = 'scale(1.02)';
+                });
+
+                control.addEventListener('blur', function () {
+                    this.parentElement.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
 }
 
 

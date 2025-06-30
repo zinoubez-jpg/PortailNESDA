@@ -250,20 +250,20 @@
     }
 </style>
 
-<section class="page-header">
-    <div class="page-header-bg" style="background-image: url(/assets/images/backgrounds/page-header-bg.png)">
-    </div>
-    <div class="container">
-        <div class="page-header__inner">
-            <h2>@ViewData["Title"]</h2>
-            <ul class="thm-breadcrumb list-unstyled">
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/nesdaTitle.jpg);">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
                 <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
-                <li><span>/</span></li>
-                <li> @ViewData["Title"]</li>
-            </ul>
-        </div>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
     </div>
-</section>
+</div>
 
 <div class="main-content">
     <div class="container">
@@ -310,7 +310,7 @@
                         <div class="form-group">
                             <label asp-for="AdministrativeStructureId" class="form-label">Structure</label>
                             <select asp-for="AdministrativeStructureId" id="AdministrativeStructureId" asp-items="ViewBag.Structures" class="form-select">
-                                <option value="">Sélectionnez une structure</option>
+                                <option value="">اختر / Sélectionnez</option>
                             </select>
                             <span asp-validation-for="AdministrativeStructureId" class="text-danger small"></span>
                         </div>
@@ -320,7 +320,7 @@
                     <div class="form-group" id="SubStructureContainer" style="display: none;">
                         <label class="form-label" for="SubAdministrativeStructureId">الهيكل الفرعي / Sous-structure</label>
                         <select id="SubAdministrativeStructureId" name="SubAdministrativeStructureId" class="form-select">
-                            <option value="">اختر / Sélectionnez une sous-structure</option>
+                            <option value="">اختر / Sélectionnez </option>
                         </select>
                     </div>
                 </div>
@@ -378,9 +378,9 @@
                     data: { parentId: selectedId },
                     success: function (data) {
                         if (data.length > 0) {
-                            let options = '<option value="">اختر / Sélectionnez une sous-structure</option>';
+                            let options = '<option value="">اختر / Sélectionnez </option>';
                             data.forEach(function (item) {
-                                options += `<option value="${item.id}">${item.nameFr}</option>`;
+                                options += `<option value="${item.id}">${item.nameAr}</option>`;
                             });
 
                             $('#SubAdministrativeStructureId').html(options);

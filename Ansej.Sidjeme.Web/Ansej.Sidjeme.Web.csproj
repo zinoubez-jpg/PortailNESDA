@@ -217,6 +217,7 @@
   <ItemGroup>
     <Folder Include="ViewModels\" />
     <Folder Include="wwwroot\documents\articles\" />
+    <Folder Include="wwwroot\documents\consultations\" />
   </ItemGroup>
 
 </Project>

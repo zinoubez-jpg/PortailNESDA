@@ -2,6 +2,7 @@
 using Ansej.Sidjeme.Domain.Entities;
 using Ansej.Sidjeme.Web.Models;
 using Ansej.Sidjeme.Web.Views.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -72,18 +73,20 @@ namespace Ansej.Sidjeme.Web.Controllers
             return View(result);
         }
 
+        [Authorize]
         [HttpGet]
         public IActionResult Add()
         {
             InitializeStructureViewBag();
             return View();
         }
+        [Authorize]
         public IActionResult All()
         {
 
             return View();
         }
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Add(ConsultationUploadModel model)
         {
@@ -114,7 +117,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
             return RedirectToAction("All");
         }
-
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
@@ -138,7 +141,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             ViewBag.ConsultationId = id;
             return View(viewModel);
         }
-
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(ConsultationUploadModel model, int id)
@@ -180,7 +183,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             var children = _administrativeStructureBusinessService
                 .GetAll()
                 .Where(s => s.ParentStructureManagerId == parentId)
-                .Select(s => new { s.Id, s.NameFr })
+                .Select(s => new { s.Id, s.NameAr })
                 .ToList();
 
             return Json(children);
@@ -207,7 +210,7 @@ namespace Ansej.Sidjeme.Web.Controllers
                 return Json(new JQueryDataTableRetunedData<Consultation> { draw = model.draw, recordsFiltered = result.TotalCount, recordsTotal = result.TotalCount, data = result.Items });
             }
         }
-
+        [Authorize]
         public IActionResult ToggleArchive(int id)
         {
             var consultation = _consultationBusinessService.GetById(id);
@@ -233,7 +236,7 @@ namespace Ansej.Sidjeme.Web.Controllers
                 .Select(s => new SelectListItem
                 {
                     Value = s.Id.ToString(),
-                    Text = s.NameFr
+                    Text = s.NameAr
                 }).ToList();
         }
 

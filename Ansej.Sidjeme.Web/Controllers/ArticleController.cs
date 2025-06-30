@@ -29,11 +29,7 @@ namespace Ansej.Sidjeme.Web.Controllers
         }
       
 
-        public IActionResult ArticlePined()
-        {
-            var articles = _articleBusinessService.GetAllFiltered(article => article.IsPublished && !article.IsDeleted && article.IsPinned);
-            return View(articles);
-        }
+     
 
         public virtual IActionResult Paged(string search = "", int page = 1, int pageSize = 6)
         {
@@ -69,7 +65,7 @@ namespace Ansej.Sidjeme.Web.Controllers
         }
 
 
-
+        [Authorize]
         public IActionResult All()
         {
 
@@ -84,7 +80,7 @@ namespace Ansej.Sidjeme.Web.Controllers
         {
             return View();
         }
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Create(ArticleCreateViewModel model)
         {
@@ -119,6 +115,7 @@ namespace Ansej.Sidjeme.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Edit(int id)
         {
             var article = _articleBusinessService.GetById(id);
@@ -138,7 +135,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             return View(viewModel);
         }
 
-
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(ArticleCreateViewModel model, int id)
@@ -190,7 +187,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
             return View("Details", article);
         }
-
+        [Authorize]
         public IActionResult TogglePublish(int id)
         {
             var article = _articleBusinessService.GetById(id);
@@ -203,7 +200,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             var result = _articleBusinessService.Update(article);
             return result.Succeeded ? Ok() : StatusCode(500);
         }
-
+        [Authorize]
         public IActionResult Delete(int id)
         {
             var article = _articleBusinessService.GetById(id);
@@ -219,7 +216,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
             return StatusCode(500);
         }
-
+        [Authorize]
         public IActionResult TogglePin(int id)
         {
             var article = _articleBusinessService.GetById(id);

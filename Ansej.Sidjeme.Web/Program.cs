@@ -13,6 +13,8 @@ namespace Ansej.Sidjeme.Web
     {
         public static void Main(string[] args)
         {
+            Environment.SetEnvironmentVariable("TMP", @"C:\TMP");
+            Environment.SetEnvironmentVariable("TEMP", @"C:\TMP");
             CreateHostBuilder(args).Build().Run();
         }
 

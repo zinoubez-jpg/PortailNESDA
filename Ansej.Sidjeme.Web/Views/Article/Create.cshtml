@@ -263,20 +263,20 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<section class="page-header">
-    <div class="page-header-bg" style="background-image: url(/assets/images/backgrounds/page-header-bg.png)">
-    </div>
-    <div class="container">
-        <div class="page-header__inner">
-            <h2>@ViewData["Title"]</h2>
-            <ul class="thm-breadcrumb list-unstyled">
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/nesdaTitle.jpg);">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
                 <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
-                <li><span>/</span></li>
-                <li> @ViewData["Title"]</li>
-            </ul>
-        </div>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
     </div>
-</section>
+</div>
 
 <div class="form-container">
     <h2 class="section-title">بيانات المقال</h2>

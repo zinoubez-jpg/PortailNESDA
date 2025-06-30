@@ -2,6 +2,7 @@
 using Ansej.Sidjeme.Domain;
 using Ansej.Sidjeme.Domain.Entities;
 using Ansej.Sidjeme.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
@@ -63,6 +64,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             ModelState.AddModelError(string.Empty, "Une erreur s’est produite lors de l’envoi du formulaire. Veuillez réessayer.");
             return View(model);
         }
+        [Authorize]
         [Route("{id}")]
         public IActionResult MessageTraitement(int id)
         {
@@ -73,7 +75,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             return View(model);
 
         }
-
+        [Authorize]
         [ValidateAntiForgeryToken]
         [HttpPost("{id}")]
         public virtual IActionResult MessageTraitement(ContactUs model)
@@ -97,7 +99,7 @@ namespace Ansej.Sidjeme.Web.Controllers
         {
             return View();
         }
-
+        [Authorize]
         public IActionResult MessagesList()
         {
 
