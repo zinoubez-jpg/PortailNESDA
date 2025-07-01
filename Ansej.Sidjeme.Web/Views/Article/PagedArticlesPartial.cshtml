@@ -49,8 +49,17 @@
                 <div class="post-meta">
                     <p class="post-author">خلية الإتصال</p>
                     <p class="post-date">
-                        <time datetime="@post.CreatedAt.ToString("yyyy-MM-dd")">
-                            @post.CreatedAt.ToString("MMM d, yyyy", new System.Globalization.CultureInfo("ar-DZ"))
+                        @{
+                            var date = post.CreatedAt;
+                            var months = new[] {
+                                                    "جانفي", "فيفري", "مارس", "أفريل", "ماي", "جوان",
+                                                    "جويلية", "أوت", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"
+                                                };
+                            var formattedDate = $"{date.Day} {months[date.Month - 1]} {date.Year}";
+                        }
+
+                        <time datetime="@date.ToString("yyyy-MM-dd")">
+                            @formattedDate
                         </time>
                     </p>
                 </div>

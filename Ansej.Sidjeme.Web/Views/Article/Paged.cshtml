@@ -400,7 +400,16 @@
                                         <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">@post.Title</a>
                                     </h2>
                                     <div class="post-meta">
-                                        <time datetime="2025-01-01">@post.CreatedAt.ToString("dd MMM yyyy")</time>
+
+                                        @{
+                                            var date = post.CreatedAt;
+                                            var months = new[] {
+                                                    "جانفي", "فيفري", "مارس", "أفريل", "ماي", "جوان",
+                                                    "جويلية", "أوت", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"
+                                                };
+                                            var formattedDate = $"{date.Day} {months[date.Month - 1]} {date.Year}";
+                                        }
+                                        <time datetime="2025-01-01">@formattedDate</time>
                                         <span class="px-2"></span>
                                         <span></span>
                                     </div>
