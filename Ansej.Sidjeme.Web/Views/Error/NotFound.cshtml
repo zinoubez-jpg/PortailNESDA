@@ -1,29 +1,58 @@
-﻿@{
-    ViewBag.Title = "Not Found";
-}
+﻿ 
 
-<br />
-<section class="breadcrumbs">
-    <div class="container">
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/nesdaTitle.jpg);">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NotFound"]</p>
 
-        <div class="d-flex justify-content-between align-items-center">
-            <h2 class="arabic-text">@ViewData["Title"]</h2>
+
+        <nav class="breadcrumbs">
             <ol>
-                @* <li><a asp-action="Index" asp-controller="Home"> @localizer["Home"]</a></li>
-                <li>@ViewData["Title"]</li> *@
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
             </ol>
+        </nav>
+    </div>
+</div>
+ <!-- Error 404 Section -->
+<section id="error-404" class="error-404 section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="error-wrapper">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="error-illustration">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <div class="circle circle-1"></div>
+                        <div class="circle circle-2"></div>
+                        <div class="circle circle-3"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="error-content">
+                        <span class="error-badge" data-aos="zoom-in" data-aos-delay="400">Error</span>
+                        <h1 class="error-code" data-aos="fade-up" data-aos-delay="500">404</h1>
+                        <h2 class="error-title" data-aos="fade-up" data-aos-delay="600">Page Not Found</h2>
+                        <p class="error-description" data-aos="fade-up" data-aos-delay="700">
+                            The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+                        </p>
+
+                        <div class="error-actions" data-aos="fade-up" data-aos-delay="800">
+                            <a asp-controller="Home" asp-action="index" class="btn-home">
+                                <i class="bi bi-house-door"></i> Back to Home
+                            </a>
+                            @*<a href="#" class="btn-help">
+                                <i class="bi bi-question-circle"></i> Help Center
+                            </a>*@
+                        </div>
+
+                       
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
-</section><!-- End Breadcrumbs -->
 
-<br />
-
-<div class="container">
-
-<h1>@ViewBag.ErrorMessage</h1>
-
-<a asp-action="index" asp-controller="home">
-    Click here to navigate to the home page
-</a>
-</div>
+</section><!-- /Error 404 Section -->

@@ -290,26 +290,29 @@ namespace Ansej.Sidjeme.Web.Controllers
             if (file == null || file.Length == 0)
                 throw new ArgumentException("Le fichier est vide.");
 
-            // wwwroot path
             string wwwrootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
 
-            
             if (relativeFolderPath.StartsWith("/"))
                 relativeFolderPath = relativeFolderPath.TrimStart('/');
 
-            // Combine paths
             string absoluteFolderPath = Path.Combine(wwwrootPath, relativeFolderPath);
 
-            // Create folder if it doesn't exist
             if (!Directory.Exists(absoluteFolderPath))
                 Directory.CreateDirectory(absoluteFolderPath);
 
-            // Generate nom du fichier 
             string extension = Path.GetExtension(file.FileName);
             string timestamp = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
-            string safeFileName = $"{fileBaseName}_{timestamp}{extension}".Replace(" ", "_");
 
-            // Final absolute path
+            string CleanFileName(string input)
+            {
+                var invalidChars = Path.GetInvalidFileNameChars();
+                var cleaned = new string(input.Where(ch => !invalidChars.Contains(ch)).ToArray());
+                return cleaned.Replace(" ", "_");
+            }
+
+            string cleanedBaseName = CleanFileName(fileBaseName);
+            string safeFileName = $"{cleanedBaseName}_{timestamp}{extension}";
+
             string fullPath = Path.Combine(absoluteFolderPath, safeFileName);
 
             using (var stream = new FileStream(fullPath, FileMode.Create))

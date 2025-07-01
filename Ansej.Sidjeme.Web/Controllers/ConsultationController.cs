@@ -245,26 +245,29 @@ namespace Ansej.Sidjeme.Web.Controllers
             if (file == null || file.Length == 0)
                 throw new ArgumentException("Le fichier est vide.");
 
-            
             string wwwrootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
 
-            
             if (relativeFolderPath.StartsWith("/"))
                 relativeFolderPath = relativeFolderPath.TrimStart('/');
 
-            
             string absoluteFolderPath = Path.Combine(wwwrootPath, relativeFolderPath);
 
-            
             if (!Directory.Exists(absoluteFolderPath))
                 Directory.CreateDirectory(absoluteFolderPath);
 
-           
             string extension = Path.GetExtension(file.FileName);
             string timestamp = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
-            string safeFileName = $"{fileBaseName}_{timestamp}{extension}".Replace(" ", "_");
 
-            
+            string CleanFileName(string input)
+            {
+                var invalidChars = Path.GetInvalidFileNameChars();
+                var cleaned = new string(input.Where(ch => !invalidChars.Contains(ch)).ToArray());
+                return cleaned.Replace(" ", "_");
+            }
+
+            string cleanedBaseName = CleanFileName(fileBaseName);
+            string safeFileName = $"{cleanedBaseName}_{timestamp}{extension}";
+
             string fullPath = Path.Combine(absoluteFolderPath, safeFileName);
 
             using (var stream = new FileStream(fullPath, FileMode.Create))
@@ -272,8 +275,9 @@ namespace Ansej.Sidjeme.Web.Controllers
                 await file.CopyToAsync(stream);
             }
 
-            return $"/{relativeFolderPath}/{safeFileName}"; ;
+            return $"/{relativeFolderPath}/{safeFileName}";
         }
+
         protected static void GetDataTableParameters(DataTableAjaxModel model, out string search, out string orderBy, out int startRowIndex, out int maxRows)
         {
             maxRows = model.length;

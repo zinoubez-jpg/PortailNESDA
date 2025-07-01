@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,8 @@ namespace Ansej.Sidjeme.Web
     {
         public static void Main(string[] args)
         {
-            Environment.SetEnvironmentVariable("TMP", @"C:\TMP");
-            Environment.SetEnvironmentVariable("TEMP", @"C:\TMP");
+            Environment.SetEnvironmentVariable("TMP", @"C:\NesdaAcademyTemp");
+            Environment.SetEnvironmentVariable("TEMP", @"C:\NesdaAcademyTemp");
             CreateHostBuilder(args).Build().Run();
         }
 
