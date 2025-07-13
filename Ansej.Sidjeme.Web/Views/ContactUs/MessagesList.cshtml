@@ -387,10 +387,41 @@
                 "columns": [
                     { "data": "id", "visible": false, "searchable": false },
                     { "data": "wilaya.designationAr", "visible": true, "searchable": false },
-                    { "data": "fullName", "visible": true, "searchable": false },
-                    { "data": "email", "visible": false, "searchable": false },
-                    { "data": "phone", "visible": true, "searchable": false },
-                    { "data": "subject", "visible": true, "searchable": false },
+                    //{ "data": "phone", "visible": true, "searchable": false },
+                    //{ "data": "subject", "visible": true, "searchable": false },
+                    {
+                        "data": "fullName",
+                        "visible": true,
+                        "searchable": false,
+                        "render": function (data, type, row) {
+                            return $('<div/>').text(data).html(); // HTML encoding
+                        }
+                    },
+                    {
+                        "data": "email",
+                        "visible": true,
+                        "searchable": false,
+                        "render": function (data, type, row) {
+                            return $('<div/>').text(data).html(); // HTML encoding
+                        }
+                    },
+                    {
+                        "data": "phone",
+                        "visible": true,
+                        "searchable": false,
+                        "render": function (data, type, row) {
+                            return $('<div/>').text(data).html();
+                        }
+                    },
+                    {
+                        "data": "subject",
+                        "visible": true,
+                        "searchable": false,
+                        "render": function (data, type, row) {
+                            return $('<div/>').text(data).html();
+                        }
+                    },
+
                     {
                         "data": "isRead",
                         "visible": false,
