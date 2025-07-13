@@ -370,9 +370,15 @@
         <partial name="_datatables.script" />
 
         <script>
+
+        function truncateSafe(text, maxLength) {
+            const encoded = $('<div/>').text(text).html(); // HTML encode to prevent XSS
+            return encoded.length > maxLength ? encoded.substring(0, maxLength) + '...' : encoded;
+        }
         $(function () {
             initDataTable("table", "@Url.Action("DataTableMessages")")
         });
+
 
         function initDataTable(selector, url) {
 
@@ -394,7 +400,7 @@
                         "visible": true,
                         "searchable": false,
                         "render": function (data, type, row) {
-                            return $('<div/>').text(data).html(); // HTML encoding
+                            return truncateSafe(data, 20); // HTML encoding
                         }
                     },
                     {
@@ -402,7 +408,7 @@
                         "visible": true,
                         "searchable": false,
                         "render": function (data, type, row) {
-                            return $('<div/>').text(data).html(); // HTML encoding
+                            return truncateSafe(data, 20); // HTML encoding
                         }
                     },
                     {
@@ -410,7 +416,7 @@
                         "visible": true,
                         "searchable": false,
                         "render": function (data, type, row) {
-                            return $('<div/>').text(data).html();
+                            return truncateSafe(data, 10);
                         }
                     },
                     {
@@ -418,7 +424,7 @@
                         "visible": true,
                         "searchable": false,
                         "render": function (data, type, row) {
-                            return $('<div/>').text(data).html();
+                            return truncateSafe(data, 30);
                         }
                     },
 
