@@ -1,0 +1,703 @@
+﻿@model Ansej.Sidjeme.Domain.Entities.PreInscriptionSousTraitence
+
+
+@{ ViewData["Title"] = "تسجيل في المناولة";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+@section head{
+
+    <partial name="_jqueryui.style" />
+    <partial name="_select2.style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+
+
+        :root {
+            --meciy-gray: #878c8f;
+            --meciy-white: #ffffff;
+            --meciy-black: #000000;
+            --meciy-base: #19776b;
+            --meciy-primary: #efa286;
+            --meciy-extra: #d70d38;
+            --meciy-bdr-color: #e6e6e6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+
+        .form-container {
+            background: var(--meciy-white);
+            border-radius: 15px;
+            padding: 3rem;
+            margin: -2rem 0 2rem;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-right: 5px solid var(--meciy-base);
+            position: relative;
+            z-index: 10;
+        }
+
+        .form-section {
+            margin: 2rem 0;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: var(--meciy-base);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+            .section-title i {
+                /*                color: var(--meciy-primary);
+        */
+            }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+            .form-group.full-width {
+                grid-column: 1 / -1;
+            }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 0.95rem;
+        }
+
+        .required {
+            color: var(--meciy-extra);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: var(--meciy-font-arabic);
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+            .form-control:focus {
+                outline: none;
+                border-color: var(--meciy-base);
+                background: var(--meciy-white);
+                box-shadow: 0 0 0 3px rgba(25, 119, 107, 0.1);
+            }
+
+        .form-select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: var(--meciy-font-arabic);
+            background: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+
+            .form-select:focus {
+                outline: none;
+                border-color: var(--meciy-base);
+                background: var(--meciy-white);
+                box-shadow: 0 0 0 3px rgba(25, 119, 107, 0.1);
+            }
+
+        .text-danger {
+            color: var(--meciy-extra);
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+            display: block;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--meciy-base) 0%, rgba(25, 119, 107, 0.8) 100%);
+            color: var(--meciy-white);
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: var(--meciy-font-arabic);
+            min-width: 200px;
+        }
+
+            .btn-primary:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(25, 119, 107, 0.3);
+            }
+
+        .btn-secondary {
+            background: var(--meciy-gray);
+            color: var(--meciy-white);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: var(--meciy-font-arabic);
+            margin-left: 1rem;
+        }
+
+            .btn-secondary:hover {
+                background: #6c757d;
+                transform: translateY(-1px);
+            }
+
+        .validation-summary {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            color: var(--meciy-extra);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #e6fffa 0%, #f0fff4 100%);
+            /*            border-right: 4px solid var(--meciy-base);
+        */ padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+            .info-box h4 {
+                color: var(--meciy-base);
+                margin-bottom: 0.5rem;
+                font-weight: 600;
+            }
+
+        .captcha-container {
+            display: flex;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+
+        @@media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .form-container {
+                padding: 2rem 1.5rem;
+                margin: -1rem 0 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .btn-container {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .btn-secondary {
+                margin-left: 0;
+            }
+        }
+
+        .input-group {
+            position: relative;
+        }
+
+            .input-group i {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: var(--meciy-gray);
+                z-index: 1;
+            }
+
+        .form-control.with-icon {
+            padding-right: 3rem;
+        }
+
+
+        .select2-container--default .select2-selection--single {
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 0.5rem 1rem;
+            height: auto;
+            min-height: 48px;
+            background: #f8f9fa;
+        }
+
+        .select2-container--default.select2-container--focus .select2-selection--single {
+            border-color: var(--meciy-base);
+            box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--meciy-base), transparent 75%);
+        }
+
+        /* Styles pour le tooltip avec animations attractives */
+        .info-tooltip {
+            position: relative;
+            display: inline-block;
+            margin-left: 8px;
+            cursor: help;
+        }
+
+            .info-tooltip .tooltip-icon {
+                color: var(--meciy-extra); /* Rouge pour attirer l'attention */
+                font-size: 1.2rem;
+                transition: all 0.3s ease;
+                /* Animation de pulsation pour attirer l'attention */
+                animation: pulse-attention 1.5s infinite;
+                filter: drop-shadow(0 0 4px rgba(215, 13, 56, 0.5));
+            }
+
+            .info-tooltip:hover .tooltip-icon {
+                color: var(--meciy-base);
+                transform: scale(1.3);
+                animation: none; /* Arrête l'animation au survol */
+                filter: drop-shadow(0 0 8px rgba(25, 119, 107, 0.7));
+            }
+
+        /* Animation de pulsation visible */
+        @@keyframes pulse-attention {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            z-index: 1000;
+            bottom: 125%;
+            right: 50%;
+            transform: translateX(50%);
+            background-color: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            line-height: 1.4;
+            width: 280px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            transition: all 0.3s ease;
+            font-weight: 500;
+            border: 2px solid var(--meciy-primary);
+        }
+
+            .tooltip-text::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                right: 50%;
+                transform: translateX(50%);
+                border: 8px solid transparent;
+                border-top-color: #2d3748;
+            }
+
+        .info-tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(50%) translateY(-10px);
+        }
+
+        /* Responsive pour mobile */
+        @@media (max-width: 768px) {
+            .tooltip-text {
+                width: 250px;
+                font-size: 0.8rem;
+                padding: 10px 12px;
+            }
+        }
+    </style>
+
+
+
+}
+
+
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+
+
+
+
+
+
+<div class="container">
+    <div class="form-container">
+        @if (!ViewData.ModelState.IsValid)
+        {
+<div class="validation-summary">
+    <h4>يرجى تصحيح الأخطاء التالية:</h4>
+    @Html.ValidationSummary(false)
+</div>}
+
+        <div class="info-box">
+            <h4><i class="fas fa-info-circle"></i> معلومات مهمة</h4>
+            <p>يرجى ملء جميع الحقول المطلوبة بدقة. سيتم مراجعة طلبكم من قبل الفريق المختص .</p>
+        </div>
+
+        <form asp-action="Register" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+            <div class="form-section">
+                <h3 class="section-title">
+                    <i class="fas fa-building"></i>
+                    معلومات المؤسسة
+                </h3>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="RaisonSocial" class="form-label">التسمية الاجتماعية <span class="required">*</span></label>
+                        <div class="input-group">
+                            <input asp-for="RaisonSocial" class="form-control with-icon" placeholder="أدخل التسمية الاجتماعية" />
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <span asp-validation-for="RaisonSocial" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="NumeroSiejeV3" class="form-label">
+                            رقم ملف ناسدا <span class="required">*</span>
+                            <span class="info-tooltip">
+                                <i class="fas fa-info-circle tooltip-icon"></i>
+                                <span class="tooltip-text">
+                                    لاستعادة رقم ملفك لدى ناسدا (التي كانت تُعرف سابقًا باسم أونساج)، يُرجى التوجه إلى أقرب وكالة ناسدا  أو إلى إحدى فروعها المحلية، مع إحضار بطاقة هويتك الوطنية.
+
+
+                                </span>
+                            </span>
+                        </label>
+                        <div class="input-group">
+                            <input asp-for="NumeroSiejeV3"  class="form-control with-icon" placeholder="أدخل رقم الملف ناسدا" />
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <span asp-validation-for="NumeroSiejeV3" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="WilayaId" class="form-label">ولاية المقر الاجتماعي <span class="required">*</span></label>
+                        <select asp-for="WilayaId" class="form-select select2" asp-items="ViewBag.WilayaId">
+                            <option value="">اختر الولاية</option>
+                        </select>
+                        <span asp-validation-for="WilayaId" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="PerimetreActiviteId" class="form-label">محيط النشاط <span class="required">*</span></label>
+                        <select asp-for="PerimetreActiviteId" class="form-select select2" asp-items="ViewBag.PerimetreId">
+                            <option value="">اختر محيط النشاط</option>
+                        </select>
+                        <span asp-validation-for="PerimetreActiviteId" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ActiviteId" class="form-label">النشاط <span class="required">*</span></label>
+                    <select asp-for="ActiviteId" class="form-select select2" asp-items="ViewBag.ActiviteId">
+                        <option value="">اختر النشاط</option>
+                    </select>
+                    <span asp-validation-for="ActiviteId" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="form-section">
+                <h3 class="section-title">
+                    <i class="fas fa-user"></i>
+                    المعلومات الشخصية
+                </h3>
+
+                <div class="form-group">
+                    <label asp-for="NIN" class="form-label">الرقم التعريفي الوطني الوحيد <span class="required">*</span></label>
+                    <div class="input-group">
+                        <input asp-for="NIN" class="form-control with-icon" placeholder="أدخل الرقم التعريفي (18 رقم)" maxlength="18" />
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <span asp-validation-for="NIN" class="text-danger"></span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="NomFr" class="form-label">الاسم <span class="required">*</span></label>
+                        <div class="input-group">
+                            <input asp-for="NomFr" class="form-control with-icon" placeholder="أدخل الاسم بالأحرف اللاتينية" />
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span asp-validation-for="NomFr" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="PrenomFr" class="form-label">اللقب <span class="required">*</span></label>
+                        <div class="input-group">
+                            <input asp-for="PrenomFr" class="form-control with-icon" placeholder="أدخل اللقب بالأحرف اللاتينية" />
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span asp-validation-for="PrenomFr" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-section">
+                <h3 class="section-title">
+                    <i class="fas fa-phone"></i>
+                    معلومات الاتصال
+                </h3>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="NumTelephone" class="form-label">رقم الهاتف <span class="required">*</span></label>
+                        <div class="input-group">
+                            <input asp-for="NumTelephone" class="form-control with-icon" placeholder="05xxxxxxxx" />
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span asp-validation-for="NumTelephone" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Email" class="form-label">البريد الإلكتروني <span class="required">*</span></label>
+                        <div class="input-group">
+                            <input asp-for="Email" class="form-control with-icon" type="email" placeholder="example@domain.com" />
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-section">
+
+                <div class="form-group">
+                    <div class="g-recaptcha"
+                         data-sitekey="6LcN3q4qAAAAAEFq86pRnXIr1ROxvFnB1PzCBdoB"
+                         data-callback="onRecaptchaComplete"></div>
+                    <input type="hidden" asp-for="RecaptchaResponse" id="recaptchaResponse" required />
+                    <span asp-validation-for="RecaptchaResponse" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="acceptTerms">
+                        <span class="checkmark"></span>
+                        أسمح لناسدا بمعالجة بياناتي الشخصية وفق للشروط المنصوص عليها في القانون 18/07 المتعلقة بحماية الأشخاص الطبيعين في معالجة المعطيات الشخصية،يمكنك الإطلاع على. <a href="https://nesda.dz/Home/Privacy" target="_blank" name="NesdaPolitique">السياسة العامة لحماية المعطيات دات الطابع الشخصي الخاصة بالوكالة .</a>
+                    </label>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" class="btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    إرسال الطلب
+                </button>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section scripts{
+    <script src="~/Nesdatp/assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+    <partial name="_jqueryui.script" />
+    <partial name="_select2.script" />
+
+    <!-- Google reCAPTCHA Script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script>
+        // تحسين تجربة المستخدم
+        document.addEventListener('DOMContentLoaded', function () {
+            // تنسيق رقم الهاتف تلقائياً
+            const phoneInput = document.querySelector('input[name="NumTelephone"]');
+            if (phoneInput) {
+                phoneInput.addEventListener('input', function () {
+                    let value = this.value.replace(/\D/g, '');
+                    if (value.length > 10) {
+                        value = value.substring(0, 10);
+                    }
+                    this.value = value;
+                });
+            }
+
+            // تنسيق NIN تلقائياً
+            const ninInput = document.querySelector('input[name="NIN"]');
+            if (ninInput) {
+                ninInput.addEventListener('input', function () {
+                    let value = this.value.replace(/\D/g, '');
+                    if (value.length > 18) {
+                        value = value.substring(0, 18);
+                    }
+                    this.value = value;
+                });
+            }
+
+            // تحسين التحقق من الحقول المطلوبة
+            const form = document.querySelector('form');
+            const requiredFields = form.querySelectorAll('[required]');
+
+            requiredFields.forEach(field => {
+                field.addEventListener('blur', function () {
+                    if (!this.value.trim()) {
+                        this.style.borderColor = 'var(--meciy-extra)';
+                    } else {
+                        this.style.borderColor = 'var(--meciy-base)';
+                    }
+                });
+            });
+
+            // إضافة تأثيرات بصرية للحقول
+            const inputs = form.querySelectorAll('.form-control, .form-select');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function () {
+                    this.parentElement.style.transform = 'scale(1.02)';
+                });
+
+                input.addEventListener('blur', function () {
+                    this.parentElement.style.transform = 'scale(1)';
+                });
+            });
+        });</script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onRecaptchaComplete(token) {
+            document.getElementById('recaptchaResponse').value = token;
+        }
+    </script>
+
+    <script>
+        document.getElementById("acceptTerms").addEventListener("change", function () {
+            document.getElementById("submitBtn").disabled = !this.checked;
+        });
+    </script>
+    <script>
+
+
+        $(document).ready(function () {
+            $('#WilayaId').select2({
+                dir: "rtl", // Pour l'arabe
+                width: '100%', // Important pour que le CSS fonctionne bien
+                placeholder: "اختر الولاية"
+            });
+        });
+
+        $(document).ready(function () {
+            $('#ActiviteId').select2({
+                dir: "rtl", // Pour l'arabe
+                width: '100%', // Important pour que le CSS fonctionne bien
+                placeholder: "اختر نوع النشاط"
+            });
+        });
+
+        $(document).ready(function () {
+            $('#PerimetreActiviteId').select2({
+                dir: "rtl", // Pour l'arabe
+                width: '100%', // Important pour que le CSS fonctionne bien
+                placeholder: "اختر محيط النشاط "
+            });
+        });
+
+    </script>
+
+    <script>
+        const input = document.getElementById('NIN');
+
+        input.addEventListener('input', () => {
+            const regex = /[0-9]/;
+            const value = input.value;
+
+            for (let i = 0; i < value.length; i++) {
+                if (!regex.test(value[i])) {
+                    input.value = value.substring(0, i);
+                    break;
+                }
+            }
+        });
+        const nesdaInput = document.querySelector('input[name="NumeroSiejeV3"]');
+        if (nesdaInput) {
+            nesdaInput.addEventListener('input', function (e) {
+                // Supprimer tous les caractères non numériques
+                let value = this.value.replace(/\D/g, '');
+                this.value = value;
+            });
+        }
+
+
+
+    </script>
+
+}
+
+
+

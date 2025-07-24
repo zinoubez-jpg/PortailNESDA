@@ -47,6 +47,10 @@ namespace Ansej.Sidjeme.Domain.Entities
         public DateTime TraitedAt { get; set; } = DateTime.UtcNow;
         public string Observation { get; set; }
 
+        [Required(ErrorMessage = "يرجى التحقق من الكابتشا")]
+        [Display(Name = "ReCaptcha")]
+        public string RecaptchaResponse { get; set; }
+
 
         [Required(ErrorMessage = "Veuillez sélectionner wilaya.")]
         [Display(Name = "Wilaya")]

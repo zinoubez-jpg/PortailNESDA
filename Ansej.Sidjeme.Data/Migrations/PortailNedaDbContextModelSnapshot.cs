@@ -19,6 +19,38 @@ namespace Ansej.Sidjeme.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Ansej.Sidjeme.Domain.Activite", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<string>("DesignationAr")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("DesignationEn")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("DesignationFr")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Activites");
+                });
+
             modelBuilder.Entity("Ansej.Sidjeme.Domain.ContactAgenceWilaya", b =>
                 {
                     b.Property<int>("Id")
@@ -237,6 +269,10 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .HasColumnType("nvarchar(10)")
                         .HasMaxLength(10);
 
+                    b.Property<string>("RecaptchaResponse")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Subject")
                         .IsRequired()
                         .HasColumnType("nvarchar(150)")
@@ -257,6 +293,78 @@ namespace Ansej.Sidjeme.Data.Migrations
                     b.HasIndex("WilayaId");
 
                     b.ToTable("ContactUs");
+                });
+
+            modelBuilder.Entity("Ansej.Sidjeme.Domain.Entities.PreInscriptionSousTraitence", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("ActiviteId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateInscription")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsNesda")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsTraited")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("NIN")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(18)")
+                        .HasMaxLength(18);
+
+                    b.Property<string>("NomFr")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<string>("NumTelephone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NumeroSiejeV3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Observation")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PerimetreActiviteId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PrenomFr")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<string>("RaisonSocial")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RecaptchaResponse")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("WilayaId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ActiviteId");
+
+                    b.HasIndex("PerimetreActiviteId");
+
+                    b.HasIndex("WilayaId");
+
+                    b.ToTable("PreInscriptionSousTraitence");
                 });
 
             modelBuilder.Entity("Ansej.Sidjeme.Domain.Entities.StructureManager", b =>
@@ -291,6 +399,38 @@ namespace Ansej.Sidjeme.Data.Migrations
                     b.HasIndex("ParentStructureManagerId");
 
                     b.ToTable("StructureManager");
+                });
+
+            modelBuilder.Entity("Ansej.Sidjeme.Domain.PerimetreActivite", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<string>("DesignationAr")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("DesignationEn")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("DesignationFr")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PerimetreActivites");
                 });
 
             modelBuilder.Entity("Ansej.Sidjeme.Domain.Wilaya", b =>
@@ -340,6 +480,27 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .WithMany("ContactUs")
                         .HasForeignKey("WilayaId")
                         .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Ansej.Sidjeme.Domain.Entities.PreInscriptionSousTraitence", b =>
+                {
+                    b.HasOne("Ansej.Sidjeme.Domain.Activite", "Activite")
+                        .WithMany()
+                        .HasForeignKey("ActiviteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Ansej.Sidjeme.Domain.PerimetreActivite", "PerimetreActivite")
+                        .WithMany()
+                        .HasForeignKey("PerimetreActiviteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Ansej.Sidjeme.Domain.Wilaya", "Wilaya")
+                        .WithMany()
+                        .HasForeignKey("WilayaId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 

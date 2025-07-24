@@ -55,6 +55,9 @@ namespace Ansej.Sidjeme.Data
         public DbSet<ContactUs> ContactUs { get; set; }
         public DbSet<Consultation> Consultations { get; set; }
         public DbSet<StructureManager> StructureManager { get; set; }
+        public DbSet<PreInscriptionSousTraitence> PreInscriptionSousTraitence { get; set; }
+        public DbSet<Activite> Activites { get; set; }
+        public DbSet<PerimetreActivite> PerimetreActivites { get; set; }
 
     }
 }

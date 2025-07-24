@@ -62,6 +62,12 @@ namespace Ansej.Sidjeme.Web
             services.AddTransient(typeof(ConsultationBusinessService));
             services.AddTransient(typeof(ArticleBusinessService));
 
+            services.AddTransient(typeof(PreInscriptionSousTraitenceBusinessService));
+
+            services.AddHttpClient();
+            services.AddScoped<IRecaptchaService,RecaptchaService>();
+
+
             services.Configure<LocalizationOptions>(options =>
             {
                 options.ResourcesPath = "Resources";
