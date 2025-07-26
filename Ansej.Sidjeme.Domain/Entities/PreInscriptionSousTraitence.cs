@@ -20,6 +20,7 @@ namespace Ansej.Sidjeme.Domain.Entities
         [Required(ErrorMessage = "يرجى اختيار ولاية المقر الاجتماعي")]
         [Display(Name = "Wilaya")]
         public int WilayaId { get; set; }
+        [Required(ErrorMessage = "يرجى اختيار محيط النشاط")]
         public int PerimetreActiviteId { get; set; }
         [Required(ErrorMessage = "يرجى اختيار النشاط")]
         public int ActiviteId { get; set; }

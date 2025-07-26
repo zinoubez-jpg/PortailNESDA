@@ -362,6 +362,17 @@
                 padding: 10px 12px;
             }
         }
+
+
+        button:disabled,
+        button[disabled] {
+            background-color: #ccc !important; /* Fond gris */
+           
+            border: 1px solid #aaa !important; /* Bordure adoucie */
+            cursor: not-allowed !important; /* Curseur barré */
+            opacity: 0.5; /* Légèrement transparent */
+            pointer-events: none; /* Empêche tout événement */
+        }
     </style>
 
 
@@ -393,16 +404,19 @@
     <div class="form-container">
         @if (!ViewData.ModelState.IsValid)
         {
-<div class="validation-summary">
-    <h4>يرجى تصحيح الأخطاء التالية:</h4>
-    @Html.ValidationSummary(false)
-</div>}
+            <div class="validation-summary">
+                <h4>يرجى تصحيح الأخطاء التالية:</h4>
+                @Html.ValidationSummary(false)
+            </div>}
 
         <div class="info-box">
             <h4><i class="fas fa-info-circle"></i> معلومات مهمة</h4>
             <p>يرجى ملء جميع الحقول المطلوبة بدقة. سيتم مراجعة طلبكم من قبل الفريق المختص .</p>
         </div>
+         <div class="container">
 
+                    <partial name="_Message" />
+                </div>
         <form asp-action="Register" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
@@ -436,7 +450,7 @@
                             </span>
                         </label>
                         <div class="input-group">
-                            <input asp-for="NumeroSiejeV3"  class="form-control with-icon" placeholder="أدخل رقم الملف ناسدا" />
+                            <input asp-for="NumeroSiejeV3" class="form-control with-icon" placeholder="أدخل رقم الملف ناسدا" />
                             <i class="fas fa-file-alt"></i>
                         </div>
                         <span asp-validation-for="NumeroSiejeV3" class="text-danger"></span>
@@ -555,7 +569,7 @@
             </div>
 
             <div class="btn-container">
-                <button type="submit" class="btn-primary">
+                <button type="submit" class="btn-primary" disabled id="submitBtn">
                     <i class="fas fa-paper-plane"></i>
                     إرسال الطلب
                 </button>
@@ -697,7 +711,57 @@
 
     </script>
 
+    <script type="text/javascript">
+
+        function restrictInputToFrenchAndNumbers($field) {
+            var frenchCharUnicodeRange = /^[a-zA-ZÀ-ÿ\s]+$/;
+
+            function isAllowedInput(str) {
+                return frenchCharUnicodeRange.test(str);
+            }
+
+            $field.on("keypress", function (event) {
+                var key = event.which || event.keyCode;
+
+                if (key <= 32) {
+                    return true;
+                }
+
+                var char = String.fromCharCode(key);
+                return isAllowedInput(char);
+            });
+
+            $field.on("paste drop", function (event) {
+                var data = (event.originalEvent || event).clipboardData
+                    ? (event.originalEvent || event).clipboardData.getData('text')
+                    : event.originalEvent.dataTransfer.getData('text');
+
+                if (!isAllowedInput(data)) {
+                    event.preventDefault();
+                }
+            });
+        }
+
+        jQuery(document).ready(function () {
+
+            restrictInputToFrenchAndNumbers($('#NomFr'));
+            restrictInputToFrenchAndNumbers($('#PrenomFr'));
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const checkbox = document.getElementById("acceptTerms");
+            const submitBtn = document.getElementById("submitBtn");
+
+            checkbox.addEventListener("change", function () {
+                submitBtn.disabled = !this.checked;
+            });
+        });
+    </script>
+
 }
+
 
 
 
