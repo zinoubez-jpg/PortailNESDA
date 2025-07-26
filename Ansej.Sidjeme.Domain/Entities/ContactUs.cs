@@ -44,7 +44,7 @@ namespace Ansej.Sidjeme.Domain.Entities
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public bool IsTraited { get; set; } = false;
-        public DateTime TraitedAt { get; set; } = DateTime.UtcNow;
+        public DateTime TraitedAt { get; set; } 
         public string Observation { get; set; }
 
         [Required(ErrorMessage = "يرجى التحقق من الكابتشا")]
