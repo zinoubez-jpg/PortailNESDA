@@ -83,7 +83,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             return View(model);
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admin,ContactUs")]
         [Route("{id}")]
         public IActionResult MessageTraitement(int id)
         {
@@ -94,7 +94,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             return View(model);
 
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,ContactUs")]
         [ValidateAntiForgeryToken]
         [HttpPost("{id}")]
         public virtual IActionResult MessageTraitement(ContactUs model)
@@ -118,7 +118,7 @@ namespace Ansej.Sidjeme.Web.Controllers
         {
             return View();
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,ContactUs")]
         public IActionResult MessagesList()
         {
 
