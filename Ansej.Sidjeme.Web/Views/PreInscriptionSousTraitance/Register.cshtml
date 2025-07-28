@@ -367,7 +367,7 @@
         button:disabled,
         button[disabled] {
             background-color: #ccc !important; /* Fond gris */
-           
+
             border: 1px solid #aaa !important; /* Bordure adoucie */
             cursor: not-allowed !important; /* Curseur barré */
             opacity: 0.5; /* Légèrement transparent */
@@ -395,11 +395,6 @@
     </div>
 </div><!-- End Page Title -->
 
-
-
-
-
-
 <div class="container">
     <div class="form-container">
         @if (!ViewData.ModelState.IsValid)
@@ -413,48 +408,23 @@
             <h4><i class="fas fa-info-circle"></i> معلومات مهمة</h4>
             <p>يرجى ملء جميع الحقول المطلوبة بدقة. سيتم مراجعة طلبكم من قبل الفريق المختص .</p>
         </div>
-         <div class="container">
 
-                    <partial name="_Message" />
-                </div>
+        <partial name="_Message" />
+
         <form asp-action="Register" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-
+            <!-- Informations entreprise -->
             <div class="form-section">
-                <h3 class="section-title">
-                    <i class="fas fa-building"></i>
-                    معلومات المؤسسة
-                </h3>
+                <h3 class="section-title"><i class="fas fa-building"></i> معلومات المؤسسة</h3>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label asp-for="RaisonSocial" class="form-label">التسمية الاجتماعية <span class="required">*</span></label>
-                        <div class="input-group">
-                            <input asp-for="RaisonSocial" class="form-control with-icon" placeholder="أدخل التسمية الاجتماعية" />
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <span asp-validation-for="RaisonSocial" class="text-danger"></span>
+                <div class="form-group">
+                    <label asp-for="RaisonSocial" class="form-label">التسمية الاجتماعية <span class="required">*</span></label>
+                    <div class="input-group">
+                        <input asp-for="RaisonSocial" class="form-control with-icon" placeholder="أدخل التسمية الاجتماعية" />
+                        <i class="fas fa-building"></i>
                     </div>
-
-                    <div class="form-group">
-                        <label asp-for="NumeroSiejeV3" class="form-label">
-                            رقم ملف ناسدا <span class="required">*</span>
-                            <span class="info-tooltip">
-                                <i class="fas fa-info-circle tooltip-icon"></i>
-                                <span class="tooltip-text">
-                                    لاستعادة رقم ملفك لدى ناسدا (التي كانت تُعرف سابقًا باسم أونساج)، يُرجى التوجه إلى أقرب وكالة ناسدا  أو إلى إحدى فروعها المحلية، مع إحضار بطاقة هويتك الوطنية.
-
-
-                                </span>
-                            </span>
-                        </label>
-                        <div class="input-group">
-                            <input asp-for="NumeroSiejeV3" class="form-control with-icon" placeholder="أدخل رقم الملف ناسدا" />
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <span asp-validation-for="NumeroSiejeV3" class="text-danger"></span>
-                    </div>
+                    <span asp-validation-for="RaisonSocial" class="text-danger"></span>
                 </div>
 
                 <div class="form-row">
@@ -484,12 +454,9 @@
                 </div>
             </div>
 
-
+            <!-- Informations personnelles -->
             <div class="form-section">
-                <h3 class="section-title">
-                    <i class="fas fa-user"></i>
-                    المعلومات الشخصية
-                </h3>
+                <h3 class="section-title"><i class="fas fa-user"></i> المعلومات الشخصية</h3>
 
                 <div class="form-group">
                     <label asp-for="NIN" class="form-label">الرقم التعريفي الوطني الوحيد <span class="required">*</span></label>
@@ -502,7 +469,27 @@
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label asp-for="NomFr" class="form-label">الاسم <span class="required">*</span></label>
+                        <label asp-for="NomAr" class="form-label">الاسم بالأحرف العربية <span class="required">*</span></label>
+                        <div class="input-group">
+                            <input asp-for="NomAr" class="form-control with-icon" placeholder="أدخل الاسم بالأحرف العربية" />
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span asp-validation-for="NomAr" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="PrenomAr" class="form-label">اللقب بالأحرف العربية <span class="required">*</span></label>
+                        <div class="input-group">
+                            <input asp-for="PrenomAr" class="form-control with-icon" placeholder="أدخل اللقب بالأحرف العربية" />
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span asp-validation-for="PrenomAr" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="NomFr" class="form-label">الاسم بالأحرف اللاتينية <span class="required">*</span></label>
                         <div class="input-group">
                             <input asp-for="NomFr" class="form-control with-icon" placeholder="أدخل الاسم بالأحرف اللاتينية" />
                             <i class="fas fa-user"></i>
@@ -511,7 +498,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label asp-for="PrenomFr" class="form-label">اللقب <span class="required">*</span></label>
+                        <label asp-for="PrenomFr" class="form-label">اللقب بالأحرف اللاتينية <span class="required">*</span></label>
                         <div class="input-group">
                             <input asp-for="PrenomFr" class="form-control with-icon" placeholder="أدخل اللقب بالأحرف اللاتينية" />
                             <i class="fas fa-user"></i>
@@ -519,20 +506,55 @@
                         <span asp-validation-for="PrenomFr" class="text-danger"></span>
                     </div>
                 </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="DateNaissance" class="form-label">تاريخ الميلاد <span class="required">*</span></label>
+                        <div class="input-group">
+                            <input asp-for="DateNaissance" class="form-control with-icon" type="date" />
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <span asp-validation-for="DateNaissance" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="NumActNais" class="form-label">رقم شهادة الميلاد <span class="required">*</span></label>
+                        <div class="input-group">
+                            <input asp-for="NumActNais" class="form-control with-icon" placeholder="أدخل رقم شهادة الميلاد" />
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <span asp-validation-for="NumActNais" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="WilayaNaissanceId" class="form-label">ولاية الميلاد <span class="required">*</span></label>
+                        <select asp-for="WilayaNaissanceId" class="form-select select2" id="wilayaN" asp-items="ViewBag.WilayaId">
+                            <option value="">اختر الولاية</option>
+                        </select>
+                        <span asp-validation-for="WilayaNaissanceId" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="CommuneNaissanceId" class="form-label">بلدية الإزدياد <span class="required">*</span></label>
+                        <select asp-for="CommuneNaissanceId" class="form-select select2" id="communeN" asp-items="ViewBag.CommuneId">
+                            <option value="">اختر بلدية الإزدياد</option>
+                        </select>
+                        <span asp-validation-for="CommuneNaissanceId" class="text-danger"></span>
+                    </div>
+
+
+                </div>
             </div>
 
-
+            <!-- Contact -->
             <div class="form-section">
-                <h3 class="section-title">
-                    <i class="fas fa-phone"></i>
-                    معلومات الاتصال
-                </h3>
+                <h3 class="section-title"><i class="fas fa-phone"></i> معلومات الاتصال</h3>
 
                 <div class="form-row">
                     <div class="form-group">
                         <label asp-for="NumTelephone" class="form-label">رقم الهاتف <span class="required">*</span></label>
                         <div class="input-group">
-                            <input asp-for="NumTelephone" class="form-control with-icon" placeholder="05xxxxxxxx" />
+                            <input asp-for="NumTelephone" class="form-control with-icon" placeholder="0xxxxxxxxx" />
                             <i class="fas fa-phone"></i>
                         </div>
                         <span asp-validation-for="NumTelephone" class="text-danger"></span>
@@ -549,35 +571,36 @@
                 </div>
             </div>
 
-
+            <!-- Validation -->
             <div class="form-section">
-
                 <div class="form-group">
-                    <div class="g-recaptcha"
-                         data-sitekey="6LcN3q4qAAAAAEFq86pRnXIr1ROxvFnB1PzCBdoB"
-                         data-callback="onRecaptchaComplete"></div>
+                    <div class="g-recaptcha" data-sitekey="6LcN3q4qAAAAAEFq86pRnXIr1ROxvFnB1PzCBdoB" data-callback="onRecaptchaComplete"></div>
                     <input type="hidden" asp-for="RecaptchaResponse" id="recaptchaResponse" required />
                     <span asp-validation-for="RecaptchaResponse" class="text-danger"></span>
                 </div>
+
                 <div class="form-group">
                     <label class="custom-checkbox">
                         <input type="checkbox" id="acceptTerms">
                         <span class="checkmark"></span>
-                        أسمح لناسدا بمعالجة بياناتي الشخصية وفق للشروط المنصوص عليها في القانون 18/07 المتعلقة بحماية الأشخاص الطبيعين في معالجة المعطيات الشخصية،يمكنك الإطلاع على. <a href="https://nesda.dz/Home/Privacy" target="_blank" name="NesdaPolitique">السياسة العامة لحماية المعطيات دات الطابع الشخصي الخاصة بالوكالة .</a>
+                        أسمح لناسدا بمعالجة بياناتي الشخصية وفق للشروط المنصوص عليها في القانون 18/07 المتعلقة بحماية الأشخاص الطبيعين في معالجة المعطيات الشخصية،يمكنك الإطلاع على.
+                        <a href="https://nesda.dz/Home/Privacy" target="_blank" name="NesdaPolitique">السياسة العامة لحماية المعطيات دات الطابع الشخصي الخاصة بالوكالة .</a>
                     </label>
                 </div>
             </div>
 
+            <!-- Bouton -->
             <div class="btn-container">
                 <button type="submit" class="btn-primary" disabled id="submitBtn">
                     <i class="fas fa-paper-plane"></i>
                     إرسال الطلب
                 </button>
-
             </div>
         </form>
     </div>
 </div>
+
+
 
 
 @section scripts{
@@ -604,7 +627,6 @@
                 });
             }
 
-            // تنسيق NIN تلقائياً
             const ninInput = document.querySelector('input[name="NIN"]');
             if (ninInput) {
                 ninInput.addEventListener('input', function () {
@@ -616,7 +638,7 @@
                 });
             }
 
-            // تحسين التحقق من الحقول المطلوبة
+
             const form = document.querySelector('form');
             const requiredFields = form.querySelectorAll('[required]');
 
@@ -630,7 +652,7 @@
                 });
             });
 
-            // إضافة تأثيرات بصرية للحقول
+
             const inputs = form.querySelectorAll('.form-control, .form-select');
             inputs.forEach(input => {
                 input.addEventListener('focus', function () {
@@ -682,6 +704,23 @@
             });
         });
 
+
+        $(document).ready(function () {
+            $('#WilayaNaissanceId').select2({
+                dir: "rtl", // Pour l'arabe
+                width: '100%', // Important pour que le CSS fonctionne bien
+                placeholder: "اختر الولاية"
+            });
+        });
+
+        $(document).ready(function () {
+            $('#CommuneNaissanceId').select2({
+                dir: "rtl", // Pour l'arabe
+                width: '100%', // Important pour que le CSS fonctionne bien
+                placeholder: "اختر البلدية"
+            });
+        });
+
     </script>
 
     <script>
@@ -698,7 +737,7 @@
                 }
             }
         });
-        const nesdaInput = document.querySelector('input[name="NumeroSiejeV3"]');
+        const nesdaInput = document.querySelector('input[name="NumActNais"]');
         if (nesdaInput) {
             nesdaInput.addEventListener('input', function (e) {
                 // Supprimer tous les caractères non numériques
@@ -760,7 +799,90 @@
         });
     </script>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#communeN").prop("disabled", false);
+
+            $("#wilayaN").change(function () {
+                var wilayaNId = $(this).val();
+                var url = "/PreInscriptionSousTraitance/GetCommuneList";
+
+                if (wilayaNId) {
+                    $.getJSON(url, { WilayaId: wilayaNId }, function (data) {
+                        var item = "<option value=''>إختيار بلدية الميلاد</option>";
+                        $.each(data, function (i, city) {
+                            item += '<option value="' + city.value + '">' + city.text + '</option>'
+                        });
+                        $("#communeN").html(item).prop("disabled", false);
+                    });
+                } else {
+                    $("#communeN").html("<option value=''>إختيار بلدية الميلاد</option>").prop("disabled", true);
+                }
+            });
+        });
+    </script>
+
+  
+    <script type="text/javascript">
+
+        function restrictInputOtherThanArabic($field) {
+            // Plage de caractères Unicode pour les caractères arabes, chiffres arabes, et chiffres occidentaux
+            var arabicCharUnicodeRange = /^[\u0600-\u06FF\u0660-\u0669\u0030-\u0039\s]+$/; // Ajout des chiffres occidentaux et des espaces
+
+            // Événement keypress pour empêcher les saisies autres que les caractères arabes et chiffres
+            $field.on("keypress", function (event) {
+                var key = event.which;
+                // Autoriser retour arrière (backspace), pavé numérique (0), et espace (32)
+                if (key == 8 || key == 0 || key === 32) {
+                    return true;
+                }
+
+                var str = String.fromCharCode(key);
+                if (arabicCharUnicodeRange.test(str)) {
+                    return true;
+                }
+
+                return false;
+            });
+
+            // Empêche coller (paste) si le texte contient des caractères autres qu'arabes ou chiffres
+            $field.on("paste", function (event) {
+                var clipboardData = (event.originalEvent || event).clipboardData || window.clipboardData;
+                var pastedData = clipboardData.getData('text'); // Récupère les données collées
+
+                // Bloque l'événement si le texte collé contient des caractères non autorisés
+                if (!arabicCharUnicodeRange.test(pastedData)) {
+                    event.preventDefault(); // Empêche le coller si du texte non autorisé est détecté
+                }
+            });
+
+            // Empêche déposer du texte (drag and drop) si non autorisé
+            $field.on("drop", function (event) {
+                var draggedData = event.originalEvent.dataTransfer.getData('text');
+
+                // Bloque le drop si le texte contient des caractères non autorisés
+                if (!arabicCharUnicodeRange.test(draggedData)) {
+                    event.preventDefault();
+                }
+            });
+        }
+
+  
+
+        jQuery(document).ready(function () {
+            // allow arabic characters only for following fields
+            restrictInputOtherThanArabic($('#NomAr'));
+            restrictInputOtherThanArabic($('#PrenomAr'));
+         
+
+        });
+
+    </script>
+
+       
 }
+       
+
 
 
 

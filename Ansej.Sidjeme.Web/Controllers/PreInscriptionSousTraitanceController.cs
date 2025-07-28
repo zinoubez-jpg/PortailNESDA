@@ -12,20 +12,22 @@ using System.Threading.Tasks;
 namespace Ansej.Sidjeme.Web.Controllers
 {
     [Route("[controller]/[action]")]
-    public class PreInscriptionSousTraitenceController : Controller
+    public class PreInscriptionSousTraitanceController : Controller
     {
         private readonly WilayaBusinessService _wilayaBusinessService;
         private readonly PreInscriptionSousTraitenceBusinessService _preInscriptionSousTraitenceBusinessService;
         private readonly ReferentielBusinessService<Activite, int> _activiteBusinessService;
+        private readonly ReferentielBusinessService<Commune, int> _communeBusinessService;
         private readonly ReferentielBusinessService<PerimetreActivite, int> _perimetreActiviteBusinessService;
         private readonly IRecaptchaService _recaptchaService;
-        public PreInscriptionSousTraitenceController(WilayaBusinessService wilayaBusinessService, PreInscriptionSousTraitenceBusinessService preInscriptionSousTraitenceBusinessService, ReferentielBusinessService<Activite, int> activiteBusinessService , ReferentielBusinessService<PerimetreActivite, int> perimetreActiviteBusinessService, IRecaptchaService recaptchaService)
+        public PreInscriptionSousTraitanceController(WilayaBusinessService wilayaBusinessService, PreInscriptionSousTraitenceBusinessService preInscriptionSousTraitenceBusinessService, ReferentielBusinessService<Activite, int> activiteBusinessService , ReferentielBusinessService<PerimetreActivite, int> perimetreActiviteBusinessService, IRecaptchaService recaptchaService, ReferentielBusinessService<Commune, int> communeBusinessService)
         {
             _wilayaBusinessService = wilayaBusinessService;
             _preInscriptionSousTraitenceBusinessService = preInscriptionSousTraitenceBusinessService;
             _activiteBusinessService = activiteBusinessService;
             _perimetreActiviteBusinessService = perimetreActiviteBusinessService;
             _recaptchaService = recaptchaService;
+            _communeBusinessService = communeBusinessService;
 
         }
         public IActionResult Index()
@@ -88,14 +90,25 @@ namespace Ansej.Sidjeme.Web.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public JsonResult GetCommuneList(int WilayaId)
+        {
+            var communelist = new SelectList(_communeBusinessService.GetAll().Where(x => x.WilayaId == WilayaId), "Id", "DesignationAr");
+            return Json(communelist);
+        }
+
         private void InitializeListViewBags()
         {
             var wilayas = _wilayaBusinessService.GetAll();
             var activites = _activiteBusinessService.GetAll();
             var perimetres = _perimetreActiviteBusinessService.GetAll();
+            var communes = _communeBusinessService.GetAll();
             ViewBag.WilayaId = new SelectList(wilayas, nameof(Wilaya.Id), nameof(Wilaya.DisplayNameAr));
             ViewBag.ActiviteId = new SelectList(activites, nameof(Activite.Id), nameof(Activite.DesignationAr));
             ViewBag.PerimetreId = new SelectList(perimetres, nameof(PerimetreActivite.Id), nameof(Wilaya.DesignationAr));
+            ViewBag.CommuneId = new SelectList(communes, nameof(Commune.Id), nameof(Commune.DesignationAr));
+
         }
 
 

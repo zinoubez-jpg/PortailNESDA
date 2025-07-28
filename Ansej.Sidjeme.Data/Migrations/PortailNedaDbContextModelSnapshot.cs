@@ -180,6 +180,43 @@ namespace Ansej.Sidjeme.Data.Migrations
                     b.ToTable("Article");
                 });
 
+            modelBuilder.Entity("Ansej.Sidjeme.Domain.Entities.Commune", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("DesignationAr")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("DesignationEn")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("DesignationFr")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<int>("WilayaId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("WilayaId");
+
+                    b.ToTable("Communes");
+                });
+
             modelBuilder.Entity("Ansej.Sidjeme.Domain.Entities.Consultation", b =>
                 {
                     b.Property<int>("Id")
@@ -305,7 +342,13 @@ namespace Ansej.Sidjeme.Data.Migrations
                     b.Property<int>("ActiviteId")
                         .HasColumnType("int");
 
+                    b.Property<int>("CommuneNaissanceId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("DateInscription")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateNaissance")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
@@ -323,25 +366,35 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .HasMaxLength(18)
                         .HasColumnType("nvarchar(18)");
 
+                    b.Property<string>("NomAr")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
                     b.Property<string>("NomFr")
                         .IsRequired()
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
 
+                    b.Property<string>("NumActNais")
+                        .IsRequired()
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)");
+
                     b.Property<string>("NumTelephone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NumeroSiejeV3")
-                        .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("Observation")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("PerimetreActiviteId")
                         .HasColumnType("int");
+
+                    b.Property<string>("PrenomAr")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("PrenomFr")
                         .IsRequired()
@@ -358,9 +411,14 @@ namespace Ansej.Sidjeme.Data.Migrations
                     b.Property<int>("WilayaId")
                         .HasColumnType("int");
 
+                    b.Property<int>("WilayaNaissanceId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ActiviteId");
+
+                    b.HasIndex("CommuneNaissanceId");
 
                     b.HasIndex("PerimetreActiviteId");
 
@@ -467,6 +525,17 @@ namespace Ansej.Sidjeme.Data.Migrations
                     b.ToTable("Wilaya");
                 });
 
+            modelBuilder.Entity("Ansej.Sidjeme.Domain.Entities.Commune", b =>
+                {
+                    b.HasOne("Ansej.Sidjeme.Domain.Wilaya", "Wilaya")
+                        .WithMany("Communes")
+                        .HasForeignKey("WilayaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Wilaya");
+                });
+
             modelBuilder.Entity("Ansej.Sidjeme.Domain.Entities.Consultation", b =>
                 {
                     b.HasOne("Ansej.Sidjeme.Domain.Entities.StructureManager", "StructureManager")
@@ -497,6 +566,12 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Ansej.Sidjeme.Domain.Entities.Commune", "CommuneNaissance")
+                        .WithMany("InscriptionsCNais")
+                        .HasForeignKey("CommuneNaissanceId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
                     b.HasOne("Ansej.Sidjeme.Domain.PerimetreActivite", "PerimetreActivite")
                         .WithMany()
                         .HasForeignKey("PerimetreActiviteId")
@@ -510,6 +585,8 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Activite");
+
+                    b.Navigation("CommuneNaissance");
 
                     b.Navigation("PerimetreActivite");
 
@@ -526,6 +603,11 @@ namespace Ansej.Sidjeme.Data.Migrations
                     b.Navigation("ParentStructureManager");
                 });
 
+            modelBuilder.Entity("Ansej.Sidjeme.Domain.Entities.Commune", b =>
+                {
+                    b.Navigation("InscriptionsCNais");
+                });
+
             modelBuilder.Entity("Ansej.Sidjeme.Domain.Entities.StructureManager", b =>
                 {
                     b.Navigation("Consultations");
@@ -535,6 +617,8 @@ namespace Ansej.Sidjeme.Data.Migrations
 
             modelBuilder.Entity("Ansej.Sidjeme.Domain.Wilaya", b =>
                 {
+                    b.Navigation("Communes");
+
                     b.Navigation("ContactUs");
                 });
 #pragma warning restore 612, 618

@@ -25,6 +25,11 @@ namespace Ansej.Sidjeme.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<PreInscriptionSousTraitence>().HasOne(x => x.CommuneNaissance)
+                          .WithMany(x => x.InscriptionsCNais)
+                          .HasForeignKey(x => x.CommuneNaissanceId)
+                          .OnDelete(DeleteBehavior.NoAction);
+            base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Wilaya>().
                  HasMany(w => w.ContactUs)
@@ -58,6 +63,8 @@ namespace Ansej.Sidjeme.Data
         public DbSet<PreInscriptionSousTraitence> PreInscriptionSousTraitence { get; set; }
         public DbSet<Activite> Activites { get; set; }
         public DbSet<PerimetreActivite> PerimetreActivites { get; set; }
+        public DbSet<Wilaya> Wilaya { get; set; }
+        public DbSet<Commune> Communes { get; set; }
 
     }
 }
