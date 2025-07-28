@@ -13,7 +13,8 @@ namespace Ansej.Sidjeme.Domain.Entities
         public int Id { get; set; }
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-ddTHH:mm}")]
         public DateTime DateInscription { get; set; } = DateTime.Now;
-       
+        [Display(Name = "RaisonSocial")]
+        [Required(ErrorMessage = "يجب ملء هذا الحقل"), StringLength(128, ErrorMessage = "StringLengthMessage")]
         public string RaisonSocial { get; set; }
         [Required(ErrorMessage = "يرجى اختيار ولاية المقر الاجتماعي")]
         [Display(Name = "Wilaya")]

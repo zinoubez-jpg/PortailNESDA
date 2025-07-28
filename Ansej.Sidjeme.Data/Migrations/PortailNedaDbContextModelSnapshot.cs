@@ -402,7 +402,9 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("RaisonSocial")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("RecaptchaResponse")
                         .IsRequired()

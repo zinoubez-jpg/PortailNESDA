@@ -17,11 +17,11 @@ namespace Ansej.Sidjeme.Business
 
         protected override void OnAdding(PreInscriptionSousTraitence entity)
         {
-            //if (_repository.Count(x =>
-            //                     x.NomFr == entity.NomFr &&
-            //                     x.PrenomFr == entity.PrenomFr &&
-            //                     x.NumeroSiejeV3 == entity.NumeroSiejeV3) > 0)
-            //    throw new BusinessException($"يوجد شخص آخر مسجل بالاسم: {entity.PrenomFr}، اللقب: {entity.NomFr}، رقم ملف: {entity.NumeroSiejeV3}.");
+            if (_repository.Count(x =>
+                                 x.NomFr == entity.NomFr &&
+                                 x.PrenomFr == entity.PrenomFr &&
+                                 x.NumActNais == entity.NumActNais) > 0)
+                throw new BusinessException($"يوجد شخص آخر مسجل بالاسم: {entity.PrenomFr}، اللقب: {entity.NomFr}، رقم ملف: {entity.NumActNais}.");
 
 
             base.OnAdding(entity);
