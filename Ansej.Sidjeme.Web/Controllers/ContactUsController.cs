@@ -1,4 +1,5 @@
-﻿using Ansej.Sidjeme.Business;
+﻿using Ansej.Business.Core;
+using Ansej.Sidjeme.Business;
 using Ansej.Sidjeme.Domain;
 using Ansej.Sidjeme.Domain.Entities;
 using Ansej.Sidjeme.Web.Models;
@@ -15,13 +16,15 @@ namespace Ansej.Sidjeme.Web.Controllers
     [Route("[controller]/[action]")]
     public class ContactUsController : Controller
     {
-        ContactUsBusinessService _contactUsBusinessService;
-        WilayaBusinessService _wilayaBusinessService;
+        private readonly ContactUsBusinessService _contactUsBusinessService;
+        private readonly WilayaBusinessService _wilayaBusinessService;
+        private readonly IRecaptchaService _recaptchaService;
 
-        public ContactUsController(ContactUsBusinessService contactUsBusinessService, WilayaBusinessService wilayaBusinessService)
+        public ContactUsController(ContactUsBusinessService contactUsBusinessService, WilayaBusinessService wilayaBusinessService, IRecaptchaService recaptchaService)
         {
             this._contactUsBusinessService = contactUsBusinessService;
             this._wilayaBusinessService = wilayaBusinessService;
+            _recaptchaService = recaptchaService;
 
         }
         public IActionResult Index()
@@ -38,33 +41,49 @@ namespace Ansej.Sidjeme.Web.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Index(ContactUs model)
         {
-            if (!ModelState.IsValid)
+            var isRecaptchaValid = _recaptchaService.ValidateRecaptchaAsync(model.RecaptchaResponse).Result;
+            if (!isRecaptchaValid)
             {
-                var wilayas = _wilayaBusinessService.GetAll();
-                ViewBag.Wilayas = new SelectList(wilayas, nameof(Wilaya.Id), nameof(Wilaya.DisplayNameAr));
+                ModelState.AddModelError("Recaptcha", "لم تتمكن من اجتياز اختبار الـ CAPTCHA. يرجى المحاولة مرة أخرى.");
+                InitializeListViewBags();
 
-                return View(model); 
+                var bR = new BusinessResult();
+                var msgR = new MessageResult()
+                {
+                    Message = "لم تتمكن من اجتياز اختبار الـ CAPTCHA. يرجى المحاولة مرة أخرى.",
+                    MessageType = MessageType.Error,
+                };
+
+                bR.Messages.Add(msgR);
+                TempData["Message"] = bR.ToBootstrapAlerts();
+
+                return View(model);
+            }
+            if (ModelState.IsValid)
+            {
+                model.IpAddress = HttpContext.Connection.RemoteIpAddress?.ToString();
+                model.UserAgent = HttpContext.Request.Headers["User-Agent"].ToString();
+                model.CreatedAt = DateTime.Now;
+                model.IsRead = false;
+
+                var result = _contactUsBusinessService.Add(model);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("ThankYouPage");
+                }
+
+                // En cas d'échec de sauvegarde malgré un modèle valide
+                ModelState.AddModelError(string.Empty, "Une erreur s’est produite lors de l’envoi du formulaire. Veuillez réessayer.");
             }
 
-            model.IpAddress = HttpContext.Connection.RemoteIpAddress?.ToString();
-            model.UserAgent = HttpContext.Request.Headers["User-Agent"].ToString();
-            model.CreatedAt = DateTime.Now;
-            model.IsRead = false;
+            // Si le modèle est invalide ou l'enregistrement a échoué
+            InitializeListViewBags();
 
-            var result = _contactUsBusinessService.Add(model);
-
-            if (result.Succeeded)
-            {
-                return RedirectToAction("ThankYouPage");
-            }
-
-            var wilayasReload = _wilayaBusinessService.GetAll();
-            ViewBag.Wilayas = new SelectList(wilayasReload, nameof(Wilaya.Id), nameof(Wilaya.DisplayNameAr));
-
-            ModelState.AddModelError(string.Empty, "Une erreur s’est produite lors de l’envoi du formulaire. Veuillez réessayer.");
             return View(model);
         }
-        [Authorize]
+
+        [Authorize(Roles = "Admin,ContactUs")]
         [Route("{id}")]
         public IActionResult MessageTraitement(int id)
         {
@@ -75,7 +94,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             return View(model);
 
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,ContactUs")]
         [ValidateAntiForgeryToken]
         [HttpPost("{id}")]
         public virtual IActionResult MessageTraitement(ContactUs model)
@@ -92,14 +111,14 @@ namespace Ansej.Sidjeme.Web.Controllers
                
                 ViewData["Message"] = businessResult.ToBootstrapAlerts();
             }
-          
+           
             return View(model);
         }
         public IActionResult ThankYouPage()
         {
             return View();
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,ContactUs")]
         public IActionResult MessagesList()
         {
 
@@ -167,6 +186,13 @@ namespace Ansej.Sidjeme.Web.Controllers
             {
                 search = "";
             }
+        }
+
+        private void InitializeListViewBags()
+        {
+            var wilayas = _wilayaBusinessService.GetAll();
+         
+            ViewBag.Wilayas = new SelectList(wilayas, nameof(Wilaya.Id), nameof(Wilaya.DisplayNameAr));
         }
 
 

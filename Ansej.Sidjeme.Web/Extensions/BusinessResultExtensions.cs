@@ -15,7 +15,10 @@ namespace Ansej.Sidjeme.Web
 
             foreach (var msg in businessResult.Messages)
             {
-                sb.AppendFormat("<div class='alert alert-{0} alert-dismissible fade show' role='alert'>{1}  <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n    <span aria-hidden=\"true\">&times;</span>\n  </button></div>", msg.MessageType==MessageType.Error?"danger":msg.MessageType.ToString().ToLower(),msg.Message);
+                sb.AppendFormat("<div class='alert alert-{0} alert-dismissible fade show' role='alert'>{1}<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>",
+                    msg.MessageType == MessageType.Error ? "danger" : msg.MessageType.ToString().ToLower(),
+                    msg.Message);
+
             }
 
             return sb.ToString();

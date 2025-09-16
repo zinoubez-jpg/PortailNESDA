@@ -15,7 +15,7 @@
 }
 
 <style>
-   
+
 
     /* Main Content Styles */
     .main-content {
@@ -367,6 +367,7 @@
             stroke: #1a3a1e;
             stroke-width: 2;
         }
+
     #tooltip {
         position: fixed; /* Changé à fixed pour stabilité */
         background: rgba(0,0,0,0.8);
@@ -421,6 +422,17 @@
         to {
             transform: rotate(360deg);
         }
+    }
+
+
+    button:disabled,
+    button[disabled] {
+        background-color: #ccc !important; /* Fond gris */
+
+        border: 1px solid #aaa !important; /* Bordure adoucie */
+        cursor: not-allowed !important; /* Curseur barré */
+        opacity: 0.5; /* Légèrement transparent */
+        pointer-events: none; /* Empêche tout événement */
     }
 </style>
 
@@ -516,8 +528,28 @@
                         <label asp-for="Message" class="form-label">الرسالة *</label>
                         <textarea asp-for="Message" class="form-control custom-input" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
                     </div>
+
+                    <div class="form-section">
+
+                        <div class="form-group">
+                            <div class="g-recaptcha"
+                                 data-sitekey="6LcN3q4qAAAAAEFq86pRnXIr1ROxvFnB1PzCBdoB"
+                                 data-callback="onRecaptchaComplete"></div>
+                            <input type="hidden" asp-for="RecaptchaResponse" id="recaptchaResponse" required />
+                            <span asp-validation-for="RecaptchaResponse" class="text-danger"></span>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="acceptTerms">
+                                <span class="checkmark"></span>
+                                أسمح لناسدا بمعالجة بياناتي الشخصية وفق للشروط المنصوص عليها في القانون 18/07 المتعلقة بحماية الأشخاص الطبيعين في معالجة المعطيات الشخصية،يمكنك الإطلاع على. <a href="https://nesda.dz/Home/Privacy" target="_blank" name="NesdaPolitique">السياسة العامة لحماية المعطيات دات الطابع الشخصي الخاصة بالوكالة .</a>
+                            </label>
+                        </div>
+                    </div>
+
                     <div class="col-12">
-                        <button class="thm-btnrg" type="submit">
+                        <button class="thm-btnrg" type="submit" disabled id="submitBtn">
                             <span>إرسال الرسالة</span>
                         </button>
                     </div>
@@ -1001,6 +1033,24 @@
         });
 
 
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const checkbox = document.getElementById("acceptTerms");
+            const submitBtn = document.getElementById("submitBtn");
+
+            checkbox.addEventListener("change", function () {
+                submitBtn.disabled = !this.checked;
+            });
+        });
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onRecaptchaComplete(token) {
+            document.getElementById('recaptchaResponse').value = token;
+        }
     </script>
 
 

@@ -65,7 +65,8 @@ namespace Ansej.Sidjeme.Web.Controllers
         }
 
 
-        [Authorize]
+        [Authorize(Roles = "Admin,Article")]
+
         public IActionResult All()
         {
 
@@ -74,13 +75,13 @@ namespace Ansej.Sidjeme.Web.Controllers
 
 
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles = "Admin,Article")]
         public IActionResult Create()
 
         {
             return View();
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,Article")]
         [HttpPost]
         public async Task<IActionResult> Create(ArticleCreateViewModel model)
         {
@@ -115,7 +116,7 @@ namespace Ansej.Sidjeme.Web.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles = "Admin,Article")]
         public async Task<IActionResult> Edit(int id)
         {
             var article = _articleBusinessService.GetById(id);
@@ -135,7 +136,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             return View(viewModel);
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admin,Article")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(ArticleCreateViewModel model, int id)
@@ -187,7 +188,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
             return View("Details", article);
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,Article")]
         public IActionResult TogglePublish(int id)
         {
             var article = _articleBusinessService.GetById(id);
@@ -200,7 +201,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             var result = _articleBusinessService.Update(article);
             return result.Succeeded ? Ok() : StatusCode(500);
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,Article")]
         public IActionResult Delete(int id)
         {
             var article = _articleBusinessService.GetById(id);
@@ -216,7 +217,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
             return StatusCode(500);
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,Article")]
         public IActionResult TogglePin(int id)
         {
             var article = _articleBusinessService.GetById(id);

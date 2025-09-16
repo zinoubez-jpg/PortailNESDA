@@ -58,12 +58,16 @@
 <body>
 
 
-    @await Component.InvokeAsync("Menu")
+    
 
 
     <main class="main">
 
-
+        @if (ViewData["HideMenuComponent"] == null) // <-- Check if the flag is NOT set
+        {
+            // This is the line that likely calls your menu component.
+            @await Component.InvokeAsync("Menu")
+        }
         @RenderSection("breadcrumb", false)
         @RenderBody()
 

@@ -1,0 +1,509 @@
+﻿@model IEnumerable<Ansej.Sidjeme.Domain.Entities.DeclarationHonneurMI>
+
+@{
+    ViewData["Title"] = "طلبات استراد العتاد و المواد الاولية";
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+
+<style>
+
+    .main-content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /* Header Section */
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--heading-color);
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background-color: var(--accent-color);
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+            border-radius: 2px;
+        }
+
+    /* Stats Card */
+    .stats-card {
+        background-color: var(--surface-color);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-bottom: 4px solid var(--accent-color);
+        transition: transform 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .stats-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
+            transition: height 0.5s ease;
+            z-index: 0;
+        }
+
+        .stats-card:hover::before {
+            height: 100%;
+        }
+
+        .stats-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .stats-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+    .stats-number {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: var(--accent-color);
+        margin-bottom: 0.5rem;
+        transition: color 0.3s ease;
+    }
+
+    .stats-card:hover .stats-number {
+        color: var(--contrast-color);
+    }
+
+    .stats-label {
+        font-size: 1.125rem;
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    .stats-card:hover .stats-label {
+        color: var(--contrast-color);
+    }
+
+    /* Structure Section */
+    .structure-section {
+        margin-bottom: 3rem;
+    }
+
+    .structure-title {
+        background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
+        color: var(--contrast-color);
+        padding: 1.5rem 2rem;
+        border-radius: 15px 15px 0 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+
+        .structure-title::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background-color: rgba(255, 255, 255, 0.3);
+            bottom: 10px;
+            right: 2rem;
+            border-radius: 2px;
+        }
+
+    /* Table Styles */
+    .consultations-table {
+        width: 100%;
+        background-color: var(--surface-color);
+        border-radius: 0 0 15px 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-collapse: collapse;
+    }
+
+    .table-header {
+        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    }
+
+        .table-header th {
+            padding: 1.25rem 1.5rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            border: none;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+    .consultations-table tbody tr {
+        transition: all 0.3s ease;
+        border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 90%);
+    }
+
+        .consultations-table tbody tr:hover {
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+            transform: scale(1.01);
+        }
+
+        .consultations-table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+    .consultations-table td {
+        padding: 1.25rem 1.5rem;
+        border: none;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .date-cell {
+        font-weight: 600;
+        color: var(--accent-color);
+        font-size: 0.95rem;
+    }
+
+    .title-cell {
+        font-weight: 600;
+        color: var(--heading-color);
+        text-align: right;
+        max-width: 300px;
+    }
+
+    /* Document Button */
+    .document-btn {
+        background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
+        color: var(--contrast-color);
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        box-shadow: 0 4px 15px rgba(65, 193, 186, 0.3);
+    }
+
+        .document-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(65, 193, 186, 0.4);
+            color: var(--contrast-color);
+            text-decoration: none;
+        }
+
+        .document-btn::before {
+            content: "\f15c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+        }
+
+    /* Responsive Design */
+    @@media (max-width: 768px) {
+        .main-content {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .stats-card {
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stats-number {
+            font-size: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .structure-title {
+            padding: 1rem 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .consultations-table {
+            font-size: 0.9rem;
+        }
+
+            .table-header th,
+            .consultations-table td {
+                padding: 1rem;
+            }
+
+        .title-cell {
+            max-width: 200px;
+            font-size: 0.9rem;
+        }
+
+        .document-btn {
+            padding: 0.6rem 1.2rem;
+            font-size: 0.85rem;
+        }
+    }
+
+    @@media (max-width: 576px) {
+        .consultations-table {
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .title-cell {
+            max-width: 150px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    /* Animation for page load */
+    .structure-section {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.6s ease forwards;
+    }
+
+        .structure-section:nth-child(even) {
+            animation-delay: 0.1s;
+        }
+
+        .structure-section:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+
+    @@keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Stats card animation */
+    .stats-card {
+        opacity: 0;
+        transform: scale(0.9);
+        animation: scaleIn 0.5s ease forwards;
+    }
+
+    @@keyframes scaleIn {
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+</style>
+
+<!-- Page Title -->
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/isticharat.jpg);">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+
+
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+
+<div class="main-content">
+    <div class="container">
+
+        <h2 class="section-title">قائمة التصريحات</h2>
+
+
+
+        <div class="structure-section">
+            <h4 class="structure-title"></h4>
+            <br />
+            <p class="col-md-6">
+
+                <a asp-action="DownloadExcelFile" class="btn btn-style btn-primary mr-2"><i class="fa fa-file-export"></i> &nbsp;تصدير قائمة الطلبات إلى Excel</a>
+
+            </p>
+            <br />
+            <partial name="_Message" />
+            <br />
+            <table class="consultations-table">
+                <thead class="table-header">
+                <thead>
+                    <tr>
+
+                        <th>
+                            رقم الملف
+                        </th>
+                        <th>
+                            تاريخ الطلب
+                        </th>
+                        <th>
+                            الاسم
+                        </th>
+                        <th>
+                            اللقب
+                        </th>
+                        <th>
+                            رقم التعرف الوطني
+                        </th>
+
+                        <th>
+                            اسم المؤسسة
+                        </th>
+
+                        <th>
+                            نوع الاحتياج
+                        </th>
+
+                        <th>
+                            طلب معالج
+                        </th>
+
+                        <th>
+                            طلب موافق عليه
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="modal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content card">
+
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ajax.script" />
+    <partial name="_jqueryui.script" />
+    <partial name="_datatables.script" />
+    <script src="~/js/declarationHonneurMI.js"></script>
+
+    <script>
+        $(function () {
+
+            initDataTable("table", "@Url.Action("Datatable")");
+
+        });
+    </script>
+   
+
+    <script>
+
+
+
+        //$(function () {
+        //    alert('coucou');
+        //    $('#modal').on('shown.bs.modal', function (e) {
+        //        var btn = e.relatedTarget;
+        //        var url = $(btn).data("url");
+        //        alert(url);
+        //        //alert(url);
+        //        $.get(url, function (response) {
+        //            $("#modal").find(".modal-content").html(response);
+        //        });
+
+        //    });
+
+        //});
+
+        $(document).on("click", ".call", function () {
+            var url = $(this).data("url"); // récupère l'URL
+          //  alert(url);
+            $.get(url, function (data) {
+                $("#modal .modal-content").html(data); // injecte la vue
+                $("#modal").modal("show"); // affiche le modal
+            });
+        });
+        function TraiterDemande(data) {
+            //alert(data);
+
+            if (data[0]== "false") {
+                $("#modalMessages").html(data[1]);
+            }
+            else {
+
+                $("#modal").modal("hide");
+                window.location.href ="@Url.Action("Index", "DeclarationHonneurMI")";
+
+            }
+        }
+
+        
+        function selectedItem() {
+
+            const selectedValue = document.getElementById('decision').value;
+
+            if (selectedValue == 0) {
+                document.getElementById('dateTraitement').style.visibility = "hidden";
+                document.getElementById('motif').style.visibility = "visible";
+            }
+
+            else
+            {
+                document.getElementById('dateTraitement').style.visibility = "visible";
+                document.getElementById('motif').style.visibility = "hidden";
+            }
+           
+        }
+
+        //function todate() {
+        //    let date = document.getElementById("formatinDate").innerText;
+
+        //    if (date == null)
+        //        texteTraite = "";
+        //    else {
+        //        var tab = date.split("T");
+        //        var newDate = tab[0].split("-");
+        //        texteTraite= newDate[2] + "/" + newDate[1] + "/" + newDate[0];
+        //    }
+
+        //    document.getElementById("formatinDate").innerText = texteTraite;
+        //}
+
+        //window.onload = todate();
+    </script>
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

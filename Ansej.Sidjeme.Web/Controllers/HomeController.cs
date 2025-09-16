@@ -173,6 +173,14 @@ namespace Ansej.Sidjeme.Web.Controllers
 
         }
 
+        public IActionResult DeclarationHonneurMI()
+        {
+
+
+            return View();
+
+        }
+        
         public IActionResult Partenariat()
         {
 
