@@ -201,6 +201,9 @@
   <data name="CSVF" xml:space="preserve">
     <value>CSVF</value>
   </data>
+  <data name="DeclarationHonneurMI" xml:space="preserve">
+    <value>الاستفادة من استراد المعدات و العمليات و الخدمات</value>
+  </data>
   <data name="Depuis" xml:space="preserve">
     <value>منذ</value>
   </data>

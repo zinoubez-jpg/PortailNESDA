@@ -1,0 +1,351 @@
+﻿@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["DeclarationHonneurMI"];
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+    :root {
+        --default-font: "Noto Kufi Arabic", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        --heading-font: "Noto Kufi Arabic", sans-serif;
+        --nav-font: "Noto Kufi Arabic", sans-serif;
+    }
+
+    :root {
+        --background-color: #f1f5f4;
+        --default-color: #212529;
+        --heading-color: #2d465e;
+        --accent-color: #41c1ba;
+        --surface-color: #ffffff;
+        --contrast-color: #ffffff;
+    }
+
+    body {
+        font-family: var(--default-font);
+        background-color: var(--background-color);
+        color: var(--default-color);
+        direction: rtl;
+    }
+
+    .subcontracting {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+        .subcontracting .display-6 {
+            line-height: 1.2;
+        }
+
+            .subcontracting .display-6 span {
+                position: relative;
+                color: var(--accent-color);
+            }
+
+                .subcontracting .display-6 span:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+                    left: 0;
+                    bottom: 5px;
+                    z-index: -1;
+                }
+
+        .subcontracting .lead {
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            font-size: 1.125rem;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .subcontracting .content-item {
+            background-color: var(--surface-color);
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            z-index: 1;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+            .subcontracting .content-item:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+                transition: height 0.5s ease;
+                z-index: -1;
+            }
+
+            .subcontracting .content-item:hover {
+                transform: translateY(-5px);
+            }
+
+                .subcontracting .content-item:hover:before {
+                    height: 100%;
+                }
+
+        .subcontracting .content-header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .subcontracting .content-header h3 {
+                margin: 0;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--heading-color);
+                flex: 1;
+            }
+
+            .subcontracting .content-header .content-icon {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+                border-radius: 50%;
+                margin-left: 1rem;
+                transition: all 0.3s ease;
+                flex-shrink: 0;
+            }
+
+                .subcontracting .content-header .content-icon i {
+                    font-size: 1.25rem;
+                    color: var(--accent-color);
+                    transition: all 0.3s ease;
+                }
+
+        .subcontracting .content-item:hover .content-header .content-icon {
+            background-color: var(--accent-color);
+        }
+
+            .subcontracting .content-item:hover .content-header .content-icon i {
+                color: var(--contrast-color);
+            }
+
+        .subcontracting .content-body {
+            padding: 0 2rem 2rem 2rem;
+        }
+
+            .subcontracting .content-body p {
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                text-align: justify;
+                line-height: 1.7;
+                margin-bottom: 1rem;
+            }
+
+            .subcontracting .content-body ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .subcontracting .content-body li {
+                position: relative;
+                padding: 0.5rem 1.5rem 0.5rem 2rem;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                line-height: 1.6;
+            }
+
+                .subcontracting .content-body li:before {
+                    content: "\f00c";
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    position: absolute;
+                    right: 0;
+                    color: var(--accent-color);
+                    font-size: 0.9rem;
+                }
+
+        .subcontracting .info-box {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            position: relative;
+        }
+
+            .subcontracting .info-box:before {
+                content: "\f05a";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                position: absolute;
+                top: 1.5rem;
+                right: 1.5rem;
+                color: #0066cc;
+                font-size: 1.25rem;
+            }
+
+            .subcontracting .info-box p {
+                margin: 0;
+                padding-right: 3rem;
+                color: #0c5460;
+                font-weight: 600;
+            }
+
+        .subcontracting .intro-section {
+            background-color: var(--surface-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+            .subcontracting .intro-section p {
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                text-align: justify;
+                line-height: 1.8;
+                margin-bottom: 1rem;
+                font-size: 1.1rem;
+            }
+
+                .subcontracting .intro-section p:last-child {
+                    margin-bottom: 0;
+                }
+
+    @@media (max-width: 768px) {
+        .subcontracting .content-header {
+            padding: 1rem 1.5rem;
+        }
+
+        .subcontracting .content-body {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+        }
+
+        .subcontracting .content-header h3 {
+            font-size: 1.25rem;
+        }
+
+        .subcontracting .intro-section {
+            padding: 1.5rem;
+        }
+    }
+</style>
+
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+<section id="campus-facilities" class="campus-facilities section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+
+
+        <!-- Introduction -->
+        <!--<div class="intro-row">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="intro-content">
+                        <h2 class="fw-bold">
+                            برنامج <span></span>
+
+
+                        </h2>
+                       
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="intro-image-container">
+                       
+
+
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+
+    </div>
+
+</section>
+
+
+<section class="subcontracting">
+    <div class="container">
+       
+
+        <!-- Content Items -->
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+
+                <div class="content-item">
+                    <div class="content-header">
+                        <h3>  الاستفادة من استراد المعدات و العمليات و الخدمات </h3>
+                        <div class="content-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="content-body">
+                        <ul>
+                            في إطار تعزيز وزارة التجارة الخارجية لإجراءات الاستيراد ولضمان حماية أفضل للمنتج الوطني، ُنعلم جميع المؤسسات الناشئة و المصغرة التابعة لإداراتنا الوزارية أنه وفقًا للأحكام التنظيمية الجديدة، يجب أولاً الموافقة على أي وثيقة تتعلق ببرنامج الاستيراد المتوقع للمعدات والعمليات، المقدمة للتحقق النهائي من قبل وزارة التجارة، من قبل الإدارات المعتمدة داخل وزارة اقتصاد المعرفة والشركات الناشئة والصغيرة
+                        </ul>
+                        <ul>أصبحت الموافقة الإلزامية على برنامج الاستيراد المتوقع شرطًا أساسيًا وضروريًا لأي عملية تحقق مع وزارة التجارة الخارجية</ul>
+                        <ul>بالنسبة لواردات الخدمات، ووفقًا للمرسوم الوزاري رقم 55 المؤرخ 13 يوليو 2025، تم إنشاء لجنة وزارية مشتركة، مُفوضة بتقييم وترخيص الواردات الاستثنائية للخدمات</ul>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8 text-center">
+                <div class="value-card" style="background-color: var(--surface-color); border-radius: 15px; padding: 2rem; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);">
+                    <h3> يرجى تحميل التصريح الشرفي من هنا ملأه و المصادقة عليه</h3>
+
+                    <a href="~/documents/DeclarationHonneurMI/NESDAتعهد.pdf" download>NESDAتعهد.pdf</a>
+
+                    <div class="card-icon" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background-color: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 50%; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-handshake" style="font-size: 1.75rem; color: var(--accent-color);"></i>
+                    </div>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700; color: var(--heading-color);"> يرجى التسجيل والإعلان عن خططكم لاستيراد المعدات والعمليات والخدمات وفقًا للمتطلبات الحالية. هذا مطلوب لأي برنامج استيراد يتطلب موافقة خدماتنا</h3>
+                    <a asp-controller="DeclarationHonneurMI" asp-action="register" id="Contact" class="btn btn-lg" style="background-color: var(--accent-color); color: var(--contrast-color); padding: 0.75rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                        سجل الآن!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>// Add hover effects for buttons
+    document.addEventListener('DOMContentLoaded', function () {
+        const ctaButton = document.getElementById('Contact');
+            if (ctaButton) {
+                ctaButton.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 8px 25px rgba(65, 193, 186, 0.3)';
+                });
+
+                ctaButton.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            }
+        });</script>

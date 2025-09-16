@@ -605,21 +605,22 @@
                 <form asp-action="MessageTraitement" asp-controller="ContactUs" class="treatment-form" id="treatmentForm1">
                     <input type="hidden" asp-for="Id" />
                     <input type="hidden" asp-for="IsTraited" value="true" />
-                    <input type="hidden" asp-for="CreatedAt"  />
+                    <input type="hidden" asp-for="CreatedAt" value="@Model.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture)" />
                     <input type="hidden" asp-for="TraitedAt" value="@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture)" />
                     <input type="hidden" asp-for="IsRead" value="true" />
-                    <input type="hidden" asp-for="FullName"  />
-                    <input type="hidden" asp-for="Email"  />
+                    <input type="hidden" asp-for="FullName" />
+                    <input type="hidden" asp-for="Email" />
                     <input type="hidden" asp-for="Phone" />
-                    <input type="hidden" asp-for="Subject"  />
+                    <input type="hidden" asp-for="Subject" />
                     <input type="hidden" asp-for="Message" />
-                    <input type="hidden" asp-for="IpAddress"  />
+                    <input type="hidden" asp-for="IpAddress" />
                     <input type="hidden" asp-for="WilayaId" />
-                    <input type="hidden" asp-for="UserAgent"  />
+                    <input type="hidden" asp-for="UserAgent" />
+                    <input type="hidden" asp-for="RecaptchaResponse" />
 
 
 
-                    
+
                     <div class="form-group">
                         <label class="form-label">
                             <i class="fas fa-edit"></i>
@@ -631,8 +632,8 @@
                     </div>
 
                     <div class="action-buttons">
-                       
-                        <button type="submit" class="btn btn-save" >
+
+                        <button type="submit" class="btn btn-save">
                             <i class="fas fa-save"></i>
                             حفظ الملاحظات
                         </button>

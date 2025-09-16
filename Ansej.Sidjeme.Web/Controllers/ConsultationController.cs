@@ -51,7 +51,9 @@ namespace Ansej.Sidjeme.Web.Controllers
                 if (!hasChildren)
                 {
 
-                    consultations = top.Consultations.ToList();
+                    consultations = top.Consultations
+                    .OrderByDescending(c => c.PublishDate)
+                    .ToList();
                 }
                 else
                 {
@@ -59,6 +61,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
                     consultations = _consultationBusinessService
                         .GetAllFiltered(c => childIds.Contains(c.StructureManagerId), _consultationBusinessService.GetDefaultLoadProperties())
+                        .OrderByDescending(c => c.PublishDate)
                         .ToList();
                     IsFromChild = true;
                 }
@@ -73,20 +76,20 @@ namespace Ansej.Sidjeme.Web.Controllers
             return View(result);
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admin,GestionConsultation")]
         [HttpGet]
         public IActionResult Add()
         {
             InitializeStructureViewBag();
             return View();
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,GestionConsultation")]
         public IActionResult All()
         {
 
             return View();
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,GestionConsultation")]
         [HttpPost]
         public async Task<IActionResult> Add(ConsultationUploadModel model)
         {
@@ -117,7 +120,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
             return RedirectToAction("All");
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,GestionConsultation")]
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
@@ -141,7 +144,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             ViewBag.ConsultationId = id;
             return View(viewModel);
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,GestionConsultation")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(ConsultationUploadModel model, int id)
@@ -210,7 +213,7 @@ namespace Ansej.Sidjeme.Web.Controllers
                 return Json(new JQueryDataTableRetunedData<Consultation> { draw = model.draw, recordsFiltered = result.TotalCount, recordsTotal = result.TotalCount, data = result.Items });
             }
         }
-        [Authorize]
+        [Authorize(Roles = "Admin,GestionConsultation")]
         public IActionResult ToggleArchive(int id)
         {
             var consultation = _consultationBusinessService.GetById(id);

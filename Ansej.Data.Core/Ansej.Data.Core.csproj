@@ -1,17 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+	  <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Ansej.Data.Abstractions\Ansej.Data.Abstractions.csproj" />
     <ProjectReference Include="..\Ansej.Domain.Core\Ansej.Domain.Core.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
-    <PackageReference Include="Microsoft.Linq.Dynamic" Version="1.0.3" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Linq.Dynamic" Version="1.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+	</ItemGroup>
 
 </Project>

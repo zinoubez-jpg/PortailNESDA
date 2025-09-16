@@ -153,6 +153,9 @@
   <data name="Coopérations" xml:space="preserve">
     <value>التعاون</value>
   </data>
+  <data name="DeclarationHonneurMI" xml:space="preserve">
+    <value>تصريح شرفي</value>
+  </data>
   <data name="Dispositif" xml:space="preserve">
     <value>الجهاز</value>
   </data>
@@ -188,6 +191,9 @@
   </data>
   <data name="Missions" xml:space="preserve">
     <value>المهام والرؤية</value>
+  </data>
+  <data name="ModifierDeclarationHonneurMI" xml:space="preserve">
+    <value>تحرير التصريج الشرفي</value>
   </data>
   <data name="MotDG" xml:space="preserve">
     <value>كلمة المدير العام</value>
