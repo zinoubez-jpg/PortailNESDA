@@ -1,12 +1,23 @@
 ﻿@inject SignInManager<User> SignInManager
 @inject IStringLocalizer<Menu> menuLocalizer
 
+
+
 @using System.Globalization
 @using Ansej.Sidjeme.Identity
 @using Microsoft.AspNetCore.Identity
 @{
     var culture = CultureInfo.CurrentCulture;
     var user = await SignInManager.UserManager.GetUserAsync(User);
+
+
+
+    var directeur = false;
+    if (user is not null)
+    {
+        if (await SignInManager.UserManager.IsInRoleAsync(user, "Directeur")) directeur = true;
+    }
+
 }
 
 <header id="header" class="header d-flex align-items-center fixed-top">
@@ -23,9 +34,9 @@
                 <li class="dropdown">
                     <a asp-controller="Home" asp-action="Index">
                         <span>@menuLocalizer["Principal"]</span>
-                        
+
                     </a>
-                   
+
                 </li>
                 <li class="dropdown">
                     <a href="#">
@@ -74,6 +85,14 @@
                         <li><a asp-controller="Home" asp-action="SousTraitance">@menuLocalizer["NesdaSous-Traitance"]</a></li>
                         <li><a asp-controller="Home" asp-action="Partenariat">@menuLocalizer["Partenariats"]</a></li>
                         <li><a asp-controller="Home" asp-action="Cooperation">@menuLocalizer["Coopérations"]</a></li>
+                        <li><a asp-controller="Home" asp-action="DeclarationHonneurMI">@menuLocalizer["DeclarationHonneurMI"]   </a></li>
+                      
+
+                        @*@{ if(directeur)
+           {
+               <li><a asp-controller="DeclarationHonneurMI" asp-action="Index">قائمةالتصريحات</a></li>
+           }
+        }*@
                     </ul>
                 </li>
 
@@ -83,7 +102,7 @@
                         <li><a asp-action="Index" asp-controller="Consultation">@menuLocalizer["Consultations"]</a></li>
                         <li><a asp-action="Paged" asp-controller="Article">@menuLocalizer["Actualités"]</a></li>
                         @*<li><a>@menuLocalizer["SuccessStories"]</a></li>
-                        <li><a>@menuLocalizer["Médiathèque"]</a></li>*@
+                            <li><a>@menuLocalizer["Médiathèque"]</a></li>*@
                     </ul>
                 </li>
 
@@ -92,14 +111,14 @@
                     <ul>
                         <li><a asp-action="Index" asp-controller="Contactus">@menuLocalizer["ContactDGAWAntennes"]</a></li>
                         @*<li><a>@menuLocalizer["Doléances"]</a></li>
-                        <li><a>@menuLocalizer["QuestionnaireQualité"]</a></li>*@
+                            <li><a>@menuLocalizer["QuestionnaireQualité"]</a></li>*@
                         <li><a asp-action="Privacy" asp-controller="Home">@menuLocalizer["Politique"]</a></li>
                     </ul>
                 </li>
 
                 <li>
-            @await Html.PartialAsync("_LoginPartial")
-        </li>
+                    @await Html.PartialAsync("_LoginPartial")
+                </li>
             </ul>
 
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

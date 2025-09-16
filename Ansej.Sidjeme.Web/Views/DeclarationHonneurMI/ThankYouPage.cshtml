@@ -1,0 +1,348 @@
+﻿
+@{
+    ViewData["Title"] = "Thank You";
+}
+
+<style>
+
+
+    .success-section {
+        width: 100%;
+    }
+
+    .success-card {
+        background-color: var(--surface-color);
+        border-radius: 20px;
+        padding: 3rem;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        border-bottom: 4px solid var(--accent-color);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+        .success-card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-color), var(--success-color));
+        }
+
+    .success-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, var(--success-color), #20c997);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 2rem;
+        animation: successPulse 2s ease-in-out infinite;
+    }
+
+        .success-icon i {
+            font-size: 2.5rem;
+            color: var(--contrast-color);
+        }
+
+    @@keyframes successPulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.05);
+        }
+    }
+
+    .success-title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: var(--heading-color);
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+        .success-title span {
+            color: var(--success-color);
+        }
+
+    .success-message {
+        font-size: 1.25rem;
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        margin-bottom: 2.5rem;
+        line-height: 1.6;
+    }
+
+    .additional-info {
+        background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        text-align: right;
+        border-right: 4px solid var(--accent-color);
+    }
+
+        .additional-info h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+            .additional-info h3:before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                background-color: var(--accent-color);
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+
+    .info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .info-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 90%);
+            position: relative;
+            padding-right: 2rem;
+            color: color-mix(in srgb, var(--default-color), transparent 10%);
+            line-height: 1.5;
+        }
+
+            .info-list li:last-child {
+                border-bottom: none;
+            }
+
+            .info-list li:before {
+                content: "✓";
+                position: absolute;
+                right: 0;
+                top: 0.75rem;
+                width: 20px;
+                height: 20px;
+                background-color: var(--success-color);
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
+
+    .contact-info {
+        background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 2.5rem;
+        text-align: right;
+        border-right: 4px solid var(--heading-color);
+    }
+
+        .contact-info h4 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+            .contact-info h4:before {
+                content: "";
+                margin-left: 10px;
+                font-size: 1.2rem;
+            }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+
+            .contact-info p:first-of-type:before {
+                content: "";
+                margin-left: 10px;
+                font-size: 1rem;
+            }
+
+            .contact-info p:last-of-type:before {
+                content: "";
+                margin-left: 10px;
+                font-size: 1rem;
+            }
+
+    .thm-btnrg {
+        display: inline-block;
+        background: linear-gradient(135deg, var(--accent-color), #369a94);
+        color: var(--contrast-color);
+        padding: 1rem 2.5rem;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 20px rgba(65, 193, 186, 0.3);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .thm-btnrg:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .thm-btnrg:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(65, 193, 186, 0.4);
+            color: var(--contrast-color);
+        }
+
+            .thm-btnrg:hover:before {
+                left: 100%;
+            }
+
+    .stats-mini {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+    }
+
+    .stat-mini {
+        text-align: center;
+        padding: 1rem;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+        border-radius: 10px;
+        min-width: 120px;
+    }
+
+        .stat-mini .number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-mini .label {
+            font-size: 0.9rem;
+            color: color-mix(in srgb, var(--default-color), transparent 30%);
+        }
+
+    @@media (max-width: 768px) {
+        .success-card {
+            padding: 2rem 1.5rem;
+            border-radius: 15px;
+        }
+
+        .success-title {
+            font-size: 1.75rem;
+        }
+
+        .success-message {
+            font-size: 1.1rem;
+        }
+
+        .additional-info,
+        .contact-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .info-list li {
+            text-align: right;
+            padding-right: 2rem;
+        }
+
+        .stats-mini {
+            gap: 1rem;
+        }
+
+        .stat-mini {
+            min-width: 100px;
+            padding: 0.75rem;
+        }
+    }
+
+    .fade-in {
+        animation: fadeInUp 0.8s ease-out;
+    }
+
+    @@keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+
+
+<div class="container">
+    <br /> <br /><br /> <br />
+    <div class="success-card">
+
+        <h1 class="success-title">تم إرسال طلبكم بنجاح!</h1>
+
+        <div class="success-message">
+            شكراً لتواصلكم معنا — لقد تم تسجيل طلبكم يرجى تقربكم من وكالتنا الولائية مرفوقين بالبرنامج التقديري للعتاد
+        </div>
+
+       
+
+        <div class="contact-info">
+            <h4>للاستفسارات العاجلة:</h4>
+            <p>مركز الإتصالات الخاص بالوكالة 033 033 0770</p>
+            <p>البريد الإلكتروني: contact@nesda.dz</p>
+        </div>
+
+        <a asp-controller="Home" asp-action="Index" class="thm-btnrg" onclick="history.back()">العودة إلى الصفحة الرئيسية</a>
+    </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+
+

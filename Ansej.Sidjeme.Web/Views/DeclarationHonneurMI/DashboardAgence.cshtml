@@ -1,0 +1,654 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Ansej.Sidjeme.Identity.User> SignInManager
+
+@model Ansej.Sidjeme.Web.ViewModels.DashBoardDeclarationHonorDGViewModel
+@using Ansej.Sidjeme.Domain.Entities
+@using System.Text.Json
+
+
+
+@{
+    ViewData["Title"] = "لوحة القيادة";
+
+    var user = await SignInManager.UserManager.GetUserAsync(User);
+
+
+
+    var directeur = false;
+    if (user is not null)
+    {
+        if (await SignInManager.UserManager.IsInRoleAsync(user, "Directeur")) directeur = true;
+    }
+}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة القيادة</title>
+    <!-- Inclure Bootstrap CSS depuis un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Inclure une police Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+        }
+
+        .sidebar {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+        }
+
+        .card {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1rem;
+            font-weight: 500;
+        }
+
+        .dashboard-content {
+            padding: 20px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #41c1ba 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+            .stat-card h3 {
+                font-weight: 700;
+                font-size: 2.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .stat-card p {
+                font-size: 1rem;
+                opacity: 0.8;
+            }
+
+        .chart-card {
+            height: 400px; /* Hauteur fixe pour le graphique */
+        }
+
+
+        /*/////////////////////////////////////////////////////////////*/
+
+
+        .success-section {
+            width: 100%;
+        }
+
+        .success-card {
+            background-color: var(--surface-color);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 4px solid var(--accent-color);
+           /* max-width: 800px;*/
+            margin: 0 auto;
+        }
+
+            .success-card:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: linear-gradient(90deg, var(--accent-color), var(--success-color));
+            }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--success-color), #20c997);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            animation: successPulse 2s ease-in-out infinite;
+        }
+
+            .success-icon i {
+                font-size: 2.5rem;
+                color: var(--contrast-color);
+            }
+
+        @@keyframes successPulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .success-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+            .success-title span {
+                color: var(--success-color);
+            }
+
+        .success-message {
+            font-size: 1.25rem;
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+
+        .additional-info {
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: right;
+            border-right: 4px solid var(--accent-color);
+        }
+
+            .additional-info h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--heading-color);
+                margin-bottom: 1.5rem;
+                display: flex;
+                align-items: center;
+            }
+
+                .additional-info h3:before {
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    background-color: var(--accent-color);
+                    border-radius: 50%;
+                    margin-left: 10px;
+                }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .info-list li {
+                padding: 0.75rem 0;
+                border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 90%);
+                position: relative;
+                padding-right: 2rem;
+                color: color-mix(in srgb, var(--default-color), transparent 10%);
+                line-height: 1.5;
+            }
+
+                .info-list li:last-child {
+                    border-bottom: none;
+                }
+
+                .info-list li:before {
+                    content: "✓";
+                    position: absolute;
+                    right: 0;
+                    top: 0.75rem;
+                    width: 20px;
+                    height: 20px;
+                    background-color: var(--success-color);
+                    color: white;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                }
+
+        .contact-info {
+            background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            text-align: right;
+            border-right: 4px solid var(--heading-color);
+        }
+
+            .contact-info h4 {
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: var(--heading-color);
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+            }
+
+                .contact-info h4:before {
+                    content: "";
+                    margin-left: 10px;
+                    font-size: 1.2rem;
+                }
+
+            .contact-info p {
+                margin: 0.5rem 0;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+            }
+
+                .contact-info p:first-of-type:before {
+                    content: "";
+                    margin-left: 10px;
+                    font-size: 1rem;
+                }
+
+                .contact-info p:last-of-type:before {
+                    content: "";
+                    margin-left: 10px;
+                    font-size: 1rem;
+                }
+
+        .thm-btnrg {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-color), #369a94);
+            color: var(--contrast-color);
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(65, 193, 186, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+            .thm-btnrg:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+                transition: left 0.5s;
+            }
+
+            .thm-btnrg:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 30px rgba(65, 193, 186, 0.4);
+                color: var(--contrast-color);
+            }
+
+                .thm-btnrg:hover:before {
+                    left: 100%;
+                }
+
+        .stats-mini {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-mini {
+            text-align: center;
+            padding: 1rem;
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+            border-radius: 10px;
+            min-width: 120px;
+        }
+
+            .stat-mini .number {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--accent-color);
+                margin-bottom: 0.5rem;
+            }
+
+            .stat-mini .label {
+                font-size: 0.9rem;
+                color: color-mix(in srgb, var(--default-color), transparent 30%);
+            }
+
+        @@media (max-width: 768px) {
+            .success-card {
+                padding: 2rem 1.5rem;
+                border-radius: 15px;
+            }
+
+            .success-title {
+                font-size: 1.75rem;
+            }
+
+            .success-message {
+                font-size: 1.1rem;
+            }
+
+            .additional-info,
+            .contact-info {
+                padding: 1.5rem;
+                text-align: center;
+            }
+
+            .info-list li {
+                text-align: right;
+                padding-right: 2rem;
+            }
+
+            .stats-mini {
+                gap: 1rem;
+            }
+
+            .stat-mini {
+                min-width: 100px;
+                padding: 0.75rem;
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @@keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current">لوحة القيادة للتصريحات الشرفية لطلبات استيراد العتاد و المواد الاولية</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+
+
+<div class="container">
+    <br /> <br /><br /> <br />
+                        <div class="success-card">
+
+
+                            <div class="d-flex" id="wrapper">
+                                <!-- Sidebar -->
+                                <div class="bg-white" id="sidebar-wrapper">
+                                    <div class="sidebar-heading border-bottom">لوحة القيادة</div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action p-3 rounded-3 my-1 active" aria-current="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer2 me-2" viewBox="0 0 16 16">
+                                                <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4" />
+                                                <path d="M3.732 5.732a.5.5 0 0 1 .707 0l.915.914A6.746 6.746 0 0 0 8 1.5a.5.5 0 0 1 0-1A7.746 7.746 0 0 1 12.568 4.09l.914-.914a.5.5 0 0 1 .707.707l-1.5 1.5a.5.5 0 1 1-.707-.707l.707-.707a6.745 6.745 0 0 0-4.785-1.745a6.746 6.746 0 0 0-4.785 1.745l-.707.707a.5.5 0 0 1-.707-.707z" />
+                                                <path d="M8 12a4 4 0 1 1 0-8a4 4 0 0 1 0 8zm-2.5-4a2.5 2.5 0 1 0 5 0a2.5 2.5 0 0 0-5 0z" />
+                                            </svg>
+                                            ملخص
+                                        </a>
+                                        @*<a href="#" class="list-group-item list-group-item-action p-3 rounded-3 my-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up me-2" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M0 0h1v15H0zm16 1v14h-1V1zm-8 4v7h-1V5zm-4 2v5h-1V7zm-2 2v3h-1V9zm6-6v9h-1V3zm2-2v11h-1V1zm2-2v13h-1V-1z" />
+                        </svg>
+                        Analytiques
+                    </a>*@
+                                    </div>
+                                </div>
+                                <!-- Contenu de la page -->
+                                <div id="page-content-wrapper">
+                                    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom mb-4 rounded-3 shadow-sm mx-4 mt-4">
+                                        <div class="container-fluid">
+                                            <button class="btn btn-outline-secondary me-2 d-md-none" id="sidebarToggle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                </svg>
+                                            </button>
+                                            <span class="navbar-brand ">@ViewBag.StructureName</span>
+                                        </div>
+                                    </nav>
+
+                                    <div class="container-fluid dashboard-content">
+                                        <div class="row g-4">
+                                            <!-- Cartes de statistiques -->
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="stat-card">
+                                                    <h3>@Model.NbrDemandeTotal</h3>
+                                                    <p>إجمالي عدد التصريحات</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="stat-card">
+                                                    <h3>@Model.NbrDemandeTraite </h3>
+                                                    <p>الطلبات التي تمت معالجتها</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="stat-card">
+                                                    <h3>@Model.NbrDemandeNonTraite</h3>
+                                                    <p>الطلبات التي لم تتم معالجتها</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="stat-card">
+                                                    <h3> @Model.NbrDemandeValide</h3>
+                                                    <p>الطلبات التي تم قبولها</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="stat-card">
+                                                    <h3> @Model.NbrDemandeNonValide</h3>
+                                                    <p>الطلبات التي لم يتم قبولها</p>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Tableau de données : DEMANDE PAR SECTEUR D ACTIVITE-->
+                                            <div class="col-12">
+                                                <div class="card p-3">
+                                                    <div class="card-header" style="background-color:var(--accent-color);">إجمالي عدد الطلبات لكل قطاع نشاط </div>
+                                                    <div class="card-body table-responsive">
+                                                        <table dir="ltr" class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>عدد التصريحات</th>
+                                                                    <th>قطاع النشاط</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                @foreach (var item in Model.DemandeParSecteur)
+                                                                {
+                                                                    <tr>
+                                                                        <td>@item.Nombre</td>
+                                                                        <td>@item.Secteur</td>
+
+                                                                    </tr>
+                                                                }
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Graphiques -->
+                                            <div class="col-md-12 ">
+                                                <div class="card p-3 chart-card">
+                                                    <div class="card-header">مخطط قطاعات النشاط</div>
+                                                    <div class="card-body">
+                                                        <canvas id="salesChart"></canvas>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="card p-3 chart-card">
+                                                    <div class="card-header">مخطط معالجة الطلبات</div>
+                                                    <div class="card-body">
+                                                        <canvas id="userChart"></canvas>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            @if (directeur)
+                            {
+                                <a asp-controller="Home" asp-action="Index" class="thm-btnrg" onclick="history.back()">العودة إلى الصفحة الرئيسية</a>
+                            }
+                            else //ConsultantDG
+                            {
+
+                                <a asp-controller="DeclarationHonneurMI" asp-action="DashboardDG" class="thm-btnrg" onclick="history.back()">السابق </a>
+
+                            }
+                        </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+
+
+
+@section Scripts{
+    <!-- Inclure les scripts Bootstrap et Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZleofgN4w0vO4t3y8aH3iVbI2G5V5I5XQfQzU6W4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // JavaScript pour le menu latéral
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("sidebarToggle");
+          const donnees = @Html.Raw(JsonSerializer.Serialize(
+      Model.DemandeParSecteur ?? new List<DemandeParSecteurDto>(),
+      new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase }
+      ));
+
+            //donnees.forEach(item => {
+            //    console.log(item.nombre, item.secteur);
+            //});
+
+
+
+            const label = donnees.map(item => item.secteur);
+        const data = donnees.map(item => Number(item.nombre));
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+
+        // Données des graphiques
+        const salesData = {
+            labels: label,
+            datasets: [{
+                label: 'قطاع النشاط',
+                data: data,
+                backgroundColor: '#41c1ba',
+                borderColor: '#667eea',
+                borderWidth: 1,
+                borderRadius: 5
+            }]
+        };
+        const demValide =@Model.NbrDemandeValide;
+        const demNonValide =@Model.NbrDemandeNonValide;
+
+        const userData = {
+            labels: ['الموافق عليها', 'غير الموافق عليها'],
+            datasets: [{
+                label: 'الطلبات',
+                data: [demValide, demNonValide],
+                backgroundColor: ['#41c1ba', '#667eea'],
+                hoverOffset: 4
+            }]
+        };
+
+
+        // Configuration des graphiques
+        const salesConfig = {
+            type: 'bar',
+            data: salesData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        };
+
+        const userConfig = {
+            type: 'doughnut',
+            data: userData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                }
+            }
+        };
+
+        // Rendre les graphiques
+        const salesChart = new Chart(
+            document.getElementById('salesChart'),
+            salesConfig
+        );
+
+        const userChart = new Chart(
+            document.getElementById('userChart'),
+            userConfig
+        );
+
+    </script>
+
+}
+

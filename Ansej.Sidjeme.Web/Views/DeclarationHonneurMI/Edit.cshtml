@@ -1,0 +1,1197 @@
+﻿
+@model Ansej.Sidjeme.Web.ViewModels.RegistrantDeclarationHonorViewModel
+@using Ansej.Sidjeme.Domain;
+
+@using System.Globalization
+@{
+    ViewData["Title"] = messageslocalizer["DeclarationHonneurMI"];
+
+    var listAcitivites = new List<Activite>();
+
+    if (ViewBag.activites is not null)
+
+    {
+        listAcitivites = ViewBag.activites;
+    }
+}
+
+@section head{
+    <partial name="_jqueryui.style" />
+    <partial name="_select2.style" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription Stepper</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome pour les icônes de progression -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ949Q+u6oA/45o6p8u1mY315n6Tf6a+4k6gX8hY7f4G4zI5p6b4A5A4c8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+   
+}
+<style>
+
+
+    /* Main Content Styles */
+    .main-content {
+        padding: 80px 0;
+    }
+
+    .section-title2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--heading-color);
+        margin-bottom: 1rem;
+        position: relative;
+        display: inline-block;
+    }
+
+        .section-title2::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 8px;
+            background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+            left: 0;
+            bottom: 3px;
+            z-index: -1;
+        }
+
+    .section-text2 {
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+        text-align: justify;
+    }
+
+    /* Contact Cards */
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-card {
+        background: var(--surface-color);
+        padding: 2rem;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border-bottom: 4px solid var(--accent-color);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 0;
+            background: color-mix(in srgb, var(--accent-color), transparent 95%);
+            transition: height 0.3s ease;
+            z-index: 1;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+            .contact-card:hover::before {
+                height: 100%;
+            }
+
+        .contact-card > * {
+            position: relative;
+            z-index: 2;
+        }
+
+    .contact-icon {
+        width: 80px;
+        height: 80px;
+        background: color-mix(in srgb, var(--accent-color), transparent 90%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        transition: all 0.3s ease;
+    }
+
+    .contact-card:hover .contact-icon {
+        background: var(--accent-color);
+        transform: scale(1.1);
+    }
+
+    .contact-icon i {
+        font-size: 2rem;
+        color: var(--accent-color);
+        transition: color 0.3s ease;
+    }
+
+    .contact-card:hover .contact-icon i {
+        color: var(--contrast-color);
+    }
+
+    .contact-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--heading-color);
+        margin-bottom: 1rem;
+    }
+
+    .contact-info {
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        font-size: 1rem;
+    }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+            .contact-info a:hover {
+                color: var(--heading-color);
+            }
+
+    /* Form Styles */
+    .contact-form {
+        background: var(--surface-color);
+        padding: 3rem;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        margin-top: 3rem;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: var(--heading-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .custom-input {
+        border: 2px solid #e9ecef;
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background: #f8f9fa;
+    }
+
+        .custom-input:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color), transparent 75%);
+            background: var(--surface-color);
+        }
+
+    .select2-container--default .select2-selection--single {
+        border: 2px solid #e9ecef;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        height: auto;
+        min-height: 48px;
+        background: #f8f9fa;
+    }
+
+    .select2-container--default.select2-container--focus .select2-selection--single {
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color), transparent 75%);
+    }
+
+    .thm-btnrg {
+        background: var(--accent-color);
+        color: var(--contrast-color);
+        border: none;
+        padding: 1rem 2.5rem;
+        border-radius: 25px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .thm-btnrg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .thm-btnrg:hover {
+            background: var(--heading-color);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+            .thm-btnrg:hover::before {
+                left: 100%;
+            }
+
+    /* Map Section */
+    .map-section {
+        background: var(--surface-color);
+        padding: 3rem;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        margin-top: 3rem;
+    }
+
+    .info-panel {
+        background: var(--surface-color);
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        height: auto;
+    }
+
+    .welcome-message {
+        text-align: center;
+        color: var(--heading-color);
+    }
+
+        .welcome-message h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+    .stats {
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background: color-mix(in srgb, var(--accent-color), transparent 95%);
+        border-radius: 10px;
+    }
+
+        .stats h4 {
+            color: var(--heading-color);
+            margin-bottom: 1rem;
+        }
+
+    .wilaya-info {
+        opacity: 0;
+        transform: translateX(20px);
+        transition: all 0.4s ease;
+    }
+
+        .wilaya-info.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+    .info-details {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        background: color-mix(in srgb, var(--accent-color), transparent 95%);
+        border-radius: 10px;
+    }
+
+        .info-details h4 {
+            color: var(--heading-color);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-details p {
+            margin: 0;
+            color: var(--default-color);
+        }
+
+    #regionChoices {
+        margin: 1rem 0;
+    }
+
+        #regionChoices .btn {
+            margin: 0.25rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+            #regionChoices .btn:hover,
+            #regionChoices .btn.active-region {
+                background: var(--accent-color);
+                color: var(--contrast-color);
+            }
+
+
+
+
+    /* SVG Map Styles */
+    .map-container {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #f8f9fa;
+    }
+
+    .map-wrapper {
+        width: 100%;
+        max-width: 800px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        padding: 20px;
+        border: 2px solid #e0e0e0;
+        transition: all 0.3s ease;
+    }
+
+        .map-wrapper:hover {
+            box-shadow: 0 15px 30px rgba(74, 124, 89, 0.2);
+            border-color: #19776b;
+        }
+
+    svg {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    path {
+        fill: #e8f5e8;
+        stroke: #19776b;
+        stroke-width: 1;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        path:hover {
+            fill: #19776b;
+            stroke: #19776b;
+            stroke-width: 2;
+            transform: scale(1.02);
+            transform-origin: center;
+        }
+
+        path.selected {
+            fill: #19776b;
+            stroke: #1a3a1e;
+            stroke-width: 2;
+        }
+
+    #tooltip {
+        position: fixed; /* Changé à fixed pour stabilité */
+        background: rgba(0,0,0,0.8);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 13px;
+        pointer-events: none;
+        display: none;
+        z-index: 100;
+        white-space: nowrap;
+        transform: translate(-50%, -100%); /* Positionnement précis */
+        margin-top: -15px; /* Distance constante */
+    }
+
+    /* Responsive Design */
+    @@media (max-width: 768px) {
+        .page-header h1 {
+            font-size: 2rem;
+        }
+
+        .contact-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .contact-form {
+            padding: 2rem;
+        }
+
+        .map-section {
+            padding: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+        }
+    }
+
+    /* Loading Animation */
+    .loading {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: var(--contrast-color);
+        animation: spin 1s ease-in-out infinite;
+    }
+
+    @@keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    button:disabled,
+    button[disabled] {
+        background-color: #ccc !important; /* Fond gris */
+
+        border: 1px solid #aaa !important; /* Bordure adoucie */
+        cursor: not-allowed !important; /* Curseur barré */
+        opacity: 0.5; /* Légèrement transparent */
+        pointer-events: none; /* Empêche tout événement */
+    }
+
+
+    /* Styles personnalisés pour le stepper */
+    /* body {
+            background-color: #f0f2f5;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }*/
+
+    .step-container {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .step {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #e9ecef;
+        color: #6c757d;
+        font-weight: bold;
+        font-size: 1.25rem;
+        transition: all 0.3s ease;
+    }
+
+        .step.active {
+            background-color: #0d6efd;
+            color: #fff;
+        }
+
+        .step.completed {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+    .step-line {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        right: 50px;
+        height: 2px;
+        background-color: #e9ecef;
+        transform: translateY(-50%);
+        z-index: 0;
+    }
+
+    .step-line-fill {
+        height: 100%;
+        width: 0;
+        background-color: #0d6efd;
+        transition: width 0.5s ease;
+    }
+
+    .step-label {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #6c757d;
+        text-align: center;
+    }
+
+    .form-section {
+        display: none;
+    }
+
+        .form-section.active {
+            display: block;
+        }
+
+    .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+
+
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+</style>
+
+
+
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+
+
+<div class="main-content">
+
+
+
+    <div class="container">
+        <h2 class="text-center mb-4">تحديث طلب المواد المستوردة</h2>
+        <partial name="_Message" />
+        <!-- Stepper de progression -->
+        <div class="d-flex justify-content-between align-items-center mb-5 step-container">
+            <div class="d-flex flex-column align-items-center">
+                <div class="step active" data-step="1">1</div>
+                <small class="step-label">معلومات شخصية</small>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <div class="step" data-step="2">2</div>
+                <small class="step-label">معلومات المؤسسة</small>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <div class="step" data-step="3">3</div>
+                <small class="step-label">المسؤولية والالتزام</small>
+            </div>
+            <div class="step-line">
+                <div class="step-line-fill"></div>
+            </div>
+
+            <br />
+            <partial name="_Message" />
+        </div>
+
+        <!-- Conteneur du formulaire -->
+        <form asp-controller="DeclarationHonneurMI" asp-action="Edit" method="post" class="contact-form" enctype="multipart/form-data">
+            <!-- Section 1 : Informations personnelles -->
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="Registrant.Id" hidden />
+            <div class="form-section active fade-in" id="step1">
+                <h4 class="mb-3">معلومات شخصية</h4>
+
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.NIN" class="form-label">رقم التعريف الوطني(NIN)*</label>
+                    <input asp-for="Registrant.NIN" class="form-control custom-input"
+                           pattern="\d*"
+                           maxlength="18"
+                           required
+                           title="18 رقم مطلوب"
+                           oninput="this.value=this.value.replace(/[^\d]/g,'')" />
+                    <span asp-validation-for="Registrant.NIN" class="text-danger small"></span>
+
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.FirstlName" class="form-label">الاسم *</label>
+                    <input asp-for="Registrant.FirstlName" class="form-control custom-input"
+                           required
+                           inputmode="text"
+                           autocomplete="off"
+                           pattern="^[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\u0660-\u0669\u06F0-\u06F9\s\-]+$"
+                           title="الرجاء إدخال أحرف عربية فقط "
+                           placeholder="اكتب هنا بالعربية" />
+                    <span asp-validation-for="Registrant.FirstlName" class="text-danger small"></span>
+
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.LastName" class="form-label">اللقب *</label>
+                    <input asp-for="Registrant.LastName" class="form-control custom-input"
+                           required
+                           inputmode="text"
+                           autocomplete="off"
+                           pattern="^[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\u0660-\u0669\u06F0-\u06F9\s\-]+$"
+                           title="الرجاء إدخال أحرف عربية فقط "
+                           placeholder="اكتب هنا بالعربية" />
+                    <span asp-validation-for="Registrant.LastName" class="text-danger small"></span>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.DateOfBirth" class="form-label">تاريخ الازدياد</label>
+                    <input asp-for="Registrant.DateOfBirth" type="date" class="form-control custom-input" required />
+                    <span asp-validation-for="Registrant.DateOfBirth" class="text-danger small"></span>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.GenderId" class="form-label">الجنس *</label>
+                    <select asp-for="Registrant.GenderId" asp-items="ViewBag.genre" class="form-select select2" required>
+                        <option value="">اختر الجنس</option>
+
+                    </select>
+                    <span asp-validation-for="Registrant.GenderId" class="text-danger small"></span>
+                </div>
+
+
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.WilayaId" class="form-label">الولاية *</label>
+                    <select asp-for="Registrant.WilayaId" asp-items="ViewBag.wilayas" id="wilayaAR" class="form-select select2" required>
+                        <option value="">اختر الولاية</option>
+
+                    </select>
+                    <span asp-validation-for="Registrant.WilayaId" class="text-danger small"></span>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.Adresse" class="form-label">العنوان</label>
+                    <input asp-for="Registrant.Adresse" class="form-control custom-input"
+                           inputmode="text"
+                           autocomplete="off"
+                           pattern="^[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\u0660-\u0669\u06F0-\u06F9\s\-]+$"
+                           title="الرجاء إدخال أحرف عربية فقط "
+                           placeholder="اكتب هنا بالعربية"
+                           required />
+                    <span asp-validation-for="Registrant.Adresse" class="text-danger small"></span>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.Email" class="form-label">البريد الإلكتروني *</label>
+                    <input asp-for="Registrant.Email" type="email" class="form-control custom-input" required />
+                    <span asp-validation-for="Registrant.Email" class="text-danger small"></span>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.Phone" class="form-label">رقم الهاتف *</label>
+                    <input asp-for="Registrant.Phone" type="tel" class="form-control custom-input" required />
+                    <span asp-validation-for="Registrant.Phone" class="text-danger small"></span>
+                </div>
+                <br />
+
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-primary next-step">التالي</button>
+                </div>
+            </div>
+
+            <!-- Section 2 : Informations de contact -->
+            <div class="form-section" id="step2">
+                <h4 class="mb-3">معلومات المؤسسة</h4>
+
+                @*<div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.StructureManagerId" class="form-label">وكالة الإيداع *</label>
+                    <select asp-for="Registrant.StructureManagerId" asp-items="ViewBag.structures" class="form-select select2" required>
+                        <option value="">في أي وكالة قدمت الملف؟</option>
+
+                    </select>
+                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                </div>*@
+
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.ProjectNumber" class="form-label">رقم الملف *</label>
+                    <input asp-for="Registrant.ProjectNumber" class="form-control custom-input"
+                           pattern="\d*"
+                           maxlength="11"
+                           required
+                           title="11 رقم مطلوب"
+                           oninput="this.value=this.value.replace(/[^\d]/g,'')" />
+                    <span asp-validation-for="Registrant.ProjectNumber" class="text-danger small"></span>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.CompanyName" class="form-label">إسم المؤسسة</label>
+                    <input asp-for="Registrant.CompanyName" class="form-control custom-input"
+                           inputmode="text"
+                           autocomplete="off"
+                           pattern="^[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\u0660-\u0669\u06F0-\u06F9\s\-]+$"
+                           title="الرجاء إدخال أحرف عربية فقط "
+                           placeholder="اكتب هنا بالعربية"
+                           required />
+                    <span asp-validation-for="Registrant.CompanyName" class="text-danger small"></span>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.LegalStatusId" class="form-label">الشكل القانوني *</label>
+                    <select asp-for="Registrant.LegalStatusId" asp-items="ViewBag.formesJuridique" class="form-select select2" required>
+                        <option value="">اختر</option>
+                    </select>
+                    <span asp-validation-for="Registrant.LegalStatusId" class="text-danger small"></span>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.NIF" class="form-label">(NIF)رقم التعريف الضريبي *</label>
+                    <input asp-for="Registrant.NIF" class="form-control custom-input" required />
+                    <span asp-validation-for="Registrant.NIF" class="text-danger small"></span>
+
+
+                </div>
+                <br>
+
+                <div>
+                    @foreach (var item in Model.Registrant.DownloadFiles)
+                    {
+                        if (item.TypeFileId == 1)
+                        {
+                    <p>@item.TypeFile.DesignationAr <a href="@item.Path">عرض الوثيقة</a></p>
+                        }
+
+                    }
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"> اعادة رفع مستند شهادة تخصيص رقم التعريف الضريبي</label>
+
+
+
+                    <div class="file-input-wrapper">
+                        <input asp-for="CertificateNifFile" type="file" id="file" class="form-control-file" accept=".pdf, .jpg, .jpeg" />
+                        <label for="file" class="file-input-display" id="fileDisplay">
+                            يجب أن يكون الملف بصيغة PDF أو JPG. الحد الأقصى للحجم هو ٢ ميجابايت
+                        </label>
+                        <span asp-validation-for="CertificateNifFile" class="text-danger small"></span>
+
+                    </div>
+                </div>
+                <br>
+
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.BusinessRegisterNumber" class="form-label">رقم السجل التجاري/ الاعتماد*</label>
+                    <input asp-for="Registrant.BusinessRegisterNumber" class="form-control custom-input" required onchange="IsPDF(this.value)" accept=".pdf, .jpg, .jpeg" />
+                    <span asp-validation-for="Registrant.BusinessRegisterNumber" class="text-danger small"></span>
+
+                </div>
+                <br>
+                <div>
+                    @foreach (var item in Model.Registrant.DownloadFiles)
+                    {
+                        if (item.TypeFileId == 2)
+                        {
+                    <p>@item.TypeFile.DesignationAr <a href="@item.Path">عرض الوثيقة</a></p>
+                        }
+
+                    }
+                </div>
+                <div class="form-group">
+                    <label class="form-label">اعادة تحميل السجل التجاري</label>
+                    <div class="file-input-wrapper">
+                        <input asp-for="BusinessRegisterFile" type="file" id="file" class="form-control-file" onchange="IsPDF(this.value)" accept=".pdf, .jpg, .jpeg" />
+                        <label for="file" class="file-input-display" id="fileDisplay">
+                            يجب أن يكون الملف بصيغة PDF أو JPG. الحد الأقصى للحجم هو ٢ ميجابايت
+                        </label>
+                    </div>
+                    <span asp-validation-for="BusinessRegisterFile" class="text-danger small"></span>
+                    <span style="color:red;">@ViewBag.BusinessRegisteFileError</span>
+                </div>
+                <br>
+
+                <div class="col-md-6 col-sm-12">
+                    <label class="form-label">قطاع النشاط *</label>
+                    <select asp-for="Registrant.Activity.secteurActiviteId" asp-items="ViewBag.secteurs" onchange="loadActivity(this.value)" class="form-select select2" required>
+                        <option value="">اختر قطاع النشاط</option>
+
+                    </select>
+                </div>
+
+
+                <div class="col-md-6 col-sm-12">
+                    <label class="form-label">النشاط *</label>
+                    <select asp-for="Registrant.ActivityId" class="form-select " asp-items="@(new SelectList(listAcitivites, "Id", "DesignationAr"))" required>
+                        <option value=@ViewBag.activiteId>@ViewBag.activite</option>
+
+                    </select>
+                    <span asp-validation-for="Registrant.ActivityId" class="text-danger small"></span>
+                </div>
+
+
+
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Registrant.TypeOfNeedId" class="form-label">نوع الاحتياج *</label>
+                    <select asp-for="Registrant.TypeOfNeedId" asp-items="ViewBag.typeOfNeed" class="form-select select2" required>
+                        <option value="">اختر نوع الاحتياج</option>
+
+                    </select>
+                    <span asp-validation-for="Registrant.TypeOfNeedId" class="text-danger small"></span>
+
+                </div>
+                <br>
+
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary prev-step">السابق</button>
+                    <button type="button" class="btn btn-primary next-step">التالي</button>
+                </div>
+
+            </div>
+
+            <!-- Section 3 : Finalisation -->
+            <div class="form-section" id="step3">
+                <h4 class="mb-3">المسؤولية والالتزام</h4>
+
+                <div>
+                    @foreach (var item in Model.Registrant.DownloadFiles)
+                    {
+                        if (item.TypeFileId == 3)
+                        {
+                    <p>@item.TypeFile.DesignationAr <a href="@item.Path">عرض الوثيقة</a></p>
+                        }
+
+                    }
+                </div>
+                <div class="form-group">
+                    <label class="form-label"> اعادة تحميل التصريح الشرفي</label>
+                    <div class="file-input-wrapper">
+                        <input asp-for="DeclarationHonorFile" type="file" id="file" class="form-control-file" onchange="IsPDF(this.value)" accept=".pdf, .jpg, .jpeg" />
+                        <label for="file" class="file-input-display" id="fileDisplay">
+                            يجب أن يكون الملف بصيغة PDF. الحد الأقصى للحجم هو ٢ ميجابايت
+                        </label>
+                    </div>
+                    <span style="color:red; display:none;" id="msg">ويجب ألا يتجاوز الحجم 2 ميجاPDF يجب أن يكون ملف التصريح الشرفي بصيغة</span>
+
+                </div>
+
+                <br>
+
+                <div>
+                    @foreach (var item in Model.Registrant.DownloadFiles)
+                    {
+                        if (item.TypeFileId == 4)
+                        {
+                    <p>@item.TypeFile.DesignationAr <a href="@item.Path">عرض الوثيقة</a></p>
+                        }
+
+                    }
+                </div>
+                <div class="form-group">
+                    <label class="form-label"> اعادة تحميل برنامج التنبؤ بالمعدات أو الخدمات</label>
+                    <div class="file-input-wrapper">
+                        <input asp-for="ForecastProgramFile" type="file" id="file" class="form-control-file" onchange="IsPDF(this.value)" accept=".pdf, .jpg, .jpeg" />
+                        <label for="file" class="file-input-display" id="fileDisplay">
+                            يجب أن يكون الملف بصيغة PDF. الحد الأقصى للحجم هو ٢ ميجابايت
+                        </label>
+                    </div>
+
+                    <span style="color:red; display:none;" id="msg">ويجب ألا يتجاوز الحجم 2 ميجاPDF يجب أن يكون ملف البرنامج بصيغة</span>
+
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <span class="checkmark"></span>
+                        أسمح لناسدا بمعالجة بياناتي الشخصية وفق للشروط المنصوص عليها في القانون 18/07 المتعلقة بحماية الأشخاص الطبيعين في معالجة المعطيات الشخصية،يمكنك الإطلاع على. <a href="https://nesda.dz/Home/Privacy" target="_blank" name="NesdaPolitique">السياسة العامة لحماية المعطيات دات الطابع الشخصي الخاصة بالوكالة .</a>
+                    </label>
+                </div>
+                <br>
+
+
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary prev-step">السابق</button>
+                    <button type="submit" class="btn btn-success"> <span>إرسال </span></button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Modal de confirmation -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="successModalLabel">Félicitations !</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Votre inscription a été soumise avec succès.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+
+
+
+
+        $(document).ready(function () {
+            let currentStep = 1;
+            const totalSteps = 3;
+
+            // Fonction pour mettre à jour la progression visuelle
+            function updateStepper() {
+                // Met à jour les étapes
+                $('.step').each(function () {
+                    const stepNum = parseInt($(this).data('step'));
+                    if (stepNum < currentStep) {
+                        $(this).removeClass('active').addClass('completed');
+                        $(this).html('<i class="fas fa-check"></i>');
+                    } else if (stepNum === currentStep) {
+                        $(this).addClass('active').removeClass('completed');
+                        $(this).text(stepNum);
+                    } else {
+                        $(this).removeClass('active completed');
+                        $(this).text(stepNum);
+                    }
+                });
+
+                // Met à jour la barre de progression
+                const progressPercentage = ((currentStep - 1) / (totalSteps - 1)) * 100;
+                $('.step-line-fill').css('width', progressPercentage + '%');
+            }
+
+            // Gestion du clic sur le bouton "Suivant"
+            $('.next-step').on('click', function () {
+                const currentFormSection = $('#step' + currentStep);
+                let isValid = true;
+                let msg = document.getElementById("msg");
+                // Validation des champs du formulaire actuel
+                currentFormSection.find('input[required]').each(function () {
+                    if (!$(this).val()) {
+                        $(this).addClass('is-invalid');
+                        isValid = false;
+                        msg.style.display = "inline";
+
+                    } else {
+                        $(this).removeClass('is-invalid');
+                        msg.style.display = "none";
+                    }
+                });
+
+                if (isValid) {
+                    currentFormSection.removeClass('active').hide();
+                    currentStep++;
+                    $('#step' + currentStep).addClass('active fade-in').show();
+                    updateStepper();
+                }
+            });
+
+            // Gestion du clic sur le bouton "Précédent"
+            $('.prev-step').on('click', function () {
+                $('#step' + currentStep).removeClass('active fade-in').hide();
+                currentStep--;
+                $('#step' + currentStep).addClass('active fade-in').show();
+                updateStepper();
+            });
+
+
+        });
+
+
+        defaultSelectionReferential('#Registrant_ActivityId', @ViewBag.activiteId, "/Fournisseur/Get");
+
+        window.addEventListener("DOMContentLoaded", () => {
+            var v = document.getElementById("Registrant_Activity_secteurActiviteId").value
+            if (v) {
+                loadActivity(selectedId);
+            }
+        });
+
+        function loadActivity(selectedId) {
+
+
+            if (!selectedId) {
+
+                $('#Registrant_ActivityId').empty();
+
+                return;
+            }
+
+            $.ajax({
+                url: '/DeclarationHonneurMI/GetActivitiesBySector',
+                type: 'GET',
+                data: { sectorId: selectedId },
+                success: function (data) {
+                    if (data.length > 0) {
+                        let options = '<option value="">اختر / Sélectionnez </option>';
+                        data.forEach(function (item) {
+                            options += `<option value="${item.id}">${item.designationAr}</option>`;
+                        });
+
+                        $('#Registrant_ActivityId').html(options);
+
+                    } else {
+
+                        $('#Registrant_ActivityId').empty();
+                    }
+                },
+                error: function () {
+                    console.error('Erreur lors du chargement des activites.');
+                }
+            });
+            /* });*/
+        }
+
+        // Mise à jour de l'affichage du nom de fichier
+        document.getElementById('file').addEventListener('change', function () {
+            const fileDisplay = document.getElementById('fileDisplay');
+            if (this.files.length > 0) {
+                fileDisplay.textContent = `📄 ${this.files[0].name}`;
+                fileDisplay.classList.add('has-file');
+            } else {
+                fileDisplay.textContent = '📎 انقر لاختيار ملف أو اسحبه هنا';
+                fileDisplay.classList.remove('has-file');
+            }
+        });
+
+        // Animation légère sur focus
+        document.querySelectorAll('.form-control, .form-select').forEach(function (element) {
+            element.addEventListener('focus', function () {
+                this.parentElement.style.transform = 'translateY(-2px)';
+            });
+
+            element.addEventListener('blur', function () {
+                this.parentElement.style.transform = 'translateY(0)';
+            });
+        });
+
+        function restrictInputOtherThanArabic($field) {
+            // Plage de caractères Unicode pour les caractères arabes, chiffres arabes, et chiffres occidentaux
+            var arabicCharUnicodeRange = /^[\u0600-\u06FF\u0660-\u0669\u0030-\u0039\s]+$/; // Ajout des chiffres occidentaux et des espaces
+
+            // Événement keypress pour empêcher les saisies autres que les caractères arabes et chiffres
+            $field.on("keypress", function (event) {
+                var key = event.which;
+                // Autoriser retour arrière (backspace), pavé numérique (0), et espace (32)
+                if (key == 8 || key == 0 || key === 32) {
+                    return true;
+                }
+
+                var str = String.fromCharCode(key);
+                if (arabicCharUnicodeRange.test(str)) {
+                    return true;
+                }
+
+                return false;
+            });
+
+            // Empêche coller (paste) si le texte contient des caractères autres qu'arabes ou chiffres
+            $field.on("paste", function (event) {
+                var clipboardData = (event.originalEvent || event).clipboardData || window.clipboardData;
+                var pastedData = clipboardData.getData('text'); // Récupère les données collées
+
+                // Bloque l'événement si le texte collé contient des caractères non autorisés
+                if (!arabicCharUnicodeRange.test(pastedData)) {
+                    event.preventDefault(); // Empêche le coller si du texte non autorisé est détecté
+                }
+            });
+
+            // Empêche déposer du texte (drag and drop) si non autorisé
+            $field.on("drop", function (event) {
+                var draggedData = event.originalEvent.dataTransfer.getData('text');
+
+                // Bloque le drop si le texte contient des caractères non autorisés
+                if (!arabicCharUnicodeRange.test(draggedData)) {
+                    event.preventDefault();
+                }
+            });
+        }
+
+        jQuery(document).ready(function () {
+            // allow arabic characters only for following fields
+            restrictInputOtherThanArabic($('#Registrant_FirstlName'));
+            restrictInputOtherThanArabic($('#Registrant_LastName'));
+            restrictInputOtherThanArabic($('#Registrant_Adresse'));
+            restrictInputOtherThanArabic($('#Registrant_CompanyName'));
+
+
+
+        });
+
+        function IsPDF(fileInput) {
+            // Check if a file was actually selected
+            if (fileInput.files.length === 0) {
+                console.log("No file selected.");
+                return false;
+            }
+
+            // Get the first file from the input element
+            const file = fileInput.files[0];
+
+            // Check the file's MIME type
+            if (file.type === 'application/pdf') {
+                return true; // It's a PDF
+            } else {
+                return false; // It's not a PDF
+            }
+        }
+
+
+
+
+            //document.getElementById('registrationForm').addEventListener('submit', async function (event) {
+            //    // Prevent the default form submission
+            //    event.preventDefault();
+            //    const firstConfirmation = await Swal.fire({
+            //        title: 'تأكيد',
+            //        text: 'يرجى التأكد من أن جميع المعلومات الشخصية ومعلومات المؤسسة صحيحة وجميع الوثائق مطابقة.',
+            //        icon: 'warning',
+            //        showCancelButton: true,
+            //        confirmButtonText: 'نعم، أؤكد',
+            //        cancelButtonText: 'إلغاء'
+
+            //    });
+
+            //    // If the user confirms the first message, show the second
+            //    if (firstConfirmation.isConfirmed) {
+            //        const secondConfirmation = await Swal.fire({
+            //            title: 'تأكيد أخير',
+            //            text: 'هل أنت متأكد أنك أدخلت جميع المعلومات ورفعت جميع المستندات اللازمة؟',
+            //            icon: 'warning',
+            //            showCancelButton: true,
+            //            confirmButtonText: 'نعم، أرسل',
+            //            cancelButtonText: 'إلغاء'
+
+            //        });
+
+            //        // If the user confirms the second message, submit the form
+            //        if (secondConfirmation.isConfirmed) {
+            //            // Get the form by its ID and submit it
+            //            document.getElementById('registrationForm').submit();
+            //        }
+            //    }
+            //});
+
+    </script>
+}

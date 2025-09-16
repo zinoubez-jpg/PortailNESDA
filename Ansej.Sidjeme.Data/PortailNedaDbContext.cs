@@ -52,6 +52,9 @@ namespace Ansej.Sidjeme.Data
             .HasIndex(a => a.Slug)
             .IsUnique();
 
+            modelBuilder.Entity<DeclarationHonneurMI>()
+            .HasIndex(d => d.ProjectNumber)
+            .IsUnique();
 
             base.OnModelCreating(modelBuilder);
         }
@@ -65,6 +68,12 @@ namespace Ansej.Sidjeme.Data
         public DbSet<PerimetreActivite> PerimetreActivites { get; set; }
         public DbSet<Wilaya> Wilaya { get; set; }
         public DbSet<Commune> Communes { get; set; }
+        public DbSet<DeclarationHonneurMI> DeclarationsHonneurMI { get; set; }
+		public DbSet<SecteurActivite> SecteurActivites { get; set; }
+		public DbSet<Genre> Genres { get; set; }
+		public DbSet<FormeJuridique> FormesJuridique { get; set; }
+		public DbSet<TypeOfNeed> TypesOfNeed { get; set; }
+        public DbSet<MotifTraitement> MotifsTraitement { get; set; }
 
     }
 }
