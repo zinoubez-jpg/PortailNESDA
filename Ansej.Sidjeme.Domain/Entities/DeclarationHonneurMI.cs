@@ -121,6 +121,10 @@ namespace Ansej.Sidjeme.Domain.Entities
         public int StructureManagerId { get; set; }
         public StructureManager StructureManager { get; set; }
 
+
+        public bool Notified { get; set; }
+        public DateTime? NotificationDate { get; set; }
+
         public virtual ICollection<DownloadFile> DownloadFiles { get; set; }
         
     }

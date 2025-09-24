@@ -1,5 +1,5 @@
 ﻿@model Ansej.Sidjeme.Domain.Entities.DeclarationHonneurMI
-<div class="modal-header">
+<div class="modal-header bg-light-subtle">
     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>
@@ -84,7 +84,7 @@
                 <div id="collapseProcessing" class="accordion-collapse collapse" aria-labelledby="headProcessing" data-bs-parent="#accordionDossier">
                     <div class="accordion-body">
                         <p><strong>نوع الاحتياج :</strong>@Html.DisplayFor(model => model.TypeOfNeed.DesignationAr)</p>
-                        <p><strong>تاريخ الطلب :</strong>@Html.DisplayFor(model => model.Requestdate.Day) / @Html.DisplayFor(model => model.Requestdate.Month) / @Html.DisplayFor(model => model.Requestdate.Year)</p>
+                        <p><strong>تاريخ الطلب :</strong>@Html.DisplayFor(model => model.Requestdate.Day)/@Html.DisplayFor(model => model.Requestdate.Month)/@Html.DisplayFor(model => model.Requestdate.Year)</p>
                         @if (Model.RequestProcessed == true)
                         {
                             <p><strong>تمت معالجة الطلب؟</strong> نعم</p>
@@ -97,16 +97,27 @@
                         @if (Model.granted == true)
                         {
                             <p><strong>هل تم قبول الطلب؟</strong>نعم</p>
-                            <p><strong>تاريخ التوقيع</strong> @Html.DisplayFor(model => model.Processingdate)</p>
+                            <p><strong>تاريخ التوقيع :</strong> @Html.DisplayFor(model => model.Processingdate)</p>
 
                         }
                         else
                         {
                             <p><strong>هل تم قبول الطلب؟</strong> لا</p>
+                            <p><strong>سبب عدم القبول :</strong> @Html.DisplayFor(model => model.MotifTraitement.DesignationAr)</p>
                         }
 
-
-                        <p><strong>ملاحظة</strong> @Html.DisplayFor(model => model.Observation)</p>
+                        @if (Model.Notified == true && Model.NotificationDate != null)
+                        {
+                            var date = "";
+                            date = @Model.NotificationDate.Value.ToShortDateString();
+                            <p><strong>هل تم اخطار صاحب المشروع عن طريق البريد الالكتروني؟</strong>نعم</p>
+                            <p><strong>تاريخ الاخطار :</strong>@date</p>
+                        }
+                        else
+                        {
+                            <p><strong>هل تم اخطار صاحب المشروع عن طريق البريد الالكتروني؟</strong> لا</p>
+                        }
+                        <p><strong>ملاحظة :</strong> @Html.DisplayFor(model => model.Observation)</p>
 
                     </div>
                 </div>
@@ -115,7 +126,6 @@
 
 
         <div class="form-group modal-footer">
-
-            <button class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            <button class="btn btn-lg btn-outline-danger" data-bs-dismiss="modal">غلق</button>
         </div>
     </div>

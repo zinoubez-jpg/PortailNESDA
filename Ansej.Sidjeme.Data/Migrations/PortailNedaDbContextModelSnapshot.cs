@@ -423,6 +423,12 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .HasMaxLength(18)
                         .HasColumnType("nvarchar(18)");
 
+                    b.Property<DateTime?>("NotificationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("Notified")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Observation")
                         .HasColumnType("nvarchar(max)");
 

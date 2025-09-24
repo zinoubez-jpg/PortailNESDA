@@ -1,0 +1,40 @@
+﻿@if (ViewBag.result == 1)
+{
+<div class="modal-header bg-success">
+
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h3 class="modal-title" id="successModalLabel">اخطار صاحب المشروع</h3>
+</div>
+
+    <div class="modal-body text-center">
+        <i class="fas fa-check-circle fa-5x text-success mb-3"></i>
+        <p class="fs-4 fw-bold">@ViewBag.Message</p>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-success " data-bs-dismiss="modal">أغلق <i class='fa fa-door-closed'></i></button>
+    </div>
+
+}
+
+@if (ViewBag.result == 0)
+{
+<div class="modal-header bg-danger">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h3 class="modal-title" id="successModalLabel">اخطار صاحب المشروع</h3>
+</div>
+
+    <div class="modal-body text-center">
+        <i class="fas fa-check-circle fa-5x text-bg-danger mb-3"></i>
+        <p class="fs-4 fw-bold">@ViewBag.Message</p>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">OK</button>
+    </div>
+
+}

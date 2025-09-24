@@ -1,7 +1,7 @@
 ﻿@model Ansej.Sidjeme.Domain.Entities.DeclarationHonneurMI
 
 
-<div class="modal-header">
+<div class="modal-header bg-light">
     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>
@@ -72,9 +72,9 @@
         <div class="form-group modal-footer">
             @*@if (Model.RequestProcessed == false)
             {*@ 
-            <input type="submit" value="Enregistrer" class="btn bg-gradient-primary" />
+            <input type="submit" value="حفظ" class="btn btn-outline-primary" />
             @*}*@
-            <button type="button" class="btn bg-gradient-danger" data-bs-dismiss="modal">Annuler</button>
+            <button class="btn btn-outline-danger" data-bs-dismiss="modal">غلق</button>
         </div>
     </form>
 </div>

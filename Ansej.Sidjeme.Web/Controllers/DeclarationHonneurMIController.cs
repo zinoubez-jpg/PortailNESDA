@@ -8,15 +8,18 @@ using Ansej.Sidjeme.Web.ViewModels;
 using ClosedXML.Excel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+//using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
+using MimeKit;
+using MailKit.Net.Smtp;
+using MailKit.Security;
 
 namespace Ansej.Sidjeme.Web.Controllers
 {
@@ -265,7 +268,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
            
             //get structure
-            var structure = userStructure.Designation;
+            var structure = userStructure.Id;
 
 
 
@@ -273,13 +276,13 @@ namespace Ansej.Sidjeme.Web.Controllers
 
             if (!string.IsNullOrEmpty(search))
             {
-                var result = _declarationHonneurMIService.GetAllFilteredPaged(x =>x.StructureManager.NameFr.Contains(structure) && (x.NIN.StartsWith(search) || x.FirstlName.StartsWith(search) || x.LastName.StartsWith(search) || x.ProjectNumber.StartsWith(search)),
+                var result = _declarationHonneurMIService.GetAllFilteredPaged(x =>x.StructureManagerId==structure && (x.NIN.StartsWith(search) || x.FirstlName.StartsWith(search) || x.LastName.StartsWith(search) || x.ProjectNumber.StartsWith(search)),
                     orderBy, startRowIndex, maxRows, x => x.TypeOfNeed, x => x.LegalStatus);
                 return Json(new JQueryDataTableRetunedData<DeclarationHonneurMI> { draw = model.draw, recordsFiltered = result.TotalCount, recordsTotal = result.TotalCount, data = result.Items });
             }
             else
             {
-                var result = _declarationHonneurMIService.GetAllFilteredPaged(x => x.StructureManager.NameFr.Contains(structure), orderBy, startRowIndex, maxRows, x => x.TypeOfNeed, x => x.LegalStatus);
+                var result = _declarationHonneurMIService.GetAllFilteredPaged(x => x.StructureManagerId == structure, orderBy, startRowIndex, maxRows, x => x.TypeOfNeed, x => x.LegalStatus);
 
                 return Json(new JQueryDataTableRetunedData<DeclarationHonneurMI> { draw = model.draw, recordsFiltered = result.TotalCount, recordsTotal = result.TotalCount, data = result.Items });
 
@@ -344,7 +347,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             //enregistrer les fichier et recuperer leurs chemins dans le model
             //IsPdf(model.CertificateNifFile) 
             //verifier si le format est en PDF ou Image avant le chargement du fichier dans le repertoir 
-            if (IsRealPdf(model.CertificateNifFile)|| IsImage(model.CertificateNifFile))
+            if (IsPdf(model.CertificateNifFile)|| IsImage(model.CertificateNifFile))
             {
                 var f = new DownloadFile
                 {
@@ -365,7 +368,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
 
             //verifier si le format est en PDF ou Image avant le chargement du fichier dans le repertoir 
-            if (IsRealPdf(model.BusinessRegisterFile) || IsImage(model.BusinessRegisterFile))
+            if (IsPdf(model.BusinessRegisterFile) || IsImage(model.BusinessRegisterFile))
             {
                 var f = new DownloadFile
                 {
@@ -384,7 +387,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             }
 
             //verifier si le format est en PDF avant le chargement du fichier dans le repertoir 
-            if (IsRealPdf(model.DeclarationHonorFile))
+            if (IsPdf(model.DeclarationHonorFile))
             {
                 var f = new DownloadFile
                 {
@@ -402,7 +405,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             }
 
             //verifier si le format est en PDF avant le chargement du fichier dans le repertoir 
-            if (IsRealPdf(model.ForecastProgramFile))
+            if (IsPdf(model.ForecastProgramFile))
             {
                 var f = new DownloadFile
                 {
@@ -426,6 +429,22 @@ namespace Ansej.Sidjeme.Web.Controllers
             BusinessResult result = _declarationHonneurMIService.Add(model.Registrant);
             if (result.Succeeded)
             {
+                var message = new MimeMessage();
+                message.From.Add(new MailboxAddress("NESDA", "NOREPLY@nesda.dz"));
+                message.To.Add(new MailboxAddress(model.Registrant.LastName, model.Registrant.Email));
+                message.Subject = "تسجيل";
+
+                message.Body = new TextPart("plain")
+                {
+                    Text = "(ة)السلام عليكم السيد " + model.Registrant.FirstlName + "  " + model.Registrant.LastName + " \n\n " + " شكراً لتواصلكم معنا — لقد تم تسجيل طلبكم يرجى تقربكم من وكالتنا على مستوى " + _structureManagerBusiness.GetById(model.Registrant.StructureManagerId).NameAr + "  مرفوقين بالبرنامج التقديري للعتاد " + "\n\n" + " تقبلوا منا خالص التحيات"
+                };
+
+                using var client = new SmtpClient();
+                client.Connect("mail.nesda.dz", 465);//, SecureSocketOptions.StartTls);
+                client.Authenticate("NOREPLY@nesda.dz", "14wM_SzQm7zV");
+                client.Send(message);
+                client.Disconnect(true);
+
                 return RedirectToAction("ThankYouPage");
             }
 
@@ -438,6 +457,49 @@ namespace Ansej.Sidjeme.Web.Controllers
            
         }
 
+
+
+        [Authorize(Roles = "Directeur,ChefServiceAccompagnement")]
+        public IActionResult Notification(int requestId)
+        {
+            var dateLimite = DateTime.Today.AddDays(7).ToShortDateString();
+            DeclarationHonneurMI request = _declarationHonneurMIService.GetById(requestId,_declarationHonneurMIService.GetDefaultLoadProperties());
+            try
+            {
+                var message = new MimeMessage();
+                message.From.Add(new MailboxAddress("NESDA", "NOREPLY@nesda.dz"));
+                message.To.Add(new MailboxAddress(request.LastName, request.Email));
+                message.Subject = "دعوة";
+
+                message.Body = new TextPart("plain")
+                {
+                    Text = "(ة)السلام عليكم السيد " + request.FirstlName +  "  "  + request.LastName + " \n\n " +  " يرجى منكم التقرب الى " + request.StructureManager.NameAr + "  في أجل أقصاه 7 أيام من تاريخ اليوم (" + dateLimite + ") وذلك لدراسة طلبك لاستراد العتاد و المواد الأولية  " + "\n\n" + " تقبلوا منا خالص التحيات"
+                };
+
+                using var client = new SmtpClient();
+                client.Connect("mail.nesda.dz", 465);//, SecureSocketOptions.StartTls);
+                client.Authenticate("NOREPLY@nesda.dz", "14wM_SzQm7zV");
+                client.Send(message);
+                client.Disconnect(true);
+                request.Notified = true;
+                request.NotificationDate = DateTime.Today;
+                request.MotifTraitementId = 6;
+
+                var result = _declarationHonneurMIService.Update(request);
+                ViewBag.Message = "تم اخطار صاحب المشروع عن طريق البريد الالكتروني بنجاح";
+                ViewBag.result = 1;
+                
+            }
+            catch (Exception e)
+            {
+                ViewBag.Message =" ERROR " + e.Message + ",Please contact Administrator." ;
+                ViewBag.result = 0;
+                //throw;
+            }
+
+
+            return PartialView($"_{nameof(Notification)}");
+        }
 
         [Authorize(Roles = "Directeur,ChefServiceAccompagnement")]
         public IActionResult Treatment(int requestId)
@@ -490,7 +552,7 @@ namespace Ansej.Sidjeme.Web.Controllers
                 return Json(resp);
             }
 
-           // }
+          
         }
 
        
@@ -746,7 +808,7 @@ namespace Ansej.Sidjeme.Web.Controllers
         private void InitializeListViewBags()
         {
             var wilayas = _wilayaBusinessService.GetAll();
-            var structures = _structureManagerBusiness.GetAllFiltered(x => x.ParentStructureManagerId == 3);
+            var structures = _structureManagerBusiness.GetAllFiltered(x => x.ParentStructureManagerId == 3 && x.Id < 54);
             var secteurs = _secteurActiviteBusiness.GetAll();
             var formesJuridique = _formeJuridiqueBusiness.GetAll();
             var genre = _genreBusinessService.GetAll();
@@ -847,6 +909,9 @@ namespace Ansej.Sidjeme.Web.Controllers
             worksheet.Columns("21").Width = 30;
             worksheet.Columns("22").Width = 20;
             worksheet.Columns("23").Width = 20;
+            worksheet.Columns("24").Width = 25;
+            worksheet.Columns("25").Width = 15;
+            worksheet.Columns("26").Width = 15;
 
             worksheet.Cell(3, 8).Value = "قائمة المسجلين لطلبات المعدات المستوردة";
             worksheet.Cell(3, 8).Style.Font.FontSize = 20;
@@ -898,10 +963,10 @@ namespace Ansej.Sidjeme.Web.Controllers
             worksheet.Cell(5, 18).Value = "نوع الاحتياج";
 
             worksheet.Cell(5, 19).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
-            worksheet.Cell(5, 19).Value = "? معالج";
+            worksheet.Cell(5, 19).Value = " معالج؟";
 
             worksheet.Cell(5, 20).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
-            worksheet.Cell(5, 20).Value = "? موافق عليه";
+            worksheet.Cell(5, 20).Value = "موافق عليه؟";
 
             worksheet.Cell(5, 21).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
             worksheet.Cell(5, 21).Value = "تاريخ الموافقة";
@@ -915,17 +980,23 @@ namespace Ansej.Sidjeme.Web.Controllers
             worksheet.Cell(5, 24).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
             worksheet.Cell(5, 24).Value = "ملاحظة";
 
+            worksheet.Cell(5, 25).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+            worksheet.Cell(5, 25).Value = "تم اخطاره؟";
+
+            worksheet.Cell(5, 26).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+            worksheet.Cell(5, 26).Value = "تاريخ الاخطار";
+
 
             var user = await _userService.GetUserEagerLoadedAsync(User);
             var userStructure = await _userService.GetUserStructureAsync(user.Id);
 
 
             //get structure
-            var structure = userStructure.Designation;
+            var structure = userStructure.Id;
             List<DeclarationHonneurMI> list = new();
 
             if (userStructure.Niveau.Id == 3)
-               list = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManager.NameFr.Contains(structure), _declarationHonneurMIService.GetDefaultLoadProperties());
+               list = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManagerId==structure, _declarationHonneurMIService.GetDefaultLoadProperties());
             else
                list = _declarationHonneurMIService.GetAll(_declarationHonneurMIService.GetDefaultLoadProperties());
 
@@ -1014,6 +1085,24 @@ namespace Ansej.Sidjeme.Web.Controllers
 
                 worksheet.Cell(index + 5, 24).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
                 worksheet.Cell(index + 5, 24).Value = list[index - 1].Observation;
+
+
+                if (list[index - 1].Notified == true)
+                {
+                    worksheet.Cell(index + 5, 25).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+                    worksheet.Cell(index + 5, 25).Value = "نعم";
+
+                    worksheet.Cell(index + 5, 26).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+                    worksheet.Cell(index + 5, 26).Value = list[index - 1].NotificationDate;
+                }
+                else
+                {
+                    worksheet.Cell(index + 5, 25).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+                    worksheet.Cell(index + 5, 25).Value = "لا";
+
+                    worksheet.Cell(index + 5, 26).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+                    worksheet.Cell(index + 5, 26).Value = "/";
+                }
 
 
             }
