@@ -74,6 +74,7 @@ namespace Ansej.Sidjeme.Data
 		public DbSet<FormeJuridique> FormesJuridique { get; set; }
 		public DbSet<TypeOfNeed> TypesOfNeed { get; set; }
         public DbSet<MotifTraitement> MotifsTraitement { get; set; }
+        public DbSet<Journal> Journals{ get; set; }
 
     }
 }

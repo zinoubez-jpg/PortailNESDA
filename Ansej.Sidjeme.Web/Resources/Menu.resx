@@ -237,4 +237,7 @@
   <data name="Textes" xml:space="preserve">
     <value>Textes juridiques</value>
   </data>
+  <data name="Journal" xml:space="preserve">
+    <value>journal</value>
+  </data>
 </root>

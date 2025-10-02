@@ -61,6 +61,7 @@ namespace Ansej.Sidjeme.Web
             services.AddTransient(typeof(StructureManagerBusinessService));
             services.AddTransient(typeof(ConsultationBusinessService));
             services.AddTransient(typeof(ArticleBusinessService));
+            services.AddTransient(typeof(JournalBusinessService));
 
             services.AddTransient(typeof(PreInscriptionSousTraitenceBusinessService));
             services.AddTransient(typeof(DeclarationHonneurMIBusinessService));

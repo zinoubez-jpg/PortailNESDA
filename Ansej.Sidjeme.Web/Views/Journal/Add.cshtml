@@ -1,0 +1,58 @@
+﻿@model Ansej.Sidjeme.Web.Views.ViewModels.JournalViewModel
+
+@{
+    ViewData["Title"] = "Ajouter un Journal";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Add" enctype="multipart/form-data" method="post">
+    <div class="form-group mb-3">
+        <label asp-for="TitleAr" class="form-label"></label>
+        <input asp-for="TitleAr" class="form-control" />
+        <span asp-validation-for="TitleAr" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="TitleFr" class="form-label"></label>
+        <input asp-for="TitleFr" class="form-control" />
+        <span asp-validation-for="TitleFr" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="TitleEn" class="form-label"></label>
+        <input asp-for="TitleEn" class="form-control" />
+        <span asp-validation-for="TitleEn" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="PublishDate" class="form-label"></label>
+        <input asp-for="PublishDate" type="date" class="form-control" />
+        <span asp-validation-for="PublishDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="PdfFile" class="form-label"></label>
+        <input asp-for="PdfFile" type="file" class="form-control" accept="application/pdf" />
+        <span asp-validation-for="PdfFile" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Author" class="form-label"></label>
+        <input asp-for="Author" class="form-control" />
+        <span asp-validation-for="Author" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enregistrer</button>
+    <a asp-action="Index" class="btn btn-secondary">Annuler</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
