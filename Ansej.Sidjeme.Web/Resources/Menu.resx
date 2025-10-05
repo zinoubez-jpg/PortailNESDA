@@ -240,4 +240,7 @@
   <data name="Journal" xml:space="preserve">
     <value>journal</value>
   </data>
+  <data name="EJournal" xml:space="preserve">
+    <value>EJournal</value>
+  </data>
 </root>

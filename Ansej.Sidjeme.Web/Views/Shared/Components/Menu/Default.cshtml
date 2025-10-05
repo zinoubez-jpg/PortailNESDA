@@ -86,14 +86,22 @@
                         <li><a asp-controller="Home" asp-action="Partenariat">@menuLocalizer["Partenariats"]</a></li>
                         <li><a asp-controller="Home" asp-action="Cooperation">@menuLocalizer["Coopérations"]</a></li>
                         <li><a asp-controller="Home" asp-action="DeclarationHonneurMI">@menuLocalizer["DeclarationHonneurMI"]   </a></li>
-                      
+
 
                         @*@{ if(directeur)
-           {
-               <li><a asp-controller="DeclarationHonneurMI" asp-action="Index">قائمةالتصريحات</a></li>
-           }
-        }*@
+                   {
+                       <li><a asp-controller="DeclarationHonneurMI" asp-action="Index">قائمةالتصريحات</a></li>
+                   }
+                }*@
                     </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a asp-controller="Ejournal" asp-action="Index">
+                        <span>@menuLocalizer["EJournal"]</span>
+
+                    </a>
+
                 </li>
 
                 <li class="dropdown">
@@ -103,7 +111,7 @@
                         <li><a asp-action="Paged" asp-controller="Article">@menuLocalizer["Actualités"]</a></li>
                         <li><a asp-action="Index" asp-controller="Journal">@menuLocalizer["Journal"]</a></li>
                         @*<li><a>@menuLocalizer["SuccessStories"]</a></li>
-                            <li><a>@menuLocalizer["Médiathèque"]</a></li>*@
+                <li><a>@menuLocalizer["Médiathèque"]</a></li>*@
                     </ul>
                 </li>
 
@@ -112,7 +120,7 @@
                     <ul>
                         <li><a asp-action="Index" asp-controller="Contactus">@menuLocalizer["ContactDGAWAntennes"]</a></li>
                         @*<li><a>@menuLocalizer["Doléances"]</a></li>
-                            <li><a>@menuLocalizer["QuestionnaireQualité"]</a></li>*@
+                <li><a>@menuLocalizer["QuestionnaireQualité"]</a></li>*@
                         <li><a asp-action="Privacy" asp-controller="Home">@menuLocalizer["Politique"]</a></li>
                     </ul>
                 </li>

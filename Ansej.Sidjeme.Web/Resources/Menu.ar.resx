@@ -246,4 +246,7 @@
   <data name="Journal" xml:space="preserve">
     <value>الجريدة</value>
   </data>
+  <data name="EJournal" xml:space="preserve">
+    <value>مجلة الوكالة</value>
+  </data>
 </root>
