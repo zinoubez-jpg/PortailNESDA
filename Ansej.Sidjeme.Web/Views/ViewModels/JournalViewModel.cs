@@ -30,9 +30,13 @@ namespace Ansej.Sidjeme.Web.Views.ViewModels
         [Display(Name = "Date de publication")]
         public DateTime PublishDate { get; set; }
 
-        [Required]
+        
         [Display(Name = "Journal PDF")]
-        public IFormFile PdfFile { get; set; }  
+        public IFormFile PdfFile { get; set; }
+
+        
+        [Display(Name = "Photo de couverture")]
+        public IFormFile CoverPicture { get; set; }
 
         // ABED: Blk to remove later if assigned the user authoer from code !
         [Display(Name = "Auteur")]

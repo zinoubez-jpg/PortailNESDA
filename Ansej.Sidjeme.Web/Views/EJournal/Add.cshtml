@@ -1,0 +1,86 @@
+﻿@model Ansej.Sidjeme.Web.Views.ViewModels.JournalViewModel
+
+@{
+    ViewData["Title"] = "اضافة مجلة";
+}
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/nesdaTitle.jpg);">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<form asp-action="Add" enctype="multipart/form-data" method="post" class="mt-4 mb-4">
+    <div class="form-section">
+        <h3 class="section-title">المعلومات الأساسية</h3>
+
+        <div class="form-group mb-3">
+            <label asp-for="TitleAr" class="form-label"></label>
+            <input asp-for="TitleAr" class="form-control" />
+            <span asp-validation-for="TitleAr" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="TitleFr" class="form-label"></label>
+            <input asp-for="TitleFr" class="form-control" />
+            <span asp-validation-for="TitleFr" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="TitleEn" class="form-label"></label>
+            <input asp-for="TitleEn" class="form-control" />
+            <span asp-validation-for="TitleEn" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+    </div>
+
+    <div class="form-section">
+        <h3 class="section-title">المستند والخيارات</h3>
+
+        <div class="form-group mb-3">
+            <label asp-for="PublishDate" class="form-label"></label>
+            <input asp-for="PublishDate" type="date" class="form-control" />
+            <span asp-validation-for="PublishDate" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="PdfFile" class="form-label"></label>
+            <input asp-for="PdfFile" type="file" class="form-control" accept="application/pdf" />
+            <span asp-validation-for="PdfFile" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="CoverPicture" class="form-label"></label>
+            <input asp-for="CoverPicture" type="file" class="form-control" accept="image/*" />
+            <span asp-validation-for="CoverPicture" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Author" class="form-label"></label>
+            <input asp-for="Author" class="form-control" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enregistrer</button>
+    <a asp-action="Index" class="btn btn-secondary">Annuler</a>
+
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

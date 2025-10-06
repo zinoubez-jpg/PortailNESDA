@@ -1,0 +1,104 @@
+﻿@model Ansej.Sidjeme.Web.Views.ViewModels.JournalViewModel
+
+@{
+    ViewData["Title"] = "تعديل المجلة";
+}
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/nesdaTitle.jpg);">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data" class="mb-4 mt-4">
+    <div class="row g-3">
+
+        <div class="col-md-4">
+            <label asp-for="TitleAr" class="form-label"></label>
+            <input asp-for="TitleAr" class="form-control" />
+            <span asp-validation-for="TitleAr" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="TitleFr" class="form-label"></label>
+            <input asp-for="TitleFr" class="form-control" />
+            <span asp-validation-for="TitleFr" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="TitleEn" class="form-label"></label>
+            <input asp-for="TitleEn" class="form-control" />
+            <span asp-validation-for="TitleEn" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12">
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="PublishDate" class="form-label"></label>
+            <input asp-for="PublishDate" class="form-control" type="date" />
+            <span asp-validation-for="PublishDate" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="Author" class="form-label"></label>
+            <input asp-for="Author" class="form-control" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+
+        <hr class="my-3" />
+
+        @if (ViewBag.ExistingPdf != null)
+        {
+            <div class="col-md-12">
+                <label class="form-label">Fichier PDF actuel</label><br />
+                <a href="@ViewBag.ExistingPdf" target="_blank" class="btn btn-outline-primary btn-sm">
+                    Voir le fichier PDF
+                </a>
+            </div>
+        }
+
+        <div class="col-md-6 mt-2">
+            <label asp-for="PdfFile" class="form-label"></label>
+            <input asp-for="PdfFile" type="file" class="form-control" accept="application/pdf" />
+            <small class="text-muted">Laisser vide pour garder l'ancien fichier.</small>
+        </div>
+
+        @if (ViewBag.ExistingCover != null)
+        {
+            <div class="col-md-12 mt-3">
+                <label class="form-label">Image de couverture actuelle</label><br />
+                <a href="@ViewBag.ExistingCover" target="_blank" alt="Photo de coverture" class="img-thumbnail" width="180">
+                    Voir la photo de couverture
+                </a>
+            </div>
+        }
+
+        <div class="col-md-6 mt-2">
+            <label asp-for="CoverPicture" class="form-label"></label>
+            <input asp-for="CoverPicture" type="file" class="form-control" accept="image/*" />
+            <small class="text-muted">Laisser vide pour garder l'image existante.</small>
+        </div>
+
+        <div class="col-12 mt-4">
+            <button type="submit" class="btn btn-success px-4"> Enregistrer</button>
+            <a asp-action="Paged" class="btn btn-secondary px-4 ms-2"> Retour</a>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

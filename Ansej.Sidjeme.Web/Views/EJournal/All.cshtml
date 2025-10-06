@@ -1,0 +1,476 @@
+﻿@{
+    ViewData["Title"] = "إدارة المجلة";
+}
+
+@section head {
+    <partial name="_datatables.style" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+}
+
+<style>
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .main-content {
+        padding: 4rem 0;
+    }
+
+    .table-container {
+        background: var(--meciy-white);
+        border-radius: 15px;
+        padding: 2.5rem;
+        margin: 2rem 0;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        border-right: 5px solid var(--meciy-base);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .table-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: var(--meciy-primary);
+            border-radius: 50%;
+            transform: translate(50px, -50px);
+            opacity: 0.05;
+        }
+
+    .section-title {
+        font-size: 1.8rem;
+        color: var(--meciy-base);
+        font-weight: 600;
+        margin-bottom: 2rem;
+        display: inline-block;
+        position: relative;
+    }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--meciy-primary);
+            border-radius: 2px;
+        }
+
+    .matable {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        background: var(--meciy-white);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+        border: 1px solid var(--meciy-bdr-color);
+        padding: 1rem 0.8rem;
+        text-align: center;
+    }
+
+    .matable thead th {
+        color: var(--meciy-base);
+        font-weight: 600;
+        font-size: 1rem;
+        position: relative;
+    }
+
+    .matable tbody tr {
+        transition: all 0.3s ease;
+    }
+
+        .matable tbody tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .matable tbody tr:hover {
+            background-color: rgba(25, 119, 107, 0.05);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    .matable tbody td {
+        color: #2d3748;
+        font-weight: 500;
+    }
+
+    /* DataTables Custom Styling */
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter,
+    .dataTables_wrapper .dataTables_info,
+    .dataTables_wrapper .dataTables_paginate {
+        font-family: var(--meciy-font-arabic);
+        color: #2d3748;
+    }
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button {
+            background: var(--meciy-white);
+            border: 1px solid var(--meciy-bdr-color);
+            color: var(--meciy-base) !important;
+            border-radius: 4px;
+            margin: 0 2px;
+            padding: 0.5rem 0.75rem;
+        }
+
+            .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+                background: var(--meciy-base) !important;
+                color: var(--meciy-white) !important;
+                border-color: var(--meciy-base);
+            }
+
+            .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+                background: var(--meciy-base) !important;
+                color: var(--meciy-white) !important;
+                border-color: var(--meciy-base);
+            }
+
+    .dt-buttons {
+        margin-bottom: 1rem;
+    }
+
+    .dt-button {
+        background: var(--meciy-primary) !important;
+        color: var(--meciy-white) !important;
+        border: none !important;
+        padding: 0.5rem 1rem !important;
+        border-radius: 6px !important;
+        font-family: var(--meciy-font-arabic) !important;
+        margin-left: 0.5rem !important;
+        transition: all 0.3s ease !important;
+    }
+
+        .dt-button:hover {
+            background: var(--meciy-base) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(25, 119, 107, 0.3);
+        }
+
+    .thm-btnrg {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none !important;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--meciy-white);
+        text-transform: uppercase;
+        background-color: var(--meciy-base);
+        padding: 10px 20px 10px;
+        -webkit-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+        overflow: hidden;
+        z-index: 1;
+        text-decoration: none;
+        text-align: center;
+        width: auto;
+        margin: 2px;
+        border-radius: 4px;
+    }
+
+        .thm-btnrg:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 3px;
+            background-color: #cc795c;
+            -webkit-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            z-index: -1;
+        }
+
+        .thm-btnrg:hover:after {
+            width: 100%;
+            opacity: 1;
+            -webkit-transition: all 0.4s linear;
+            -o-transition: all 0.4s linear;
+            transition: all 0.4s linear;
+        }
+
+        .thm-btnrg:before {
+            position: absolute;
+            content: "";
+            top: -20px;
+            right: -10px;
+            width: 80px;
+            height: 80px;
+            background-color: rgba(var(--meciy-white-rgb), .10);
+            border-radius: 50%;
+            transform: scale(1);
+            -webkit-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            z-index: 1;
+        }
+
+        .thm-btnrg:hover:before {
+            transform: scale(1.05);
+        }
+
+        .thm-btnrg:hover {
+            color: var(--meciy-white);
+        }
+
+    /* Styles pour les boutons d'action */
+    .btn-view {
+        background-color: var(--meciy-primary);
+        color: white;
+    }
+
+    .btn-edit {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .btn-archive {
+        background-color: #ffc107;
+        color: #212529;
+    }
+
+    .btn-unarchive {
+        background-color: #17a2b8;
+        color: white;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+        .action-buttons .thm-btnrg {
+            font-size: 12px;
+            padding: 8px 12px;
+            min-width: 60px;
+        }
+
+    /* Styles pour le bouton d'ajout */
+    .add-consultation-btn {
+        background: var(--meciy-primary);
+        color: var(--meciy-white);
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+        .add-consultation-btn:hover {
+            background: var(--meciy-base);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(25, 119, 107, 0.3);
+            color: var(--meciy-white);
+            text-decoration: none;
+        }
+
+    .version-badge {
+        display: inline-block;
+        background: var(--meciy-base);
+        color: var(--meciy-white);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    /* Responsive */
+    @@media (max-width: 768px) {
+        .action-buttons {
+            flex-direction: column;
+        }
+
+            .action-buttons .thm-btnrg {
+                width: 100%;
+                margin: 1px 0;
+            }
+    }
+</style>
+
+<div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/nesdaTitle.jpg);">
+    <div class="container position-relative">
+        <h1>@ViewData["Title"]</h1>
+        <p>@messageslocalizer["NesdaNomination"]</p>
+
+
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
+                <li class="current"> @ViewData["Title"]</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <!-- Table Container -->
+        <div class="table-container">
+            <h2 class="section-title">قائمة المجلات </h2>
+            <br />
+            <a asp-action="Add" class="add-consultation-btn">
+                <i class="fa fa-plus"></i> إضافة مجلة جديدة
+            </a>
+            <br />
+            <table class="matable table-bordered table dataTable" id="journalTable">
+                <thead>
+                    <tr>
+                        <th>عنوان المجلة</th>
+                        <th>تاريخ النشر</th>
+                        <th>الحالة</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+
+    <partial name="_datatables.script" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function () {
+            $('#journalTable').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "lengthMenu": [[10, 25, 50, 100, 40000], [10, 25, 50, 100, 'الكل']],
+                "ajax": {
+                    "url": `/EJournal/GetAllJournalsDataTable`,
+                    "type": "POST",
+                },
+                "columns": [
+                    // { "data": "id", "visible": false, "searchable": false },
+                    // { "data": "titleFr", "visible": false, "searchable": true },
+                    { "data": "titleAr", "searchable": true },
+                    {
+                        "data": "publishDate",
+                        "render": function (data, type, row) {
+                            if (data) {
+                                var date = new Date(data);
+                                return date.toLocaleDateString('ar-DZ');
+                            }
+                            return '';
+                        }
+                    },
+                    {
+                        "data": "isArchived",
+                        "render": function (data, type, row) {
+                            return data ?
+                                '<span style="color: #dc3545; font-weight: bold;">في الأرشيف</span>' :
+                                '<span style="color: #28a745; font-weight: bold;">نشط</span>';
+                        }
+                    },
+                    {
+                        "data": null,
+                        "sortable": false,
+                        "searchable": false,
+                        "render": function (data, type, row) {
+                            var editUrl = '@Url.Action("Edit", "EJournal")' + '/' + row.id;
+                            var baseUrl = '@(Context.Request.Scheme + "://" + Context.Request.Host + Url.Content("~/"))';
+                            var fileUrl = baseUrl + row.pdfUrl;;
+                            var deleteUrl = '@Url.Action("Delete", "Consultation")' + '/' + row.id;
+
+                            var markup = `
+                                            <a class='btn btn-secondary btn-sm' href='${editUrl}' title='تعديل'>
+                                                <i class="fa fa-pencil"></i>
+                                            </a>
+                                            <a class='btn btn-secondary btn-sm' href='${fileUrl}' target='_blank' title='عرض التفاصيل'>
+                                                <i class='fa fa-desktop'></i>
+                                            </a>
+                                            <button onclick="confirmToggleArchiveConsultation(${row.id}, '${row.titleFr.replace(/'/g, "\\'")}', ${row.isArchived})"
+                                                    class="btn ${row.isArchived ? 'btn-danger' : 'btn-warning'} btn-sm" title="${row.isArchived ? 'Désarchiver' : 'Archiver'}">
+                                                ${row.isArchived ? 'Désarchiver' : 'Archiver'}
+                                            </button>
+                                        `;
+
+                            return markup;
+                        }
+
+                    }
+                ],
+                dom: 'Blfrtip',
+                buttons: [
+                    {
+                        extend: 'excelHtml5',
+                        title: 'قائمة المجلات',
+                        text: '<i class="fa fa-file-excel"></i> Excel',
+                        className: 'dt-button',
+                        autoFilter: true,
+                        exportOptions: {
+                            columns: [0, 1, 2]
+                        }
+                    }
+                ],
+                "language": {
+                    "lengthMenu": "عرض _MENU_ مجلة لكل صفحة",
+                    "zeroRecords": "لم يتم العثور على أي استشارة",
+                    "info": "عرض الصفحة _PAGE_ من _PAGES_",
+                    "infoEmpty": "لا توجد سجلات متاحة",
+                    "infoFiltered": "(تم التصفية من _MAX_ سجل إجمالي)",
+                    "search": "بحث:",
+                    "processing": "جاري المعالجة...",
+                    "paginate": {
+                        "first": "الأول",
+                        "last": "الأخير",
+                        "next": "التالي",
+                        "previous": "السابق"
+                    }
+                }
+            });
+        });
+
+        function confirmToggleArchiveConsultation(id, title, isArchived) {
+            const action = isArchived ? 'استرجاع من الأرشيف' : 'محفوظ في الأرشيف';
+            const icon = isArchived ? 'info' : 'warning';
+
+            Swal.fire({
+                title: `${action} هذه المجلة؟`,
+                html: `<strong>${title}</strong>`,
+                icon: icon,
+                showCancelButton: true,
+                confirmButtonColor: '#0d6efd',
+                cancelButtonColor: '#6c757d',
+                confirmButtonText: `نعم، ${action}`,
+                cancelButtonText: 'إلغاء'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.post(`/EJournal/ToggleArchive/${id}`, function () {
+                        Swal.fire({
+                            title: 'تم بنجاح!',
+                            text: `تم ${isArchived ? 'استرجاع من الأرشيف' : 'حفظ في الأرشيف'} المجلة.`,
+                            icon: 'success',
+                            timer: 2000,
+                            showConfirmButton: false
+                        });
+                        $('#journalTable').DataTable().ajax.reload();
+                    }).fail(function () {
+                        Swal.fire('خطأ', 'فشل في تحديث المجلة.', 'error');
+                    });
+                }
+            });
+        }
+    </script>
+}

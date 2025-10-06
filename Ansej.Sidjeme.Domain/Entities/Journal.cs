@@ -38,6 +38,8 @@ namespace Ansej.Sidjeme.Domain.Entities
         [Required]
         public string PdfUrl{ get; set; }
 
+        public string CoverPicture{ get; set; }
+
         public bool IsArchived { get; set; } = false;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
