@@ -560,7 +560,7 @@
 @section Scripts {
     <script>
         // Configuration
-        const pdfUrl = '@ViewBag.FullPath';
+        const pdfUrl = '@Html.Raw(ViewBag.FullPath)';
         const journalId = @Model.Id;
         const journalTitle = '@Html.Raw(Model.TitleAr)';
         
