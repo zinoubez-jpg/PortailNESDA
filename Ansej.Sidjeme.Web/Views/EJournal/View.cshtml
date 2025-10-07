@@ -7,8 +7,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
 <style>
-   
-
+  
     .journal-section {
         padding-top: 40px;
         padding-bottom: 60px;
@@ -16,8 +15,6 @@
         min-height: 100vh;
         overflow-x: hidden;
     }
-
-  
 
     /* Meta info */
     .meta-info-box {
@@ -108,13 +105,13 @@
         text-decoration: none;
     }
 
-    .toolbar-btn:hover {
-        background-color: var(--accent-color);
-        color: var(--contrast-color);
-        border-color: var(--accent-color);
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(65, 193, 186, 0.3);
-    }
+        .toolbar-btn:hover {
+            background-color: var(--accent-color);
+            color: var(--contrast-color);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(65, 193, 186, 0.3);
+        }
 
     /* Magazine Viewer */
     .magazine-viewer {
@@ -126,16 +123,16 @@
         overflow: hidden;
     }
 
-    .magazine-viewer::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05) 0%, transparent 70%);
-        pointer-events: none;
-    }
+        .magazine-viewer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
 
     /* Book Container */
     .book-container {
@@ -143,7 +140,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 650px;
+        min-height: 1000px; /* Augmenté pour la nouvelle hauteur */
         position: relative;
     }
 
@@ -158,15 +155,15 @@
         display: flex;
         justify-content: center;
         position: relative;
-        box-shadow: 
-            0 30px 60px rgba(0, 0, 0, 0.4),
-            0 0 0 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
     }
 
     .page {
-        width: 595px;
-        height: 842px;
+        /* *** MODIFICATION ICI : Nouvelle largeur de 800px (était 595px) *** */
+        width: 800px;
+        /* *** MODIFICATION ICI : Nouvelle hauteur proportionnelle (était 842px) *** */
+        height: 1131px;
         background: white;
         position: relative;
         overflow: hidden;
@@ -175,11 +172,11 @@
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     }
 
-    .page iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-    }
+        .page iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
 
     .page-left {
         display: block;
@@ -235,16 +232,16 @@
         box-shadow: 0 5px 20px rgba(65, 193, 186, 0.3);
     }
 
-    .nav-btn:hover:not(:disabled) {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 30px rgba(65, 193, 186, 0.5);
-    }
+        .nav-btn:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(65, 193, 186, 0.5);
+        }
 
-    .nav-btn:disabled {
-        background: #95a5a6;
-        cursor: not-allowed;
-        opacity: 0.5;
-    }
+        .nav-btn:disabled {
+            background: #95a5a6;
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
 
     .page-counter {
         background: white;
@@ -256,7 +253,6 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         min-width: 150px;
         text-align: center;
-        
     }
 
     /* Zoom Controls */
@@ -285,11 +281,11 @@
         color: var(--accent-color);
     }
 
-    .zoom-btn:hover {
-        background: var(--accent-color);
-        color: white;
-        transform: scale(1.1);
-    }
+        .zoom-btn:hover {
+            background: var(--accent-color);
+            color: white;
+            transform: scale(1.1);
+        }
 
     /* Loading */
     .loading-overlay {
@@ -316,7 +312,9 @@
     }
 
     @@keyframes spin {
-        to { transform: rotate(360deg); }
+        to {
+            transform: rotate(360deg);
+        }
     }
 
     .loading-text {
@@ -328,13 +326,23 @@
 
     /* Animations */
     @@keyframes flipLeft {
-        0% { transform: rotateY(0deg); }
-        100% { transform: rotateY(-180deg); }
+        0% {
+            transform: rotateY(0deg);
+        }
+
+        100% {
+            transform: rotateY(-180deg);
+        }
     }
 
     @@keyframes flipRight {
-        0% { transform: rotateY(0deg); }
-        100% { transform: rotateY(180deg); }
+        0% {
+            transform: rotateY(0deg);
+        }
+
+        100% {
+            transform: rotateY(180deg);
+        }
     }
 
     .flipping-left .page-right {
@@ -348,9 +356,11 @@
     /* Responsive */
     @@media (max-width: 992px) {
         .page {
-            width: 500px;
-            height: 707px;
+            /* Ajustement pour les écrans < 992px */
+            width: 650px; /* Ancien: 500px */
+            height: 920px; /* Ancien: 707px */
         }
+
         .magazine-viewer {
             padding: 2rem 1rem;
         }
@@ -363,6 +373,7 @@
             height: auto;
             aspect-ratio: 1 / 1.414;
         }
+
         .zoom-controls {
             flex-direction: row;
             top: auto;
@@ -370,17 +381,21 @@
             left: 50%;
             transform: translateX(-50%);
         }
+
         .nav-btn {
             padding: 0.75rem 1.5rem;
             font-size: 0.9rem;
         }
+
         .toolbar-actions {
             flex-direction: column;
         }
+
         .toolbar-btn {
             width: 100%;
             justify-content: center;
         }
+
         .meta-info-row {
             flex-direction: column;
             gap: 1rem;
@@ -393,7 +408,6 @@
     }
 </style>
 
-<!-- Page Title -->
 <div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/newspg.jpg);">
     <div class="container position-relative">
         <h1>@ViewData["Title"]</h1>
@@ -406,15 +420,8 @@
     </div>
 </div>
 
-<!-- Loading Overlay -->
-<!--<div class="loading-overlay" id="loadingOverlay">
-    <div class="spinner"></div>
-    <div class="loading-text">جاري تحميل المجلة...</div>
-</div>-->
-
 <section class="journal-section">
     <div class="container">
-        <!-- Meta Information -->
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="meta-info-box">
@@ -434,7 +441,7 @@
                             </div>
                             <div class="meta-text">
                                 <span class="meta-label">المؤلف</span>
-                                <span class="meta-value">خلية الإتصال المديرية العامة</span>
+                                <span class="meta-value">المديرية الفرعية للإتصال</span>
                             </div>
                         </div>
                         <div class="meta-info-item">
@@ -451,7 +458,6 @@
             </div>
         </div>
 
-        <!-- Toolbar -->
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="viewer-toolbar">
@@ -483,11 +489,9 @@
 
         @if (ViewBag.FileExists)
         {
-            <!-- Magazine Viewer -->
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="magazine-viewer" id="magazineViewer">
-                        <!-- Zoom Controls -->
                         <div class="zoom-controls">
                             <button class="zoom-btn" onclick="zoomIn()" title="تكبير">
                                 <i class="fas fa-plus"></i>
@@ -500,20 +504,16 @@
                             </button>
                         </div>
 
-                        <!-- Book Container -->
                         <div class="book-container">
                             <div class="book" id="book">
                                 <div class="pages-wrapper" id="pagesWrapper">
-                                    <!-- Page gauche -->
                                     <div class="page page-left">
                                         <iframe id="leftPage" src="about:blank"></iframe>
                                         <div class="page-number" id="leftPageNumber"></div>
                                     </div>
-                                    
-                                    <!-- Reliure centrale -->
+
                                     <div class="spine"></div>
-                                    
-                                    <!-- Page droite -->
+
                                     <div class="page page-right">
                                         <iframe id="rightPage" src="about:blank"></iframe>
                                         <div class="page-number" id="rightPageNumber"></div>
@@ -522,22 +522,6 @@
                             </div>
                         </div>
 
-                        <!-- Navigation -->
-                        <!--<div class="page-navigation">
-                            <button class="nav-btn" id="prevBtn" onclick="previousPage()">
-                                <i class="fas fa-chevron-right"></i>
-                                <span>السابق</span>
-                            </button>
-                            
-                            <div class="page-counter">
-                                <span id="currentPages">1-2</span> / <span id="totalPages">--</span>
-                            </div>
-                            
-                            <button class="nav-btn" id="nextBtn" onclick="nextPage()">
-                                <span>التالي</span>
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
-                        </div>-->
                     </div>
                 </div>
             </div>
@@ -563,7 +547,7 @@
         const pdfUrl = '@Html.Raw(ViewBag.FullPath)';
         const journalId = @Model.Id;
         const journalTitle = '@Html.Raw(Model.TitleAr)';
-        
+
         let currentPage = 1;
         let totalPagesCount = 50; // Nombre estimé de pages - à ajuster selon votre PDF
         let zoomLevel = 1;
@@ -575,25 +559,34 @@
                 loadPages();
                 updateNavigation();
             }
-            setTimeout(hideLoading, 1000);
+            // Retiré l'appel à setTimeout(hideLoading, 1000) car l'overlay est commenté
         });
 
         function hideLoading() {
-            document.getElementById('loadingOverlay').style.display = 'none';
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            if (loadingOverlay) {
+                loadingOverlay.style.display = 'none';
+            }
         }
 
         // Chargement des pages
         function loadPages() {
             const leftPage = document.getElementById('leftPage');
-            
+
             // Forcer le rechargement pour changer de page
             const timestamp = new Date().getTime();
+            // J'ai laissé "view=FitH" car c'est une option d'Adobe PDF Viewer qui essaie d'adapter à la hauteur
+            // Si vous avez des problèmes d'affichage après avoir augmenté la taille, vous pourriez essayer:
+            // "view=Fit" (adapte le PDF à la zone visible sans scroll)
             leftPage.src = `${pdfUrl}#page=${currentPage}&view=FitH&toolbar=0&navpanes=0&zoom=page-fit&t=${timestamp}`;
-            document.getElementById('leftPageNumber').textContent = currentPage;
-            
+            const leftPageNumber = document.getElementById('leftPageNumber');
+            if(leftPageNumber) {
+                 leftPageNumber.textContent = currentPage;
+            }
+
             // Log pour debug
             console.log('Chargement page:', currentPage, leftPage.src);
-            
+
             updateNavigation();
         }
 
@@ -602,10 +595,10 @@
             if (currentPage < totalPagesCount) {
                 const pagesWrapper = document.getElementById('pagesWrapper');
                 pagesWrapper.classList.add('flipping-left');
-                
+
                 currentPage++;
                 console.log('Page suivante:', currentPage);
-                
+
                 setTimeout(() => {
                     loadPages();
                     pagesWrapper.classList.remove('flipping-left');
@@ -617,10 +610,10 @@
             if (currentPage > 1) {
                 const pagesWrapper = document.getElementById('pagesWrapper');
                 pagesWrapper.classList.add('flipping-right');
-                
+
                 currentPage--;
                 console.log('Page précédente:', currentPage);
-                
+
                 setTimeout(() => {
                     loadPages();
                     pagesWrapper.classList.remove('flipping-right');
@@ -633,12 +626,13 @@
             const nextBtn = document.getElementById('nextBtn');
             const currentPagesSpan = document.getElementById('currentPages');
             const totalPagesSpan = document.getElementById('totalPages');
-            
-            prevBtn.disabled = currentPage <= 1;
-            nextBtn.disabled = currentPage >= totalPagesCount;
-            
-            currentPagesSpan.textContent = currentPage;
-            totalPagesSpan.textContent = totalPagesCount;
+
+            // Les boutons de navigation sont commentés dans le HTML, mais le JS doit toujours vérifier leur existence
+            if (prevBtn) prevBtn.disabled = currentPage <= 1;
+            if (nextBtn) nextBtn.disabled = currentPage >= totalPagesCount;
+
+            if (currentPagesSpan) currentPagesSpan.textContent = currentPage;
+            if (totalPagesSpan) totalPagesSpan.textContent = totalPagesCount;
         }
 
         // Zoom
@@ -665,7 +659,7 @@
         // Plein écran
         function toggleFullscreen() {
             const viewer = document.getElementById('magazineViewer');
-            
+
             if (!isFullscreen) {
                 if (viewer.requestFullscreen) {
                     viewer.requestFullscreen();
@@ -692,7 +686,10 @@
         document.addEventListener('fullscreenchange', function() {
             if (!document.fullscreenElement) {
                 isFullscreen = false;
-                document.getElementById('fullscreenText').textContent = 'ملء الشاشة';
+                const fullscreenText = document.getElementById('fullscreenText');
+                if (fullscreenText) {
+                    fullscreenText.textContent = 'ملء الشاشة';
+                }
             }
         });
 
@@ -709,9 +706,11 @@
         function printPdf() {
             const leftIframe = document.getElementById('leftPage');
             const rightIframe = document.getElementById('rightPage');
-            
+
             try {
                 if (leftIframe && leftIframe.contentWindow) {
+                    // C'est une méthode qui dépend de la capacité du navigateur à imprimer le contenu de l'iframe
+                    // Un PDF viewer peut avoir des options d'impression internes.
                     leftIframe.contentWindow.print();
                 }
             } catch (e) {
@@ -738,23 +737,24 @@
 
         // Navigation clavier
         document.addEventListener('keydown', function(e) {
+            // J'inverse les touches pour une lecture de droite à gauche (arabe)
             if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
                 e.preventDefault();
-                previousPage();
+                previousPage(); // Droite = page précédente (logique RTL)
             } else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
                 e.preventDefault();
-                nextPage();
+                nextPage(); // Gauche = page suivante (logique RTL)
             }
         });
 
         // Désactiver le scroll avec la molette dans le visualiseur
         const magazineViewer = document.getElementById('magazineViewer');
         const bookContainer = document.querySelector('.book-container');
-        
+
         if (magazineViewer) {
             magazineViewer.addEventListener('wheel', function(e) {
                 e.preventDefault();
-                
+
                 // Navigation avec la molette
                 if (e.deltaY > 0) {
                     // Scroll vers le bas = page suivante
@@ -778,22 +778,27 @@
         let touchStartY = 0;
         if (magazineViewer) {
             magazineViewer.addEventListener('touchstart', function(e) {
-                touchStartY = e.touches[0].clientY;
+                if (e.touches.length === 1) {
+                    touchStartY = e.touches[0].clientY;
+                }
             }, { passive: true });
 
             magazineViewer.addEventListener('touchmove', function(e) {
-                const touchEndY = e.touches[0].clientY;
-                const diff = touchStartY - touchEndY;
+                if (e.touches.length === 1) {
+                    const touchEndY = e.touches[0].clientY;
+                    const diff = touchStartY - touchEndY;
 
-                if (Math.abs(diff) > 50) {
-                    e.preventDefault();
-                    
-                    if (diff > 0) {
-                        nextPage();
-                    } else {
-                        previousPage();
+                    // Déclencher le changement de page si le swipe est important
+                    if (Math.abs(diff) > 75) { // Seuil augmenté pour éviter les changements accidentels
+                        e.preventDefault();
+
+                        if (diff > 0) {
+                            nextPage();
+                        } else {
+                            previousPage();
+                        }
+                        touchStartY = touchEndY; // Réinitialiser le point de départ
                     }
-                    touchStartY = touchEndY;
                 }
             }, { passive: false });
         }

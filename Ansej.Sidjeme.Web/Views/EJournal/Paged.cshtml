@@ -1,56 +1,66 @@
 ﻿@model Ansej.Domain.Core.PagedResult<Ansej.Sidjeme.Domain.Entities.Journal>
 
 @{
-    ViewData["Title"] = "الجريدة الإلكترونية الخاصة بالوكالة";
+    ViewData["Title"] = "المجلة الإلكترونية الخاصة بالوكالة";
 }
 
 <style>
-    :root {
-        --default-font: "Noto Kufi Arabic", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        --heading-font: "Noto Kufi Arabic", sans-serif;
-        --background-color: #f1f5f4;
-        --default-color: #212529;
-        --heading-color: #2d465e;
-        --accent-color: #41c1ba;
-        --surface-color: #ffffff;
-        --contrast-color: #ffffff;
-    }
-
+   
+    /* Journals Section */
     .journals-section {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        background-color: var(--background-color);
+        padding: 60px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
-    .journals-section .section-header {
+    .section-header {
         text-align: center;
         margin-bottom: 3rem;
     }
 
-    .journals-section .display-6 {
-        line-height: 1.2;
+    .section-header h2 {
         font-size: 2.5rem;
         font-weight: 700;
+        color: var(--heading-color);
+        margin-bottom: 1rem;
     }
 
-    .journals-section .display-6 span {
+    .section-header h2 span {
         position: relative;
         color: var(--accent-color);
     }
 
-    .journals-section .display-6 span:after {
+    .section-header h2 span:after {
         content: "";
         position: absolute;
         width: 100%;
         height: 10px;
-        background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+        background-color: rgba(65, 193, 186, 0.15);
         left: 0;
         bottom: 5px;
         z-index: -1;
     }
 
-    .journal-item {
-        margin-bottom: 2rem;
+    .section-header p {
+        color: rgba(33, 37, 41, 0.7);
+        font-size: 1.1rem;
+    }
+
+    .journals-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-bottom: 3rem;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Centrer les cartes quand il y en a moins de 3 */
+    .journals-grid[data-count="1"],
+    .journals-grid[data-count="2"] {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 380px));
+        justify-content: center;
     }
 
     .journal-card {
@@ -61,75 +71,111 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
         border-bottom: 3px solid var(--accent-color);
         height: 100%;
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         position: relative;
-        z-index: 1;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.5s ease forwards;
     }
 
-    .journal-card:before {
+    @@keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .journal-card:nth-child(1) { animation-delay: 0.1s; }
+    .journal-card:nth-child(2) { animation-delay: 0.2s; }
+    .journal-card:nth-child(3) { animation-delay: 0.3s; }
+    .journal-card:nth-child(4) { animation-delay: 0.4s; }
+    .journal-card:nth-child(5) { animation-delay: 0.5s; }
+    .journal-card:nth-child(6) { animation-delay: 0.6s; }
+
+    .journal-card::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 0;
-        background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+        background-color: rgba(65, 193, 186, 0.05);
         transition: height 0.5s ease;
-        z-index: -1;
+        z-index: 0;
     }
 
     .journal-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        transform: translateY(-8px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
     }
 
-    .journal-card:hover:before {
+    .journal-card:hover::before {
         height: 100%;
     }
 
     .journal-cover {
         position: relative;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        min-height: 300px;
+        background: transparent;
+        min-height: 445px;
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
+        overflow: visible;
+        padding: 2rem;
     }
 
-    .journal-cover::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
-        z-index: 1;
+    .journal-cover img {
+        position: relative;
+        width: 320px;
+        height: 445.5px;
+        object-fit: cover;
+        object-position: center;
+        z-index: 2;
+        transition: all 0.5s ease;
+        border-radius: 8px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15),
+                    0 6px 20px rgba(0, 0, 0, 0.1),
+                    0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .journal-card:hover .journal-cover img {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25),
+                    0 12px 30px rgba(0, 0, 0, 0.15),
+                    0 6px 15px rgba(0, 0, 0, 0.1);
     }
 
     .journal-number {
-        position: relative;
-        z-index: 2;
+        position: absolute;
+        z-index: 3;
         text-align: center;
         color: var(--contrast-color);
         padding: 2rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
     }
 
     .journal-number h1 {
         font-size: 5rem;
         font-weight: 700;
         margin-bottom: 0.5rem;
-        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         line-height: 1;
+        color: white;
     }
 
     .journal-number p {
         font-size: 1.5rem;
         font-weight: 600;
         margin: 0;
-        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        color: white;
     }
 
     .journal-content {
@@ -137,17 +183,20 @@
         flex: 1;
         display: flex;
         flex-direction: column;
+        position: relative;
+        z-index: 1;
     }
 
     .post-category {
         display: inline-block;
-        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+        background-color: rgba(65, 193, 186, 0.1);
         color: var(--accent-color);
         padding: 0.4rem 1rem;
         border-radius: 20px;
         font-size: 0.85rem;
         font-weight: 600;
         margin-bottom: 1rem;
+        align-self: flex-start;
     }
 
     .journal-title {
@@ -171,15 +220,10 @@
     .post-meta {
         display: flex;
         align-items: center;
-        color: color-mix(in srgb, var(--default-color), transparent 40%);
+        color: rgba(33, 37, 41, 0.6);
         font-size: 0.9rem;
         padding-top: 1rem;
-        border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    }
-
-    .post-meta time {
-        display: flex;
-        align-items: center;
+        border-top: 1px solid rgba(33, 37, 41, 0.1);
     }
 
     .post-meta i {
@@ -187,49 +231,28 @@
         color: var(--accent-color);
     }
 
-    /* Alternative gradient colors for variety */
-    .journal-card:nth-child(3n+1) .journal-cover {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-
-    .journal-card:nth-child(3n+2) .journal-cover {
-        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    }
-
-    .journal-card:nth-child(3n+3) .journal-cover {
-        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    }
-
     /* Empty State */
     .no-articles {
         text-align: center;
         padding: 4rem 2rem;
-        background-color: var(--surface-color);
-        border-radius: 15px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        color: rgba(33, 37, 41, 0.5);
     }
 
     .no-articles i {
         font-size: 4rem;
-        color: color-mix(in srgb, var(--accent-color), transparent 30%);
-        margin-bottom: 1.5rem;
-    }
-
-    .empty-state-title {
-        color: var(--heading-color);
-        font-size: 1.5rem;
-        font-weight: 700;
         margin-bottom: 1rem;
+        color: var(--accent-color);
     }
 
-    .no-articles p {
-        color: color-mix(in srgb, var(--default-color), transparent 30%);
-        font-size: 1.1rem;
+    .no-articles h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: var(--heading-color);
     }
 
-    /* Pagination Styling */
-    #pagination-2 {
-        padding: 2rem 0 4rem 0;
+    /* Pagination */
+    .pagination-2 {
+        padding: 2rem 0;
     }
 
     .pagination-list {
@@ -272,9 +295,29 @@
     .pagination-list li.disabled a {
         opacity: 0.5;
         pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    /* Responsive */
+    @@media (max-width: 992px) {
+        .journals-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+
+        .journals-grid[data-count="1"] {
+            grid-template-columns: repeat(1, minmax(320px, 380px)) !important;
+        }
     }
 
     @@media (max-width: 768px) {
+        .page-title h1 {
+            font-size: 2rem;
+        }
+
+        .journals-grid {
+            grid-template-columns: 1fr !important;
+        }
+
         .journal-number h1 {
             font-size: 3.5rem;
         }
@@ -291,158 +334,161 @@
             font-size: 1.2rem;
         }
 
-        .journals-section .display-6 {
+        .section-header h2 {
             font-size: 2rem;
+        }
+
+        .journal-cover {
+            min-height: 400px;
+            padding: 1.5rem;
+        }
+
+        .journal-cover img {
+            width: 280px;
+            height: 389.4px;
         }
     }
 </style>
 
+<!-- Page Header -->
 <div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/newspg.jpg);">
     <div class="container position-relative">
         <h1>@ViewData["Title"]</h1>
-       
         <nav class="breadcrumbs">
             <ol>
-                <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
-                <li class="current"> @ViewData["Title"]</li>
+                <li><a asp-controller="Home" asp-action="Index">الرئيسية</a></li>
+                <li class="current">@ViewData["Title"]</li>
             </ol>
         </nav>
     </div>
 </div>
 
+<!-- Journals Section -->
 <section class="journals-section">
     <div class="container">
         <!-- Section Header -->
         <div class="section-header">
-            <h2 class="display-6 fw-bold mb-3">
-                المجلة <span>الإلكترونية</span>
-            </h2>
-            <p style="color: color-mix(in srgb, var(--default-color), transparent 30%); font-size: 1.1rem;">
-                آخر التحديثات والأخبار
-            </p>
+            <h2>المجلة <span>الإلكترونية</span></h2>
+            <p>آخر التحديثات والأخبار</p>
         </div>
 
         @if (Model != null && Model.Items.Any())
         {
             var itemCount = Model.Items.Count();
-            var rowClass = itemCount <= 2 ? "row justify-content-center" : "row";
-
-            <div class="@rowClass">
-                @foreach (var post in Model.Items)
-                {
-                    <div class="col-lg-4 col-md-6 journal-item">
-                        <article class="journal-card">
-                            <div class="journal-cover">
-                                <div class="journal-number">
-
-                                    <p>العدد رقم</p>
-                                    <h1 style="color:white">@post.Id</h1>
-                                </div>
+    <div class="journals-grid" data-count="@itemCount">
+        @foreach (var post in Model.Items)
+        {
+          
+        <article class="journal-card">
+            <a asp-controller="Ejournal" asp-action="View" asp-route-id="@post.Id">
+                
+                        <div class="journal-cover">
+                            <img src="@post.CoverPicture" alt="العدد @post.Id" />
+                            <div class="journal-number">
+                                <p>العدد رقم</p>
+                                <h1>@post.Id</h1>
                             </div>
-                            <div class="journal-content">
-                                <p class="post-category">خلية الإتصال المديرية العامة</p>
-                                <h2 class="journal-title">
-                                    <a asp-controller="Ejournal" asp-action="View" asp-route-id="@post.Id">@post.TitleAr</a>
-                                </h2>
-                                <div class="post-meta">
-                                    @{
-                                        var date = post.CreatedAt;
-                                        var months = new[] {
-                                            "جانفي", "فيفري", "مارس", "أفريل", "ماي", "جوان",
-                                            "جويلية", "أوت", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"
-                                        };
-                                        var formattedDate = $"{date.Day} {months[date.Month - 1]} {date.Year}";
-                                    }
-                                    <time datetime="@date.ToString("yyyy-MM-dd")">
-                                        <i class="bi bi-calendar3"></i>
-                                        @formattedDate
-                                    </time>
-                                </div>
+                        </div>
+                        <div class="journal-content">
+                            <span class="post-category">المديرية الفرعية للإتصال</span>
+                            <h2 class="journal-title">
+                                <a asp-controller="Ejournal" asp-action="View" asp-route-id="@post.Id">@post.TitleAr</a>
+                            </h2>
+                            <div class="post-meta">
+                                @{
+                                    var date = post.CreatedAt;
+                                    var months = new[] {
+                                        "جانفي", "فيفري", "مارس", "أفريل", "ماي", "جوان",
+                                        "جويلية", "أوت", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"
+                                    };
+                                    var formattedDate = $"{date.Day} {months[date.Month - 1]} {date.Year}";
+                                }
+                                <time datetime="@date.ToString("yyyy-MM-dd")">
+                                    <i class="bi bi-calendar3"></i>
+                                    @formattedDate
+                                </time>
                             </div>
-                        </article>
-                    </div>
-                }
-            </div>
+                        </div>
+                    </a>
+        </article>
+        }
+    </div>
         }
         else
         {
             <div class="no-articles">
                 <i class="bi bi-newspaper"></i>
-                <h3 class="empty-state-title">لا توجد مقالات متاحة حالياً</h3>
-                <p>سيتم نشر الأخبار والمستجدات قريباً</p>
+                <h3 class="empty-state-title">لا توجد مجلة متاحة حالياً</h3>
+                <p>سيتم نشر المجلات قريباً</p>
             </div>
         }
     </div>
 </section>
 
 <!-- Pagination Section -->
-<section id="pagination-2" class="pagination-2 section">
-    <div class="container">
-        @{
-            int totalPages = (int)Math.Ceiling((double)Model.TotalCount / Model.PageSize);
-            bool previousEnabled = Model.Page > 1;
-            bool nextEnabled = Model.Page < totalPages;
-        }
+@if (Model != null && Model.Items.Any())
+{
+    <section id="pagination-2" class="pagination-2 section">
+        <div class="container">
+            @{
+                int totalPages = (int)Math.Ceiling((double)Model.TotalCount / Model.PageSize);
+                bool previousEnabled = Model.Page > 1;
+                bool nextEnabled = Model.Page < totalPages;
+            }
 
-        <nav class="d-flex justify-content-center" aria-label="Page navigation">
-            <ul class="pagination-list">
-                @* Previous Link *@
-                <li class="@(previousEnabled ? "" : "disabled")">
-                    <a asp-action="Paged"
-                       asp-route-page="@(Model.Page - 1)"
-                       asp-route-search="@ViewBag.search"
-                       aria-label="Previous page">
-                        <i class="bi bi-arrow-right"></i>
-                        <span class="d-none d-sm-inline">السابق</span>
-                    </a>
-                </li>
-
-                @* Page Numbers *@
-                @for (int i = 1; i <= totalPages; i++)
-                {
-                    bool isActive = i == Model.Page;
-                    <li>
-                        <a class="@(isActive ? "active" : "")"
-                           asp-action="Paged"
-                           asp-route-page="@i"
-                           asp-route-search="@ViewBag.search">@i</a>
+            <nav class="d-flex justify-content-center" aria-label="Page navigation">
+                <ul class="pagination-list">
+                    @* Previous Link *@
+                    <li class="@(previousEnabled ? "" : "disabled")">
+                        <a asp-action="Paged"
+                           asp-route-page="@(Model.Page - 1)"
+                           asp-route-search="@ViewBag.search"
+                           aria-label="Previous page">
+                            <i class="bi bi-arrow-right"></i>
+                            <span class="d-none d-sm-inline">السابق</span>
+                        </a>
                     </li>
-                }
 
-                @* Next Link *@
-                <li class="@(nextEnabled ? "" : "disabled")">
-                    <a asp-action="Paged"
-                       asp-route-page="@(Model.Page + 1)"
-                       asp-route-search="@ViewBag.search"
-                       aria-label="Next page">
-                        <span class="d-none d-sm-inline">التالي</span>
-                        <i class="bi bi-arrow-left"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</section>
+                    @* Page Numbers *@
+                    @for (int i = 1; i <= totalPages; i++)
+                    {
+                        bool isActive = i == Model.Page;
+                        <li>
+                            <a class="@(isActive ? "active" : "")"
+                               asp-action="Paged"
+                               asp-route-page="@i"
+                               asp-route-search="@ViewBag.search">@i</a>
+                        </li>
+                    }
+
+                    @* Next Link *@
+                    <li class="@(nextEnabled ? "" : "disabled")">
+                        <a asp-action="Paged"
+                           asp-route-page="@(Model.Page + 1)"
+                           asp-route-search="@ViewBag.search"
+                           aria-label="Next page">
+                            <span class="d-none d-sm-inline">التالي</span>
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+}
 
 @section Scripts {
     <script>
-        // Animation au focus
-        document.querySelectorAll('.search-input').forEach(input => {
-            input.addEventListener('focus', function () {
-                this.parentElement.style.transform = 'scale(1.02)';
-            });
-
-            input.addEventListener('blur', function () {
-                this.parentElement.style.transform = 'scale(1)';
-            });
-        });
-
         // Smooth scroll for pagination
-        document.querySelectorAll('.pagination-list a').forEach(link => {
-            link.addEventListener('click', function () {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.pagination-list a').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    if (!this.parentElement.classList.contains('disabled')) {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    }
                 });
             });
         });
