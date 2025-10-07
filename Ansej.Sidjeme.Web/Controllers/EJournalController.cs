@@ -30,13 +30,13 @@ namespace Ansej.Sidjeme.Web.Controllers
         {
             return View();
         }
-
+        [Authorize(Roles = "Admin,Article")]
         [HttpGet]
         public IActionResult Add()
         {
             return View();
         }
-
+        [Authorize(Roles = "Admin,Article")]
         [HttpPost]
         public async Task<IActionResult> Add(JournalViewModel model)
         {
@@ -67,7 +67,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
             return businessResult.Succeeded ? RedirectToAction("Paged") : View(model);
         }
-
+        [Authorize(Roles = "Admin,Article")]
         [HttpGet("{id}")]
         public  IActionResult Edit(int id)
         {
@@ -100,7 +100,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             return View(model);
         }
 
-        
+        [Authorize(Roles = "Admin,Article")]
         [HttpPost("{id}")]
         public async Task<IActionResult> Edit(int id, JournalViewModel model)
         {
@@ -166,7 +166,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
             return View(model);
         }
-
+        [Authorize(Roles = "Admin,Article")]
         [HttpGet]
         public IActionResult All() {
 
@@ -256,6 +256,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             return File(fileBytes, contentType, fileName);
         }
 
+        [Authorize(Roles = "Admin,Article")]
         [HttpPost]
         public IActionResult GetAllJournalsDataTable(DataTableAjaxModel model)
         {
@@ -278,6 +279,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin,Article")]
         [Route("{id}")]
         [HttpPost]
         public IActionResult ToggleArchive(int id)
