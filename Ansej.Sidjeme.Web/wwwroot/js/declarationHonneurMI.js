@@ -71,21 +71,42 @@
 
                         }
                     },
+
+                    {
+                        "data": null, "visible": true, "searchable": false, "render": function (data, type, row, meta) {
+                            var markup;
+                            etat = row.garantedMC;
+                            if (etat == true)
+                                markup = "نعم";
+                            else
+                                markup = "لا";
+                            return markup;
+
+                        }
+                    },
                    
                 {
                   "data": null, "searchable": false, "sortable": false,
                   "render": function (data, type, row, meta) {
-                                     
+
+
+
                       var markup =
                           "<div class='col-md-3'>" +
                           //    "<button class='btn btn-outline-info dropdown-toggle' type='button' data-bs-toggle='dropdown' aria-expanded='false'> اختيار </button >" +
                           //    "<ul class='dropdown-menu' aria-labelledby='dropdownMenuButton'>" +
-                                    "<a class='call' style='display: flex; cursor: pointer;'  data-url=\"/DeclarationHonneurMI/Details/?requestId=" + row.id + "\"' >تفاصيل<i class='fa fa-list-alt'></i></a> " +
-                                    "<a class='call' style='display: flex;'  href=/DeclarationHonneurMI/Edit/?requestId=" + row.id + "> تحديث <i class='fa fa-pencil-alt'></i></a> " +
-                                    "<a class='call' style='display: flex; cursor: pointer;' data-url=\"/DeclarationHonneurMI/Notification/?requestId=" + row.id + "\"' >اخطار<i class='fa fa-mail-bulk'></i></a>" +
-                                    "<a class='call' style='display: flex; cursor: pointer;' data-url=\"/DeclarationHonneurMI/Treatment/?requestId=" + row.id + "\"' >معالجة<i class='fa fa-pencil-alt'></i></a>" +
-                              //"</ul>" +
-                          "</div >";
+                          "<a class='call' style='display: flex; cursor: pointer;'  data-url=\"/DeclarationHonneurMI/Details/?requestId=" + row.id + "\"' >تفاصيل<i class='fa fa-list-alt'></i></a> " +
+                          "<a class='call' style='display: flex;'  href=/DeclarationHonneurMI/Edit/?requestId=" + row.id + "> تحديث <i class='fa fa-pencil-alt'></i></a> " +
+                          "<a class='call' style='display: flex; cursor: pointer;' data-url=\"/DeclarationHonneurMI/Notification/?requestId=" + row.id + "\"' >اخطار<i class='fa fa-mail-bulk'></i></a>" +
+                          "<a class='call' style='display: flex; cursor: pointer;' data-url=\"/DeclarationHonneurMI/Treatment/?requestId=" + row.id + "\"' >معالجة<i class='fa fa-pencil-alt'></i></a>";
+
+                      //"</ul>" +
+
+                      if (row.granted === true)
+                          markup = markup + "<a class='call' style='display: flex; cursor: pointer;' data-url=\"/DeclarationHonneurMI/TreatmentMC/?requestId=" + row.id + "\"' >رد الوزارة<i class='fa fa-pencil-alt'></i></a> </div >";
+                      else
+                          markup = markup + "</div >";
+                      
                       return markup;
                   }
                 }

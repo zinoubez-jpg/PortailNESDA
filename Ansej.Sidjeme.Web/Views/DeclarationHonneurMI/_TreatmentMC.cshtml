@@ -1,0 +1,109 @@
+﻿@model Ansej.Sidjeme.Domain.Entities.DeclarationHonneurMI
+
+
+<div class="modal-header bg-light">
+    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h4 class="modal-title">معالجة الطلب من  طرف وزارة التجارة الخارجية</h4>
+
+</div>
+
+<div class="modal-body">
+    <div id="modalMessages"></div>
+
+    <form asp-action="TreatmentMC"
+          asp-controller="DeclarationHonneurMI"
+          method="post"
+          data-ajax="true"
+          data-ajax-success="TraiterDemande">
+
+        <input asp-for="Id" type="hidden" />
+
+       
+        <div class="card">
+           
+            <div class="card-body">
+
+                <div class="input-group-static mb-4 row">
+                    <label style="color: var(--accent-color);"> قبول الطلب </label>
+                    <select class="form-select select2 text-sm font-medium text-gray-700" type="checkbox" asp-for="GarantedMC" id="decisionMC" name="decisionMC" onchange="selectedItem()">
+
+                        <option value="1">مقبول</option>
+                        <option value="0">غير مقبول</option>
+                    </select>
+                </div>
+                <div class=" input-group-static mb-4 row" id="dateTraitement">
+                    <label style="color: var(--accent-color);" asp-for="GarantedMCDate" class="control-label">تاريخ الرد</label>
+                    <input asp-for="GarantedMCDate" type="date" class="form-control text-sm font-medium text-gray-700" />
+                </div>
+                <div class="form-group">
+                    <label style="color: var(--accent-color);" asp-for="ObservationMC" class="control-label"> ملاحظة </label>
+                    <input asp-for="ObservationMC" class="form-control custom-input text-sm font-medium text-gray-700"
+                          
+                           inputmode="text"
+                           autocomplete="off"
+                           pattern="^[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\u0660-\u0669\u06F0-\u06F9\s\-]+$"
+                           title="الرجاء إدخال أحرف عربية فقط "
+                           placeholder="اكتب هنا بالعربية" />
+                    <span asp-validation-for="Observation" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="form-group modal-footer">
+
+            <input type="submit" value="حفظ" class="btn btn-outline-primary" />        
+            <button class="btn btn-outline-danger" data-bs-dismiss="modal">غلق</button>
+        </div>
+    </form>
+</div>
+
+
+
+<!-- SECTION 1: INFORMATIONS PERSONNELLES -->
+@*<div class="space-y-6 mb-8 p-6 bg-indigo-50/50 rounded-lg border border-indigo-100">
+    <h2 class="text-xl font-semibold text-indigo-700 border-b pb-2 mb-4">
+        Informations Personnelles
+    </h2>
+
+    <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">
+            قبول الطلب
+        </label>
+        <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out select2" type="checkbox" asp-for="granted" id="decision" name="decision" onchange="selectedItem()">
+
+            <option value="1">مقبول</option>
+            <option value="0">غير مقبول</option>
+        </select>
+    </div>
+
+    <div id="motif">
+        <label class="block text-sm font-medium text-gray-700 mb-1">
+            سبب عدم القبول
+        </label>
+        <select asp-for="MotifTraitementId" asp-items=" ViewBag.motifTraitement"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out select2" required>
+            <option value="3" selected></option>
+        </select>
+    </div>
+
+    <div  id="dateTraitement">
+        <label asp-for="Processingdate" class="block text-sm font-medium text-gray-700 mb-1" >تاريخ التوقيع</label>
+        <input asp-for="Processingdate" type="date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out select2" />
+    </div>
+
+    <div>
+        <label asp-for="Observation" class="block text-sm font-medium text-gray-700 mb-1">ملاحظة</label>
+
+        <input asp-for="Observation" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out"
+               required
+               inputmode="text"
+               autocomplete="off"
+               pattern="^[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\u0660-\u0669\u06F0-\u06F9\s\-]+$"
+               title="الرجاء إدخال أحرف عربية فقط "
+               placeholder="اكتب هنا بالعربية" />
+        <span asp-validation-for="Observation" class="text-danger"></span>
+    </div>
+</div>*@

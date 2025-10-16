@@ -73,7 +73,19 @@
                         }
                     },
                    
-              
+
+                    {
+                        "data": null, "visible": true, "searchable": false, "render": function (data, type, row, meta) {
+                            var markup;
+                            etat = row.garantedMC;
+                            if (etat == true)
+                                markup = "نعم";
+                            else
+                                markup = "لا";
+                            return markup;
+
+                        }
+                    }
                    ],
                dom: 'lBfrtip',
           buttons: [

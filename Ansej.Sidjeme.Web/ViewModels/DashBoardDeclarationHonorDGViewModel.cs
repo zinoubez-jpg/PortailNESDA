@@ -11,6 +11,7 @@ namespace Ansej.Sidjeme.Web.ViewModels
         public int NbrDemandeNonTraite { get; set; }
         public int NbrDemandeValide { get; set; }
         public int NbrDemandeNonValide { get; set; }
+        public int NbrDemandeValideMC { get; set; }
 
         public List<DemandeParAgenceDto> DemandeParAgence { get; set; }
         public List<DemandeParAgenceDto> ValideParAgence { get; set; }

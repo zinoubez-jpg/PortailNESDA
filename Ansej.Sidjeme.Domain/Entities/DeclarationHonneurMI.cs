@@ -125,6 +125,12 @@ namespace Ansej.Sidjeme.Domain.Entities
         public bool Notified { get; set; }
         public DateTime? NotificationDate { get; set; }
 
+
+        public bool GarantedMC { get; set; }
+        public DateTime? GarantedMCDate { get; set; }
+        public string ObservationMC { get; set; }
+
+
         public virtual ICollection<DownloadFile> DownloadFiles { get; set; }
         
     }

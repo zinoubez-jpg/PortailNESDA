@@ -81,7 +81,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             dashBoard.NbrDemandeNonTraite = _declarationHonneurMIService.GetAllFiltered(x => x.RequestProcessed == false).Count;
             dashBoard.NbrDemandeValide = _declarationHonneurMIService.GetAllFiltered(x => x.granted == true && x.RequestProcessed == true).Count;
             dashBoard.NbrDemandeNonValide = _declarationHonneurMIService.GetAllFiltered(x => x.granted == false && x.RequestProcessed == true).Count;
-
+            dashBoard.NbrDemandeValideMC = _declarationHonneurMIService.GetAllFiltered(x => x.granted == true && x.GarantedMC == true && x.RequestProcessed == true).Count;
 
             var demandeParAgence = _declarationHonneurMIService.GetAll(x => x.StructureManager)
                                      .GroupBy(x => x.StructureManager.NameAr)
@@ -201,6 +201,7 @@ namespace Ansej.Sidjeme.Web.Controllers
                 dashBoard.NbrDemandeNonTraite = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManager.NameFr.Contains(structure) && x.RequestProcessed == false).Count;
                 dashBoard.NbrDemandeValide = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManager.NameFr.Contains(structure) && x.granted == true && x.RequestProcessed == true).Count;
                 dashBoard.NbrDemandeNonValide = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManager.NameFr.Contains(structure) && x.granted == false && x.RequestProcessed == true).Count;
+                dashBoard.NbrDemandeValideMC = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManager.NameFr.Contains(structure) && x.granted == true && x.GarantedMC == true && x.RequestProcessed == true).Count;
 
 
                 var demandeParSecteur = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManager.NameFr.Contains(structure), x => x.Activity, x => x.Activity.secteur)
@@ -229,6 +230,7 @@ namespace Ansej.Sidjeme.Web.Controllers
                 dashBoard.NbrDemandeNonTraite = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManager.NameAr.Contains(agence) && x.RequestProcessed == false).Count;
                 dashBoard.NbrDemandeValide = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManager.NameAr.Contains(agence) && x.granted == true && x.RequestProcessed == true).Count;
                 dashBoard.NbrDemandeNonValide = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManager.NameAr.Contains(agence) && x.granted == false && x.RequestProcessed == true).Count;
+                dashBoard.NbrDemandeValideMC = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManager.NameAr.Contains(agence) && x.granted == true && x.GarantedMC == true && x.RequestProcessed == true).Count;
 
 
                 var demandeParSecteur = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManager.NameAr.Contains(agence), x => x.Activity, x => x.Activity.secteur)
@@ -555,7 +557,56 @@ namespace Ansej.Sidjeme.Web.Controllers
           
         }
 
-       
+
+
+
+        [Authorize(Roles = "Directeur,ChefServiceAccompagnement")]
+        public IActionResult TreatmentMC(int requestId)
+        {
+            DeclarationHonneurMI request = _declarationHonneurMIService.GetById(requestId);
+
+            var motifTraitement = _motifTraitementBusiness.GetAllFiltered(x => x.Id != 1 && x.Id != 2);
+            ViewBag.motifTraitement = new SelectList(motifTraitement, nameof(MotifTraitement.Id), nameof(MotifTraitement.DesignationAr));
+
+
+            return PartialView($"_{nameof(TreatmentMC)}", request);
+        }
+
+        [Authorize(Roles = "Directeur,ChefServiceAccompagnement")]
+        [HttpPost]
+        public IActionResult TreatmentMC(DeclarationHonneurMI request, string decisionMC)
+        {
+            var model = _declarationHonneurMIService.GetById(request.Id);
+
+            if (decisionMC == "1")
+                model.GarantedMC = true;
+            else
+                model.GarantedMC = false;
+
+            model.GarantedMCDate = request.GarantedMCDate;
+            model.ObservationMC = request.ObservationMC;
+
+
+            var result = _declarationHonneurMIService.Update(model);
+            List<string> resp = new();
+            if (result.Succeeded)
+            {
+
+                resp.Add("true");
+                resp.Add(model.Id.ToString());
+                return Json(resp);
+            }
+            else
+            {
+                resp.Add("false");
+                resp.Add(result.ToBootstrapAlerts());
+                return Json(resp);
+            }
+
+
+        }
+
+
 
 
         [Authorize(Roles = "Directeur,ChefServiceAccompagnement")]
@@ -885,7 +936,7 @@ namespace Ansej.Sidjeme.Web.Controllers
         {
             var workbook = new XLWorkbook();
             IXLWorksheet worksheet = workbook.Worksheets.Add("InscritsMaterielImporte");
-            worksheet.Range("D5:Y5").AddConditionalFormat()
+            worksheet.Range("D5:AC5").AddConditionalFormat()
                      .WhenGreaterThan(20000).Fill.SetBackgroundColor(XLColor.LightGreen);
 
             worksheet.Columns("3").Width = 20;
@@ -912,10 +963,14 @@ namespace Ansej.Sidjeme.Web.Controllers
             worksheet.Columns("24").Width = 25;
             worksheet.Columns("25").Width = 15;
             worksheet.Columns("26").Width = 15;
+            worksheet.Columns("27").Width = 15;
+            worksheet.Columns("28").Width = 15;
+            worksheet.Columns("29").Width = 30;
+
 
             worksheet.Cell(3, 8).Value = "قائمة المسجلين لطلبات المعدات المستوردة";
             worksheet.Cell(3, 8).Style.Font.FontSize = 20;
-            
+
 
             worksheet.Cell(5, 4).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
             worksheet.Cell(5, 4).Value = "الوكالة الولائية";
@@ -966,7 +1021,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             worksheet.Cell(5, 19).Value = " معالج؟";
 
             worksheet.Cell(5, 20).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
-            worksheet.Cell(5, 20).Value = "موافق عليه؟";
+            worksheet.Cell(5, 20).Value = "موافقة الوكالة؟";
 
             worksheet.Cell(5, 21).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
             worksheet.Cell(5, 21).Value = "تاريخ الموافقة";
@@ -986,6 +1041,14 @@ namespace Ansej.Sidjeme.Web.Controllers
             worksheet.Cell(5, 26).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
             worksheet.Cell(5, 26).Value = "تاريخ الاخطار";
 
+            worksheet.Cell(5, 27).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+            worksheet.Cell(5, 27).Value = "رد الوزارة";
+
+            worksheet.Cell(5, 28).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+            worksheet.Cell(5, 28).Value = "تاريخ الرد";
+
+            worksheet.Cell(5, 29).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+            worksheet.Cell(5, 29).Value = "ملاحظة الوزارة";
 
             var user = await _userService.GetUserEagerLoadedAsync(User);
             var userStructure = await _userService.GetUserStructureAsync(user.Id);
@@ -996,9 +1059,9 @@ namespace Ansej.Sidjeme.Web.Controllers
             List<DeclarationHonneurMI> list = new();
 
             if (userStructure.Niveau.Id == 3)
-               list = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManagerId==structure, _declarationHonneurMIService.GetDefaultLoadProperties());
+                list = _declarationHonneurMIService.GetAllFiltered(x => x.StructureManagerId == structure, _declarationHonneurMIService.GetDefaultLoadProperties());
             else
-               list = _declarationHonneurMIService.GetAll(_declarationHonneurMIService.GetDefaultLoadProperties());
+                list = _declarationHonneurMIService.GetAll(_declarationHonneurMIService.GetDefaultLoadProperties());
 
 
 
@@ -1037,7 +1100,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
                 worksheet.Cell(index + 5, 14).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
                 worksheet.Cell(index + 5, 14).Value = list[index - 1].Adresse + " - " + list[index - 1].Wilaya.DesignationAr;
-                
+
                 worksheet.Cell(index + 5, 15).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
                 worksheet.Cell(index + 5, 15).Value = list[index - 1].Phone;
 
@@ -1071,15 +1134,15 @@ namespace Ansej.Sidjeme.Web.Controllers
                 else
                     worksheet.Cell(index + 5, 21).Value = "/";
 
-                
+
                 worksheet.Cell(index + 5, 22).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
                 worksheet.Cell(index + 5, 22).Value = list[index - 1].Activity.DesignationAr;
-               
+
 
                 if (list[index - 1].MotifTraitementId != null)
                 {
-                worksheet.Cell(index + 5, 23).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
-                worksheet.Cell(index + 5, 23).Value = list[index - 1].MotifTraitement.DesignationAr;
+                    worksheet.Cell(index + 5, 23).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+                    worksheet.Cell(index + 5, 23).Value = list[index - 1].MotifTraitement.DesignationAr;
                 }
 
 
@@ -1104,7 +1167,31 @@ namespace Ansej.Sidjeme.Web.Controllers
                     worksheet.Cell(index + 5, 26).Value = "/";
                 }
 
+                worksheet.Cell(index + 5, 27).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+                if (list[index - 1].granted == true)
+                {
+                    if (list[index - 1].GarantedMC == true)
+                           worksheet.Cell(index + 5, 27).Value = "مقبول";
+                    else
+                          worksheet.Cell(index + 5, 27).Value = "غير مقبول";
+                }
+                 else
+                    worksheet.Cell(index + 5, 27).Value = "/";
 
+
+
+            worksheet.Cell(index + 5, 28).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+                if (list[index - 1].GarantedMCDate != null)
+                    worksheet.Cell(index + 5, 28).Value = list[index - 1].GarantedMCDate;
+                else
+                    worksheet.Cell(index + 5, 28).Value = "/";
+
+
+                worksheet.Cell(index + 5, 29).Style.Border.OutsideBorder = XLBorderStyleValues.Medium;
+                if (list[index - 1].ObservationMC != null)
+                    worksheet.Cell(index + 5, 29).Value = list[index - 1].ObservationMC;
+                else
+                    worksheet.Cell(index + 5, 29).Value = "/";
             }
 
             string contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";

@@ -399,6 +399,12 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<bool>("GarantedMC")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("GarantedMCDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("GenderId")
                         .HasColumnType("int");
 
@@ -430,6 +436,9 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Observation")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ObservationMC")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
