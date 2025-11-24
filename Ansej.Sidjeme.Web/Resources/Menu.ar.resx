@@ -249,4 +249,10 @@
   <data name="EJournal" xml:space="preserve">
     <value>مجلة الوكالة</value>
   </data>
+  <data name="Anglais" xml:space="preserve">
+    <value>الانجليزية</value>
+  </data>
+  <data name="Arabe" xml:space="preserve">
+    <value>العربية</value>
+  </data>
 </root>

@@ -136,7 +136,7 @@
     <value>السن</value>
   </data>
   <data name="Agence" xml:space="preserve">
-    <value>وكالة</value>
+    <value>الوكالة الوطنية لدعم و تنمية المقاولاتية</value>
   </data>
   <data name="AgenceId" xml:space="preserve">
     <value>مكان التعيين</value>
@@ -536,5 +536,29 @@
   </data>
   <data name="Sessions" xml:space="preserve">
     <value>الجلسات</value>
+  </data>
+  <data name="bienvenue" xml:space="preserve">
+    <value>مرحبًا بكم في الموقع الرسمي للوكالة، فضاؤكم لمرافقة الأفكار وتحويلها إلى مشاريع ناجحة.</value>
+  </data>
+  <data name="CentreComunication" xml:space="preserve">
+    <value>مركز الإتصالات</value>
+  </data>
+  <data name="frequente" xml:space="preserve">
+    <value>الشائعة</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>الأسئلة</value>
+  </data>
+  <data name="AdresseDG" xml:space="preserve">
+    <value>شارع محمد ارزقي بن بوزيد، العناصر</value>
+  </data>
+  <data name="centreAppel" xml:space="preserve">
+    <value>مركز الإتصالات</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>تواصل معنا</value>
+  </data>
+  <data name="wilayaAdresse" xml:space="preserve">
+    <value>الجزائر العاصمة، الجزائر</value>
   </data>
 </root>

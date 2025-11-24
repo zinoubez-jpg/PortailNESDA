@@ -426,4 +426,34 @@
   <data name="TypesSession" xml:space="preserve">
     <value>Types session</value>
   </data>
+  <data name="Agence" xml:space="preserve">
+    <value>National Entrepreneurship Support and Development Agency NESDA</value>
+  </data>
+  <data name="bienvenue" xml:space="preserve">
+    <value>Welcome to the official website of the Agency, your space for guiding your ideas toward successful projects</value>
+  </data>
+  <data name="CentreComunication" xml:space="preserve">
+    <value>Contact Center</value>
+  </data>
+  <data name="frequente" xml:space="preserve">
+    <value>Frequently asked</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>questions</value>
+  </data>
+  <data name="AdresseDG" xml:space="preserve">
+    <value>8, Mohamed Arzeki Ben Bouzid Street,</value>
+  </data>
+  <data name="centreAppel" xml:space="preserve">
+    <value>Contact Center</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="wilayaAdresse" xml:space="preserve">
+    <value>El Anasser – Algiers</value>
+  </data>
 </root>

@@ -82,28 +82,35 @@ namespace Ansej.Sidjeme.Web
                 options.ResourcesPath = "Resources";
             });
 
-            var cultures = new List<CultureInfo>
-            {
-                new CultureInfo("ar-DZ"),
-                new CultureInfo("fr"),
-                new CultureInfo("en")
-            };
 
+            var cultures = new List<CultureInfo>
+                {
+                    new CultureInfo("ar-DZ"),
+                    new CultureInfo("en")
+                };
+
+            //TODO: Configure RequestLocalizationOptions as defined with the TODO comments.
             services.Configure<RequestLocalizationOptions>(options =>
             {
-                var defaultCulture = new CultureInfo("ar-DZ");
-
+                //TODO: Set the SupportedCultures list
                 options.SupportedCultures = cultures;
+
+                //TODO: Set SupportedUICultures list
                 options.SupportedUICultures = cultures;
-                options.DefaultRequestCulture = new RequestCulture(defaultCulture);
 
-                options.RequestCultureProviders.Clear();
+                //TODO: Define DefaultRequestCulture to be fr-FR
+                options.DefaultRequestCulture = new RequestCulture("ar-DZ");
 
-                options.RequestCultureProviders.Add(new CustomRequestCultureProvider(context =>
+                // Optionnel : ajouter des providers de détection de langue
+                options.RequestCultureProviders = new List<IRequestCultureProvider>
                 {
-                    return Task.FromResult(new ProviderCultureResult("ar-DZ", "ar-DZ"));
-                }));
+                    new QueryStringRequestCultureProvider(),
+                    new CookieRequestCultureProvider(),
+                    new AcceptLanguageHeaderRequestCultureProvider()
+                };
             });
+
+           
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IOptions<RequestLocalizationOptions> locOptions)

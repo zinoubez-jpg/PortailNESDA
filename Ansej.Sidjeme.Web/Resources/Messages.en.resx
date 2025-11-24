@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ACCOMPAGNEMENT" xml:space="preserve">
-    <value>ACCOMPAGNEMENT</value>
+    <value>Accompaniment</value>
   </data>
   <data name="ACCOMPAGNEMENTDETAILS" xml:space="preserve">
-    <value>Un accompagnement durant tout le processus de création et d'exploitation de votre microentreprise</value>
+    <value>The Agency ensures support to idea holders and owners of investment projects in micro-enterprises at all stages from the conception of the entrepreneurial idea to the launch of the micro-enterprise, and even beyond</value>
   </data>
   <data name="ActDetails1" xml:space="preserve">
     <value>Durant le mois sacré du Ramadhan, Nesda organise des expo-vente des microentreprises.</value>
@@ -136,7 +136,7 @@
     <value>Activité</value>
   </data>
   <data name="Actualités" xml:space="preserve">
-    <value>Actualités</value>
+    <value>News</value>
   </data>
   <data name="AgenceNationaledAppui" xml:space="preserve">
     <value>Agence Nationale d'Appui</value>
@@ -161,15 +161,16 @@ et Antennes Locales</value>
     <value>Antenne Tissemsilt</value>
   </data>
   <data name="AproposD2" xml:space="preserve">
-    <value>azdzefezrgtyhjrjyukuilyolioumumppmomuo</value>
+    <value>The Agency and its mechanism have recently undergone significant and important developments, reflecting a series of reforms aimed at a radical shift from a purely administrative approach in processing files to a coherent economic approach, in addition to improving efficiency and performance in management, particularly regarding financial risk management, as well as raising awareness of entrepreneurial thinking and enhancing the skills and competencies of young people. The aim is to encourage the creation of high-performing micro-enterprises that are resilient and generate sustainable added value in the national economy.</value>
   </data>
   <data name="AproposD3" xml:space="preserve">
-    <value>hjhjkqsdhjqshdjkqhsjkdhqsjkhdjkqshdjkqhdjhqsjkdhqksjdhkjqshdjkqsd</value>
+    <value>The National Entrepreneurship Support and Development Agency comprises 51 wilaya agencies, as well as many branches distributed across the national territory, with more than 170 local branches. In addition, there are presence points through more than 200 Entrepreneurship Development Centers, distributed across various universities, institutes, and schools in the higher education sector, as well as institutes and institutions in the vocational education and training sector.</value>
   </data>
   <data name="Aproposdetails" xml:space="preserve">
-    <value>Promouvoir un écosystème entrepreneurial favorisant la création,                 le financement et le développement de microentreprises performantes,
- résilientes et créatrices de valeur ajoutée durable pour les citoyens
- et pour la nation.</value>
+    <value>The National Entrepreneurship Support and Development Agency is a government body of a special nature, placed under the tutelage of the Ministry of Knowledge Economy, Start-ups, and Micro-Enterprises. It manages a mechanism with an economic approach, aimed at supporting project holders in creating and expanding micro-enterprises in the production of goods and services, with the goal of generating wealth and sustainable employment opportunities. The Agency’s tasks focus on the following core activities</value>
+  </data>
+  <data name="askUs" xml:space="preserve">
+    <value>Reach out to us directly—we’ll be glad to answer all your questions.</value>
   </data>
   <data name="Avantage" xml:space="preserve">
     <value>Avantages</value>
@@ -189,8 +190,17 @@ et Antennes Locales</value>
   <data name="BTPT2" xml:space="preserve">
     <value>notre fondation</value>
   </data>
+  <data name="CentreComunicationD1" xml:space="preserve">
+    <value>Nasda’s call center provides a direct communication channel, and works to respond quickly to your concerns and guidance</value>
+  </data>
+  <data name="CentreComunicationD2" xml:space="preserve">
+    <value>Through this channel, we seek to enhance transparency and improve the user experience</value>
+  </data>
   <data name="commentpeut-onvousaider?" xml:space="preserve">
     <value>comment peut-on vous aider?</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact Us Now – Our team is ready to serve you around the clock</value>
   </data>
   <data name="Coopérations" xml:space="preserve">
     <value>Coopérations</value>
@@ -217,13 +227,13 @@ et Antennes Locales</value>
     <value>Entreprenariat</value>
   </data>
   <data name="Etapes" xml:space="preserve">
-    <value>Principales étapes</value>
+    <value>Main stages</value>
   </data>
   <data name="etdeDéveloppement" xml:space="preserve">
     <value>et de Développement</value>
   </data>
   <data name="Evaluation" xml:space="preserve">
-    <value>Evaluation</value>
+    <value>Assessment</value>
   </data>
   <data name="Expérience" xml:space="preserve">
     <value>Expérience</value>
@@ -232,30 +242,29 @@ et Antennes Locales</value>
     <value>Fonds de Garantie</value>
   </data>
   <data name="FINANCEMENT" xml:space="preserve">
-    <value>FINANCEMENT</value>
+    <value>Funding</value>
   </data>
   <data name="FinancementAlloue" xml:space="preserve">
     <value>Financement alloué aux Microentreprises</value>
   </data>
   <data name="FINANCEMENTDETAIS" xml:space="preserve">
-    <value>Des formules de financement par des prêts non rémunérés (PNR)
- adaptées pour la création et l'extension de votre activité microentreprise</value>
+    <value>The Agency grants financial subsidies according to various financing formulas, in collaboration with its partners from the public banking sector, in addition to tax privileges to the beneficiaries of the Agency's mechanism, in accordance with the legislative regulation in force</value>
   </data>
   <data name="FORMATION" xml:space="preserve">
-    <value>FORMATION</value>
+    <value>Training</value>
   </data>
   <data name="FORMATIONDETAILS" xml:space="preserve">
-    <value>Des formations sur l'entreprenariat et la gestion
-des microentreprises à travers les CDE</value>
+    <value>Through its training programs, the Agency aims to promote and spread the entrepreneurial thinking among young people by organizing training sessions, in collaboration with its partners, within Entrepreneurship Development Centers, on skills and knowledge related to entrepreneurship and the creation and management of micro-enterprises</value>
   </data>
   <data name="Formationenligne" xml:space="preserve">
-    <value>Formation en ligne</value>
+    <value>Online Training</value>
   </data>
   <data name="Impact70" xml:space="preserve">
     <value>Impact 70</value>
   </data>
   <data name="Impact70Details" xml:space="preserve">
-    <value>Le programme national de NESDA destiné à la microentreprise engagée dans le développement local</value>
+    <value>The program was implemented in accordance with the commitments made by President of the republic Mr. Abdelmadjid Tebboune, to develop “a new economic model based on diversified growth and knowledge economy.” Those commitments reflect a strong dedication to youth empowerment and the promotion of entrepreneurship, encouraging young people to realize their projects. They are consistent with his strategic vision to raise the challenge for economic resurgence in order to build a productive, diversified economy—one that generates value, provides quality jobs, and drives sustainable local development. 
+The programme is a contribution to strengthening the role of local communities as a locomotive in national development</value>
   </data>
   <data name="Inaugurationnouveausiège" xml:space="preserve">
     <value>Inauguration nouveau siège</value>
@@ -270,10 +279,10 @@ des microentreprises à travers les CDE</value>
     <value>Produisez Local.</value>
   </data>
   <data name="Inscription" xml:space="preserve">
-    <value>Inscription</value>
+    <value>Subscription</value>
   </data>
   <data name="Inscriptionenligne" xml:space="preserve">
-    <value>Inscription en ligne</value>
+    <value>Online Registration</value>
   </data>
   <data name="InscriptionsCDE" xml:space="preserve">
     <value>Inscriptions CDE</value>
@@ -288,10 +297,13 @@ des microentreprises à travers les CDE</value>
     <value>Inscriptions marchés publique</value>
   </data>
   <data name="Lancement" xml:space="preserve">
-    <value>Lancement</value>
+    <value>Launch</value>
   </data>
   <data name="Lesmisesàjourrécentes" xml:space="preserve">
-    <value>Les mises à jour récentes</value>
+    <value>Find NESDA news / latest updates</value>
+  </data>
+  <data name="lireSuite" xml:space="preserve">
+    <value>Read more</value>
   </data>
   <data name="Marketplace" xml:space="preserve">
     <value>Market place</value>
@@ -321,7 +333,7 @@ des microentreprises à travers les CDE</value>
     <value>Nos Partenaires</value>
   </data>
   <data name="Nosservices" xml:space="preserve">
-    <value>Nos services</value>
+    <value>Our Services</value>
   </data>
   <data name="Organisation" xml:space="preserve">
     <value>Organisation</value>
@@ -348,29 +360,112 @@ des microentreprises à travers les CDE</value>
     <value>Projets Microentreprises Financés</value>
   </data>
   <data name="Q1" xml:space="preserve">
-    <value>Quelles sont les conditions d'éligibilité pour le dispositif NESDA ?</value>
+    <value>Can I establish an enterprise only in my home wilaya, or am I allowed to do so in any wilaya?</value>
+  </data>
+  <data name="Q10" xml:space="preserve">
+    <value>Does NESDA provide support for projects that target innovation?</value>
+  </data>
+  <data name="Q11" xml:space="preserve">
+    <value>Can I create a project in a field where I don’t have a degree but have experience?</value>
+  </data>
+  <data name="Q12" xml:space="preserve">
+    <value>How long does the application review process take to obtain financing?</value>
+  </data>
+  <data name="Q13" xml:space="preserve">
+    <value>What should I do if my application for financing is rejected?</value>
+  </data>
+  <data name="Q14" xml:space="preserve">
+    <value>Does NESDA help in finding partners or investors?</value>
+  </data>
+  <data name="Q15" xml:space="preserve">
+    <value>What is the maximum amount of financing that can be obtained?</value>
+  </data>
+  <data name="Q16" xml:space="preserve">
+    <value>Can I repay the loan before the due date without penalties?</value>
+  </data>
+  <data name="Q17" xml:space="preserve">
+    <value>Does the agency provide opportunities to participate in trade fairs or economic events?</value>
   </data>
   <data name="Q2" xml:space="preserve">
-    <value>Quelles sont les démarches nécessaires pour créer une microentreprise ?</value>
+    <value>What sectors and activities are eligible for financing under NESDA?</value>
   </data>
   <data name="Q3" xml:space="preserve">
-    <value>Quels sont les documents composant le dossier à déposer à NESDA ?</value>
+    <value>Is training mandatory to benefit from the support?</value>
   </data>
   <data name="Q4" xml:space="preserve">
-    <value>Quelles sont les conditions pour bénéficier de l'extension de mon activité ?</value>
+    <value>Is there any accompaniment available after the launch of the project to help me ensure its success?</value>
+  </data>
+  <data name="Q5" xml:space="preserve">
+    <value>Is there a required period that must pass after the project’s establishment before applying for an expansion?</value>
+  </data>
+  <data name="Q6" xml:space="preserve">
+    <value>How can I track the progress of my application after submission?</value>
+  </data>
+  <data name="Q7" xml:space="preserve">
+    <value>Should the project idea be related to the field study or the training certificate?</value>
+  </data>
+  <data name="Q8" xml:space="preserve">
+    <value>Is registration with the National Employment Agency (ANEM) required to be eligible for support?</value>
+  </data>
+  <data name="Q9" xml:space="preserve">
+    <value>Can individuals with special needs benefit from special conditions?</value>
   </data>
   <data name="R1" xml:space="preserve">
-    <value>Les conditions d'éligibilité au dispositif de NESDA sont
-                                        : l'âge, la compétence reconnue (formation CDE, attestation.)</value>
+    <value>Yes, the project holder has the right to establish his project in any wilaya he wishes, as long as he provides a document proving his presence there.</value>
+  </data>
+  <data name="R10" xml:space="preserve">
+    <value>The agency aims to create projects that will cover the local market and encourage it to access global markets.</value>
+  </data>
+  <data name="R11" xml:space="preserve">
+    <value>The Algerian state has established several official bodies concerned with proving and validating acquired professional experience.</value>
+  </data>
+  <data name="R12" xml:space="preserve">
+    <value>A specific period cannot be determined, given that there are several criteria that vary depending on the financing method.</value>
+  </data>
+  <data name="R13" xml:space="preserve">
+    <value>Contact the officer responsible for your file to understand the procedures to follow based on the reason for the rejection.</value>
+  </data>
+  <data name="R14" xml:space="preserve">
+    <value>The project holder can benefit from projects within the framework of agreements concluded with various economic sectors.</value>
+  </data>
+  <data name="R15" xml:space="preserve">
+    <value>The total value of the project cannot exceed ten (10) million Algerian dinars.</value>
+  </data>
+  <data name="R16" xml:space="preserve">
+    <value>Yes, the project holder can pay the financial dues related to his project before the agreed deadlines.</value>
+  </data>
+  <data name="R17" xml:space="preserve">
+    <value>The agency works to encourage new projects and enterprises by promoting them through various events.</value>
   </data>
   <data name="R2" xml:space="preserve">
-    <value>Pour la création d'une microentreprise : formation CDE, inscription en ligne, dépôt dossier et entretien, CSVF.</value>
+    <value>NESDA is responsible for financing all activities in various sectors (Industry, Production, Agriculture, Services, Crafts and Liberal Professions…etc.)</value>
   </data>
   <data name="R3" xml:space="preserve">
-    <value>Le dossier est composé des documents suivants : business plan, facture proforma.</value>
+    <value>Yes, training in entrepreneurship provided by entrepreneurship development centers (CDE) is a prerequisite for benefiting from the subsidies and privileges granted under the agency’s mechanism.</value>
   </data>
   <data name="R4" xml:space="preserve">
-    <value>Les conditions communes pour bénéficier de l'extension d'activité sont : l'âge, la justification de 2 années d'activité effective.</value>
+    <value>One of the agency’s key missions is to provide accompaniment to project holders both before and after the implementation of their projects.</value>
+  </data>
+  <data name="R5" xml:space="preserve">
+    <value>One of the conditions for benefiting from project expansion is the submission of the enterprise’s annual reports for the past two years.</value>
+  </data>
+  <data name="R6" xml:space="preserve">
+    <value>Through the project holder's space which is dedicated to project holder to manage his information, monitor the progress of his project, and complete various procedures via the electronic platform.</value>
+  </data>
+  <data name="R7" xml:space="preserve">
+    <value>The project holder can pursue any viable and profitable activity with market potential, as long as they have the skills to manage it successfully.</value>
+  </data>
+  <data name="R8" xml:space="preserve">
+    <value>No. However, those registered with the employment agency can benefit from subsidies and privileges granted under the agency's mechanism to support the creation of activities.</value>
+  </data>
+  <data name="R9" xml:space="preserve">
+    <value>The agency has put in place simplified and easy procedures that take into account all categories of project holders.</value>
+  </data>
+  <data name="reponse" xml:space="preserve">
+    <value>We have answered the most common questions below. If you do not find the information you are looking for, please do not hesitate to contact us</value>
+  </data>
+  <data name="responseNotFound" xml:space="preserve">
+    <value>Didn’t you find an answer to your question?</value>
   </data>
   <data name="Scoring" xml:space="preserve">
     <value>Scoring</value>
@@ -378,8 +473,8 @@ des microentreprises à travers les CDE</value>
   <data name="Services" xml:space="preserve">
     <value>Secteur des services</value>
   </data>
-  <data name="Servicesdigitaux" xml:space="preserve">
-    <value>Services digitaux</value>
+  <data name="ServicesdigitauxDetail" xml:space="preserve">
+    <value>NESDA agency offers a range of innovative digital services designed to support entrepreneurship and facilitate various administrative procedures for youth</value>
   </data>
   <data name="ServicesT1" xml:space="preserve">
     <value>Offrez Solution &amp;</value>
@@ -397,9 +492,9 @@ des microentreprises à travers les CDE</value>
     <value>Nesda Sous-Traitance</value>
   </data>
   <data name="Suivivotredemande" xml:space="preserve">
-    <value>Suivi votre demande</value>
+    <value>Track your application</value>
   </data>
   <data name="Àpropos" xml:space="preserve">
-    <value>À propos</value>
+    <value>About the Agency</value>
   </data>
 </root>
