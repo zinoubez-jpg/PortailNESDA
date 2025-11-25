@@ -7,17 +7,71 @@
 @inject IViewLocalizer Localizer
 @inject IOptions<RequestLocalizationOptions> LocOptions
 @inject IStringLocalizer<Menu> menuLocalizer
-
-
+@inject Dictionary<string, string> CultureDisplayNames
 
 @{
     var requestCulture = Context.Features.Get<IRequestCultureFeature>();
     var cultureItems = LocOptions.Value.SupportedUICultures
-        .Select(c => new SelectListItem { Value = c.Name, Text = c.DisplayName })
+        .Select(c => new SelectListItem
+        {
+            Value = c.Name,
+            Text = CultureDisplayNames.ContainsKey(c.Name) ? CultureDisplayNames[c.Name] : c.DisplayName
+        })
         .ToList();
     var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}";
 }
 
+<style>
+    .language-selector {
+        position: relative;
+        display: inline-block;
+    }
+
+    #selectLanguage {
+        margin: 0;
+    }
+
+        #selectLanguage select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: #fff;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 8px 32px 8px 12px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #2d3748;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L2 4h8z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 12px;
+        }
+
+            #selectLanguage select:hover {
+                border-color: #cbd5e0;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            #selectLanguage select:focus {
+                outline: none;
+                border-color: #4299e1;
+                box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+            }
+    /* Version mobile */
+    @@media (max-width: 768px) {
+        .language-selector {
+            width: 100%;
+        }
+
+        #selectLanguage select {
+            width: 100%;
+            font-size: 16px; /* Évite le zoom sur iOS */
+        }
+    }
+</style>
 
 <div class="language-selector">
     <form id="selectLanguage" asp-controller="Home" asp-action="SetLanguage" asp-route-returnUrl="@returnUrl" method="post">
@@ -28,8 +82,6 @@
         </select>
     </form>
 </div>
-
-
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {

@@ -76,18 +76,39 @@ namespace Ansej.Sidjeme.Web
             services.AddHttpClient();
             services.AddScoped<IRecaptchaService,RecaptchaService>();
 
-
             services.Configure<LocalizationOptions>(options =>
             {
                 options.ResourcesPath = "Resources";
             });
 
-
             var cultures = new List<CultureInfo>
+            {
+                new CultureInfo("ar-DZ"),
+                new CultureInfo("en")
+            };
+
+            // Dictionnaire pour mapper les codes culture aux noms d'affichage
+            var cultureDisplayNames = new Dictionary<string, string>
+            {
+                { "ar-DZ", "«·⁄—»Ì…" },
+                { "en", "Anglais" }
+            };
+
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                options.SupportedCultures = cultures;
+                options.SupportedUICultures = cultures;
+                options.DefaultRequestCulture = new RequestCulture("ar-DZ");
+                options.RequestCultureProviders = new List<IRequestCultureProvider>
                 {
-                    new CultureInfo("ar-DZ"),
-                    new CultureInfo("en")
+                    new QueryStringRequestCultureProvider(),
+                    new CookieRequestCultureProvider(),
+                    new AcceptLanguageHeaderRequestCultureProvider()
                 };
+            });
+
+            // Stocker le dictionnaire dans les services pour l'utiliser dans la vue
+            services.AddSingleton(cultureDisplayNames);
 
             //TODO: Configure RequestLocalizationOptions as defined with the TODO comments.
             services.Configure<RequestLocalizationOptions>(options =>
@@ -109,8 +130,6 @@ namespace Ansej.Sidjeme.Web
                     new AcceptLanguageHeaderRequestCultureProvider()
                 };
             });
-
-           
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IOptions<RequestLocalizationOptions> locOptions)
