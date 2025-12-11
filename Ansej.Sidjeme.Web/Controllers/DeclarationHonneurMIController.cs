@@ -859,7 +859,7 @@ namespace Ansej.Sidjeme.Web.Controllers
         private void InitializeListViewBags()
         {
             var wilayas = _wilayaBusinessService.GetAll();
-            var structures = _structureManagerBusiness.GetAllFiltered(x => x.ParentStructureManagerId == 3 && x.Id < 54);
+            var structures = _structureManagerBusiness.GetAllFiltered(x => x.ParentStructureManagerId == 3 && x.Id <= 54);
             var secteurs = _secteurActiviteBusiness.GetAll();
             var formesJuridique = _formeJuridiqueBusiness.GetAll();
             var genre = _genreBusinessService.GetAll();
