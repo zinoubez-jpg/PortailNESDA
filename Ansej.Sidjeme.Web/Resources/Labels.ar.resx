@@ -690,4 +690,37 @@
   <data name="TypesSession" xml:space="preserve">
     <value />
   </data>
+  <data name="AgenceNesda" xml:space="preserve">
+    <value>الوكالة الوطنية لدعم وتنمية المقاولاتية (NESDA)</value>
+  </data>
+  <data name="CentreCDE" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية (CDE)</value>
+  </data>
+  <data name="Directeur" xml:space="preserve">
+    <value>بلال عشاشة</value>
+  </data>
+  <data name="MotAgence" xml:space="preserve">
+    <value>الوكالة</value>
+  </data>
+  <data name="MotVisiteurs" xml:space="preserve">
+    <value>زوّار موقعنا الأعزاء</value>
+  </data>
+  <data name="NesdaKPI" xml:space="preserve">
+    <value>NESDA KPI,</value>
+  </data>
+  <data name="NesdaRating" xml:space="preserve">
+    <value>NESDA Rating</value>
+  </data>
+  <data name="OutilsNumeriques" xml:space="preserve">
+    <value>مخطط الاعمال الرقمي، مركز الاتصال، منصات رقمية</value>
+  </data>
+  <data name="PosteDirecteur" xml:space="preserve">
+    <value>المدير العام</value>
+  </data>
+  <data name="verbepresentation" xml:space="preserve">
+    <value>تشهد</value>
+  </data>
+  <data name="VerbePresentation1" xml:space="preserve">
+    <value>في هذا الصدد، تضع</value>
+  </data>
 </root>

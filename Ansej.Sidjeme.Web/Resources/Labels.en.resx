@@ -459,4 +459,37 @@
   <data name="MotDG" xml:space="preserve">
     <value>The Director General 's Speech</value>
   </data>
+  <data name="AgenceNesda" xml:space="preserve">
+    <value>the National Entrepreneurship Support and Development Agency (NESDA)</value>
+  </data>
+  <data name="CentreCDE" xml:space="preserve">
+    <value>Entrepreneurship Development Centers (CDE)</value>
+  </data>
+  <data name="Directeur" xml:space="preserve">
+    <value>Bilal Achacha</value>
+  </data>
+  <data name="MotAgence" xml:space="preserve">
+    <value>the agency</value>
+  </data>
+  <data name="MotVisiteurs" xml:space="preserve">
+    <value>Dear visitors of our website</value>
+  </data>
+  <data name="NesdaKPI" xml:space="preserve">
+    <value>“NESDA KPI”</value>
+  </data>
+  <data name="NesdaRating" xml:space="preserve">
+    <value>“NESDA Rating”</value>
+  </data>
+  <data name="OutilsNumeriques" xml:space="preserve">
+    <value>Digital Business Plan, a call center,</value>
+  </data>
+  <data name="PosteDirecteur" xml:space="preserve">
+    <value>The Director General</value>
+  </data>
+  <data name="verbepresentation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VerbePresentation1" xml:space="preserve">
+    <value>In this regard</value>
+  </data>
 </root>

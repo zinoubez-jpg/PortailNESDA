@@ -211,11 +211,41 @@ et Antennes Locales</value>
   <data name="CSVF" xml:space="preserve">
     <value>CSVF</value>
   </data>
+  <data name="date" xml:space="preserve">
+    <value>Since 2024</value>
+  </data>
   <data name="de l" xml:space="preserve">
     <value>de l'</value>
   </data>
   <data name="Depuis" xml:space="preserve">
     <value>Depuis</value>
+  </data>
+  <data name="DescriptionAgenceP1" xml:space="preserve">
+    <value>has undergone a significant momentum, marking a crucial turning point in the national system for supporting micro-enterprise creation. This reflects a major strategic shift, moving from an administrative model focused on youth employment to an economic mechanism centered on the creation of successful and sustainable micro-enterprises. This new approach is based on providing greater support to project holders, aiming to help their ideas emerge, mature, and transform into profitable and viable projects.</value>
+  </data>
+  <data name="DescriptionAgenceP2" xml:space="preserve">
+    <value>positions itself as a real engine of economic transformation, by contributing effectively to the efforts of public authorities to reduce the import bill, diversify the economy, increase its resilience and generate high value-added job opportunities</value>
+  </data>
+  <data name="DescriptionAgenceP2,1" xml:space="preserve">
+    <value>The strategic shift in the agency’s role has required a number of adjustments, on the one hand, on the external level, through the establishment of strategic partnerships with key sectors in the entrepreneurial ecosystem, namely higher education and scientific research, as well as vocational training, to create and promote</value>
+  </data>
+  <data name="DescriptionAgenceP2,2" xml:space="preserve">
+    <value>) throughout the country, in addition to important partnerships with social and economic actors in key sectors such as Employment, Insurance and Agriculture</value>
+  </data>
+  <data name="DescriptionAgenceP3,1" xml:space="preserve">
+    <value>On the internal front, the agency strengthened its project evaluation and risk management capabilities by implementing training programs for its staff and adopting a new internal organization that ensures a coherent strategy and reinforces the agency's core functions, such as planning, support, evaluation, collection, and resource management. In addition, the agency has launched digital tools such as a</value>
+  </data>
+  <data name="DescriptionAgenceP3,2" xml:space="preserve">
+    <value>digital platforms such as</value>
+  </data>
+  <data name="DescriptionAgenceP3,3" xml:space="preserve">
+    <value>project evaluation platform and</value>
+  </data>
+  <data name="DescriptionAgenceP3,4" xml:space="preserve">
+    <value>performance monitoring platform, in addition to its existing website</value>
+  </data>
+  <data name="DescriptionAgenceP4" xml:space="preserve">
+    <value>The agency intends to continue the dynamic development and transformation of its operational framework, aiming to enhance the "trust" of project holders and encourage the integration of micro and small enterprises into national value chains. The ultimate goal is to enable the agency to fully play its role as a catalyst for economic transformation in service of national development.</value>
   </data>
   <data name="desExpo-Vente" xml:space="preserve">
     <value>des Expo-Vente</value>
