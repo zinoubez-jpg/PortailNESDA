@@ -456,4 +456,7 @@
   <data name="wilayaAdresse" xml:space="preserve">
     <value>El Anasser – Algiers</value>
   </data>
+  <data name="MotDG" xml:space="preserve">
+    <value>The Director General 's Speech</value>
+  </data>
 </root>

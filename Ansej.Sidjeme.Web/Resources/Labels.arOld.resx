@@ -121,573 +121,444 @@
     <value>Actuelle</value>
   </data>
   <data name="AddDemandeSession" xml:space="preserve">
-    <value>Ajouter Demande a la Session</value>
+    <value>إضافة طلب إلى الجلسة</value>
   </data>
   <data name="AdressAr" xml:space="preserve">
-    <value>Adresse en Arab</value>
+    <value>العنوان بالعربية</value>
   </data>
   <data name="Adresse" xml:space="preserve">
-    <value>Adresse</value>
+    <value>العنوان</value>
   </data>
   <data name="AdressFr" xml:space="preserve">
-    <value>Adresse en Français</value>
+    <value>العنوان بالفرنسية</value>
   </data>
   <data name="Age" xml:space="preserve">
-    <value>Age</value>
+    <value>السن</value>
   </data>
   <data name="Agence" xml:space="preserve">
-    <value>Agence</value>
+    <value>الوكالة الوطنية لدعم و تنمية المقاولاتية</value>
   </data>
   <data name="AgenceId" xml:space="preserve">
-    <value>Agence</value>
+    <value>مكان التعيين</value>
   </data>
   <data name="Agences" xml:space="preserve">
-    <value>Agences</value>
+    <value>الوكالات</value>
   </data>
   <data name="Annuaire" xml:space="preserve">
-    <value>Annuaire</value>
+    <value>دليل الهاتف</value>
   </data>
   <data name="AssocieDemandeSession" xml:space="preserve">
-    <value>Associe une demande a la Session</value>
+    <value>تقديم طلب إلى الجلسة</value>
   </data>
   <data name="Banque" xml:space="preserve">
-    <value>Banque</value>
+    <value>بنك</value>
   </data>
   <data name="BanqueId" xml:space="preserve">
-    <value>Banque</value>
+    <value>البنك</value>
   </data>
   <data name="Banques" xml:space="preserve">
-    <value>Banques</value>
+    <value>البنوك</value>
   </data>
   <data name="ChoisiFichier" xml:space="preserve">
-    <value>sélectionner fichiers ...</value>
+    <value>اختر الملف</value>
   </data>
   <data name="Code" xml:space="preserve">
-    <value>Code</value>
+    <value>الرمز</value>
   </data>
   <data name="Commitee" xml:space="preserve">
-    <value>Comité Participation</value>
+    <value> لجنة مشاركة</value>
   </data>
   <data name="Commitees" xml:space="preserve">
-    <value>Comités Participation</value>
+    <value>لجان المشاركة</value>
   </data>
   <data name="CommitteeDiscription" xml:space="preserve">
-    <value>Présentation du comité</value>
+    <value>التعريف باللجنة</value>
   </data>
   <data name="CommitteeId" xml:space="preserve">
-    <value>Nom du Comité de Participation</value>
+    <value>إسم لجنة المشاركة</value>
   </data>
   <data name="Commune" xml:space="preserve">
-    <value>Commune</value>
+    <value>البلدية</value>
   </data>
   <data name="CommuneNaissanceId" xml:space="preserve">
-    <value>Commune Naissance</value>
+    <value>بلدية الميلاد</value>
   </data>
   <data name="CommuneResidenceId" xml:space="preserve">
-    <value>Commune Résidence</value>
+    <value>بلدية الإقامة</value>
   </data>
   <data name="Communes" xml:space="preserve">
-    <value>Communes</value>
+    <value>البلديات</value>
   </data>
   <data name="Create" xml:space="preserve">
-    <value>Créer</value>
+    <value>إضافة</value>
   </data>
   <data name="CreateA" xml:space="preserve">
-    <value>Créer {0}</value>
+    <value>إضافة {0}</value>
   </data>
   <data name="CreateCompte" xml:space="preserve">
-    <value>Créer un Compt</value>
+    <value>إنشاء حساب</value>
   </data>
   <data name="Date" xml:space="preserve">
-    <value>Date</value>
+    <value>التاريخ</value>
   </data>
   <data name="DateDemande" xml:space="preserve">
-    <value>Date Demande</value>
+    <value>تاريخ الطلب</value>
   </data>
   <data name="DateEmbauche" xml:space="preserve">
-    <value>Date Embauche</value>
+    <value>تاريخ التوظيف</value>
   </data>
   <data name="DateNaissance" xml:space="preserve">
-    <value>Date Naissance</value>
+    <value>تاريخ الميلاد</value>
   </data>
   <data name="Delete" xml:space="preserve">
-    <value>Supprimer</value>
+    <value>حذف</value>
   </data>
   <data name="DeleteA" xml:space="preserve">
-    <value>Supprimer {0}</value>
+    <value>حذف {0}</value>
   </data>
   <data name="Demande" xml:space="preserve">
-    <value>Demande</value>
+    <value>طلب</value>
   </data>
   <data name="DemandeId" xml:space="preserve">
-    <value>Numéro de la demande</value>
+    <value>رقم الطلب</value>
   </data>
   <data name="DemandeNonTrait" xml:space="preserve">
-    <value>Liste demandes en cour de traitement</value>
+    <value>قائمة الطلبات قيد المعالجة</value>
   </data>
   <data name="DemandeRejete" xml:space="preserve">
-    <value>Demandes rejetées</value>
+    <value>الطلبات المرفوضة</value>
   </data>
   <data name="Demandes" xml:space="preserve">
-    <value>Demandes</value>
+    <value>الطلبات</value>
   </data>
   <data name="DemandeTrait" xml:space="preserve">
-    <value>Liste demandes traitées</value>
+    <value>قائمة الطلبات اللتي تم معالجتها</value>
   </data>
   <data name="Demandeur" xml:space="preserve">
-    <value>Employé</value>
+    <value>العامل </value>
   </data>
   <data name="DemandeurId" xml:space="preserve">
-    <value>Employé</value>
+    <value>العامل</value>
   </data>
   <data name="Demandeurs" xml:space="preserve">
-    <value>Employés</value>
+    <value>العمال </value>
   </data>
   <data name="DemandeValide" xml:space="preserve">
-    <value>Demandes validées</value>
+    <value> الطلبات المقبولة</value>
   </data>
   <data name="DesignationAr" xml:space="preserve">
-    <value>Designation Arabe</value>
+    <value>التسمية بالعربية</value>
   </data>
   <data name="DesignationFr" xml:space="preserve">
-    <value>Designation Français</value>
+    <value>التسمية بالفرنسية</value>
   </data>
   <data name="DetailsA" xml:space="preserve">
-    <value>Details {0}</value>
+    <value>تفاصيل {0}</value>
   </data>
   <data name="DocumentPdf" xml:space="preserve">
-    <value>Charger Documents et fichies PDF</value>
+    <value>رفع الوثائق والمستندات</value>
   </data>
   <data name="DuDate" xml:space="preserve">
-    <value>Du</value>
+    <value>بتاريخ</value>
   </data>
   <data name="Edit" xml:space="preserve">
-    <value>Editer</value>
+    <value>تعديل</value>
   </data>
   <data name="EditA" xml:space="preserve">
-    <value>Modifier {0}</value>
+    <value>تعديل {0}</value>
   </data>
   <data name="Email" xml:space="preserve">
-    <value>Email</value>
+    <value>البريد الإلكنروني</value>
   </data>
   <data name="EndDate" xml:space="preserve">
-    <value>Date Expiration</value>
+    <value>تاريخ انتهاء الصلاحية</value>
   </data>
   <data name="Etape" xml:space="preserve">
-    <value>Etape</value>
+    <value>المرحلة</value>
   </data>
   <data name="Etat" xml:space="preserve">
-    <value>Verrouiller</value>
+    <value>مقفلة</value>
   </data>
   <data name="FullName" xml:space="preserve">
-    <value>Nom Complet Français</value>
+    <value> الإسم الكامل بالفرنسية</value>
   </data>
   <data name="FullNameAr" xml:space="preserve">
-    <value>Nom Complet Arab</value>
+    <value>الإسم الكامل بالعربية</value>
   </data>
   <data name="Genre" xml:space="preserve">
-    <value>Genre</value>
+    <value>الجنس</value>
   </data>
   <data name="GenreId" xml:space="preserve">
-    <value>Genre</value>
+    <value>الجنس</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>Home</value>
+    <value>الرئيسية</value>
   </data>
   <data name="Id" xml:space="preserve">
-    <value>Identifiant</value>
+    <value>مميّز</value>
   </data>
   <data name="IdentPersonel" xml:space="preserve">
-    <value>Identification Personelle</value>
-  </data>
-  <data name="IdentProfessionnel" xml:space="preserve">
-    <value>Identification Professionnelle</value>
+    <value>التعريف الشخصي</value>
   </data>
   <data name="ListMembres" xml:space="preserve">
-    <value>liste nomitative des Membres du Comité de participation</value>
+    <value>القائمة الإسمية لأعضاء لجنة المشاركة</value>
   </data>
   <data name="ListOf" xml:space="preserve">
-    <value>La liste des {0}</value>
+    <value>قائمة {0}</value>
   </data>
   <data name="ListPresSession" xml:space="preserve">
-    <value>liste des demandes présenter a la Session N°</value>
+    <value>قائمة الطلبات المقدمة في الدورة رقم</value>
   </data>
   <data name="MatriculeERP" xml:space="preserve">
-    <value>Matricule ERP</value>
+    <value>  ترقيم (ERP) </value>
   </data>
   <data name="Membre" xml:space="preserve">
-    <value>Membre CP</value>
+    <value> عضو لجنة المشاركة</value>
   </data>
   <data name="Membres" xml:space="preserve">
-    <value>Membres</value>
+    <value>أعضاء اللجنة</value>
   </data>
   <data name="Montant" xml:space="preserve">
-    <value>Montant </value>
+    <value>المبلغ</value>
   </data>
   <data name="MontantAccorde" xml:space="preserve">
-    <value>Montant Accorede</value>
+    <value>المبلغ المقبول</value>
   </data>
   <data name="MontantAccorder" xml:space="preserve">
-    <value>Montant Accorder</value>
+    <value>المبلغ الممنوح</value>
   </data>
   <data name="Motif" xml:space="preserve">
     <value>Motif</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Nom en français </value>
+    <value>الإسم بالفرنسية </value>
   </data>
   <data name="NameAr" xml:space="preserve">
-    <value>Nom en arabe </value>
+    <value>الإسم بالعربية</value>
   </data>
   <data name="NbrDemande" xml:space="preserve">
-    <value>Nombre de Demandes</value>
+    <value>عدد الطلبات</value>
   </data>
   <data name="NbrDemandePres" xml:space="preserve">
-    <value>NBR Demandes Présentés</value>
+    <value>عدد الطلبات المقدمة</value>
   </data>
   <data name="NbrDemandeur" xml:space="preserve">
-    <value>Salariés enregistrés</value>
+    <value>العمال المسجلين</value>
   </data>
   <data name="NbSessionsValidation" xml:space="preserve">
-    <value>SessionsValidation</value>
+    <value>عدد الجلسات</value>
   </data>
   <data name="NIN" xml:space="preserve">
-    <value>NIN</value>
+    <value>رقم التعريف الوطني</value>
   </data>
   <data name="NomAr" xml:space="preserve">
-    <value>Nom en Arab</value>
+    <value>اللقب بالعربية</value>
   </data>
   <data name="NombreAnneeTravail" xml:space="preserve">
-    <value>Années de Service</value>
+    <value>سنوات الخدمة</value>
   </data>
   <data name="NomFr" xml:space="preserve">
-    <value>Nom en Français</value>
+    <value>اللقب بالفرنسية</value>
   </data>
   <data name="NomJeunneFille" xml:space="preserve">
-    <value>Nom Jeunne Fille en Français</value>
+    <value>اللقب الأصلي للمرأة بالفرنسية</value>
   </data>
   <data name="NomJeunneFilleAr" xml:space="preserve">
-    <value>Nom Jeunne Fille en Arab</value>
+    <value>اللقب الأصلي للمرأة بالعربية</value>
   </data>
   <data name="Nouveau" xml:space="preserve">
-    <value>Nouveau</value>
+    <value>جديد</value>
   </data>
   <data name="Numero" xml:space="preserve">
-    <value>Numéro</value>
+    <value>الرقم</value>
   </data>
   <data name="NumTelephone" xml:space="preserve">
-    <value>N° Telephone</value>
+    <value>رقم الهاتف</value>
   </data>
   <data name="Observation" xml:space="preserve">
-    <value>Observation</value>
+    <value>ملاحظة</value>
   </data>
   <data name="Photo" xml:space="preserve">
-    <value>Photo personlle</value>
+    <value>صورة شخصية</value>
   </data>
   <data name="Poste" xml:space="preserve">
-    <value>Poste</value>
+    <value>المنصب</value>
   </data>
   <data name="PosteId" xml:space="preserve">
-    <value>Poste </value>
+    <value>المنصب</value>
   </data>
-  <data name="MotDG" xml:space="preserve">
-    <value>Postes</value>
+  <data name="sddd" xml:space="preserve">
+    <value>المناصب</value>
   </data>
   <data name="PrenomAr" xml:space="preserve">
-    <value>Prénom en Arab</value>
+    <value>الإسم بالعربية</value>
   </data>
   <data name="PrenomFr" xml:space="preserve">
-    <value>Prénom en Français</value>
+    <value>الإسم بالفرنسية</value>
   </data>
   <data name="PresidentMsg" xml:space="preserve">
-    <value>Mot du Président du comité de participation</value>
+    <value>كلمة رئيس لحنة المشاركة</value>
   </data>
   <data name="RequiredMessage" xml:space="preserve">
-    <value>{0} est requis !</value>
+    <value>{0} حقل إجباري</value>
   </data>
   <data name="Resultat" xml:space="preserve">
-    <value>Résultat</value>
+    <value>النتيجة</value>
   </data>
   <data name="ResultatSession" xml:space="preserve">
-    <value>Décision Commission</value>
+    <value>قرار اللجنة</value>
   </data>
   <data name="ResultatSessionValidationId" xml:space="preserve">
-    <value>Décision Commission</value>
+    <value>قرار اللجنة</value>
   </data>
   <data name="ResultatSessionValidations" xml:space="preserve">
-    <value>Resultat Session Validations</value>
+    <value>نتائج جلسة التحقق من طلبات</value>
   </data>
   <data name="Return" xml:space="preserve">
-    <value>Retour</value>
+    <value>رجوع</value>
   </data>
   <data name="Rib" xml:space="preserve">
-    <value>Relevé d'identité bancaire / Postal</value>
+    <value>رقم الهوية البنكية/البريدية</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Enregistrer</value>
+    <value>حفظ</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Sélections ...</value>
+    <value> ... إختيارات</value>
   </data>
   <data name="SelectFichier" xml:space="preserve">
-    <value>Sélectionné Fichier</value>
+    <value>اختر ملف </value>
   </data>
   <data name="SelectPhoto" xml:space="preserve">
-    <value>Sélectionné une Photo valide</value>
+    <value>اختر صورة </value>
   </data>
   <data name="SessionsValidation" xml:space="preserve">
-    <value>Sessions validation</value>
+    <value>الجلسات</value>
   </data>
   <data name="SessionValidation" xml:space="preserve">
-    <value>Session validation</value>
+    <value>جلسة</value>
   </data>
   <data name="SessionValidationId" xml:space="preserve">
-    <value>Session Validation</value>
+    <value>جلسة التحقق من الصحة</value>
   </data>
   <data name="SituationFamiliale" xml:space="preserve">
-    <value>Situation Familiale</value>
+    <value>الحالة العائلية</value>
   </data>
   <data name="SituationFamilialeId" xml:space="preserve">
-    <value>Situation Familiale</value>
+    <value>الحالة العائلية</value>
   </data>
   <data name="SituationFamiliales" xml:space="preserve">
-    <value>Situation Familiale</value>
+    <value>الحالة العائلية</value>
   </data>
   <data name="SousTypeDemande" xml:space="preserve">
-    <value>Sous Type Demande</value>
+    <value>طبيعة الطلب</value>
   </data>
   <data name="SousTypeDemandeId" xml:space="preserve">
-    <value>Nature de la demande</value>
+    <value>طبيعة الطلب</value>
   </data>
   <data name="SousTypesDemandes" xml:space="preserve">
-    <value>Nature demandes</value>
+    <value>طبيعة الطلبات</value>
   </data>
   <data name="StartDate" xml:space="preserve">
-    <value>Date Création</value>
+    <value>تاريخ الإنشاء</value>
   </data>
   <data name="StringLengthMessage" xml:space="preserve">
-    <value>{0} ne doit pas dépasser {1} caractères !</value>
+    <value>{0} يجب أن يحتوي على الأكثر {1} حرف!</value>
   </data>
   <data name="SuiviDemandeService" xml:space="preserve">
-    <value>Suivi Votre demande</value>
+    <value>تتبع طلبك</value>
   </data>
   <data name="TelechargerPDF" xml:space="preserve">
-    <value>Telecharger PDF</value>
+    <value>تحميل PDF</value>
   </data>
   <data name="TypeDemande" xml:space="preserve">
-    <value>Type Demande</value>
+    <value>نوع الطلب</value>
   </data>
   <data name="TypeDemandeId" xml:space="preserve">
-    <value>Type Demande</value>
+    <value>نوع الطلب</value>
   </data>
   <data name="TypeMembre" xml:space="preserve">
-    <value>Type: Membre</value>
+    <value>نوع العضوية</value>
   </data>
   <data name="TypeMembreId" xml:space="preserve">
-    <value>Type Membre</value>
+    <value>نوع العضوية</value>
   </data>
   <data name="TypesDemandes" xml:space="preserve">
-    <value>Types demandes</value>
+    <value>أنواع الطلبات</value>
   </data>
   <data name="TypesMembres" xml:space="preserve">
-    <value>Types Membres</value>
+    <value>أنواع العضويات</value>
   </data>
   <data name="TélechargerDocuments" xml:space="preserve">
-    <value>Télecharger Documents de la demande</value>
+    <value>تحميل الوثائق والمستندات</value>
   </data>
   <data name="UserId" xml:space="preserve">
-    <value>Utilisateur</value>
+    <value>اسم المستخدم</value>
   </data>
   <data name="Username" xml:space="preserve">
-    <value>Nom d'utilisateur</value>
+    <value>اسم المستخدم</value>
   </data>
   <data name="Wilaya" xml:space="preserve">
-    <value>Wilaya</value>
+    <value>الولاية</value>
   </data>
   <data name="WilayaId" xml:space="preserve">
-    <value>Wilaya</value>
+    <value>الولاية</value>
   </data>
   <data name="WilayaNaissanceId" xml:space="preserve">
-    <value>Wilaya Naissance</value>
+    <value>ولاية الميلاد</value>
   </data>
   <data name="WilayaResidenceId" xml:space="preserve">
-    <value>Wilaya Residence</value>
+    <value>ولاية الإقامة</value>
   </data>
   <data name="Wilayas" xml:space="preserve">
-    <value>Wilayas</value>
+    <value>الولايات</value>
   </data>
   <data name="DateAffectation" xml:space="preserve">
-    <value />
+    <value>تاريخ التعيين</value>
   </data>
   <data name="DetailsOf" xml:space="preserve">
-    <value />
+    <value>معلومات {0}</value>
   </data>
   <data name="FactureId" xml:space="preserve">
-    <value />
+    <value>الفاتورة</value>
   </data>
   <data name="FournisseurId" xml:space="preserve">
-    <value />
+    <value>ممول</value>
   </data>
   <data name="IdentProfetionel" xml:space="preserve">
-    <value />
+    <value>التعريف المهني</value>
   </data>
   <data name="Nom" xml:space="preserve">
-    <value />
+    <value>اللقب</value>
   </data>
   <data name="Prenom" xml:space="preserve">
-    <value />
+    <value>الاسم</value>
   </data>
   <data name="Sessions" xml:space="preserve">
-    <value />
+    <value>الجلسات</value>
   </data>
-  <data name="Activite" xml:space="preserve">
-    <value />
+  <data name="bienvenue" xml:space="preserve">
+    <value>مرحبًا بكم في الموقع الرسمي للوكالة، فضاؤكم لمرافقة الأفكار وتحويلها إلى مشاريع ناجحة.</value>
   </data>
-  <data name="ActiviteId" xml:space="preserve">
-    <value />
+  <data name="CentreComunication" xml:space="preserve">
+    <value>مركز الإتصالات</value>
   </data>
-  <data name="Activites" xml:space="preserve">
-    <value />
+  <data name="frequente" xml:space="preserve">
+    <value>الشائعة</value>
   </data>
-  <data name="CommuneNaisanceId" xml:space="preserve">
-    <value />
+  <data name="question" xml:space="preserve">
+    <value>الأسئلة</value>
   </data>
-  <data name="DateSortie" xml:space="preserve">
-    <value />
+  <data name="AdresseDG" xml:space="preserve">
+    <value>شارع محمد ارزقي بن بوزيد، العناصر</value>
   </data>
-  <data name="DenominationCommercial" xml:space="preserve">
-    <value />
+  <data name="centreAppel" xml:space="preserve">
+    <value>مركز الإتصالات</value>
   </data>
-  <data name="Designation" xml:space="preserve">
-    <value />
+  <data name="ContactUs" xml:space="preserve">
+    <value>تواصل معنا</value>
   </data>
-  <data name="DesignationArticle" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Discriminator" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MontantApportPersonnel" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MontantPNR" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MontantPretBancaire" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MontantSubvention" xml:space="preserve">
-    <value />
-  </data>
-  <data name="NiveauInstruction" xml:space="preserve">
-    <value />
-  </data>
-  <data name="NiveauInstructionId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="NiveauxInstruction" xml:space="preserve">
-    <value />
-  </data>
-  <data name="NomPrenomMere" xml:space="preserve">
-    <value />
-  </data>
-  <data name="NumeroCarteANEM" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ParentId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="PaysNaisanceId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="PaysResidenceId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="PhaseProjet" xml:space="preserve">
-    <value />
-  </data>
-  <data name="PhaseProjetId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="PhasesProjet" xml:space="preserve">
-    <value />
-  </data>
-  <data name="PrenomPere" xml:space="preserve">
-    <value />
-  </data>
-  <data name="PrixUnitaire" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ProjetCreationId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ProjetId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="PromoteurId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Qualite" xml:space="preserve">
-    <value />
-  </data>
-  <data name="QualiteId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Qualites" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Quantite" xml:space="preserve">
-    <value />
-  </data>
-  <data name="SecteurActivite" xml:space="preserve">
-    <value />
-  </data>
-  <data name="SecteurActiviteId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="SecteursActivite" xml:space="preserve">
-    <value />
-  </data>
-  <data name="StructureId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Tel" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TypeDocument" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TypeDocumentId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TypeFacture" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TypeFactureId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TypeFinancement" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TypeFinancementId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TypesDocument" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TypeSession" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TypeSessionId" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TypesFacture" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TypesFinancement" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TypesSession" xml:space="preserve">
-    <value />
+  <data name="wilayaAdresse" xml:space="preserve">
+    <value>الجزائر العاصمة، الجزائر</value>
   </data>
 </root>
