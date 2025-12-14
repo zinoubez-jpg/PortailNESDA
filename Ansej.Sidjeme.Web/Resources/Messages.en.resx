@@ -178,6 +178,15 @@ et Antennes Locales</value>
   <data name="Avril2025" xml:space="preserve">
     <value>April 2025</value>
   </data>
+  <data name="axesStrategiqueP1" xml:space="preserve">
+    <value>Continuing and strengthening support for young project holders and developing ways to provide assistance, in terms of specialized training programs, as well as diversifying funding methods and including quality and innovative solutions.</value>
+  </data>
+  <data name="axesStrategiqueP2" xml:space="preserve">
+    <value>Intensify joint efforts with various actors from governmental bodies and institutions, public and private institutions, social partners and civil society, with the aim of developing a stable and sustainable entrepreneurial and micro-enterprise ecosystem; which would enhance the ability of micro-enterprises to grow and thrive, especially in terms of competitiveness.</value>
+  </data>
+  <data name="axesStrategiqueP3" xml:space="preserve">
+    <value>Developing the Agency and supporting its operational capabilities through reviewing the work plan and evaluating projects, improving user skills, digitalizing services, and enhancing the means and facilities to improve working and reception conditions, which will be reflected in its performance.</value>
+  </data>
   <data name="BienvenueFAQ" xml:space="preserve">
     <value>Bienvenue dans notre section FAQ</value>
   </data>
@@ -318,13 +327,25 @@ The programme is a contribution to strengthening the role of local communities a
     <value>C.E.O Message</value>
   </data>
   <data name="Mission" xml:space="preserve">
-    <value>Missions et vision</value>
+    <value>Tasks and Vision</value>
+  </data>
+  <data name="mission1" xml:space="preserve">
+    <value>Upgrading an entrepreneurial ecosystem that encourages the creation, financing and development of high-performing, resilient micro-enterprises that create sustainable added value for citizens and the nation.</value>
+  </data>
+  <data name="MissionP1" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency relies on the directives of the President of the Republic, Mr. Abdelmadjid Tebboune, to raise the challenge for economic resurgence in order to build a productive, diversified economy—one that generates value, provides quality job opportunities, within the framework of developing a new economic model based on diversified growth and knowledge economy.</value>
+  </data>
+  <data name="MissionP2" xml:space="preserve">
+    <value>The Agency's strategic directions are based on the following:</value>
   </data>
   <data name="NESDA" xml:space="preserve">
     <value>NESDA</value>
   </data>
   <data name="NesdaExtension" xml:space="preserve">
     <value>Nesda Extension</value>
+  </data>
+  <data name="NesdaNomination" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency</value>
   </data>
   <data name="Nesdaorganise" xml:space="preserve">
     <value>Nesda organise</value>
@@ -336,7 +357,10 @@ The programme is a contribution to strengthening the role of local communities a
     <value>Our Services</value>
   </data>
   <data name="Organisation" xml:space="preserve">
-    <value>Organisation</value>
+    <value>Organization</value>
+  </data>
+  <data name="Organisation1" xml:space="preserve">
+    <value />
   </data>
   <data name="Partenariat" xml:space="preserve">
     <value>Partenariat</value>
