@@ -362,6 +362,9 @@ The programme is a contribution to strengthening the role of local communities a
   <data name="Organisation1" xml:space="preserve">
     <value />
   </data>
+  <data name="organisationNesdaText" xml:space="preserve">
+    <value>In accordance with the provisions of Executive Decree n °96-296 dated 24 Rabi' al-Thani 1417, corresponding to September 8, 1996, as amended and supplemented, which established the National Entrepreneurship Support and Development Agency and defined its statutes, the agency is governed by a board of directors and managed by a director general, and is also equipped with a supervisory committee.</value>
+  </data>
   <data name="Partenariat" xml:space="preserve">
     <value>Partenariat</value>
   </data>

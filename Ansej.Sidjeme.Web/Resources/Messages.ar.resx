@@ -359,6 +359,9 @@
   <data name="Organisation" xml:space="preserve">
     <value>التنظيــــــم</value>
   </data>
+  <data name="organisationNesdaText" xml:space="preserve">
+    <value>بموجب تدابير المرسوم التنفيذي رقم 96-296 المؤرخ في 24 ربيع الثاني عام 1417 الموافق 8 سبتمبر سنة 1996، المعدل والمتمم، والمتضمن إنشاء الوكالة الوطنية لدعم وتنمية المقاولاتية وتحديد قانونها الأساسي، يسير الوكالة مجلس إدارة ويديرها مدير عام، كما هي مزودة بلجنة مراقبة.</value>
+  </data>
   <data name="Partenariat" xml:space="preserve">
     <value>الشراكة</value>
   </data>

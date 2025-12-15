@@ -489,4 +489,7 @@
   <data name="mission2-4" xml:space="preserve">
     <value>Innovation</value>
   </data>
+  <data name="organisationNesda" xml:space="preserve">
+    <value>the National Entrepreneurship Support and Development Agency’s Organization</value>
+  </data>
 </root>

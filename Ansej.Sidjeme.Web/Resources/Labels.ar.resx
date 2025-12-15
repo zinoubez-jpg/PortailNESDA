@@ -720,4 +720,7 @@
   <data name="mission2-4" xml:space="preserve">
     <value>الابتكار</value>
   </data>
+  <data name="organisationNesda" xml:space="preserve">
+    <value>تنظيم الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
 </root>
