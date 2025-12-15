@@ -1,4 +1,4 @@
-using Ansej.Business.Core;
+ï»¿using Ansej.Business.Core;
 using Ansej.Data.Abstractions;
 using Ansej.Data.Core;
 using Ansej.Sidjeme.Business;
@@ -90,7 +90,7 @@ namespace Ansej.Sidjeme.Web
             // Dictionnaire pour mapper les codes culture aux noms d'affichage
             var cultureDisplayNames = new Dictionary<string, string>
             {
-                { "ar-DZ", "ÇáÚÑÈíÉ" },
+                { "ar-DZ", "Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©" },
                 { "en", "Anglais" }
             };
 
@@ -122,7 +122,7 @@ namespace Ansej.Sidjeme.Web
                 //TODO: Define DefaultRequestCulture to be fr-FR
                 options.DefaultRequestCulture = new RequestCulture("ar-DZ");
 
-                // Optionnel : ajouter des providers de détection de langue
+                // Optionnel : ajouter des providers de dÃ©tection de langue
                 options.RequestCultureProviders = new List<IRequestCultureProvider>
                 {
                     new QueryStringRequestCultureProvider(),
