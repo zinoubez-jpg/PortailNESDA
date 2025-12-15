@@ -492,4 +492,37 @@
   <data name="VerbePresentation1" xml:space="preserve">
     <value>In this regard</value>
   </data>
+  <data name="axesStrategique" xml:space="preserve">
+    <value>Strategic axes</value>
+  </data>
+  <data name="axesStrategique1" xml:space="preserve">
+    <value>Enhancing support for project holders</value>
+  </data>
+  <data name="axesStrategique2" xml:space="preserve">
+    <value>Contributing to the development of an entrepreneurial ecosystem</value>
+  </data>
+  <data name="axesStrategique3" xml:space="preserve">
+    <value>Strengthening the Agency's capabilities and improving its risk management</value>
+  </data>
+  <data name="mission1" xml:space="preserve">
+    <value>Mission</value>
+  </data>
+  <data name="mission2" xml:space="preserve">
+    <value>Principles</value>
+  </data>
+  <data name="mission2-1" xml:space="preserve">
+    <value>Inclusivity</value>
+  </data>
+  <data name="mission2-2" xml:space="preserve">
+    <value>Credibility</value>
+  </data>
+  <data name="mission2-3" xml:space="preserve">
+    <value>Resilience</value>
+  </data>
+  <data name="mission2-4" xml:space="preserve">
+    <value>Innovation</value>
+  </data>
+  <data name="organisationNesda" xml:space="preserve">
+    <value>the National Entrepreneurship Support and Development Agency’s Organization</value>
+  </data>
 </root>

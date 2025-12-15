@@ -723,4 +723,37 @@
   <data name="VerbePresentation1" xml:space="preserve">
     <value>في هذا الصدد، تضع</value>
   </data>
+  <data name="axesStrategique" xml:space="preserve">
+    <value>المحاور الاستراتيجية</value>
+  </data>
+  <data name="axesStrategique1" xml:space="preserve">
+    <value>تعزيز مرافقة حاملي المشاريع</value>
+  </data>
+  <data name="axesStrategique2" xml:space="preserve">
+    <value>المساهمة في ترقية نظام بيئي للمقاولاتية</value>
+  </data>
+  <data name="axesStrategique3" xml:space="preserve">
+    <value>تعزيز قدرات الوكالة وتحسين تسييرها للمخاطر</value>
+  </data>
+  <data name="mission1" xml:space="preserve">
+    <value>المهمة</value>
+  </data>
+  <data name="mission2" xml:space="preserve">
+    <value>المبادئ</value>
+  </data>
+  <data name="mission2-1" xml:space="preserve">
+    <value>الشمولية</value>
+  </data>
+  <data name="mission2-2" xml:space="preserve">
+    <value>المصداقية</value>
+  </data>
+  <data name="mission2-3" xml:space="preserve">
+    <value>الصمود</value>
+  </data>
+  <data name="mission2-4" xml:space="preserve">
+    <value>الابتكار</value>
+  </data>
+  <data name="organisationNesda" xml:space="preserve">
+    <value>تنظيم الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
 </root>
