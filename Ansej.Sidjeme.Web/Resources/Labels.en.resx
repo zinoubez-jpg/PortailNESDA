@@ -525,4 +525,46 @@
   <data name="organisationNesda" xml:space="preserve">
     <value>the National Entrepreneurship Support and Development Agency’s Organization</value>
   </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Titre" xml:space="preserve">
+    <value>Entrepreneurship Development Centers (CDE) in Vocational Education and Training sector</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Titre" xml:space="preserve">
+    <value>Entrepreneurship Development Centers (CDE) in the Higher Education and Scientific Research sector</value>
+  </data>
+  <data name="Inscription_CDE_Titre" xml:space="preserve">
+    <value>Registration at Entrepreneurship Development Centers (CDE)</value>
+  </data>
+  <data name="Lien_CDE" xml:space="preserve">
+    <value>Registration Link : www.cde.dz</value>
+  </data>
+  <data name="Lien_FPCDE" xml:space="preserve">
+    <value>Registration Link: www.fp.cde.dz</value>
+  </data>
+  <data name="Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Is it possible to register online or is it required to attend in person?</value>
+  </data>
+  <data name="Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>What sessions or programs are available at the center? and does the center provide a practical training?</value>
+  </data>
+  <data name="Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Can all students register at Entrepreneurship Development Centers (CDE), or just is it limited to graduates only?</value>
+  </data>
+  <data name="Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Should registration at centers be based on the training wilaya?</value>
+  </data>
+  <data name="Questions_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Frequently asked questions about Entrepreneurship Development Centers (CDE)</value>
+  </data>
+  <data name="Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>The registration process and application review are done electronically without the need to travel to Entrepreneurship Development Centers (CDE).</value>
+  </data>
+  <data name="Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Programs may include entrepreneurship sessions, project management, marketing, and others, and usually include practical training.</value>
+  </data>
+  <data name="Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>The student must graduate to register at Entrepreneurship Development Centers (CDE).</value>
+  </data>
+  <data name="Réponse_Pour_Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Registration at Entrepreneurship Development Centers (CDE) is possible regardless of the training institute where you studied. This depends on the center's policy and registration rules.</value>
+  </data>
 </root>

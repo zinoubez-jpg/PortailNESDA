@@ -756,4 +756,46 @@
   <data name="organisationNesda" xml:space="preserve">
     <value>تنظيم الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
   </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Titre" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية في قطاع التعليم والتكوين المهني</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Titre" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية في قطاع التعليم العالي والبحث العلمي</value>
+  </data>
+  <data name="Inscription_CDE_Titre" xml:space="preserve">
+    <value>التسجيل في مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="Lien_CDE" xml:space="preserve">
+    <value>رابط التسجيل: www.cde.dz</value>
+  </data>
+  <data name="Lien_FPCDE" xml:space="preserve">
+    <value>رابط التسجيل: www.fp.cde.dz</value>
+  </data>
+  <data name="Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>هل يمكن التسجيل عبر الإنترنت أم يتطلب الحضور شخصياً؟</value>
+  </data>
+  <data name="Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>ما هي الدورات أو البرامج المتاحة في المركز؟ وهل يوفر المركز تدريباً عملياً؟</value>
+  </data>
+  <data name="Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>هل يمكن لجميع الطلاب التسجيل في مراكز تطوير المقاولاتية، أم يقتصر الأمر على المتخرجين فقط؟</value>
+  </data>
+  <data name="Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>هل يجب التسجيل في المراكز حسب ولاية التكوين؟</value>
+  </data>
+  <data name="Questions_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>الأسئلة الشائعة حول مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>تتم عملية التسجيل ودراسة الطلب الكترونيا دون الحاجة الى التنقل الى مراكز تطوير المقاولاتية.</value>
+  </data>
+  <data name="Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>يمكن أن تشمل البرامج دورات في المقاولاتية، وإدارة المشاريع، والتسويق، وغيرها، وعادةً ما يتم تضمين تدريب عملي ضمن البرنامج</value>
+  </data>
+  <data name="Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>يجب أن يكون الطالب متخرجًا للتسجيل في مراكز تطوير المقاولاتية.</value>
+  </data>
+  <data name="Réponse_Pour_Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>يمكن التسجيل في مراكز تطوير المقاولاتية بغض النظر عن معهد التكوين التي درس فيها. يعتمد هذا على سياسة المركز وقواعد التسجيل التي يحددها</value>
+  </data>
 </root>

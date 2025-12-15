@@ -199,6 +199,24 @@ et Antennes Locales</value>
   <data name="BTPT2" xml:space="preserve">
     <value>notre fondation</value>
   </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_01" xml:space="preserve">
+    <value>The Entrepreneurship Development Centers (CDE) established in various vocational education and training institutions, institutes and training schools, as part of the government program aimed at promoting an entrepreneurial culture, aim to provide trainee entrepreneurs with a favorable environment to realize their commercial ideas and projects, as they are equipped with modern resources and facilities that support the development of their entrepreneurial skills.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_02" xml:space="preserve">
+    <value>Training at entrepreneurship development centers (CDE) is considered one of the basic conditions for establishing a micro-enterprise within the framework of the National Agency for Supporting and Developing Entrepreneurship and benefiting from the financing formulas it provides.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_03" xml:space="preserve">
+    <value>Registration at the level of entrepreneurship development centers (CDE) in the education and vocational training sector is exclusively online via the following link:</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_01" xml:space="preserve">
+    <value>The Entrepreneurship Development Centers (CDE) established in various higher education and scientific research institutions – universities, institutes and higher schools – as part of the government program aimed at promoting entrepreneurship in the university environment, aim to provide student entrepreneurs with a favorable environment to realize their business ideas and projects, as they are equipped with modern resources and facilities to support the development of students’ entrepreneurial skills.</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_02" xml:space="preserve">
+    <value>Training at entrepreneurship development centers (CDE) is considered one of the basic conditions for establishing a micro-enterprise within the framework of the National Entrepreneurship Support and Development Agency (NESDA) and benefiting from the financing formulas it provides.</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_03" xml:space="preserve">
+    <value>Registration at the level of entrepreneurship development centers (CDE) in the higher education and scientific research sector is exclusively online via the following link:</value>
+  </data>
   <data name="CentreComunicationD1" xml:space="preserve">
     <value>Nasda’s call center provides a direct communication channel, and works to respond quickly to your concerns and guidance</value>
   </data>
@@ -334,6 +352,9 @@ The programme is a contribution to strengthening the role of local communities a
   </data>
   <data name="InscriptionsMPDZ" xml:space="preserve">
     <value>Inscriptions marchés publique</value>
+  </data>
+  <data name="Inscription_CDE_Text" xml:space="preserve">
+    <value>The Entrepreneurship Development Centers (CDE) represent shared spaces between the National Entrepreneurship Support and Development Agency (NESDA) and its partners, where they provide dedicated spaces to promote entrepreneurship among young people and raise their capabilities and skills in establishing and managing micro-enterprises, through the provision of quality training courses offered by trainers from the Agency accredited by the International Labour Organization (ILO) , in partnership with trainers from the partner sector.</value>
   </data>
   <data name="Lancement" xml:space="preserve">
     <value>Launch</value>
