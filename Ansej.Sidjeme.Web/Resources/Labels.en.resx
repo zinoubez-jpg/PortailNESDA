@@ -447,8 +447,8 @@
   <data name="centreAppel" xml:space="preserve">
     <value>Contact Center</value>
   </data>
-  <data name="ContactUs" xml:space="preserve">
-    <value>Contact Us</value>
+  <data name="ContactUsNow" xml:space="preserve">
+    <value>Contact us now</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
@@ -524,5 +524,65 @@
   </data>
   <data name="organisationNesda" xml:space="preserve">
     <value>the National Entrepreneurship Support and Development Agency’s Organization</value>
+  </data>
+  <data name="Agences" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency</value>
+  </data>
+  <data name="AvantageProgrammeTitre" xml:space="preserve">
+    <value>Program advantages</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="decrets1" xml:space="preserve">
+    <value>Presidential Decrees (youth employment support)</value>
+  </data>
+  <data name="decrets2" xml:space="preserve">
+    <value>Executive decrees (establishment of the Agency)</value>
+  </data>
+  <data name="decrets3" xml:space="preserve">
+    <value>Executive decrees (conditions and levels of assistance provided to project holders)</value>
+  </data>
+  <data name="EnvironementProgrammeTitre" xml:space="preserve">
+    <value>Program Framework and context</value>
+  </data>
+  <data name="FonctionnementFG" xml:space="preserve">
+    <value>How the Guarantee Fund works</value>
+  </data>
+  <data name="fond" xml:space="preserve">
+    <value>Fund</value>
+  </data>
+  <data name="garantie" xml:space="preserve">
+    <value>Guarantee</value>
+  </data>
+  <data name="NesdaExtensionTitre" xml:space="preserve">
+    <value>Activity Expansion Program</value>
+  </data>
+  <data name="ParticipationFG" xml:space="preserve">
+    <value>Enrollment in the guarantee fund</value>
+  </data>
+  <data name="TachesFG" xml:space="preserve">
+    <value>Tasks of the Guarantee Fund</value>
+  </data>
+  <data name="TaxPhase1" xml:space="preserve">
+    <value>First phase: Implementation Phase</value>
+  </data>
+  <data name="TaxPhase2" xml:space="preserve">
+    <value>Second Phase: Operational Phase</value>
+  </data>
+  <data name="TaxTitre1" xml:space="preserve">
+    <value>TAX</value>
+  </data>
+  <data name="TaxTitre2" xml:space="preserve">
+    <value>PRIVILEGES</value>
+  </data>
+  <data name="telecharger" xml:space="preserve">
+    <value>download</value>
+  </data>
+  <data name="TexteJuridiqueTitre1" xml:space="preserve">
+    <value>Legal</value>
+  </data>
+  <data name="TexteJuridiqueTitre2" xml:space="preserve">
+    <value>texts</value>
   </data>
 </root>

@@ -142,7 +142,7 @@
     <value>Agence</value>
   </data>
   <data name="Agences" xml:space="preserve">
-    <value>Agences</value>
+    <value>الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
   </data>
   <data name="Annuaire" xml:space="preserve">
     <value>Annuaire</value>
@@ -755,5 +755,65 @@
   </data>
   <data name="organisationNesda" xml:space="preserve">
     <value>تنظيم الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="AvantageProgrammeTitre" xml:space="preserve">
+    <value>مزايا البرنامج</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>تواصل معنا</value>
+  </data>
+  <data name="ContactUsNow" xml:space="preserve">
+    <value>تواصل معنا الآن</value>
+  </data>
+  <data name="decrets1" xml:space="preserve">
+    <value>المراسيم الرئاسية (دعم تشغيل الشباب)</value>
+  </data>
+  <data name="decrets2" xml:space="preserve">
+    <value>المراسيم التنفيذية (إنشاء الوكالة)</value>
+  </data>
+  <data name="decrets3" xml:space="preserve">
+    <value>المراسيم التنفيذية (شروط الإعانة المقدمة لحاملي المشاريع ومستواها)</value>
+  </data>
+  <data name="EnvironementProgrammeTitre" xml:space="preserve">
+    <value>إطار ومحيط البرنامج</value>
+  </data>
+  <data name="FonctionnementFG" xml:space="preserve">
+    <value>آلية عمل صندوق الضمان</value>
+  </data>
+  <data name="fond" xml:space="preserve">
+    <value>صندوق</value>
+  </data>
+  <data name="garantie" xml:space="preserve">
+    <value>الضمان</value>
+  </data>
+  <data name="NesdaExtensionTitre" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="ParticipationFG" xml:space="preserve">
+    <value>كيفية الاشتراك في صندوق الضمان</value>
+  </data>
+  <data name="TachesFG" xml:space="preserve">
+    <value>مهام صندوق الضمان</value>
+  </data>
+  <data name="TaxPhase1" xml:space="preserve">
+    <value>المرحلة الأولى: مرحلة الإنجاز</value>
+  </data>
+  <data name="TaxPhase2" xml:space="preserve">
+    <value>المرحلة الثانية: مرحلة الاستغلال</value>
+  </data>
+  <data name="TaxTitre1" xml:space="preserve">
+    <value>المزايا </value>
+  </data>
+  <data name="TaxTitre2" xml:space="preserve">
+    <value>الضريبية</value>
+  </data>
+  <data name="telecharger" xml:space="preserve">
+    <value>تحميل</value>
+  </data>
+  <data name="TexteJuridiqueTitre1" xml:space="preserve">
+    <value>النصوص</value>
+  </data>
+  <data name="TexteJuridiqueTitre2" xml:space="preserve">
+    <value>القانونية</value>
   </data>
 </root>
