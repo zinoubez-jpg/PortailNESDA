@@ -232,14 +232,38 @@ et Antennes Locales</value>
   <data name="BTPT2" xml:space="preserve">
     <value>notre fondation</value>
   </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_01" xml:space="preserve">
+    <value>The Entrepreneurship Development Centers (CDE) established in various vocational education and training institutions, institutes and training schools, as part of the government program aimed at promoting an entrepreneurial culture, aim to provide trainee entrepreneurs with a favorable environment to realize their commercial ideas and projects, as they are equipped with modern resources and facilities that support the development of their entrepreneurial skills.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_02" xml:space="preserve">
+    <value>Training at entrepreneurship development centers (CDE) is considered one of the basic conditions for establishing a micro-enterprise within the framework of the National Agency for Supporting and Developing Entrepreneurship and benefiting from the financing formulas it provides.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_03" xml:space="preserve">
+    <value>Registration at the level of entrepreneurship development centers (CDE) in the education and vocational training sector is exclusively online via the following link:</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_01" xml:space="preserve">
+    <value>The Entrepreneurship Development Centers (CDE) established in various higher education and scientific research institutions – universities, institutes and higher schools – as part of the government program aimed at promoting entrepreneurship in the university environment, aim to provide student entrepreneurs with a favorable environment to realize their business ideas and projects, as they are equipped with modern resources and facilities to support the development of students’ entrepreneurial skills.</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_02" xml:space="preserve">
+    <value>Training at entrepreneurship development centers (CDE) is considered one of the basic conditions for establishing a micro-enterprise within the framework of the National Entrepreneurship Support and Development Agency (NESDA) and benefiting from the financing formulas it provides.</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_03" xml:space="preserve">
+    <value>Registration at the level of entrepreneurship development centers (CDE) in the higher education and scientific research sector is exclusively online via the following link:</value>
+  </data>
   <data name="CentreComunicationD1" xml:space="preserve">
     <value>Nasda’s call center provides a direct communication channel, and works to respond quickly to your concerns and guidance</value>
   </data>
   <data name="CentreComunicationD2" xml:space="preserve">
     <value>Through this channel, we seek to enhance transparency and improve the user experience</value>
   </data>
+  <data name="ComiteSuivi" xml:space="preserve">
+    <value>The Monitoring Committee is tasked with exercising post-implementation oversight of the Board of Directors’ decisions. It meets at the end of each quarter and provides useful observations and recommendations on the best ways to implement the programs and projects initiated by the agency.</value>
+  </data>
   <data name="commentpeut-onvousaider?" xml:space="preserve">
     <value>comment peut-on vous aider?</value>
+  </data>
+  <data name="ConseilAdministration" xml:space="preserve">
+    <value>The Board of Directors deliberates, in accordance with applicable laws and regulations, on the Agency’s activity program, estimated budget, the Agency’s organization and internal regulations, the annual plan for financing the Agency’s activities, as well as the use of financial means, the creation of annexes and the completion of investments.</value>
   </data>
   <data name="ContactUs" xml:space="preserve">
     <value>Contact Us Now – Our team is ready to serve you around the clock</value>
@@ -454,6 +478,12 @@ et Antennes Locales</value>
   <data name="Formationenligne" xml:space="preserve">
     <value>Online Training</value>
   </data>
+  <data name="FormationIntro" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency attaches great importance to the training phase, considering it the cornerstone in the process of the creation and development of micro-enterprises. This phase is part of a comprehensive approach aimed at enabling project holders to acquire the knowledge and skills necessary to transform their ideas into successful and sustainable real-world projects.</value>
+  </data>
+  <data name="FormationTitre" xml:space="preserve">
+    <value>Training programs are among the fundamental pillars upon which the National Entrepreneurship Support and Development Agency relies in supporting idea and project holders.</value>
+  </data>
   <data name="Impact70" xml:space="preserve">
     <value>Impact 70</value>
   </data>
@@ -496,6 +526,9 @@ The programme is a contribution to strengthening the role of local communities a
   </data>
   <data name="InscriptionsMPDZ" xml:space="preserve">
     <value>Inscriptions marchés publique</value>
+  </data>
+  <data name="Inscription_CDE_Text" xml:space="preserve">
+    <value>The Entrepreneurship Development Centers (CDE) represent shared spaces between the National Entrepreneurship Support and Development Agency (NESDA) and its partners, where they provide dedicated spaces to promote entrepreneurship among young people and raise their capabilities and skills in establishing and managing micro-enterprises, through the provision of quality training courses offered by trainers from the Agency accredited by the International Labour Organization (ILO) , in partnership with trainers from the partner sector.</value>
   </data>
   <data name="Lancement" xml:space="preserve">
     <value>Launch</value>
@@ -691,6 +724,9 @@ The programme is a contribution to strengthening the role of local communities a
   </data>
   <data name="responseNotFound" xml:space="preserve">
     <value>Didn’t you find an answer to your question?</value>
+  </data>
+  <data name="ReunionConseilAdmin" xml:space="preserve">
+    <value>The Board of Directors meets in ordinary session at least four times a year, upon the summons of its Chairman, who sets the agenda based on a proposal from the Director General of the Agency. It may also meet in extraordinary session upon the summons of its Chairman, or at the request of the supervisory authority, the Director General of the Agency, or a majority of its members.</value>
   </data>
   <data name="Scoring" xml:space="preserve">
     <value>Scoring</value>
