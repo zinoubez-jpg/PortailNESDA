@@ -525,4 +525,217 @@
   <data name="organisationNesda" xml:space="preserve">
     <value>the National Entrepreneurship Support and Development Agency’s Organization</value>
   </data>
+  <data name="Accompagnement" xml:space="preserve">
+    <value>Support before and after project launch</value>
+  </data>
+  <data name="AccompagnementTitre1" xml:space="preserve">
+    <value>Comprehensive accompaniment to ensure the success of your project</value>
+  </data>
+  <data name="AccompagnementTitre1Text" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency accompanies you through every stage of your project, from the initial idea to the establishment of your enterprise. Whether you are looking for project ideas or seeking funding, we are here to provide the necessary support through specialized and comprehensive guidance.</value>
+  </data>
+  <data name="AccompagnementTitre1TextP1" xml:space="preserve">
+    <value>Accompanying from idea to realization</value>
+  </data>
+  <data name="AccompagnementTitre1TextP2" xml:space="preserve">
+    <value>Specialized and continuous support</value>
+  </data>
+  <data name="AccompagnementTitre1TextP3" xml:space="preserve">
+    <value>Monitoring project growth and sustainability</value>
+  </data>
+  <data name="AccompagnementTitre2" xml:space="preserve">
+    <value>Phases of comprehensive accompaniment</value>
+  </data>
+  <data name="AccompagnementTitre2SousTitre1" xml:space="preserve">
+    <value>Preparation phase</value>
+  </data>
+  <data name="AccompagnementTitre2SousTitre2" xml:space="preserve">
+    <value>Post-creation</value>
+  </data>
+  <data name="AccompagnementTitre2Text" xml:space="preserve">
+    <value>We support you at every step of your project through specialized and well-structured guidance.</value>
+  </data>
+  <data name="AccompCreaText" xml:space="preserve">
+    <value>The Agency's assistance does not stop after the establishment of the enterprise; we continue our support to ensure the sustainability and expansion of the project.</value>
+  </data>
+  <data name="AccompCreaTextP1" xml:space="preserve">
+    <value>Regular field visits</value>
+  </data>
+  <data name="AccompCreaTextP2" xml:space="preserve">
+    <value>Help in overcoming difficulties</value>
+  </data>
+  <data name="AccompCreaTextP3" xml:space="preserve">
+    <value>Support for expansion and additional funding</value>
+  </data>
+  <data name="AccompCreaTextP4" xml:space="preserve">
+    <value>Encouraging initiative and innovation</value>
+  </data>
+  <data name="AccompCreaTitre" xml:space="preserve">
+    <value>Post-creation accompaniment</value>
+  </data>
+  <data name="AccompPrepText" xml:space="preserve">
+    <value>We place the accompaniment of project idea holders before the creation phase among our top priorities, with the aim of transforming ambitions into real enterprises built on solid foundations.</value>
+  </data>
+  <data name="AccompPrepTextP1" xml:space="preserve">
+    <value>Raising awareness of the entrepreneurial spirit</value>
+  </data>
+  <data name="AccompPrepTextP2" xml:space="preserve">
+    <value>Reception and specialized guidance</value>
+  </data>
+  <data name="AccompPrepTextP3" xml:space="preserve">
+    <value>Short training sessions</value>
+  </data>
+  <data name="AccompPrepTextP4" xml:space="preserve">
+    <value>Learning accounting and marketing</value>
+  </data>
+  <data name="AccompPrepTitre" xml:space="preserve">
+    <value>Accompaniment during the preparation and framing phase</value>
+  </data>
+  <data name="ComiteSuivi" xml:space="preserve">
+    <value>Monitoring Committee</value>
+  </data>
+  <data name="CompositionConseilAdmin" xml:space="preserve">
+    <value>Board of Directors’ composition</value>
+  </data>
+  <data name="CompositionConseilAdmin1" xml:space="preserve">
+    <value>Two (2) representatives of the Minister in charge of Micro-Enterprises,</value>
+  </data>
+  <data name="CompositionConseilAdmin10" xml:space="preserve">
+    <value>The Permanent Secretary of the Joint Guarantee Fund to guarantee the risks of loans granted to young entrepreneurs, or his representative;</value>
+  </data>
+  <data name="CompositionConseilAdmin11" xml:space="preserve">
+    <value>The president of the association of banks and financial institutions or his representative;</value>
+  </data>
+  <data name="CompositionConseilAdmin12" xml:space="preserve">
+    <value>Representative of the organization of young entrepreneurs, the most representative at the national level.</value>
+  </data>
+  <data name="CompositionConseilAdmin2" xml:space="preserve">
+    <value>one of whom is the Chairperson;</value>
+  </data>
+  <data name="CompositionConseilAdmin3" xml:space="preserve">
+    <value>Representative of the Minister in charge of Foreign Affairs,</value>
+  </data>
+  <data name="CompositionConseilAdmin4" xml:space="preserve">
+    <value>Representative of the minister in charge of the Interior and Local authorities;</value>
+  </data>
+  <data name="CompositionConseilAdmin5" xml:space="preserve">
+    <value>Two (2) representatives of the Minister in charge of finance;</value>
+  </data>
+  <data name="CompositionConseilAdmin6" xml:space="preserve">
+    <value>Representative of the minister in charge of Trade;</value>
+  </data>
+  <data name="CompositionConseilAdmin7" xml:space="preserve">
+    <value>Representative of the minister in charge of Labor, Employment and Social Security;</value>
+  </data>
+  <data name="CompositionConseilAdmin8" xml:space="preserve">
+    <value>Representative of the minister in charge of National Solidarity and Women’s Affairs;</value>
+  </data>
+  <data name="CompositionConseilAdmin9" xml:space="preserve">
+    <value>Representative of the minister in charge of industry,</value>
+  </data>
+  <data name="ConseilAdministration" xml:space="preserve">
+    <value>Board of directors</value>
+  </data>
+  <data name="FormationIntroP1" xml:space="preserve">
+    <value>Specialized and integrated training programs;</value>
+  </data>
+  <data name="FormationIntroP2" xml:space="preserve">
+    <value>Trainers accredited by the International Labour Organization (ILO);</value>
+  </data>
+  <data name="FormationIntroP3" xml:space="preserve">
+    <value>Turning ideas into successful projects.</value>
+  </data>
+  <data name="FormationSousTitre1" xml:space="preserve">
+    <value>International Labour Organization (ILO)</value>
+  </data>
+  <data name="FormationSousTitre1Text" xml:space="preserve">
+    <value>Training programs accredited by the International Labour Organization (ILO) aimed at developing entrepreneurial skills and managing micro-enterprises.</value>
+  </data>
+  <data name="FormationSousTitre1TextP1" xml:space="preserve">
+    <value>"Find Your Project Idea" Session - 3 Days</value>
+  </data>
+  <data name="FormationSousTitre1TextP2" xml:space="preserve">
+    <value>"Start and Improve Your Project" Session - 7 Days</value>
+  </data>
+  <data name="FormationSousTitre1TextP3" xml:space="preserve">
+    <value>More than 107 certified trainers</value>
+  </data>
+  <data name="FormationSousTitre1TextP4" xml:space="preserve">
+    <value>Post-training follow-up</value>
+  </data>
+  <data name="FormationSousTitre1Titre" xml:space="preserve">
+    <value>Sessions  according to the International Labour Organization's programs</value>
+  </data>
+  <data name="FormationSousTitre2" xml:space="preserve">
+    <value>Entrepreneurship Development Centers</value>
+  </data>
+  <data name="FormationSousTitre2Text" xml:space="preserve">
+    <value>Training sessions organized in partnership with higher education and vocational training institutions to develop essential skills</value>
+  </data>
+  <data name="FormationSousTitre2TextP1" xml:space="preserve">
+    <value>Training duration: 5 to 15 days</value>
+  </data>
+  <data name="FormationSousTitre2TextP2" xml:space="preserve">
+    <value>Strategic planning</value>
+  </data>
+  <data name="FormationSousTitre2TextP3" xml:space="preserve">
+    <value>Operational management</value>
+  </data>
+  <data name="FormationSousTitre2TextP4" xml:space="preserve">
+    <value>Legal aspects</value>
+  </data>
+  <data name="FormationSousTitre2TextP5" xml:space="preserve">
+    <value>Growth and Innovation Strategies</value>
+  </data>
+  <data name="FormationSousTitre2Titre" xml:space="preserve">
+    <value>Entrepreneurship Development Centers</value>
+  </data>
+  <data name="FormationSousTitre3" xml:space="preserve">
+    <value>Specialized sessions</value>
+  </data>
+  <data name="FormationSousTitre3Text" xml:space="preserve">
+    <value>Specialized sessions in partnership with public authorities on topics of interest to micro-enterprises</value>
+  </data>
+  <data name="FormationSousTitre3TextP1" xml:space="preserve">
+    <value>Taxes and tax disputes</value>
+  </data>
+  <data name="FormationSousTitre3TextP2" xml:space="preserve">
+    <value>Social Security</value>
+  </data>
+  <data name="FormationSousTitre3TextP3" xml:space="preserve">
+    <value>Agricultural insurance</value>
+  </data>
+  <data name="FormationSousTitre3TextP4" xml:space="preserve">
+    <value>In partnership with public authorities</value>
+  </data>
+  <data name="FormationSousTitre3Titre" xml:space="preserve">
+    <value>Thematic training sessions</value>
+  </data>
+  <data name="FormationTitre" xml:space="preserve">
+    <value>Specialized and integrated training programs</value>
+  </data>
+  <data name="MissionConseilSuivi" xml:space="preserve">
+    <value>Tasks of the Monitoring Committee</value>
+  </data>
+  <data name="MissionConseilSuivi1" xml:space="preserve">
+    <value>Exercising post-implementation oversight of board decisions;</value>
+  </data>
+  <data name="MissionConseilSuivi2" xml:space="preserve">
+    <value>Providing feedback and recommendations to the Director General;</value>
+  </data>
+  <data name="MissionConseilSuivi3" xml:space="preserve">
+    <value>Providing feedback on periodic reports on follow-up, implementation, and evaluation;</value>
+  </data>
+  <data name="MissionConseilSuivi4" xml:space="preserve">
+    <value>Monitoring and auditing the accounts for the use of Agency funds;</value>
+  </data>
+  <data name="MissionConseilSuivi5" xml:space="preserve">
+    <value>Providing feedback on the estimated revenue and expenditure data.</value>
+  </data>
+  <data name="ProgFormation" xml:space="preserve">
+    <value>Training programs</value>
+  </data>
+  <data name="ReunionConseilAdmin" xml:space="preserve">
+    <value>Board meetings</value>
+  </data>
 </root>

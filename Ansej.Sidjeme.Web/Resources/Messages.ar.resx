@@ -204,8 +204,14 @@
   <data name="CentreComunicationD2" xml:space="preserve">
     <value>نسعى من خلاله إلى تعزيز الشفافية وتحسين تجربة المستخدم</value>
   </data>
+  <data name="ComiteSuivi" xml:space="preserve">
+    <value>تكلف لجنة المراقبة بممارسة الرقابة اللاحقة لتطبيق قرارات مجلس الإدارة، حيث تجتمع في نهاية كل ثلاثي وتقدم الملاحظات والتوصيات المفيدة عن أحسن الكيفيات لتطبيق البرامج والمشاريع التي شرعت فيها الوكالة.</value>
+  </data>
   <data name="commentpeut-onvousaider?" xml:space="preserve">
     <value>كيف يمكننا مساعدتك؟</value>
+  </data>
+  <data name="ConseilAdministration" xml:space="preserve">
+    <value>يتداول مجلس الإدارة وفقا للقوانين والتنظيمات المعمول بها، حول برنامج نشاط الوكالة، الميزانية التقديرية، تنظيم الوكالة ونظامها الداخليان، والمخطط السنوي لتمويل نشاطات الوكالة، بالإضافة إلى استعمال الوسائل المالية وإنشاء الملاحق وإنجاز الاستثمارات.</value>
   </data>
   <data name="Contact" xml:space="preserve">
     <value>اتصل بنا</value>
@@ -293,6 +299,12 @@
   </data>
   <data name="Formationenligne" xml:space="preserve">
     <value>التكوين عبر الإنترنت</value>
+  </data>
+  <data name="FormationIntro" xml:space="preserve">
+    <value>تولي الوكالة الوطنية لدعم وتنمية المقاولاتية أهمية بالغة لمرحلة التكوين باعتبارها حجر الأساس في مسار إنشاء وتطوير المؤسسات المصغرة. وتندرج هذه المرحلة ضمن مقاربة شاملة تهدف إلى تمكين حاملي المشاريع من اكتساب المعارف والمهارات اللازمة لتحويل أفكارهم إلى مشاريع واقعية ناجحة ومستدامة.</value>
+  </data>
+  <data name="FormationTitre" xml:space="preserve">
+    <value>تعد برامج التكوين من الركائز الأساسية التي تعتمد عليها الوكالة الوطنية لدعم وتنمية المقاولاتية في مرافقة حاملي الأفكار والمشاريع</value>
   </data>
   <data name="Impact70" xml:space="preserve">
     <value>امباكت 70</value>
@@ -523,6 +535,9 @@
   </data>
   <data name="responseNotFound" xml:space="preserve">
     <value>لم تجد إجابة لسؤالك؟</value>
+  </data>
+  <data name="ReunionConseilAdmin" xml:space="preserve">
+    <value>يجتمع مجلس الإدارة في دورة عادية أربع مرات في السنة، على الأقل، بناء على استدعاء من رئيسه الذي يحدد جدول الأعمال بناء على اقتراح من المدير العام للوكالة. ويمكن أن يجتمع في دورة غير عادية بناء على استدعاء من رئيسه أو بطلب من السلطة الوصية أو المدير العام للوكالة أو أغلبية أعضائه.</value>
   </data>
   <data name="Scoring" xml:space="preserve">
     <value>التنقيط</value>

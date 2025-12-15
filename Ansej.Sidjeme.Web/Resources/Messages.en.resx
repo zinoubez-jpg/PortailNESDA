@@ -205,8 +205,14 @@ et Antennes Locales</value>
   <data name="CentreComunicationD2" xml:space="preserve">
     <value>Through this channel, we seek to enhance transparency and improve the user experience</value>
   </data>
+  <data name="ComiteSuivi" xml:space="preserve">
+    <value>The Monitoring Committee is tasked with exercising post-implementation oversight of the Board of Directors’ decisions. It meets at the end of each quarter and provides useful observations and recommendations on the best ways to implement the programs and projects initiated by the agency.</value>
+  </data>
   <data name="commentpeut-onvousaider?" xml:space="preserve">
     <value>comment peut-on vous aider?</value>
+  </data>
+  <data name="ConseilAdministration" xml:space="preserve">
+    <value>The Board of Directors deliberates, in accordance with applicable laws and regulations, on the Agency’s activity program, estimated budget, the Agency’s organization and internal regulations, the annual plan for financing the Agency’s activities, as well as the use of financial means, the creation of annexes and the completion of investments.</value>
   </data>
   <data name="ContactUs" xml:space="preserve">
     <value>Contact Us Now – Our team is ready to serve you around the clock</value>
@@ -297,6 +303,12 @@ et Antennes Locales</value>
   </data>
   <data name="Formationenligne" xml:space="preserve">
     <value>Online Training</value>
+  </data>
+  <data name="FormationIntro" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency attaches great importance to the training phase, considering it the cornerstone in the process of the creation and development of micro-enterprises. This phase is part of a comprehensive approach aimed at enabling project holders to acquire the knowledge and skills necessary to transform their ideas into successful and sustainable real-world projects.</value>
+  </data>
+  <data name="FormationTitre" xml:space="preserve">
+    <value>Training programs are among the fundamental pillars upon which the National Entrepreneurship Support and Development Agency relies in supporting idea and project holders.</value>
   </data>
   <data name="Impact70" xml:space="preserve">
     <value>Impact 70</value>
@@ -523,6 +535,9 @@ The programme is a contribution to strengthening the role of local communities a
   </data>
   <data name="responseNotFound" xml:space="preserve">
     <value>Didn’t you find an answer to your question?</value>
+  </data>
+  <data name="ReunionConseilAdmin" xml:space="preserve">
+    <value>The Board of Directors meets in ordinary session at least four times a year, upon the summons of its Chairman, who sets the agenda based on a proposal from the Director General of the Agency. It may also meet in extraordinary session upon the summons of its Chairman, or at the request of the supervisory authority, the Director General of the Agency, or a majority of its members.</value>
   </data>
   <data name="Scoring" xml:space="preserve">
     <value>Scoring</value>

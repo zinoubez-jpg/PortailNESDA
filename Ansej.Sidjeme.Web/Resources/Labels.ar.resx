@@ -136,7 +136,7 @@
     <value>Age</value>
   </data>
   <data name="Agence" xml:space="preserve">
-    <value>Agence</value>
+    <value>الوكالة الوطنية لدعم و تنمية المقاولاتية</value>
   </data>
   <data name="AgenceId" xml:space="preserve">
     <value>Agence</value>
@@ -755,5 +755,218 @@
   </data>
   <data name="organisationNesda" xml:space="preserve">
     <value>تنظيم الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="Accompagnement" xml:space="preserve">
+    <value>المرافقةالقبلية والبعدية</value>
+  </data>
+  <data name="AccompagnementTitre1" xml:space="preserve">
+    <value>مرافقة شاملة لإنجاح مشروعك</value>
+  </data>
+  <data name="AccompagnementTitre1Text" xml:space="preserve">
+    <value>الوكالة الوطنية لدعم وتنمية المقاولاتية ترافقكم في كل مراحل مشروعكم، من بزوغ الفكرة إلى استقرار المؤسسة. سواء كنتم تبحثون عن أفكار مشاريع، أو تسعون للحصول على تمويل، فنحن هنا لتقديم الدعم اللازم عبر مرافقة متخصصة وشاملة.</value>
+  </data>
+  <data name="AccompagnementTitre1TextP1" xml:space="preserve">
+    <value>مرافقة من الفكرة إلى التجسيد</value>
+  </data>
+  <data name="AccompagnementTitre1TextP2" xml:space="preserve">
+    <value>دعم متخصص ومستمر</value>
+  </data>
+  <data name="AccompagnementTitre1TextP3" xml:space="preserve">
+    <value>متابعة نمو واستدامة المشروع</value>
+  </data>
+  <data name="AccompagnementTitre2" xml:space="preserve">
+    <value>مراحل المرافقة الشاملة</value>
+  </data>
+  <data name="AccompagnementTitre2SousTitre1" xml:space="preserve">
+    <value>مرحلة الإعداد</value>
+  </data>
+  <data name="AccompagnementTitre2SousTitre2" xml:space="preserve">
+    <value>ما بعد الإنشاء</value>
+  </data>
+  <data name="AccompagnementTitre2Text" xml:space="preserve">
+    <value>ندعمكم في كل خطوة من خطوات مشروعكم من خلال مرافقة متخصصة ومدروسة</value>
+  </data>
+  <data name="AccompCreaText" xml:space="preserve">
+    <value>لا تتوقف مرافقة الوكالة بعد إنشاء المؤسسة، بل نواصل دعمنا لضمان استدامة المشروع وتوسعه.</value>
+  </data>
+  <data name="AccompCreaTextP1" xml:space="preserve">
+    <value>زيارات ميدانية دورية</value>
+  </data>
+  <data name="AccompCreaTextP2" xml:space="preserve">
+    <value>المساعدة في تجاوز الصعوبات</value>
+  </data>
+  <data name="AccompCreaTextP3" xml:space="preserve">
+    <value>دعم التوسعة والتمويل الإضافي</value>
+  </data>
+  <data name="AccompCreaTextP4" xml:space="preserve">
+    <value>تشجيع المبادرة والابتكار</value>
+  </data>
+  <data name="AccompCreaTitre" xml:space="preserve">
+    <value>المرافقة بعد الإنشاء</value>
+  </data>
+  <data name="AccompPrepText" xml:space="preserve">
+    <value>نضع ضمن أولوياتنا مرافقة حاملي أفكار المشاريع قبل مرحلة الإنشاء، بهدف تحويل الطموحات إلى مؤسسات فعلية تقوم على أسس متينة.</value>
+  </data>
+  <data name="AccompPrepTextP1" xml:space="preserve">
+    <value>التحسيس بروح ريادة الأعمال</value>
+  </data>
+  <data name="AccompPrepTextP2" xml:space="preserve">
+    <value>الاستقبال والتوجيه المتخصص</value>
+  </data>
+  <data name="AccompPrepTextP3" xml:space="preserve">
+    <value>دورات تكوينية قصيرة</value>
+  </data>
+  <data name="AccompPrepTextP4" xml:space="preserve">
+    <value>تعلم المحاسبة والتسويق</value>
+  </data>
+  <data name="AccompPrepTitre" xml:space="preserve">
+    <value>المرافقة في مرحلة الإعداد والتأطير</value>
+  </data>
+  <data name="ComiteSuivi" xml:space="preserve">
+    <value>لجنة المراقبة</value>
+  </data>
+  <data name="CompositionConseilAdmin" xml:space="preserve">
+    <value>تشكيلة مجلس الإدارة</value>
+  </data>
+  <data name="CompositionConseilAdmin1" xml:space="preserve">
+    <value>ممثلان (2) عن الوزير المكلف بالمؤسسات المصغرة، أحدهما رئيس</value>
+  </data>
+  <data name="CompositionConseilAdmin10" xml:space="preserve">
+    <value>رئيس جمعية البنوك والمؤسسات المالية، أو ممثله</value>
+  </data>
+  <data name="CompositionConseilAdmin11" xml:space="preserve">
+    <value>ممثل عن منظمة الشباب ذوي المشاريع، الأكثر تمثيلا على المستوى الوطني</value>
+  </data>
+  <data name="CompositionConseilAdmin12" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CompositionConseilAdmin2" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالشؤون الخارجية</value>
+  </data>
+  <data name="CompositionConseilAdmin3" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالداخلية والجماعات المحلية</value>
+  </data>
+  <data name="CompositionConseilAdmin4" xml:space="preserve">
+    <value>ممثلان (2) عن الوزير المكلف بالمالية</value>
+  </data>
+  <data name="CompositionConseilAdmin5" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالتجارة</value>
+  </data>
+  <data name="CompositionConseilAdmin6" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالعمل والتشغيل والضمان الاجتماعي</value>
+  </data>
+  <data name="CompositionConseilAdmin7" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالتضامن الوطني وشؤون المرأة</value>
+  </data>
+  <data name="CompositionConseilAdmin8" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالصناعة</value>
+  </data>
+  <data name="CompositionConseilAdmin9" xml:space="preserve">
+    <value>الأمين الدائم لصندوق الكفالة المشتركة لضمان أخطار القروض الممنوحة للشباب ذوو المشاريع، أو ممثله</value>
+  </data>
+  <data name="ConseilAdministration" xml:space="preserve">
+    <value>مجلس الإدارة</value>
+  </data>
+  <data name="FormationIntroP1" xml:space="preserve">
+    <value>برامج تكوينية متخصصة ومتكاملة</value>
+  </data>
+  <data name="FormationIntroP2" xml:space="preserve">
+    <value>مدربين معتمدين من منظمة العمل الدولية</value>
+  </data>
+  <data name="FormationIntroP3" xml:space="preserve">
+    <value>تحويل الأفكار إلى مشاريع ناجحة</value>
+  </data>
+  <data name="FormationSousTitre1" xml:space="preserve">
+    <value>منظمة العمل الدولية</value>
+  </data>
+  <data name="FormationSousTitre1Text" xml:space="preserve">
+    <value>برامج تكوينية معتمدة من منظمة العمل الدولية تهدف إلى تطوير مهارات المقاولاتية وتسيير المؤسسات المصغرة</value>
+  </data>
+  <data name="FormationSousTitre1TextP1" xml:space="preserve">
+    <value>دورة "اوجد فكرة مشروعك" - 3 أيام</value>
+  </data>
+  <data name="FormationSousTitre1TextP2" xml:space="preserve">
+    <value>دورة "ابدأ وحسن مشروعك" - 7 أيام</value>
+  </data>
+  <data name="FormationSousTitre1TextP3" xml:space="preserve">
+    <value>أكثر من 107 مدرب معتمد</value>
+  </data>
+  <data name="FormationSousTitre1TextP4" xml:space="preserve">
+    <value>متابعة ما بعد التدريب</value>
+  </data>
+  <data name="FormationSousTitre1Titre" xml:space="preserve">
+    <value>دورات وفق برامج منظمة العمل الدولية</value>
+  </data>
+  <data name="FormationSousTitre2" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="FormationSousTitre2Text" xml:space="preserve">
+    <value>دورات تكوينية بالشراكة مع مؤسسات التعليم العالي والتكوين المهني لتطوير المهارات الأساسية</value>
+  </data>
+  <data name="FormationSousTitre2TextP1" xml:space="preserve">
+    <value>مدة التكوين: 5 إلى 15 يوم</value>
+  </data>
+  <data name="FormationSousTitre2TextP2" xml:space="preserve">
+    <value>التخطيط الاستراتيجي</value>
+  </data>
+  <data name="FormationSousTitre2TextP3" xml:space="preserve">
+    <value>التسيير العملياتي</value>
+  </data>
+  <data name="FormationSousTitre2TextP4" xml:space="preserve">
+    <value>الجوانب القانونية</value>
+  </data>
+  <data name="FormationSousTitre2TextP5" xml:space="preserve">
+    <value>استراتيجيات النمو والابتكار</value>
+  </data>
+  <data name="FormationSousTitre2Titre" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="FormationSousTitre3" xml:space="preserve">
+    <value>دورات متخصصة</value>
+  </data>
+  <data name="FormationSousTitre3Text" xml:space="preserve">
+    <value>دورات متخصصة بالشراكة مع المصالح العمومية حول مواضيع محل اهتمام المؤسسات المصغرة</value>
+  </data>
+  <data name="FormationSousTitre3TextP1" xml:space="preserve">
+    <value>الضرائب والمنازعات الجبائية</value>
+  </data>
+  <data name="FormationSousTitre3TextP2" xml:space="preserve">
+    <value>الضمان الاجتماعي</value>
+  </data>
+  <data name="FormationSousTitre3TextP3" xml:space="preserve">
+    <value>التأمين الفلاحي</value>
+  </data>
+  <data name="FormationSousTitre3TextP4" xml:space="preserve">
+    <value>بالشراكة مع المصالح العمومية</value>
+  </data>
+  <data name="FormationSousTitre3Titre" xml:space="preserve">
+    <value>دورات تكوينية موضوعاتية</value>
+  </data>
+  <data name="FormationTitre" xml:space="preserve">
+    <value>برامج تكوينية متخصصة ومتكاملة</value>
+  </data>
+  <data name="MissionConseilSuivi" xml:space="preserve">
+    <value>مهام لجنة المراقبة</value>
+  </data>
+  <data name="MissionConseilSuivi1" xml:space="preserve">
+    <value>ممارسة الرقابة اللاحقة لتطبيق قرارات مجلس الإدارة؛</value>
+  </data>
+  <data name="MissionConseilSuivi2" xml:space="preserve">
+    <value>تقديم الملاحظات والتوصيات للمدير العام؛</value>
+  </data>
+  <data name="MissionConseilSuivi3" xml:space="preserve">
+    <value>إبداء الرأي في التقارير الدورية عن المتابعة والتنفيذ والتقييم؛</value>
+  </data>
+  <data name="MissionConseilSuivi4" xml:space="preserve">
+    <value>مراقبة وتدقيق الحسابات لاستعمال أموال الوكالة؛</value>
+  </data>
+  <data name="MissionConseilSuivi5" xml:space="preserve">
+    <value>تقديم الملاحظات حول البيانات التقديرية للإيرادات والنفقات.</value>
+  </data>
+  <data name="ProgFormation" xml:space="preserve">
+    <value>برامج التكوين</value>
+  </data>
+  <data name="ReunionConseilAdmin" xml:space="preserve">
+    <value>اجتماعات مجلس الإدارة</value>
   </data>
 </root>
