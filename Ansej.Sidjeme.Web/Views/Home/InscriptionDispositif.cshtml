@@ -287,12 +287,10 @@
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                     <div class="intro-content">
                         <h2 class="fw-bold">
-                            التسجيل في الجهاز
-                           
-
+                            @localizer["Inscription_NESDA_Titre"]
                         </h2>
                         <p class="lead">
-                            توفر الوكالة الوطنية لدعم وتنمية المقاولاتية منصة رقمية خاصة لحاملي المشاريع الراغبين في انشاء مؤسسات مصغرة او توسعة نشاطاتهم، من اجل التسجيل عن بعد للاستفادة من مزايا جهاز الوكالة من مرافقة وتمويل.
+                            @messageslocalizer["Inscription_NESDA_Text"]
                         </p>
 
                     </div>
@@ -302,7 +300,7 @@
                         <div class="intro-image main-image">
                             <img src="~/NesdaTMP/assets/img/NesdaImg/Inscription cnrc.png" alt="call center" class="img-fluid rounded">
                         </div>
-                       
+
 
 
                     </div>
@@ -319,29 +317,33 @@
 
 <section class="registration-section">
     <div class="container">
-     
-      
+
+
 
         <div class="cards-container">
             <!-- Carte Création -->
             <div class="registration-card">
-                <h2 class="card-title">إنشاء مؤسسة مصغرة</h2>
+                <h2 class="card-title">
+                    @localizer["Creation_Micro_Enterprise_Titre"]
+                </h2>
                 <p class="card-description">
-                    يستفيد من تمويل المشاريع الجديدة جميع الشباب حاملي أفكار المشاريع الذين استفادوا من تكوين في مراكز تطوير المقاولاتية الخاصة بالجامعيين أو خريجي معاهد التكوين المهني.
+                    @messageslocalizer["Creation_Micro_Enterprise_Text"]
                 </p>
-                <a href="https://promoteur.nesda.dz/Inscription/Inscription_Non_SI" class="thm-btnrg" target="_blank">
-                    التسجيل لإنشاء مؤسسة مصغرة
+                <a href="https://myproject.nesda.dz/Inscription/CreateInscription/1" class="thm-btnrg" target="_blank">
+                    @localizer["Creation_Micro_Enterprise_Lien"]
                 </a>
             </div>
 
             <!-- Carte Extension -->
             <div class="registration-card">
-                <h2 class="card-title">توسعة النشاط</h2>
+                <h2 class="card-title">
+                    @localizer["Extension_Micro_Enterprise_Titre"]
+                </h2>
                 <p class="card-description">
-                    يستفيد من تمويل المشاريع التوسعية جميع أصحاب المشاريع، سواء كانوا مستفيدين سابقين من خدمات الوكالة أو من أنشأوا مشاريعهم بشكل مستقل أو بدعم من أجهزة أخرى.
+                    @messageslocalizer["Extension_Micro_Enterprise_Text"]
                 </p>
                 <a href="https://myproject.nesda.dz/Inscription/CreateInscription/2" class="thm-btnrg" target="_blank">
-                    التسجيل لتوسعة النشاط
+                    @localizer["Extension_Micro_Enterprise_Lien"]
                 </a>
             </div>
         </div>
@@ -349,65 +351,102 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="additional-benefits">
-                    <h4 style="color: var(--meciy-base); font-weight: 600; margin-bottom: 1rem;">المستفيدون:</h4>
+                    <h4 style="color: var(--meciy-base); font-weight: 600; margin-bottom: 1rem;">
+                        @localizer["Beneficiaires_Titre"]
+                    </h4>
                     <ul class="benefits-list">
-                        <li>الشباب حاملو أفكار المشاريع</li>
-                        <li>المتكونون في مراكز تطوير المقاولاتية</li>
-                        <li>خريجو الجامعات</li>
-                        <li>خريجو معاهد التكوين المهني</li>
+                        <li>
+                            @localizer["Beneficiaire_01"]
+                        </li>
+                        <li>
+                            @localizer["Beneficiaire_02"]
+                        </li>
+                        <li>
+                            @localizer["Beneficiaire_03"]
+                        </li>
+                        <li>
+                            @localizer["Beneficiaire_04"]
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="additional-benefits">
-                    <h4 style="color: var(--meciy-base); font-weight: 600; margin-bottom: 1rem;">المستفيدون:</h4>
+                    <h4 style="color: var(--meciy-base); font-weight: 600; margin-bottom: 1rem;">
+                        @localizer["Beneficiaires_Titre"]
+                    </h4>
                     <ul class="benefits-list">
-                        <li>المستفيدون السابقون من الوكالة</li>
-                        <li>مستفيدو أونجام (ANGEM)</li>
-                        <li>مستفيدو كناك (CNAC)</li>
-                        <li>الفلاحون</li>
-                        <li>الحرفيون</li>
-                        <li>أصحاب السجلات التجارية</li>
-                        <li>أصحاب التراخيص</li>
+                        <li>
+                            @localizer["Beneficiaire_05"]
+                        </li>
+                        <li>
+                            @localizer["Beneficiaire_06"]
+                        </li>
+                        <li>
+                            @localizer["Beneficiaire_07"]
+                        </li>
+                        <li>
+                            @localizer["Beneficiaire_08"]
+                        </li>
+                        <li>
+                            @localizer["Beneficiaire_09"]
+                        </li>
+                        <li>
+                            @localizer["Beneficiaire_10"]
+                        </li>
+                        <li>
+                            @localizer["Beneficiaire_11"]
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="additional-info">
-            <h3 class="info-title">مزايا المنصة الرقمية</h3>
+            <h3 class="info-title">
+                @localizer["Avantages_Plateforme_Numerique_Titre"]
+            </h3>
             <p class="info-text">
-                تسمح المنصة الرقمية من <span class="highlight-text">ربح الوقت وتوفير جهد التنقل</span> لمباشرة الإجراءات المتعلقة بجهاز الوكالة، بالإضافة الى السرعة والسهولة في الولوج والاستخدام، وكذا ضمان <span class="highlight-text">الشفافية والأمان</span> في معالجة البيانات خلال كافة مراحل الإجراءات.
+                @messageslocalizer["Avantages_Plateforme_Numerique_01"]
+                <span class="highlight-text">
+                    @localizer["Avantages_Plateforme_Numerique_02"]
+                </span>
+                @messageslocalizer["Avantages_Plateforme_Numerique_03"]
+                <span class="highlight-text">
+                    @localizer["Avantages_Plateforme_Numerique_04"]
+                </span>
+                @messageslocalizer["Avantages_Plateforme_Numerique_05"]
             </p>
         </div>
     </div>
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-<script>// Add hover effects for buttons
-        document.addEventListener('DOMContentLoaded', function() {
-            const buttons = document.querySelectorAll('.thm-btnrg');
-            buttons.forEach(button => {
-                button.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-2px)';
-                    this.style.boxShadow = '0 8px 25px rgba(65, 193, 186, 0.3)';
-                });
-
-                button.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                    this.style.boxShadow = 'none';
-                });
+<script>
+    // Add hover effects for buttons
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.thm-btnrg');
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = '0 8px 25px rgba(65, 193, 186, 0.3)';
             });
 
-            // Add hover effects for cards
-            const cards = document.querySelectorAll('.registration-card, .additional-benefits, .intro-card, .additional-info');
-            cards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px)';
-                });
-
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                });
+            button.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
             });
-        });</script>
+        });
+
+        // Add hover effects for cards
+        const cards = document.querySelectorAll('.registration-card, .additional-benefits, .intro-card, .additional-info');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-5px)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    });</script>

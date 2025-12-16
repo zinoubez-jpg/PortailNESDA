@@ -175,6 +175,15 @@ et Antennes Locales</value>
   <data name="Avantage" xml:space="preserve">
     <value>Avantages</value>
   </data>
+  <data name="Avantages_Plateforme_Numerique_01" xml:space="preserve">
+    <value>The Digital Platform</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_03" xml:space="preserve">
+    <value>to carry out procedures related to the agency’s mechanism, in addition to providing quick and ease access and use, as well as ensuring</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_05" xml:space="preserve">
+    <value>in data handling throughout all stages of the procedures.</value>
+  </data>
   <data name="AvantageProgramme1,1" xml:space="preserve">
     <value>Project financing may reach up to</value>
   </data>
@@ -360,6 +369,9 @@ et Antennes Locales</value>
   </data>
   <data name="CreationAgence" xml:space="preserve">
     <value>la création de l'Agence</value>
+  </data>
+  <data name="Creation_Micro_Enterprise_Text" xml:space="preserve">
+    <value>All young people with project ideas who have benefited from training at entrepreneurship development centers (CDE) for university students or vocational training institute graduates are eligible for new project funding.</value>
   </data>
   <data name="CSVF" xml:space="preserve">
     <value>CSVF</value>
@@ -626,6 +638,9 @@ NESDA_Declaration.pdf</value>
   <data name="Expérience" xml:space="preserve">
     <value>Expérience</value>
   </data>
+  <data name="Extension_Micro_Enterprise_Text" xml:space="preserve">
+    <value>All project owners benefit from expansion project financing, whether they are previous beneficiaries of the agency’s services or those who established their projects from the agency’s services or whom they establish their projects.</value>
+  </data>
   <data name="FCMG" xml:space="preserve">
     <value>Fonds de Garantie</value>
   </data>
@@ -707,6 +722,18 @@ The programme is a contribution to strengthening the role of local communities a
   </data>
   <data name="Inscription_CDE_Text" xml:space="preserve">
     <value>The Entrepreneurship Development Centers (CDE) represent shared spaces between the National Entrepreneurship Support and Development Agency (NESDA) and its partners, where they provide dedicated spaces to promote entrepreneurship among young people and raise their capabilities and skills in establishing and managing micro-enterprises, through the provision of quality training courses offered by trainers from the Agency accredited by the International Labour Organization (ILO) , in partnership with trainers from the partner sector.</value>
+  </data>
+  <data name="Inscription_CNRC_Text" xml:space="preserve">
+    <value>Within the framework of the measures of Law No. 04-08 dated 27 Jumada II 1425 corresponding to 14 August 2004, as amended and supplemented, as well as Executive Decree No. 23-169 dated 24 April 2023, the procedures for managing and operating the electronic portal dedicated to the creation of institutions, as well as the procedures for registration, transfer, receipt of electronic documents, and granting the common identification number.</value>
+  </data>
+  <data name="Inscription_MPDZ_Text_01" xml:space="preserve">
+    <value>The electronic public procurement portal offers a new approach to work, aiming to establish more modern, simpler, easier, and faster procedures between economic operators and contracting authorities in the field of public procurement. It aims to ensure greater respect for the principles of free access to public procurement, equality among candidates, and transparency of procedures.</value>
+  </data>
+  <data name="Inscription_MPDZ_Text_02" xml:space="preserve">
+    <value>The electronic portal also provides economic operators and micro-enterprises holders with various information and data related to public procurement at the national level, especially consultations and public contracts, in addition to providing other services such as viewing various calls for competition and downloading terms and conditions.</value>
+  </data>
+  <data name="Inscription_NESDA_Text" xml:space="preserve">
+    <value>The National Entrepreneurship Development Agency (NESDA) offers a special digital platform for project holders wishing to create micro-enterprises or expand their activities, in order to register remotely to benefit from the agency’s support and financing services.</value>
   </data>
   <data name="Lancement" xml:space="preserve">
     <value>Launch</value>
@@ -851,6 +878,15 @@ The programme is a contribution to strengthening the role of local communities a
   </data>
   <data name="PLT2" xml:space="preserve">
     <value>Réussite Assurée.</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Text" xml:space="preserve">
+    <value>The National Commercial Register Center (CNRC) provides a dedicated electronic portal for procedures related to the establishment of businesses, in coordination with relevant authorities, particularly:</value>
+  </data>
+  <data name="Portail_Services_Texte_01" xml:space="preserve">
+    <value>The electronic portal provides various information and procedures related to the establishment of an institution, in accordance with the applicable legislation, in the field of commercial registration, taxes, social security and economic statistics.</value>
+  </data>
+  <data name="Portail_Services_Texte_02" xml:space="preserve">
+    <value>The registration of the establishment through the electronic portal for the establishment of establishments constitutes the only registration after it has been approved by the National Center for the Commercial Register and confirmed by the competent authorities</value>
   </data>
   <data name="Principal" xml:space="preserve">
     <value>Principal</value>
