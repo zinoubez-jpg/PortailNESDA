@@ -174,6 +174,15 @@
   <data name="Avantage" xml:space="preserve">
     <value>المزايا</value>
   </data>
+  <data name="Avantages_Plateforme_Numerique_01" xml:space="preserve">
+    <value>تسمح المنصة الرقمية من</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_03" xml:space="preserve">
+    <value>لمباشرة الإجراءات المتعلقة بجهاز الوكالة، بالإضافة الى السرعة والسهولة في الولوج والاستخدام، وكذا ضمان</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_05" xml:space="preserve">
+    <value>في معالجة البيانات خلال كافة مراحل الإجراءات.</value>
+  </data>
   <data name="Avril2025" xml:space="preserve">
     <value>أفريل 2025</value>
   </data>
@@ -243,6 +252,9 @@
   <data name="CreationAgence" xml:space="preserve">
     <value>نشأة الوكالة</value>
   </data>
+  <data name="Creation_Micro_Enterprise_Text" xml:space="preserve">
+    <value>يستفيد من تمويل المشاريع الجديدة جميع الشباب حاملي أفكار المشاريع الذين استفادوا من تكوين في مراكز تطوير المقاولاتية الخاصة بالجامعيين أو خريجي معاهد التكوين المهني.</value>
+  </data>
   <data name="CSVF" xml:space="preserve">
     <value>CSVF</value>
   </data>
@@ -296,6 +308,9 @@
   </data>
   <data name="Expérience" xml:space="preserve">
     <value>خبرة</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Text" xml:space="preserve">
+    <value>يستفيد من تمويل المشاريع التوسعية جميع أصحاب المشاريع، سواء كانوا مستفيدين سابقين من خدمات الوكالة أو من أنشأوا مشاريعهم بشكل مستقل أو بدعم من أجهزة أخرى.</value>
   </data>
   <data name="FCMG" xml:space="preserve">
     <value>صندوق الضمان</value>
@@ -364,6 +379,18 @@
   </data>
   <data name="Inscription_CDE_Text" xml:space="preserve">
     <value>تمثل مراكز تطوير المقاولاتية فضاءات مشتركة بين الوكالة الوطنية لدعم وتنمية المقاولاتية وشركاءها، حيث توفر مساحات مخصصة لتعزيز المقاولاتية لدى الشباب ورفع قدراتهم ومهاراتهم في انشاء وتسيير المؤسسات المصغرة، عبر توفير دورات تدريبية نوعية يقدمها مدربون من الوكالة معتمدين من قبل المنظمة العالمية للعمل، مناصفة مع مدربي القطاع الشريك.</value>
+  </data>
+  <data name="Inscription_CNRC_Text" xml:space="preserve">
+    <value>في إطار تدابير القانون رقم 04-08 المؤرخ في 27 جمادى الثانية عام 1425 الموافق 14 غشت سنة 2004، المعدل و المتمم و كذا المرسوم التنفيذي رقم 23-169 مؤرخ في 24 أفريل سنة 2023، يحدد كيفيات تسيير و سير البوابة الالكترونية المخصصة لانشاء المؤسسات و كذا كيفيات التسجيل و التحويل و استلام الوثائق الالكترونية و منح رقم التعريف المشترك.</value>
+  </data>
+  <data name="Inscription_MPDZ_Text_01" xml:space="preserve">
+    <value>توفر البوابة الإلكترونية للصفقات العمومية منهج الجديد للعمل يطمح إلى تكريس إجراءات أكثر حداثة، بساطة، سهولة و سرعة بين المتعاملين الاقتصاديين والمصالح المتعاقدة في مجال الطلب العمومي. حيث تهدف الى توفير ضمان احترام أكبر لمبادئ حرية الوصول إلى الطلب العمومي، المساواة بين المرشحين و شفافية الإجراءات.</value>
+  </data>
+  <data name="Inscription_MPDZ_Text_02" xml:space="preserve">
+    <value>كما تقدم البوابة الالكترونية للمتعاملين الاقتصاديين وأصحاب المؤسسات المصغرة مختلف المعلومات والبيانات المتعلقة بالطلب العمومي على كافة مستوى الوطن، ولاسيما الاستشارات والصفقات العمومية، بالإضافة الى توفير خدمات أخرى على غرار الإطلاع على مختلف دعوات المنافسة وكذا تحميل دفاتر الشروط.</value>
+  </data>
+  <data name="Inscription_NESDA_Text" xml:space="preserve">
+    <value>توفر الوكالة الوطنية لدعم وتنمية المقاولاتية منصة رقمية خاصة لحاملي المشاريع الراغبين في انشاء مؤسسات مصغرة او توسعة نشاطاتهم، من اجل التسجيل عن بعد للاستفادة من مزايا جهاز الوكالة من مرافقة وتمويل</value>
   </data>
   <data name="Lancement" xml:space="preserve">
     <value>الانطلاق</value>
@@ -439,6 +466,15 @@
   </data>
   <data name="Politique" xml:space="preserve">
     <value>سياسة معالجة البيانات</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Text" xml:space="preserve">
+    <value>يوفر المركز الوطني للسجل التجاري بوابة الكترونية خاصة للإجراءات المتعلقة بإنشاء المؤسسات، وذلك بالتنسيق مع المصالح ذات الصلة ولا سيما:</value>
+  </data>
+  <data name="Portail_Services_Texte_01" xml:space="preserve">
+    <value>حيث تقدم البوابة الالكترونية مختلف المعلومات والإجراءات المتعلقة بإنشاء مؤسسة، وفق التشريع المعمول به، في مجال السجل التجاري، الضرائب، الضمان الاجتماعي والاحصاء الاقتصادي.</value>
+  </data>
+  <data name="Portail_Services_Texte_02" xml:space="preserve">
+    <value>كما يشكل تسجيل المؤسسة عن طريق البوابة الإلكترونية لإنشاء المؤسسات التسجيل الوحيد بعد المصادقة عليه من طرف المركز الوطني للسجل التجاري و تأكيده من طرف المصالح المختصة.</value>
   </data>
   <data name="Principal" xml:space="preserve">
     <value>الرئيسية</value>
