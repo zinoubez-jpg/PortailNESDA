@@ -840,4 +840,115 @@
   <data name="ReunionConseilAdmin" xml:space="preserve">
     <value>Board meetings</value>
   </data>
+  <data name="AxesProgramme" xml:space="preserve">
+    <value>Program Axes and Activities:</value>
+  </data>
+  <data name="ButProgramme" xml:space="preserve">
+    <value>Program Goal:</value>
+  </data>
+  <data name="CadreProgramme" xml:space="preserve">
+    <value>Program Framework:</value>
+  </data>
+  <data name="Conditionbeneficier1" xml:space="preserve">
+    <value>1. Previous beneficiaries of the Agency’s mechanism:</value>
+  </data>
+  <data name="Conditionbeneficier1,1" xml:space="preserve">
+    <value>1.1 Conditions for benefiting from “Expansion of the same or subsidiary activity”:</value>
+  </data>
+  <data name="Conditionbeneficier1,2" xml:space="preserve">
+    <value>1.2 Conditions for benefiting from “New activity expansion”:</value>
+  </data>
+  <data name="Conditionbeneficier2" xml:space="preserve">
+    <value>2. Previous non-beneficiaries of the Agency’s mechanism:</value>
+  </data>
+  <data name="ConditionbeneficierCommun" xml:space="preserve">
+    <value>Common Conditions:</value>
+  </data>
+  <data name="ConditionbeneficierTitre" xml:space="preserve">
+    <value>Program Eligibility Requirements</value>
+  </data>
+  <data name="ContributionATitre" xml:space="preserve">
+    <value>Agency Contribution (unremunerated Loan)</value>
+  </data>
+  <data name="ContributionBTitre" xml:space="preserve">
+    <value>Bank Contribution (Bank Loan)</value>
+  </data>
+  <data name="ContributionPTitre" xml:space="preserve">
+    <value>Personal Contribution</value>
+  </data>
+  <data name="DeclarationHonneur" xml:space="preserve">
+    <value>Benefiting from the importation of equipment, operations, and services</value>
+  </data>
+  <data name="DefinitionProgramme" xml:space="preserve">
+    <value>Presentation of the IMPACT 70 Program</value>
+  </data>
+  <data name="EnvironementProgramme" xml:space="preserve">
+    <value>Program scope:</value>
+  </data>
+  <data name="EtapesBeneficier" xml:space="preserve">
+    <value>The steps to benefit from the program</value>
+  </data>
+  <data name="ModeFinancementTitre" xml:space="preserve">
+    <value>Modes of financing</value>
+  </data>
+  <data name="MotLiaison" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Partenaire1" xml:space="preserve">
+    <value>Higher Education and Scientific Research Institutions</value>
+  </data>
+  <data name="Partenaire2" xml:space="preserve">
+    <value>Education and Vocational Training Institutions</value>
+  </data>
+  <data name="Partenaire3" xml:space="preserve">
+    <value>Banking Institutions</value>
+  </data>
+  <data name="Partenaire4" xml:space="preserve">
+    <value>Economic institutions</value>
+  </data>
+  <data name="Partenaire5" xml:space="preserve">
+    <value>Public Institutions and Bodies</value>
+  </data>
+  <data name="Partenariat1" xml:space="preserve">
+    <value>PARTNERSHIPS</value>
+  </data>
+  <data name="Partenariat2" xml:space="preserve">
+    <value>PROGRAM</value>
+  </data>
+  <data name="Programme" xml:space="preserve">
+    <value>PROGRAM</value>
+  </data>
+  <data name="RegisterNow" xml:space="preserve">
+    <value>“Register now”</value>
+  </data>
+  <data name="SousTraitance1" xml:space="preserve">
+    <value>Subcontracting</value>
+  </data>
+  <data name="SousTraitance2" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="SousTraitanceAvantages1" xml:space="preserve">
+    <value>Main Advantages of Subcontracting for Large Enterprises</value>
+  </data>
+  <data name="SousTraitanceAvantages2" xml:space="preserve">
+    <value>Main Advantages of Subcontracting for Micro-Enterprises</value>
+  </data>
+  <data name="SousTraitanceModels" xml:space="preserve">
+    <value>Some subcontracting models through micro-enterprises</value>
+  </data>
+  <data name="SousTraitanceSupport" xml:space="preserve">
+    <value>Agency support for subcontracting</value>
+  </data>
+  <data name="TypeFinancemet1" xml:space="preserve">
+    <value>Self-financing</value>
+  </data>
+  <data name="TypeFinancemet2" xml:space="preserve">
+    <value>Mixed financing</value>
+  </data>
+  <data name="TypeFinancemet3" xml:space="preserve">
+    <value>Triangular financing</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>Electronic registration link</value>
+  </data>
 </root>

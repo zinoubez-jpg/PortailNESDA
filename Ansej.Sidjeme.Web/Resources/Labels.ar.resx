@@ -1071,4 +1071,115 @@
   <data name="Réponse_Pour_Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
     <value>يمكن التسجيل في مراكز تطوير المقاولاتية بغض النظر عن معهد التكوين التي درس فيها. يعتمد هذا على سياسة المركز وقواعد التسجيل التي يحددها</value>
   </data>
+  <data name="AxesProgramme" xml:space="preserve">
+    <value>محاور وأنشطة البرنامج</value>
+  </data>
+  <data name="ButProgramme" xml:space="preserve">
+    <value>غاية البرنامج</value>
+  </data>
+  <data name="CadreProgramme" xml:space="preserve">
+    <value>إطار البرنامج</value>
+  </data>
+  <data name="ConditionBeneficier1" xml:space="preserve">
+    <value>1. المستفيدين من جهاز الوكالة سابقا:</value>
+  </data>
+  <data name="ConditionBeneficier1,1" xml:space="preserve">
+    <value>1.1. شروط الاستفادة من "توسعة نفس النشاط او نشاط فرعي"</value>
+  </data>
+  <data name="ConditionBeneficier1,2" xml:space="preserve">
+    <value>1.2. شروط الاستفادة من "توسعة نشاط جديد"</value>
+  </data>
+  <data name="ConditionBeneficier2" xml:space="preserve">
+    <value>2. الغير مستفيدين من جهاز الوكالة سابقا:</value>
+  </data>
+  <data name="ConditionBeneficierCommun" xml:space="preserve">
+    <value>الشروط المشتركة:</value>
+  </data>
+  <data name="ConditionBeneficierTitre" xml:space="preserve">
+    <value>شروط الاستفادة من البرنامج</value>
+  </data>
+  <data name="ContributionATitre" xml:space="preserve">
+    <value>مساهمة الوكالة (قرض غير مكافئ)</value>
+  </data>
+  <data name="ContributionBTitre" xml:space="preserve">
+    <value>مساهمة البنك (القرض البنكي)</value>
+  </data>
+  <data name="ContributionPTitre" xml:space="preserve">
+    <value>المساهمة الشخصية</value>
+  </data>
+  <data name="DeclarationHonneur" xml:space="preserve">
+    <value>الاستفادة من استراد المعدات و العمليات و الخدمات</value>
+  </data>
+  <data name="DefinitionProgramme" xml:space="preserve">
+    <value>تعريف البرنامج</value>
+  </data>
+  <data name="EnvironementProgramme" xml:space="preserve">
+    <value>محيط البرنامج</value>
+  </data>
+  <data name="EtapesBeneficier" xml:space="preserve">
+    <value>مراحل الاستفادة من البرنامج</value>
+  </data>
+  <data name="ModeFinancementTitre" xml:space="preserve">
+    <value>صيغ التمويل</value>
+  </data>
+  <data name="MotLiaison" xml:space="preserve">
+    <value>الى</value>
+  </data>
+  <data name="Partenaire1" xml:space="preserve">
+    <value>مؤسسات التعليم العالي والبحث العلمي</value>
+  </data>
+  <data name="Partenaire2" xml:space="preserve">
+    <value>مؤسسات التعليم والتكوين المهني</value>
+  </data>
+  <data name="Partenaire3" xml:space="preserve">
+    <value>المؤسسات البنكية</value>
+  </data>
+  <data name="Partenaire4" xml:space="preserve">
+    <value>المؤسسات الاقتصادية</value>
+  </data>
+  <data name="Partenaire5" xml:space="preserve">
+    <value>المؤسسات والهيئات العمومية</value>
+  </data>
+  <data name="Partenariat1" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="Partenariat2" xml:space="preserve">
+    <value>الشراكات</value>
+  </data>
+  <data name="Programme" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="RegisterNow" xml:space="preserve">
+    <value>سجل الآن!</value>
+  </data>
+  <data name="SousTraitance1" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="SousTraitance2" xml:space="preserve">
+    <value>المناولة</value>
+  </data>
+  <data name="SousTraitanceAvantages1" xml:space="preserve">
+    <value>أهم مزايا المناولة بالنسبة للمؤسسات الكبرى</value>
+  </data>
+  <data name="SousTraitanceAvantages2" xml:space="preserve">
+    <value>أهم مزايا المناولة بالنسبة للمؤسسات المصغرة</value>
+  </data>
+  <data name="SousTraitanceModels" xml:space="preserve">
+    <value>بعض نماذج المناولة عبر المؤسسات المصغرة</value>
+  </data>
+  <data name="SousTraitanceSupport" xml:space="preserve">
+    <value>دعم الوكالة للمناولة</value>
+  </data>
+  <data name="TypeFinancemet1" xml:space="preserve">
+    <value>التمويل الذاتي</value>
+  </data>
+  <data name="TypeFinancemet2" xml:space="preserve">
+    <value>التمويل الثنائي</value>
+  </data>
+  <data name="TypeFinancemet3" xml:space="preserve">
+    <value>التمويل الثلاثي</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>رابط التسجيل الإلكتروني</value>
+  </data>
 </root>
