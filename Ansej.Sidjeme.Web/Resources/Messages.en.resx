@@ -184,6 +184,39 @@ et Antennes Locales</value>
   <data name="Avantages_Plateforme_Numerique_05" xml:space="preserve">
     <value>in data handling throughout all stages of the procedures.</value>
   </data>
+  <data name="AvantageProgramme1,1" xml:space="preserve">
+    <value>Project financing may reach up to</value>
+  </data>
+  <data name="AvantageProgramme1,2" xml:space="preserve">
+    <value>10,000,000 DZD.</value>
+  </data>
+  <data name="AvantageProgramme2,1" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="AvantageProgramme2,2" xml:space="preserve">
+    <value>5-day</value>
+  </data>
+  <data name="AvantageProgramme2,3" xml:space="preserve">
+    <value>entrepreneurship training session at the Agency.</value>
+  </data>
+  <data name="AvantageProgramme3" xml:space="preserve">
+    <value>Joint financing formulas are mixed between the project owner, and the Agency, and triangular between the project owner, the Agency, and the Bank.</value>
+  </data>
+  <data name="AvantageProgramme4,1" xml:space="preserve">
+    <value>Loans with</value>
+  </data>
+  <data name="AvantageProgramme4,2" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="AvantageProgramme4,3" xml:space="preserve">
+    <value>interest rebate.</value>
+  </data>
+  <data name="AvantageProgramme5" xml:space="preserve">
+    <value>Attractive loan repayment terms.</value>
+  </data>
+  <data name="AvantageProgramme6" xml:space="preserve">
+    <value>Tax benefits in accordance with the conditions specified in the current tax legislation.</value>
+  </data>
   <data name="Avril2025" xml:space="preserve">
     <value>April 2025</value>
   </data>
@@ -262,6 +295,57 @@ et Antennes Locales</value>
   <data name="de l" xml:space="preserve">
     <value>de l'</value>
   </data>
+  <data name="decrets1,1" xml:space="preserve">
+    <value>Presidential Decree n°96-234 dated 16 Safar 1417, corresponding to 2 July 1996, relating to youth employment support.</value>
+  </data>
+  <data name="decrets1,2" xml:space="preserve">
+    <value>Executive Decree n° 96-296 dated 24 Rabi’ al-Thani 1417, corresponding to 8 September 1996, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets1,3" xml:space="preserve">
+    <value>Executive Decree n°03-290 dated 9 Rajab 1424 corresponding to 6 September 2003, defines the conditions and levels of assistance provided to project holders.</value>
+  </data>
+  <data name="decrets2,1" xml:space="preserve">
+    <value>Presidential Decree n° 03-300 dated 14 Rajab 1424, corresponding to 11 September 2003, relating to youth employment support.</value>
+  </data>
+  <data name="decrets2,2" xml:space="preserve">
+    <value>Executive Decree n° 98-231 dated 19 Rabi’ al-Awwal 1419 corresponding to 13 July 1998, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets2,3" xml:space="preserve">
+    <value>Executive Decree n°10-157 dated 7 Rajab 1431 corresponding to 20 June 2010, defines the conditions and levels of assistance provided to project holders.</value>
+  </data>
+  <data name="decrets3,1" xml:space="preserve">
+    <value>Presidential Decree n°11-100 dated the first of Rabi’ al-Thani 1432, corresponding to 6 March 2011, relating to youth employment support.</value>
+  </data>
+  <data name="decrets3,2" xml:space="preserve">
+    <value>Executive Decree n°01-162 dated 18 Rabi’ al-Thani 1422 corresponding to 10 July 2001, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets4,1" xml:space="preserve">
+    <value>Presidential Decree n° 20-441 dated 15 Jumada al-Ula 1442, corresponding to 30 December 2020, relating to supporting youth employment.</value>
+  </data>
+  <data name="decrets4,2" xml:space="preserve">
+    <value>Executive Decree n° 03-288 dated 09 Rajab 1424 corresponding to 6 September 2003, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets5,1" xml:space="preserve">
+    <value>Presidential Decree n° 22-42 dated 16 Jumada al-Thania 1443, corresponding to 19 January 2022, relating to youth employment support.</value>
+  </data>
+  <data name="decrets5,2" xml:space="preserve">
+    <value>Executive Decree n°11-102 dated the first of Rabi’ al-Thani 1432, corresponding to March 6, 2011, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets6,2" xml:space="preserve">
+    <value>Executive Decree n°18-201 dated 20 Dhu al-Qi’dah 1439 corresponding to 2 August 2018, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets7,2" xml:space="preserve">
+    <value>Executive Decree n°20-329 dated 6 Rabi’ al-Thani 1442 corresponding to 22 November 2020, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets8,2" xml:space="preserve">
+    <value>Executive Decree n° 23-330 dated the first of Rabi’ al-Awwal 1445, corresponding to 17 September 2023, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets9,2" xml:space="preserve">
+    <value>Executive Decree n° 24-197 dated 05 Dhu al-Hijjah 1445 corresponding to 11 June 2024, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decretsAnnule1" xml:space="preserve">
+    <value>Executive Decree n°96-297 dated 24 Rabi’ al-Thani 1417 corresponding to 8 September 1996, defines the conditions and levels of assistance provided to project holders.</value>
+  </data>
   <data name="Depuis" xml:space="preserve">
     <value>Depuis</value>
   </data>
@@ -292,14 +376,83 @@ et Antennes Locales</value>
   <data name="DescriptionAgenceP4" xml:space="preserve">
     <value>The agency intends to continue the dynamic development and transformation of its operational framework, aiming to enhance the "trust" of project holders and encourage the integration of micro and small enterprises into national value chains. The ultimate goal is to enable the agency to fully play its role as a catalyst for economic transformation in service of national development.</value>
   </data>
+  <data name="DescriptionFG" xml:space="preserve">
+    <value>The Mutual Caution Fund to Guarantee Credits Risks of the Project Holders works to cover the risks associated with bank loans granted to micro-enterprises financed within the framework of the National Entrepreneurship Support and Development Agency. The fund constitutes a complementary guarantee for banks, in addition to the guarantees provided by micro-enterprises, which contributes to strengthening banks’ confidence in financing entrepreneurial projects.</value>
+  </data>
+  <data name="DescriptionTachesFG" xml:space="preserve">
+    <value>The guarantee fund is a tool for reducing the financial risks associated with financing micro-enterprises. It provides additional guarantees to banks, alongside those offered by the entrepreneurs themselves, which include:</value>
+  </data>
   <data name="desExpo-Vente" xml:space="preserve">
     <value>des Expo-Vente</value>
+  </data>
+  <data name="ElementFonctionnementFG1" xml:space="preserve">
+    <value>The fund receives a formal request from the bank after declaring non-payment of three six-month installments.</value>
+  </data>
+  <data name="ElementFonctionnementFG2" xml:space="preserve">
+    <value>The fund conducts a field visit to verify the micro-enterprise's situation and its inability to repay.</value>
+  </data>
+  <data name="ElementFonctionnementFG3P1" xml:space="preserve">
+    <value>The bank is compensated by the Fund up to</value>
+  </data>
+  <data name="ElementFonctionnementFG3P2" xml:space="preserve">
+    <value>of the remaining debt (principal + interest).</value>
+  </data>
+  <data name="ElementFonctionnementFG4" xml:space="preserve">
+    <value>After compensation, the bank transfers the remaining debt rights to the fund.</value>
+  </data>
+  <data name="ElementFonctionnementFG5" xml:space="preserve">
+    <value>The fund undertakes the tasks of accompanying and monitoring the micro-enterprise in difficulty after compensation, in order to restoring its activity and enable it to repay its financial obligations.</value>
+  </data>
+  <data name="ElementParticipationFG1" xml:space="preserve">
+    <value>The micro-enterprise is enrolled after bank approval.</value>
+  </data>
+  <data name="ElementParticipationFG2P1" xml:space="preserve">
+    <value>The micro-enterprise's contribution rate to the fund is set at</value>
+  </data>
+  <data name="ElementParticipationFG2P2" xml:space="preserve">
+    <value>annually, calculated based on the amount and value of the bank loan, and is paid in full once.</value>
+  </data>
+  <data name="ElementParticipationFG3P1" xml:space="preserve">
+    <value>The banks' contribution rate to the fund is set at </value>
+  </data>
+  <data name="ElementParticipationFG3P2" xml:space="preserve">
+    <value>of the outstanding debt annually.</value>
+  </data>
+  <data name="ElementParticipationFG4" xml:space="preserve">
+    <value>In case of payment default (3 unpaid six-month installments):</value>
+  </data>
+  <data name="ElementParticipationFG4,1" xml:space="preserve">
+    <value>The fund conducts a field visit.</value>
+  </data>
+  <data name="ElementParticipationFG4,2P1" xml:space="preserve">
+    <value>The bank compensates </value>
+  </data>
+  <data name="ElementParticipationFG4,2P2" xml:space="preserve">
+    <value>of the remaining amount.</value>
+  </data>
+  <data name="ElementParticipationFG4,3" xml:space="preserve">
+    <value>It carries out the follow-up process with the micro-enterprise in difficulty.</value>
   </data>
   <data name="Enligne" xml:space="preserve">
     <value>En ligne</value>
   </data>
   <data name="Entreprenariat" xml:space="preserve">
     <value>Entreprenariat</value>
+  </data>
+  <data name="EnvironementProgrammeParag1" xml:space="preserve">
+    <value>The program aims to enhance the expansion of micro-enterprise activities and give them more opportunities for development and success, within the framework of the Agency’s reform efforts, taking into account the criteria for entrepreneurship training and the control of risks related to activity financing.</value>
+  </data>
+  <data name="EnvironementProgrammeParag2" xml:space="preserve">
+    <value>The program covers owners of micro-enterprises who have previously benefited from the Agency’s support during the creation phase, as well as those who have not previously benefited from it, such as those who started their activities through the National Agency for Microcredit Management (ANGEM) or the National Unemployment Insurance Fund (CNAC), in addition to farmers, artisans, or holders of licenses and/or commercial registers.</value>
+  </data>
+  <data name="EnvironementProgrammeParag3" xml:space="preserve">
+    <value>The Expansion of activity includes various economic sectors and comprises:</value>
+  </data>
+  <data name="EnvironementProgrammeParag3P1" xml:space="preserve">
+    <value>Development of a main activity or launching a subsidiary activity: new production line, new machine, new complementary product or related to the main activity.</value>
+  </data>
+  <data name="EnvironementProgrammeParag3P2" xml:space="preserve">
+    <value>Launching a new activity: by diversifying the main activity and exploring other activity areas, …</value>
   </data>
   <data name="Etapes" xml:space="preserve">
     <value>Main stages</value>
@@ -327,6 +480,9 @@ et Antennes Locales</value>
   </data>
   <data name="FINANCEMENTDETAIS" xml:space="preserve">
     <value>The Agency grants financial subsidies according to various financing formulas, in collaboration with its partners from the public banking sector, in addition to tax privileges to the beneficiaries of the Agency's mechanism, in accordance with the legislative regulation in force</value>
+  </data>
+  <data name="FonctionnementFGDescription" xml:space="preserve">
+    <value>The Mutual Caution Fund intervenes when a repayment default is recorded, according to a series of organized procedures as follows:</value>
   </data>
   <data name="FORMATION" xml:space="preserve">
     <value>Training</value>
@@ -361,6 +517,12 @@ The programme is a contribution to strengthening the role of local communities a
   </data>
   <data name="IndustrieT2" xml:space="preserve">
     <value>Produisez Local.</value>
+  </data>
+  <data name="InfoGenerale" xml:space="preserve">
+    <value>Contact us for more details about the Guarantee Fund and how to benefit from its services.</value>
+  </data>
+  <data name="InfoTextJuridique" xml:space="preserve">
+    <value>Contact us for assistance or legal advice regarding these texts.</value>
   </data>
   <data name="Inscription" xml:space="preserve">
     <value>Subscription</value>
@@ -432,7 +594,10 @@ The programme is a contribution to strengthening the role of local communities a
     <value>NESDA</value>
   </data>
   <data name="NesdaExtension" xml:space="preserve">
-    <value>Nesda Extension</value>
+    <value>“NESDA Expansion”</value>
+  </data>
+  <data name="NesdaExtensionDescription" xml:space="preserve">
+    <value>It is a special program of the National Entrepreneurship Support and Development Agency, intended for micro-enterprises wishing to expand their activity. It is titled: “NESDA Expansion”</value>
   </data>
   <data name="NesdaNomination" xml:space="preserve">
     <value>The National Entrepreneurship Support and Development Agency</value>
@@ -536,6 +701,9 @@ The programme is a contribution to strengthening the role of local communities a
   <data name="Q9" xml:space="preserve">
     <value>Can individuals with special needs benefit from special conditions?</value>
   </data>
+  <data name="QuestionGenerale" xml:space="preserve">
+    <value>Do you need more information?</value>
+  </data>
   <data name="R1" xml:space="preserve">
     <value>Yes, the project holder has the right to establish his project in any wilaya he wishes, as long as he provides a document proving his presence there.</value>
   </data>
@@ -622,6 +790,42 @@ The programme is a contribution to strengthening the role of local communities a
   </data>
   <data name="Suivivotredemande" xml:space="preserve">
     <value>Track your application</value>
+  </data>
+  <data name="TacheFG1" xml:space="preserve">
+    <value>	The equipment pledge is made first in favor of the bank, then in favor of the National Entrepreneurship Support and Development Agency.</value>
+  </data>
+  <data name="TacheFG2" xml:space="preserve">
+    <value>	Pledge of movable equipment.</value>
+  </data>
+  <data name="TacheFG3" xml:space="preserve">
+    <value>	Comprehensive insurance covering all project equipment against various risks.</value>
+  </data>
+  <data name="TaxDescription" xml:space="preserve">
+    <value>The project owner benefits from tax privileges during the phases of establishing the project and expanding its production capacity, which helps reduce financial burdens and encourages investment in various economic projects.</value>
+  </data>
+  <data name="TaxPhase1,1" xml:space="preserve">
+    <value>Exemption from property transfer duties for real estate acquisitions made for a financial consideration within the framework of creating an industrial activity.</value>
+  </data>
+  <data name="TaxPhase1,2" xml:space="preserve">
+    <value>Exemption from value-added tax (VAT) on the acquisition of equipment and services that are directly involved in the implementation of the investment during both the establishment and expansion phases, for activities subject to the real tax system. (Passenger vehicles are excluded from this measure unless they constitute the main tool of the activity).</value>
+  </data>
+  <data name="TaxPhase1,3" xml:space="preserve">
+    <value>Application of a reduced 5% customs duty rate on imported equipment directly used in the implementation of the investment.</value>
+  </data>
+  <data name="TaxPhase2,1" xml:space="preserve">
+    <value>Exemption from property tax on buildings and additional constructions for 3, 6 or 10 years, depending on the project's location, starting from the date of completion.</value>
+  </data>
+  <data name="TaxPhase2,2" xml:space="preserve">
+    <value>Exemption from the single lump-sum tax (IFU) or, as applicable, from Corporate Income Tax (IBS) or Personal Income Tax (IRG) for a period of 3, 6, or 10 years, depending on the project’s location, starting from the date operation.</value>
+  </data>
+  <data name="TaxPhase2,3" xml:space="preserve">
+    <value>Upon expiration of the exemption period mentioned above, it may be extended for 2 years when the investor undertakes to employ at least 3 workers on a permanent basis.</value>
+  </data>
+  <data name="TaxWarningMsg" xml:space="preserve">
+    <value>Failure to respect the commitment to create jobs will result in the withdrawal of granted privileges and the requirement to pay the due fees and charges.</value>
+  </data>
+  <data name="TextJuridiqueDescription" xml:space="preserve">
+    <value>A comprehensive collection of legal texts related to the Agency and its mechanism, available for download and view.</value>
   </data>
   <data name="Àpropos" xml:space="preserve">
     <value>About the Agency</value>

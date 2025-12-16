@@ -142,7 +142,7 @@
     <value>Agence</value>
   </data>
   <data name="Agences" xml:space="preserve">
-    <value>Agences</value>
+    <value>الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
   </data>
   <data name="Annuaire" xml:space="preserve">
     <value>Annuaire</value>
@@ -756,6 +756,66 @@
   <data name="organisationNesda" xml:space="preserve">
     <value>تنظيم الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
   </data>
+  <data name="AvantageProgrammeTitre" xml:space="preserve">
+    <value>مزايا البرنامج</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>تواصل معنا</value>
+  </data>
+  <data name="ContactUsNow" xml:space="preserve">
+    <value>تواصل معنا الآن</value>
+  </data>
+  <data name="decrets1" xml:space="preserve">
+    <value>المراسيم الرئاسية (دعم تشغيل الشباب)</value>
+  </data>
+  <data name="decrets2" xml:space="preserve">
+    <value>المراسيم التنفيذية (إنشاء الوكالة)</value>
+  </data>
+  <data name="decrets3" xml:space="preserve">
+    <value>المراسيم التنفيذية (شروط الإعانة المقدمة لحاملي المشاريع ومستواها)</value>
+  </data>
+  <data name="EnvironementProgrammeTitre" xml:space="preserve">
+    <value>إطار ومحيط البرنامج</value>
+  </data>
+  <data name="FonctionnementFG" xml:space="preserve">
+    <value>آلية عمل صندوق الضمان</value>
+  </data>
+  <data name="fond" xml:space="preserve">
+    <value>صندوق</value>
+  </data>
+  <data name="garantie" xml:space="preserve">
+    <value>الضمان</value>
+  </data>
+  <data name="NesdaExtensionTitre" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="ParticipationFG" xml:space="preserve">
+    <value>كيفية الاشتراك في صندوق الضمان</value>
+  </data>
+  <data name="TachesFG" xml:space="preserve">
+    <value>مهام صندوق الضمان</value>
+  </data>
+  <data name="TaxPhase1" xml:space="preserve">
+    <value>المرحلة الأولى: مرحلة الإنجاز</value>
+  </data>
+  <data name="TaxPhase2" xml:space="preserve">
+    <value>المرحلة الثانية: مرحلة الاستغلال</value>
+  </data>
+  <data name="TaxTitre1" xml:space="preserve">
+    <value>المزايا </value>
+  </data>
+  <data name="TaxTitre2" xml:space="preserve">
+    <value>الضريبية</value>
+  </data>
+  <data name="telecharger" xml:space="preserve">
+    <value>تحميل</value>
+  </data>
+  <data name="TexteJuridiqueTitre1" xml:space="preserve">
+    <value>النصوص</value>
+  </data>
+  <data name="TexteJuridiqueTitre2" xml:space="preserve">
+    <value>القانونية</value>
+  </data>
   <data name="Accompagnement" xml:space="preserve">
     <value>المرافقةالقبلية والبعدية</value>
   </data>
@@ -1121,5 +1181,353 @@
   </data>
   <data name="Portail_Services_Titre" xml:space="preserve">
     <value>خدمات البوابة</value>
+  </data>
+  <data name="ActiviteNesda" xml:space="preserve">
+    <value>أنشطة الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="ActiviteNesdaText" xml:space="preserve">
+    <value>تغطي مزايا جهاز الوكالة الوطنية لدعم وتنمية المقاولاتية مراحل إنشاء المؤسسات المصغرة وتوسعة نشاطها، كما يشمل الجهاز مختلف القطاعات الاقتصادية الحيوية لتشجيع ريادة الأعمال والاستثمار في الجزائر.</value>
+  </data>
+  <data name="ActiviteP1" xml:space="preserve">
+    <value>إنشاء مؤسسة مصغرة</value>
+  </data>
+  <data name="ActiviteP1Text" xml:space="preserve">
+    <value>يشمل دعم إنشاء المؤسسات المصغرة للشباب أصحاب المشاريع من خلال التمويل والمرافقة الإدارية والتقنية، مع توفير التكوين اللازم وضمان متابعة المشروع من البداية حتى بدء النشاط.</value>
+  </data>
+  <data name="ActiviteP2" xml:space="preserve">
+    <value>توسعة نشاط المؤسسة</value>
+  </data>
+  <data name="ActiviteP2Text" xml:space="preserve">
+    <value>يهدف إلى تطوير النشاط الحالي للمؤسسات المصغرة من خلال إضافة خطوط إنتاج جديدة، تنويع المنتجات، أو إطلاق أنشطة جديدة مكملة أو مستقلة لتوسيع نطاق العمل وزيادة الإيرادات.</value>
+  </data>
+  <data name="ActiviteTitre" xml:space="preserve">
+    <value>إنشاء مؤسسة مصغرة</value>
+  </data>
+  <data name="ActiviteTitre1" xml:space="preserve">
+    <value>شروط الاستفادة</value>
+  </data>
+  <data name="ActiviteTitre1P1" xml:space="preserve">
+    <value>العمر: </value>
+  </data>
+  <data name="ActiviteTitre1P12" xml:space="preserve">
+    <value>18 - 55 سنة</value>
+  </data>
+  <data name="ActiviteTitre1P2" xml:space="preserve">
+    <value>عدم الاستفادة سابقاً من أي جهاز دعم لإنشاء مؤسسة مصغرة</value>
+  </data>
+  <data name="ActiviteTitre1P3" xml:space="preserve">
+    <value>حيازة شهادة أو مؤهل مهني و/أو امتلاك مهارات معرفية معترف بها بشهادة</value>
+  </data>
+  <data name="ActiviteTitre1P4" xml:space="preserve">
+    <value>تقديم مساهمة مالية شخصية مطابقة لأحد صيغ التمويل المختارة</value>
+  </data>
+  <data name="ActiviteTitre2" xml:space="preserve">
+    <value>مراحل الإنشاء</value>
+  </data>
+  <data name="ActiviteTitre2P1" xml:space="preserve">
+    <value>التسجيل عبر المنصة الرقمية بعد التكوين على مستوى أحد مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="ActiviteTitre2P1Titre" xml:space="preserve">
+    <value>التسجيل الإلكتروني والتكوين</value>
+  </data>
+  <data name="ActiviteTitre2P2" xml:space="preserve">
+    <value>تقييم المشروع من طرف مصالح الوكالة وفق نظام تقييم المخاطر باعتبار معايير الجدوى والنجاعة والتمويل، ورفعه إلى اللجنة الولائية في حالة تجاوز التقييم 50%</value>
+  </data>
+  <data name="ActiviteTitre2P2Titre" xml:space="preserve">
+    <value>تقييم المشروع</value>
+  </data>
+  <data name="ActiviteTitre2P3" xml:space="preserve">
+    <value>عرض المشروع من طرف صاحبه على لجنة انتقاء واعتماد وتمويل مشاريع الاستثمار على مستوى الولاية</value>
+  </data>
+  <data name="ActiviteTitre2P3Titre" xml:space="preserve">
+    <value>عرض المشروع على اللجنة</value>
+  </data>
+  <data name="ActiviteTitre2P4" xml:space="preserve">
+    <value>إصدار مصالح الوكالة لشهادة القابلية والتمويل في حالة موافقة اللجنة، ومباشرة الإجراءات الإدارية مع مختلف المصالح والموردين</value>
+  </data>
+  <data name="ActiviteTitre2P4Titre" xml:space="preserve">
+    <value>إصدار شهادة القابلية والتمويل</value>
+  </data>
+  <data name="ActiviteTitre2P5" xml:space="preserve">
+    <value>بداية النشاط بعد استيفاء كافة الإجراءات رفقة مصالح الوكالة</value>
+  </data>
+  <data name="ActiviteTitre2P5Titre" xml:space="preserve">
+    <value>بداية النشاط</value>
+  </data>
+  <data name="ActiviteTitre2P6" xml:space="preserve">
+    <value>في حالة رفض المشروع، يمكن إيداع طعن لدى أمانة اللجنة خلال 15 يوماً من تاريخ التبليغ، وفي حالة الرفض النهائي يمكن اللجوء إلى اللجنة الوطنية للطعن.</value>
+  </data>
+  <data name="ActiviteTitre2P6Titre" xml:space="preserve">
+    <value>إجراءات الطعن</value>
+  </data>
+  <data name="ActiviteTitre3" xml:space="preserve">
+    <value>توسعة نشاط مؤسسة مصغرة</value>
+  </data>
+  <data name="ActiviteTitre3-1" xml:space="preserve">
+    <value>تطوير النشاط الحالي</value>
+  </data>
+  <data name="ActiviteTitre3-1P1" xml:space="preserve">
+    <value>خط إنتاج جديد</value>
+  </data>
+  <data name="ActiviteTitre3-1P2" xml:space="preserve">
+    <value>آلة جديدة</value>
+  </data>
+  <data name="ActiviteTitre3-1P3" xml:space="preserve">
+    <value>منتوج جديد تكميلي</value>
+  </data>
+  <data name="ActiviteTitre3-1P4" xml:space="preserve">
+    <value>نشاط مرتبط بالنشاط الرئيسي</value>
+  </data>
+  <data name="ActiviteTitre3-2" xml:space="preserve">
+    <value>إطلاق نشاط جديد</value>
+  </data>
+  <data name="ActiviteTitre3-2P1" xml:space="preserve">
+    <value>تنويع النشاط الرئيسي</value>
+  </data>
+  <data name="ActiviteTitre3-2P2" xml:space="preserve">
+    <value>اكتشاف مجالات نشاط أخرى</value>
+  </data>
+  <data name="ActiviteTitre3-2P3" xml:space="preserve">
+    <value>أنشطة مستقلة جديدة</value>
+  </data>
+  <data name="ActiviteTitre4" xml:space="preserve">
+    <value>الفئات المستهدفة</value>
+  </data>
+  <data name="ActiviteTitre4P1" xml:space="preserve">
+    <value>أصحاب المؤسسات المصغرة المستفيدين سابقاً من دعم جهاز الوكالة</value>
+  </data>
+  <data name="ActiviteTitre4P2" xml:space="preserve">
+    <value>المستفيدين من جهاز الوكالة الوطنية لتسيير القرض المصغر (ANGEM)</value>
+  </data>
+  <data name="ActiviteTitre4P3" xml:space="preserve">
+    <value>المستفيدين من جهاز الصندوق الوطني للتأمين عن البطالة (CNAC)</value>
+  </data>
+  <data name="ActiviteTitre4P4" xml:space="preserve">
+    <value>الفلاحين والحرفيين وأصحاب التراخيص والسجل التجاري</value>
+  </data>
+  <data name="ActiviteTitre5" xml:space="preserve">
+    <value>الشروط العامة</value>
+  </data>
+  <data name="ActiviteTitre5P1" xml:space="preserve">
+    <value>20 - 58 سنة</value>
+  </data>
+  <data name="ActiviteTitre5P2" xml:space="preserve">
+    <value>أن يكون في حالة نشاط خلال السنتين الأخيرتين مع إثبات ذلك</value>
+  </data>
+  <data name="ActiviteTitre5P3" xml:space="preserve">
+    <value>تقديم الحصائل المحاسبية والتصريحات الجبائية (G12, C20)</value>
+  </data>
+  <data name="ActiviteTitre6" xml:space="preserve">
+    <value>مراحل الاستفادة من التوسعة</value>
+  </data>
+  <data name="ActiviteTitre6P1" xml:space="preserve">
+    <value>التسجيل عبر المنصة الرقمية الخاصة بجهاز الوكالة</value>
+  </data>
+  <data name="ActiviteTitre6P1Titre" xml:space="preserve">
+    <value>التسجيل الإلكتروني</value>
+  </data>
+  <data name="ActiviteTitre6P2" xml:space="preserve">
+    <value>تقييم المشروع وفق نظام تقييم المخاطر وتوجيه حامل المشروع إلى التكوين في حالة تجاوز نسبة 50%</value>
+  </data>
+  <data name="ActiviteTitre6P2Titre" xml:space="preserve">
+    <value>تقييم مشروع التوسعة</value>
+  </data>
+  <data name="ActiviteTitre6P3" xml:space="preserve">
+    <value>إجراء تكوين خاص حول مهارات وأساسيات التسيير لمدة 5 أيام على مستوى الوكالة</value>
+  </data>
+  <data name="ActiviteTitre6P3Titre" xml:space="preserve">
+    <value>التكوين الخاص</value>
+  </data>
+  <data name="ActiviteTitre6P4" xml:space="preserve">
+    <value>عرض مشروع التوسعة على لجنة انتقاء واعتماد وتمويل مشاريع الاستثمار الولائية</value>
+  </data>
+  <data name="ActiviteTitre6P4Titre" xml:space="preserve">
+    <value>عرض المشروع على اللجنة</value>
+  </data>
+  <data name="ActiviteTitre6P5" xml:space="preserve">
+    <value>إصدار شهادة القابلية والتمويل ومباشرة الإجراءات الإدارية وبدء النشاط الجديد</value>
+  </data>
+  <data name="ActiviteTitre6P5Titre" xml:space="preserve">
+    <value>الحصول على الشهادة وبدء النشاط</value>
+  </data>
+  <data name="ActiviteTitre7" xml:space="preserve">
+    <value>قطاعات النشاط المدعومة</value>
+  </data>
+  <data name="ActiviteTitre7Text" xml:space="preserve">
+    <value>تسهر الوكالة على تمويل وتشجيع المشاريع في مختلف القطاعات الاقتصادية ولاسيما تلك التي تساهم في خلق الثروة ومناصب الشغل:</value>
+  </data>
+  <data name="ActiviteTitre7TextP1" xml:space="preserve">
+    <value>الفلاحة</value>
+  </data>
+  <data name="ActiviteTitre7TextP2" xml:space="preserve">
+    <value>البناء والأشغال العمومية</value>
+  </data>
+  <data name="ActiviteTitre7TextP3" xml:space="preserve">
+    <value>الصناعة</value>
+  </data>
+  <data name="ActiviteTitre7TextP4" xml:space="preserve">
+    <value>الخدمات</value>
+  </data>
+  <data name="ActiviteTitre7TextP5" xml:space="preserve">
+    <value>الصيد البحري</value>
+  </data>
+  <data name="ActiviteTitre7TextP6" xml:space="preserve">
+    <value>الري</value>
+  </data>
+  <data name="ActiviteTitre7TextP7" xml:space="preserve">
+    <value>النقل</value>
+  </data>
+  <data name="ActiviteTitre7TextP8" xml:space="preserve">
+    <value>المهن الحرة</value>
+  </data>
+  <data name="ActiviteTitre7TextP9" xml:space="preserve">
+    <value>الصناعة التقليدية</value>
+  </data>
+  <data name="annee" xml:space="preserve">
+    <value>سنة</value>
+  </data>
+  <data name="BouttonInscription" xml:space="preserve">
+    <value>منصة التسجيل الإلكتروني</value>
+  </data>
+  <data name="FinancementExploitation" xml:space="preserve">
+    <value>تمويل الاستغلال والكراء</value>
+  </data>
+  <data name="FinancementExploitationT1" xml:space="preserve">
+    <value>قرض إضافي غير مكافئ لكراء محل</value>
+  </data>
+  <data name="FinancementExploitationT1Text1" xml:space="preserve">
+    <value>عند الضرورة يمكن لحاملي المشاريع الإستفادة من قرض إضافي غير مكافئ للتكفل بإيجار المحل أو مكان الرسو على مستوى الموانئ المخصص لإحداث أنشطة إنتاج السلع والخدمات بإستثناء الأنشطة غير المقيمة</value>
+  </data>
+  <data name="FinancementExploitationT1Text2" xml:space="preserve">
+    <value>يمنح هذا القرض عندما يلجأ حاملي المشاريع الى التمويل البنكي في مرحلة إحداث النشاطات</value>
+  </data>
+  <data name="FinancementExploitationT1Text2Titre" xml:space="preserve">
+    <value>شرط</value>
+  </data>
+  <data name="FinancementExploitationT2" xml:space="preserve">
+    <value>قرض إضافي غير مكافئ للإستغلال</value>
+  </data>
+  <data name="FinancementExploitationT2Text1" xml:space="preserve">
+    <value>يمكن لحاملي المشاريع من الاستفادة من قرض اضافي غير مكافئ للإستغلال بصفة استثنائية</value>
+  </data>
+  <data name="FinancementExploitationT2Text2" xml:space="preserve">
+    <value>استثنائي لتغطية احتياجات الاستغلال والتشغيل</value>
+  </data>
+  <data name="FinancementExploitationT2Text2Titre" xml:space="preserve">
+    <value>طبيعة القرض</value>
+  </data>
+  <data name="FinancementExploitationText" xml:space="preserve">
+    <value>قروض إضافية غير مكافئة لتغطية احتياجات خاصة</value>
+  </data>
+  <data name="FinancementTitre1" xml:space="preserve">
+    <value>التمويل ينقلك من الفكرة إلى تجسيد مشروع</value>
+  </data>
+  <data name="FinancementTitre1Text" xml:space="preserve">
+    <value>تتميز الحلول التمويلية التي تقدمها الوكالة بالمميزات التالية</value>
+  </data>
+  <data name="FinancementTitre1TextP1" xml:space="preserve">
+    <value>قرض غير مكافئ لتمويل مشاريع انشاء مؤسسات مصغرة وتوسعة نشاطها</value>
+  </data>
+  <data name="FinancementTitre1TextP2" xml:space="preserve">
+    <value>تمويل المشاريع قد يصل الى غاية 10.000.000 دج</value>
+  </data>
+  <data name="FinancementTitre1TextP3" xml:space="preserve">
+    <value>صيغ تمويل مشتركة ثنائية وثلاثية بين صاحب المشروع، الوكالة والبنك</value>
+  </data>
+  <data name="FinancementTitre1TextP4" xml:space="preserve">
+    <value>قروض بنسبة فائدة مخفضة بنسبة مئة بالمئة</value>
+  </data>
+  <data name="FinancementTitre1TextP5" xml:space="preserve">
+    <value>مدة سداد القروض مغرية</value>
+  </data>
+  <data name="FinancementTitre1TextP6" xml:space="preserve">
+    <value>قروض غير مكافئة إضافية: للاستغلال والكراء</value>
+  </data>
+  <data name="FinancementTitre2" xml:space="preserve">
+    <value>صيغ التمويل</value>
+  </data>
+  <data name="FinancementTitre2p1" xml:space="preserve">
+    <value>التمويل الذاتي</value>
+  </data>
+  <data name="FinancementTitre2p1Text" xml:space="preserve">
+    <value>حيث يقوم صاحب المشروع بتمويل الاستثمار بالكامل بشكل مستقل، دون اللجوء إلى مصادر خارجية</value>
+  </data>
+  <data name="FinancementTitre2p1TextD" xml:space="preserve">
+    <value>المساهمة الشخصية</value>
+  </data>
+  <data name="FinancementTitre2p2" xml:space="preserve">
+    <value>التمويل الثنائي</value>
+  </data>
+  <data name="FinancementTitre2p2Text" xml:space="preserve">
+    <value>حيث يساهم كل من صاحب المشروع والوكالة بنسبة 50% من مبلغ الاستثمار</value>
+  </data>
+  <data name="FinancementTitre2p2TextD" xml:space="preserve">
+    <value>صاحب المشروع + الوكالة</value>
+  </data>
+  <data name="FinancementTitre2p3" xml:space="preserve">
+    <value>تمويل ثلاثي</value>
+  </data>
+  <data name="FinancementTitre2p3Text" xml:space="preserve">
+    <value>حيث يساهم كل من صاحب المشروع والوكالة بنسبة 50% من مبلغ الاستثمار</value>
+  </data>
+  <data name="FinancementTitre2p3TextD" xml:space="preserve">
+    <value>صاحب المشروع + الوكالة + البنك</value>
+  </data>
+  <data name="FinancementTitre2Text" xml:space="preserve">
+    <value>تعرض الوكالة عدة صيغ تمويلية لانشاء وتوسعة المؤسسات المُصغّرة عبر 3 تركيبات مالية</value>
+  </data>
+  <data name="LesTypesFinancement" xml:space="preserve">
+    <value>التمويل الذاتي، الثنائي، الثلاثي</value>
+  </data>
+  <data name="poucentage" xml:space="preserve">
+    <value>نسبة التقييم المطلوبة</value>
+  </data>
+  <data name="SolutionFinancement" xml:space="preserve">
+    <value>حلول التمويل</value>
+  </data>
+  <data name="SolutionFinancementText" xml:space="preserve">
+    <value>تلعب الوكالة الوطنية لدعم وتنمية المقاولاتية دوراً محورياً في تمويل المؤسسات المصغرة، عبر مرافقة حاملي الأفكار الريادية الراغبين في تحويلها إلى مشاريع واقعية تخلق الثروة ومناصب الشغل، وفقا للمقاربة الاقتصادية المنتهجة الرامية الى تعزيز آليات التمويل وتسيير المخاطر المتعلقة بها، بهدف تحريك عجلة التنمية الوطنية.</value>
+  </data>
+  <data name="TableauTypeFinanement" xml:space="preserve">
+    <value>جدول صيغ التمويل</value>
+  </data>
+  <data name="TableauTypeFinanementColonne1" xml:space="preserve">
+    <value>نوع التمويل</value>
+  </data>
+  <data name="TableauTypeFinanementColonne2" xml:space="preserve">
+    <value>المساهمة الشخصية</value>
+  </data>
+  <data name="TableauTypeFinanementColonne3" xml:space="preserve">
+    <value>الوكالة (قرض غير مكافئ)</value>
+  </data>
+  <data name="TableauTypeFinanementColonne4" xml:space="preserve">
+    <value>البنك (قرض بنكي)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne1" xml:space="preserve">
+    <value>التمويل الثلاثي - الطلبة والبطالين</value>
+  </data>
+  <data name="TableauTypeFinanementLigne2" xml:space="preserve">
+    <value>التمويل الثلاثي - غير البطالين (مناطق الجنوب)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne3" xml:space="preserve">
+    <value>التمويل الثلاثي - غير البطالين (الهضاب العليا والمناطق الخاصة)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne4" xml:space="preserve">
+    <value>التمويل الثلاثي - غير البطالين (باقي المناطق)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne5" xml:space="preserve">
+    <value>التمويل الثنائي</value>
+  </data>
+  <data name="TableauTypeFinanementLigne6" xml:space="preserve">
+    <value>التمويل الذاتي</value>
+  </data>
+  <data name="TableauTypeFinanementText" xml:space="preserve">
+    <value>تفاصيل نسب المساهمة لكل نوع من صيغ التمويل المتاحة</value>
+  </data>
+  <data name="TrancheAgeCreation" xml:space="preserve">
+    <value>سن الإنشاء</value>
+  </data>
+  <data name="TrancheAgeExtension" xml:space="preserve">
+    <value>سن التوسعة</value>
   </data>
 </root>

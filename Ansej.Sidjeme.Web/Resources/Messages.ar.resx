@@ -183,6 +183,39 @@
   <data name="Avantages_Plateforme_Numerique_05" xml:space="preserve">
     <value>في معالجة البيانات خلال كافة مراحل الإجراءات.</value>
   </data>
+  <data name="AvantageProgramme1,1" xml:space="preserve">
+    <value>تمويل المشاريع قد يصل الى غاية</value>
+  </data>
+  <data name="AvantageProgramme1,2" xml:space="preserve">
+    <value>10.000.000 دج</value>
+  </data>
+  <data name="AvantageProgramme2,1" xml:space="preserve">
+    <value>دورة تكوينية حول المقاولاتية لمدة</value>
+  </data>
+  <data name="AvantageProgramme2,2" xml:space="preserve">
+    <value>5 أيام</value>
+  </data>
+  <data name="AvantageProgramme2,3" xml:space="preserve">
+    <value>على مستوى الوكالة</value>
+  </data>
+  <data name="AvantageProgramme3" xml:space="preserve">
+    <value>صيغ تمويل مشتركة ثنائية بين صاحب المشروع والوكالة، وثلاثية بين صاحب المشروع، الوكالة والبنك</value>
+  </data>
+  <data name="AvantageProgramme4,1" xml:space="preserve">
+    <value>قروض بنسبة فائدة مخفضة بنسبة</value>
+  </data>
+  <data name="AvantageProgramme4,2" xml:space="preserve">
+    <value>مئة بالمئة</value>
+  </data>
+  <data name="AvantageProgramme4,3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AvantageProgramme5" xml:space="preserve">
+    <value>مدة سداد القروض مغرية</value>
+  </data>
+  <data name="AvantageProgramme6" xml:space="preserve">
+    <value>مزايا جبائية وفق الشروط المحددة في التشريع الجبائي الحالي</value>
+  </data>
   <data name="Avril2025" xml:space="preserve">
     <value>أفريل 2025</value>
   </data>
@@ -264,6 +297,57 @@
   <data name="DeclarationHonneurMI" xml:space="preserve">
     <value>الاستفادة من استراد المعدات و العمليات و الخدمات</value>
   </data>
+  <data name="decrets1,1" xml:space="preserve">
+    <value>المرسوم الرئاسي رقم 96 - 234 مؤرخ في 16 صفر عام 1417 الموافق 2 يوليو سنة 1996، المتعلق بدعم تشغيل الشباب.</value>
+  </data>
+  <data name="decrets1,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 96-296 المؤرخ في 24 ربيع الثاني عام 1417 الموافق 8 سبتمبر سنة 1996 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets1,3" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 03-290 المؤرخ في 9 رجب عام 1424الموافق 6 سبتمبر سنة 2003 ، يحدد شروط الإعانة المقدمة لحاملي المشاريع ومستواها.</value>
+  </data>
+  <data name="decrets2,1" xml:space="preserve">
+    <value>المرسوم رئاسي رقم 03-300 مؤرخ في 14 رجب عام 1424 الموافق 11 سبتمبر سنة 2003، المتعلق بدعم تشغيل الشباب.</value>
+  </data>
+  <data name="decrets2,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 98-231 المؤرخ في 19 ربيع الأول عام 1419 الموافق 13 يوليو سنة 1998 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets2,3" xml:space="preserve">
+    <value>المـرسـوم تـــنــفـــيـذي رقم 10-157 مــؤرخ في 7 رجب عــام 1431 المـوافـق 20 يـونـيــو سـنـة 2010، يحدد شروط الإعانة المقدمة لحاملي المشاريع ومستواها.</value>
+  </data>
+  <data name="decrets3,1" xml:space="preserve">
+    <value>المرسوم رئاسي رقم 11-100 مؤرخ في أول ربيع الثاني عام 1432 الموافق 06 مارس سنة 2011، المتعلق بدعم تشغيل الشباب.</value>
+  </data>
+  <data name="decrets3,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 01-162 المؤرخ في 18 ربيع الثاني عام 1422 الموافق 10 يوليو سنة 2001 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets4,1" xml:space="preserve">
+    <value>المرسوم رئاسي رقم 20-441 مؤرخ في 15 جمادى الأولى عام 1442 الموافق 30 ديسمبر سنة 2020، المتعلق بدعم تشغيل الشباب.</value>
+  </data>
+  <data name="decrets4,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 03-288 المؤرخ في 09 رجب عام 1424 الموافق 6 سبتمبر سنة 2003 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets5,1" xml:space="preserve">
+    <value>المرسوم رئاسي رقم 22-42 مؤرخ في 16 جمادى الثانية عام 1443 الموافق 19 جانفي سنة 2022، المتعلق بدعم تشغيل الشباب.</value>
+  </data>
+  <data name="decrets5,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 11-102 المؤرخ في أول ربيع الثاني عام 1432 الموافق 6 مارس سنة 2011 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets6,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 18-201 المؤرخ في 20 ذي القعدة عام 1439 الموافق 2 غشت سنة 2018 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets7,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 20-329 المؤرخ في 6 ربيع الثاني عام 1442 الموافق 22 نوفمبر سنة 2020 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets8,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 23-330 المؤرخ في أول ربيع الأول عام 1445 الموافق 17 سبتمبر سنة 2023 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets9,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 24-197 المؤرخ في 05 ذي الحجة عام 1445 الموافق 11 يونيو سنة 2024 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decretsAnnule1" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 96-297 المؤرخ في 24 ربيع الثاني عام 1417 الموافق 8 سبتمبر سنة 1996 ، يحدد شروط الإعانة المقدمة لحاملي المشاريع ومستواها.</value>
+  </data>
   <data name="Depuis" xml:space="preserve">
     <value>منذ</value>
   </data>
@@ -294,11 +378,80 @@
   <data name="DescriptionAgenceP4" xml:space="preserve">
     <value>تعتزم الوكالة مواصلة ديناميكية تطوير وتحويل مخطط سير جهازها، بهدف تعزيز متغير"الثقة" لدى حاملي المشاريع وتشجيع إدماج المشاريع المصغرة والصغيرة في سلاسل القيم الوطنية. حيث ان الهدف النهائي هو تمكين الوكالة من أداء دورها الكامل كرافعة للتحول الاقتصادي في خدمة التنمية الوطنية.</value>
   </data>
+  <data name="DescriptionFG" xml:space="preserve">
+    <value>يسهر صندوق الكفالة المشترك لضمان أخطار القروض الممنوحة لحاملي المشاريع على تغطية المخاطر المرتبطة بالقروض البنكية الممنوحة لفائدة المؤسسات المصغرة الممولة في إطار جهاز الوكالة الوطنية لدعم وتنمية المقاولاتية، حيث يشكل الصندوق ضمانا مُكملا لفائدة البنوك، إلى جانب الضمانات المقدمة من المؤسسات المصغرة، مما يساهم في تعزيز ثقة البنوك في تمويل المشاريع المقاولاتية.</value>
+  </data>
+  <data name="DescriptionTachesFG" xml:space="preserve">
+    <value>يعتبر صندوق الضمان أداة لتقليل المخاطر المالية المرتبطة بتمويل المؤسسات المصغرة، حيث يوفر ضمانا إضافيا للبنوك، إلى جانب الضمانات المقدمة من طرف المقاولين أنفسهم، والتي تشمل:</value>
+  </data>
   <data name="desExpo-Vente" xml:space="preserve">
     <value>معارض للبيع</value>
   </data>
+  <data name="ElementFonctionnementFG1" xml:space="preserve">
+    <value>يتلقى الصندوق طلبا رسميا من البنك بعد التصريح بعدم دفع ثلاثة أقساط سداسية</value>
+  </data>
+  <data name="ElementFonctionnementFG2" xml:space="preserve">
+    <value>يقوم الصندوق بـزيارة ميدانية للتحقق من وضعية المؤسسة المصغرة ومدى عجزها عن السداد</value>
+  </data>
+  <data name="ElementFonctionnementFG3P1" xml:space="preserve">
+    <value>يتم تعويض البنك بنسبة</value>
+  </data>
+  <data name="ElementFonctionnementFG3P2" xml:space="preserve">
+    <value>من الدين المتبقي (أصل + فوائد)</value>
+  </data>
+  <data name="ElementFonctionnementFG4" xml:space="preserve">
+    <value>بعد التعويض، يقوم البنك بتحويل حقوق الدين المتبقية لصالح الصندوق</value>
+  </data>
+  <data name="ElementFonctionnementFG5" xml:space="preserve">
+    <value>يتولى الصندوق مهام مرافقة ومتابعة المؤسسة المتعثرة بعد التعويض، من اجل بعث نشاطها وتمكينها من سداد التزاماتها المالية</value>
+  </data>
+  <data name="ElementParticipationFG1" xml:space="preserve">
+    <value>يتم انخراط المؤسسة المصغرة بعد الموافقة البنكية</value>
+  </data>
+  <data name="ElementParticipationFG2P1" xml:space="preserve">
+    <value>نسبة اشتراك المؤسسة المصغرة في الصندوق محددة بـ</value>
+  </data>
+  <data name="ElementParticipationFG2P2" xml:space="preserve">
+    <value> سنويا، تحسب على أساس مبلغ وقيمة القرض البنكي، وتدفع كاملا مرة واحدة</value>
+  </data>
+  <data name="ElementParticipationFG3P1" xml:space="preserve">
+    <value>نسبة اشتراك البنوك في الصندوق محددة بـ   </value>
+  </data>
+  <data name="ElementParticipationFG3P2" xml:space="preserve">
+    <value> من الباقي من الدين سنويا</value>
+  </data>
+  <data name="ElementParticipationFG4" xml:space="preserve">
+    <value>في حالة تعثر الدفع (3 أقساط سداسية غير مدفوعة):</value>
+  </data>
+  <data name="ElementParticipationFG4,1" xml:space="preserve">
+    <value>يقوم الصندوق بزيارة ميدانية</value>
+  </data>
+  <data name="ElementParticipationFG4,2P1" xml:space="preserve">
+    <value>يعوض البنك بنسبة </value>
+  </data>
+  <data name="ElementParticipationFG4,2P2" xml:space="preserve">
+    <value>من المبلغ المتبقي</value>
+  </data>
+  <data name="ElementParticipationFG4,3" xml:space="preserve">
+    <value>يتكفل بمتابعة المؤسسة المتعثرة</value>
+  </data>
   <data name="Enligne" xml:space="preserve">
     <value>عبر الإنترنت</value>
+  </data>
+  <data name="EnvironementProgrammeParag1" xml:space="preserve">
+    <value>جاء البرنامج لتعزيز مجال توسعة نشاطات المؤسسات المصغرة واعطاءها مزيد من الفرص للتطور والنجاح، وذلك في اطار جهود اصلاح جهاز الوكالة، باعتبار معايير التكوين في المقاولاتية والتحكم في المخاطر المتعلقة بتمويل النشاط.</value>
+  </data>
+  <data name="EnvironementProgrammeParag2" xml:space="preserve">
+    <value>يشمل البرنامج أصحاب المؤسسات المصغرة الذين استفادوا سابقا من دعم جهاز الوكالة في الاطار الانشاء وكذا أولئك الذين لم يستفيدوا سابقا منه، على غرار الذين باشروا نشاطاتهم عبر جهاز الوكالة الوطنية لتسيير القرض المصغر (ANGEM) او جهاز الصندوق الوطني للتأمين عن البطالة (CNAC)، بالاضافة الى الفلاحين، الحرفيين، او أصحاب التراخيص او/و السجل التجاري.</value>
+  </data>
+  <data name="EnvironementProgrammeParag3" xml:space="preserve">
+    <value>حيث تضم توسعة النشاط مختلف القطاعات الاقتصادية وتشمل:</value>
+  </data>
+  <data name="EnvironementProgrammeParag3P1" xml:space="preserve">
+    <value>تطوير نشاط رئيسي او اطلاق نشاط فرعي: خط انتاج جديد، آلة جديدة، منتوج جديد تكميلي او مرتبط بالنشاط الرئيسي</value>
+  </data>
+  <data name="EnvironementProgrammeParag3P2" xml:space="preserve">
+    <value>اطلاق نشاط جديد: عبر تنويع نشاط رئيسي واكتشاف مجالات نشاط أخرى</value>
   </data>
   <data name="Etapes" xml:space="preserve">
     <value>المراحل الرئيسية</value>
@@ -323,6 +476,9 @@
   </data>
   <data name="FINANCEMENTDETAIS" xml:space="preserve">
     <value>تمنح الوكالة اعانات مالية وفق صيغ تمويلية متنوعة، رفقة شركاءها من القطاع البنكي العمومي، بالإضافة الى امتيازات جبائية للمستفيدين من جهاز الوكالة، حسب التنظيم التشريعي الساري.</value>
+  </data>
+  <data name="FonctionnementFGDescription" xml:space="preserve">
+    <value>يتدخل صندوق الكفالة المشتركة عند تسجيل تعثر في السداد، وفقا لسلسلة من الإجراءات المنظمة كما يلي:</value>
   </data>
   <data name="FORMATION" xml:space="preserve">
     <value>التكوين</value>
@@ -358,6 +514,12 @@
   </data>
   <data name="IndustrieT2" xml:space="preserve">
     <value>يلامس احتياجات السوق ويساهم في بناء اقتصاد الوطن</value>
+  </data>
+  <data name="InfoGenerale" xml:space="preserve">
+    <value>تواصل معنا للحصول على تفاصيل أكثر حول صندوق الضمان وكيفية الاستفادة من خدماته</value>
+  </data>
+  <data name="InfoTextJuridique" xml:space="preserve">
+    <value>تواصل معنا للحصول على المساعدة أو الاستشارة القانونية المتعلقة بهذه النصوص</value>
   </data>
   <data name="Inscription" xml:space="preserve">
     <value>التسجيل </value>
@@ -430,6 +592,9 @@
   </data>
   <data name="NesdaExtension" xml:space="preserve">
     <value>توسعة النشاط "ناسدا اكستنشن"</value>
+  </data>
+  <data name="NesdaExtensionDescription" xml:space="preserve">
+    <value>هو برنامج خاص للوكالة الــوطنـيـة لـدعـم وتنمية المقـاولاتيـة موجه للمؤسسات المصغرة التي تهتم بتوسعة نشاطها، يحمل عنوان "NESDA EXTENSION"</value>
   </data>
   <data name="NesdaNomination" xml:space="preserve">
     <value>الوكالة الوطنية لدعم و تنمية المقاولاتية</value>
@@ -536,6 +701,9 @@
   <data name="Q9" xml:space="preserve">
     <value>هل يمكن ذوي الإحتياجات الخاصة الإستفادة من شروط خاصة؟</value>
   </data>
+  <data name="QuestionGenerale" xml:space="preserve">
+    <value>هل تحتاج إلى مزيد من المعلومات؟</value>
+  </data>
   <data name="R1" xml:space="preserve">
     <value>نعم، يحق لحامل المشروع إنشاء مشروعه في أي ولاية شاء، شريطة تقديمه لوثيقة تثبت تواجده بالولاية المراد الإستثمار فيها</value>
   </data>
@@ -625,6 +793,42 @@
   </data>
   <data name="Suivivotredemande" xml:space="preserve">
     <value>متابعة طلبك</value>
+  </data>
+  <data name="TacheFG1" xml:space="preserve">
+    <value>الرهن الحيازي للتجهيزات، لفائدة البنك في الدرجة الأولى، و الوكالة الوطنية لدعم وتنمية المقاولاتية في الدرجة الثانية</value>
+  </data>
+  <data name="TacheFG2" xml:space="preserve">
+    <value>الرهن الحيازي للعتاد المتنقل</value>
+  </data>
+  <data name="TacheFG3" xml:space="preserve">
+    <value>تأمين شامل لكافة تجهيزات المشروع ضد مختلف الأخطار</value>
+  </data>
+  <data name="TaxDescription" xml:space="preserve">
+    <value>يستفيد صاحب المشروع من امتيازات ضريبية خلال مرحلتي إنشاء المشروع وتوسيع طاقته الإنتاجية، مما يساهم في تخفيف الأعباء المالية وتشجيع الاستثمار في المشاريع الاقتصادية المختلفة.</value>
+  </data>
+  <data name="TaxPhase1,1" xml:space="preserve">
+    <value>الاعفاء من حقوق نقل الملكية بمقابل مالي للإكتسابات العقارية الخاصة في اطار إنشاء نشاط صناعي</value>
+  </data>
+  <data name="TaxPhase1,2" xml:space="preserve">
+    <value>الاعفاء من الرسم على القيمة المضافة لمقتنيات التجهيزات والخدمات التي تدخل مباشرة في انجاز الاستثمار الخاص بمرحلتي الانشاء والتوسيع بالنسبة للنشاطات الخاضعة للنظام الضريبي الحقيقي (لا تستفيد السيارات السياحية من هذا التدبير إلا اذا كانت تشكل الأداة الرئيسية للنشاط)</value>
+  </data>
+  <data name="TaxPhase1,3" xml:space="preserve">
+    <value>تطبيق نسبة مخفضة بـ 5% تخص الحقوق الجمركية للتجهيزات المستوردة والداخلة مباشرة في انجاز الاستثمار</value>
+  </data>
+  <data name="TaxPhase2,1" xml:space="preserve">
+    <value>الاعفاء من الرسم العقاري على البناءات والبناءات الاضافية لمدة 03 سنوات، 06 سنوات أو 10 سنوات حسب موقع المشروع، ابتداءا من تاريخ اتمامها</value>
+  </data>
+  <data name="TaxPhase2,2" xml:space="preserve">
+    <value>الاعفاء من الضريبة الجزافية الوحيدة أو حسب الحالة (الضريبة على الدخل الإجمالي او الضريبة على أرباح الشركات) لمدة 03 سنوات، 06 سنوات أو 10 سنوات، حسب موقع المشروع ابتداءا من تاريخ الاستغلال</value>
+  </data>
+  <data name="TaxPhase2,3" xml:space="preserve">
+    <value>عند انتهاء فترة الاعفاء المذكورة في المطة السابقة، يمكن تمديدها لسنتين (02) عندما يتعهد المستثمر بتوظيف ثلاثة (03) عمال على الأقل لمدة غير محددة</value>
+  </data>
+  <data name="TaxWarningMsg" xml:space="preserve">
+    <value>عدم احترام التعهد الخاص بخلق مناصب الشغل يؤدي الى سحب الامتيازات الممنوحة والمطالبة بالحقوق والرسوم الواجب دفعها</value>
+  </data>
+  <data name="TextJuridiqueDescription" xml:space="preserve">
+    <value>مجموعة شاملة من النصوص القانونية المتعلقة بالوكالة وجهازها، متاحة للتحميل والاطلاع.</value>
   </data>
   <data name="Àpropos" xml:space="preserve">
     <value>عن الوكالة</value>
