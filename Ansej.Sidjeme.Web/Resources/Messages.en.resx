@@ -269,7 +269,7 @@ et Antennes Locales</value>
     <value>Contact Us Now – Our team is ready to serve you around the clock</value>
   </data>
   <data name="Coopérations" xml:space="preserve">
-    <value>Coopérations</value>
+    <value>COOPERATION</value>
   </data>
   <data name="CreationAgence" xml:space="preserve">
     <value>la création de l'Agence</value>
@@ -533,11 +533,26 @@ The programme is a contribution to strengthening the role of local communities a
   <data name="Lancement" xml:space="preserve">
     <value>Launch</value>
   </data>
+  <data name="LectureMag" xml:space="preserve">
+    <value>The Agency’s Electronic Magazine</value>
+  </data>
   <data name="Lesmisesàjourrécentes" xml:space="preserve">
     <value>Find NESDA news / latest updates</value>
   </data>
   <data name="lireSuite" xml:space="preserve">
     <value>Read more</value>
+  </data>
+  <data name="Mag" xml:space="preserve">
+    <value>NESDA Magazine Mag</value>
+  </data>
+  <data name="MagDeclarationDG" xml:space="preserve">
+    <value>In a statement on this occasion, Mr. Bilal Achacha, Director General of the National Entrepreneurship Support and Development Agency (NESDA), emphasized that the release of this magazine represents a qualitative addition to the national economic scene and a fundamental step in the new strategy based on training, accompanying, and empowering idea and project holders with the tools for success. This magazine is our commitment to keeping pace with the digital transformation and ensuring that accurate and motivating information reaches all entrepreneurs throughout the country.</value>
+  </data>
+  <data name="MagText" xml:space="preserve">
+    <value>The National entrepreneurship support and development Agency (NESDA) announces the official release of the first issue of its specialized magazine, making it the first comprehensive magazine of entrepreneurship field in Algeria. This strategic move is part of the agency’s commitment to promoting a culture of entrepreneurship and providing a knowledge base and interactive platform for all actors in the entrepreneurship ecosystem.</value>
+  </data>
+  <data name="MagTitre1Text" xml:space="preserve">
+    <value>The magazine titled “NESDA Mag”, aims to present a quality content combines academic and practical aspects and highlights promising investment opportunities in various economic sectors.</value>
   </data>
   <data name="Marketplace" xml:space="preserve">
     <value>Market place</value>
@@ -610,6 +625,48 @@ The programme is a contribution to strengthening the role of local communities a
   </data>
   <data name="Professionslibérales" xml:space="preserve">
     <value>Professions libérales</value>
+  </data>
+  <data name="ProgCoopérationsText" xml:space="preserve">
+    <value>Within the framework of promoting the entrepreneurship spirit and strengthen the skills of microenterprises, the National Entrepreneurship Support and Development Agency is committed to enhancing its capacities by establishing cooperation ties with various accredited international and regional bodies, to benefit from expertise and experiences, as well as to expand opportunities for exchange and innovation. The Agency contributes as an important partner in many international cooperation programs in Algeria.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP1" xml:space="preserve">
+    <value>This regional program aims to support youth entrepreneurship in the agricultural sector by enabling young people to develop new, innovative, and sustainable projects that can create employment opportunities in promising agricultural sectors in Algeria.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP2" xml:space="preserve">
+    <value>The program is implemented by the International Labour Organization (ILO) and funded by the International Fund for Agricultural Development (IFAD) of the United Nations Organization, with oversight from the relevant ministerial sectors. The Agency is a key partner in this program, alongside the National Office for Rural Development Studies (BNEDER), the public accelerator A-Venture, the National Agency for Microcredit Management (ANGEM), and the National Employment Agency (ANEM).</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP3" xml:space="preserve">
+    <value>In 2024, the Agency contributed to organizing a business plan competition targeting project owners, enabling them to enhance their entrepreneurial skills and launch economically viable activities in the agricultural sector, predefined according to value chains: potatoes in Mostaganem, aquaculture in Biskra and dairy production in Guelma. Participants also benefited from technical support to develop a viable business plan and finance their projects, depending on the situation.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP4" xml:space="preserve">
+    <value>The program witnessed significant participation, unveiling several innovative project ideas. Participants benefited training sessions that strengthened their capacities in preparing business plans, improved their entrepreneurial skills, and their experience in the targeted agricultural field. The program also honored the top winners from the three concerned wilayas, who will benefit from the Agency’s support to create their microenterprises.</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP1" xml:space="preserve">
+    <value>The program is a regional project of the International Labour Organization (ILO), funded by the Directorate-General for Neighborhood policy and Enlargement Negotiations  (DG NEAR) at the European Commission, and supports the transition from the informal to the formal economy through tripartite social dialogue in Arab countries, with a special focus on Algeria, Egypt, Lebanon, and Palestine.</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP2" xml:space="preserve">
+    <value>The project aims to increase employment for workers and the productivity of enterprises in the formal sector, which contributes to decent work for all, poverty reduction, and the building of more equitable and cohesive societies. To achieve this, the program seeks to strengthen the capacities of the ILO’s tripartite constituents: governments, employers’ organizations, and workers’ organizations, to act through social dialogue at two main levels:</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP3" xml:space="preserve">
+    <value>Developing comprehensive policies for the transition to the formal economy</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP4" xml:space="preserve">
+    <value>Developing national training systems and skills recognition, with a focus on youth and women in the informal sector</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP1" xml:space="preserve">
+    <value>The “Social and Solidarity Economy for Sustainable Economic Inclusion of Youth Entrepreneurs in Algeria” program aims to encourage youth employment and contribute to wealth creation through establishing a supportive ecosystem for the development of the social and solidarity economy (SSE).</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP2" xml:space="preserve">
+    <value>To achieve this, the project includes several key components, each operating at different levels of this ecosystem and targeting the various stakeholders involved, focusing on two main objectives:</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP3" xml:space="preserve">
+    <value>Strengthening the social and solidarity economy ecosystem</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP4" xml:space="preserve">
+    <value>Supporting the creation and development of social and solidarity economy enterprises</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP5" xml:space="preserve">
+    <value>The program operates under the auspices of the United Nations Development Program (UNDP) and the supervision of relevant ministerial sectors, where the Agency acts as a key partner, it contributes to accompanying the creation and expansion of microenterprise projects within the social and solidarity economy in line with the defined objectives.</value>
   </data>
   <data name="ProjetsFinancees" xml:space="preserve">
     <value>Projets Microentreprises Financés</value>

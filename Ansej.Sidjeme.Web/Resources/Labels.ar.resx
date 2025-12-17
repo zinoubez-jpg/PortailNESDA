@@ -1272,11 +1272,32 @@
   <data name="ActiviteTitre7TextP9" xml:space="preserve">
     <value>الصناعة التقليدية</value>
   </data>
+  <data name="Agrandir" xml:space="preserve">
+    <value>تكبير</value>
+  </data>
   <data name="annee" xml:space="preserve">
     <value>سنة</value>
   </data>
+  <data name="auteur" xml:space="preserve">
+    <value>المؤلف</value>
+  </data>
   <data name="BouttonInscription" xml:space="preserve">
     <value>منصة التسجيل الإلكتروني</value>
+  </data>
+  <data name="DatePublication" xml:space="preserve">
+    <value>تاريخ النشر</value>
+  </data>
+  <data name="DecouvrirMag1" xml:space="preserve">
+    <value>اكتشف العدد الأول</value>
+  </data>
+  <data name="DecouvrirMag1Text" xml:space="preserve">
+    <value>تصفح مجلة ناسدا Mag الآن واطلع على أحدث المحتويات في عالم المقاولاتية وريادة الأعمال</value>
+  </data>
+  <data name="DernierNews" xml:space="preserve">
+    <value>آخر التحديثات والأخبار</value>
+  </data>
+  <data name="Electronique" xml:space="preserve">
+    <value>الإلكترونية</value>
   </data>
   <data name="FinancementExploitation" xml:space="preserve">
     <value>تمويل الاستغلال والكراء</value>
@@ -1365,17 +1386,107 @@
   <data name="FinancementTitre2Text" xml:space="preserve">
     <value>تعرض الوكالة عدة صيغ تمويلية لانشاء وتوسعة المؤسسات المُصغّرة عبر 3 تركيبات مالية</value>
   </data>
+  <data name="Format" xml:space="preserve">
+    <value>الصيغة</value>
+  </data>
+  <data name="FullScreen" xml:space="preserve">
+    <value>عرض بملء الشاشة</value>
+  </data>
+  <data name="ImprimerMag" xml:space="preserve">
+    <value> طباعة المجلة</value>
+  </data>
+  <data name="LeMag" xml:space="preserve">
+    <value>المجلة</value>
+  </data>
   <data name="LesTypesFinancement" xml:space="preserve">
     <value>التمويل الذاتي، الثنائي، الثلاثي</value>
   </data>
+  <data name="Mag" xml:space="preserve">
+    <value>مجلة</value>
+  </data>
+  <data name="MagNesda" xml:space="preserve">
+    <value>ناسدا Mag</value>
+  </data>
+  <data name="MagNumero" xml:space="preserve">
+    <value>العدد رقم</value>
+  </data>
+  <data name="MagTitre1" xml:space="preserve">
+    <value>رؤية المجلة</value>
+  </data>
+  <data name="MagTitre2" xml:space="preserve">
+    <value>ما تقدمه المجلة</value>
+  </data>
+  <data name="MagTitre2Text" xml:space="preserve">
+    <value>هذه المجلة هي فضاء معرفي جديد ومتميز، وستكون مصدركم الأول للاطلاع على:</value>
+  </data>
+  <data name="MagTitre2TextP1" xml:space="preserve">
+    <value>آخر المستجدات في مجال المقاولاتية وريادة الاعمال</value>
+  </data>
+  <data name="MagTitre2TextP2" xml:space="preserve">
+    <value>قصص النجاحات الملهمة لرواد الأعمال الجزائريين</value>
+  </data>
+  <data name="MagTitre2TextP3" xml:space="preserve">
+    <value>تحليلات متعمقة لواقع ومستقبل القطاع في الجزائر</value>
+  </data>
+  <data name="MagTitre2TextP4" xml:space="preserve">
+    <value>نصائح وإرشادات عملية لمرافقة و دعم المؤسسات المصغرة</value>
+  </data>
+  <data name="MagTitre2TextP5" xml:space="preserve">
+    <value>حوارات مع مختلف الفاعلين في مجال المقاولاتية</value>
+  </data>
+  <data name="Minimiser" xml:space="preserve">
+    <value>تصغير</value>
+  </data>
+  <data name="ParcourirMag" xml:space="preserve">
+    <value>تصفح المجلة الآن</value>
+  </data>
+  <data name="partage" xml:space="preserve">
+    <value>مشاركة</value>
+  </data>
+  <data name="PosteDirecteurNesda" xml:space="preserve">
+    <value>المدير العام للوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
   <data name="poucentage" xml:space="preserve">
     <value>نسبة التقييم المطلوبة</value>
+  </data>
+  <data name="precedent" xml:space="preserve">
+    <value>السابق</value>
+  </data>
+  <data name="Principal" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+  <data name="ProgCoopérations" xml:space="preserve">
+    <value>برنامج التعاون</value>
+  </data>
+  <data name="ProgCoopérationsTitre1" xml:space="preserve">
+    <value>برنامج تمكين الشباب المقاول في المجال الفلاحي (ProAgro Jeunes)</value>
+  </data>
+  <data name="ProgCoopérationsTitre2" xml:space="preserve">
+    <value>برنامج الحوار الاجتماعي من أجل النظامية وقابلية التشغيل في منطقة الجوار الجنوبي (سوليفم)</value>
+  </data>
+  <data name="ProgCoopérationsTitre3" xml:space="preserve">
+    <value>برنامج الاقتصاد الاجتماعي والتضامني</value>
+  </data>
+  <data name="refaire" xml:space="preserve">
+    <value>إعادة تعيين</value>
+  </data>
+  <data name="retour" xml:space="preserve">
+    <value>العودة</value>
+  </data>
+  <data name="retourListe" xml:space="preserve">
+    <value>العودة للقائمة</value>
   </data>
   <data name="SolutionFinancement" xml:space="preserve">
     <value>حلول التمويل</value>
   </data>
   <data name="SolutionFinancementText" xml:space="preserve">
     <value>تلعب الوكالة الوطنية لدعم وتنمية المقاولاتية دوراً محورياً في تمويل المؤسسات المصغرة، عبر مرافقة حاملي الأفكار الريادية الراغبين في تحويلها إلى مشاريع واقعية تخلق الثروة ومناصب الشغل، وفقا للمقاربة الاقتصادية المنتهجة الرامية الى تعزيز آليات التمويل وتسيير المخاطر المتعلقة بها، بهدف تحريك عجلة التنمية الوطنية.</value>
+  </data>
+  <data name="SousDirectionCommunication" xml:space="preserve">
+    <value>المديرية الفرعية للإتصال</value>
+  </data>
+  <data name="suivant" xml:space="preserve">
+    <value>التالي</value>
   </data>
   <data name="TableauTypeFinanement" xml:space="preserve">
     <value>جدول صيغ التمويل</value>
@@ -1412,6 +1523,9 @@
   </data>
   <data name="TableauTypeFinanementText" xml:space="preserve">
     <value>تفاصيل نسب المساهمة لكل نوع من صيغ التمويل المتاحة</value>
+  </data>
+  <data name="TelechargerMag" xml:space="preserve">
+    <value>تحميل المجلة</value>
   </data>
   <data name="TrancheAgeCreation" xml:space="preserve">
     <value>سن الإنشاء</value>

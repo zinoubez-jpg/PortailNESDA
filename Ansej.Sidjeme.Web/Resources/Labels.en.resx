@@ -1041,11 +1041,32 @@
   <data name="ActiviteTitre7TextP9" xml:space="preserve">
     <value>traditional industry</value>
   </data>
+  <data name="Agrandir" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
   <data name="annee" xml:space="preserve">
     <value>years</value>
   </data>
+  <data name="auteur" xml:space="preserve">
+    <value>Author</value>
+  </data>
   <data name="BouttonInscription" xml:space="preserve">
     <value>Digital Registration Platform</value>
+  </data>
+  <data name="DatePublication" xml:space="preserve">
+    <value>Publication date:</value>
+  </data>
+  <data name="DecouvrirMag1" xml:space="preserve">
+    <value>Discover the First Issue</value>
+  </data>
+  <data name="DecouvrirMag1Text" xml:space="preserve">
+    <value>Explore “NESDA Mag” now and discover the latest content in the world of entrepreneurship.</value>
+  </data>
+  <data name="DernierNews" xml:space="preserve">
+    <value>Latest updates and news</value>
+  </data>
+  <data name="Electronique" xml:space="preserve">
+    <value>Electronic</value>
   </data>
   <data name="FinancementExploitation" xml:space="preserve">
     <value>Operational and Rent Financing</value>
@@ -1134,17 +1155,107 @@
   <data name="FinancementTitre2Text" xml:space="preserve">
     <value>The agency offers several financing options for creating and expanding micro-enterprises through 3 financial structures.</value>
   </data>
+  <data name="Format" xml:space="preserve">
+    <value>Formula</value>
+  </data>
+  <data name="FullScreen" xml:space="preserve">
+    <value>Full screen</value>
+  </data>
+  <data name="ImprimerMag" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="LeMag" xml:space="preserve">
+    <value>Magazine</value>
+  </data>
   <data name="LesTypesFinancement" xml:space="preserve">
     <value>Self-financing, mixed financing,triangular financing</value>
   </data>
+  <data name="Mag" xml:space="preserve">
+    <value>Magazine</value>
+  </data>
+  <data name="MagNesda" xml:space="preserve">
+    <value>NESDA Mag</value>
+  </data>
+  <data name="MagNumero" xml:space="preserve">
+    <value>Issue N°</value>
+  </data>
+  <data name="MagTitre1" xml:space="preserve">
+    <value>Magazine Vision</value>
+  </data>
+  <data name="MagTitre2" xml:space="preserve">
+    <value>Magazine Offerings</value>
+  </data>
+  <data name="MagTitre2Text" xml:space="preserve">
+    <value>This magazine is a new and unique knowledge space, and it will be your primary source for:</value>
+  </data>
+  <data name="MagTitre2TextP1" xml:space="preserve">
+    <value>The latest developments in entrepreneurship;</value>
+  </data>
+  <data name="MagTitre2TextP2" xml:space="preserve">
+    <value>Inspiring success stories of Algerian entrepreneurs;</value>
+  </data>
+  <data name="MagTitre2TextP3" xml:space="preserve">
+    <value>In-depth analysis of the current state and future of the sector in Algeria;</value>
+  </data>
+  <data name="MagTitre2TextP4" xml:space="preserve">
+    <value>Practical advice and guidance to accompany and support micro-enterprises;</value>
+  </data>
+  <data name="MagTitre2TextP5" xml:space="preserve">
+    <value>Interviews with various players in the field of entrepreneurship.</value>
+  </data>
+  <data name="Minimiser" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="ParcourirMag" xml:space="preserve">
+    <value>Explore the magazine now</value>
+  </data>
+  <data name="partage" xml:space="preserve">
+    <value>sharing</value>
+  </data>
+  <data name="PosteDirecteurNesda" xml:space="preserve">
+    <value>Director General of the National Entrepreneurship Support and Development Agency (NESDA)</value>
+  </data>
   <data name="poucentage" xml:space="preserve">
     <value>REQUIRED EVALUATION RATE</value>
+  </data>
+  <data name="precedent" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Principal" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="ProgCoopérations" xml:space="preserve">
+    <value>Cooperation Program</value>
+  </data>
+  <data name="ProgCoopérationsTitre1" xml:space="preserve">
+    <value>Empowerment program for Youth Entrepreneurs in the agricultural sector (ProAgro YOUTH)</value>
+  </data>
+  <data name="ProgCoopérationsTitre2" xml:space="preserve">
+    <value>Social Dialogue Program for Formalization and Employability in the Southern Neighborhood Region (SOLIFEM)</value>
+  </data>
+  <data name="ProgCoopérationsTitre3" xml:space="preserve">
+    <value>Social and Solidarity Economy Program</value>
+  </data>
+  <data name="refaire" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="retour" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="retourListe" xml:space="preserve">
+    <value>Back to list</value>
   </data>
   <data name="SolutionFinancement" xml:space="preserve">
     <value>Financing Solutions</value>
   </data>
   <data name="SolutionFinancementText" xml:space="preserve">
     <value>The National Entrepreneurship Support and Development Agency plays a pivotal role in financing micro-enterprises, by accompanying entrepreneurial idea holders who wish to transform their ideas into real projects that generate wealth and create jobs, in accordance with the adopted economic approach aimed at strengthening financing mechanisms and managing related risks, with the goal of driving national development.</value>
+  </data>
+  <data name="SousDirectionCommunication" xml:space="preserve">
+    <value>Sub-Directorate of Communication</value>
+  </data>
+  <data name="suivant" xml:space="preserve">
+    <value>Next</value>
   </data>
   <data name="TableauTypeFinanement" xml:space="preserve">
     <value>Table of financing formulas</value>
@@ -1181,6 +1292,9 @@
   </data>
   <data name="TableauTypeFinanementText" xml:space="preserve">
     <value>Details of contribution ratios for each type of available financing formula</value>
+  </data>
+  <data name="TelechargerMag" xml:space="preserve">
+    <value>Download</value>
   </data>
   <data name="TrancheAgeCreation" xml:space="preserve">
     <value>AGE OF CREATION</value>
