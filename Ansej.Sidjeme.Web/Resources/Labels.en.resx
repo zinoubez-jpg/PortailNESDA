@@ -840,6 +840,228 @@
   <data name="ReunionConseilAdmin" xml:space="preserve">
     <value>Board meetings</value>
   </data>
+  <data name="AxesProgramme" xml:space="preserve">
+    <value>Program Axes and Activities:</value>
+  </data>
+  <data name="ButProgramme" xml:space="preserve">
+    <value>Program Goal:</value>
+  </data>
+  <data name="CadreProgramme" xml:space="preserve">
+    <value>Program Framework:</value>
+  </data>
+  <data name="Conditionbeneficier1" xml:space="preserve">
+    <value>1. Previous beneficiaries of the Agency’s mechanism:</value>
+  </data>
+  <data name="Conditionbeneficier1,1" xml:space="preserve">
+    <value>1.1 Conditions for benefiting from “Expansion of the same or subsidiary activity”:</value>
+  </data>
+  <data name="Conditionbeneficier1,2" xml:space="preserve">
+    <value>1.2 Conditions for benefiting from “New activity expansion”:</value>
+  </data>
+  <data name="Conditionbeneficier2" xml:space="preserve">
+    <value>2. Previous non-beneficiaries of the Agency’s mechanism:</value>
+  </data>
+  <data name="ConditionbeneficierCommun" xml:space="preserve">
+    <value>Common Conditions:</value>
+  </data>
+  <data name="ConditionbeneficierTitre" xml:space="preserve">
+    <value>Program Eligibility Requirements</value>
+  </data>
+  <data name="ContributionATitre" xml:space="preserve">
+    <value>Agency Contribution (unremunerated Loan)</value>
+  </data>
+  <data name="ContributionBTitre" xml:space="preserve">
+    <value>Bank Contribution (Bank Loan)</value>
+  </data>
+  <data name="ContributionPTitre" xml:space="preserve">
+    <value>Personal Contribution</value>
+  </data>
+  <data name="DeclarationHonneur" xml:space="preserve">
+    <value>Benefiting from the importation of equipment, operations, and services</value>
+  </data>
+  <data name="DefinitionProgramme" xml:space="preserve">
+    <value>Presentation of the IMPACT 70 Program</value>
+  </data>
+  <data name="EnvironementProgramme" xml:space="preserve">
+    <value>Program scope:</value>
+  </data>
+  <data name="EtapesBeneficier" xml:space="preserve">
+    <value>The steps to benefit from the program</value>
+  </data>
+  <data name="ModeFinancementTitre" xml:space="preserve">
+    <value>Modes of financing</value>
+  </data>
+  <data name="MotLiaison" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Partenaire1" xml:space="preserve">
+    <value>Higher Education and Scientific Research Institutions</value>
+  </data>
+  <data name="Partenaire2" xml:space="preserve">
+    <value>Education and Vocational Training Institutions</value>
+  </data>
+  <data name="Partenaire3" xml:space="preserve">
+    <value>Banking Institutions</value>
+  </data>
+  <data name="Partenaire4" xml:space="preserve">
+    <value>Economic institutions</value>
+  </data>
+  <data name="Partenaire5" xml:space="preserve">
+    <value>Public Institutions and Bodies</value>
+  </data>
+  <data name="Partenariat1" xml:space="preserve">
+    <value>PARTNERSHIPS</value>
+  </data>
+  <data name="Partenariat2" xml:space="preserve">
+    <value>PROGRAM</value>
+  </data>
+  <data name="Programme" xml:space="preserve">
+    <value>PROGRAM</value>
+  </data>
+  <data name="RegisterNow" xml:space="preserve">
+    <value>“Register now”</value>
+  </data>
+  <data name="SousTraitance1" xml:space="preserve">
+    <value>Subcontracting</value>
+  </data>
+  <data name="SousTraitance2" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="SousTraitanceAvantages1" xml:space="preserve">
+    <value>Main Advantages of Subcontracting for Large Enterprises</value>
+  </data>
+  <data name="SousTraitanceAvantages2" xml:space="preserve">
+    <value>Main Advantages of Subcontracting for Micro-Enterprises</value>
+  </data>
+  <data name="SousTraitanceModels" xml:space="preserve">
+    <value>Some subcontracting models through micro-enterprises</value>
+  </data>
+  <data name="SousTraitanceSupport" xml:space="preserve">
+    <value>Agency support for subcontracting</value>
+  </data>
+  <data name="TypeFinancemet1" xml:space="preserve">
+    <value>Self-financing</value>
+  </data>
+  <data name="TypeFinancemet2" xml:space="preserve">
+    <value>Mixed financing</value>
+  </data>
+  <data name="TypeFinancemet3" xml:space="preserve">
+    <value>Triangular financing</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>Electronic registration link</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_02" xml:space="preserve">
+    <value>saves time and effort in traveling</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_04" xml:space="preserve">
+    <value>transparency and security</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_Titre" xml:space="preserve">
+    <value>Advantages of the Digital Platform</value>
+  </data>
+  <data name="Beneficiaires_Titre" xml:space="preserve">
+    <value>Beneficiaries</value>
+  </data>
+  <data name="Beneficiaire_01" xml:space="preserve">
+    <value>Youth with project ideas</value>
+  </data>
+  <data name="Beneficiaire_02" xml:space="preserve">
+    <value>Trainees in Entrepreneurship Development Centers (CDE)</value>
+  </data>
+  <data name="Beneficiaire_03" xml:space="preserve">
+    <value>University graduates</value>
+  </data>
+  <data name="Beneficiaire_04" xml:space="preserve">
+    <value>Graduates of vocational training institutes</value>
+  </data>
+  <data name="Beneficiaire_05" xml:space="preserve">
+    <value>The Agency's previous beneficiaries</value>
+  </data>
+  <data name="Beneficiaire_06" xml:space="preserve">
+    <value>ANGEM beneficiaries</value>
+  </data>
+  <data name="Beneficiaire_07" xml:space="preserve">
+    <value>CNAC beneficiaries</value>
+  </data>
+  <data name="Beneficiaire_08" xml:space="preserve">
+    <value>Farmers</value>
+  </data>
+  <data name="Beneficiaire_09" xml:space="preserve">
+    <value>Craftsmen</value>
+  </data>
+  <data name="Beneficiaire_10" xml:space="preserve">
+    <value>Holders of commercial registers</value>
+  </data>
+  <data name="Beneficiaire_11" xml:space="preserve">
+    <value>Licence holders</value>
+  </data>
+  <data name="Creation_Micro_Enterprise_Lien" xml:space="preserve">
+    <value>Registration to Create a micro-enterprise</value>
+  </data>
+  <data name="Creation_Micro_Enterprise_Titre" xml:space="preserve">
+    <value>Creating a micro-enterprise</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Lien" xml:space="preserve">
+    <value>Registration to expand the activity</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Titre" xml:space="preserve">
+    <value>Expansion of activity</value>
+  </data>
+  <data name="Inscription_CNRC_Titre" xml:space="preserve">
+    <value>Registration at the National Center for Commercial Register (CNRC)</value>
+  </data>
+  <data name="Inscription_MPDZ_Titre" xml:space="preserve">
+    <value>Electronic Portal for Public Procurement</value>
+  </data>
+  <data name="Inscription_NESDA_Titre" xml:space="preserve">
+    <value>Mechanism Registration</value>
+  </data>
+  <data name="Objectives_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>Objectives of the Electronic Portal for Public Procurement</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_01" xml:space="preserve">
+    <value>Implementing more modern and simplified procedures in dealing with the situation</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_02" xml:space="preserve">
+    <value>Ensuring equality among all candidates and stakeholders</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_03" xml:space="preserve">
+    <value>Providing full transparency in all procedures</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_04" xml:space="preserve">
+    <value>Facilitating access to public demand for all users</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_05" xml:space="preserve">
+    <value>Accelerating contracting and public tendering processes</value>
+  </data>
+  <data name="Portail_Electronique_lien" xml:space="preserve">
+    <value>Registration link : sidjilcom-entreprise.cnrc.dz/ar/accueil2</value>
+  </data>
+  <data name="Portail_Electronique_Texte" xml:space="preserve">
+    <value>To access the electronic portal for establishing institutions, follow this link:</value>
+  </data>
+  <data name="Portail_Electronique_Titre" xml:space="preserve">
+    <value>Accessing the Electronic Portal</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_01" xml:space="preserve">
+    <value>The General Directorate of Taxes (DGI)</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_02" xml:space="preserve">
+    <value>The National Social Security Fund for the Self-Employed (CASNOS)</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_03" xml:space="preserve">
+    <value>The National Social Security Fund for Salaried Workers (CNAS)</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_04" xml:space="preserve">
+    <value>The National Statistics Office (ONS)</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Titre" xml:space="preserve">
+    <value>Electronic portal for establishing institutions</value>
+  </data>
+  <data name="Portail_Services_Titre" xml:space="preserve">
+    <value>Portal services</value>
+  </data>
   <data name="ActiviteNesda" xml:space="preserve">
     <value>Activities of the National Entrepreneurship Support and Development Agency</value>
   </data>
