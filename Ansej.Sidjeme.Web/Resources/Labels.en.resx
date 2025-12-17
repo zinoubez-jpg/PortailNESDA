@@ -1524,4 +1524,46 @@
   <data name="TrancheAgeExtension" xml:space="preserve">
     <value>AGE OF EXPANSION</value>
   </data>
+  <data name="AfficherDoc" xml:space="preserve">
+    <value>View document</value>
+  </data>
+  <data name="callCenter" xml:space="preserve">
+    <value>Call Center</value>
+  </data>
+  <data name="consultation" xml:space="preserve">
+    <value>Consultations</value>
+  </data>
+  <data name="latest" xml:space="preserve">
+    <value>Latest </value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="News&amp;MAJ" xml:space="preserve">
+    <value>News and updates</value>
+  </data>
+  <data name="Recherche" xml:space="preserve">
+    <value>Research</value>
+  </data>
+  <data name="RechercheArticleNews" xml:space="preserve">
+    <value>Search for an article or news...</value>
+  </data>
+  <data name="RechercheDansArticle" xml:space="preserve">
+    <value>Search articles and news</value>
+  </data>
+  <data name="StructureAgence" xml:space="preserve">
+    <value>State agency</value>
+  </data>
+  <data name="StructureDG" xml:space="preserve">
+    <value>General Directorate</value>
+  </data>
+  <data name="StructuresAgences" xml:space="preserve">
+    <value>State agencies</value>
+  </data>
+  <data name="TitreConsultation" xml:space="preserve">
+    <value>Consultation address</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>updates</value>
+  </data>
 </root>

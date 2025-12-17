@@ -1,7 +1,12 @@
 ﻿@model Ansej.Domain.Core.PagedResult<Ansej.Sidjeme.Domain.Entities.Article>
-
+@using System.Globalization
 @{
-    ViewData["Title"] = "الأخبار والمستجدات";
+    ViewData["Title"] = localizer["News&MAJ"];
+    // Récupère le nom de la culture (ex: "ar", "ar-SA", "en", "en-US")
+    var currentLanguage = CultureInfo.CurrentCulture.Name;
+
+    // Vérifie si c'est de l'arabe
+    bool isArabic = currentLanguage.StartsWith("ar");
 }
 
 
@@ -353,23 +358,23 @@
     <div class="container">
         <!-- Section Title -->
         <div class="section-title section-title-two text-center">
-            <span class="section-title__tagline">الأخبار</span>
-            <h2 class="section-title__title">آخر <span>التحديثات</span></h2>
+            <span class="section-title__tagline">@localizer["News"]</span>
+            <h2 class="section-title__title"> @localizer["latest"]<span>@localizer["update"]</span></h2>
         </div>
         <!-- Search Section -->
         <div class="search-section">
-            <h2 class="search-title">البحث في المقالات والأخبار</h2>
+            <h2 class="search-title">@localizer["RechercheDansArticle"] </h2>
 
             <form class="search-form" asp-action="Paged" method="get">
                 <div class="search-input-group">
                     <input type="text"
                            name="search"
                            class="search-input"
-                           placeholder="ابحث عن مقال أو خبر..."
+                           placeholder=@localizer["RechercheArticleNews"]
                            value="@ViewBag.search"
                            autocomplete="off">
                     <button class="search-button" type="submit">
-                        <span>بحث</span>
+                        <span> @localizer["Recherche"]</span>
                     </button>
                 </div>
             </form>
@@ -395,7 +400,7 @@
                             <div class="post-img position-relative">
                                 <img src="@post.ImageUrl" alt="" class="img-fluid" loading="lazy">
                                 <div class="post-content">
-                                    <p class="post-category">خلية الإتصال</p>
+                                    <p class="post-category">  @localizer["callCenter"]</p>
                                     <h2 class="title">
                                         <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">@post.Title</a>
                                     </h2>
@@ -403,10 +408,22 @@
 
                                         @{
                                             var date = post.CreatedAt;
-                                            var months = new[] {
-                                                    "جانفي", "فيفري", "مارس", "أفريل", "ماي", "جوان",
-                                                    "جويلية", "أوت", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"
-                                                };
+
+                                            string[] months;
+                                            if (isArabic)
+                                            {
+                                                months = new[] {
+                                        "جانفي", "فيفري", "مارس", "أفريل", "ماي", "جوان",
+                                        "جويلية", "أوت", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"
+                                        };
+                                            }
+                                            else
+                                            {
+                                                months = new[] {
+                                        "January", "February", "March", "April", "May", "June",
+                                        "July", "August", "September", "October", "November", "December"
+                                        };
+                                            }
                                             var formattedDate = $"{date.Day} {months[date.Month - 1]} {date.Year}";
                                         }
                                         <time datetime="2025-01-01">@formattedDate</time>
@@ -455,7 +472,7 @@
                        asp-route-search="@ViewBag.search"
                        aria-label="Previous page">
                         <i class="bi bi-arrow-right"></i>
-                        <span class="d-none d-sm-inline">السابق</span>
+                        <span class="d-none d-sm-inline">@localizer["precedent"]</span>
                     </a>
                 </li>
 
@@ -477,7 +494,7 @@
                        asp-route-page="@(Model.Page + 1)"
                        asp-route-search="@ViewBag.search"
                        aria-label="Next page">
-                        <span class="d-none d-sm-inline">التالي</span>
+                        <span class="d-none d-sm-inline"> @localizer["suivant"]</span>
                         <i class="bi bi-arrow-left"></i>
                     </a>
                 </li>

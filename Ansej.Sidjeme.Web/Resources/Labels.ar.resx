@@ -1755,4 +1755,46 @@
   <data name="TrancheAgeExtension" xml:space="preserve">
     <value>سن التوسعة</value>
   </data>
+  <data name="AfficherDoc" xml:space="preserve">
+    <value>عرض الوثيقة</value>
+  </data>
+  <data name="callCenter" xml:space="preserve">
+    <value>خلية الإتصال</value>
+  </data>
+  <data name="consultation" xml:space="preserve">
+    <value>الإستشارات</value>
+  </data>
+  <data name="latest" xml:space="preserve">
+    <value>آخر</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>الأخبار</value>
+  </data>
+  <data name="News&amp;MAJ" xml:space="preserve">
+    <value>الأخبار والمستجدات</value>
+  </data>
+  <data name="Recherche" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="RechercheArticleNews" xml:space="preserve">
+    <value>ابحث عن مقال أو خبر...</value>
+  </data>
+  <data name="RechercheDansArticle" xml:space="preserve">
+    <value>البحث في المقالات والأخبار</value>
+  </data>
+  <data name="StructureAgence" xml:space="preserve">
+    <value>الوكالة الولائية</value>
+  </data>
+  <data name="StructureDG" xml:space="preserve">
+    <value>المديرية العامة</value>
+  </data>
+  <data name="StructuresAgences" xml:space="preserve">
+    <value>الوكالات الولائية</value>
+  </data>
+  <data name="TitreConsultation" xml:space="preserve">
+    <value>عنوان الإستشارة</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>التحديثات</value>
+  </data>
 </root>

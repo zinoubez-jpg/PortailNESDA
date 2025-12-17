@@ -1,7 +1,12 @@
 ﻿@model IEnumerable<Ansej.Sidjeme.Web.Views.ViewModels.TopStructureGroup>
-
+@using System.Globalization
 @{
-    ViewData["Title"] = "الإستشارات";
+    ViewData["Title"] = localizer["consultation"];
+    // Récupère le nom de la culture (ex: "ar", "ar-SA", "en", "en-US")
+    var currentLanguage = CultureInfo.CurrentCulture.Name;
+
+    // Vérifie si c'est de l'arabe
+    bool isArabic = currentLanguage.StartsWith("ar");
 }
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -335,23 +340,28 @@
             <div class="stats-label">إجمالي الاستشارات المتاحة</div>
         </div>-->
         <!-- Section Title -->
-        <h2 class="section-title">الاستشارات</h2>
+        <h2 class="section-title">@localizer["consultation"]</h2>
 
         <!-- Consultations Groups -->
         @foreach (var group in Model)
         {
             var structureName = group.TopStructure.NameAr;
             <div class="structure-section">
-                <h4 class="structure-title">@structureName</h4>
+                @{ if (group.IsFromChild)
+                    { <h4 class="structure-title">@localizer["StructuresAgences"]</h4>}
+                else
+                { <h4 class="structure-title">@localizer["StructureDG"]</h4>}
+                }
+
                 <table class="consultations-table">
                     <thead class="table-header">
                         <tr>
                             @if (group.IsFromChild)
                             {
-                                <th>الوكالة الولائية</th>
+                                <th>@localizer["StructureAgence"]</th>
                             }
-                            <th>تاريخ النشر</th>
-                            <th>العنوان الإستشارة</th>
+                            <th>@localizer["DatePublication"]</th>
+                            <th>@localizer["TitreConsultation"]</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -359,15 +369,22 @@
                         @foreach (var consultation in group.Consultations)
                         {
                             <tr>
-                                @if (group.IsFromChild)
+                                @if (group.IsFromChild )
                                 {
-                                    <td>@consultation.StructureManager?.NameAr</td>
+                                    if (isArabic)
+                                    {
+                                     <td>@consultation.StructureManager?.NameAr</td>
+                                    }
+                                    else
+                                    {
+                                      <td>@consultation.StructureManager?.NameEn</td>
+                                    }
                                 }
                                 <td class="date-cell">@consultation.PublishDate.ToString("dd/MM/yyyy")</td>
                                 <td class="title-cell">@consultation.TitleAr</td>
                                 <td>
                                     <a href="@consultation.FilePath" class="document-btn" target="_blank">
-                                        عرض الوثيقة
+                                        @localizer["AfficherDoc"]
                                     </a>
                                 </td>
                             </tr>
