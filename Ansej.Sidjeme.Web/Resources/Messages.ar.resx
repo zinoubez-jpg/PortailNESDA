@@ -1196,4 +1196,16 @@
   <data name="Àpropos" xml:space="preserve">
     <value>عن الوكالة</value>
   </data>
+  <data name="accord" xml:space="preserve">
+    <value>أسمح لناسدا بمعالجة بياناتي الشخصية وفق للشروط المنصوص عليها في القانون 18/07 المتعلقة بحماية الأشخاص الطبيعين في معالجة المعطيات الشخصية،يمكنك الإطلاع على.</value>
+  </data>
+  <data name="contactFormText" xml:space="preserve">
+    <value>يرجى تعبئة النموذج التالي بعناية وسنقوم بالرد عليكم في أقرب وقت ممكن. جميع الحقول مطلوبة لضمان تقديم أفضل خدمة لكم.</value>
+  </data>
+  <data name="ContactInfoText" xml:space="preserve">
+    <value>نرحب بأسئلتكم واستفساراتكم حول خدماتنا وبرامجنا. يمكنكم التواصل معنا عبر القنوات التالية أو تعبئة النموذج أدناه وسنقوم بالرد عليكم في أقرب وقت ممكن.</value>
+  </data>
+  <data name="lienAccord" xml:space="preserve">
+    <value>السياسة العامة لحماية المعطيات دات الطابع الشخصي الخاصة بالوكالة .</value>
+  </data>
 </root>

@@ -121,12 +121,12 @@
     <value>Actuelle</value>
   </data>
   <data name="Adresse" xml:space="preserve">
-    <value>Adresse</value>
+    <value>The address</value>
   </data>
   <data name="Annuaire" xml:space="preserve">
     <value>Phone directory</value>
   </data>
-  <data name="Code" xml:space="preserve">
+  <data name="code" xml:space="preserve">
     <value>Code</value>
   </data>
   <data name="CommitteeDiscription" xml:space="preserve">
@@ -430,7 +430,7 @@
     <value>National Entrepreneurship Support and Development Agency NESDA</value>
   </data>
   <data name="bienvenue" xml:space="preserve">
-    <value>Welcome to the official website of the Agency, your space for guiding your ideas toward successful projects</value>
+    <value>Welcome</value>
   </data>
   <data name="CentreComunication" xml:space="preserve">
     <value>Contact Center</value>
@@ -442,7 +442,7 @@
     <value>questions</value>
   </data>
   <data name="AdresseDG" xml:space="preserve">
-    <value>8, Mohamed Arzeki Ben Bouzid Street,</value>
+    <value>Mohamed Arezki Ben Bouzid Street, El Anasser, Algiers, Algeria</value>
   </data>
   <data name="centreAppel" xml:space="preserve">
     <value>Contact Center</value>
@@ -451,7 +451,7 @@
     <value>Contact us now</value>
   </data>
   <data name="Email" xml:space="preserve">
-    <value>Email</value>
+    <value>E-mail</value>
   </data>
   <data name="wilayaAdresse" xml:space="preserve">
     <value>El Anasser – Algiers</value>
@@ -1524,14 +1524,62 @@
   <data name="TrancheAgeExtension" xml:space="preserve">
     <value>AGE OF EXPANSION</value>
   </data>
+  <data name="AdresseDGD" xml:space="preserve">
+    <value />
+  </data>
   <data name="AfficherDoc" xml:space="preserve">
     <value>View document</value>
+  </data>
+  <data name="bienvenuContact" xml:space="preserve">
+    <value>Welcome</value>
   </data>
   <data name="callCenter" xml:space="preserve">
     <value>Call Center</value>
   </data>
+  <data name="Centre" xml:space="preserve">
+    <value>Central</value>
+  </data>
   <data name="consultation" xml:space="preserve">
     <value>Consultations</value>
+  </data>
+  <data name="contactForm" xml:space="preserve">
+    <value>Contact Form</value>
+  </data>
+  <data name="contactsAgences" xml:space="preserve">
+    <value>For detailed information, click on the wilaya.</value>
+  </data>
+  <data name="contactTitre" xml:space="preserve">
+    <value>Contact information for wilaya agencies</value>
+  </data>
+  <data name="ContenuEmail" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="ContenuEmailD" xml:space="preserve">
+    <value>write your message here ...</value>
+  </data>
+  <data name="EmailD" xml:space="preserve">
+    <value>enter your e-mail adress</value>
+  </data>
+  <data name="envoyerMessage" xml:space="preserve">
+    <value>Send message</value>
+  </data>
+  <data name="Est" xml:space="preserve">
+    <value>East</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="FullNameD" xml:space="preserve">
+    <value>enter your full name</value>
+  </data>
+  <data name="infoComplet" xml:space="preserve">
+    <value>Comprehensive data is available.</value>
+  </data>
+  <data name="informations" xml:space="preserve">
+    <value>Information</value>
   </data>
   <data name="latest" xml:space="preserve">
     <value>Latest </value>
@@ -1541,6 +1589,24 @@
   </data>
   <data name="News&amp;MAJ" xml:space="preserve">
     <value>News and updates</value>
+  </data>
+  <data name="nombreAgences" xml:space="preserve">
+    <value>61 wilaya Agencies</value>
+  </data>
+  <data name="ObjetEmail" xml:space="preserve">
+    <value>Message Subject</value>
+  </data>
+  <data name="ObjetEmailD" xml:space="preserve">
+    <value>write your subject here ...</value>
+  </data>
+  <data name="Ouest" xml:space="preserve">
+    <value>West</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="PhoneD" xml:space="preserve">
+    <value>enter your phone number</value>
   </data>
   <data name="Recherche" xml:space="preserve">
     <value>Research</value>
@@ -1560,10 +1626,16 @@
   <data name="StructuresAgences" xml:space="preserve">
     <value>State agencies</value>
   </data>
+  <data name="Sud" xml:space="preserve">
+    <value>South</value>
+  </data>
   <data name="TitreConsultation" xml:space="preserve">
     <value>Consultation address</value>
   </data>
   <data name="update" xml:space="preserve">
     <value>updates</value>
+  </data>
+  <data name="WilayaD" xml:space="preserve">
+    <value>select wilaya</value>
   </data>
 </root>

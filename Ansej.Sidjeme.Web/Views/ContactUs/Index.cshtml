@@ -2,6 +2,11 @@
 @using System.Globalization
 @{
     ViewData["Title"] = messageslocalizer["Contact"];
+    // Récupère le nom de la culture (ex: "ar", "ar-SA", "en", "en-US")
+    var currentLanguage = CultureInfo.CurrentCulture.Name;
+
+    // Vérifie si c'est de l'arabe
+    bool isArabic = currentLanguage.StartsWith("ar");
 }
 
 
@@ -453,9 +458,9 @@
 <div class="main-content">
     <div class="container">
         <div class="info-panel-section">
-            <h2 class="section-title2">معلومات الاتصال</h2>
-            <p class="section-text2">
-                نرحب بأسئلتكم واستفساراتكم حول خدماتنا وبرامجنا. يمكنكم التواصل معنا عبر القنوات التالية أو تعبئة النموذج أدناه وسنقوم بالرد عليكم في أقرب وقت ممكن.
+            <h2 class="section-title2">@localizer["ContactInfo"]</h2>
+            <p class="section-text2"> @messageslocalizer["ContactInfoText"]
+               
             </p>
 
             <div class="contact-grid">
@@ -463,10 +468,9 @@
                     <div class="contact-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h3 class="contact-title">العنوان </h3>
+                    <h3 class="contact-title">@localizer["Adresse"] </h3>
                     <div class="contact-info">
-                        شارع محمد ارزقي بن بوزيد، العناصر<br>
-                        الجزائر العاصمة، الجزائر
+                        @localizer["AdresseDG"]
                     </div>
                 </div>
 
@@ -474,7 +478,7 @@
                     <div class="contact-icon">
                         <i class="fas fa-phone-alt"></i>
                     </div>
-                    <h3 class="contact-title"> مركز الإتصالات </h3>
+                    <h3 class="contact-title">  @localizer["callCenter"] </h3>
 
                     <div class="contact-info" style="direction:ltr;">
                         <h3 class="contact-title"> 0770 033 033</h3>
@@ -486,7 +490,7 @@
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <h3 class="contact-title">البريد الإلكتروني</h3>
+                    <h3 class="contact-title">@localizer["Email"]</h3>
                     <div class="contact-info">
                         <a href="mailto:contact@andpm.dz">contact@nesda.dz</a><br>
                     </div>
@@ -494,39 +498,39 @@
             </div>
         </div>
         <div class="info-panel-section">
-            <h2 class="section-title2">نموذج الاتصال</h2>
+            <h2 class="section-title2">  @localizer["contactForm"]</h2>
             <p class="section-text2">
-                يرجى تعبئة النموذج التالي بعناية وسنقوم بالرد عليكم في أقرب وقت ممكن. جميع الحقول مطلوبة لضمان تقديم أفضل خدمة لكم.
+                @messageslocalizer["contactFormText"]
             </p>
 
             <form class="contact-form" asp-action="Index" asp-controller="ContactUs">
                 <div class="row g-3">
                     <div class="col-md-6 col-sm-12">
-                        <label asp-for="FullName" class="form-label">الاسم الكامل *</label>
-                        <input asp-for="FullName" class="form-control custom-input" placeholder="أدخل اسمك الكامل" required>
+                        <label asp-for="FullName" class="form-label">@localizer["FullName"] *</label>
+                        <input asp-for="FullName" class="form-control custom-input" placeholder=@localizer["FullNameD"] required>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <label asp-for="Phone" class="form-label">رقم الهاتف *</label>
-                        <input asp-for="Phone" name="Phone" type="tel" class="form-control custom-input" placeholder="أدخل رقم هاتفك" required>
+                        <label asp-for="Phone" class="form-label">@localizer["Phone"] *</label>
+                        <input asp-for="Phone" name="Phone" type="tel" class="form-control custom-input" placeholder=@localizer["PhoneD"] required>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <label asp-for="Email" class="form-label">البريد الإلكتروني *</label>
-                        <input asp-for="Email" type="email" class="form-control custom-input" placeholder="أدخل بريدك الإلكتروني" required>
+                        <label asp-for="Email" class="form-label">@localizer["Email"] *</label>
+                        <input asp-for="Email" type="email" class="form-control custom-input" placeholder=@localizer["EmailD"] required>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <label asp-for="WilayaId" class="form-label">الولاية *</label>
+                        <label asp-for="WilayaId" class="form-label">@localizer["Wilaya"] *</label>
                         <select asp-for="WilayaId" asp-items="ViewBag.wilayas" id="wilayaAR" class="form-select select2" required>
-                            <option value="">اختر الولاية</option>
+                            <option value="">@localizer["WilayaD"]</option>
 
                         </select>
                     </div>
                     <div class="col-12">
-                        <label asp-for="Subject" class="form-label">موضوع الرسالة *</label>
-                        <input asp-for="Subject" type="text" class="form-control custom-input" placeholder="أدخل موضوع رسالتك" required>
+                        <label asp-for="Subject" class="form-label">@localizer["ObjetEmail"] *</label>
+                        <input asp-for="Subject" type="text" class="form-control custom-input" placeholder=@localizer["ObjetEmailD"] required>
                     </div>
                     <div class="col-12">
-                        <label asp-for="Message" class="form-label">الرسالة *</label>
-                        <textarea asp-for="Message" class="form-control custom-input" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                        <label asp-for="Message" class="form-label">@localizer["ContenuEmail"] *</label>
+                        <textarea asp-for="Message" class="form-control custom-input" rows="5" placeholder=@localizer["ContenuEmailD"]required></textarea>
                     </div>
 
                     <div class="form-section">
@@ -543,14 +547,17 @@
                             <label class="custom-checkbox">
                                 <input type="checkbox" id="acceptTerms">
                                 <span class="checkmark"></span>
-                                أسمح لناسدا بمعالجة بياناتي الشخصية وفق للشروط المنصوص عليها في القانون 18/07 المتعلقة بحماية الأشخاص الطبيعين في معالجة المعطيات الشخصية،يمكنك الإطلاع على. <a href="https://nesda.dz/Home/Privacy" target="_blank" name="NesdaPolitique">السياسة العامة لحماية المعطيات دات الطابع الشخصي الخاصة بالوكالة .</a>
+                                @messageslocalizer["accord"]
+                                      <a href="https://nesda.dz/Home/Privacy" target="_blank" name="NesdaPolitique">
+                                 @messageslocalizer["lienAccord"]
+                                </a>
                             </label>
                         </div>
                     </div>
 
                     <div class="col-12">
                         <button class="thm-btnrg" type="submit" disabled id="submitBtn">
-                            <span>إرسال الرسالة</span>
+                            <span>  @localizer["envoyerMessage"]</span>
                         </button>
                     </div>
                 </div>
@@ -565,7 +572,9 @@
 
 
 <div class="container">
-    <h2 class="section-title2" style="color:var(--meciy-base);">معلومات الاتصال الخاصة بالوكالات الولائية</h2> <div class="main-content">
+    <h2 class="section-title2" style="color:var(--meciy-base);">
+        @localizer["contactTitre"]
+        </h2> <div class="main-content">
         <div class="row equal-height">
             <div class="col-sm-8">
                 <div id="tooltip"></div>
@@ -821,21 +830,21 @@
                 <br /><br />
                 <div class="info-panel">
                     <div class="welcome-message" id="welcomeMessage">
-                        <h3>مرحبا</h3>
-                        <p>للاطلاع على معلومات مفصلة، اضغط على الولاية.</p>
+                        <h3>@localizer["bienvenue"]</h3>
+                        <p>@localizer["contactsAgences"]</p>
                         <div class="stats">
-                            <h4>المعلومات</h4>
-                            <p><strong>61 وكالة ولائية</strong></p>
-                            <p>البيانات الشاملة متوفرة</p>
+                            <h4>@localizer["informations"]</h4>
+                            <p><strong>@localizer["nombreAgences"]</strong></p>
+                            <p>@localizer["infoComplet"]</p>
                         </div>
                     </div>
 
                     <div class="wilaya-info" id="wilayaInfo" style="display: none;">
                         <div id="regionChoices" style="display: none; margin: 20px;">
-                            <button class="btn btn-outline-primary " id="DZ16" name="Alger Centre">Centre</button>
-                            <button class="btn btn-outline-primary" id="DZ1602" name="Alger ouest">Ouest</button>
-                            <button class="btn btn-outline-primary" id="DZ1603" name="Alger Est">Est</button>
-                            <button class="btn btn-outline-primary" id="DZ1604" name="Alger Sud">Sud</button>
+                            <button class="btn btn-outline-primary " id="DZ16" name="Alger Centre">@localizer["Centre"] </button>
+                            <button class="btn btn-outline-primary" id="DZ1602" name="Alger ouest">@localizer["Ouest"] </button>
+                            <button class="btn btn-outline-primary" id="DZ1603" name="Alger Est">@localizer["Est"]</button>
+                            <button class="btn btn-outline-primary" id="DZ1604" name="Alger Sud">@localizer["Sud"]</button>
                         </div>
 
                         <div class="info-details">
@@ -844,27 +853,36 @@
                         </div>
 
                         <div class="info-details">
-                            <h4>الرمز</h4>
+                            <h4>@localizer["code"] </h4>
                             <p id="code">-</p>
                         </div>
 
                         <div class="info-details">
-                            <h4>العنوان</h4>
-                            <p id="adresseAr">-</p>
+                            <h4>@localizer["Adresse"]</h4>
+                            @*@{ if (isArabic)
+                                {*@
+                                    <p id="adresseAr">-</p>
+                                @*}
+                                else
+                                {
+                                    <p id="adresseEn">-</p>
+                                }
+                            }*@
+
                         </div>
 
                         <div class="info-details">
-                            <h4>الهاتف</h4>
+                            <h4>@localizer["Phone"]</h4>
                             <p id="telephoneFixe">-</p>
                         </div>
-
+                        
                         <div class="info-details">
-                            <h4>البريد الإلكتروني</h4>
+                            <h4>@localizer["Email"]</h4>
                             <p id="emaill">-</p>
                         </div>
 
                         <div class="info-details">
-                            <h4>الفاكس</h4>
+                            <h4>@localizer["Fax"]</h4>
                             <p id="fax">-</p>
                         </div>
                     </div>
@@ -887,7 +905,7 @@
             $('#wilayaAR').select2({
                 dir: "rtl", // Pour l'arabe
                 width: '100%', // Important pour que le CSS fonctionne bien
-                placeholder: "اختر الولاية"
+                placeholder: @localizer["WilayaD"]
             });
         });
 
@@ -895,6 +913,8 @@
     </script>
 
     <script>
+     
+
         document.addEventListener('DOMContentLoaded', function () {
             const wilayaInfoDiv = document.getElementById('wilayaInfo');
             const welcomeMessageDiv = document.getElementById('welcomeMessage');
@@ -916,10 +936,19 @@
 
                         if (data.length > 0) {
                             const info = data[0];
-                            document.getElementById('wilayaName').textContent = info.designationAr || 'N/A';
+                            if (isArabic) {
+                                document.getElementById('wilayaName').textContent = info.designationAr || 'N/A';
+                                document.getElementById('adresseAr').textContent = info.adresseAr || 'N/A';
+                            }
+
+                            else {
+                                document.getElementById('wilayaName').textContent = info.designationEn || 'N/A';
+                                document.getElementById('adresseAr').textContent = info.adresseEn || 'N/A';
+                            }
+                                
                             document.getElementById('wilayaCode').textContent = `الرمز: ${info.codeWilaya || 'N/A'}`;
                             document.getElementById('code').textContent = info.code || 'N/A';
-                            document.getElementById('adresseAr').textContent = info.adresseAr || 'N/A';
+                            
                             document.getElementById('telephoneFixe').textContent = info.telephoneFixe || 'N/A';
                             document.getElementById('emaill').textContent = info.email || 'N/A';
                             document.getElementById('fax').textContent = info.fax || 'N/A';

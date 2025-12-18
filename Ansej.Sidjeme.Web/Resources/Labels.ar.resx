@@ -127,7 +127,7 @@
     <value>Adresse en Arab</value>
   </data>
   <data name="Adresse" xml:space="preserve">
-    <value>Adresse</value>
+    <value>العنوان</value>
   </data>
   <data name="AdressFr" xml:space="preserve">
     <value>Adresse en Français</value>
@@ -162,8 +162,8 @@
   <data name="ChoisiFichier" xml:space="preserve">
     <value>sélectionner fichiers ...</value>
   </data>
-  <data name="Code" xml:space="preserve">
-    <value>Code</value>
+  <data name="code" xml:space="preserve">
+    <value>الرمز</value>
   </data>
   <data name="Commitee" xml:space="preserve">
     <value>Comité Participation</value>
@@ -268,7 +268,7 @@
     <value>Modifier {0}</value>
   </data>
   <data name="Email" xml:space="preserve">
-    <value>Email</value>
+    <value>البريد الإلكتروني</value>
   </data>
   <data name="EndDate" xml:space="preserve">
     <value>Date Expiration</value>
@@ -280,7 +280,7 @@
     <value>Verrouiller</value>
   </data>
   <data name="FullName" xml:space="preserve">
-    <value>Nom Complet Français</value>
+    <value>الاسم الكامل</value>
   </data>
   <data name="FullNameAr" xml:space="preserve">
     <value>Nom Complet Arab</value>
@@ -502,7 +502,7 @@
     <value>Nom d'utilisateur</value>
   </data>
   <data name="Wilaya" xml:space="preserve">
-    <value>Wilaya</value>
+    <value>الولاية</value>
   </data>
   <data name="WilayaId" xml:space="preserve">
     <value>Wilaya</value>
@@ -1755,14 +1755,62 @@
   <data name="TrancheAgeExtension" xml:space="preserve">
     <value>سن التوسعة</value>
   </data>
+  <data name="AdresseDG" xml:space="preserve">
+    <value>شارع محمد ارزقي بن بوزيد، العناصر-   الجزائر العاصمة، الجزائر</value>
+  </data>
   <data name="AfficherDoc" xml:space="preserve">
     <value>عرض الوثيقة</value>
+  </data>
+  <data name="bienvenue" xml:space="preserve">
+    <value>مرحبا</value>
   </data>
   <data name="callCenter" xml:space="preserve">
     <value>خلية الإتصال</value>
   </data>
+  <data name="Centre" xml:space="preserve">
+    <value>وسط</value>
+  </data>
   <data name="consultation" xml:space="preserve">
     <value>الإستشارات</value>
+  </data>
+  <data name="contactForm" xml:space="preserve">
+    <value>نموذج الاتصال</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>معلومات الاتصال</value>
+  </data>
+  <data name="contactsAgences" xml:space="preserve">
+    <value>للاطلاع على معلومات مفصلة، اضغط على الولاية</value>
+  </data>
+  <data name="contactTitre" xml:space="preserve">
+    <value>معلومات الاتصال الخاصة بالوكالات الولائية</value>
+  </data>
+  <data name="ContenuEmail" xml:space="preserve">
+    <value>الرسالة</value>
+  </data>
+  <data name="ContenuEmailD" xml:space="preserve">
+    <value>اكتب رسالتك هنا...</value>
+  </data>
+  <data name="EmailD" xml:space="preserve">
+    <value>أدخل بريدك الإلكتروني</value>
+  </data>
+  <data name="envoyerMessage" xml:space="preserve">
+    <value>إرسال الرسالة</value>
+  </data>
+  <data name="Est" xml:space="preserve">
+    <value>شرق</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>الفاكس</value>
+  </data>
+  <data name="FullNameD" xml:space="preserve">
+    <value>أدخل اسمك الكامل</value>
+  </data>
+  <data name="infoComplet" xml:space="preserve">
+    <value>البيانات الشاملة متوفرة</value>
+  </data>
+  <data name="informations" xml:space="preserve">
+    <value>المعلومات</value>
   </data>
   <data name="latest" xml:space="preserve">
     <value>آخر</value>
@@ -1772,6 +1820,24 @@
   </data>
   <data name="News&amp;MAJ" xml:space="preserve">
     <value>الأخبار والمستجدات</value>
+  </data>
+  <data name="nombreAgences" xml:space="preserve">
+    <value>61 وكالة ولائية</value>
+  </data>
+  <data name="ObjetEmail" xml:space="preserve">
+    <value>موضوع الرسالة</value>
+  </data>
+  <data name="ObjetEmailD" xml:space="preserve">
+    <value>أدخل موضوع رسالتك</value>
+  </data>
+  <data name="Ouest" xml:space="preserve">
+    <value>غرب</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="PhoneD" xml:space="preserve">
+    <value>أدخل رقم هاتفك</value>
   </data>
   <data name="Recherche" xml:space="preserve">
     <value>بحث</value>
@@ -1791,10 +1857,16 @@
   <data name="StructuresAgences" xml:space="preserve">
     <value>الوكالات الولائية</value>
   </data>
+  <data name="Sud" xml:space="preserve">
+    <value>جنوب</value>
+  </data>
   <data name="TitreConsultation" xml:space="preserve">
     <value>عنوان الإستشارة</value>
   </data>
   <data name="update" xml:space="preserve">
     <value>التحديثات</value>
+  </data>
+  <data name="WilayaD" xml:space="preserve">
+    <value>اختر الولاية</value>
   </data>
 </root>

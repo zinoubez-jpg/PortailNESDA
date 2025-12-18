@@ -1194,4 +1194,19 @@ The programme is a contribution to strengthening the role of local communities a
   <data name="Àpropos" xml:space="preserve">
     <value>About the Agency</value>
   </data>
+  <data name="accord" xml:space="preserve">
+    <value>I authorize NESDA to process my personal data in accordance with the conditions stipulated in Law No. 18-07 relating to the protection of natural persons in the processing of personal data.</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="contactFormText" xml:space="preserve">
+    <value>Please fill out the following form carefully and we will get back to you as soon as possible. All fields are required to ensure we provide you with the best service.</value>
+  </data>
+  <data name="ContactInfoText" xml:space="preserve">
+    <value>We welcome your questions and inquiries about our services and programs. You can contact us through the following channels or fill out the form below, and we will respond as soon as possible</value>
+  </data>
+  <data name="lienAccord" xml:space="preserve">
+    <value>You can consult the agency's general policy for the protection of personal data</value>
+  </data>
 </root>
