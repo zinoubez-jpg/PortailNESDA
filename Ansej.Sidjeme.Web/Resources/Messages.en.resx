@@ -1209,4 +1209,10 @@ The programme is a contribution to strengthening the role of local communities a
   <data name="lienAccord" xml:space="preserve">
     <value>You can consult the agency's general policy for the protection of personal data</value>
   </data>
+  <data name="Politique" xml:space="preserve">
+    <value>Data Processing Policy</value>
+  </data>
+  <data name="PolitiqueText" xml:space="preserve">
+    <value>Protecting your personal data is an absolute commitment to us. This policy aims to inform you clearly and transparently about how your personal data is collected and processed by the National Entrepreneurship Support and Development Agency (NESDA).</value>
+  </data>
 </root>

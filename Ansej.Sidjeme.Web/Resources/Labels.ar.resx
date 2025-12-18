@@ -1791,6 +1791,9 @@
   <data name="ContenuEmailD" xml:space="preserve">
     <value>اكتب رسالتك هنا...</value>
   </data>
+  <data name="demandeSuccee" xml:space="preserve">
+    <value>تم إرسال طلبكم بنجاح</value>
+  </data>
   <data name="EmailD" xml:space="preserve">
     <value>أدخل بريدك الإلكتروني</value>
   </data>
@@ -1814,6 +1817,27 @@
   </data>
   <data name="latest" xml:space="preserve">
     <value>آخر</value>
+  </data>
+  <data name="merci" xml:space="preserve">
+    <value>شكرا لكم</value>
+  </data>
+  <data name="msgSuccessContactUs" xml:space="preserve">
+    <value>شكراً لتواصلكم معنا — لقد استلمنا رسالتكم وسنرد عليكم في أقرب وقت ممكن</value>
+  </data>
+  <data name="msgSuccessContactUsT" xml:space="preserve">
+    <value>ما الخطوة التالية؟</value>
+  </data>
+  <data name="msgSuccessContactUsT1" xml:space="preserve">
+    <value>سيقوم فريقنا بمراجعة رسالتكم خلال 24 ساعة</value>
+  </data>
+  <data name="msgSuccessContactUsT2" xml:space="preserve">
+    <value>سنتواصل معكم عبر البريد الإلكتروني أو الهاتف</value>
+  </data>
+  <data name="msgSuccessContactUsT3" xml:space="preserve">
+    <value>في حالة الاستعجال، يمكنكم الاتصال بنا مباشرة</value>
+  </data>
+  <data name="msgSuccessMI" xml:space="preserve">
+    <value>شكراً لتواصلكم معنا — لقد تم تسجيل طلبكم يرجى تقربكم من وكالتنا الولائية مرفوقين بالبرنامج التقديري للعتاد</value>
   </data>
   <data name="News" xml:space="preserve">
     <value>الأخبار</value>
@@ -1839,6 +1863,235 @@
   <data name="PhoneD" xml:space="preserve">
     <value>أدخل رقم هاتفك</value>
   </data>
+  <data name="PolitiqueText" xml:space="preserve">
+    <value>تُعد حماية بياناتكم الشخصية التزامًا مطلقًا بالنسبة لنا. تهدف هذه السياسة إلى إعلامكم بشكل واضح وشفاف حول كيفيات جمع ومعالجة بياناتكم الشخصية من قبل الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="PolitiqueTitre" xml:space="preserve">
+    <value>سياسة حماية البيانات الشخصية وملفات تعريف الارتباط</value>
+  </data>
+  <data name="PolitiqueTitre1" xml:space="preserve">
+    <value>1. مقدمة والتزام</value>
+  </data>
+  <data name="PolitiqueTitre10" xml:space="preserve">
+    <value>الاتصال</value>
+  </data>
+  <data name="PolitiqueTitre10Text" xml:space="preserve">
+    <value>لأية أسئلة تتعلق بسياسة حماية البيانات الشخصية وملفات تعريف الارتباط الحالية، أو لممارسة حقوقكم، يمكنكم الاتصال بـ NESDA:</value>
+  </data>
+  <data name="PolitiqueTitre1P1" xml:space="preserve">
+    <value>في إطار أنشطتها، تُعنى الوكالة الوطنية لدعم وتنمية المقاولاتية، والتي يُشار إليها أسفلها بـ "NESDA"، بجمع ومعالجة وتخزين بيانات ذات طابع شخصي. تُعد حماية هذه البيانات التزامًا مطلقًا على جميع موظفي NESDA، وذلك امتثالًا تامًا لأحكام القانون رقم 18-07 المؤرخ في 10 جوان 2018 والمتعلق بحماية الأشخاص الطبيعيين في مجال معالجة البيانات ذات الطابع الشخصي.</value>
+  </data>
+  <data name="PolitiqueTitre1P2" xml:space="preserve">
+    <value>تعمل NESDA، التي يقع مقرها الاجتماعي في 8، شارع أرزقي بن بوزيد -- العناصر الجزائر -- الجزائر، بصفتها مسؤول المعالجة للبيانات التي يتم جمعها عبر موقعها الإلكتروني.</value>
+  </data>
+  <data name="PolitiqueTitre2" xml:space="preserve">
+    <value>2. الموافقة وقبول السياسة</value>
+  </data>
+  <data name="PolitiqueTitre2P" xml:space="preserve">
+    <value>باستخدام موقع الويب www.nesda.dz والروابط المتاحة عليه، فإنكم تقرون بأنكم قرأتم وفهمتم هذه السياسة وتوافقون على جمع ومعالجة واستخدام وحفظ معلوماتكم وفقًا للطرق الموضحة أدناه، وذلك امتثالًا لأحكام القانون رقم 18-07 المؤرخ في 25 رمضان 1439 الموافق لـ 10 جوان 2018 والمتعلق بحماية الأشخاص الطبيعيين في مجال معالجة البيانات ذات الطابع الشخصي.</value>
+  </data>
+  <data name="PolitiqueTitre3" xml:space="preserve">
+    <value>3. مبادئ حماية البيانات الشخصية</value>
+  </data>
+  <data name="PolitiqueTitre3P1" xml:space="preserve">
+    <value>شرعية المعالجة ونزاهتها وشفافيتها</value>
+  </data>
+  <data name="PolitiqueTitre3P2" xml:space="preserve">
+    <value>تحديد أغراض المعالجة وحصرها</value>
+  </data>
+  <data name="PolitiqueTitre3P3" xml:space="preserve">
+    <value>تقليل البيانات التي يتم جمعها</value>
+  </data>
+  <data name="PolitiqueTitre3P4" xml:space="preserve">
+    <value>دقة البيانات وتحديثها بانتظام</value>
+  </data>
+  <data name="PolitiqueTitre3P5" xml:space="preserve">
+    <value>تحديد مدة الاحتفاظ بالبيانات</value>
+  </data>
+  <data name="PolitiqueTitre3P6" xml:space="preserve">
+    <value>سلامة البيانات وسريتها، بما في ذلك أمن المعالجة</value>
+  </data>
+  <data name="PolitiqueTitre3P7" xml:space="preserve">
+    <value>احترام حقوق الأشخاص المعنيين</value>
+  </data>
+  <data name="PolitiqueTitre3Text" xml:space="preserve">
+    <value>تلتزم NESDA باحترام جميع المبادئ الأساسية المتعلقة بحماية البيانات الشخصية وفقًا للتشريعات المعمول بها، ولا سيما فيما يتعلق بما يلي:</value>
+  </data>
+  <data name="PolitiqueTitre4" xml:space="preserve">
+    <value>4. فئات البيانات الشخصية التي يتم جمعها</value>
+  </data>
+  <data name="PolitiqueTitre4P1" xml:space="preserve">
+    <value>بيانات التعريف</value>
+  </data>
+  <data name="PolitiqueTitre4P1Text" xml:space="preserve">
+    <value>الاسم، اللقب، الاسم المستعار، تاريخ الميلاد، الرقم الوطني للتعريف
+  (NIN)، رقم الحساب البنكي (RIB) / رقم الحساب الجاري البريدي (CCP)، رقم الضمان الاجتماعي</value>
+  </data>
+  <data name="PolitiqueTitre4P2" xml:space="preserve">
+    <value>بيانات الاتصال</value>
+  </data>
+  <data name="PolitiqueTitre4P2Text" xml:space="preserve">
+    <value>رقم الهاتف الثابت أو المحمول، العنوان البريدي، عنوان البريد الإلكتروني.</value>
+  </data>
+  <data name="PolitiqueTitre4P3" xml:space="preserve">
+    <value>بيانات العمليات والمعاملات المصرفية</value>
+  </data>
+  <data name="PolitiqueTitre4P3Text" xml:space="preserve">
+    <value>طبيعة العمليات، التاريخ، تفاصيل المدفوعات بالبطاقة، التحويلات، الاقتطاعات، المبلغ، البيان</value>
+  </data>
+  <data name="PolitiqueTitre4P4" xml:space="preserve">
+    <value>بيانات الاتصال التقنية</value>
+  </data>
+  <data name="PolitiqueTitre4P4Text" xml:space="preserve">
+    <value>معرفات وبيانات المصادقة الخاصة بكم في مساحاتكم المتصلة، سجلات الدخول (logs)، ملفات تعريف الارتباط (cookies) وغيرها من أدوات التتبع، بيانات التصفح على الموقع الإلكتروني (عنوان IP، نوع المتصفح، الصفحات التي تمت زيارتها، إلخ).</value>
+  </data>
+  <data name="PolitiqueTitre4Text" xml:space="preserve">
+    <value>عند استخدامكم لخدمات NESDA وموقعها الإلكتروني، قد يتم جمع فئات البيانات الشخصية التالية:</value>
+  </data>
+  <data name="PolitiqueTitre5" xml:space="preserve">
+    <value>5. أغراض معالجة البيانات الشخصية</value>
+  </data>
+  <data name="PolitiqueTitre5P1" xml:space="preserve">
+    <value>الامتثال للالتزامات القانونية والتنظيمية</value>
+  </data>
+  <data name="PolitiqueTitre5P10" xml:space="preserve">
+    <value>حفظ وأرشفة المعلومات</value>
+  </data>
+  <data name="PolitiqueTitre5P11" xml:space="preserve">
+    <value>التشغيل السليم لنظام المعلومات</value>
+  </data>
+  <data name="PolitiqueTitre5P12" xml:space="preserve">
+    <value>التعاون مع شركاء NESDA</value>
+  </data>
+  <data name="PolitiqueTitre5P2" xml:space="preserve">
+    <value>التكوين والمرافقة وإنشاء وترقية المؤسسات المصغرة</value>
+  </data>
+  <data name="PolitiqueTitre5P3" xml:space="preserve">
+    <value>إدارة الحسابات والعلاقة مع المرقين والشركاء</value>
+  </data>
+  <data name="PolitiqueTitre5P4" xml:space="preserve">
+    <value>تقييم وإدارة المخاطر</value>
+  </data>
+  <data name="PolitiqueTitre5P5" xml:space="preserve">
+    <value>منع وكشف وتحري حالات عدم الدفع والاحتيال</value>
+  </data>
+  <data name="PolitiqueTitre5P6" xml:space="preserve">
+    <value>التحصيل</value>
+  </data>
+  <data name="PolitiqueTitre5P7" xml:space="preserve">
+    <value>التوظيف وإدارة شؤون الموظفين</value>
+  </data>
+  <data name="PolitiqueTitre5P8" xml:space="preserve">
+    <value>تقديم المشورة والمعلومات</value>
+  </data>
+  <data name="PolitiqueTitre5P9" xml:space="preserve">
+    <value>أمن نظام المعلومات والأشخاص والممتلكات</value>
+  </data>
+  <data name="PolitiqueTitre5Text" xml:space="preserve">
+    <value>تعالج NESDA البيانات الشخصية التي يتم جمعها من أجل تحقيق مهامها وفي إطار واحد أو أكثر من الأغراض التالية:</value>
+  </data>
+  <data name="PolitiqueTitre6" xml:space="preserve">
+    <value>6. ملفات تعريف الارتباط (Cookies)</value>
+  </data>
+  <data name="PolitiqueTitre6ST" xml:space="preserve">
+    <value>أنواع ملفات تعريف الارتباط المستخدمة:</value>
+  </data>
+  <data name="PolitiqueTitre6ST11" xml:space="preserve">
+    <value>ملفات تعريف الارتباط الضرورية:</value>
+  </data>
+  <data name="PolitiqueTitre6ST12" xml:space="preserve">
+    <value>ضرورية للتشغيل السليم للموقع وتمكنك من استخدام وظائفه الأساسية</value>
+  </data>
+  <data name="PolitiqueTitre6ST21" xml:space="preserve">
+    <value>ملفات تعريف الارتباط التحليلية:</value>
+  </data>
+  <data name="PolitiqueTitre6ST22" xml:space="preserve">
+    <value>تجمع معلومات حول كيفية استخدام الزوار لموقعنا</value>
+  </data>
+  <data name="PolitiqueTitre6ST31" xml:space="preserve">
+    <value>ملفات تعريف الارتباط الوظيفية:</value>
+  </data>
+  <data name="PolitiqueTitre6ST32" xml:space="preserve">
+    <value>تسمح للموقع بتذكر اختياراتك وتفضيلاتك</value>
+  </data>
+  <data name="PolitiqueTitre6ST41" xml:space="preserve">
+    <value>ملفات تعريف الارتباط الإعلانية:</value>
+  </data>
+  <data name="PolitiqueTitre6ST42" xml:space="preserve">
+    <value>تُستخدم لعرض إعلانات أكثر ملاءمة لك</value>
+  </data>
+  <data name="PolitiqueTitre6Text" xml:space="preserve">
+    <value>يستخدم موقع الويب www.nesda.dz ملفات تعريف الارتباط وتقنيات تتبع أخرى لتحسين تجربة المستخدم، وتخصيص المحتوى، وتحليل حركة المرور على الموقع.</value>
+  </data>
+  <data name="PolitiqueTitre7" xml:space="preserve">
+    <value>7. حقوق الأشخاص المعنيين</value>
+  </data>
+  <data name="PolitiqueTitre7Text" xml:space="preserve">
+    <value>وفقًا للقانون رقم 18-07 المتعلق بحماية البيانات الشخصية، لديكم الحقوق التالية فيما يتعلق ببياناتكم الشخصية:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP11" xml:space="preserve">
+    <value>حق الوصول:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP12" xml:space="preserve">
+    <value>الحصول على تأكيد ما إذا كانت بيانات شخصية تتعلق بكم قيد المعالجة</value>
+  </data>
+  <data name="PolitiqueTitre7TextP21" xml:space="preserve">
+    <value>حق التصحيح:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP22" xml:space="preserve">
+    <value>طلب تصحيح البيانات الشخصية غير الدقيقة أو غير الكاملة</value>
+  </data>
+  <data name="PolitiqueTitre7TextP31" xml:space="preserve">
+    <value>حق المحو:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP32" xml:space="preserve">
+    <value>طلب محو بياناتكم الشخصية في بعض الحالات</value>
+  </data>
+  <data name="PolitiqueTitre7TextP41" xml:space="preserve">
+    <value>حق تقييد المعالجة:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP42" xml:space="preserve">
+    <value>طلب تقييد معالجة بياناتكم في ظروف معينة</value>
+  </data>
+  <data name="PolitiqueTitre7TextP51" xml:space="preserve">
+    <value>حق الاعتراض:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP52" xml:space="preserve">
+    <value>الاعتراض على معالجة بياناتكم لأسباب مشروعة</value>
+  </data>
+  <data name="PolitiqueTitre7TextP61" xml:space="preserve">
+    <value>حق نقل البيانات:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP62" xml:space="preserve">
+    <value>الحصول على بياناتكم بتنسيق منظم وقابل للقراءة آليًا</value>
+  </data>
+  <data name="PolitiqueTitre7TextP71" xml:space="preserve">
+    <value>حق سحب الموافقة:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP72" xml:space="preserve">
+    <value>سحب موافقتكم في أي وقت عندما تستند المعالجة إلى هذه الموافقة</value>
+  </data>
+  <data name="PolitiqueTitre8" xml:space="preserve">
+    <value>8. أمن البيانات الشخصية</value>
+  </data>
+  <data name="PolitiqueTitre8P1" xml:space="preserve">
+    <value>تتخذ NESDA تدابير تقنية وتنظيمية مناسبة لضمان مستوى من الأمان يتناسب مع المخاطر، وذلك لحماية بياناتكم الشخصية من التدمير أو الفقدان أو التغيير أو الكشف غير المصرح به.</value>
+  </data>
+  <data name="PolitiqueTitre8P2" xml:space="preserve">
+    <value>تشمل هذه التدابير استخدام تقنيات إخفاء الهوية وتشفير البيانات، وضمان سرية وسلامة أنظمة المعالجة، وإجراءات استعادة البيانات، بالإضافة إلى بنود سرية صارمة للموظفين.</value>
+  </data>
+  <data name="PolitiqueTitre9" xml:space="preserve">
+    <value>9. مدة الاحتفاظ بالبيانات</value>
+  </data>
+  <data name="PolitiqueTitre9Text" xml:space="preserve">
+    <value>تحتفظ NESDA ببياناتكم الشخصية فقط للمدة اللازمة للأغراض التي جمعت وعولجت من أجلها، وفقًا للالتزامات القانونية والتنظيمية المعمول بها. يتم تحديد مدة الاحتفاظ بناءً على أغراض المعالجة، والقيود التشغيلية، وكذلك فترات التقادم القانونية.</value>
+  </data>
+  <data name="PolitiqueUpdate" xml:space="preserve">
+    <value>آخر تحديث: مارس 2025</value>
+  </data>
+  <data name="QstUrgent" xml:space="preserve">
+    <value>للاستفسارات العاجلة :</value>
+  </data>
   <data name="Recherche" xml:space="preserve">
     <value>بحث</value>
   </data>
@@ -1847,6 +2100,12 @@
   </data>
   <data name="RechercheDansArticle" xml:space="preserve">
     <value>البحث في المقالات والأخبار</value>
+  </data>
+  <data name="retourPagePrincipal" xml:space="preserve">
+    <value>العودة إلى الصفحة الرئيسية</value>
+  </data>
+  <data name="Site" xml:space="preserve">
+    <value>الموقع الإلكتروني:</value>
   </data>
   <data name="StructureAgence" xml:space="preserve">
     <value>الوكالة الولائية</value>

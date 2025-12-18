@@ -936,15 +936,15 @@
 
                         if (data.length > 0) {
                             const info = data[0];
-                            if (isArabic) {
+                           
                                 document.getElementById('wilayaName').textContent = info.designationAr || 'N/A';
                                 document.getElementById('adresseAr').textContent = info.adresseAr || 'N/A';
-                            }
+                            //if (isArabic) {}
 
-                            else {
-                                document.getElementById('wilayaName').textContent = info.designationEn || 'N/A';
-                                document.getElementById('adresseAr').textContent = info.adresseEn || 'N/A';
-                            }
+                            //else {
+                            //    document.getElementById('wilayaName').textContent = info.designationEn || 'N/A';
+                            //    document.getElementById('adresseAr').textContent = info.adresseEn || 'N/A';
+                            //}
                                 
                             document.getElementById('wilayaCode').textContent = `الرمز: ${info.codeWilaya || 'N/A'}`;
                             document.getElementById('code').textContent = info.code || 'N/A';
