@@ -563,21 +563,21 @@
 
 
     <div class="container">
-        <h2 class="text-center mb-4">تصريح شرفي</h2>
+        <h2 class="text-center mb-4">@localizer["DeclarationHonneurTitre"]</h2>
 
         <!-- Stepper de progression -->
         <div class="d-flex justify-content-between align-items-center mb-5 step-container">
             <div class="d-flex flex-column align-items-center">
                 <div class="step active" data-step="1">1</div>
-                <small class="step-label">معلومات شخصية</small>
+                <small class="step-label">@localizer["InformationPersonnel"]</small>
             </div>
             <div class="d-flex flex-column align-items-center">
                 <div class="step" data-step="2">2</div>
-                <small class="step-label">معلومات المؤسسة</small>
+                <small class="step-label">@localizer["InformationSociete"]</small>
             </div>
             <div class="d-flex flex-column align-items-center">
                 <div class="step" data-step="3">3</div>
-                <small class="step-label">المسؤولية والالتزام</small>
+                <small class="step-label">@localizer["responsabilite"]</small>
             </div>
             <div class="step-line">
                 <div class="step-line-fill"></div>
@@ -592,57 +592,57 @@
             <!-- Section 1 : Informations personnelles -->
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-section active fade-in" id="step1">
-                <h4 class="mb-3">معلومات شخصية</h4>
+                <h4 class="mb-3">@localizer["InformationPersonnel"]</h4>
 
 
 
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.NIN" class="form-label">رقم التعريف الوطني(NIN)*</label>
+                    <label asp-for="Registrant.NIN" class="form-label">@localizer["NIN1"] (NIN)*</label>
                     <input asp-for="Registrant.NIN" class="form-control custom-input"
                            pattern="\d*"
                            maxlength="18"
                            required
-                           title="18 رقم مطلوب"
+                           title="18 @localizer["Nombre"]"
                            oninput="this.value=this.value.replace(/[^\d]/g,'')" />
                     <span asp-validation-for="Registrant.NIN" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.FirstlName" class="form-label">الاسم *</label>
+                    <label asp-for="Registrant.FirstlName" class="form-label">@localizer["Prenom"] *</label>
                     <input asp-for="Registrant.FirstlName" class="form-control custom-input"
                            required
                            inputmode="text"
                            autocomplete="off"
                            pattern="^[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\u0660-\u0669\u06F0-\u06F9\s\-]+$"
-                           title="الرجاء إدخال أحرف عربية فقط "
-                           placeholder="اكتب هنا بالعربية" />
+                           title=@localizer["ChampTitre"]
+                           placeholder=@localizer["Ecrire"] />
                     <span asp-validation-for="Registrant.FirstlName" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.LastName" class="form-label">اللقب *</label>
+                    <label asp-for="Registrant.LastName" class="form-label">@localizer["Nom"] *</label>
                     <input asp-for="Registrant.LastName" class="form-control custom-input"
                            required
                            inputmode="text"
                            autocomplete="off"
                            pattern="^[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\u0660-\u0669\u06F0-\u06F9\s\-]+$"
-                           title="الرجاء إدخال أحرف عربية فقط "
-                           placeholder="اكتب هنا بالعربية" />
+                           title=@localizer["ChampTitre"]
+                           placeholder=@localizer["Ecrire"] />
                     <span asp-validation-for="Registrant.LastName" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
 
                 <div class="col-md-6 col-sm-12">
                     <label asp-for="Registrant.DateOfBirth" class="form-label">تاريخ الازدياد</label>
                     <input asp-for="Registrant.DateOfBirth" type="date" class="form-control custom-input" required />
                     <span asp-validation-for="Registrant.DateOfBirth" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
 
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.GenderId" class="form-label">الجنس *</label>
+                    <label asp-for="Registrant.GenderId" class="form-label">@localizer["Genre"] *</label>
                     <select asp-for="Registrant.GenderId" asp-items="ViewBag.genre" class="form-select select2" required>
-                        <option value="">اختر الجنس</option>
+                        <option value="">@localizer["ChoisirGenre"]</option>
 
                     </select>
                     <span asp-validation-for="Registrant.GenderId" class="text-danger small"></span>
@@ -650,202 +650,202 @@
 
 
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.WilayaId" class="form-label">الولاية *</label>
+                    <label asp-for="Registrant.WilayaId" class="form-label">@localizer["Wilaya"] *</label>
                     <select asp-for="Registrant.WilayaId" asp-items="ViewBag.wilayas" id="wilayaAR" class="form-select select2" required>
-                        <option value="">اختر الولاية</option>
+                        <option value="">@localizer["ChoisirWilaya"]</option>
 
                     </select>
                     <span asp-validation-for="Registrant.WilayaId" class="text-danger small"></span>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.Adresse" class="form-label">العنوان</label>
+                    <label asp-for="Registrant.Adresse" class="form-label">@localizer["Adresse"]</label>
                     <input asp-for="Registrant.Adresse" class="form-control custom-input"
                            inputmode="text"
                            autocomplete="off"
                            pattern="^[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\u0660-\u0669\u06F0-\u06F9\s\-]+$"
-                           title="الرجاء إدخال أحرف عربية فقط "
-                           placeholder="اكتب هنا بالعربية"
+                           title=@localizer["ChampTitre"]
+                           placeholder=@localizer["Ecrire"]
                            required />
                     <span asp-validation-for="Registrant.Adresse" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
 
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.Email" class="form-label">البريد الإلكتروني *</label>
+                    <label asp-for="Registrant.Email" class="form-label">@localizer["Email"] *</label>
                     <input asp-for="Registrant.Email" type="email" class="form-control custom-input" required />
                     <span asp-validation-for="Registrant.Email" class="text-danger small"></span>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.Phone" class="form-label">رقم الهاتف *</label>
+                    <label asp-for="Registrant.Phone" class="form-label">@localizer["Phone"] *</label>
                     <input asp-for="Registrant.Phone" type="tel" class="form-control custom-input" required />
                     <span asp-validation-for="Registrant.Phone" class="text-danger small"></span>
                 </div>
                 <br />
 
                 <div class="d-flex justify-content-between">
-                    <button type="button" class="btn btn-primary next-step">التالي</button>
+                    <button type="button" class="btn btn-primary next-step">@localizer["suivant"]</button>
                 </div>
             </div>
 
             <!-- Section 2 : Informations de contact -->
             <div class="form-section" id="step2">
-                <h4 class="mb-3">معلومات المؤسسة</h4>
+                <h4 class="mb-3">@localizer["InformationSociete"]</h4>
 
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.StructureManagerId" class="form-label">وكالة الإيداع *</label>
+                    <label asp-for="Registrant.StructureManagerId" class="form-label">@localizer["AgenceDepot"] *</label>
                     <select asp-for="Registrant.StructureManagerId" asp-items="ViewBag.structures" class="form-select select2" required>
-                        <option value="">في أي وكالة قدمت الملف؟</option>
+                        <option value="">@messageslocalizer["QuestionDepot"]</option>
 
                     </select>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
 
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.ProjectNumber" class="form-label">رقم الملف *</label>
+                    <label asp-for="Registrant.ProjectNumber" class="form-label">@localizer["NumDossier"] *</label>
                     <input asp-for="Registrant.ProjectNumber" class="form-control custom-input"
                            pattern="\d*"
                            maxlength="11"
                            required
-                           title="11 رقم مطلوب"
+                           title="11 @localizer["Nombre"]"
                            oninput="this.value=this.value.replace(/[^\d]/g,'')" />
                     <span asp-validation-for="Registrant.ProjectNumber" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
 
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.CompanyName" class="form-label">إسم المؤسسة</label>
+                    <label asp-for="Registrant.CompanyName" class="form-label">@localizer["NomSociete"]</label>
                     <input asp-for="Registrant.CompanyName" class="form-control custom-input"
                            inputmode="text"
                            autocomplete="off"
                            pattern="^[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\u0660-\u0669\u06F0-\u06F9\s\-]+$"
-                           title="الرجاء إدخال أحرف عربية فقط "
-                           placeholder="اكتب هنا بالعربية"
+                           title=@localizer["ChampTitre"]
+                           placeholder=@localizer["Ecrire"]
                            required />
                     <span asp-validation-for="Registrant.CompanyName" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
 
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.LegalStatusId" class="form-label">الشكل القانوني *</label>
+                    <label asp-for="Registrant.LegalStatusId" class="form-label">@localizer["FormeJuridique"] *</label>
                     <select asp-for="Registrant.LegalStatusId" asp-items="ViewBag.formesJuridique" class="form-select select2" required>
-                        <option value="">اختر</option>
+                        <option value="">@localizer["Choisir"]</option>
                     </select>
                     <span asp-validation-for="Registrant.LegalStatusId" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
 
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.NIF" class="form-label">(NIF)رقم التعريف الضريبي *</label>
+                    <label asp-for="Registrant.NIF" class="form-label">(NIF)@localizer["NIF"] *</label>
                     <input asp-for="Registrant.NIF" class="form-control custom-input" required />
                     <span asp-validation-for="Registrant.NIF" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
 
 
                 </div>
                 <br>
                 <div class="form-group">
-                    <label class="form-label">رفع مستند شهادة تخصيص رقم التعريف الضريبي</label>
+                    <label class="form-label">@localizer["CertificatNIF"]</label>
                     <div class="file-input-wrapper">
                         <input asp-for="CertificateNifFile" type="file" id="file" class="form-control-file" required accept=".pdf, .jpg, .jpeg"/>
                         <label for="file" class="file-input-display" id="fileDisplay">
-                            يجب أن يكون الملف بصيغة PDF أو JPG. الحد الأقصى للحجم هو ٢ ميجابايت
+                            @messageslocalizer["Taille"]
                         </label>
                         <span asp-validation-for="CertificateNifFile" class="text-danger small"></span>
-                        <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                        <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                         <span style="color:red;">@ViewBag.CertificateNifFileError</span>
                     </div>
                 </div>
                 <br>
 
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.BusinessRegisterNumber" class="form-label">رقم السجل التجاري/ الاعتماد*</label>
+                    <label asp-for="Registrant.BusinessRegisterNumber" class="form-label">@localizer["NumRegistreCommerce"] *</label>
                     <input asp-for="Registrant.BusinessRegisterNumber" class="form-control custom-input" required onchange="IsPDF(this.value)" accept=".pdf, .jpg, .jpeg" />
                     <span asp-validation-for="Registrant.BusinessRegisterNumber" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
                 <br>
                 <div class="form-group">
-                    <label class="form-label">تحميل السجل التجاري</label>
+                    <label class="form-label">@localizer["TelechargerRC"]</label>
                     <div class="file-input-wrapper">
                         <input asp-for="BusinessRegisterFile" type="file" id="file" class="form-control-file" onchange="IsPDF(this.value)" required accept=".pdf, .jpg, .jpeg" />
                         <label for="file" class="file-input-display" id="fileDisplay">
-                            يجب أن يكون الملف بصيغة PDF أو JPG. الحد الأقصى للحجم هو ٢ ميجابايت
+                            @messageslocalizer["Taille"]
                         </label>
                     </div>
                     <span asp-validation-for="BusinessRegisterFile" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                     <span style="color:red;">@ViewBag.BusinessRegisteFileError</span>
                 </div>
                 <br>
 
                 <div class="col-md-6 col-sm-12">
-                    <label class="form-label">قطاع النشاط *</label>
+                    <label class="form-label">@localizer["SecteurActivite"] *</label>
                     <select id="ActivitySectorId" name="ActivitySectorId" asp-items="ViewBag.secteurs" onchange="loadActivity(this.value)" class="form-select select2" required>
-                        <option value="">اختر قطاع النشاط</option>
+                        <option value="">@localizer["ChoisirSA"]</option>
 
                     </select>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
 
 
                 <div class="col-md-6 col-sm-12">
-                    <label class="form-label">النشاط *</label>
+                    <label class="form-label">@localizer["Activite"] *</label>
                     <select asp-for="Registrant.ActivityId" class="form-select " required>
-                        <option value="">اختر النشاط</option>
+                        <option value="">@localizer["ChoisirActivite"]</option>
 
                     </select>
                     <span asp-validation-for="Registrant.ActivityId" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
 
 
 
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.TypeOfNeedId" class="form-label">نوع الاحتياج *</label>
+                    <label asp-for="Registrant.TypeOfNeedId" class="form-label">@localizer["TypeBesoin"] *</label>
                     <select asp-for="Registrant.TypeOfNeedId" asp-items="ViewBag.typeOfNeed" class="form-select select2" required>
-                        <option value="">اختر نوع الاحتياج</option>
+                        <option value="">@localizer["ChoisirTypeBesoin"]</option>
 
                     </select>
                     <span asp-validation-for="Registrant.TypeOfNeedId" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">الحقل مطلوب</span>
+                    <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
                 <br>
 
                 <div class="d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary prev-step">السابق</button>
-                    <button type="button" class="btn btn-primary next-step">التالي</button>
+                    <button type="button" class="btn btn-secondary prev-step">@localizer["precedent"]</button>
+                    <button type="button" class="btn btn-primary next-step">@localizer["Suivant"]</button>
                 </div>
 
             </div>
 
             <!-- Section 3 : Finalisation -->
             <div class="form-section" id="step3">
-                <h4 class="mb-3">المسؤولية والالتزام</h4>
+                <h4 class="mb-3">@localizer["responsabilite"]</h4>
 
                 <div class="form-group">
-                    <label class="form-label">تحميل التصريح الشرفي</label>
+                    <label class="form-label">@localizer["TelechargerDH"]</label>
                     <div class="file-input-wrapper">
                         <input asp-for="DeclarationHonorFile" type="file" id="file" class="form-control-file" onchange="IsPDF(this.value)" required accept=".pdf, .jpg, .jpeg" />
                         <label for="file" class="file-input-display" id="fileDisplay">
-                            يجب أن يكون الملف بصيغة PDF. الحد الأقصى للحجم هو ٢ ميجابايت
+                            @messageslocalizer["TaillePDF"]
                         </label>
                     </div>
                     <span asp-validation-for="DeclarationHonorFile" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">ويجب ألا يتجاوز الحجم 2 ميجاPDF يجب أن يكون ملف التصريح الشرفي بصيغة</span>
+                    <span style="color:red; display:none;" id="msg">@messageslocalizer["TailleDH"]</span>
                     <span style="color:red;">@ViewBag.DeclarationHonorFileError</span>
                 </div>
 
                 <br>
                 <div class="form-group">
-                    <label class="form-label">تحميل برنامج التنبؤ بالمعدات أو الخدمات</label>
+                    <label class="form-label">@localizer["TelechargeProgrammeDetection"]</label>
                     <div class="file-input-wrapper">
                         <input asp-for="ForecastProgramFile" type="file" id="file" class="form-control-file" onchange="IsPDF(this.value)" required accept=".pdf, .jpg, .jpeg" />
                         <label for="file" class="file-input-display" id="fileDisplay">
-                            يجب أن يكون الملف بصيغة PDF. الحد الأقصى للحجم هو ٢ ميجابايت
+                            @messageslocalizer["TaillePDF"]
                         </label>
                     </div>
                     <span asp-validation-for="ForecastProgramFile" class="text-danger small"></span>
-                    <span style="color:red; display:none;" id="msg">ويجب ألا يتجاوز الحجم 2 ميجاPDF يجب أن يكون ملف البرنامج بصيغة</span>
+                    <span style="color:red; display:none;" id="msg">@messageslocalizer["TaillePDF"]</span>
                     <span style="color:red;">@ViewBag.ForecastProgramFileError</span>
                 </div>
                 <br>
@@ -854,15 +854,15 @@
                     <label class="custom-checkbox">
                         <input type="checkbox" id="terms" required>
                         <span class="checkmark"></span>
-                        أسمح لناسدا بمعالجة بياناتي الشخصية وفق للشروط المنصوص عليها في القانون 18/07 المتعلقة بحماية الأشخاص الطبيعين في معالجة المعطيات الشخصية،يمكنك الإطلاع على. <a href="https://nesda.dz/Home/Privacy" target="_blank" name="NesdaPolitique">السياسة العامة لحماية المعطيات دات الطابع الشخصي الخاصة بالوكالة .</a>
+                        @messageslocalizer["NesdaPolitique1"] <a href="https://nesda.dz/Home/Privacy" target="_blank" name="NesdaPolitique"> @messageslocalizer["NesdaPolitique2"]</a>
                     </label>
                 </div>
                 <br>
 
 
                 <div class="d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary prev-step">السابق</button>
-                    <button type="submit"  class="btn btn-success"> <span>إرسال </span></button>
+                    <button type="button" class="btn btn-secondary prev-step">@localizer["precedent"]</button>
+                    <button type="submit"  class="btn btn-success"> <span>@localizer["Envoyer"] </span></button>
                 </div>
             </div>
         </form>

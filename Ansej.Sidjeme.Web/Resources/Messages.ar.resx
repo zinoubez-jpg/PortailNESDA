@@ -1208,4 +1208,22 @@
   <data name="lienAccord" xml:space="preserve">
     <value>السياسة العامة لحماية المعطيات دات الطابع الشخصي الخاصة بالوكالة .</value>
   </data>
+  <data name="NesdaPolitique1" xml:space="preserve">
+    <value>أسمح لناسدا بمعالجة بياناتي الشخصية وفق للشروط المنصوص عليها في القانون 18/07 المتعلقة بحماية الأشخاص الطبيعين في معالجة المعطيات الشخصية،يمكنك الإطلاع على</value>
+  </data>
+  <data name="NesdaPolitique2" xml:space="preserve">
+    <value>السياسة العامة لحماية المعطيات دات الطابع الشخصي الخاصة بالوكالة</value>
+  </data>
+  <data name="QuestionDepot" xml:space="preserve">
+    <value>في أي وكالة قدمت الملف؟</value>
+  </data>
+  <data name="Taille" xml:space="preserve">
+    <value>يجب أن يكون الملف بصيغة PDF أو JPG. الحد الأقصى للحجم هو ٢ ميجابايت</value>
+  </data>
+  <data name="TailleDH" xml:space="preserve">
+    <value>ويجب ألا يتجاوز الحجم 2 ميجاPDF يجب أن يكون ملف التصريح الشرفي بصيغة</value>
+  </data>
+  <data name="TaillePDF" xml:space="preserve">
+    <value>يجب أن يكون الملف بصيغة PDF. الحد الأقصى للحجم هو ٢ ميجابايت</value>
+  </data>
 </root>

@@ -286,7 +286,7 @@
     <value>Nom Complet Arab</value>
   </data>
   <data name="Genre" xml:space="preserve">
-    <value>Genre</value>
+    <value>الجنس</value>
   </data>
   <data name="GenreId" xml:space="preserve">
     <value>Genre</value>
@@ -532,16 +532,16 @@
     <value />
   </data>
   <data name="Nom" xml:space="preserve">
-    <value />
+    <value>اللقب</value>
   </data>
   <data name="Prenom" xml:space="preserve">
-    <value />
+    <value>الاسم</value>
   </data>
   <data name="Sessions" xml:space="preserve">
     <value />
   </data>
   <data name="Activite" xml:space="preserve">
-    <value />
+    <value>النشاط</value>
   </data>
   <data name="ActiviteId" xml:space="preserve">
     <value />
@@ -640,7 +640,7 @@
     <value />
   </data>
   <data name="SecteurActivite" xml:space="preserve">
-    <value />
+    <value>قطاع النشاط</value>
   </data>
   <data name="SecteurActiviteId" xml:space="preserve">
     <value />
@@ -1868,5 +1868,86 @@
   </data>
   <data name="WilayaD" xml:space="preserve">
     <value>اختر الولاية</value>
+  </data>
+  <data name="AgenceDepot" xml:space="preserve">
+    <value>وكالة الإيداع</value>
+  </data>
+  <data name="CertificatNIF" xml:space="preserve">
+    <value>رفع مستند شهادة تخصيص رقم التعريف الضريبي</value>
+  </data>
+  <data name="champObligatoir" xml:space="preserve">
+    <value>الحقل مطلوب</value>
+  </data>
+  <data name="ChampTitre" xml:space="preserve">
+    <value>"الرجاء إدخال أحرف عربية فقط"</value>
+  </data>
+  <data name="Choisir" xml:space="preserve">
+    <value>اختر</value>
+  </data>
+  <data name="ChoisirActivite" xml:space="preserve">
+    <value>اختر النشاط</value>
+  </data>
+  <data name="ChoisirGenre" xml:space="preserve">
+    <value>اختر الجنس</value>
+  </data>
+  <data name="ChoisirSA" xml:space="preserve">
+    <value>اختر قطاع النشاط</value>
+  </data>
+  <data name="ChoisirTypeBesoin" xml:space="preserve">
+    <value>اختر نوع الاحتياج</value>
+  </data>
+  <data name="ChoisirWilaya" xml:space="preserve">
+    <value>اختر الولاية</value>
+  </data>
+  <data name="DeclarationHonneurTitre" xml:space="preserve">
+    <value>تصريح شرفي</value>
+  </data>
+  <data name="Ecrire" xml:space="preserve">
+    <value>"اكتب هنا بالعربية"</value>
+  </data>
+  <data name="Envoyer" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="FormeJuridique" xml:space="preserve">
+    <value>الشكل القانوني</value>
+  </data>
+  <data name="InformationPersonnel" xml:space="preserve">
+    <value>معلومات شخصية</value>
+  </data>
+  <data name="InformationSociete" xml:space="preserve">
+    <value>معلومات المؤسسة</value>
+  </data>
+  <data name="NIF" xml:space="preserve">
+    <value>رقم التعريف الضريبي</value>
+  </data>
+  <data name="NIN1" xml:space="preserve">
+    <value>رقم التعريف الوطني</value>
+  </data>
+  <data name="Nombre" xml:space="preserve">
+    <value>رقم مطلوب</value>
+  </data>
+  <data name="NomSociete" xml:space="preserve">
+    <value>إسم المؤسسة</value>
+  </data>
+  <data name="NumDossier" xml:space="preserve">
+    <value>رقم الملف</value>
+  </data>
+  <data name="NumRegistreCommerce" xml:space="preserve">
+    <value>رقم السجل التجاري/ الاعتماد</value>
+  </data>
+  <data name="responsabilite" xml:space="preserve">
+    <value>المسؤولية والالتزام</value>
+  </data>
+  <data name="TelechargeProgrammeDetection" xml:space="preserve">
+    <value>تحميل برنامج التنبؤ بالمعدات أو الخدمات</value>
+  </data>
+  <data name="TelechargerDH" xml:space="preserve">
+    <value>تحميل التصريح الشرفي</value>
+  </data>
+  <data name="TelechargerRC" xml:space="preserve">
+    <value>تحميل السجل التجاري</value>
+  </data>
+  <data name="TypeBesoin" xml:space="preserve">
+    <value>نوع الاحتياج</value>
   </data>
 </root>

@@ -184,7 +184,7 @@
     <value>Locked</value>
   </data>
   <data name="Genre" xml:space="preserve">
-    <value>Genre</value>
+    <value>Gender</value>
   </data>
   <data name="Id" xml:space="preserve">
     <value>Identifiant</value>
@@ -250,7 +250,7 @@
     <value>Nom d'utilisateur</value>
   </data>
   <data name="Wilaya" xml:space="preserve">
-    <value>Wilaya</value>
+    <value>The State</value>
   </data>
   <data name="WilayaId" xml:space="preserve">
     <value>Wilaya</value>
@@ -271,13 +271,13 @@
     <value>Fournisseur</value>
   </data>
   <data name="Nom" xml:space="preserve">
-    <value>Nom</value>
+    <value>Last name</value>
   </data>
   <data name="Prenom" xml:space="preserve">
-    <value>Prénom</value>
+    <value>First name</value>
   </data>
   <data name="Activite" xml:space="preserve">
-    <value>Activité</value>
+    <value>Activity</value>
   </data>
   <data name="ActiviteId" xml:space="preserve">
     <value>Activité</value>
@@ -376,7 +376,7 @@
     <value>Quantité</value>
   </data>
   <data name="SecteurActivite" xml:space="preserve">
-    <value>Secteur d'activité</value>
+    <value>Sector of activity</value>
   </data>
   <data name="SecteurActiviteId" xml:space="preserve">
     <value>Secteur Activite</value>
@@ -1637,5 +1637,122 @@
   </data>
   <data name="WilayaD" xml:space="preserve">
     <value>select wilaya</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_01" xml:space="preserve">
+    <value>Direct access to all government business opportunities</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_02" xml:space="preserve">
+    <value>Save time and effort searching for tenders</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_03" xml:space="preserve">
+    <value>Ensure that no important investment opportunity is missed</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_04" xml:space="preserve">
+    <value>Easy submission of bids and electronic follow-up</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_05" xml:space="preserve">
+    <value>Get instant notifications for new tenders</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>Benefits of registering on the portal</value>
+  </data>
+  <data name="AgenceDepot" xml:space="preserve">
+    <value>Depository Agency</value>
+  </data>
+  <data name="CertificatNIF" xml:space="preserve">
+    <value>Upload tax identification number allocation certificate document</value>
+  </data>
+  <data name="champObligatoir" xml:space="preserve">
+    <value>Required Field</value>
+  </data>
+  <data name="ChampTitre" xml:space="preserve">
+    <value>"Please enter only Latin characters"</value>
+  </data>
+  <data name="Choisir" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="ChoisirActivite" xml:space="preserve">
+    <value>Select The Activity</value>
+  </data>
+  <data name="ChoisirGenre" xml:space="preserve">
+    <value>Select gender</value>
+  </data>
+  <data name="ChoisirSA" xml:space="preserve">
+    <value>Select Sector of activity</value>
+  </data>
+  <data name="ChoisirTypeBesoin" xml:space="preserve">
+    <value>Select Type Need</value>
+  </data>
+  <data name="ChoisirWilaya" xml:space="preserve">
+    <value>Select The State</value>
+  </data>
+  <data name="DeclarationHonneurTitre" xml:space="preserve">
+    <value>Honorary statement</value>
+  </data>
+  <data name="Ecrire" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Envoyer" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="FormeJuridique" xml:space="preserve">
+    <value>Legal form</value>
+  </data>
+  <data name="InformationPersonnel" xml:space="preserve">
+    <value>Personal information</value>
+  </data>
+  <data name="InformationSociete" xml:space="preserve">
+    <value>Company Information</value>
+  </data>
+  <data name="NIF" xml:space="preserve">
+    <value>Tax Identification Number</value>
+  </data>
+  <data name="NIN1" xml:space="preserve">
+    <value>National Identification Number</value>
+  </data>
+  <data name="Nombre" xml:space="preserve">
+    <value>Number required</value>
+  </data>
+  <data name="NomSociete" xml:space="preserve">
+    <value>Name of the organization</value>
+  </data>
+  <data name="NumDossier" xml:space="preserve">
+    <value>File number</value>
+  </data>
+  <data name="NumRegistreCommerce" xml:space="preserve">
+    <value>Commercial Registration Number/Accreditation</value>
+  </data>
+  <data name="responsabilite" xml:space="preserve">
+    <value>Responsibility and commitment</value>
+  </data>
+  <data name="Services_Portail_MPDZ_01" xml:space="preserve">
+    <value>Access to all public consultations and transactions at the national level</value>
+  </data>
+  <data name="Services_Portail_MPDZ_02" xml:space="preserve">
+    <value>Follow up on various calls for competition and ongoing tenders</value>
+  </data>
+  <data name="Services_Portail_MPDZ_03" xml:space="preserve">
+    <value>Download all required specifications and documents</value>
+  </data>
+  <data name="Services_Portail_MPDZ_04" xml:space="preserve">
+    <value>Submitting bids and participating in tenders electronically</value>
+  </data>
+  <data name="Services_Portail_MPDZ_05" xml:space="preserve">
+    <value>Follow up on the status of bids submitted and results</value>
+  </data>
+  <data name="Services_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>Services available through the portal</value>
+  </data>
+  <data name="TelechargeProgrammeDetection" xml:space="preserve">
+    <value>Download Equipment or Service Prediction Software</value>
+  </data>
+  <data name="TelechargerDH" xml:space="preserve">
+    <value>Download the honorary declaration</value>
+  </data>
+  <data name="TelechargerRC" xml:space="preserve">
+    <value>Download the commercial register</value>
+  </data>
+  <data name="TypeBesoin" xml:space="preserve">
+    <value>Type of Need</value>
   </data>
 </root>

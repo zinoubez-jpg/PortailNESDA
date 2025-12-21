@@ -1209,4 +1209,22 @@ The programme is a contribution to strengthening the role of local communities a
   <data name="lienAccord" xml:space="preserve">
     <value>You can consult the agency's general policy for the protection of personal data</value>
   </data>
+  <data name="NesdaPolitique1" xml:space="preserve">
+    <value>I authorize Nasda to process my personal data in accordance with the provisions of Law 18/07 on the protection of individuals with regard to the processing of personal data. You can consult</value>
+  </data>
+  <data name="NesdaPolitique2" xml:space="preserve">
+    <value>the Agency's general policy on the protection of personal data</value>
+  </data>
+  <data name="QuestionDepot" xml:space="preserve">
+    <value>At which agency did you submit the file?</value>
+  </data>
+  <data name="Taille" xml:space="preserve">
+    <value>The file must be in PDF or JPG format. The maximum size is 2 MB</value>
+  </data>
+  <data name="TailleDH" xml:space="preserve">
+    <value>The size must not exceed 2 MB. The affidavit file must be in PDF format</value>
+  </data>
+  <data name="TaillePDF" xml:space="preserve">
+    <value>The file must be in PDF format. The maximum size is 2 MB</value>
+  </data>
 </root>
