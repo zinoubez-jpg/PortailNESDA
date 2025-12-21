@@ -1557,6 +1557,9 @@
   <data name="ContenuEmailD" xml:space="preserve">
     <value>write your message here ...</value>
   </data>
+  <data name="demandeSuccee" xml:space="preserve">
+    <value>Your request has been sent successfully</value>
+  </data>
   <data name="EmailD" xml:space="preserve">
     <value>enter your e-mail adress</value>
   </data>
@@ -1584,6 +1587,27 @@
   <data name="latest" xml:space="preserve">
     <value>Latest </value>
   </data>
+  <data name="merci" xml:space="preserve">
+    <value>Thank You</value>
+  </data>
+  <data name="msgSuccessContactUs" xml:space="preserve">
+    <value>Thank you for contacting us — we have received your message and will respond as soon as possible</value>
+  </data>
+  <data name="msgSuccessContactUsT" xml:space="preserve">
+    <value>What's next?</value>
+  </data>
+  <data name="msgSuccessContactUsT1" xml:space="preserve">
+    <value>Our team will review your message within 24 hours</value>
+  </data>
+  <data name="msgSuccessContactUsT2" xml:space="preserve">
+    <value>We will contact you via email or phone</value>
+  </data>
+  <data name="msgSuccessContactUsT3" xml:space="preserve">
+    <value>In case of urgency, you can contact us directly</value>
+  </data>
+  <data name="msgSuccessMI" xml:space="preserve">
+    <value>Thank you for contacting us - your request has been registered. Please approach our state agency with the equipment estimation program.</value>
+  </data>
   <data name="News" xml:space="preserve">
     <value>News</value>
   </data>
@@ -1608,6 +1632,234 @@
   <data name="PhoneD" xml:space="preserve">
     <value>enter your phone number</value>
   </data>
+  <data name="PolitiqueText" xml:space="preserve">
+    <value>Protecting your personal data is an absolute commitment to us. This policy aims to inform you clearly and transparently about how your personal data is collected and processed by the National Entrepreneurship Support and Development Agency (NESDA).</value>
+  </data>
+  <data name="PolitiqueTitre" xml:space="preserve">
+    <value>Personal Data and Cookie Policy</value>
+  </data>
+  <data name="PolitiqueTitre1" xml:space="preserve">
+    <value>1. Introduction and Commitment:</value>
+  </data>
+  <data name="PolitiqueTitre10" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="PolitiqueTitre10Text" xml:space="preserve">
+    <value>For any questions regarding our current privacy and cookie policy, or to exercise your rights, you can contact NESDA:</value>
+  </data>
+  <data name="PolitiqueTitre1P1" xml:space="preserve">
+    <value>As part of its activities, the National Entrepreneurship Support and Development Agency (NESDA), hereinafter referred to as "NESDA," collects, processes, and stores personal data. The protection of this data is an absolute obligation for all NESDA employees, in full compliance with the provisions of Law No. 18-07 of June 10, 2018, concerning the protection of natural persons with regard to the processing of personal data.</value>
+  </data>
+  <data name="PolitiqueTitre1P2" xml:space="preserve">
+    <value>NESDA, whose registered office is located at 8, Arezki Ben Bouzid Street – El Anasser, Algiers, acts as the data processor for data collected via its website.</value>
+  </data>
+  <data name="PolitiqueTitre2" xml:space="preserve">
+    <value>2. Policy approval and acceptance:</value>
+  </data>
+  <data name="PolitiqueTitre2P" xml:space="preserve">
+    <value>By using the website “www.nesda.dz” and the links available on it, you acknowledge that you have read and understood this policy and agree to the collection, processing, use and storage of your information in accordance with the methods described below, in compliance with the provisions of Law No. 18-07 dated 25 Ramadan 1439 corresponding to 10 June 2018 relating to the protection of natural persons in the field of processing of personal data.</value>
+  </data>
+  <data name="PolitiqueTitre3" xml:space="preserve">
+    <value>3. Principles of Personal Data Protection:</value>
+  </data>
+  <data name="PolitiqueTitre3P1" xml:space="preserve">
+    <value>The legitimacy, integrity, and transparency of the process</value>
+  </data>
+  <data name="PolitiqueTitre3P2" xml:space="preserve">
+    <value>Defining and limiting the purposes of treatment</value>
+  </data>
+  <data name="PolitiqueTitre3P3" xml:space="preserve">
+    <value>Reducing the data collected</value>
+  </data>
+  <data name="PolitiqueTitre3P4" xml:space="preserve">
+    <value>Data accuracy and regular updates</value>
+  </data>
+  <data name="PolitiqueTitre3P5" xml:space="preserve">
+    <value>Determining the data retention period</value>
+  </data>
+  <data name="PolitiqueTitre3P6" xml:space="preserve">
+    <value>Data integrity and confidentiality, including processing security</value>
+  </data>
+  <data name="PolitiqueTitre3P7" xml:space="preserve">
+    <value>Respecting the rights of the individuals concerned</value>
+  </data>
+  <data name="PolitiqueTitre3Text" xml:space="preserve">
+    <value>NESDA is committed to respecting all fundamental principles relating to the protection of personal data in accordance with applicable legislation, in particular with regard to the following:</value>
+  </data>
+  <data name="PolitiqueTitre4" xml:space="preserve">
+    <value>4. Categories of personal data collected:</value>
+  </data>
+  <data name="PolitiqueTitre4P1" xml:space="preserve">
+    <value>Identification data:</value>
+  </data>
+  <data name="PolitiqueTitre4P1Text" xml:space="preserve">
+    <value>Name, Surname, Nickname, Date of Birth, National Identification Number (NIN), Bank Account Number (RIB) / Postal Current Account Number (CCP), Social Security Number.</value>
+  </data>
+  <data name="PolitiqueTitre4P2" xml:space="preserve">
+    <value>Contact information:</value>
+  </data>
+  <data name="PolitiqueTitre4P2Text" xml:space="preserve">
+    <value>Landline or mobile phone number, postal address, email address.</value>
+  </data>
+  <data name="PolitiqueTitre4P3" xml:space="preserve">
+    <value>Data on banking operations and transactions:</value>
+  </data>
+  <data name="PolitiqueTitre4P3Text" xml:space="preserve">
+    <value>The nature of the transactions, the date, details of the card payments, transfers, deductions, amount, and statement.</value>
+  </data>
+  <data name="PolitiqueTitre4P4" xml:space="preserve">
+    <value>Technical contact information:</value>
+  </data>
+  <data name="PolitiqueTitre4P4Text" xml:space="preserve">
+    <value>Your authentication IDs and data in your connected spaces, login logs, cookies and other tracking tools, website browsing data (IP address, browser type, pages visited, etc.).</value>
+  </data>
+  <data name="PolitiqueTitre4Text" xml:space="preserve">
+    <value>When you use NESDA services and its website, the following categories of personal data may be collected:</value>
+  </data>
+  <data name="PolitiqueTitre5" xml:space="preserve">
+    <value>5. Purposes of processing personal data:</value>
+  </data>
+  <data name="PolitiqueTitre5P1" xml:space="preserve">
+    <value>Compliance with legal and regulatory obligations;</value>
+  </data>
+  <data name="PolitiqueTitre5P10" xml:space="preserve">
+    <value>Saving and archiving information ;</value>
+  </data>
+  <data name="PolitiqueTitre5P11" xml:space="preserve">
+    <value>Proper operation of the information system;</value>
+  </data>
+  <data name="PolitiqueTitre5P12" xml:space="preserve">
+    <value>Collaboration with NESDA partners ;</value>
+  </data>
+  <data name="PolitiqueTitre5P2" xml:space="preserve">
+    <value>Training, support, establishment and promotion of micro-enterprises;</value>
+  </data>
+  <data name="PolitiqueTitre5P3" xml:space="preserve">
+    <value>Account management and relationship with promoters and partners;</value>
+  </data>
+  <data name="PolitiqueTitre5P4" xml:space="preserve">
+    <value>Risk assessment and management ;</value>
+  </data>
+  <data name="PolitiqueTitre5P5" xml:space="preserve">
+    <value>Preventing, detecting, and investigating cases of non-payment and fraud;</value>
+  </data>
+  <data name="PolitiqueTitre5P6" xml:space="preserve">
+    <value>Acquisition ;</value>
+  </data>
+  <data name="PolitiqueTitre5P7" xml:space="preserve">
+    <value>Recruitment and Personnel Management ;</value>
+  </data>
+  <data name="PolitiqueTitre5P8" xml:space="preserve">
+    <value>Providing advice and information ;</value>
+  </data>
+  <data name="PolitiqueTitre5P9" xml:space="preserve">
+    <value>Information systems, people, and property security;</value>
+  </data>
+  <data name="PolitiqueTitre5Text" xml:space="preserve">
+    <value>NESDA processes personal data collected in order to fulfill its tasks and within one or more of the following purposes:</value>
+  </data>
+  <data name="PolitiqueTitre6" xml:space="preserve">
+    <value>6. Cookies :</value>
+  </data>
+  <data name="PolitiqueTitre6ST" xml:space="preserve">
+    <value>Types of cookies used:</value>
+  </data>
+  <data name="PolitiqueTitre6ST11" xml:space="preserve">
+    <value>Necessary cookies:</value>
+  </data>
+  <data name="PolitiqueTitre6ST12" xml:space="preserve">
+    <value>These are essential for the proper functioning of the website and enable you to use its basic functions.</value>
+  </data>
+  <data name="PolitiqueTitre6ST21" xml:space="preserve">
+    <value>Analytical cookies:</value>
+  </data>
+  <data name="PolitiqueTitre6ST22" xml:space="preserve">
+    <value>These collect information about how visitors use our website.</value>
+  </data>
+  <data name="PolitiqueTitre6ST31" xml:space="preserve">
+    <value>Functional cookies:</value>
+  </data>
+  <data name="PolitiqueTitre6ST32" xml:space="preserve">
+    <value>These allow the website to remember your choices and preferences.</value>
+  </data>
+  <data name="PolitiqueTitre6ST41" xml:space="preserve">
+    <value>Advertising cookies:</value>
+  </data>
+  <data name="PolitiqueTitre6ST42" xml:space="preserve">
+    <value>Used to show you more relevant ads.</value>
+  </data>
+  <data name="PolitiqueTitre6Text" xml:space="preserve">
+    <value>The website “www.nesda.dz” uses cookies and other tracking technologies to improve user experience, personalize content, and analyze website traffic.</value>
+  </data>
+  <data name="PolitiqueTitre7" xml:space="preserve">
+    <value>7. Rights of the persons concerned:</value>
+  </data>
+  <data name="PolitiqueTitre7Text" xml:space="preserve">
+    <value>According to Law No. 18-07 on the Protection of Personal Data, you have the following rights with regard to your personal data:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP11" xml:space="preserve">
+    <value>Right of access:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP12" xml:space="preserve">
+    <value>To obtain confirmation of whether personal data relating to you is being processed</value>
+  </data>
+  <data name="PolitiqueTitre7TextP21" xml:space="preserve">
+    <value>Right of rectification:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP22" xml:space="preserve">
+    <value>Request to correct inaccurate or incomplete personal data</value>
+  </data>
+  <data name="PolitiqueTitre7TextP31" xml:space="preserve">
+    <value>Right of erasure:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP32" xml:space="preserve">
+    <value>Requesting the erasure of your personal data in certain cases</value>
+  </data>
+  <data name="PolitiqueTitre7TextP41" xml:space="preserve">
+    <value>Right to restrict processing:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP42" xml:space="preserve">
+    <value>Request to restrict the processing of your data under certain circumstances</value>
+  </data>
+  <data name="PolitiqueTitre7TextP51" xml:space="preserve">
+    <value>Right to object:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP52" xml:space="preserve">
+    <value>To object to the processing of your data for legitimate reasons</value>
+  </data>
+  <data name="PolitiqueTitre7TextP61" xml:space="preserve">
+    <value>Right to data portability:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP62" xml:space="preserve">
+    <value>To obtain your data in a structured and machine-readable format</value>
+  </data>
+  <data name="PolitiqueTitre7TextP71" xml:space="preserve">
+    <value>Right to withdraw consent:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP72" xml:space="preserve">
+    <value>You can withdraw your consent at any time when the processing is based on that consent.</value>
+  </data>
+  <data name="PolitiqueTitre8" xml:space="preserve">
+    <value>8. Personal data security:</value>
+  </data>
+  <data name="PolitiqueTitre8P1" xml:space="preserve">
+    <value>NESDA takes appropriate technical and organizational measures to ensure a level of security commensurate with the risks, in order to protect your personal data from destruction, loss, alteration or unauthorized disclosure.</value>
+  </data>
+  <data name="PolitiqueTitre8P2" xml:space="preserve">
+    <value>These measures include the use of anonymization and data encryption techniques, ensuring the confidentiality and integrity of processing systems, data recovery procedures, as well as strict confidentiality clauses for employees.</value>
+  </data>
+  <data name="PolitiqueTitre9" xml:space="preserve">
+    <value>9. Data retention period:</value>
+  </data>
+  <data name="PolitiqueTitre9Text" xml:space="preserve">
+    <value>NESDA retains your personal data only for the time necessary for the purposes for which it was collected and processed, in accordance with applicable legal and regulatory obligations. The retention period is determined based on the purposes of processing, operational constraints, and legal limitation periods.</value>
+  </data>
+  <data name="PolitiqueUpdate" xml:space="preserve">
+    <value>Last update: March 2025</value>
+  </data>
+  <data name="QstUrgent" xml:space="preserve">
+    <value>For urgent inquiries:</value>
+  </data>
   <data name="Recherche" xml:space="preserve">
     <value>Research</value>
   </data>
@@ -1616,6 +1868,12 @@
   </data>
   <data name="RechercheDansArticle" xml:space="preserve">
     <value>Search articles and news</value>
+  </data>
+  <data name="retourPagePrincipal" xml:space="preserve">
+    <value>Return to the home page</value>
+  </data>
+  <data name="Site" xml:space="preserve">
+    <value>Web Site :</value>
   </data>
   <data name="StructureAgence" xml:space="preserve">
     <value>State agency</value>

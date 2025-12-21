@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Thank You";
+    ViewData["Title"] = localizer["merci"];
 }
 
 <style>
@@ -323,21 +323,21 @@
     <br /> <br /><br /> <br />
     <div class="success-card">
 
-        <h1 class="success-title">تم إرسال طلبكم بنجاح!</h1>
+        <h1 class="success-title">@localizer["demandeSuccee"] </h1>
 
         <div class="success-message">
-            شكراً لتواصلكم معنا — لقد تم تسجيل طلبكم يرجى تقربكم من وكالتنا الولائية مرفوقين بالبرنامج التقديري للعتاد
+            @localizer["msgSuccessMI"]           
         </div>
 
        
 
         <div class="contact-info">
-            <h4>للاستفسارات العاجلة:</h4>
-            <p>مركز الإتصالات الخاص بالوكالة 033 033 0770</p>
-            <p>البريد الإلكتروني: contact@nesda.dz</p>
+            <h4> @localizer["QstUrgent"]</h4>
+            <p>@localizer["callCenter"]  033 033 0770</p>
+            <p>@localizer["Email"]  contact@nesda.dz</p>
         </div>
 
-        <a asp-controller="Home" asp-action="Index" class="thm-btnrg" onclick="history.back()">العودة إلى الصفحة الرئيسية</a>
+        <a asp-controller="Home" asp-action="Index" class="thm-btnrg" onclick="history.back()"> @localizer["retourPagePrincipal"]</a>
     </div>
 </div>
 <br />

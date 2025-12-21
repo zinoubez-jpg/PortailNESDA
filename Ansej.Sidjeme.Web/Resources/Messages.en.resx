@@ -1227,4 +1227,10 @@ The programme is a contribution to strengthening the role of local communities a
   <data name="TaillePDF" xml:space="preserve">
     <value>The file must be in PDF format. The maximum size is 2 MB</value>
   </data>
+  <data name="Politique" xml:space="preserve">
+    <value>Data Processing Policy</value>
+  </data>
+  <data name="PolitiqueText" xml:space="preserve">
+    <value>Protecting your personal data is an absolute commitment to us. This policy aims to inform you clearly and transparently about how your personal data is collected and processed by the National Entrepreneurship Support and Development Agency (NESDA).</value>
+  </data>
 </root>

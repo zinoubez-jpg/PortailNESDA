@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Thank You";
+    ViewData["Title"] = localizer["merci"];
 }
 
 <style>
@@ -321,31 +321,31 @@
 
 <div class="container">
     <br /> <br /><br /> <br />
-    <div class="success-card">
+                        <div class="success-card">
 
-        <h1 class="success-title">تم إرسال رسالتكم بنجاح!</h1>
+                            <h1 class="success-title">@localizer["demandeSuccee"]</h1>
 
-        <div class="success-message">
-            شكراً لتواصلكم معنا — لقد استلمنا رسالتكم وسنرد عليكم في أقرب وقت ممكن
-        </div>
+                            <div class="success-message">
+                                @localizer["msgSuccessContactUs"]                                
+                            </div>
 
-        <div class="additional-info">
-            <h3>ما الخطوة التالية؟</h3>
-            <ul class="info-list">
-                <li>سيقوم فريقنا بمراجعة رسالتكم خلال 24 ساعة</li>
-                <li>سنتواصل معكم عبر البريد الإلكتروني أو الهاتف</li>
-                <li>في حالة الاستعجال، يمكنكم الاتصال بنا مباشرة</li>
-            </ul>
-        </div>
+                            <div class="additional-info">
+                                <h3>@localizer["msgSuccessContactUsT"] </h3>
+                                <ul class="info-list">
+                                    <li>@localizer["msgSuccessContactUsT1"]</li>
+                                    <li>@localizer["msgSuccessContactUsT2"]</li>
+                                    <li>@localizer["msgSuccessContactUsT3"]</li>
+                                </ul>
+                            </div>
 
-        <div class="contact-info">
-            <h4>للاستفسارات العاجلة:</h4>
-            <p>مركز الإتصالات الخاص بالوكالة 033 033 0770</p>
-            <p>البريد الإلكتروني: contact@nesda.dz</p>
-        </div>
+                            <div class="contact-info">
+                                <h4> @localizer["QstUrgent"]</h4>
+                                <p>@localizer["callCenter"]  033 033 0770</p>
+                                <p>@localizer["Email"]  contact@nesda.dz</p>
+                            </div>
 
-        <a asp-controller="Home" asp-action="Index" class="thm-btnrg" onclick="history.back()">العودة إلى الصفحة الرئيسية</a>
-    </div>
+                            <a asp-controller="Home" asp-action="Index" class="thm-btnrg" onclick="history.back()">@localizer["retourPagePrincipal"]</a>
+                        </div>
 </div>
 <br />
 <br />
