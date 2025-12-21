@@ -3,6 +3,11 @@
 @using System.Globalization
 @{
     ViewData["Title"] = messageslocalizer["DeclarationHonneurMI"];
+    // Récupère le nom de la culture (ex: "ar", "ar-SA", "en", "en-US")
+    var currentLanguage = CultureInfo.CurrentCulture.Name;
+
+    // Vérifie si c'est de l'arabe
+    bool isArabic = currentLanguage.StartsWith("ar");
 }
 
 @section head{
@@ -633,7 +638,7 @@
                 </div>
 
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="Registrant.DateOfBirth" class="form-label">تاريخ الازدياد</label>
+                    <label asp-for="Registrant.DateOfBirth" class="form-label">@localizer["DateNaissance"] *</label>
                     <input asp-for="Registrant.DateOfBirth" type="date" class="form-control custom-input" required />
                     <span asp-validation-for="Registrant.DateOfBirth" class="text-danger small"></span>
                     <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
@@ -641,20 +646,42 @@
 
                 <div class="col-md-6 col-sm-12">
                     <label asp-for="Registrant.GenderId" class="form-label">@localizer["Genre"] *</label>
-                    <select asp-for="Registrant.GenderId" asp-items="ViewBag.genre" class="form-select select2" required>
-                        <option value="">@localizer["ChoisirGenre"]</option>
+                    @if (isArabic)
+                    {
+                        <select asp-for="Registrant.GenderId" asp-items="ViewBag.genre" class="form-select select2" required>
+                            <option value="">@localizer["ChoisirGenre"]</option>
 
-                    </select>
+                        </select>
+                    }
+                    else
+                    {
+                        <select asp-for="Registrant.GenderId" asp-items="ViewBag.genreEn" class="form-select select2" required>
+                            <option value="">@localizer["ChoisirGenre"]</option>
+
+                        </select>
+                    }
+
                     <span asp-validation-for="Registrant.GenderId" class="text-danger small"></span>
                 </div>
 
 
                 <div class="col-md-6 col-sm-12">
                     <label asp-for="Registrant.WilayaId" class="form-label">@localizer["Wilaya"] *</label>
-                    <select asp-for="Registrant.WilayaId" asp-items="ViewBag.wilayas" id="wilayaAR" class="form-select select2" required>
-                        <option value="">@localizer["ChoisirWilaya"]</option>
+                    @if (isArabic)
+                    {
+                        <select asp-for="Registrant.WilayaId" asp-items="ViewBag.wilayas" id="wilayaAR" class="form-select select2" required>
+                            <option value="">@localizer["ChoisirWilaya"]</option>
 
-                    </select>
+                        </select>
+                    }
+                    else
+                    {
+                        <select asp-for="Registrant.WilayaId" asp-items="ViewBag.wilayasEn" id="wilayaAR" class="form-select select2" required>
+                            <option value="">@localizer["ChoisirWilaya"]</option>
+
+                        </select>
+                    }
+
                     <span asp-validation-for="Registrant.WilayaId" class="text-danger small"></span>
                 </div>
                 <div class="col-md-6 col-sm-12">
@@ -693,10 +720,20 @@
 
                 <div class="col-md-6 col-sm-12">
                     <label asp-for="Registrant.StructureManagerId" class="form-label">@localizer["AgenceDepot"] *</label>
-                    <select asp-for="Registrant.StructureManagerId" asp-items="ViewBag.structures" class="form-select select2" required>
-                        <option value="">@messageslocalizer["QuestionDepot"]</option>
+                    @if (isArabic)
+                    {
+                        <select asp-for="Registrant.StructureManagerId" asp-items="ViewBag.structures" class="form-select select2" required>
+                            <option value="">@messageslocalizer["QuestionDepot"]</option>
 
-                    </select>
+                        </select>
+                    }
+                    else
+                    {
+                        <select asp-for="Registrant.StructureManagerId" asp-items="ViewBag.structuresEn" class="form-select select2" required>
+                            <option value="">@messageslocalizer["QuestionDepot"]</option>
+
+                        </select>
+                    }
                     <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
 
@@ -727,9 +764,19 @@
 
                 <div class="col-md-6 col-sm-12">
                     <label asp-for="Registrant.LegalStatusId" class="form-label">@localizer["FormeJuridique"] *</label>
-                    <select asp-for="Registrant.LegalStatusId" asp-items="ViewBag.formesJuridique" class="form-select select2" required>
-                        <option value="">@localizer["Choisir"]</option>
-                    </select>
+                    @if (isArabic)
+                    {
+                        <select asp-for="Registrant.LegalStatusId" asp-items="ViewBag.formesJuridique" class="form-select select2" required>
+                            <option value="">@localizer["Choisir"]</option>
+                        </select>
+                    }
+                    else
+                    {
+                        <select asp-for="Registrant.LegalStatusId" asp-items="ViewBag.formesJuridiqueEn" class="form-select select2" required>
+                            <option value="">@localizer["Choisir"]</option>
+                        </select>
+                    }
+
                     <span asp-validation-for="Registrant.LegalStatusId" class="text-danger small"></span>
                     <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
@@ -780,10 +827,21 @@
 
                 <div class="col-md-6 col-sm-12">
                     <label class="form-label">@localizer["SecteurActivite"] *</label>
-                    <select id="ActivitySectorId" name="ActivitySectorId" asp-items="ViewBag.secteurs" onchange="loadActivity(this.value)" class="form-select select2" required>
-                        <option value="">@localizer["ChoisirSA"]</option>
+                    @if (isArabic)
+                    {
+                        <select id="ActivitySectorId" name="ActivitySectorId" asp-items="ViewBag.secteurs" onchange="loadActivity(this.value)" class="form-select select2" required>
+                            <option value="">@localizer["ChoisirSA"]</option>
 
-                    </select>
+                        </select>
+                    }
+                    else
+                    {
+                        <select id="ActivitySectorId" name="ActivitySectorId" asp-items="ViewBag.secteursEn" onchange="loadActivity(this.value)" class="form-select select2" required>
+                            <option value="">@localizer["ChoisirSA"]</option>
+
+                        </select>
+                    }
+
                     <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
 
@@ -802,10 +860,21 @@
 
                 <div class="col-md-6 col-sm-12">
                     <label asp-for="Registrant.TypeOfNeedId" class="form-label">@localizer["TypeBesoin"] *</label>
-                    <select asp-for="Registrant.TypeOfNeedId" asp-items="ViewBag.typeOfNeed" class="form-select select2" required>
-                        <option value="">@localizer["ChoisirTypeBesoin"]</option>
+                    @if (isArabic)
+                    {
+                        <select asp-for="Registrant.TypeOfNeedId" asp-items="ViewBag.typeOfNeed" class="form-select select2" required>
+                            <option value="">@localizer["ChoisirTypeBesoin"]</option>
 
-                    </select>
+                        </select>
+                    }
+                    else
+                    {
+                        <select asp-for="Registrant.TypeOfNeedId" asp-items="ViewBag.typeOfNeedEn" class="form-select select2" required>
+                            <option value="">@localizer["ChoisirTypeBesoin"]</option>
+
+                        </select>
+                    }
+
                     <span asp-validation-for="Registrant.TypeOfNeedId" class="text-danger small"></span>
                     <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
                 </div>
@@ -900,7 +969,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-
+        const isArabic = @isArabic.ToString().ToLower();
 
 
 
@@ -976,16 +1045,25 @@
 
                 return;
             }
-
+            
             $.ajax({
                 url: '/DeclarationHonneurMI/GetActivitiesBySector',
                 type: 'GET',
                 data: { sectorId: selectedId },
                 success: function (data) {
+                    
                     if (data.length > 0) {
-                        let options = '<option value="">اختر / Sélectionnez </option>';
+                        let options = isArabic ? '<option value="">اختر </option>' : '<option value="">Select </option>';
+
                         data.forEach(function (item) {
-                            options += `<option value="${item.id}">${item.designationAr}</option>`;
+                            
+                            let text = isArabic ? item.designationAr : item.designationEn;
+
+                            if (text === undefined) {
+                                text = isArabic ? item.DesignationAr : item.DesignationEn;
+                            }
+
+                            options += `<option value="${item.id || item.Id}">${text}</option>`;
                         });
 
                         $('#Registrant_ActivityId').html(options);
@@ -1095,7 +1173,7 @@
                 return false; // It's not a PDF
             }
         }
-      
+
 
 
 

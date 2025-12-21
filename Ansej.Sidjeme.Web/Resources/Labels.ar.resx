@@ -208,7 +208,7 @@
     <value>Date Embauche</value>
   </data>
   <data name="DateNaissance" xml:space="preserve">
-    <value>Date Naissance</value>
+    <value>تاريخ الازدياد</value>
   </data>
   <data name="Delete" xml:space="preserve">
     <value>Supprimer</value>
