@@ -1229,4 +1229,43 @@
   <data name="PolitiqueText" xml:space="preserve">
     <value>تُعد حماية بياناتكم الشخصية التزامًا مطلقًا بالنسبة لنا. تهدف هذه السياسة إلى إعلامكم بشكل واضح وشفاف حول كيفيات جمع ومعالجة بياناتكم الشخصية من قبل الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
   </data>
+  <data name="AccesPortalDesc" xml:space="preserve">
+    <value>للولوج الى البوابة الإلكترونية للصفقات العمومية والبدء في عملية التسجيل، يرجى النقر على الرابط التالي:</value>
+  </data>
+  <data name="AssistanceDescP1" xml:space="preserve">
+    <value>تحرص الوكالة الوطنية لدعم وتنمية المقاولاتية على تقديم الدعم اللازم للمؤسسات المصغرة في عملية التسجيل والاستفادة من خدمات البوابة الإلكترونية للصفقات العمومية، من خلال تنظيم دورات تدريبية وورش عمل تعريفية بكيفية الاستفادة المثلى من هذه الخدمات الرقمية.</value>
+  </data>
+  <data name="AssistanceDescP2" xml:space="preserve">
+    <value>كما تسعى الوكالة إلى تسهيل عملية الولوج إلى السوق العمومية للمؤسسات المصغرة من خلال التنسيق مع الجهات المختصة وتقديم الإرشادات والتوجيهات اللازمة لضمان المشاركة الفعالة في الصفقات العمومية.</value>
+  </data>
+  <data name="EtapesInscription1P1" xml:space="preserve">
+    <value>الخطوة الأولى:</value>
+  </data>
+  <data name="EtapesInscription1P2" xml:space="preserve">
+    <value>الدخول إلى البوابة الإلكترونية للصفقات العمومية</value>
+  </data>
+  <data name="EtapesInscription2P1" xml:space="preserve">
+    <value>الخطوة الثانية:</value>
+  </data>
+  <data name="EtapesInscription2P2" xml:space="preserve">
+    <value>النقر على "إنشاء حساب جديد" أو "التسجيل"</value>
+  </data>
+  <data name="EtapesInscription3P1" xml:space="preserve">
+    <value>الخطوة الثالثة:</value>
+  </data>
+  <data name="EtapesInscription3P2" xml:space="preserve">
+    <value>ملء البيانات المطلوبة (معلومات المؤسسة، بيانات الاتصال)</value>
+  </data>
+  <data name="EtapesInscription4P1" xml:space="preserve">
+    <value>الخطوة الرابعة:</value>
+  </data>
+  <data name="EtapesInscription4P2" xml:space="preserve">
+    <value>رفع الوثائق المطلوبة (السجل التجاري، بطاقة المؤسسة...)</value>
+  </data>
+  <data name="EtapesInscription5P1" xml:space="preserve">
+    <value>الخطوة الخامسة:</value>
+  </data>
+  <data name="EtapesInscription5P2" xml:space="preserve">
+    <value>تأكيد التسجيل وانتظار الموافقة</value>
+  </data>
 </root>

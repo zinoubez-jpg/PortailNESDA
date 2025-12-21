@@ -139,11 +139,12 @@
 
             .advantage-list li:before {
                 content: "✓";
-                position: absolute;
+                /*position: absolute;*/
                 right: 0;
                 color: var(--accent-color);
                 font-weight: bold;
                 font-size: 1.2rem;
+                display:inline-block
             }
 
     .example-item {
@@ -344,7 +345,6 @@
                     <h3>
                         <i class="fas fa-star" style="color: var(--accent-color); margin-left: 1rem;"></i>
                         @localizer["Advantages_Portail_MPDZ_Titre"]
-                        مزايا التسجيل في البوابة
                     </h3>
                     <div class="subsection">
                         <ul class="advantage-list">
@@ -369,36 +369,36 @@
 
                 <!-- Registration Steps -->
                 <div class="info-card">
-                    <h3><i class="fas fa-list-ol" style="color: var(--accent-color); margin-left: 1rem;"></i>خطوات التسجيل</h3>
+                    <h3><i class="fas fa-list-ol" style="color: var(--accent-color); margin-left: 1rem;"></i>@localizer["EtapesInscription"]</h3>
                     <div class="examples-section">
                         <div class="example-item">
-                            <strong>الخطوة الأولى:</strong> الدخول إلى البوابة الإلكترونية للصفقات العمومية
+                            <strong>@messageslocalizer["EtapesInscription1P1"]</strong> @messageslocalizer["EtapesInscription1P2"]
                         </div>
                         <div class="example-item">
-                            <strong>الخطوة الثانية:</strong> النقر على "إنشاء حساب جديد" أو "التسجيل"
+                            <strong>@messageslocalizer["EtapesInscription2P1"]</strong> @messageslocalizer["EtapesInscription2P2"]
                         </div>
                         <div class="example-item">
-                            <strong>الخطوة الثالثة:</strong> ملء البيانات المطلوبة (معلومات المؤسسة، بيانات الاتصال)
+                            <strong>@messageslocalizer["EtapesInscription3P1"]</strong> @messageslocalizer["EtapesInscription3P2"]
                         </div>
                         <div class="example-item">
-                            <strong>الخطوة الرابعة:</strong> رفع الوثائق المطلوبة (السجل التجاري، بطاقة المؤسسة...)
+                            <strong>@messageslocalizer["EtapesInscription4P1"]</strong> @messageslocalizer["EtapesInscription4P2"]
                         </div>
                         <div class="example-item">
-                            <strong>الخطوة الخامسة:</strong> تأكيد التسجيل وانتظار الموافقة
+                            <strong>@messageslocalizer["EtapesInscription5P1"]</strong> @messageslocalizer["EtapesInscription5P2"]
                         </div>
                     </div>
                 </div>
 
                 <!-- Portal Access Link -->
                 <div class="link-section">
-                    <h2 class="section-title2"><i class="fas fa-link" style="color: var(--accent-color); margin-left: 1rem;"></i>الولوج إلى البوابة الإلكترونية</h2>
+                    <h2 class="section-title2"><i class="fas fa-link" style="color: var(--accent-color); margin-left: 1rem;"></i>@localizer["AccesPortal"]</h2>
                     <p class="section-text2">
 
-                        للولوج الى البوابة الإلكترونية للصفقات العمومية والبدء في عملية التسجيل، يرجى النقر على الرابط التالي:
+                        @messageslocalizer["AccesPortalDesc"]
                     </p>
                     <a href="https://marches-publics.gov.dz" class="thm-btnrg" target="_blank">
 
-                        رابط التسجيل الإلكتروني
+                        @localizer["URL"]
                     </a>
                     <div style="margin-top: 1.5rem; font-size: 0.9rem; color: color-mix(in srgb, var(--default-color), transparent 40%);">
                         https://marches-publics.gov.dz
@@ -409,15 +409,15 @@
                 <div class="info-card">
                     <h3>
                         <i class="fas fa-hands-helping" style="color: var(--accent-color); margin-left: 1rem;"></i>
-                        الدعم والمساعدة
+                        @localizer["Assistance"]
                     </h3>
                     <p class="section-text2">
 
-                        تحرص الوكالة الوطنية لدعم وتنمية المقاولاتية على تقديم الدعم اللازم للمؤسسات المصغرة في عملية التسجيل والاستفادة من خدمات البوابة الإلكترونية للصفقات العمومية، من خلال تنظيم دورات تدريبية وورش عمل تعريفية بكيفية الاستفادة المثلى من هذه الخدمات الرقمية.
+                        @messageslocalizer["AssistanceDescP1"]
                     </p>
                     <p class="section-text2">
 
-                        كما تسعى الوكالة إلى تسهيل عملية الولوج إلى السوق العمومية للمؤسسات المصغرة من خلال التنسيق مع الجهات المختصة وتقديم الإرشادات والتوجيهات اللازمة لضمان المشاركة الفعالة في الصفقات العمومية.
+                        @messageslocalizer["AssistanceDescP2"]
                     </p>
                 </div>
 

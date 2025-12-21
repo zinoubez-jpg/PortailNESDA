@@ -1233,4 +1233,43 @@ The programme is a contribution to strengthening the role of local communities a
   <data name="PolitiqueText" xml:space="preserve">
     <value>Protecting your personal data is an absolute commitment to us. This policy aims to inform you clearly and transparently about how your personal data is collected and processed by the National Entrepreneurship Support and Development Agency (NESDA).</value>
   </data>
+  <data name="AccesPortalDesc" xml:space="preserve">
+    <value>To access the electronic portal for public procurement and begin the registration process, please click on the following link:</value>
+  </data>
+  <data name="AssistanceDescP1" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency (NESDA) is keen to provide the necessary support to micro-enterprises in the process of registration and benefiting from the services of the public procurement portal, through organizing training sessions and introductory workshops on how to make the best use of these digital services.</value>
+  </data>
+  <data name="AssistanceDescP2" xml:space="preserve">
+    <value>The Agency also seeks to facilitate access to the public market for micro-enterprises by coordinating with the relevant authorities and providing the necessary guidance and instructions to ensure effective participation in public procurement.</value>
+  </data>
+  <data name="EtapesInscription1P1" xml:space="preserve">
+    <value>Step one:</value>
+  </data>
+  <data name="EtapesInscription1P2" xml:space="preserve">
+    <value>access to the electronic portal of public procurement.</value>
+  </data>
+  <data name="EtapesInscription2P1" xml:space="preserve">
+    <value>Step two:</value>
+  </data>
+  <data name="EtapesInscription2P2" xml:space="preserve">
+    <value>Click on “create a new account or “register”.</value>
+  </data>
+  <data name="EtapesInscription3P1" xml:space="preserve">
+    <value>Step three:</value>
+  </data>
+  <data name="EtapesInscription3P2" xml:space="preserve">
+    <value>fill requested data (institution information, communication data).</value>
+  </data>
+  <data name="EtapesInscription4P1" xml:space="preserve">
+    <value>Step four:</value>
+  </data>
+  <data name="EtapesInscription4P2" xml:space="preserve">
+    <value>Upload the required documents (commercial register, enterprise card...).</value>
+  </data>
+  <data name="EtapesInscription5P1" xml:space="preserve">
+    <value>Step five:</value>
+  </data>
+  <data name="EtapesInscription5P2" xml:space="preserve">
+    <value>Confirm registration and wait for approval.</value>
+  </data>
 </root>
