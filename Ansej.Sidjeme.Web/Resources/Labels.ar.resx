@@ -2209,4 +2209,49 @@
   <data name="TypeBesoin" xml:space="preserve">
     <value>نوع الاحتياج</value>
   </data>
+  <data name="AccesPortal" xml:space="preserve">
+    <value>الولوج إلى البوابة الإلكترونية</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_01" xml:space="preserve">
+    <value>الوصول المباشر إلى جميع الفرص التجارية الحكومية</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_02" xml:space="preserve">
+    <value>توفير الوقت والجهد في البحث عن المناقصات</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_03" xml:space="preserve">
+    <value>ضمان عدم تفويت أي فرصة استثمارية مهمة</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_04" xml:space="preserve">
+    <value>سهولة تقديم العروض والمتابعة الإلكترونية</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_05" xml:space="preserve">
+    <value>الحصول على إشعارات فورية للمناقصات الجديدة</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>مزايا التسجيل في البوابة</value>
+  </data>
+  <data name="Assistance" xml:space="preserve">
+    <value>الدعم والمساعدة</value>
+  </data>
+  <data name="EtapesInscription" xml:space="preserve">
+    <value>خطوات التسجيل</value>
+  </data>
+  <data name="Services_Portail_MPDZ_01" xml:space="preserve">
+    <value>الإطلاع على جميع الاستشارات والصفقات العمومية على المستوى الوطني</value>
+  </data>
+  <data name="Services_Portail_MPDZ_02" xml:space="preserve">
+    <value>متابعة مختلف دعوات المنافسة والمناقصات الجارية</value>
+  </data>
+  <data name="Services_Portail_MPDZ_03" xml:space="preserve">
+    <value>تحميل كافة دفاتر الشروط والوثائق المطلوبة</value>
+  </data>
+  <data name="Services_Portail_MPDZ_04" xml:space="preserve">
+    <value>تقديم العروض والمشاركة في المناقصات إلكترونياً</value>
+  </data>
+  <data name="Services_Portail_MPDZ_05" xml:space="preserve">
+    <value>متابعة حالة العروض المقدمة والنتائج</value>
+  </data>
+  <data name="Services_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>الخدمات المتاحة عبر البوابة</value>
+  </data>
 </root>

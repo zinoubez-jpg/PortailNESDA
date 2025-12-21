@@ -2013,4 +2013,13 @@
   <data name="TypeBesoin" xml:space="preserve">
     <value>Type of Need</value>
   </data>
+  <data name="AccesPortal" xml:space="preserve">
+    <value>Access to Electronic Portal</value>
+  </data>
+  <data name="Assistance" xml:space="preserve">
+    <value>Support and Assistance</value>
+  </data>
+  <data name="EtapesInscription" xml:space="preserve">
+    <value>Registration Process</value>
+  </data>
 </root>
