@@ -2022,4 +2022,16 @@
   <data name="EtapesInscription" xml:space="preserve">
     <value>Registration Process</value>
   </data>
+  <data name="organigrammeNesda" xml:space="preserve">
+    <value>Organizational structure of the National Agency for Entrepreneurship Support and Development</value>
+  </data>
+  <data name="organigrammeNesdaText" xml:space="preserve">
+    <value>Decision dated Shawwal 23, 1446 corresponding to April 22, 2025 includes the internal organization of the National Agency for Enterprise Support and Development</value>
+  </data>
+  <data name="organigrammeNesdaTitre1" xml:space="preserve">
+    <value>Organizational structure of the state agency for entrepreneurship support and development</value>
+  </data>
+  <data name="organigrammeNesdaTitre1Text" xml:space="preserve">
+    <value>The organizational structure of the State Agency for Enterprise Support and Development Resolution dated 23 Shawwal 1446 corresponding to April 22, 2025 includes the internal organization of the National Agency for Enterprise Support and Development</value>
+  </data>
 </root>

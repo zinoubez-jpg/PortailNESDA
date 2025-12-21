@@ -28,37 +28,43 @@
         font-family: Georgia, serif;
     }
 
-        .message-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            position: relative;
-            z-index: 1;
-            text-align:justify;
-        }
+    .message-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+        text-align: justify;
+    }
+
     .highlight {
         color: #2d465e;
         font-weight: 600;
     }
-       
-        @@media (max-width: 768px) {
-           
-            .content-section {
-                padding: 40px 20px;
-            }
 
-          
+    @@media (max-width: 768px) {
+
+        .content-section {
+            padding: 40px 20px;
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 1s ease-in;
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
         }
 
-        .fade-in {
-            animation: fadeIn 1s ease-in;
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
-
-        @@keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+    }
 
     .final-signature {
         margin-top: 50px;
@@ -105,7 +111,7 @@
         position: relative;
     }
 
-        
+
     .signature-section {
         margin-bottom: 30px;
     }
@@ -118,8 +124,8 @@
             margin-bottom: 20px;
             position: relative;
         }
-
 </style>
+
 
 
 
@@ -141,7 +147,7 @@
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    
+
 
         <div class="leadership-team">
             <div class="row">
@@ -193,7 +199,7 @@
                                 @messageslocalizer["DescriptionAgenceP4"]
                             </p>
 
-                           
+
 
                             <div class="final-signature">
                                 <p class="director-name">@localizer["Directeur"]</p>

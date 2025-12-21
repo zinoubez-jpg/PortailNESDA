@@ -5,7 +5,7 @@
 }
 
 <style>
-    
+
 
     .privacy {
         font-size: 1rem;
@@ -96,7 +96,8 @@
 
                         .privacy .privacy-content .content-section ul li::before {
                             content: "•";
-                            position: absolute;
+                            /*position: absolute;*/
+                            margin-inline:8px;
                             right: 8px;
                             color: var(--accent-color);
                         }
@@ -123,7 +124,7 @@
                 background-color: var(--surface-color);
                 padding: 25px;
                 border-radius: 10px;
-               justify-items:center;
+                justify-items: center;
             }
 
                 .privacy .privacy-contact .contact-details p {
@@ -222,134 +223,135 @@
 </div><!-- End Page Title -->
 
 
-    <section class="privacy">
-        <div class="privacy-header">
-            <div class="header-content">
-                <div class="last-updated">@localizer["PolitiqueUpdate"] </div>
-                <h1>@localizer["PolitiqueTitre"]</h1>
-                <div class="intro-text">
-                    @localizer["PolitiqueText"] 
-                </div>
+<section class="privacy">
+    <div class="privacy-header">
+        <div class="header-content">
+            <div class="last-updated">@localizer["PolitiqueUpdate"] </div>
+            <h1>@localizer["PolitiqueTitre"]</h1>
+            <div class="intro-text">
+                @localizer["PolitiqueText"]
             </div>
         </div>
+    </div>
 
-        <div class="privacy-content">
-            <div class="content-section">
-                <h2>@localizer["PolitiqueTitre1"]</h2>
-                <p>
-                    @localizer["PolitiqueTitre1P1"]
-                    </p>
-                <p>
-                    @localizer["PolitiqueTitre1P2"]
-                </p>
-            </div>
-
-            <div class="content-section">
-                <h2>@localizer["PolitiqueTitre2"] </h2>
-                <p>@localizer["PolitiqueTitre2P"] </p>
-            </div>
-
-            <div class="content-section">
-                <h2>@localizer["PolitiqueTitre3"]</h2>
-                <p>
-                    @localizer["PolitiqueTitre3Text"]
-                </p>
-                <ul>
-                    <li>@localizer["PolitiqueTitre3P1"]</li>
-                    <li>@localizer["PolitiqueTitre3P2"]</li>
-                    <li>@localizer["PolitiqueTitre3P3"]</li>
-                    <li>@localizer["PolitiqueTitre3P4"]</li>
-                    <li>@localizer["PolitiqueTitre3P5"]</li>
-                    <li>@localizer["PolitiqueTitre3P6"]</li>
-                    <li>@localizer["PolitiqueTitre3P7"]</li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h2>@localizer["PolitiqueTitre4"]</h2>
-                <p>@localizer["PolitiqueTitre4Text"]
-                </p>
-
-                <h3>@localizer["PolitiqueTitre4P1"]</h3>
-                <p>
-                    @localizer["PolitiqueTitre4P1Text"]
-                </p>
-
-                <h3>@localizer["PolitiqueTitre4P2"]</h3>
-                <p>@localizer["PolitiqueTitre4P2Text"]</p>
-
-                <h3>@localizer["PolitiqueTitre4P3"]</h3>
-                <p>@localizer["PolitiqueTitre4P3Text"]</p>
-
-                <h3>@localizer["PolitiqueTitre4P4"]</h3>
-                <p>@localizer["PolitiqueTitre4P4Text"]</p>
-            </div>
-
-            <div class="content-section">
-                <h2>@localizer["PolitiqueTitre5"] </h2>
-                <p>@localizer["PolitiqueTitre5Text"]</p>
-                <ul>
-                    <li>@localizer["PolitiqueTitre5P1"]</li>
-                    <li>@localizer["PolitiqueTitre5P2"]</li>
-                    <li>@localizer["PolitiqueTitre5P3"]</li>
-                    <li>@localizer["PolitiqueTitre5P4"]</li>
-                    <li>@localizer["PolitiqueTitre5P5"]</li>
-                    <li>@localizer["PolitiqueTitre5P6"]</li>
-                    <li>@localizer["PolitiqueTitre5P7"]</li>
-                    <li>@localizer["PolitiqueTitre5P8"]</li>
-                    <li>@localizer["PolitiqueTitre5P9"]</li>
-                    <li>@localizer["PolitiqueTitre5P10"]</li>
-                    <li>@localizer["PolitiqueTitre5P11"]</li>
-                    <li>@localizer["PolitiqueTitre5P12"]</li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h2>@localizer["PolitiqueTitre6"]</h2>
-                <p>@localizer["PolitiqueTitre6Text"]</p>
-                <h3>@localizer["PolitiqueTitre6ST"]</h3>
-                <ul>
-                    <li><strong>@localizer["PolitiqueTitre6ST11"]</strong>@localizer["PolitiqueTitre6ST12"] </li>
-                    <li><strong>@localizer["PolitiqueTitre6ST21"]</strong>@localizer["PolitiqueTitre6ST22"] </li>
-                    <li><strong>@localizer["PolitiqueTitre6ST31"]</strong>@localizer["PolitiqueTitre6ST32"]</li>
-                    <li><strong>@localizer["PolitiqueTitre6ST41"]</strong>@localizer["PolitiqueTitre6ST42"] </li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h2>@localizer["PolitiqueTitre7"]</h2>
-                <p>@localizer["PolitiqueTitre7Text"]</p>
-                <ul>
-                    <li><strong>@localizer["PolitiqueTitre7TextP11"]</strong>@localizer["PolitiqueTitre7TextP12"] </li>
-                    <li><strong>@localizer["PolitiqueTitre7TextP21"]</strong>@localizer["PolitiqueTitre7TextP22"] </li>
-                    <li><strong>@localizer["PolitiqueTitre7TextP31"]</strong>@localizer["PolitiqueTitre7TextP32"] </li>
-                    <li><strong>@localizer["PolitiqueTitre7TextP41"]</strong>@localizer["PolitiqueTitre7TextP42"] </li>
-                    <li><strong>@localizer["PolitiqueTitre7TextP51"]</strong>@localizer["PolitiqueTitre7TextP52"] </li>
-                    <li><strong>@localizer["PolitiqueTitre7TextP61"]</strong>@localizer["PolitiqueTitre7TextP62"] </li>
-                    <li><strong>@localizer["PolitiqueTitre7TextP71"]</strong>@localizer["PolitiqueTitre7TextP72"] </li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h2>@localizer["PolitiqueTitre8"]</h2>
-                <p>@localizer["PolitiqueTitre8P1"]  </p>
-                <p>@localizer["PolitiqueTitre8P2"]</p>
-            </div>
-
-            <div class="content-section">
-                <h2>@localizer["PolitiqueTitre9"]</h2>
-                <p>@localizer["PolitiqueTitre9Text"]</p>
-            </div>
+    <div class="privacy-content">
+        <div class="content-section">
+            <h2>@localizer["PolitiqueTitre1"]</h2>
+            <p>
+                @localizer["PolitiqueTitre1P1"]
+            </p>
+            <p>
+                @localizer["PolitiqueTitre1P2"]
+            </p>
         </div>
 
-        <div class="privacy-contact">
-            <h2>@localizer["PolitiqueTitre10"]</h2>
-            <p>@localizer["PolitiqueTitre10Text"]</p>
-            <div class="contact-details">
-                <p><strong>@localizer["AgenceNesda"]</strong></p>
-                <p><strong>@localizer["Adresse"]</strong> @localizer["AdresseDG"]</p>
-                <p><strong>@localizer["Email"]:</strong> dpo@nesda.dz</p>
-                <p><strong>@localizer["Site"]</strong> www.nesda.dz</p>
-            </div>
+        <div class="content-section">
+            <h2>@localizer["PolitiqueTitre2"] </h2>
+            <p>@localizer["PolitiqueTitre2P"] </p>
         </div>
-    </section>
+
+        <div class="content-section">
+            <h2>@localizer["PolitiqueTitre3"]</h2>
+            <p>
+                @localizer["PolitiqueTitre3Text"]
+            </p>
+            <ul>
+                <li>@localizer["PolitiqueTitre3P1"]</li>
+                <li>@localizer["PolitiqueTitre3P2"]</li>
+                <li>@localizer["PolitiqueTitre3P3"]</li>
+                <li>@localizer["PolitiqueTitre3P4"]</li>
+                <li>@localizer["PolitiqueTitre3P5"]</li>
+                <li>@localizer["PolitiqueTitre3P6"]</li>
+                <li>@localizer["PolitiqueTitre3P7"]</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>@localizer["PolitiqueTitre4"]</h2>
+            <p>
+                @localizer["PolitiqueTitre4Text"]
+        </p>
+
+        <h3>@localizer["PolitiqueTitre4P1"]</h3>
+        <p>
+            @localizer["PolitiqueTitre4P1Text"]
+        </p>
+
+        <h3>@localizer["PolitiqueTitre4P2"]</h3>
+        <p>@localizer["PolitiqueTitre4P2Text"]</p>
+
+        <h3>@localizer["PolitiqueTitre4P3"]</h3>
+        <p>@localizer["PolitiqueTitre4P3Text"]</p>
+
+        <h3>@localizer["PolitiqueTitre4P4"]</h3>
+        <p>@localizer["PolitiqueTitre4P4Text"]</p>
+    </div>
+
+    <div class="content-section">
+        <h2>@localizer["PolitiqueTitre5"] </h2>
+        <p>@localizer["PolitiqueTitre5Text"]</p>
+        <ul>
+            <li>@localizer["PolitiqueTitre5P1"]</li>
+            <li>@localizer["PolitiqueTitre5P2"]</li>
+            <li>@localizer["PolitiqueTitre5P3"]</li>
+            <li>@localizer["PolitiqueTitre5P4"]</li>
+            <li>@localizer["PolitiqueTitre5P5"]</li>
+            <li>@localizer["PolitiqueTitre5P6"]</li>
+            <li>@localizer["PolitiqueTitre5P7"]</li>
+            <li>@localizer["PolitiqueTitre5P8"]</li>
+            <li>@localizer["PolitiqueTitre5P9"]</li>
+            <li>@localizer["PolitiqueTitre5P10"]</li>
+            <li>@localizer["PolitiqueTitre5P11"]</li>
+            <li>@localizer["PolitiqueTitre5P12"]</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>@localizer["PolitiqueTitre6"]</h2>
+        <p>@localizer["PolitiqueTitre6Text"]</p>
+        <h3>@localizer["PolitiqueTitre6ST"]</h3>
+        <ul>
+            <li><strong>@localizer["PolitiqueTitre6ST11"]</strong>@localizer["PolitiqueTitre6ST12"] </li>
+            <li><strong>@localizer["PolitiqueTitre6ST21"]</strong>@localizer["PolitiqueTitre6ST22"] </li>
+            <li><strong>@localizer["PolitiqueTitre6ST31"]</strong>@localizer["PolitiqueTitre6ST32"]</li>
+            <li><strong>@localizer["PolitiqueTitre6ST41"]</strong>@localizer["PolitiqueTitre6ST42"] </li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>@localizer["PolitiqueTitre7"]</h2>
+        <p>@localizer["PolitiqueTitre7Text"]</p>
+        <ul>
+            <li><strong>@localizer["PolitiqueTitre7TextP11"]</strong>@localizer["PolitiqueTitre7TextP12"] </li>
+            <li><strong>@localizer["PolitiqueTitre7TextP21"]</strong>@localizer["PolitiqueTitre7TextP22"] </li>
+            <li><strong>@localizer["PolitiqueTitre7TextP31"]</strong>@localizer["PolitiqueTitre7TextP32"] </li>
+            <li><strong>@localizer["PolitiqueTitre7TextP41"]</strong>@localizer["PolitiqueTitre7TextP42"] </li>
+            <li><strong>@localizer["PolitiqueTitre7TextP51"]</strong>@localizer["PolitiqueTitre7TextP52"] </li>
+            <li><strong>@localizer["PolitiqueTitre7TextP61"]</strong>@localizer["PolitiqueTitre7TextP62"] </li>
+            <li><strong>@localizer["PolitiqueTitre7TextP71"]</strong>@localizer["PolitiqueTitre7TextP72"] </li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>@localizer["PolitiqueTitre8"]</h2>
+        <p>@localizer["PolitiqueTitre8P1"]  </p>
+        <p>@localizer["PolitiqueTitre8P2"]</p>
+    </div>
+
+    <div class="content-section">
+        <h2>@localizer["PolitiqueTitre9"]</h2>
+        <p>@localizer["PolitiqueTitre9Text"]</p>
+    </div>
+</div>
+
+<div class="privacy-contact">
+    <h2>@localizer["PolitiqueTitre10"]</h2>
+    <p>@localizer["PolitiqueTitre10Text"]</p>
+    <div class="contact-details">
+        <p><strong>@localizer["AgenceNesda"]</strong></p>
+        <p><strong>@localizer["Adresse"]</strong> @localizer["AdresseDG"]</p>
+        <p><strong>@localizer["Email"]:</strong> dpo@nesda.dz</p>
+        <p><strong>@localizer["Site"]</strong> www.nesda.dz</p>
+    </div>
+</div>
+</section>

@@ -2254,4 +2254,16 @@
   <data name="Services_Portail_MPDZ_Titre" xml:space="preserve">
     <value>الخدمات المتاحة عبر البوابة</value>
   </data>
+  <data name="organigrammeNesda" xml:space="preserve">
+    <value>الهيكل التنظيمي للوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="organigrammeNesdaText" xml:space="preserve">
+    <value>قرار المؤرخ في 23 شوال 1446 الموافق 22 ابريل 2025 يتضمن التنظيم الداخلي للوكالة الوطنية لدعم وتنمية المقاوالتية</value>
+  </data>
+  <data name="organigrammeNesdaTitre1" xml:space="preserve">
+    <value>الهيكل التنظيمي للوكالة الولائية لدعم وتنمية المقاوالتية</value>
+  </data>
+  <data name="organigrammeNesdaTitre1Text" xml:space="preserve">
+    <value>الهيكل التنظيمي للوكالة الولائية لدعم وتنمية المقاوالتيةقرار المؤرخ في 23 شوال 1446 الموافق 22 ابريل 2025 يتضمن التنظيم الداخلي للوكالة الوطنية لدعم وتنمية المقاوالتية</value>
+  </data>
 </root>
