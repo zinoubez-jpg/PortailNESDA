@@ -402,7 +402,16 @@
                                 <div class="post-content">
                                     <p class="post-category">  @localizer["callCenter"]</p>
                                     <h2 class="title">
-                                        <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">@post.Title</a>
+                                        @if (isArabic)
+                                        {
+                                            <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">@post.Title</a>
+
+                                        }
+                                        else
+                                        {
+                                            <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">@post.TitleEn</a>
+
+                                        }
                                     </h2>
                                     <div class="post-meta">
 
@@ -508,6 +517,7 @@
 
 @section Scripts {
     <script>
+
         // Animation au focus
         document.querySelectorAll('.search-input').forEach(input => {
             input.addEventListener('focus', function () {
@@ -521,9 +531,9 @@
 
         // Effet de typing pour le placeholder
         const placeholders = [
-            "اكتب كلمة مفتاحية للبحث...",
-            "أدخل عنوان المقال هنا...",
-            "ابحث حسب الموضوع..."
+            @localizer["CleRecherche"],
+            @localizer["TitreRecherche"],
+            @localizer["RechercheSujet"]
         ];
 
         let currentPlaceholder = 0;
