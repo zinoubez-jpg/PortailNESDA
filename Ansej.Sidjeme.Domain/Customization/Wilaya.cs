@@ -11,5 +11,7 @@ namespace Ansej.Sidjeme.Domain
         public string DisplayName { get => $"({Code}) {DesignationFr}"; }
         [NotMapped]
         public string DisplayNameAr { get => $"({Code}) {DesignationAr}  "; }
+        [NotMapped]
+        public string DisplayNameEn { get => $"({Code}) {DesignationEn}  "; }
     }
 }

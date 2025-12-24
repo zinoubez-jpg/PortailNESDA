@@ -168,6 +168,14 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ContentEn")
+                        .IsRequired()
+                        .HasColumnType("varchar(Max)");
+
+                    b.Property<string>("ContentFr")
+                        .IsRequired()
+                        .HasColumnType("varchar(Max)");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -187,14 +195,40 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
+                    b.Property<string>("SlugEn")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<string>("SlugFr")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
                     b.Property<string>("Summary")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("SummaryEn")
+                        .HasMaxLength(900)
+                        .HasColumnType("varchar(900)");
+
+                    b.Property<string>("SummaryFr")
+                        .HasMaxLength(900)
+                        .HasColumnType("varchar(900)");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("TitleEn")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("TitleFr")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");

@@ -139,7 +139,8 @@
                     content: "\f00c";
                     font-family: "Font Awesome 6 Free";
                     font-weight: 900;
-                    position: absolute;
+                    /*position: absolute;*/
+                    margin-inline:8px;
                     right: 0;
                     color: var(--accent-color);
                     font-size: 0.9rem;
@@ -197,6 +198,7 @@
     }
 </style>
 
+
 <div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
     <div class="container position-relative">
         <h1>@ViewData["Title"]</h1>
@@ -235,7 +237,7 @@
                         <div class="intro-image main-image">
                             <img src="~/NesdaTMP/assets/img/NesdaImg/aide.png" alt="call center" class="img-fluid rounded">
                         </div>
-                       
+
 
                     </div>
                 </div>
@@ -250,7 +252,7 @@
 
 <section class="partnerships">
     <div class="container">
-     
+
         <!-- Partnership Items -->
         <div class="row justify-content-center">
             <div class="col-lg-12">
@@ -360,18 +362,19 @@
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-<script>// Add hover effects for buttons
-        document.addEventListener('DOMContentLoaded', function() {
-            const ctaButton = document.getElementById('Contact');
-            if (ctaButton) {
-                ctaButton.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-2px)';
-                    this.style.boxShadow = '0 8px 25px rgba(65, 193, 186, 0.3)';
-                });
+<script>
+    // Add hover effects for buttons
+    document.addEventListener('DOMContentLoaded', function () {
+        const ctaButton = document.getElementById('Contact');
+        if (ctaButton) {
+            ctaButton.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = '0 8px 25px rgba(65, 193, 186, 0.3)';
+            });
 
-                ctaButton.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                    this.style.boxShadow = 'none';
-                });
-            }
-        });</script>
+            ctaButton.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        }
+    });</script>

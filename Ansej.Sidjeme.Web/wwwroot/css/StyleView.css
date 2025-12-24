@@ -1,0 +1,186 @@
+﻿/* --- 1. CONFIGURATION GÉNÉRALE & RÉUTILISABLE --- */
+.cnrc-section, .about, .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+    /* Style commun pour les titres avec soulignement décoratif */
+    .cnrc-section .display-6, .about .display-6, .advantages .display-6 {
+        line-height: 1.2;
+    }
+
+        .cnrc-section .display-6 span, .about .display-6 span, .advantages .display-6 span {
+            position: relative;
+            color: var(--accent-color);
+        }
+
+            .cnrc-section .display-6 span:after, .about .display-6 span:after, .advantages .display-6 span:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 10px;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+                left: 0;
+                bottom: 5px;
+                z-index: -1;
+            }
+
+    /* Textes d'introduction */
+    .cnrc-section .lead, .about .lead, .advantages .lead {
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        font-size: 1.125rem;
+        text-align: justify;
+        line-height: 1.7;
+    }
+
+/* --- 2. COMPOSANTS DE CARTES (Factorisés) --- */
+.info-card, .intro-card, .link-section, .value-card, .advantage-item, .organization-content {
+    background-color: var(--surface-color);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    border-bottom: 3px solid var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+/* Cartes avec effet de remplissage au survol */
+.info-card, .value-card, .advantage-item {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+    .info-card:before, .value-card:before, .advantage-item:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+        transition: height 0.5s ease;
+        z-index: -1;
+    }
+
+    .info-card:hover, .value-card:hover, .advantage-item:hover {
+        transform: translateY(-5px);
+    }
+
+        .info-card:hover:before, .value-card:hover:before, .advantage-item:hover:before {
+            height: 100%;
+        }
+
+/* --- 3. BOUTONS --- */
+.register-link, .thm-btnrg, .registration-link, .submit-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--contrast-color) !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+    .register-link:hover, .thm-btnrg:hover, .registration-link:hover, .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(65, 193, 186, 0.3);
+    }
+
+/* --- 4. LISTES & ÉLÉMENTS RÉPÉTITIFS --- */
+.advantage-list, .phase-details, .advantage-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+    .advantage-list li, .list-item, .advantage-content li {
+        padding: 0.75rem 2rem 0.75rem 0;
+        position: relative;
+        line-height: 1.6;
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+    }
+
+        .advantage-list li:before, .list-item:before, .advantage-content li:before {
+            content: "✓";
+            /*position: absolute;*/
+            margin-inline:8px;
+            right: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+/* --- 5. GRILLE ET LAYOUT (Simplifié) --- */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-12, .col-lg-6, .col-lg-4 {
+    padding: 0 15px;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+/* --- 6. SECTIONS SPÉCIFIQUES (Styles uniques) --- */
+.stat-box {
+    text-align: center;
+    background-color: var(--surface-color);
+    padding: 1rem;
+    border-radius: 10px;
+    border-bottom: 3px solid var(--accent-color);
+    transition: transform 0.3s ease;
+}
+
+    .stat-box .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--heading-color);
+    }
+
+/* --- 7. ADAPTATION MOBILE (MEDIA QUERIES) --- */
+@media (max-width: 768px) {
+    .info-card, .intro-card, .link-section, .organization-content {
+        padding: 1.5rem;
+    }
+
+    .section-title h2, .accompaniment .intro-wrapper .intro-content h2 {
+        font-size: 28px;
+    }
+
+    .display-6 {
+        font-size: 1.5rem;
+    }
+}
+
+/* --- 8. CARTE SVG (Styles spécifiques conservés) --- */
+path {
+    fill: #e8f5e8;
+    stroke: #19776b;
+    stroke-width: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    path:hover, path.selected {
+        fill: #19776b;
+        stroke: #1a3a1e;
+        transform: scale(1.02);
+        transform-origin: center;
+    }

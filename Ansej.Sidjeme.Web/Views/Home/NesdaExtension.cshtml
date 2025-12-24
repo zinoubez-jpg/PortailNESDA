@@ -6,32 +6,32 @@
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <style>
-       
 
-        .nesda-extension {
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
+
+    .nesda-extension {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
         .nesda-extension .display-6 {
             line-height: 1.2;
         }
 
-        .nesda-extension .display-6 span {
-            position: relative;
-            color: var(--accent-color);
-        }
+            .nesda-extension .display-6 span {
+                position: relative;
+                color: var(--accent-color);
+            }
 
-        .nesda-extension .display-6 span:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 10px;
-            background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
-            left: 0;
-            bottom: 5px;
-            z-index: -1;
-        }
+                .nesda-extension .display-6 span:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+                    left: 0;
+                    bottom: 5px;
+                    z-index: -1;
+                }
 
         .nesda-extension .lead {
             color: color-mix(in srgb, var(--default-color), transparent 20%);
@@ -51,25 +51,25 @@
             border-bottom: 3px solid var(--accent-color);
         }
 
-        .nesda-extension .info-item:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 0;
-            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-            transition: height 0.5s ease;
-            z-index: -1;
-        }
+            .nesda-extension .info-item:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+                transition: height 0.5s ease;
+                z-index: -1;
+            }
 
-        .nesda-extension .info-item:hover {
-            transform: translateY(-5px);
-        }
+            .nesda-extension .info-item:hover {
+                transform: translateY(-5px);
+            }
 
-        .nesda-extension .info-item:hover:before {
-            height: 100%;
-        }
+                .nesda-extension .info-item:hover:before {
+                    height: 100%;
+                }
 
         .nesda-extension .info-header {
             padding: 1.5rem 2rem;
@@ -78,74 +78,75 @@
             justify-content: space-between;
         }
 
-        .nesda-extension .info-header h5 {
-            margin: 0;
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--heading-color);
-            flex: 1;
-        }
+            .nesda-extension .info-header h5 {
+                margin: 0;
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: var(--heading-color);
+                flex: 1;
+            }
 
-        .nesda-extension .info-header .info-icon {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-            border-radius: 50%;
-            margin-left: 1rem;
-            transition: all 0.3s ease;
-            flex-shrink: 0;
-        }
+            .nesda-extension .info-header .info-icon {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+                border-radius: 50%;
+                margin-left: 1rem;
+                transition: all 0.3s ease;
+                flex-shrink: 0;
+            }
 
-        .nesda-extension .info-header .info-icon i {
-            font-size: 1rem;
-            color: var(--accent-color);
-            transition: all 0.3s ease;
-        }
+                .nesda-extension .info-header .info-icon i {
+                    font-size: 1rem;
+                    color: var(--accent-color);
+                    transition: all 0.3s ease;
+                }
 
         .nesda-extension .info-item:hover .info-header .info-icon {
             background-color: var(--accent-color);
         }
 
-        .nesda-extension .info-item:hover .info-header .info-icon i {
-            color: var(--contrast-color);
-        }
+            .nesda-extension .info-item:hover .info-header .info-icon i {
+                color: var(--contrast-color);
+            }
 
         .nesda-extension .info-content {
             padding: 0 2rem 1.5rem 2rem;
         }
 
-        .nesda-extension .info-content p {
-            margin: 0 0 1rem 0;
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            text-align: justify;
-            line-height: 1.6;
-        }
+            .nesda-extension .info-content p {
+                margin: 0 0 1rem 0;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                text-align: justify;
+                line-height: 1.6;
+            }
 
-        .nesda-extension .info-content ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+            .nesda-extension .info-content ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
 
-        .nesda-extension .info-content li {
-            position: relative;
-            padding-right: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            line-height: 1.6;
-        }
+            .nesda-extension .info-content li {
+                position: relative;
+                padding-right: 1.5rem;
+                margin-bottom: 0.75rem;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                line-height: 1.6;
+            }
 
-        .nesda-extension .info-content li:before {
-            content: "•";
-            position: absolute;
-            right: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
+                .nesda-extension .info-content li:before {
+                    content: "•";
+                    /*position: absolute;*/
+                    margin-inline:8px;
+                    right: 0;
+                    color: var(--accent-color);
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
 
         .nesda-extension .percentage-highlight {
             background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
@@ -165,22 +166,22 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
 
-        .nesda-extension .financing-table th,
-        .nesda-extension .financing-table td {
-            padding: 1rem;
-            text-align: center;
-            border-bottom: 1px solid #e9ecef;
-        }
+            .nesda-extension .financing-table th,
+            .nesda-extension .financing-table td {
+                padding: 1rem;
+                text-align: center;
+                border-bottom: 1px solid #e9ecef;
+            }
 
-        .nesda-extension .financing-table th {
-            background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-            color: var(--heading-color);
-            font-weight: 700;
-        }
+            .nesda-extension .financing-table th {
+                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+                color: var(--heading-color);
+                font-weight: 700;
+            }
 
-        .nesda-extension .financing-table td:first-child {
-            text-align: right;
-        }
+            .nesda-extension .financing-table td:first-child {
+                text-align: right;
+            }
 
         .nesda-extension .process-steps {
             counter-reset: step-counter;
@@ -198,56 +199,56 @@
             transition: all 0.3s ease;
         }
 
-        .nesda-extension .process-step:hover {
-            transform: translateY(-5px);
-        }
+            .nesda-extension .process-step:hover {
+                transform: translateY(-5px);
+            }
 
-        .nesda-extension .process-step::before {
-            content: counter(step-counter);
-            position: absolute;
-            top: -10px;
-            right: 20px;
-            background-color: var(--accent-color);
-            color: var(--contrast-color);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
+            .nesda-extension .process-step::before {
+                content: counter(step-counter);
+                position: absolute;
+                top: -10px;
+                right: 20px;
+                background-color: var(--accent-color);
+                color: var(--contrast-color);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 1.1rem;
+            }
 
-        .nesda-extension .process-step p {
-            margin: 0 0 1rem 0;
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            line-height: 1.6;
-            text-align: justify;
-        }
+            .nesda-extension .process-step p {
+                margin: 0 0 1rem 0;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                line-height: 1.6;
+                text-align: justify;
+            }
 
-        .nesda-extension .process-step ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+            .nesda-extension .process-step ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
 
-        .nesda-extension .process-step li {
-            position: relative;
-            padding-right: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            line-height: 1.6;
-        }
+            .nesda-extension .process-step li {
+                position: relative;
+                padding-right: 1.5rem;
+                margin-bottom: 0.75rem;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                line-height: 1.6;
+            }
 
-        .nesda-extension .process-step li:before {
-            content: "•";
-            position: absolute;
-            right: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
+                .nesda-extension .process-step li:before {
+                    content: "•";
+                    position: absolute;
+                    right: 0;
+                    color: var(--accent-color);
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
 
         .nesda-extension .thm-btnrg {
             display: inline-block;
@@ -261,31 +262,32 @@
             margin-top: 1rem;
         }
 
-        .nesda-extension .thm-btnrg:hover {
-            background-color: color-mix(in srgb, var(--accent-color), black 10%);
-            color: var(--contrast-color);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(65, 193, 186, 0.3);
+            .nesda-extension .thm-btnrg:hover {
+                background-color: color-mix(in srgb, var(--accent-color), black 10%);
+                color: var(--contrast-color);
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(65, 193, 186, 0.3);
+            }
+
+    @@media (max-width: 768px) {
+        .nesda-extension .info-header {
+            padding: 1rem 1.5rem;
         }
 
-        @@media (max-width: 768px) {
-            .nesda-extension .info-header {
-                padding: 1rem 1.5rem;
-            }
-
-            .nesda-extension .info-content {
-                padding: 0 1.5rem 1rem 1.5rem;
-            }
-
-            .nesda-extension .info-header h5 {
-                font-size: 1.1rem;
-            }
-
-            .nesda-extension .process-step {
-                padding: 1.5rem;
-            }
+        .nesda-extension .info-content {
+            padding: 0 1.5rem 1rem 1.5rem;
         }
+
+        .nesda-extension .info-header h5 {
+            font-size: 1.1rem;
+        }
+
+        .nesda-extension .process-step {
+            padding: 1.5rem;
+        }
+    }
 </style>
+
 
 
 <div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
@@ -346,7 +348,7 @@
 
 <section class="nesda-extension">
     <div class="container">
-      
+
         <!-- Information Items -->
         <div class="row justify-content-center">
             <div class="col-lg-12">

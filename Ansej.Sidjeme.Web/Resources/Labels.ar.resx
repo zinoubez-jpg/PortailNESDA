@@ -208,7 +208,7 @@
     <value>Date Embauche</value>
   </data>
   <data name="DateNaissance" xml:space="preserve">
-    <value>Date Naissance</value>
+    <value>تاريخ الازدياد</value>
   </data>
   <data name="Delete" xml:space="preserve">
     <value>Supprimer</value>
@@ -1762,7 +1762,7 @@
     <value>عرض الوثيقة</value>
   </data>
   <data name="bienvenue" xml:space="preserve">
-    <value>مرحبا</value>
+    <value>مرحبًا بكم في الموقع الرسمي للوكالة، فضاؤكم لمرافقة الأفكار وتحويلها إلى مشاريع ناجحة.</value>
   </data>
   <data name="callCenter" xml:space="preserve">
     <value>خلية الإتصال</value>
@@ -2253,5 +2253,38 @@
   </data>
   <data name="Services_Portail_MPDZ_Titre" xml:space="preserve">
     <value>الخدمات المتاحة عبر البوابة</value>
+  </data>
+  <data name="organigrammeNesda" xml:space="preserve">
+    <value>الهيكل التنظيمي للوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="organigrammeNesdaText" xml:space="preserve">
+    <value>قرار المؤرخ في 23 شوال 1446 الموافق 22 ابريل 2025 يتضمن التنظيم الداخلي للوكالة الوطنية لدعم وتنمية المقاوالتية</value>
+  </data>
+  <data name="organigrammeNesdaTitre1" xml:space="preserve">
+    <value>الهيكل التنظيمي للوكالة الولائية لدعم وتنمية المقاوالتية</value>
+  </data>
+  <data name="organigrammeNesdaTitre1Text" xml:space="preserve">
+    <value>الهيكل التنظيمي للوكالة الولائية لدعم وتنمية المقاوالتيةقرار المؤرخ في 23 شوال 1446 الموافق 22 ابريل 2025 يتضمن التنظيم الداخلي للوكالة الوطنية لدعم وتنمية المقاوالتية</value>
+  </data>
+  <data name="LireEncore" xml:space="preserve">
+    <value>[قراءة المزيد]</value>
+  </data>
+  <data name="CleRecherche" xml:space="preserve">
+    <value>اكتب كلمة مفتاحية للبحث...</value>
+  </data>
+  <data name="DetailArticle" xml:space="preserve">
+    <value>تفاصيل المقال</value>
+  </data>
+  <data name="RechercheSujet" xml:space="preserve">
+    <value>ابحث حسب الموضوع...</value>
+  </data>
+  <data name="TitreRecherche" xml:space="preserve">
+    <value>أدخل عنوان المقال هنا...</value>
+  </data>
+  <data name="ToutLesArticles" xml:space="preserve">
+    <value>كافة المقالات</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>مشاركة المقال</value>
   </data>
 </root>

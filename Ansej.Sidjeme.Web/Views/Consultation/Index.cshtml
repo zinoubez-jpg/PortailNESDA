@@ -315,6 +315,7 @@
     }
 </style>
 
+
 <!-- Page Title -->
 <div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/isticharat.jpg);">
     <div class="container position-relative">
@@ -368,26 +369,33 @@
                     <tbody>
                         @foreach (var consultation in group.Consultations)
                         {
-                            <tr>
-                                @if (group.IsFromChild )
+                        <tr>
+                            @if (group.IsFromChild)
+                            {
+                                if (isArabic)
                                 {
-                                    if (isArabic)
-                                    {
-                                     <td>@consultation.StructureManager?.NameAr</td>
-                                    }
-                                    else
-                                    {
-                                      <td>@consultation.StructureManager?.NameEn</td>
-                                    }
+                                    <td>@consultation.StructureManager?.NameAr</td>
                                 }
-                                <td class="date-cell">@consultation.PublishDate.ToString("dd/MM/yyyy")</td>
+                                else
+                                {
+                                    <td>@consultation.StructureManager?.NameEn</td>
+                                }
+                            }
+                            <td class="date-cell">@consultation.PublishDate.ToString("dd/MM/yyyy")</td>
+                            @if (isArabic)
+                            {
                                 <td class="title-cell">@consultation.TitleAr</td>
-                                <td>
-                                    <a href="@consultation.FilePath" class="document-btn" target="_blank">
-                                        @localizer["AfficherDoc"]
-                                    </a>
-                                </td>
-                            </tr>
+                            }
+                            else
+                            {
+                                <td class="title-cell">@consultation.TitleEn</td>
+                            }
+                            <td>
+                                <a href="@consultation.FilePath" class="document-btn" target="_blank">
+                                    @localizer["AfficherDoc"]
+                                </a>
+                            </td>
+                        </tr>
                         }
                     </tbody>
                 </table>
