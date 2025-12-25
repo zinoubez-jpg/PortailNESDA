@@ -2287,4 +2287,10 @@
   <data name="Share" xml:space="preserve">
     <value>مشاركة المقال</value>
   </data>
+  <data name="annule" xml:space="preserve">
+    <value>ملغى</value>
+  </data>
+  <data name="legistaliveText" xml:space="preserve">
+    <value>النصوص القانونية</value>
+  </data>
 </root>

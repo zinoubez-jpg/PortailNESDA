@@ -70,15 +70,25 @@
 
                         }
                         @*<span><i class="bi bi-clock"></i> 10 min read</span>
-        <span><i class="bi bi-chat-square-text"></i> 32 Comments</span>*@
+                    <span><i class="bi bi-chat-square-text"></i> 32 Comments</span>*@
                     </div>
                 </div>
             </div>
 
             @if (!string.IsNullOrEmpty(Model.ImageUrl))
             {
+
+
                 <div class="article-featured-image" data-aos="zoom-in">
-                    <img src="@Model.ImageUrl" alt="@Model.Title" class="img-fluid">
+                    @if (isArabic)
+                    {
+                        <img src="@Model.ImageUrl" alt="@Model.Title" class="img-fluid">
+                    }
+                    else
+                    {
+                        <img src="@Model.ImageUrl" alt="@Model.TitleEn" class="img-fluid">
+                    }
+
                 </div>
             }
 

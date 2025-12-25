@@ -5496,12 +5496,13 @@ section,
   margin-bottom: 4rem;
 }
 
-.blog-details .article-wrapper .article-content .content-section .lead {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  color: var(--heading-color);
-  margin-bottom: 2rem;
-}
+    .blog-details .article-wrapper .article-content .content-section .lead {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        color: var(--heading-color);
+        margin-bottom: 2rem;
+        text-align: justify;
+    }
 
 .blog-details .article-wrapper .article-content .content-section h2 {
   font-size: 2.2rem;
@@ -5532,12 +5533,13 @@ section,
   padding-left: 3rem;
 }
 
-.blog-details .article-wrapper .article-content .content-section .highlight-quote blockquote p {
-  font-size: 1.5rem;
-  font-style: italic;
-  color: var(--heading-color);
-  margin-bottom: 1rem;
-}
+    .blog-details .article-wrapper .article-content .content-section .highlight-quote blockquote p {
+        font-size: 1.5rem;
+        font-style: italic;
+        color: var(--heading-color);
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
 
 .blog-details .article-wrapper .article-content .content-section .highlight-quote blockquote cite {
   font-style: normal;
