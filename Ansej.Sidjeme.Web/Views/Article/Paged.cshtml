@@ -530,11 +530,13 @@
         });
 
         // Effet de typing pour le placeholder
+        // Modifiez cette partie du code
         const placeholders = [
-            "@localizer["CleRecherche"]",
-            "@localizer["TitreRecherche"]",
-            "@localizer["RechercheSujet"]"
+            @Html.Raw(Json.Serialize(localizer["CleRecherche"].Value)),
+            @Html.Raw(Json.Serialize(localizer["TitreRecherche"].Value)),
+            @Html.Raw(Json.Serialize(localizer["RechercheSujet"].Value))
         ];
+
 
         let currentPlaceholder = 0;
         const mainInput = document.querySelector('.search-section .search-input');
