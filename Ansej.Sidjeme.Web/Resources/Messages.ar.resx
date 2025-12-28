@@ -1268,4 +1268,7 @@
   <data name="EtapesInscription5P2" xml:space="preserve">
     <value>تأكيد التسجيل وانتظار الموافقة</value>
   </data>
+  <data name="Tawtin" xml:space="preserve">
+    <value>التوطين</value>
+  </data>
 </root>

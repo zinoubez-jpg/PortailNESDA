@@ -1272,4 +1272,7 @@ The programme is a contribution to strengthening the role of local communities a
   <data name="EtapesInscription5P2" xml:space="preserve">
     <value>Confirm registration and wait for approval.</value>
   </data>
+  <data name="Tawtin" xml:space="preserve">
+    <value>Al Tawteen</value>
+  </data>
 </root>
