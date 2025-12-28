@@ -8227,3 +8227,17 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.cancelled-text:before {
+    content: attr(data-annule-text);
+    /* ... reste du style ... */
+    position: absolute;
+    top: 10px;
+
+    background-color: #dc3545;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}

@@ -144,9 +144,10 @@
         position: relative;
     }
 
-        .cancelled-text:before {
-            content: "@Html.Raw(Json.Serialize(localizer["annule"].Value))";
-            position: absolute;
+        /*.cancelled-text:before {
+            content: attr(data-annule-text);*/
+            /* ... reste du style ... */
+            /*position: absolute;
             top: 10px;
             right: 10px;
             background-color: #dc3545;
@@ -155,7 +156,7 @@
             border-radius: 15px;
             font-size: 0.75rem;
             font-weight: 600;
-        }
+        }*/
 
         .cancelled-text .text-description {
             color: #6c757d;
@@ -490,7 +491,8 @@
                     </div>
 
                     <!-- Cancelled Decree -->
-                    <div class="text-item cancelled-text d-flex align-items-center">
+                    <div class="text-item cancelled-text d-flex align-items-center"
+                         data-annule-text="@localizer["annule"]">
                         <div class="text-content">
                             <div class="text-number"></div>
                             <p class="text-description">

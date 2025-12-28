@@ -1,5 +1,5 @@
 ﻿@model List<Ansej.Sidjeme.Domain.Entities.Article>
-@inject IStringLocalizer<Labels> labelLocalizer
+
 @inject IStringLocalizer<Menu> menulocalizer
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <style>
@@ -213,8 +213,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-7" data-aos="zoom-out" data-aos-delay="100">
                     <div class="hero-content">
-                        <h1> @labelLocalizer["Agence"]   <span style="color: #41c1ba;">NESDA</span> </h1>
-                        <p>@labelLocalizer["bienvenue"]</p>
+                        <h1> @localizer["Agence"]   <span style="color: #41c1ba;">NESDA</span> </h1>
+                        <p>@localizer["bienvenue"]</p>
                         <div class="cta-buttons">
                             <a href="#services" class="btn-primary">@messageslocalizer["Nosservices"]</a>
 
@@ -534,7 +534,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                     <div class="intro-content">
-                        <h2 class="fw-bold">@labelLocalizer["CentreComunication"]  </h2>
+                        <h2 class="fw-bold">@localizer["CentreComunication"]  </h2>
                         <p class="lead">@messageslocalizer["CentreComunicationD1"] </p>
                         <p class="lead">@messageslocalizer["CentreComunicationD2"]</p>
                         <div class="stats-container">
@@ -578,7 +578,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
                 <h2 class="display-6 fw-bold mb-4">
-                    @labelLocalizer["question"]   <span>@labelLocalizer["frequente"]</span>
+                    @localizer["question"]   <span>@localizer["frequente"]</span>
                 </h2>
                 <p class="lead mb-5">
                   @messageslocalizer["reponse"] 
@@ -819,7 +819,7 @@
                     <h3 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700; color: var(--heading-color);"> @messageslocalizer["responseNotFound"]</h3>
                     <p style="margin-bottom: 1.5rem; color: color-mix(in srgb, var(--default-color), transparent 20%);">@messageslocalizer["askUs"] </p>
                     <a asp-controller="Contactus" asp-action="Index" id="Contact" class="btn btn-lg" style="background-color: var(--accent-color); color: var(--contrast-color); padding: 0.75rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
-                        @labelLocalizer["ContactUs"]
+                        @localizer["ContactUs"]
                     </a>
                 </div>
             </div>

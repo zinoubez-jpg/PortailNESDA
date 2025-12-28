@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Ansej.Sidjeme.Web.Views.ViewModels.TopStructureGroup>
+﻿@model IEnumerable<Ansej.Sidjeme.Domain.Entities.Consultation>
+
 @using System.Globalization
 @{
     ViewData["Title"] = localizer["consultation"];
@@ -346,33 +347,24 @@
         <!-- Consultations Groups -->
         @foreach (var group in Model)
         {
-            var structureName = group.TopStructure.NameAr;
+            //var structureName = group.TopStructure.NameAr;
             <div class="structure-section">
-                @{ if (group.IsFromChild)
-                    { <h4 class="structure-title">@localizer["StructuresAgences"]</h4>}
-                else
-                { <h4 class="structure-title">@localizer["StructureDG"]</h4>}
-                }
-
+              
                 <table class="consultations-table">
                     <thead class="table-header">
                         <tr>
-                            @if (group.IsFromChild)
-                            {
-                                <th>@localizer["StructureAgence"]</th>
-                            }
+                            <th>@localizer["Structure"]</th>
                             <th>@localizer["DatePublication"]</th>
                             <th>@localizer["TitreConsultation"]</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var consultation in group.Consultations)
+                        @foreach (var consultation in Model)
                         {
-                        <tr>
-                            @if (group.IsFromChild)
-                            {
-                                if (isArabic)
+                            <tr>
+                               
+                                @if (isArabic)
                                 {
                                     <td>@consultation.StructureManager?.NameAr</td>
                                 }
@@ -380,22 +372,24 @@
                                 {
                                     <td>@consultation.StructureManager?.NameEn</td>
                                 }
-                            }
-                            <td class="date-cell">@consultation.PublishDate.ToString("dd/MM/yyyy")</td>
-                            @if (isArabic)
-                            {
-                                <td class="title-cell">@consultation.TitleAr</td>
-                            }
-                            else
-                            {
-                                <td class="title-cell">@consultation.TitleEn</td>
-                            }
-                            <td>
-                                <a href="@consultation.FilePath" class="document-btn" target="_blank">
-                                    @localizer["AfficherDoc"]
-                                </a>
-                            </td>
-                        </tr>
+
+                                <td class="date-cell">@consultation.PublishDate.ToString("dd/MM/yyyy")</td>
+                               
+                                @if (isArabic)
+                                {
+                                    <td class="title-cell">@consultation.TitleAr</td>
+                                }
+                                else
+                                {
+                                    <td class="title-cell">@consultation.TitleEn</td>
+                                }
+
+                                <td>
+                                    <a href="@consultation.FilePath" class="document-btn" target="_blank">
+                                        @localizer["AfficherDoc"]
+                                    </a>
+                                </td>
+                            </tr>
                         }
                     </tbody>
                 </table>

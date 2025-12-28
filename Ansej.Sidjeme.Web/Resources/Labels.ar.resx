@@ -648,8 +648,8 @@
   <data name="SecteursActivite" xml:space="preserve">
     <value />
   </data>
-  <data name="StructureId" xml:space="preserve">
-    <value />
+  <data name="Structure" xml:space="preserve">
+    <value>الوكالة</value>
   </data>
   <data name="Tel" xml:space="preserve">
     <value />
@@ -2292,5 +2292,14 @@
   </data>
   <data name="legistaliveText" xml:space="preserve">
     <value>النصوص القانونية</value>
+  </data>
+  <data name="frequente" xml:space="preserve">
+    <value>الشائعة</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>الأسئلة</value>
+  </data>
+  <data name="CentreComunication" xml:space="preserve">
+    <value>مركز الإتصالات</value>
   </data>
 </root>

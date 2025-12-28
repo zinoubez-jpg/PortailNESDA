@@ -1276,7 +1276,7 @@
     <value>Digital Registration Platform</value>
   </data>
   <data name="DatePublication" xml:space="preserve">
-    <value>Publication date:</value>
+    <value>Publication date</value>
   </data>
   <data name="DecouvrirMag1" xml:space="preserve">
     <value>Discover the First Issue</value>
@@ -1888,7 +1888,7 @@
     <value>South</value>
   </data>
   <data name="TitreConsultation" xml:space="preserve">
-    <value>Consultation address</value>
+    <value>Consultation Title</value>
   </data>
   <data name="update" xml:space="preserve">
     <value>updates</value>
