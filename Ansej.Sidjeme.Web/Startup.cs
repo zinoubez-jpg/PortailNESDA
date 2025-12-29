@@ -6,6 +6,7 @@ using Ansej.Sidjeme.Data;
 using Ansej.Sidjeme.Domain;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -14,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Threading.Tasks;
@@ -107,6 +109,14 @@ namespace Ansej.Sidjeme.Web
                 };
             });
 
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
+                options.Lockout.MaxFailedAccessAttempts = 3;
+                options.Lockout.AllowedForNewUsers = true;
+            });
+
+
             // Stocker le dictionnaire dans les services pour l'utiliser dans la vue
             services.AddSingleton(cultureDisplayNames);
 
@@ -146,7 +156,17 @@ namespace Ansej.Sidjeme.Web
             }
 
             app.UseStaticFiles();
+            // Middleware pour supprimer l’en-tête X-Powered-By
+            app.Use(async (context, next) =>
+            {
+                context.Response.OnStarting(() =>
+                {
+                    context.Response.Headers.Remove("X-Powered-By");
+                    return Task.CompletedTask;
+                });
 
+                await next.Invoke();
+            });
             app.UseRouting();
 
             app.UseAuthentication();

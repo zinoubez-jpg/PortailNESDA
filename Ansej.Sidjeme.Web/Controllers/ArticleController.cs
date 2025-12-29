@@ -8,8 +8,10 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -22,10 +24,14 @@ namespace Ansej.Sidjeme.Web.Controllers
     {
         private readonly ArticleBusinessService _articleBusinessService;
         private readonly UserService _userService;
-        public ArticleController(ArticleBusinessService articleBusinessService, UserService userService)
+        private readonly IMemoryCache _memoryCache;
+        public ArticleController(ArticleBusinessService articleBusinessService,
+                                 UserService userService,
+                                 IMemoryCache memoryCache)
         {
             _articleBusinessService = articleBusinessService;
             _userService = userService;
+            _memoryCache = memoryCache;
         }
       
 
@@ -174,20 +180,47 @@ namespace Ansej.Sidjeme.Web.Controllers
             return View(model);
         }
 
-
-       
+        [Route("name")]
         public IActionResult Details(string name)
         {
-            if (string.IsNullOrWhiteSpace(name))
+            if(name!=null)
+              _memoryCache.Set("slugResearch", name);
+
+            string MotCle;
+                string motcleR;
+            _memoryCache.TryGetValue("slugResearch", out MotCle);
+
+
+            if (string.IsNullOrWhiteSpace(MotCle))
                 return NotFound();
 
-            var article = _articleBusinessService.GetSingle(a => a.Slug == name);
+            if (name == null)
+                motcleR = MotCle;
+            else
+                motcleR = name;
+
+
+            var article = _articleBusinessService.GetSingle(a => a.Slug == MotCle);
 
             if (article == null || article.IsDeleted || !article.IsPublished)
                 return NotFound();
 
             return View("Details", article);
         }
+
+        //public IActionResult Details(string name)
+        //{
+        //    if (string.IsNullOrWhiteSpace(name))
+        //        return NotFound();
+
+        //    var article = _articleBusinessService.GetSingle(a => a.Slug == name);
+
+        //    if (article == null || article.IsDeleted || !article.IsPublished)
+        //        return NotFound();
+
+        //    return View("Details", article);
+        //}
+
         [Authorize(Roles = "Admin,Article")]
         public IActionResult TogglePublish(int id)
         {
@@ -201,6 +234,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             var result = _articleBusinessService.Update(article);
             return result.Succeeded ? Ok() : StatusCode(500);
         }
+        
         [Authorize(Roles = "Admin,Article")]
         public IActionResult Delete(int id)
         {

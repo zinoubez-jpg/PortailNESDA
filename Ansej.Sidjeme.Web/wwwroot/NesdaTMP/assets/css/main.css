@@ -5314,10 +5314,11 @@ section,
 }
 
 .blog-details .article-header .title {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 2rem;
   color: var(--heading-color);
+  text-align:justify;
 }
 
 @media (max-width: 768px) {

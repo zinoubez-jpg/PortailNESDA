@@ -35,7 +35,7 @@
             @if (isArabic)
             {
                 <h2 class="title">
-                    <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">
+                    <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug" asp-route-culture="@currentLanguage">
                         @post.Title
                     </a>
                 </h2>
@@ -48,7 +48,7 @@
                     @truncated
                     @if (post.Summary != null && post.Summary.Length > 100)
                     {
-                        <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug" class="read-more-link"> @localizer["LireEncore"]  </a>
+                        <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug" asp-route-culture="@currentLanguage" class="read-more-link"> @localizer["LireEncore"]  </a>
                     }
                 </p>
 
@@ -56,7 +56,7 @@
             else
             {
                 <h2 class="title">
-                    <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">
+                    <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug" asp-route-culture="@currentLanguage">
                         @post.TitleEn
                     </a>
                 </h2>
@@ -69,7 +69,7 @@
                     @truncated
                     @if (post.SummaryEn != null && post.SummaryEn.Length > 100)
                     {
-                        <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug" class="read-more-link"> @localizer["LireEncore"]  </a>
+                        <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug" asp-route-culture="@currentLanguage" class="read-more-link"> @localizer["LireEncore"]  </a>
                     }
                 </p>
             }
