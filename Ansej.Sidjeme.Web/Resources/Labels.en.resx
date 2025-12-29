@@ -2064,4 +2064,7 @@
   <data name="legistaliveText" xml:space="preserve">
     <value>Legal Texts</value>
   </data>
+  <data name="CommunicationCell" xml:space="preserve">
+    <value>Communication cell</value>
+  </data>
 </root>

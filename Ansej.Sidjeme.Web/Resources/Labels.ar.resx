@@ -2302,4 +2302,7 @@
   <data name="CentreComunication" xml:space="preserve">
     <value>مركز الإتصالات</value>
   </data>
+  <data name="CommunicationCell" xml:space="preserve">
+    <value>خلية الإتصال</value>
+  </data>
 </root>
