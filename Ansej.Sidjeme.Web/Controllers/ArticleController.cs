@@ -183,21 +183,23 @@ namespace Ansej.Sidjeme.Web.Controllers
         [Route("name")]
         public IActionResult Details(string name)
         {
-            if(name!=null)
-              _memoryCache.Set("slugResearch", name);
+            //if(name!=null)
+            //  _memoryCache.Set("slugResearch", name);
 
-            string MotCle;
-                string motcleR;
-            _memoryCache.TryGetValue("slugResearch", out MotCle);
+            string MotCle;          
 
 
-            if (string.IsNullOrWhiteSpace(MotCle))
-                return NotFound();
+            //if (string.IsNullOrWhiteSpace(name))
+            //    return NotFound();
 
-            if (name == null)
-                motcleR = MotCle;
+            if (string.IsNullOrWhiteSpace(name))
+                _memoryCache.TryGetValue("slugResearch", out MotCle);
             else
-                motcleR = name;
+            {
+                _memoryCache.Set("slugResearch", name);
+                MotCle = name;
+            }
+               
 
 
             var article = _articleBusinessService.GetSingle(a => a.Slug == MotCle);
@@ -208,18 +210,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             return View("Details", article);
         }
 
-        //public IActionResult Details(string name)
-        //{
-        //    if (string.IsNullOrWhiteSpace(name))
-        //        return NotFound();
-
-        //    var article = _articleBusinessService.GetSingle(a => a.Slug == name);
-
-        //    if (article == null || article.IsDeleted || !article.IsPublished)
-        //        return NotFound();
-
-        //    return View("Details", article);
-        //}
+       
 
         [Authorize(Roles = "Admin,Article")]
         public IActionResult TogglePublish(int id)
