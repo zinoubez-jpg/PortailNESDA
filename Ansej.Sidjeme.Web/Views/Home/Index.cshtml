@@ -2,202 +2,15 @@
 
 @inject IStringLocalizer<Menu> menulocalizer
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<style>
 
-    .faq {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-        .faq .display-6 {
-            line-height: 1.2;
-        }
-
-            .faq .display-6 span {
-                position: relative;
-                color: var(--accent-color);
-            }
-
-                .faq .display-6 span:after {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 10px;
-                    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
-                    left: 0;
-                    bottom: 5px;
-                    z-index: -1;
-                }
-
-        .faq .lead {
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            font-size: 1.125rem;
-            text-align: justify;
-        }
-
-        .faq .faq-item {
-            background-color: var(--surface-color);
-            border-radius: 15px;
-            margin-bottom: 1.5rem;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            z-index: 1;
-            border-bottom: 3px solid var(--accent-color);
-        }
-
-            .faq .faq-item:before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 0;
-                background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-                transition: height 0.5s ease;
-                z-index: -1;
-            }
-
-            .faq .faq-item:hover {
-                transform: translateY(-5px);
-            }
-
-                .faq .faq-item:hover:before {
-                    height: 100%;
-                }
-
-        .faq .faq-question {
-            padding: 1.5rem 2rem;
-            cursor: pointer;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: none;
-            border: none;
-            width: 100%;
-            text-align: right;
-            transition: all 0.3s ease;
-        }
-
-            .faq .faq-question h5 {
-                margin: 0;
-                font-size: 1.25rem;
-                font-weight: 700;
-                color: var(--heading-color);
-                flex: 1;
-            }
-
-            .faq .faq-question .faq-icon {
-                width: 40px;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-                border-radius: 50%;
-                margin-left: 1rem;
-                transition: all 0.3s ease;
-                flex-shrink: 0;
-            }
-
-                .faq .faq-question .faq-icon i {
-                    font-size: 1rem;
-                    color: var(--accent-color);
-                    transition: all 0.3s ease;
-                }
-
-        .faq .faq-item:hover .faq-question .faq-icon {
-            background-color: var(--accent-color);
-        }
-
-            .faq .faq-item:hover .faq-question .faq-icon i {
-                color: var(--contrast-color);
-            }
-
-        .faq .faq-answer {
-            padding: 0 2rem 1.5rem 2rem;
-            max-height: 0;
-            overflow: hidden;
-            transition: all 0.4s ease;
-            opacity: 0;
-        }
-
-            .faq .faq-answer p {
-                margin: 0;
-                color: color-mix(in srgb, var(--default-color), transparent 20%);
-                text-align: justify;
-                line-height: 1.6;
-            }
-
-        .faq .faq-item.active .faq-answer {
-            max-height: 300px;
-            opacity: 1;
-            padding-top: 0;
-        }
-
-        .faq .faq-item.active .faq-question .faq-icon i {
-            transform: rotate(180deg);
-        }
-
-        .faq .stats-row {
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .faq .stat-box {
-            display: flex;
-            flex-direction: column;
-            background-color: var(--surface-color);
-            padding: 1rem 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            min-width: 110px;
-            border-bottom: 3px solid var(--accent-color);
-            transition: transform 0.3s ease;
-            text-align: center;
-        }
-
-            .faq .stat-box:hover {
-                transform: translateY(-5px);
-            }
-
-            .faq .stat-box .stat-number {
-                font-size: 2rem;
-                font-weight: 700;
-                line-height: 1;
-                color: var(--heading-color);
-            }
-
-            .faq .stat-box .stat-label {
-                font-size: 0.875rem;
-                color: color-mix(in srgb, var(--default-color), transparent 30%);
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                margin-top: 5px;
-            }
-
-    @@media (max-width: 768px) {
-        .faq .faq-question {
-            padding: 1rem 1.5rem;
-        }
-
-        .faq .faq-answer {
-            padding: 0 1.5rem 1rem 1.5rem;
-        }
-
-        .faq .faq-question h5 {
-            font-size: 1.1rem;
-        }
-    }
-</style>
-
-
-
-
-
-
+@if (System.Threading.Thread.CurrentThread.CurrentCulture.Name == "ar-DZ")
+{
+    <link href="~/css/PrincipalAr.css" rel="stylesheet">
+}
+else
+{
+    <link href="~/css/PrincipalEn.css" rel="stylesheet">
+}
 
 
 
@@ -615,7 +428,7 @@
                     @localizer["question"]   <span>@localizer["frequente"]</span>
                 </h2>
                 <p class="lead mb-5">
-                  @messageslocalizer["reponse"] 
+                    @messageslocalizer["reponse"]
                 </p>
             </div>
         </div>
@@ -636,7 +449,7 @@
                     </button>
                     <div class="faq-answer">
                         <p>
-                            @messageslocalizer["R1"]                            
+                            @messageslocalizer["R1"]
                         </p>
                     </div>
                 </div>
