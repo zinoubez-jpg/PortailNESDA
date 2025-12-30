@@ -530,15 +530,16 @@
                     </div>
                     <div class="col-12">
                         <label asp-for="Message" class="form-label">@localizer["ContenuEmail"] *</label>
-                        <textarea asp-for="Message" class="form-control custom-input" rows="5" placeholder=@localizer["ContenuEmailD"]required></textarea>
+                        <textarea asp-for="Message" class="form-control custom-input" rows="5" placeholder=@localizer["ContenuEmailD"] required></textarea>
                     </div>
 
                     <div class="form-section">
 
-                        <div class="form-group">
+                        <div class="form-group">                           
                             <div class="g-recaptcha"
                                  data-sitekey="6LcN3q4qAAAAAEFq86pRnXIr1ROxvFnB1PzCBdoB"
-                                 data-callback="onRecaptchaComplete"></div>
+                                 data-callback="onRecaptchaComplete">
+                            </div>
                             <input type="hidden" asp-for="RecaptchaResponse" id="recaptchaResponse" required />
                             <span asp-validation-for="RecaptchaResponse" class="text-danger"></span>
                         </div>
@@ -848,7 +849,7 @@
                         </div>
 
                         <div class="info-details">
-                            <h2 id="wilayaName">اسم الولاية</h2>
+                            <h2 id="wilayaName">@localizer["wilaya"]</h2>
                             <p class="code" id="wilayaCode">Code: DZ00</p>
                         </div>
 
@@ -859,15 +860,7 @@
 
                         <div class="info-details">
                             <h4>@localizer["Adresse"]</h4>
-                            @*@{ if (isArabic)
-                                {*@
-                                    <p id="adresseAr">-</p>
-                                @*}
-                                else
-                                {
-                                    <p id="adresseEn">-</p>
-                                }
-                            }*@
+                            <p id="adresseAr">-</p>
 
                         </div>
 
@@ -914,7 +907,7 @@
 
     <script>
      
-
+        //const isArabic =  @isArabic.ToString().ToLower();
         document.addEventListener('DOMContentLoaded', function () {
             const wilayaInfoDiv = document.getElementById('wilayaInfo');
             const welcomeMessageDiv = document.getElementById('welcomeMessage');
@@ -936,10 +929,11 @@
 
                         if (data.length > 0) {
                             const info = data[0];
-                           
-                                document.getElementById('wilayaName').textContent = info.designationAr || 'N/A';
-                                document.getElementById('adresseAr').textContent = info.adresseAr || 'N/A';
-                            //if (isArabic) {}
+                            document.getElementById('wilayaName').textContent = info.designationAr || 'N/A';
+                            document.getElementById('adresseAr').textContent = info.adresseAr || 'N/A';
+                                
+                            //if (isArabic=="true") {
+                            //    }
 
                             //else {
                             //    document.getElementById('wilayaName').textContent = info.designationEn || 'N/A';

@@ -2305,4 +2305,7 @@
   <data name="CommunicationCell" xml:space="preserve">
     <value>خلية الإتصال</value>
   </data>
+  <data name="nomWilaya" xml:space="preserve">
+    <value>اسم الولاية</value>
+  </data>
 </root>
