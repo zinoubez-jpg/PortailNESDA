@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Ansej.Sidjeme.Domain.Entities;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -11,20 +12,22 @@ namespace Ansej.Sidjeme.Web.Views.ViewModels
     {
         public int Id { get; set; }
 
-        [Required]
-        [MaxLength(255)]
-        public string Title { get; set; }
+        public Article Article { get; set; }
 
-        [MaxLength(500)]
-        public string? Summary { get; set; }
+        //[Required]
+        //[MaxLength(255)]
+        //public string Title { get; set; }
 
-        [Required]
-        public string Content { get; set; }
+        //[MaxLength(500)]
+        //public string? Summary { get; set; }
+
+        //[Required]
+        //public string Content { get; set; }
 
         public IFormFile Image { get; set; }
 
-        public bool IsPinned { get; set; } = false;
+       // public bool IsPinned { get; set; } = false;
 
-        public bool IsPublished { get; set; } = false;
+       // public bool IsPublished { get; set; } = false;
     }
 }
