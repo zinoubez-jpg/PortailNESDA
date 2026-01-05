@@ -173,7 +173,6 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .HasColumnType("varchar(Max)");
 
                     b.Property<string>("ContentFr")
-                        .IsRequired()
                         .HasColumnType("varchar(Max)");
 
                     b.Property<DateTime>("CreatedAt")
@@ -226,7 +225,6 @@ namespace Ansej.Sidjeme.Data.Migrations
                         .HasColumnType("varchar(255)");
 
                     b.Property<string>("TitleFr")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("varchar(255)");
 
