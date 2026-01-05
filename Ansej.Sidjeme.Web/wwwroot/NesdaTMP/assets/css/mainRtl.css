@@ -4398,12 +4398,13 @@ section,
   flex-direction: column;
 }
 
-.campus-facilities .intro-row .intro-content .stats-container .stat-item .stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--accent-color);
-  line-height: 1;
-}
+    .campus-facilities .intro-row .intro-content .stats-container .stat-item .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--accent-color);
+        line-height: 1;
+        direction: ltr;
+    }
 
 .campus-facilities .intro-row .intro-content .stats-container .stat-item .stat-label {
   font-size: 1rem;
@@ -8238,3 +8239,16 @@ section,
 
 
 
+.cancelled-text:before {
+    content: attr(data-annule-text);
+    /* ... reste du style ... */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}

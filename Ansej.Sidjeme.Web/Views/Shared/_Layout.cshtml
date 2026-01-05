@@ -23,13 +23,14 @@
     <link href="~/NesdaTMP/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
     @inject IStringLocalizer<Menu> menuLocalizer
+    @inject IStringLocalizer<Labels> labelLocalizer
 
     @using System.Globalization
 
 
     @{
         var culture = CultureInfo.CurrentCulture;
-        
+
     }
 
 
@@ -83,12 +84,12 @@
                         <img src="~/NesdaTMP/assets/img/NesdaImg/LogoNesda.png" />
                     </a>
                     <div class="footer-contact pt-3">
-                        <p>شارع محمد ارزقي بن بوزيد، العناصر</p>
+                        <p> @labelLocalizer["AdresseDG"]</p>
                         <p>
-                            الجزائر العاصمة، الجزائر
+                            @labelLocalizer["wilayaAdresse"]                            
                         </p>
-                        <p class="mt-3"><strong>مركز الإتصالات:</strong> <span>033 033 0770</span></p>
-                        <p><strong>البريد الإلكتروني:</strong> <span>contact@nesda.dz</span></p>
+                        <p class="mt-3"><strong>@labelLocalizer["centreAppel"] :</strong> <span>0770 033 033</span></p>
+                        <p><strong>@labelLocalizer["Email"] :</strong> <span>contact@nesda.dz</span></p>
                     </div>
                     <div class="social-links d-flex mt-4">
                         <a href="https://x.com/NesdaDg"><i class="bi bi-twitter-x"></i></a>

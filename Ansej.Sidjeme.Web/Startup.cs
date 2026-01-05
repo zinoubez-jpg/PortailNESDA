@@ -1,4 +1,4 @@
-using Ansej.Business.Core;
+﻿using Ansej.Business.Core;
 using Ansej.Data.Abstractions;
 using Ansej.Data.Core;
 using Ansej.Sidjeme.Business;
@@ -6,6 +6,7 @@ using Ansej.Sidjeme.Data;
 using Ansej.Sidjeme.Domain;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -14,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Threading.Tasks;
@@ -76,7 +78,6 @@ namespace Ansej.Sidjeme.Web
             services.AddHttpClient();
             services.AddScoped<IRecaptchaService,RecaptchaService>();
 
-
             services.Configure<LocalizationOptions>(options =>
             {
                 options.ResourcesPath = "Resources";
@@ -85,24 +86,59 @@ namespace Ansej.Sidjeme.Web
             var cultures = new List<CultureInfo>
             {
                 new CultureInfo("ar-DZ"),
-                new CultureInfo("fr"),
                 new CultureInfo("en")
+            };
+
+            // Dictionnaire pour mapper les codes culture aux noms d'affichage
+            var cultureDisplayNames = new Dictionary<string, string>
+            {
+                { "ar-DZ", "العربية" },
+                { "en", "Anglais" }
             };
 
             services.Configure<RequestLocalizationOptions>(options =>
             {
-                var defaultCulture = new CultureInfo("ar-DZ");
-
                 options.SupportedCultures = cultures;
                 options.SupportedUICultures = cultures;
-                options.DefaultRequestCulture = new RequestCulture(defaultCulture);
-
-                options.RequestCultureProviders.Clear();
-
-                options.RequestCultureProviders.Add(new CustomRequestCultureProvider(context =>
+                options.DefaultRequestCulture = new RequestCulture("ar-DZ");
+                options.RequestCultureProviders = new List<IRequestCultureProvider>
                 {
-                    return Task.FromResult(new ProviderCultureResult("ar-DZ", "ar-DZ"));
-                }));
+                    new QueryStringRequestCultureProvider(),
+                    new CookieRequestCultureProvider(),
+                    new AcceptLanguageHeaderRequestCultureProvider()
+                };
+            });
+
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
+                options.Lockout.MaxFailedAccessAttempts = 3;
+                options.Lockout.AllowedForNewUsers = true;
+            });
+
+
+            // Stocker le dictionnaire dans les services pour l'utiliser dans la vue
+            services.AddSingleton(cultureDisplayNames);
+
+            //TODO: Configure RequestLocalizationOptions as defined with the TODO comments.
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                //TODO: Set the SupportedCultures list
+                options.SupportedCultures = cultures;
+
+                //TODO: Set SupportedUICultures list
+                options.SupportedUICultures = cultures;
+
+                //TODO: Define DefaultRequestCulture to be fr-FR
+                options.DefaultRequestCulture = new RequestCulture("ar-DZ");
+
+                // Optionnel : ajouter des providers de détection de langue
+                options.RequestCultureProviders = new List<IRequestCultureProvider>
+                {
+                    new QueryStringRequestCultureProvider(),
+                    new CookieRequestCultureProvider(),
+                    new AcceptLanguageHeaderRequestCultureProvider()
+                };
             });
         }
 
@@ -120,7 +156,17 @@ namespace Ansej.Sidjeme.Web
             }
 
             app.UseStaticFiles();
+            // Middleware pour supprimer l’en-tête X-Powered-By
+            app.Use(async (context, next) =>
+            {
+                context.Response.OnStarting(() =>
+                {
+                    context.Response.Headers.Remove("X-Powered-By");
+                    return Task.CompletedTask;
+                });
 
+                await next.Invoke();
+            });
             app.UseRouting();
 
             app.UseAuthentication();

@@ -5,7 +5,7 @@
 }
 
 <style>
-    
+
 
     .privacy {
         font-size: 1rem;
@@ -96,7 +96,8 @@
 
                         .privacy .privacy-content .content-section ul li::before {
                             content: "•";
-                            position: absolute;
+                            /*position: absolute;*/
+                            margin-inline:8px;
                             right: 8px;
                             color: var(--accent-color);
                         }
@@ -123,7 +124,7 @@
                 background-color: var(--surface-color);
                 padding: 25px;
                 border-radius: 10px;
-               justify-items:center;
+                justify-items: center;
             }
 
                 .privacy .privacy-contact .contact-details p {
@@ -222,126 +223,135 @@
 </div><!-- End Page Title -->
 
 
-    <section class="privacy">
-        <div class="privacy-header">
-            <div class="header-content">
-                <div class="last-updated">آخر تحديث: مارس 2025</div>
-                <h1>سياسة حماية البيانات الشخصية وملفات تعريف الارتباط</h1>
-                <div class="intro-text">
-                    تُعد حماية بياناتكم الشخصية التزامًا مطلقًا بالنسبة لنا. تهدف هذه السياسة إلى إعلامكم بشكل واضح وشفاف حول كيفيات جمع ومعالجة بياناتكم الشخصية من قبل الوكالة الوطنية لدعم وتنمية المقاولاتية.
-                </div>
+<section class="privacy">
+    <div class="privacy-header">
+        <div class="header-content">
+            <div class="last-updated">@localizer["PolitiqueUpdate"] </div>
+            <h1>@localizer["PolitiqueTitre"]</h1>
+            <div class="intro-text">
+                @localizer["PolitiqueText"]
             </div>
         </div>
+    </div>
 
-        <div class="privacy-content">
-            <div class="content-section">
-                <h2>1. مقدمة والتزام</h2>
-                <p>في إطار أنشطتها، تُعنى الوكالة الوطنية لدعم وتنمية المقاولاتية، والتي يُشار إليها أسفلها بـ "NESDA"، بجمع ومعالجة وتخزين بيانات ذات طابع شخصي. تُعد حماية هذه البيانات التزامًا مطلقًا على جميع موظفي NESDA، وذلك امتثالًا تامًا لأحكام القانون رقم 18-07 المؤرخ في 10 جوان 2018 والمتعلق بحماية الأشخاص الطبيعيين في مجال معالجة البيانات ذات الطابع الشخصي.</p>
-                <p>تعمل NESDA، التي يقع مقرها الاجتماعي في 8، شارع أرزقي بن بوزيد -- العناصر الجزائر -- الجزائر، بصفتها مسؤول المعالجة للبيانات التي يتم جمعها عبر موقعها الإلكتروني.</p>
-            </div>
-
-            <div class="content-section">
-                <h2>2. الموافقة وقبول السياسة</h2>
-                <p>باستخدام موقع الويب www.nesda.dz والروابط المتاحة عليه، فإنكم تقرون بأنكم قرأتم وفهمتم هذه السياسة وتوافقون على جمع ومعالجة واستخدام وحفظ معلوماتكم وفقًا للطرق الموضحة أدناه، وذلك امتثالًا لأحكام القانون رقم 18-07 المؤرخ في 25 رمضان 1439 الموافق لـ 10 جوان 2018 والمتعلق بحماية الأشخاص الطبيعيين في مجال معالجة البيانات ذات الطابع الشخصي.</p>
-            </div>
-
-            <div class="content-section">
-                <h2>3. مبادئ حماية البيانات الشخصية</h2>
-                <p>تلتزم NESDA باحترام جميع المبادئ الأساسية المتعلقة بحماية البيانات الشخصية وفقًا للتشريعات المعمول بها، ولا سيما فيما يتعلق بما يلي:</p>
-                <ul>
-                    <li>شرعية المعالجة ونزاهتها وشفافيتها</li>
-                    <li>تحديد أغراض المعالجة وحصرها</li>
-                    <li>تقليل البيانات التي يتم جمعها</li>
-                    <li>دقة البيانات وتحديثها بانتظام</li>
-                    <li>تحديد مدة الاحتفاظ بالبيانات</li>
-                    <li>سلامة البيانات وسريتها، بما في ذلك أمن المعالجة</li>
-                    <li>احترام حقوق الأشخاص المعنيين</li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h2>4. فئات البيانات الشخصية التي يتم جمعها</h2>
-                <p>عند استخدامكم لخدمات NESDA وموقعها الإلكتروني، قد يتم جمع فئات البيانات الشخصية التالية:</p>
-
-                <h3>بيانات التعريف</h3>
-                <p>الاسم، اللقب، الاسم المستعار، تاريخ الميلاد، الرقم الوطني للتعريف (NIN)، رقم الحساب البنكي (RIB) / رقم الحساب الجاري البريدي (CCP)، رقم الضمان الاجتماعي.</p>
-
-                <h3>بيانات الاتصال</h3>
-                <p>رقم الهاتف الثابت أو المحمول، العنوان البريدي، عنوان البريد الإلكتروني.</p>
-
-                <h3>بيانات العمليات والمعاملات المصرفية</h3>
-                <p>طبيعة العمليات، التاريخ، تفاصيل المدفوعات بالبطاقة، التحويلات، الاقتطاعات، المبلغ، البيان.</p>
-
-                <h3>بيانات الاتصال التقنية</h3>
-                <p>معرفات وبيانات المصادقة الخاصة بكم في مساحاتكم المتصلة، سجلات الدخول (logs)، ملفات تعريف الارتباط (cookies) وغيرها من أدوات التتبع، بيانات التصفح على الموقع الإلكتروني (عنوان IP، نوع المتصفح، الصفحات التي تمت زيارتها، إلخ).</p>
-            </div>
-
-            <div class="content-section">
-                <h2>5. أغراض معالجة البيانات الشخصية</h2>
-                <p>تعالج NESDA البيانات الشخصية التي يتم جمعها من أجل تحقيق مهامها وفي إطار واحد أو أكثر من الأغراض التالية:</p>
-                <ul>
-                    <li>الامتثال للالتزامات القانونية والتنظيمية</li>
-                    <li>التكوين والمرافقة وإنشاء وترقية المؤسسات المصغرة</li>
-                    <li>إدارة الحسابات والعلاقة مع المرقين والشركاء</li>
-                    <li>تقييم وإدارة المخاطر</li>
-                    <li>منع وكشف وتحري حالات عدم الدفع والاحتيال</li>
-                    <li>التحصيل</li>
-                    <li>التوظيف وإدارة شؤون الموظفين</li>
-                    <li>تقديم المشورة والمعلومات</li>
-                    <li>أمن نظام المعلومات والأشخاص والممتلكات</li>
-                    <li>حفظ وأرشفة المعلومات</li>
-                    <li>التشغيل السليم لنظام المعلومات</li>
-                    <li>التعاون مع شركاء NESDA</li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h2>6. ملفات تعريف الارتباط (Cookies)</h2>
-                <p>يستخدم موقع الويب www.nesda.dz ملفات تعريف الارتباط وتقنيات تتبع أخرى لتحسين تجربة المستخدم، وتخصيص المحتوى، وتحليل حركة المرور على الموقع.</p>
-
-                <h3>أنواع ملفات تعريف الارتباط المستخدمة:</h3>
-                <ul>
-                    <li><strong>ملفات تعريف الارتباط الضرورية:</strong> ضرورية للتشغيل السليم للموقع وتمكنك من استخدام وظائفه الأساسية</li>
-                    <li><strong>ملفات تعريف الارتباط التحليلية:</strong> تجمع معلومات حول كيفية استخدام الزوار لموقعنا</li>
-                    <li><strong>ملفات تعريف الارتباط الوظيفية:</strong> تسمح للموقع بتذكر اختياراتك وتفضيلاتك</li>
-                    <li><strong>ملفات تعريف الارتباط الإعلانية:</strong> تُستخدم لعرض إعلانات أكثر ملاءمة لك</li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h2>7. حقوق الأشخاص المعنيين</h2>
-                <p>وفقًا للقانون رقم 18-07 المتعلق بحماية البيانات الشخصية، لديكم الحقوق التالية فيما يتعلق ببياناتكم الشخصية:</p>
-                <ul>
-                    <li><strong>حق الوصول:</strong> الحصول على تأكيد ما إذا كانت بيانات شخصية تتعلق بكم قيد المعالجة</li>
-                    <li><strong>حق التصحيح:</strong> طلب تصحيح البيانات الشخصية غير الدقيقة أو غير الكاملة</li>
-                    <li><strong>حق المحو:</strong> طلب محو بياناتكم الشخصية في بعض الحالات</li>
-                    <li><strong>حق تقييد المعالجة:</strong> طلب تقييد معالجة بياناتكم في ظروف معينة</li>
-                    <li><strong>حق الاعتراض:</strong> الاعتراض على معالجة بياناتكم لأسباب مشروعة</li>
-                    <li><strong>حق نقل البيانات:</strong> الحصول على بياناتكم بتنسيق منظم وقابل للقراءة آليًا</li>
-                    <li><strong>حق سحب الموافقة:</strong> سحب موافقتكم في أي وقت عندما تستند المعالجة إلى هذه الموافقة</li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h2>8. أمن البيانات الشخصية</h2>
-                <p>تتخذ NESDA تدابير تقنية وتنظيمية مناسبة لضمان مستوى من الأمان يتناسب مع المخاطر، وذلك لحماية بياناتكم الشخصية من التدمير أو الفقدان أو التغيير أو الكشف غير المصرح به.</p>
-                <p>تشمل هذه التدابير استخدام تقنيات إخفاء الهوية وتشفير البيانات، وضمان سرية وسلامة أنظمة المعالجة، وإجراءات استعادة البيانات، بالإضافة إلى بنود سرية صارمة للموظفين.</p>
-            </div>
-
-            <div class="content-section">
-                <h2>9. مدة الاحتفاظ بالبيانات</h2>
-                <p>تحتفظ NESDA ببياناتكم الشخصية فقط للمدة اللازمة للأغراض التي جمعت وعولجت من أجلها، وفقًا للالتزامات القانونية والتنظيمية المعمول بها. يتم تحديد مدة الاحتفاظ بناءً على أغراض المعالجة، والقيود التشغيلية، وكذلك فترات التقادم القانونية.</p>
-            </div>
+    <div class="privacy-content">
+        <div class="content-section">
+            <h2>@localizer["PolitiqueTitre1"]</h2>
+            <p>
+                @localizer["PolitiqueTitre1P1"]
+            </p>
+            <p>
+                @localizer["PolitiqueTitre1P2"]
+            </p>
         </div>
 
-        <div class="privacy-contact">
-            <h2>الاتصال</h2>
-            <p>لأية أسئلة تتعلق بسياسة حماية البيانات الشخصية وملفات تعريف الارتباط الحالية، أو لممارسة حقوقكم، يمكنكم الاتصال بـ NESDA:</p>
-            <div class="contact-details">
-                <p><strong>الوكالة الوطنية لدعم وتنمية المقاولاتية (NESDA)</strong></p>
-                <p><strong>العنوان:</strong> 8، شارع أرزقي بن بوزيد – العناصر الجزائر – الجزائر</p>
-                <p><strong>البريد الإلكتروني:</strong> dpo@nesda.dz</p>
-                <p><strong>الموقع الإلكتروني:</strong> www.nesda.dz</p>
-            </div>
+        <div class="content-section">
+            <h2>@localizer["PolitiqueTitre2"] </h2>
+            <p>@localizer["PolitiqueTitre2P"] </p>
         </div>
-    </section>
+
+        <div class="content-section">
+            <h2>@localizer["PolitiqueTitre3"]</h2>
+            <p>
+                @localizer["PolitiqueTitre3Text"]
+            </p>
+            <ul>
+                <li>@localizer["PolitiqueTitre3P1"]</li>
+                <li>@localizer["PolitiqueTitre3P2"]</li>
+                <li>@localizer["PolitiqueTitre3P3"]</li>
+                <li>@localizer["PolitiqueTitre3P4"]</li>
+                <li>@localizer["PolitiqueTitre3P5"]</li>
+                <li>@localizer["PolitiqueTitre3P6"]</li>
+                <li>@localizer["PolitiqueTitre3P7"]</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>@localizer["PolitiqueTitre4"]</h2>
+            <p>
+                @localizer["PolitiqueTitre4Text"]
+        </p>
+
+        <h3>@localizer["PolitiqueTitre4P1"]</h3>
+        <p>
+            @localizer["PolitiqueTitre4P1Text"]
+        </p>
+
+        <h3>@localizer["PolitiqueTitre4P2"]</h3>
+        <p>@localizer["PolitiqueTitre4P2Text"]</p>
+
+        <h3>@localizer["PolitiqueTitre4P3"]</h3>
+        <p>@localizer["PolitiqueTitre4P3Text"]</p>
+
+        <h3>@localizer["PolitiqueTitre4P4"]</h3>
+        <p>@localizer["PolitiqueTitre4P4Text"]</p>
+    </div>
+
+    <div class="content-section">
+        <h2>@localizer["PolitiqueTitre5"] </h2>
+        <p>@localizer["PolitiqueTitre5Text"]</p>
+        <ul>
+            <li>@localizer["PolitiqueTitre5P1"]</li>
+            <li>@localizer["PolitiqueTitre5P2"]</li>
+            <li>@localizer["PolitiqueTitre5P3"]</li>
+            <li>@localizer["PolitiqueTitre5P4"]</li>
+            <li>@localizer["PolitiqueTitre5P5"]</li>
+            <li>@localizer["PolitiqueTitre5P6"]</li>
+            <li>@localizer["PolitiqueTitre5P7"]</li>
+            <li>@localizer["PolitiqueTitre5P8"]</li>
+            <li>@localizer["PolitiqueTitre5P9"]</li>
+            <li>@localizer["PolitiqueTitre5P10"]</li>
+            <li>@localizer["PolitiqueTitre5P11"]</li>
+            <li>@localizer["PolitiqueTitre5P12"]</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>@localizer["PolitiqueTitre6"]</h2>
+        <p>@localizer["PolitiqueTitre6Text"]</p>
+        <h3>@localizer["PolitiqueTitre6ST"]</h3>
+        <ul>
+            <li><strong>@localizer["PolitiqueTitre6ST11"]</strong>@localizer["PolitiqueTitre6ST12"] </li>
+            <li><strong>@localizer["PolitiqueTitre6ST21"]</strong>@localizer["PolitiqueTitre6ST22"] </li>
+            <li><strong>@localizer["PolitiqueTitre6ST31"]</strong>@localizer["PolitiqueTitre6ST32"]</li>
+            <li><strong>@localizer["PolitiqueTitre6ST41"]</strong>@localizer["PolitiqueTitre6ST42"] </li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>@localizer["PolitiqueTitre7"]</h2>
+        <p>@localizer["PolitiqueTitre7Text"]</p>
+        <ul>
+            <li><strong>@localizer["PolitiqueTitre7TextP11"]</strong>@localizer["PolitiqueTitre7TextP12"] </li>
+            <li><strong>@localizer["PolitiqueTitre7TextP21"]</strong>@localizer["PolitiqueTitre7TextP22"] </li>
+            <li><strong>@localizer["PolitiqueTitre7TextP31"]</strong>@localizer["PolitiqueTitre7TextP32"] </li>
+            <li><strong>@localizer["PolitiqueTitre7TextP41"]</strong>@localizer["PolitiqueTitre7TextP42"] </li>
+            <li><strong>@localizer["PolitiqueTitre7TextP51"]</strong>@localizer["PolitiqueTitre7TextP52"] </li>
+            <li><strong>@localizer["PolitiqueTitre7TextP61"]</strong>@localizer["PolitiqueTitre7TextP62"] </li>
+            <li><strong>@localizer["PolitiqueTitre7TextP71"]</strong>@localizer["PolitiqueTitre7TextP72"] </li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>@localizer["PolitiqueTitre8"]</h2>
+        <p>@localizer["PolitiqueTitre8P1"]  </p>
+        <p>@localizer["PolitiqueTitre8P2"]</p>
+    </div>
+
+    <div class="content-section">
+        <h2>@localizer["PolitiqueTitre9"]</h2>
+        <p>@localizer["PolitiqueTitre9Text"]</p>
+    </div>
+</div>
+
+<div class="privacy-contact">
+    <h2>@localizer["PolitiqueTitre10"]</h2>
+    <p>@localizer["PolitiqueTitre10Text"]</p>
+    <div class="contact-details">
+        <p><strong>@localizer["AgenceNesda"]</strong></p>
+        <p><strong>@localizer["Adresse"]</strong> @localizer["AdresseDG"]</p>
+        <p><strong>@localizer["Email"]:</strong> dpo@nesda.dz</p>
+        <p><strong>@localizer["Site"]</strong> www.nesda.dz</p>
+    </div>
+</div>
+</section>

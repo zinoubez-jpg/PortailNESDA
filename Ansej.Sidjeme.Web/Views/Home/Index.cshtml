@@ -1,203 +1,16 @@
 ﻿@model List<Ansej.Sidjeme.Domain.Entities.Article>
 
-
+@inject IStringLocalizer<Menu> menulocalizer
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-<style>
-
-    .faq {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-        .faq .display-6 {
-            line-height: 1.2;
-        }
-
-            .faq .display-6 span {
-                position: relative;
-                color: var(--accent-color);
-            }
-
-                .faq .display-6 span:after {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 10px;
-                    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
-                    left: 0;
-                    bottom: 5px;
-                    z-index: -1;
-                }
-
-        .faq .lead {
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            font-size: 1.125rem;
-            text-align: justify;
-        }
-
-        .faq .faq-item {
-            background-color: var(--surface-color);
-            border-radius: 15px;
-            margin-bottom: 1.5rem;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            z-index: 1;
-            border-bottom: 3px solid var(--accent-color);
-        }
-
-            .faq .faq-item:before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 0;
-                background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-                transition: height 0.5s ease;
-                z-index: -1;
-            }
-
-            .faq .faq-item:hover {
-                transform: translateY(-5px);
-            }
-
-                .faq .faq-item:hover:before {
-                    height: 100%;
-                }
-
-        .faq .faq-question {
-            padding: 1.5rem 2rem;
-            cursor: pointer;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: none;
-            border: none;
-            width: 100%;
-            text-align: right;
-            transition: all 0.3s ease;
-        }
-
-            .faq .faq-question h5 {
-                margin: 0;
-                font-size: 1.25rem;
-                font-weight: 700;
-                color: var(--heading-color);
-                flex: 1;
-            }
-
-            .faq .faq-question .faq-icon {
-                width: 40px;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-                border-radius: 50%;
-                margin-left: 1rem;
-                transition: all 0.3s ease;
-                flex-shrink: 0;
-            }
-
-                .faq .faq-question .faq-icon i {
-                    font-size: 1rem;
-                    color: var(--accent-color);
-                    transition: all 0.3s ease;
-                }
-
-        .faq .faq-item:hover .faq-question .faq-icon {
-            background-color: var(--accent-color);
-        }
-
-            .faq .faq-item:hover .faq-question .faq-icon i {
-                color: var(--contrast-color);
-            }
-
-        .faq .faq-answer {
-            padding: 0 2rem 1.5rem 2rem;
-            max-height: 0;
-            overflow: hidden;
-            transition: all 0.4s ease;
-            opacity: 0;
-        }
-
-            .faq .faq-answer p {
-                margin: 0;
-                color: color-mix(in srgb, var(--default-color), transparent 20%);
-                text-align: justify;
-                line-height: 1.6;
-            }
-
-        .faq .faq-item.active .faq-answer {
-            max-height: 300px;
-            opacity: 1;
-            padding-top: 0;
-        }
-
-        .faq .faq-item.active .faq-question .faq-icon i {
-            transform: rotate(180deg);
-        }
-
-        .faq .stats-row {
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .faq .stat-box {
-            display: flex;
-            flex-direction: column;
-            background-color: var(--surface-color);
-            padding: 1rem 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            min-width: 110px;
-            border-bottom: 3px solid var(--accent-color);
-            transition: transform 0.3s ease;
-            text-align: center;
-        }
-
-            .faq .stat-box:hover {
-                transform: translateY(-5px);
-            }
-
-            .faq .stat-box .stat-number {
-                font-size: 2rem;
-                font-weight: 700;
-                line-height: 1;
-                color: var(--heading-color);
-            }
-
-            .faq .stat-box .stat-label {
-                font-size: 0.875rem;
-                color: color-mix(in srgb, var(--default-color), transparent 30%);
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                margin-top: 5px;
-            }
-
-    @@media (max-width: 768px) {
-        .faq .faq-question {
-            padding: 1rem 1.5rem;
-        }
-
-        .faq .faq-answer {
-            padding: 0 1.5rem 1rem 1.5rem;
-        }
-
-        .faq .faq-question h5 {
-            font-size: 1.1rem;
-        }
-    }
-</style>
-
-
-
-
-
+@if (System.Threading.Thread.CurrentThread.CurrentCulture.Name == "ar-DZ")
+{
+    <link href="~/css/PrincipalAr.css" rel="stylesheet">
+}
+else
+{
+    <link href="~/css/PrincipalEn.css" rel="stylesheet">
+}
 
 
 
@@ -213,8 +26,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-7" data-aos="zoom-out" data-aos-delay="100">
                     <div class="hero-content">
-                        <h1> الوكالة الوطنية لدعم و تنمية المقاولاتية  <span style="color: #41c1ba;">NESDA</span> </h1>
-                        <p>مرحبًا بكم في الموقع الرسمي للوكالة، فضاؤكم لمرافقة الأفكار وتحويلها إلى مشاريع ناجحة.</p>
+                        <h1> @localizer["Agence"]   <span style="color: #41c1ba;">NESDA</span> </h1>
+                        <p>@localizer["bienvenue"]</p>
                         <div class="cta-buttons">
                             <a href="#services" class="btn-primary">@messageslocalizer["Nosservices"]</a>
 
@@ -379,8 +192,8 @@
 
             <div class="notable-alumni">
                 <div class="section-header text-center" data-aos="fade-up" data-aos-delay="200">
-                    <h3>@messageslocalizer["Servicesdigitaux"]</h3>
-                    <p>تقدم وكالة ناسدا مجموعة من الخدمات الرقمية المبتكرة التي تهدف إلى دعم المقاولاتية، وتسهيل مختلف الإجراءات الإدارية لفائدة الشباب</p>
+                    <h3>@menulocalizer["ServicesDigitaux"]</h3>
+                    <p>@messageslocalizer["ServicesdigitauxDetail"]</p>
                 </div>
 
                 <div class="row">
@@ -431,6 +244,40 @@
                                 </div>
                                 <div class="profile-body">
                                     <h4>@messageslocalizer["Formationenligne"]</h4>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <a href="https://business.nesda.dz/" target="_blank">
+                            <div class="alumni-profile">
+                                <div class="profile-header">
+                                    <div class="profile-img">
+                                        <img src="~/NesdaTMP/assets/img/NesdaImg/LogoBusinessHub.PNG" alt="BusinessHub" class="img-fluid">
+                                    </div>
+
+                                </div>
+                                <div class="profile-body">
+                                    <h4>small Business Hub</h4>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <a href="https://watani.nesda.dz/" target="_blank">
+                            <div class="alumni-profile">
+                                <div class="profile-header">
+                                    <div class="profile-img">
+                                        <img src="~/NesdaTMP/assets/img/NesdaImg/logoTawtin.png" alt="tawtin" class="img-fluid">
+                                    </div>
+
+                                </div>
+                                <div class="profile-body">
+                                    <h4>@messageslocalizer["Tawtin"]</h4>
                                 </div>
 
                             </div>
@@ -534,14 +381,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                     <div class="intro-content">
-                        <h2 class="fw-bold">مركز الإتصالات</h2>
-                        <p class="lead">يوفر مركز الإتصال التابع لوكالة ناسدا قناة تواصل مباشرة  ، ويعمل من أجل الاستجابة السريعة لانشغالاتكم وتوجيهاتكم.</p>
-                        <p class="lead">نسعى من خلاله إلى تعزيز الشفافية وتحسين تجربة المستخدم.</p>
+                        <h2 class="fw-bold">@localizer["CentreComunication"]  </h2>
+                        <p class="lead">@messageslocalizer["CentreComunicationD1"] </p>
+                        <p class="lead">@messageslocalizer["CentreComunicationD2"]</p>
                         <div class="stats-container">
 
                             <div class="stat-item">
-                                <span class="stat-number">033 033 0770</span>
-                                <span class="stat-label">اتصل الآن – فريقنا جاهز لخدمتك على مدار الساعة.</span>
+                                <span class="stat-number">0770 03 30 33 </span>
+                                <span class="stat-label">@messageslocalizer["ContactUs"]</span>
                             </div>
                         </div>
                     </div>
@@ -578,10 +425,10 @@
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
                 <h2 class="display-6 fw-bold mb-4">
-                    الأسئلة <span>الشائعة</span>
+                    @localizer["question"]   <span>@localizer["frequente"]</span>
                 </h2>
                 <p class="lead mb-5">
-                    نجيب على أكثر الأسئلة شيوعاً التي تم طرحها من قبل. إذا لم تجد إجابة لسؤالك هنا، فلا تتردد في التواصل معنا مباشرة.
+                    @messageslocalizer["reponse"]
                 </p>
             </div>
         </div>
@@ -595,213 +442,215 @@
                 <!-- FAQ Item 1 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل يمكنني إنشاء مؤسسة في ولايتي الأصلية فقط أم في أي ولاية؟</h5>
+                        <h5>  @messageslocalizer["Q1"] </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>نعم، يحق لحامل المشروع إنشاء مشروعه في أي ولاية شاء، شريطة تقديمه لوثيقة تثبت تواجده بالولاية المراد الإستثمار فيها.</p>
+                        <p>
+                            @messageslocalizer["R1"]
+                        </p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 2 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>ما هي المجالات و الأنشطة التي تمولها ناسدا؟</h5>
+                        <h5>@messageslocalizer["Q2"] </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>تعنى الوكالة بتمويل كل الأنشطة في مختلف المجالات (الصناعة، الإنتاج، الفلاحة، الخدمات، الحرف و المهن الحرة...إلخ).</p>
+                        <p> @messageslocalizer["R2"] </p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 3 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل التكوين إجباري للإستفادة من الدعم؟</h5>
+                        <h5>@messageslocalizer["Q3"] </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>نعم، التكوين في مجال المقاولاتية الذي تؤمنه مراكز تطوير المقاولاتية شرط أساسي للإستفادة من الإعانات و الإمتيازات الممنوحة في إطار جهاز الوكالة.</p>
+                        <p>@messageslocalizer["R3"]</p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 4 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل هناك مرافقة بعد إطلاق المشروع لمساعدتي على النجاح؟</h5>
+                        <h5>@messageslocalizer["Q4"] </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>من بين المهام الموكلة للوكالة، مرافقة حاملي المشاريع قبل و بعد تجسيد مشاريعهم.</p>
+                        <p>@messageslocalizer["R4"]</p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 5 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل يشترط مرور مدة معينة على إنشاء المشروع للإستفادة من التوسعة؟</h5>
+                        <h5>@messageslocalizer["Q5"] </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>من بين شروط الإستفادة من التوسعة تقديم الحصيلة السنوية الخاصة بمؤسسته للسنتين الأخيرتين.</p>
+                        <p>@messageslocalizer["R5"]</p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 6 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>كيف يمكنني تتبع دراسة ملفي بعد إيداعه؟ </h5>
+                        <h5>@messageslocalizer["Q6"]  </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>عبر  فضاء صاحب المشروع مخصص لصاحب المشروع لإدارة معلوماته، متابعة تقدم مشروعه، وإنجاز مختلف الإجراءات عبر المنصة الإلكترونية.</p>
+                        <p>@messageslocalizer["R6"]</p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 7 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5> هل يجب أن تكون فكرة المشروع مرتبطة بالتخصص الدراسي أو شهادة التكوين؟ </h5>
+                        <h5>@messageslocalizer["Q7"]   </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>يمكن لحامل المشروع أن يحدث أي نشاط ذو جدوى و مردودية و يمكنه تحقيق مكانة في الأسواق، شريطة إثباته لقدرات تمكنه من التحكم في هذا الأخير. </p>
+                        <p>@messageslocalizer["R7"] </p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 8 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل يجب أن أكون مسجلا في وكالة التشغيل للإستفاة من الدعم؟ </h5>
+                        <h5>@messageslocalizer["Q8"]  </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>لا، إلا أن المسجلين في وكالة التشغيل يمكنه الإستفادة من الإعانات و الإمتيازات الممنوحة في إطار جهاز الوكالة بغرض إحداث أنشطة.</p>
+                        <p> @messageslocalizer["R8"]</p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 9 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل يمكن ذوي الإحتياجات الخاصة الإستفادة من شروط خاصة؟ </h5>
+                        <h5>@messageslocalizer["Q9"]  </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>وضعت الوكالة إجراءات مبسطة و سهلة تراعي كل الفئات من حاملي المشاريع.</p>
+                        <p>@messageslocalizer["R9"]</p>
                     </div>
                 </div>
                 <!-- FAQ Item 10 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل تقدم ناسدا دعما للمشاريع التي تستهدف الإبتكار؟ </h5>
+                        <h5>@messageslocalizer["Q10"]  </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>تهدف الوكالة إلى إحداث مشاريع من شأنها أن تغطي السوق المحلي، و تشجيعها على الولوج إلى الأسواق العالمية.</p>
+                        <p>@messageslocalizer["R10"]</p>
                     </div>
                 </div>
                 <!-- FAQ Item 11 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل يمكنني إنشاء مشروع في مجال لا أملك فيه شهادة لكن لدي خبرة ميدانية؟ </h5>
+                        <h5>@messageslocalizer["Q11"]  </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>لقد وضعت الدولة الجزائرية عدة هيئات رسمية تعنى بإثبات و المصادقة على الخبرة المهنية المكتسبة.</p>
+                        <p>@messageslocalizer["R11"]</p>
                     </div>
                 </div>
                 <!-- FAQ Item 12 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>كم تستغرق فترة دراسة الملف للحصول على التمويل؟ </h5>
+                        <h5>@messageslocalizer["Q12"]  </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>لا يمكن تحديد فترة معينة، نظرا لوجود عدة معايير تختلف بإختلاف نمط التمويل.</p>
+                        <p>@messageslocalizer["R12"]</p>
                     </div>
                 </div>
                 <!-- FAQ Item 13 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>ماذا أفعل إذا تم رفض طلبي للتمويل؟ </h5>
+                        <h5>@messageslocalizer["Q13"]  </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>التقرب من المرافق المكلف بملفكم ليفيدكم بالطرق الواجب إتباعها وفقا لسبب الرفض.        </p>
+                        <p>@messageslocalizer["R13"]</p>
                     </div>
                 </div>
                 <!-- FAQ Item 14 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل تساعد ناسدا في إيجاد شركاء أو مستثمرين؟ </h5>
+                        <h5>@messageslocalizer["Q14"]  </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>يمكن لحامل المشروع الاستفادة من مشاريع في اطار الاتفاقيات المبرمة مع مختلف القطاعات الاقتصادية.</p>
+                        <p>@messageslocalizer["R14"]</p>
                     </div>
                 </div>
                 <!-- FAQ Item 15 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>ما هو الحد الأقصى للتمويل الذي يمكن الحصول عليه؟ </h5>
+                        <h5>@messageslocalizer["Q15"]  </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>لا يمكن أن تتجاوز القيمة الإجمالية للمشروع عشر (10) ملايين دينار جزائري.</p>
+                        <p>@messageslocalizer["R15"]</p>
                     </div>
                 </div>
                 <!-- FAQ Item 16 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل يمكنني تسديد القرض قبل الآجال المحددة دون غرامات؟ </h5>
+                        <h5>@messageslocalizer["Q16"]  </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>نعم، يمكن لصاحب المشروع تسديد المستحقات المالي المترتبة على مشروعه قبل الآجال المتفق عليها.</p>
+                        <p>@messageslocalizer["R16"]</p>
                     </div>
                 </div>
                 <!-- FAQ Item 17 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل توفر الوكالة فرصا للمشاركة في المعارض أو الفعاليات الاقتصادية؟ </h5>
+                        <h5>@messageslocalizer["Q17"]  </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>تعمل الوكالة على تشجيع المشاريع و المؤسسات المستحدثة من خلال الترويج لها عبر مختلف الفعاليات.  </p>
+                        <p>@messageslocalizer["R17"]  </p>
                     </div>
                 </div>
             </div>
@@ -814,10 +663,10 @@
                     <div class="card-icon" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background-color: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 50%; margin: 0 auto 1.5rem;">
                         <i class="fas fa-envelope" style="font-size: 1.75rem; color: var(--accent-color);"></i>
                     </div>
-                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700; color: var(--heading-color);">لم تجد إجابة لسؤالك؟</h3>
-                    <p style="margin-bottom: 1.5rem; color: color-mix(in srgb, var(--default-color), transparent 20%);">تواصل معنا مباشرة وسنكون سعداء للإجابة على جميع استفساراتك</p>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700; color: var(--heading-color);"> @messageslocalizer["responseNotFound"]</h3>
+                    <p style="margin-bottom: 1.5rem; color: color-mix(in srgb, var(--default-color), transparent 20%);">@messageslocalizer["askUs"] </p>
                     <a asp-controller="Contactus" asp-action="Index" id="Contact" class="btn btn-lg" style="background-color: var(--accent-color); color: var(--contrast-color); padding: 0.75rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
-                        تواصل معنا
+                        @localizer["ContactUs"]
                     </a>
                 </div>
             </div>

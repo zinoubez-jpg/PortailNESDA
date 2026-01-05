@@ -274,19 +274,27 @@
 
                     <div class="form-group">
                         <label asp-for="TitleAr" class="form-label">العنوان بالعربية</label>
-                        <input asp-for="TitleAr" class="form-control" placeholder="أدخل عنوان الاستشارة بالعربية" />
+                        <input asp-for="TitleAr" class="form-control arabic-only" 
+                               placeholder="أدخل عنوان الاستشارة بالعربية"
+                               dir="rtl"/>
                         <span asp-validation-for="TitleAr" class="text-danger small"></span>
                     </div>
 
                     <div class="form-group">
                         <label asp-for="TitleFr" class="form-label">العنوان بالفرنسية</label>
-                        <input asp-for="TitleFr" class="form-control" placeholder="أدخل العنوان بالفرنسية" />
+                        <input asp-for="TitleFr" 
+                               class="form-control latin-only" 
+                               placeholder="أدخل العنوان بالفرنسية"
+                               dir="ltr" />
                         <span asp-validation-for="TitleFr" class="text-danger small"></span>
                     </div>
 
                     <div class="form-group">
                         <label asp-for="TitleEn" class="form-label">العنوان بالإنجليزية</label>
-                        <input asp-for="TitleEn" class="form-control" placeholder="أدخل العنوان بالإنجليزية" />
+                        <input asp-for="TitleEn"
+                               class="form-control latin-only"
+                               placeholder="أدخل العنوان بالإنجليزية"
+                               dir="ltr" />
                         <span asp-validation-for="TitleEn" class="text-danger small"></span>
                     </div>
 
@@ -418,6 +426,18 @@
             element.addEventListener('blur', function () {
                 this.parentElement.style.transform = 'translateY(0)';
             });
+        });
+
+        // exiger l'ecriture en lettre latines
+        document.querySelector('.latin-only').addEventListener('input', function (e) {
+            // Autorise seulement les lettres latines, chiffres, espaces et certains caractères
+            this.value = this.value.replace(/[^A-Za-z0-9\s\-_,\.;:()']/g, '');
+        });
+
+        //exiger l'ecriture en lettres arabe
+        document.querySelector('.arabic-only').addEventListener('input', function (e) {
+            // Autorise seulement les lettres arabes, chiffres arabes, espaces et certains caractères
+            this.value = this.value.replace(/[^\u0600-\u06FF\s0-9٠-٩ـ،؛؟]/g, '');
         });
     </script>
 }

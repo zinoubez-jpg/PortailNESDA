@@ -1,6 +1,6 @@
 ﻿@using System.Globalization
 @{
-    ViewData["Title"] = messageslocalizer["مجلة ناسدا Mag"];
+    ViewData["Title"] = messageslocalizer["Mag"];
 }
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -178,7 +178,8 @@
 
             .info-content li:before {
                 content: "•";
-                position: absolute;
+                /*position: absolute;*/
+                margin-inline:8px;
                 right: 0;
                 color: var(--accent-color);
                 font-weight: bold;
@@ -338,9 +339,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="intro-content">
-                        <h2>مجلة <span>ناسدا Mag</span></h2>
+                        <h2> @localizer["Mag"]<span> @localizer["MagNesda"]</span></h2>
                         <p class="lead">
-                            تعلن الوكالة الوطنية لدعم وتنمية المقاولاتية (NESDA) عن الإصدار الرسمي للعدد الأول من مجلتها المتخصصة، لتكون بذلك أول مجلة متكاملة في مجال المقاولاتية في الجزائر. وتأتي هذه الخطوة الاستراتيجية في إطار التزام الوكالة بتعزيز ثقافة ريادة الأعمال وتوفير مرجع معرفي ومنصة تفاعلية لجميع الفاعلين في منظومة المقاولاتية و ريادة الاعمال.
+                            @messageslocalizer["MagText"]
                         </p>
                     </div>
                 </div>
@@ -358,32 +359,32 @@
                 <!-- رؤية المجلة -->
                 <div class="info-item">
                     <div class="info-header">
-                        <h5>رؤية المجلة</h5>
+                        <h5> @localizer["MagTitre1"]</h5>
                         <div class="info-icon">
                             <i class="fas fa-bullseye"></i>
                         </div>
                     </div>
                     <div class="info-content">
-                        <p>تهدف المجلة، التي تحمل عنوان "ناسدا Mag"، إلى تقديم محتوى نوعي يجمع بين الجانب الأكاديمي والعملي، ويسلط الضوء على الفرص الاستثمارية الواعدة في مختلف القطاعات الاقتصادية.</p>
+                        <p> @messageslocalizer["MagTitre1Text"]</p>
                     </div>
                 </div>
 
                 <!-- محتوى المجلة -->
                 <div class="info-item">
                     <div class="info-header">
-                        <h5>ما تقدمه المجلة</h5>
+                        <h5> @localizer["MagTitre2"]</h5>
                         <div class="info-icon">
                             <i class="fas fa-book-open"></i>
                         </div>
                     </div>
                     <div class="info-content">
-                        <p>هذه المجلة هي فضاء معرفي جديد ومتميز، وستكون مصدركم الأول للاطلاع على:</p>
+                        <p> @localizer["MagTitre2Text"]</p>
                         <ul>
-                            <li>آخر المستجدات في مجال المقاولاتية وريادة الاعمال</li>
-                            <li>قصص النجاحات الملهمة لرواد الأعمال الجزائريين</li>
-                            <li>تحليلات متعمقة لواقع ومستقبل القطاع في الجزائر</li>
-                            <li>نصائح وإرشادات عملية لمرافقة و دعم المؤسسات المصغرة</li>
-                            <li>حوارات مع مختلف الفاعلين في مجال المقاولاتية</li>
+                            <li>@localizer["MagTitre2TextP1"]</li>
+                            <li>@localizer["MagTitre2TextP2"]</li>
+                            <li>@localizer["MagTitre2TextP3"]</li>
+                            <li>@localizer["MagTitre2TextP4"]</li>
+                            <li>@localizer["MagTitre2TextP5"]</li>
                         </ul>
                     </div>
                 </div>
@@ -394,11 +395,11 @@
                         <i class="fas fa-quote-right"></i>
                     </div>
                     <blockquote>
-                        و في تصريح له بهذه المناسبة, أكد السيد بلال عشاشة المدير العام للوكالة الوطنية لدعم وتنمية المقاولاتية على أن إطلاق هذه المجلة يمثل إضافة نوعية للمشهد الاقتصادي الوطني، وخطوة أساسية في الاستراتيجية الجديدة التي ترتكز على التكوين والمرافقة وتمكين حاملي الافكار و المشاريع من أدوات النجاح. هذه المجلة هي التزام منا بمواكبة التحول الرقمي وضمان وصول المعلومة الصحيحة والمحفزة إلى جميع رواد الاعمال في كافة ربوع الوطن.
+                        @messageslocalizer["MagDeclarationDG"]
                     </blockquote>
                     <div class="author">
-                        بلال عشاشة
-                        <div class="author-title">المدير العام للوكالة الوطنية لدعم وتنمية المقاولاتية</div>
+                        @localizer["Directeur"]
+                        <div class="author-title">@localizer["PosteDirecteurNesda"]</div>
                     </div>
                 </div>
 
@@ -413,9 +414,9 @@
                     <div class="card-icon">
                         <i class="fas fa-book-reader"></i>
                     </div>
-                    <h3>اكتشف العدد الأول</h3>
-                    <p>تصفح مجلة ناسدا Mag الآن واطلع على أحدث المحتويات في عالم المقاولاتية وريادة الأعمال</p>
-                    <a asp-action="paged" asp-controller="EJournal" class="btn" id="ctaButton">تصفح المجلة الآن</a>
+                    <h3>@localizer["DecouvrirMag1"]</h3>
+                    <p>@localizer["DecouvrirMag1Text"]</p>
+                    <a asp-action="paged" asp-controller="EJournal" class="btn" id="ctaButton">@localizer["ParcourirMag"]</a>
                 </div>
             </div>
         </div>

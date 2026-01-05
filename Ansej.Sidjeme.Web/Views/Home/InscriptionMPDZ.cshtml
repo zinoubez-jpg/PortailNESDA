@@ -139,11 +139,14 @@
 
             .advantage-list li:before {
                 content: "✓";
-                position: absolute;
+                /*position: absolute;*/
+                margin-inline:8px;
                 right: 0;
                 color: var(--accent-color);
                 font-weight: bold;
                 font-size: 1.2rem;
+                display: inline-block;
+                margin-inline-end: 8px;
             }
 
     .example-item {
@@ -228,6 +231,7 @@
 </style>
 
 
+
 <div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
     <div class="container position-relative">
         <h1>@ViewData["Title"]</h1>
@@ -251,17 +255,14 @@
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                     <div class="intro-content">
                         <h2 class="fw-bold">
-                            البوابة الإلكترونية <span>للصفقات العمومية</span>
-
-
+                            @localizer["Inscription_MPDZ_Titre"]
                         </h2>
                         <p class="lead">
-                            توفر البوابة الإلكترونية للصفقات العمومية منهج الجديد للعمل يطمح إلى تكريس إجراءات أكثر حداثة، بساطة، سهولة و سرعة بين المتعاملين الاقتصاديين والمصالح المتعاقدة في مجال الطلب العمومي. حيث تهدف الى توفير ضمان احترام أكبر لمبادئ حرية الوصول إلى الطلب العمومي، المساواة بين المرشحين و شفافية الإجراءات.
+                            @messageslocalizer["Inscription_MPDZ_Text_01"]
                         </p>
                         <p class="lead">
-                            كما تقدم البوابة الالكترونية للمتعاملين الاقتصاديين وأصحاب المؤسسات المصغرة مختلف المعلومات والبيانات المتعلقة بالطلب العمومي على كافة مستوى الوطن، ولاسيما الاستشارات والصفقات العمومية، بالإضافة الى توفير خدمات أخرى على غرار الإطلاع على مختلف دعوات المنافسة وكذا تحميل دفاتر الشروط.
+                            @messageslocalizer["Inscription_MPDZ_Text_02"]
                         </p>
-
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
@@ -269,8 +270,6 @@
                         <div class="intro-image main-image">
                             <img src="~/NesdaTMP/assets/img/NesdaImg/Mpublic.png" alt="mp nesda" class="img-fluid rounded">
                         </div>
-
-                     
 
                     </div>
                 </div>
@@ -285,7 +284,7 @@
 
 <section class="cnrc-section">
     <div class="container">
-     
+
 
         <!-- Main Information -->
         <div class="row justify-content-center">
@@ -294,84 +293,115 @@
 
                 <!-- Portal Objectives -->
                 <div class="info-card">
-                    <h3><i class="fas fa-bullseye" style="color: var(--accent-color); margin-left: 1rem;"></i>أهداف البوابة الإلكترونية للصفقات العمومية</h3>
+                    <h3>
+                        <i class="fas fa-bullseye" style="color: var(--accent-color); margin-left: 1rem;"></i>
+                        @localizer["Objectives_Portail_MPDZ_Titre"]
+                    </h3>
                     <div class="subsection">
                         <ul class="advantage-list">
-                            <li>تكريس إجراءات أكثر حداثة وبساطة في التعامل</li>
-                            <li>ضمان المساواة بين جميع المرشحين والمتعاملين</li>
-                            <li>توفير الشفافية الكاملة في جميع الإجراءات</li>
-                            <li>تسهيل الوصول إلى الطلب العمومي لجميع المتعاملين</li>
-                            <li>تسريع عمليات التعاقد والمناقصات العمومية</li>
+                            <li>
+                                @localizer["Objective_Portail_MPDZ_01"]
+                            </li>
+                            <li>
+                                @localizer["Objective_Portail_MPDZ_02"]
+                            </li>
+                            <li>
+                                @localizer["Objective_Portail_MPDZ_03"]
+                            </li>
+                            <li>
+                                @localizer["Objective_Portail_MPDZ_04"]
+                            </li>
+                            <li>
+                                @localizer["Objective_Portail_MPDZ_05"]
+                            </li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Available Services -->
                 <div class="info-card">
-                    <h3><i class="fas fa-cogs" style="color: var(--accent-color); margin-left: 1rem;"></i>الخدمات المتاحة عبر البوابة</h3>
+                    <h3>
+                        <i class="fas fa-cogs" style="color: var(--accent-color); margin-left: 1rem;"></i>
+                        @localizer["Services_Portail_MPDZ_Titre"]
+                    </h3>
                     <div class="examples-section">
                         <div class="example-item">
-                            الإطلاع على جميع الاستشارات والصفقات العمومية على المستوى الوطني
+                            @localizer["Services_Portail_MPDZ_01"]
                         </div>
                         <div class="example-item">
-                            متابعة مختلف دعوات المنافسة والمناقصات الجارية
+                            @localizer["Services_Portail_MPDZ_02"]
                         </div>
                         <div class="example-item">
-                            تحميل كافة دفاتر الشروط والوثائق المطلوبة
+                            @localizer["Services_Portail_MPDZ_03"]
                         </div>
                         <div class="example-item">
-                            تقديم العروض والمشاركة في المناقصات إلكترونياً
+                            @localizer["Services_Portail_MPDZ_04"]
                         </div>
                         <div class="example-item">
-                            متابعة حالة العروض المقدمة والنتائج
+                            @localizer["Services_Portail_MPDZ_05"]
                         </div>
                     </div>
                 </div>
 
                 <!-- Registration Benefits -->
                 <div class="info-card">
-                    <h3><i class="fas fa-star" style="color: var(--accent-color); margin-left: 1rem;"></i>مزايا التسجيل في البوابة</h3>
+                    <h3>
+                        <i class="fas fa-star" style="color: var(--accent-color); margin-left: 1rem;"></i>
+                        @localizer["Advantages_Portail_MPDZ_Titre"]
+                    </h3>
                     <div class="subsection">
                         <ul class="advantage-list">
-                            <li>الوصول المباشر إلى جميع الفرص التجارية الحكومية</li>
-                            <li>توفير الوقت والجهد في البحث عن المناقصات</li>
-                            <li>ضمان عدم تفويت أي فرصة استثمارية مهمة</li>
-                            <li>سهولة تقديم العروض والمتابعة الإلكترونية</li>
-                            <li>الحصول على إشعارات فورية للمناقصات الجديدة</li>
+                            <li>
+                                @localizer["Advantages_Portail_MPDZ_01"]
+                            </li>
+                            <li>
+                                @localizer["Advantages_Portail_MPDZ_02"]
+                            </li>
+                            <li>
+                                @localizer["Advantages_Portail_MPDZ_03"]
+                            </li>
+                            <li>
+                                @localizer["Advantages_Portail_MPDZ_04"]
+                            </li>
+                            <li>
+                                @localizer["Advantages_Portail_MPDZ_05"]
+                            </li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Registration Steps -->
                 <div class="info-card">
-                    <h3><i class="fas fa-list-ol" style="color: var(--accent-color); margin-left: 1rem;"></i>خطوات التسجيل</h3>
+                    <h3><i class="fas fa-list-ol" style="color: var(--accent-color); margin-left: 1rem;"></i>@localizer["EtapesInscription"]</h3>
                     <div class="examples-section">
                         <div class="example-item">
-                            <strong>الخطوة الأولى:</strong> الدخول إلى البوابة الإلكترونية للصفقات العمومية
+                            <strong>@messageslocalizer["EtapesInscription1P1"]</strong> @messageslocalizer["EtapesInscription1P2"]
                         </div>
                         <div class="example-item">
-                            <strong>الخطوة الثانية:</strong> النقر على "إنشاء حساب جديد" أو "التسجيل"
+                            <strong>@messageslocalizer["EtapesInscription2P1"]</strong> @messageslocalizer["EtapesInscription2P2"]
                         </div>
                         <div class="example-item">
-                            <strong>الخطوة الثالثة:</strong> ملء البيانات المطلوبة (معلومات المؤسسة، بيانات الاتصال)
+                            <strong>@messageslocalizer["EtapesInscription3P1"]</strong> @messageslocalizer["EtapesInscription3P2"]
                         </div>
                         <div class="example-item">
-                            <strong>الخطوة الرابعة:</strong> رفع الوثائق المطلوبة (السجل التجاري، بطاقة المؤسسة...)
+                            <strong>@messageslocalizer["EtapesInscription4P1"]</strong> @messageslocalizer["EtapesInscription4P2"]
                         </div>
                         <div class="example-item">
-                            <strong>الخطوة الخامسة:</strong> تأكيد التسجيل وانتظار الموافقة
+                            <strong>@messageslocalizer["EtapesInscription5P1"]</strong> @messageslocalizer["EtapesInscription5P2"]
                         </div>
                     </div>
                 </div>
 
                 <!-- Portal Access Link -->
                 <div class="link-section">
-                    <h2 class="section-title2"><i class="fas fa-link" style="color: var(--accent-color); margin-left: 1rem;"></i>الولوج إلى البوابة الإلكترونية</h2>
+                    <h2 class="section-title2"><i class="fas fa-link" style="color: var(--accent-color); margin-left: 1rem;"></i>@localizer["AccesPortal"]</h2>
                     <p class="section-text2">
-                        للولوج الى البوابة الإلكترونية للصفقات العمومية والبدء في عملية التسجيل، يرجى النقر على الرابط التالي:
+
+                        @messageslocalizer["AccesPortalDesc"]
                     </p>
                     <a href="https://marches-publics.gov.dz" class="thm-btnrg" target="_blank">
-                        رابط التسجيل الإلكتروني
+
+                        @localizer["URL"]
                     </a>
                     <div style="margin-top: 1.5rem; font-size: 0.9rem; color: color-mix(in srgb, var(--default-color), transparent 40%);">
                         https://marches-publics.gov.dz
@@ -380,47 +410,53 @@
 
                 <!-- Support and Assistance -->
                 <div class="info-card">
-                    <h3><i class="fas fa-hands-helping" style="color: var(--accent-color); margin-left: 1rem;"></i>الدعم والمساعدة</h3>
+                    <h3>
+                        <i class="fas fa-hands-helping" style="color: var(--accent-color); margin-left: 1rem;"></i>
+                        @localizer["Assistance"]
+                    </h3>
                     <p class="section-text2">
-                        تحرص الوكالة الوطنية لدعم وتنمية المقاولاتية على تقديم الدعم اللازم للمؤسسات المصغرة في عملية التسجيل والاستفادة من خدمات البوابة الإلكترونية للصفقات العمومية، من خلال تنظيم دورات تدريبية وورش عمل تعريفية بكيفية الاستفادة المثلى من هذه الخدمات الرقمية.
+
+                        @messageslocalizer["AssistanceDescP1"]
                     </p>
                     <p class="section-text2">
-                        كما تسعى الوكالة إلى تسهيل عملية الولوج إلى السوق العمومية للمؤسسات المصغرة من خلال التنسيق مع الجهات المختصة وتقديم الإرشادات والتوجيهات اللازمة لضمان المشاركة الفعالة في الصفقات العمومية.
+
+                        @messageslocalizer["AssistanceDescP2"]
                     </p>
                 </div>
 
             </div>
         </div>
 
-       
+
     </div>
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-<script>// Add hover effects for buttons
-        document.addEventListener('DOMContentLoaded', function() {
-            const buttons = document.querySelectorAll('.register-link, .thm-btnrg, a[href*="marches-publics"]');
-            buttons.forEach(button => {
-                button.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-2px)';
-                    this.style.boxShadow = '0 8px 25px rgba(65, 193, 186, 0.3)';
-                });
-
-                button.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                    this.style.boxShadow = 'none';
-                });
+<script>
+    // Add hover effects for buttons
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.register-link, .thm-btnrg, a[href*="marches-publics"]');
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = '0 8px 25px rgba(65, 193, 186, 0.3)';
             });
 
-            // Add hover effects for cards
-            const cards = document.querySelectorAll('.info-card, .intro-card');
-            cards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px)';
-                });
-
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                });
+            button.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
             });
-        });</script>
+        });
+
+        // Add hover effects for cards
+        const cards = document.querySelectorAll('.info-card, .intro-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-5px)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    });</script>

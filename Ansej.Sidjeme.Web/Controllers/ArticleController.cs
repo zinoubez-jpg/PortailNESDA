@@ -8,8 +8,10 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -22,10 +24,14 @@ namespace Ansej.Sidjeme.Web.Controllers
     {
         private readonly ArticleBusinessService _articleBusinessService;
         private readonly UserService _userService;
-        public ArticleController(ArticleBusinessService articleBusinessService, UserService userService)
+        private readonly IMemoryCache _memoryCache;
+        public ArticleController(ArticleBusinessService articleBusinessService,
+                                 UserService userService,
+                                 IMemoryCache memoryCache)
         {
             _articleBusinessService = articleBusinessService;
             _userService = userService;
+            _memoryCache = memoryCache;
         }
       
 
@@ -85,29 +91,44 @@ namespace Ansej.Sidjeme.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(ArticleCreateViewModel model)
         {
+            ModelState.Remove("Article.AuthorId"); 
             if (!ModelState.IsValid)
                 return View(model);
             // Generate slug if not manually set (you can extend the ViewModel to accept a Slug too)
-            var slug = await GenerateUniqueSlugAsync(model.Title);
+            var slug = await GenerateUniqueSlugAsync(model.Article.Title);
             string relativePath = $"documents/articles/{slug}";
-            string filePath = await SaveUploadedFileAsync(model.Image, relativePath, model.Title);
+
+            string filePath;
+
+            if (IsImage(model.Image))               
+                filePath = await SaveUploadedFileAsync(model.Image, relativePath, model.Article.Title);            
+            else
+            {
+                ViewData["Message"] = "يرجى منكم تحميل صورة للمقال";
+                return View(model);
+            }
+
 
             var user = await _userService.GetUserAsync(User);
 
-            var article = new Article
-            {
-                Title = model.Title,
-                Summary = model.Summary,
-                Content = model.Content,
-                ImageUrl = filePath,
-                IsPinned = model.IsPinned,
-                IsPublished = model.IsPublished,
-                CreatedAt = DateTime.Now,
-                AuthorId = user.FullName,
-                Slug = slug
-            };
+            //var article = new Article
+            //{
+            //    Title = model.Title,
+            //    Summary = model.Summary,
+            //    Content = model.Content,
+            //    ImageUrl = filePath,
+            //    IsPinned = model.IsPinned,
+            //    IsPublished = model.IsPublished,
+            //    CreatedAt = DateTime.Now,
+            //    AuthorId = user.FullName,
+            //    Slug = slug
+            //};
+            model.Article.AuthorId = user.FullName;
+            model.Article.CreatedAt = DateTime.Now;
+            model.Article.ImageUrl = filePath;
+            model.Article.Slug = slug;
 
-            var result = _articleBusinessService.Add(article);
+            var result = _articleBusinessService.Add(model.Article);
 
             if (!result.Succeeded)
                 return View(model);
@@ -122,15 +143,18 @@ namespace Ansej.Sidjeme.Web.Controllers
             var article = _articleBusinessService.GetById(id);
             if (article == null)
                 return NotFound();
-
-            var viewModel = new ArticleCreateViewModel
-            {
+            Article articleVM = new Article {
                 Id = article.Id,
                 Title = article.Title,
                 Summary = article.Summary,
                 Content = article.Content,
-                IsPinned = article.IsPinned,
-                IsPublished = article.IsPublished
+            };
+
+            var viewModel = new ArticleCreateViewModel
+            {
+                Article=articleVM//,
+                //IsPinned = article.IsPinned,
+               // IsPublished = article.IsPublished
             };
 
             return View(viewModel);
@@ -147,21 +171,22 @@ namespace Ansej.Sidjeme.Web.Controllers
             var article = _articleBusinessService.GetById(id);
             if (article == null)
                 return NotFound();
-            if (model.Title != article.Title)
+
+            if (model.Article.Title != article.Title)
             {
-                article.Title = model.Title;
-                article.Slug = await GenerateUniqueSlugAsync(model.Title);
+                article.Title = model.Article.Title;
+                article.Slug = await GenerateUniqueSlugAsync(model.Article.Title);
             }
-            article.Summary = model.Summary;
-            article.Content = model.Content;
-            article.IsPinned = model.IsPinned;
-            article.IsPublished = model.IsPublished;
+            article.Summary = model.Article.Summary;
+            article.Content = model.Article.Content;
+            article.IsPinned = model.Article.IsPinned;
+            article.IsPublished = model.Article.IsPublished;
             article.UpdatedAt = DateTime.UtcNow;
 
             if (model.Image != null && model.Image.Length > 0)
             {
                 string relativePath = $"documents/articles/{article.Slug}";
-                string filePath = await SaveUploadedFileAsync(model.Image, relativePath, model.Title);
+                string filePath = await SaveUploadedFileAsync(model.Image, relativePath, model.Article.Title);
                 article.ImageUrl = filePath;
             }
 
@@ -174,20 +199,38 @@ namespace Ansej.Sidjeme.Web.Controllers
             return View(model);
         }
 
-
-       
+        [Route("name")]
         public IActionResult Details(string name)
         {
-            if (string.IsNullOrWhiteSpace(name))
-                return NotFound();
+            //if(name!=null)
+            //  _memoryCache.Set("slugResearch", name);
 
-            var article = _articleBusinessService.GetSingle(a => a.Slug == name);
+            string MotCle;          
+
+
+            //if (string.IsNullOrWhiteSpace(name))
+            //    return NotFound();
+
+            if (string.IsNullOrWhiteSpace(name))
+                _memoryCache.TryGetValue("slugResearch", out MotCle);
+            else
+            {
+                _memoryCache.Set("slugResearch", name);
+                MotCle = name;
+            }
+               
+
+
+            var article = _articleBusinessService.GetSingle(a => a.Slug == MotCle);
 
             if (article == null || article.IsDeleted || !article.IsPublished)
                 return NotFound();
 
             return View("Details", article);
         }
+
+       
+
         [Authorize(Roles = "Admin,Article")]
         public IActionResult TogglePublish(int id)
         {
@@ -201,6 +244,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             var result = _articleBusinessService.Update(article);
             return result.Succeeded ? Ok() : StatusCode(500);
         }
+        
         [Authorize(Roles = "Admin,Article")]
         public IActionResult Delete(int id)
         {
@@ -351,6 +395,25 @@ namespace Ansej.Sidjeme.Web.Controllers
                 search = "";
             }
         }
+
+        public bool IsImage(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+                return false;
+            
+            string[] validExtensions = { ".jpg", ".jpeg", ".png", ".gif" };
+            int maxSize = 2 * 1024 * 1024; // en octets
+
+            string extension = Path.GetExtension(file.FileName);
+
+            if (!validExtensions.Contains(extension.ToLower()) || file.Length > maxSize)
+            {
+
+                return false;
+            }
+            return true;
+        }
+
 
         #endregion
     }

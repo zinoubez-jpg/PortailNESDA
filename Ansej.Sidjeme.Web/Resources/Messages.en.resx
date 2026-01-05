@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ACCOMPAGNEMENT" xml:space="preserve">
-    <value>ACCOMPAGNEMENT</value>
+    <value>Accompaniment</value>
   </data>
   <data name="ACCOMPAGNEMENTDETAILS" xml:space="preserve">
-    <value>Un accompagnement durant tout le processus de création et d'exploitation de votre microentreprise</value>
+    <value>The Agency ensures support to idea holders and owners of investment projects in micro-enterprises at all stages from the conception of the entrepreneurial idea to the launch of the micro-enterprise, and even beyond</value>
   </data>
   <data name="ActDetails1" xml:space="preserve">
     <value>Durant le mois sacré du Ramadhan, Nesda organise des expo-vente des microentreprises.</value>
@@ -136,7 +136,7 @@
     <value>Activité</value>
   </data>
   <data name="Actualités" xml:space="preserve">
-    <value>Actualités</value>
+    <value>News</value>
   </data>
   <data name="AgenceNationaledAppui" xml:space="preserve">
     <value>Agence Nationale d'Appui</value>
@@ -161,21 +161,106 @@ et Antennes Locales</value>
     <value>Antenne Tissemsilt</value>
   </data>
   <data name="AproposD2" xml:space="preserve">
-    <value>azdzefezrgtyhjrjyukuilyolioumumppmomuo</value>
+    <value>The Agency and its mechanism have recently undergone significant and important developments, reflecting a series of reforms aimed at a radical shift from a purely administrative approach in processing files to a coherent economic approach, in addition to improving efficiency and performance in management, particularly regarding financial risk management, as well as raising awareness of entrepreneurial thinking and enhancing the skills and competencies of young people. The aim is to encourage the creation of high-performing micro-enterprises that are resilient and generate sustainable added value in the national economy.</value>
   </data>
   <data name="AproposD3" xml:space="preserve">
-    <value>hjhjkqsdhjqshdjkqhsjkdhqsjkhdjkqshdjkqhdjhqsjkdhqksjdhkjqshdjkqsd</value>
+    <value>The National Entrepreneurship Support and Development Agency comprises 51 wilaya agencies, as well as many branches distributed across the national territory, with more than 170 local branches. In addition, there are presence points through more than 200 Entrepreneurship Development Centers, distributed across various universities, institutes, and schools in the higher education sector, as well as institutes and institutions in the vocational education and training sector.</value>
   </data>
   <data name="Aproposdetails" xml:space="preserve">
-    <value>Promouvoir un écosystème entrepreneurial favorisant la création,                 le financement et le développement de microentreprises performantes,
- résilientes et créatrices de valeur ajoutée durable pour les citoyens
- et pour la nation.</value>
+    <value>The National Entrepreneurship Support and Development Agency is a government body of a special nature, placed under the tutelage of the Ministry of Knowledge Economy, Start-ups, and Micro-Enterprises. It manages a mechanism with an economic approach, aimed at supporting project holders in creating and expanding micro-enterprises in the production of goods and services, with the goal of generating wealth and sustainable employment opportunities. The Agency’s tasks focus on the following core activities</value>
+  </data>
+  <data name="askUs" xml:space="preserve">
+    <value>Reach out to us directly—we’ll be glad to answer all your questions.</value>
   </data>
   <data name="Avantage" xml:space="preserve">
-    <value>Avantages</value>
+    <value>Privileges</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_01" xml:space="preserve">
+    <value>The Digital Platform</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_03" xml:space="preserve">
+    <value>to carry out procedures related to the agency’s mechanism, in addition to providing quick and ease access and use, as well as ensuring</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_05" xml:space="preserve">
+    <value>in data handling throughout all stages of the procedures.</value>
+  </data>
+  <data name="AvantageProgramme1,1" xml:space="preserve">
+    <value>Project financing may reach up to</value>
+  </data>
+  <data name="AvantageProgramme1,2" xml:space="preserve">
+    <value>10,000,000 DZD.</value>
+  </data>
+  <data name="AvantageProgramme2,1" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="AvantageProgramme2,2" xml:space="preserve">
+    <value>5-day</value>
+  </data>
+  <data name="AvantageProgramme2,3" xml:space="preserve">
+    <value>entrepreneurship training session at the Agency.</value>
+  </data>
+  <data name="AvantageProgramme3" xml:space="preserve">
+    <value>Joint financing formulas are mixed between the project owner, and the Agency, and triangular between the project owner, the Agency, and the Bank.</value>
+  </data>
+  <data name="AvantageProgramme4,1" xml:space="preserve">
+    <value>Loans with</value>
+  </data>
+  <data name="AvantageProgramme4,2" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="AvantageProgramme4,3" xml:space="preserve">
+    <value>interest rebate.</value>
+  </data>
+  <data name="AvantageProgramme5" xml:space="preserve">
+    <value>Attractive loan repayment terms.</value>
+  </data>
+  <data name="AvantageProgramme6" xml:space="preserve">
+    <value>Tax benefits in accordance with the conditions specified in the current tax legislation.</value>
   </data>
   <data name="Avril2025" xml:space="preserve">
     <value>April 2025</value>
+  </data>
+  <data name="AxesProgramme1P1" xml:space="preserve">
+    <value>“Perception” Axis:</value>
+  </data>
+  <data name="AxesProgramme1P2" xml:space="preserve">
+    <value>It aims to raise awareness about the importance of entrepreneurship and the role of micro-enterprises in local economic development, by instilling in society a new perception of the opportunities offered by the Agency’s updated mechanism and breaking away from previous misconceptions.</value>
+  </data>
+  <data name="AxesProgramme2P1" xml:space="preserve">
+    <value>“Mindset” Axis:</value>
+  </data>
+  <data name="AxesProgramme2P2" xml:space="preserve">
+    <value>It seeks to develop entrepreneurial thinking among young people from different categories and educational levels, encourage their entrepreneurial spirit, and equip them with essential knowledge to help them overcome the challenges inherent to creating and managing micro-enterprises.</value>
+  </data>
+  <data name="AxesProgramme3P1" xml:space="preserve">
+    <value>“Creation” Axis:</value>
+  </data>
+  <data name="AxesProgramme3P2" xml:space="preserve">
+    <value>It aims to support the creation of micro-enterprises across various economic sectors related to local development, in line with the specificities, capacities, and needs of each wilaya, while mobilizing the different resources and potential available within the entrepreneurial ecosystem.</value>
+  </data>
+  <data name="AxesProgramme4P1" xml:space="preserve">
+    <value>“Development” Axis:</value>
+  </data>
+  <data name="AxesProgramme4P2" xml:space="preserve">
+    <value>It aims to support the development of micro-enterprises by expanding their activities across various economic sectors for local development, taking into account the specificities, capacities, and needs of each wilaya, while exploiting the resources and potential available in the entrepreneurial ecosystem.</value>
+  </data>
+  <data name="AxesProgramme5P1" xml:space="preserve">
+    <value>“Employment” Axis:</value>
+  </data>
+  <data name="AxesProgramme5P2" xml:space="preserve">
+    <value>It seeks to highlight the contribution of micro-enterprises to the local labor market by generating direct and indirect jobs based on the characteristics of value chains in various economic sectors.</value>
+  </data>
+  <data name="AxesProgrammeDesc" xml:space="preserve">
+    <value>The program is structured around the following five axes, which also represent its main objectives:</value>
+  </data>
+  <data name="axesStrategiqueP1" xml:space="preserve">
+    <value>Continuing and strengthening support for young project holders and developing ways to provide assistance, in terms of specialized training programs, as well as diversifying funding methods and including quality and innovative solutions.</value>
+  </data>
+  <data name="axesStrategiqueP2" xml:space="preserve">
+    <value>Intensify joint efforts with various actors from governmental bodies and institutions, public and private institutions, social partners and civil society, with the aim of developing a stable and sustainable entrepreneurial and micro-enterprise ecosystem; which would enhance the ability of micro-enterprises to grow and thrive, especially in terms of competitiveness.</value>
+  </data>
+  <data name="axesStrategiqueP3" xml:space="preserve">
+    <value>Developing the Agency and supporting its operational capabilities through reviewing the work plan and evaluating projects, improving user skills, digitalizing services, and enhancing the means and facilities to improve working and reception conditions, which will be reflected in its performance.</value>
   </data>
   <data name="BienvenueFAQ" xml:space="preserve">
     <value>Bienvenue dans notre section FAQ</value>
@@ -189,26 +274,273 @@ et Antennes Locales</value>
   <data name="BTPT2" xml:space="preserve">
     <value>notre fondation</value>
   </data>
+  <data name="ButProgrammeDesc1" xml:space="preserve">
+    <value>The program is based on a holistic approach that brings together the various stakeholders of the local entrepreneurial ecosystem: the Wilaya, the Commune, decentralized services, and the relevant bodies and institutions. The success of the program depends on the combined efforts of all local development actors, in order to implement the directives of the President of the Republic, Mr. Abdelmadjid Tebboune, aimed at creating 450,000 jobs and establishing sustainable local development, with the goal of reaching the year 2027, which will be a decisive milestone for Algeria, marked by the completion of the digitization process and the reaping of the benefits of developing the national economy.</value>
+  </data>
+  <data name="ButProgrammeDesc2" xml:space="preserve">
+    <value>Promoting local micro-enterprises means enhancing the national production value chain and paving the way towards self-sufficiency, in order to achieve “Algerian production for Algerians.”</value>
+  </data>
+  <data name="CadreProgramme1" xml:space="preserve">
+    <value>The program implements the commitments of the President of the Republic, Mr. Abdelmadjid Tebboune, to develop a “new economic model based on diversified growth and the knowledge economy.” These commitments stem from his dedication and interest in youth, the promotion of entrepreneurship among them, and his support for their projects.</value>
+  </data>
+  <data name="CadreProgramme2" xml:space="preserve">
+    <value>It translates his high-level directives aimed at meeting the challenge of economic recovery by building a productive and diversified economy that creates value and quality and sustainable local development.</value>
+  </data>
+  <data name="CadreProgramme3" xml:space="preserve">
+    <value>The program also contributes to strengthening the role of local authorities as a driving force for national development.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_01" xml:space="preserve">
+    <value>The Entrepreneurship Development Centers (CDE) established in various vocational education and training institutions, institutes and training schools, as part of the government program aimed at promoting an entrepreneurial culture, aim to provide trainee entrepreneurs with a favorable environment to realize their commercial ideas and projects, as they are equipped with modern resources and facilities that support the development of their entrepreneurial skills.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_02" xml:space="preserve">
+    <value>Training at entrepreneurship development centers (CDE) is considered one of the basic conditions for establishing a micro-enterprise within the framework of the National Agency for Supporting and Developing Entrepreneurship and benefiting from the financing formulas it provides.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_03" xml:space="preserve">
+    <value>Registration at the level of entrepreneurship development centers (CDE) in the education and vocational training sector is exclusively online via the following link:</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_01" xml:space="preserve">
+    <value>The Entrepreneurship Development Centers (CDE) established in various higher education and scientific research institutions – universities, institutes and higher schools – as part of the government program aimed at promoting entrepreneurship in the university environment, aim to provide student entrepreneurs with a favorable environment to realize their business ideas and projects, as they are equipped with modern resources and facilities to support the development of students’ entrepreneurial skills.</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_02" xml:space="preserve">
+    <value>Training at entrepreneurship development centers (CDE) is considered one of the basic conditions for establishing a micro-enterprise within the framework of the National Entrepreneurship Support and Development Agency (NESDA) and benefiting from the financing formulas it provides.</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_03" xml:space="preserve">
+    <value>Registration at the level of entrepreneurship development centers (CDE) in the higher education and scientific research sector is exclusively online via the following link:</value>
+  </data>
+  <data name="CentreComunicationD1" xml:space="preserve">
+    <value>Nasda’s call center provides a direct communication channel, and works to respond quickly to your concerns and guidance</value>
+  </data>
+  <data name="CentreComunicationD2" xml:space="preserve">
+    <value>Through this channel, we seek to enhance transparency and improve the user experience</value>
+  </data>
+  <data name="ComiteSuivi" xml:space="preserve">
+    <value>The Monitoring Committee is tasked with exercising post-implementation oversight of the Board of Directors’ decisions. It meets at the end of each quarter and provides useful observations and recommendations on the best ways to implement the programs and projects initiated by the agency.</value>
+  </data>
   <data name="commentpeut-onvousaider?" xml:space="preserve">
     <value>comment peut-on vous aider?</value>
   </data>
+  <data name="Conditionbeneficier1,1,1" xml:space="preserve">
+    <value>Must not be removed from the Commercial Register, Artisan Card, license, etc.</value>
+  </data>
+  <data name="Conditionbeneficier1,1,2" xml:space="preserve">
+    <value>Must be committed to the loan repayment schedule (bank loan and unremunerated loan), without being more than five years behind the repayment timetable.</value>
+  </data>
+  <data name="Conditionbeneficier1,1,3" xml:space="preserve">
+    <value>Must have fully repaid the bank loan and/or the unremunerated loan, depending on the financing type (mixed, triangular, change of bank, etc.).</value>
+  </data>
+  <data name="Conditionbeneficier1,1,4" xml:space="preserve">
+    <value>Must own all necessary equipment for the activity, whether acquired during the creation phase or replaced during operation in the case of full repayment of the bank loan and the unremunerated loan.</value>
+  </data>
+  <data name="Conditionbeneficier1,2,1" xml:space="preserve">
+    <value>Must possess qualifications (by the manager, one of the partners, or one of the employees) in the field of requested expansion.</value>
+  </data>
+  <data name="Conditionbeneficier1,2,2" xml:space="preserve">
+    <value>Must fully repaid bank and/or unremunerated loans related to the creation of the activity.</value>
+  </data>
+  <data name="Conditionbeneficier1,2,3" xml:space="preserve">
+    <value>Must currently be in operation for the main or another activity (activity change without being removed from the Commercial Register, Artisan Card, license, etc.) created within the Agency’s mechanism.</value>
+  </data>
+  <data name="Conditionbeneficier2,1" xml:space="preserve">
+    <value>Have not benefited from subsidies and advantages activity expansion provided by any other public support agencies (ANGEM or CNAC).</value>
+  </data>
+  <data name="Conditionbeneficier2,2" xml:space="preserve">
+    <value>Have not benefited from subsidies and advantages activity creation within the framework of the Algerian Investment Agency (AAPI).</value>
+  </data>
+  <data name="Conditionbeneficier2,3" xml:space="preserve">
+    <value>Possess qualifications related to the activity being expanded (from the manager, one of the partners, or one of the workers).</value>
+  </data>
+  <data name="ConditionbeneficierCommun1" xml:space="preserve">
+    <value>Aged between 20 and 58 years</value>
+  </data>
+  <data name="ConditionbeneficierCommun2" xml:space="preserve">
+    <value>Have been active during the last two years with proof of this (accounting records, tax declarations G12, C20, …)</value>
+  </data>
+  <data name="ConditionBeneficierDesc" xml:space="preserve">
+    <value>To benefit from the Agency’s Activity Expansion program, the enterprise owner must meet the following conditions:</value>
+  </data>
+  <data name="ConseilAdministration" xml:space="preserve">
+    <value>The Board of Directors deliberates, in accordance with applicable laws and regulations, on the Agency’s activity program, estimated budget, the Agency’s organization and internal regulations, the annual plan for financing the Agency’s activities, as well as the use of financial means, the creation of annexes and the completion of investments.</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact Us Now – Our team is ready to serve you around the clock</value>
+  </data>
   <data name="Coopérations" xml:space="preserve">
-    <value>Coopérations</value>
+    <value>COOPERATION</value>
   </data>
   <data name="CreationAgence" xml:space="preserve">
     <value>la création de l'Agence</value>
   </data>
+  <data name="Creation_Micro_Enterprise_Text" xml:space="preserve">
+    <value>All young people with project ideas who have benefited from training at entrepreneurship development centers (CDE) for university students or vocational training institute graduates are eligible for new project funding.</value>
+  </data>
   <data name="CSVF" xml:space="preserve">
     <value>CSVF</value>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>Since 2024</value>
   </data>
   <data name="de l" xml:space="preserve">
     <value>de l'</value>
   </data>
+  <data name="Declaration" xml:space="preserve">
+    <value>Please download the declaration form here, complete it, and have it certified:
+NESDA_Declaration.pdf</value>
+  </data>
+  <data name="DeclarationHonneur1" xml:space="preserve">
+    <value>Within the framework of the Ministry of Foreign Trade’s efforts to strengthen import procedures and ensure better protection of national products, we inform all start-ups and microenterprises under our ministerial departments that, according to the new regulatory provisions, any document related to the expected import program for equipment and operations, submitted for final verification by the Ministry of Trade, must first be approved by the authorized departments within the Ministry of Knowledge Economy, Start-ups, and Micro-enterprises.</value>
+  </data>
+  <data name="DeclarationHonneur2" xml:space="preserve">
+    <value>Mandatory approval of the expected import program has become a prerequisite and necessary condition for any transaction subject to verification by the Ministry of Foreign Trade.</value>
+  </data>
+  <data name="DeclarationHonneur3" xml:space="preserve">
+    <value>Regarding service imports, and in accordance with Ministerial Decree n° 55 of 13 July 2025, a joint ministerial committee has been established, mandated to assess and authorize exceptional service imports.</value>
+  </data>
+  <data name="DeclarationHonneurInfo" xml:space="preserve">
+    <value>You are requested to register and declare your plans for importing equipment, operations, and services in accordance with the current requirements. This is needed for any import program requiring the approval of our services.</value>
+  </data>
+  <data name="decrets1,1" xml:space="preserve">
+    <value>Presidential Decree n°96-234 dated 16 Safar 1417, corresponding to 2 July 1996, relating to youth employment support.</value>
+  </data>
+  <data name="decrets1,2" xml:space="preserve">
+    <value>Executive Decree n° 96-296 dated 24 Rabi’ al-Thani 1417, corresponding to 8 September 1996, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets1,3" xml:space="preserve">
+    <value>Executive Decree n°03-290 dated 9 Rajab 1424 corresponding to 6 September 2003, defines the conditions and levels of assistance provided to project holders.</value>
+  </data>
+  <data name="decrets2,1" xml:space="preserve">
+    <value>Presidential Decree n° 03-300 dated 14 Rajab 1424, corresponding to 11 September 2003, relating to youth employment support.</value>
+  </data>
+  <data name="decrets2,2" xml:space="preserve">
+    <value>Executive Decree n° 98-231 dated 19 Rabi’ al-Awwal 1419 corresponding to 13 July 1998, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets2,3" xml:space="preserve">
+    <value>Executive Decree n°10-157 dated 7 Rajab 1431 corresponding to 20 June 2010, defines the conditions and levels of assistance provided to project holders.</value>
+  </data>
+  <data name="decrets3,1" xml:space="preserve">
+    <value>Presidential Decree n°11-100 dated the first of Rabi’ al-Thani 1432, corresponding to 6 March 2011, relating to youth employment support.</value>
+  </data>
+  <data name="decrets3,2" xml:space="preserve">
+    <value>Executive Decree n°01-162 dated 18 Rabi’ al-Thani 1422 corresponding to 10 July 2001, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets4,1" xml:space="preserve">
+    <value>Presidential Decree n° 20-441 dated 15 Jumada al-Ula 1442, corresponding to 30 December 2020, relating to supporting youth employment.</value>
+  </data>
+  <data name="decrets4,2" xml:space="preserve">
+    <value>Executive Decree n° 03-288 dated 09 Rajab 1424 corresponding to 6 September 2003, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets5,1" xml:space="preserve">
+    <value>Presidential Decree n° 22-42 dated 16 Jumada al-Thania 1443, corresponding to 19 January 2022, relating to youth employment support.</value>
+  </data>
+  <data name="decrets5,2" xml:space="preserve">
+    <value>Executive Decree n°11-102 dated the first of Rabi’ al-Thani 1432, corresponding to March 6, 2011, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets6,2" xml:space="preserve">
+    <value>Executive Decree n°18-201 dated 20 Dhu al-Qi’dah 1439 corresponding to 2 August 2018, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets7,2" xml:space="preserve">
+    <value>Executive Decree n°20-329 dated 6 Rabi’ al-Thani 1442 corresponding to 22 November 2020, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets8,2" xml:space="preserve">
+    <value>Executive Decree n° 23-330 dated the first of Rabi’ al-Awwal 1445, corresponding to 17 September 2023, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decrets9,2" xml:space="preserve">
+    <value>Executive Decree n° 24-197 dated 05 Dhu al-Hijjah 1445 corresponding to 11 June 2024, includes the establishment of the National Entrepreneurship Support and Development Agency and defining its statutes.</value>
+  </data>
+  <data name="decretsAnnule1" xml:space="preserve">
+    <value>Executive Decree n°96-297 dated 24 Rabi’ al-Thani 1417 corresponding to 8 September 1996, defines the conditions and levels of assistance provided to project holders.</value>
+  </data>
+  <data name="DefinitionProgrammeImpact70P1" xml:space="preserve">
+    <value>This is the new program of the National Entrepreneurship Support and Development Agency (NESDA) for micro-enterprises interested in local development, called IMPACT 70.</value>
+  </data>
+  <data name="DefinitionProgrammeImpact70P2" xml:space="preserve">
+    <value>The name derives from the impact that a micro-enterprise has on its environment: economic (creating added value, processing raw materials, etc.), social (job creation, local services, etc.), and individual (self-fulfillment, entrepreneurship, etc.). The number 70 commemorates the anniversary of the outbreak of the glorious November 1, 1954 Revolution, which coincided with the launch of the program.</value>
+  </data>
   <data name="Depuis" xml:space="preserve">
     <value>Depuis</value>
   </data>
+  <data name="DescriptionAgenceP1" xml:space="preserve">
+    <value>has undergone a significant momentum, marking a crucial turning point in the national system for supporting micro-enterprise creation. This reflects a major strategic shift, moving from an administrative model focused on youth employment to an economic mechanism centered on the creation of successful and sustainable micro-enterprises. This new approach is based on providing greater support to project holders, aiming to help their ideas emerge, mature, and transform into profitable and viable projects.</value>
+  </data>
+  <data name="DescriptionAgenceP2" xml:space="preserve">
+    <value>positions itself as a real engine of economic transformation, by contributing effectively to the efforts of public authorities to reduce the import bill, diversify the economy, increase its resilience and generate high value-added job opportunities</value>
+  </data>
+  <data name="DescriptionAgenceP2,1" xml:space="preserve">
+    <value>The strategic shift in the agency’s role has required a number of adjustments, on the one hand, on the external level, through the establishment of strategic partnerships with key sectors in the entrepreneurial ecosystem, namely higher education and scientific research, as well as vocational training, to create and promote</value>
+  </data>
+  <data name="DescriptionAgenceP2,2" xml:space="preserve">
+    <value>) throughout the country, in addition to important partnerships with social and economic actors in key sectors such as Employment, Insurance and Agriculture</value>
+  </data>
+  <data name="DescriptionAgenceP3,1" xml:space="preserve">
+    <value>On the internal front, the agency strengthened its project evaluation and risk management capabilities by implementing training programs for its staff and adopting a new internal organization that ensures a coherent strategy and reinforces the agency's core functions, such as planning, support, evaluation, collection, and resource management. In addition, the agency has launched digital tools such as a</value>
+  </data>
+  <data name="DescriptionAgenceP3,2" xml:space="preserve">
+    <value>digital platforms such as</value>
+  </data>
+  <data name="DescriptionAgenceP3,3" xml:space="preserve">
+    <value>project evaluation platform and</value>
+  </data>
+  <data name="DescriptionAgenceP3,4" xml:space="preserve">
+    <value>performance monitoring platform, in addition to its existing website</value>
+  </data>
+  <data name="DescriptionAgenceP4" xml:space="preserve">
+    <value>The agency intends to continue the dynamic development and transformation of its operational framework, aiming to enhance the "trust" of project holders and encourage the integration of micro and small enterprises into national value chains. The ultimate goal is to enable the agency to fully play its role as a catalyst for economic transformation in service of national development.</value>
+  </data>
+  <data name="DescriptionFG" xml:space="preserve">
+    <value>The Mutual Caution Fund to Guarantee Credits Risks of the Project Holders works to cover the risks associated with bank loans granted to micro-enterprises financed within the framework of the National Entrepreneurship Support and Development Agency. The fund constitutes a complementary guarantee for banks, in addition to the guarantees provided by micro-enterprises, which contributes to strengthening banks’ confidence in financing entrepreneurial projects.</value>
+  </data>
+  <data name="DescriptionTachesFG" xml:space="preserve">
+    <value>The guarantee fund is a tool for reducing the financial risks associated with financing micro-enterprises. It provides additional guarantees to banks, alongside those offered by the entrepreneurs themselves, which include:</value>
+  </data>
   <data name="desExpo-Vente" xml:space="preserve">
     <value>des Expo-Vente</value>
+  </data>
+  <data name="ElementFonctionnementFG1" xml:space="preserve">
+    <value>The fund receives a formal request from the bank after declaring non-payment of three six-month installments.</value>
+  </data>
+  <data name="ElementFonctionnementFG2" xml:space="preserve">
+    <value>The fund conducts a field visit to verify the micro-enterprise's situation and its inability to repay.</value>
+  </data>
+  <data name="ElementFonctionnementFG3P1" xml:space="preserve">
+    <value>The bank is compensated by the Fund up to</value>
+  </data>
+  <data name="ElementFonctionnementFG3P2" xml:space="preserve">
+    <value>of the remaining debt (principal + interest).</value>
+  </data>
+  <data name="ElementFonctionnementFG4" xml:space="preserve">
+    <value>After compensation, the bank transfers the remaining debt rights to the fund.</value>
+  </data>
+  <data name="ElementFonctionnementFG5" xml:space="preserve">
+    <value>The fund undertakes the tasks of accompanying and monitoring the micro-enterprise in difficulty after compensation, in order to restoring its activity and enable it to repay its financial obligations.</value>
+  </data>
+  <data name="ElementParticipationFG1" xml:space="preserve">
+    <value>The micro-enterprise is enrolled after bank approval.</value>
+  </data>
+  <data name="ElementParticipationFG2P1" xml:space="preserve">
+    <value>The micro-enterprise's contribution rate to the fund is set at</value>
+  </data>
+  <data name="ElementParticipationFG2P2" xml:space="preserve">
+    <value>annually, calculated based on the amount and value of the bank loan, and is paid in full once.</value>
+  </data>
+  <data name="ElementParticipationFG3P1" xml:space="preserve">
+    <value>The banks' contribution rate to the fund is set at </value>
+  </data>
+  <data name="ElementParticipationFG3P2" xml:space="preserve">
+    <value>of the outstanding debt annually.</value>
+  </data>
+  <data name="ElementParticipationFG4" xml:space="preserve">
+    <value>In case of payment default (3 unpaid six-month installments):</value>
+  </data>
+  <data name="ElementParticipationFG4,1" xml:space="preserve">
+    <value>The fund conducts a field visit.</value>
+  </data>
+  <data name="ElementParticipationFG4,2P1" xml:space="preserve">
+    <value>The bank compensates </value>
+  </data>
+  <data name="ElementParticipationFG4,2P2" xml:space="preserve">
+    <value>of the remaining amount.</value>
+  </data>
+  <data name="ElementParticipationFG4,3" xml:space="preserve">
+    <value>It carries out the follow-up process with the micro-enterprise in difficulty.</value>
   </data>
   <data name="Enligne" xml:space="preserve">
     <value>En ligne</value>
@@ -216,46 +548,138 @@ et Antennes Locales</value>
   <data name="Entreprenariat" xml:space="preserve">
     <value>Entreprenariat</value>
   </data>
+  <data name="EnvironementProgramme1" xml:space="preserve">
+    <value>Investment opportunities</value>
+  </data>
+  <data name="EnvironementProgramme2" xml:space="preserve">
+    <value>Economic potential</value>
+  </data>
+  <data name="EnvironementProgramme3" xml:space="preserve">
+    <value>Strategic and priority sectors</value>
+  </data>
+  <data name="EnvironementProgramme4" xml:space="preserve">
+    <value>Development needs</value>
+  </data>
+  <data name="EnvironementProgrammeP1" xml:space="preserve">
+    <value>The program covers all economic sectors related to local development such as agriculture, construction and public works, industry, fishing, irrigation, services, transport, maintenance, liberal professions, and traditional crafts.</value>
+  </data>
+  <data name="EnvironementProgrammeP2" xml:space="preserve">
+    <value>It takes into account characteristics and specific features of each Wilaya, including:</value>
+  </data>
+  <data name="EnvironementProgrammeP3" xml:space="preserve">
+    <value>With the aim of laying the foundations for sustainable and equitable development across the entire national territory, in line with the adopted territorial planning schemes, such as plans for the coastal structure, the High Plateaus, the southern regions, the priority intervention and border development zones, the attractiveness hubs, and the integrated industrial development zones, ….</value>
+  </data>
+  <data name="EnvironementProgrammeParag1" xml:space="preserve">
+    <value>The program aims to enhance the expansion of micro-enterprise activities and give them more opportunities for development and success, within the framework of the Agency’s reform efforts, taking into account the criteria for entrepreneurship training and the control of risks related to activity financing.</value>
+  </data>
+  <data name="EnvironementProgrammeParag2" xml:space="preserve">
+    <value>The program covers owners of micro-enterprises who have previously benefited from the Agency’s support during the creation phase, as well as those who have not previously benefited from it, such as those who started their activities through the National Agency for Microcredit Management (ANGEM) or the National Unemployment Insurance Fund (CNAC), in addition to farmers, artisans, or holders of licenses and/or commercial registers.</value>
+  </data>
+  <data name="EnvironementProgrammeParag3" xml:space="preserve">
+    <value>The Expansion of activity includes various economic sectors and comprises:</value>
+  </data>
+  <data name="EnvironementProgrammeParag3P1" xml:space="preserve">
+    <value>Development of a main activity or launching a subsidiary activity: new production line, new machine, new complementary product or related to the main activity.</value>
+  </data>
+  <data name="EnvironementProgrammeParag3P2" xml:space="preserve">
+    <value>Launching a new activity: by diversifying the main activity and exploring other activity areas, …</value>
+  </data>
   <data name="Etapes" xml:space="preserve">
-    <value>Principales étapes</value>
+    <value>Main stages</value>
+  </data>
+  <data name="EtapesBeneficier1" xml:space="preserve">
+    <value>Electronic registration via the Agency’s digital platform</value>
+  </data>
+  <data name="EtapesBeneficier2" xml:space="preserve">
+    <value>Evaluation of the activity expansion project by the Agency’s services using a risk assessment system (scoring), based on criteria related to feasibility:</value>
+  </data>
+  <data name="EtapesBeneficier2,1" xml:space="preserve">
+    <value>efficiency</value>
+  </data>
+  <data name="EtapesBeneficier2,2" xml:space="preserve">
+    <value>financing</value>
+  </data>
+  <data name="EtapesBeneficier2,3" xml:space="preserve">
+    <value>directing the project holder to training if the score exceeds</value>
+  </data>
+  <data name="EtapesBeneficier3P1" xml:space="preserve">
+    <value>Special training on management skills and fundamentals for</value>
+  </data>
+  <data name="EtapesBeneficier3P2" xml:space="preserve">
+    <value>5 days</value>
+  </data>
+  <data name="EtapesBeneficier3P3" xml:space="preserve">
+    <value>at the Agency.</value>
+  </data>
+  <data name="EtapesBeneficier4" xml:space="preserve">
+    <value>Presentation of the expansion project by its owner to the Committee for the Selection, Approval and Financing of Investment Projects at the wilaya level.</value>
+  </data>
+  <data name="EtapesBeneficier5" xml:space="preserve">
+    <value>Issuance of the Eligibility and Financing Certificate by the Agency’s services for the project owner if the committee approves it, and initiation of administrative procedures related to the expansion, as applicable, with</value>
+  </data>
+  <data name="EtapesBeneficier5,1" xml:space="preserve">
+    <value>various administrative services (taxes, social security, etc.)</value>
+  </data>
+  <data name="EtapesBeneficier5,2" xml:space="preserve">
+    <value>suppliers (premises, equipment, etc.)</value>
+  </data>
+  <data name="EtapesBeneficier6" xml:space="preserve">
+    <value>Start of the new activity after completing all procedures with the Agency’s services.</value>
+  </data>
+  <data name="EtapesBeneficierdESC" xml:space="preserve">
+    <value>Steps of Benefiting from Activity Expansion under the Agency’s Mechanism include:</value>
   </data>
   <data name="etdeDéveloppement" xml:space="preserve">
     <value>et de Développement</value>
   </data>
   <data name="Evaluation" xml:space="preserve">
-    <value>Evaluation</value>
+    <value>Assessment</value>
   </data>
   <data name="Expérience" xml:space="preserve">
     <value>Expérience</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Text" xml:space="preserve">
+    <value>All project owners benefit from expansion project financing, whether they are previous beneficiaries of the agency’s services or those who established their projects from the agency’s services or whom they establish their projects.</value>
   </data>
   <data name="FCMG" xml:space="preserve">
     <value>Fonds de Garantie</value>
   </data>
   <data name="FINANCEMENT" xml:space="preserve">
-    <value>FINANCEMENT</value>
+    <value>Funding</value>
   </data>
   <data name="FinancementAlloue" xml:space="preserve">
     <value>Financement alloué aux Microentreprises</value>
   </data>
   <data name="FINANCEMENTDETAIS" xml:space="preserve">
-    <value>Des formules de financement par des prêts non rémunérés (PNR)
- adaptées pour la création et l'extension de votre activité microentreprise</value>
+    <value>The Agency grants financial subsidies according to various financing formulas, in collaboration with its partners from the public banking sector, in addition to tax privileges to the beneficiaries of the Agency's mechanism, in accordance with the legislative regulation in force</value>
+  </data>
+  <data name="FonctionnementFGDescription" xml:space="preserve">
+    <value>The Mutual Caution Fund intervenes when a repayment default is recorded, according to a series of organized procedures as follows:</value>
   </data>
   <data name="FORMATION" xml:space="preserve">
-    <value>FORMATION</value>
+    <value>Training</value>
   </data>
   <data name="FORMATIONDETAILS" xml:space="preserve">
-    <value>Des formations sur l'entreprenariat et la gestion
-des microentreprises à travers les CDE</value>
+    <value>Through its training programs, the Agency aims to promote and spread the entrepreneurial thinking among young people by organizing training sessions, in collaboration with its partners, within Entrepreneurship Development Centers, on skills and knowledge related to entrepreneurship and the creation and management of micro-enterprises</value>
   </data>
   <data name="Formationenligne" xml:space="preserve">
-    <value>Formation en ligne</value>
+    <value>Online Training</value>
+  </data>
+  <data name="FormationIntro" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency attaches great importance to the training phase, considering it the cornerstone in the process of the creation and development of micro-enterprises. This phase is part of a comprehensive approach aimed at enabling project holders to acquire the knowledge and skills necessary to transform their ideas into successful and sustainable real-world projects.</value>
+  </data>
+  <data name="FormationTitre" xml:space="preserve">
+    <value>Training programs are among the fundamental pillars upon which the National Entrepreneurship Support and Development Agency relies in supporting idea and project holders.</value>
   </data>
   <data name="Impact70" xml:space="preserve">
     <value>Impact 70</value>
   </data>
+  <data name="Impact70Desc" xml:space="preserve">
+    <value>is a new program of the National Entrepreneurship Support and Development Agency, for micro-enterprises interested in local development.</value>
+  </data>
   <data name="Impact70Details" xml:space="preserve">
-    <value>Le programme national de NESDA destiné à la microentreprise engagée dans le développement local</value>
+    <value>The program was implemented in accordance with the commitments made by President of the republic Mr. Abdelmadjid Tebboune, to develop “a new economic model based on diversified growth and knowledge economy.” Those commitments reflect a strong dedication to youth empowerment and the promotion of entrepreneurship, encouraging young people to realize their projects. They are consistent with his strategic vision to raise the challenge for economic resurgence in order to build a productive, diversified economy—one that generates value, provides quality jobs, and drives sustainable local development. 
+The programme is a contribution to strengthening the role of local communities as a locomotive in national development</value>
   </data>
   <data name="Inaugurationnouveausiège" xml:space="preserve">
     <value>Inauguration nouveau siège</value>
@@ -269,11 +693,20 @@ des microentreprises à travers les CDE</value>
   <data name="IndustrieT2" xml:space="preserve">
     <value>Produisez Local.</value>
   </data>
+  <data name="InfoGenerale" xml:space="preserve">
+    <value>Contact us for more details about the Guarantee Fund and how to benefit from its services.</value>
+  </data>
+  <data name="InfoProgrammeExtension" xml:space="preserve">
+    <value>Contact us for further details about the Activity Expansion Program and how to benefit from its services.</value>
+  </data>
+  <data name="InfoTextJuridique" xml:space="preserve">
+    <value>Contact us for assistance or legal advice regarding these texts.</value>
+  </data>
   <data name="Inscription" xml:space="preserve">
-    <value>Inscription</value>
+    <value>Subscription</value>
   </data>
   <data name="Inscriptionenligne" xml:space="preserve">
-    <value>Inscription en ligne</value>
+    <value>Online Registration</value>
   </data>
   <data name="InscriptionsCDE" xml:space="preserve">
     <value>Inscriptions CDE</value>
@@ -287,11 +720,44 @@ des microentreprises à travers les CDE</value>
   <data name="InscriptionsMPDZ" xml:space="preserve">
     <value>Inscriptions marchés publique</value>
   </data>
+  <data name="Inscription_CDE_Text" xml:space="preserve">
+    <value>The Entrepreneurship Development Centers (CDE) represent shared spaces between the National Entrepreneurship Support and Development Agency (NESDA) and its partners, where they provide dedicated spaces to promote entrepreneurship among young people and raise their capabilities and skills in establishing and managing micro-enterprises, through the provision of quality training courses offered by trainers from the Agency accredited by the International Labour Organization (ILO) , in partnership with trainers from the partner sector.</value>
+  </data>
+  <data name="Inscription_CNRC_Text" xml:space="preserve">
+    <value>Within the framework of the measures of Law No. 04-08 dated 27 Jumada II 1425 corresponding to 14 August 2004, as amended and supplemented, as well as Executive Decree No. 23-169 dated 24 April 2023, the procedures for managing and operating the electronic portal dedicated to the creation of institutions, as well as the procedures for registration, transfer, receipt of electronic documents, and granting the common identification number.</value>
+  </data>
+  <data name="Inscription_MPDZ_Text_01" xml:space="preserve">
+    <value>The electronic public procurement portal offers a new approach to work, aiming to establish more modern, simpler, easier, and faster procedures between economic operators and contracting authorities in the field of public procurement. It aims to ensure greater respect for the principles of free access to public procurement, equality among candidates, and transparency of procedures.</value>
+  </data>
+  <data name="Inscription_MPDZ_Text_02" xml:space="preserve">
+    <value>The electronic portal also provides economic operators and micro-enterprises holders with various information and data related to public procurement at the national level, especially consultations and public contracts, in addition to providing other services such as viewing various calls for competition and downloading terms and conditions.</value>
+  </data>
+  <data name="Inscription_NESDA_Text" xml:space="preserve">
+    <value>The National Entrepreneurship Development Agency (NESDA) offers a special digital platform for project holders wishing to create micro-enterprises or expand their activities, in order to register remotely to benefit from the agency’s support and financing services.</value>
+  </data>
   <data name="Lancement" xml:space="preserve">
-    <value>Lancement</value>
+    <value>Launch</value>
+  </data>
+  <data name="LectureMag" xml:space="preserve">
+    <value>The Agency’s Electronic Magazine</value>
   </data>
   <data name="Lesmisesàjourrécentes" xml:space="preserve">
-    <value>Les mises à jour récentes</value>
+    <value>Find NESDA news / latest updates</value>
+  </data>
+  <data name="lireSuite" xml:space="preserve">
+    <value>Read more</value>
+  </data>
+  <data name="Mag" xml:space="preserve">
+    <value>NESDA Magazine Mag</value>
+  </data>
+  <data name="MagDeclarationDG" xml:space="preserve">
+    <value>In a statement on this occasion, Mr. Bilal Achacha, Director General of the National Entrepreneurship Support and Development Agency (NESDA), emphasized that the release of this magazine represents a qualitative addition to the national economic scene and a fundamental step in the new strategy based on training, accompanying, and empowering idea and project holders with the tools for success. This magazine is our commitment to keeping pace with the digital transformation and ensuring that accurate and motivating information reaches all entrepreneurs throughout the country.</value>
+  </data>
+  <data name="MagText" xml:space="preserve">
+    <value>The National entrepreneurship support and development Agency (NESDA) announces the official release of the first issue of its specialized magazine, making it the first comprehensive magazine of entrepreneurship field in Algeria. This strategic move is part of the agency’s commitment to promoting a culture of entrepreneurship and providing a knowledge base and interactive platform for all actors in the entrepreneurship ecosystem.</value>
+  </data>
+  <data name="MagTitre1Text" xml:space="preserve">
+    <value>The magazine titled “NESDA Mag”, aims to present a quality content combines academic and practical aspects and highlights promising investment opportunities in various economic sectors.</value>
   </data>
   <data name="Marketplace" xml:space="preserve">
     <value>Market place</value>
@@ -306,13 +772,28 @@ des microentreprises à travers les CDE</value>
     <value>C.E.O Message</value>
   </data>
   <data name="Mission" xml:space="preserve">
-    <value>Missions et vision</value>
+    <value>Tasks and Vision</value>
+  </data>
+  <data name="mission1" xml:space="preserve">
+    <value>Upgrading an entrepreneurial ecosystem that encourages the creation, financing and development of high-performing, resilient micro-enterprises that create sustainable added value for citizens and the nation.</value>
+  </data>
+  <data name="MissionP1" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency relies on the directives of the President of the Republic, Mr. Abdelmadjid Tebboune, to raise the challenge for economic resurgence in order to build a productive, diversified economy—one that generates value, provides quality job opportunities, within the framework of developing a new economic model based on diversified growth and knowledge economy.</value>
+  </data>
+  <data name="MissionP2" xml:space="preserve">
+    <value>The Agency's strategic directions are based on the following:</value>
   </data>
   <data name="NESDA" xml:space="preserve">
     <value>NESDA</value>
   </data>
   <data name="NesdaExtension" xml:space="preserve">
-    <value>Nesda Extension</value>
+    <value>“NESDA Expansion”</value>
+  </data>
+  <data name="NesdaExtensionDescription" xml:space="preserve">
+    <value>It is a special program of the National Entrepreneurship Support and Development Agency, intended for micro-enterprises wishing to expand their activity. It is titled: “NESDA Expansion”</value>
+  </data>
+  <data name="NesdaNomination" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency</value>
   </data>
   <data name="Nesdaorganise" xml:space="preserve">
     <value>Nesda organise</value>
@@ -321,13 +802,88 @@ des microentreprises à travers les CDE</value>
     <value>Nos Partenaires</value>
   </data>
   <data name="Nosservices" xml:space="preserve">
-    <value>Nos services</value>
+    <value>Our Services</value>
   </data>
   <data name="Organisation" xml:space="preserve">
-    <value>Organisation</value>
+    <value>Organization</value>
+  </data>
+  <data name="Organigramme" xml:space="preserve">
+    <value>Organigramme</value>
+  </data>
+  <data name="organisationNesdaText" xml:space="preserve">
+    <value>In accordance with the provisions of Executive Decree n °96-296 dated 24 Rabi' al-Thani 1417, corresponding to September 8, 1996, as amended and supplemented, which established the National Entrepreneurship Support and Development Agency and defined its statutes, the agency is governed by a board of directors and managed by a director general, and is also equipped with a supervisory committee.</value>
+  </data>
+  <data name="Partenaire1P1" xml:space="preserve">
+    <value>Partnership with institutions in the higher education and scientific research sector, under the supervision of the tutelage ministry, falls within the framework of opening Entrepreneurship Development Centers across the university network. The goal is to coordinate their management and organize training sessions, conducted jointly by university professors and trainers from the Agency according to the planned work programs.</value>
+  </data>
+  <data name="Partenaire1P2" xml:space="preserve">
+    <value>These Entrepreneurship Development Centers play a vital role in promoting entrepreneurship in universities through training, awareness, and support activities they provide.</value>
+  </data>
+  <data name="Partenaire2P1" xml:space="preserve">
+    <value>In order to expand the experience of Entrepreneurship Development Centers to the network of education and vocational training institutions, this partnership, under the supervision of the tutelage ministry, aims to coordinate the opening of these Centers, regulate their management, organize training sessions, in addition to training trainers from the sector with the support of Agency trainers.</value>
+  </data>
+  <data name="Partenaire2P2" xml:space="preserve">
+    <value>These centers are considered a key factor in promoting entrepreneurial thinking and entrepreneurship within education and vocational training through their training, awareness, and support activities.</value>
+  </data>
+  <data name="Partenaire3P1" xml:space="preserve">
+    <value>The partnership with public banking institutions falls within the framework of the Agency’s mechanism and is reflected in the triangular financing structure, under which the bank loan represents 70% of the investment, in addition to a 100% rebate interest bank. This acts as an incentive to create micro-enterprises and expanding their activities.</value>
+  </data>
+  <data name="Partenaire3P2" xml:space="preserve">
+    <value>Bank financing plays a pivotal role in the Agency’s mechanism due to its importance in the process of setting up micro-enterprises and expanding their activities.</value>
+  </data>
+  <data name="Partenaire4P1" xml:space="preserve">
+    <value>Within the framework of accompanying micro-enterprises and supporting their activities, the Agency collaborates with both public and private economic operators to promote goods and services of micro-enterprises and the advantages they provide through the economic value chain, including supplying inputs, auxiliary services, and subcontracting.</value>
+  </data>
+  <data name="Partenaire4P2" xml:space="preserve">
+    <value>These partnerships allow micro-enterprises to get closer to economic operators, exchange expertise, and exploit business opportunities from supplying raw materials to subcontracting certain activities.</value>
+  </data>
+  <data name="Partenaire4P3" xml:space="preserve">
+    <value>In this regard, the Agency ensures the signing of partnership agreements with various economic operators, with several agreements concluded at the local and national levels, including:</value>
+  </data>
+  <data name="Partenaire4P3,1" xml:space="preserve">
+    <value>Regional branches of the Algerian Economic Renewal Council</value>
+  </data>
+  <data name="Partenaire4P3,2" xml:space="preserve">
+    <value>National Fund for Agricultural Cooperation</value>
+  </data>
+  <data name="Partenaire4P3,3" xml:space="preserve">
+    <value>Algerian Water and Sanitation Company – SEAAL (Société des Eaux et de l’Assainissement d’Alger)</value>
+  </data>
+  <data name="Partenaire4P3,4" xml:space="preserve">
+    <value>Algerian Water Company</value>
+  </data>
+  <data name="Partenaire4P3,5" xml:space="preserve">
+    <value>Local economic companies in the food industry, manufacturing, and services</value>
+  </data>
+  <data name="Partenaire5P1" xml:space="preserve">
+    <value>To ensure continuous coordination with various public institutions and bodies involved in supporting micro-enterprises throughout their creation and operation, and in order to establish a stimulating entrepreneurial ecosystem that fosters opportunities. The Agency aims through these partnerships to simplify and improve procedures, exchange experiences and data, and coordinate activities, especially those related to awareness, communication, and support, in accordance with the legislation and regulations in force.</value>
+  </data>
+  <data name="Partenaire5P2" xml:space="preserve">
+    <value>In this context, the Agency ensures the signing of partnership agreements with various public institutions and bodies, including:</value>
+  </data>
+  <data name="Partenaire5P2,1" xml:space="preserve">
+    <value>National Agency for Microcredit Management (ANGEM)</value>
+  </data>
+  <data name="Partenaire5P2,2" xml:space="preserve">
+    <value>Agency for the Development of Small and Medium Enterprises and Innovation Promotion (ADPMEPI)</value>
+  </data>
+  <data name="Partenaire5P2,3" xml:space="preserve">
+    <value>National Employment Agency (ANEM)</value>
   </data>
   <data name="Partenariat" xml:space="preserve">
     <value>Partenariat</value>
+  </data>
+  <data name="PartenariatContact" xml:space="preserve">
+    <value>Contact for partnership</value>
+  </data>
+  <data name="PartenariatDesc" xml:space="preserve">
+    <value>Within the framework of enhancing the entrepreneurial ecosystem and micro-enterprises, the National Entrepreneurship Support and Development Agency ensures continuous coordination, under the supervision of the tutelage ministry, with all relevant stakeholders.</value>
+  </data>
+  <data name="PartenariatInfo" xml:space="preserve">
+    <value>Contact us to explore partnership and collaboration opportunities in supporting entrepreneurship.</value>
+  </data>
+  <data name="PartenariatQuestion" xml:space="preserve">
+    <value>Would you like to develop a partnership with us?</value>
   </data>
   <data name="Partenariats" xml:space="preserve">
     <value>Partenariats</value>
@@ -338,39 +894,179 @@ des microentreprises à travers les CDE</value>
   <data name="PLT2" xml:space="preserve">
     <value>Réussite Assurée.</value>
   </data>
+  <data name="Portail_Inscription_CNRC_Text" xml:space="preserve">
+    <value>The National Commercial Register Center (CNRC) provides a dedicated electronic portal for procedures related to the establishment of businesses, in coordination with relevant authorities, particularly:</value>
+  </data>
+  <data name="Portail_Services_Texte_01" xml:space="preserve">
+    <value>The electronic portal provides various information and procedures related to the establishment of an institution, in accordance with the applicable legislation, in the field of commercial registration, taxes, social security and economic statistics.</value>
+  </data>
+  <data name="Portail_Services_Texte_02" xml:space="preserve">
+    <value>The registration of the establishment through the electronic portal for the establishment of establishments constitutes the only registration after it has been approved by the National Center for the Commercial Register and confirmed by the competent authorities</value>
+  </data>
   <data name="Principal" xml:space="preserve">
     <value>Principal</value>
   </data>
   <data name="Professionslibérales" xml:space="preserve">
     <value>Professions libérales</value>
   </data>
+  <data name="ProgCoopérationsText" xml:space="preserve">
+    <value>Within the framework of promoting the entrepreneurship spirit and strengthen the skills of microenterprises, the National Entrepreneurship Support and Development Agency is committed to enhancing its capacities by establishing cooperation ties with various accredited international and regional bodies, to benefit from expertise and experiences, as well as to expand opportunities for exchange and innovation. The Agency contributes as an important partner in many international cooperation programs in Algeria.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP1" xml:space="preserve">
+    <value>This regional program aims to support youth entrepreneurship in the agricultural sector by enabling young people to develop new, innovative, and sustainable projects that can create employment opportunities in promising agricultural sectors in Algeria.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP2" xml:space="preserve">
+    <value>The program is implemented by the International Labour Organization (ILO) and funded by the International Fund for Agricultural Development (IFAD) of the United Nations Organization, with oversight from the relevant ministerial sectors. The Agency is a key partner in this program, alongside the National Office for Rural Development Studies (BNEDER), the public accelerator A-Venture, the National Agency for Microcredit Management (ANGEM), and the National Employment Agency (ANEM).</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP3" xml:space="preserve">
+    <value>In 2024, the Agency contributed to organizing a business plan competition targeting project owners, enabling them to enhance their entrepreneurial skills and launch economically viable activities in the agricultural sector, predefined according to value chains: potatoes in Mostaganem, aquaculture in Biskra and dairy production in Guelma. Participants also benefited from technical support to develop a viable business plan and finance their projects, depending on the situation.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP4" xml:space="preserve">
+    <value>The program witnessed significant participation, unveiling several innovative project ideas. Participants benefited training sessions that strengthened their capacities in preparing business plans, improved their entrepreneurial skills, and their experience in the targeted agricultural field. The program also honored the top winners from the three concerned wilayas, who will benefit from the Agency’s support to create their microenterprises.</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP1" xml:space="preserve">
+    <value>The program is a regional project of the International Labour Organization (ILO), funded by the Directorate-General for Neighborhood policy and Enlargement Negotiations  (DG NEAR) at the European Commission, and supports the transition from the informal to the formal economy through tripartite social dialogue in Arab countries, with a special focus on Algeria, Egypt, Lebanon, and Palestine.</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP2" xml:space="preserve">
+    <value>The project aims to increase employment for workers and the productivity of enterprises in the formal sector, which contributes to decent work for all, poverty reduction, and the building of more equitable and cohesive societies. To achieve this, the program seeks to strengthen the capacities of the ILO’s tripartite constituents: governments, employers’ organizations, and workers’ organizations, to act through social dialogue at two main levels:</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP3" xml:space="preserve">
+    <value>Developing comprehensive policies for the transition to the formal economy</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP4" xml:space="preserve">
+    <value>Developing national training systems and skills recognition, with a focus on youth and women in the informal sector</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP1" xml:space="preserve">
+    <value>The “Social and Solidarity Economy for Sustainable Economic Inclusion of Youth Entrepreneurs in Algeria” program aims to encourage youth employment and contribute to wealth creation through establishing a supportive ecosystem for the development of the social and solidarity economy (SSE).</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP2" xml:space="preserve">
+    <value>To achieve this, the project includes several key components, each operating at different levels of this ecosystem and targeting the various stakeholders involved, focusing on two main objectives:</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP3" xml:space="preserve">
+    <value>Strengthening the social and solidarity economy ecosystem</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP4" xml:space="preserve">
+    <value>Supporting the creation and development of social and solidarity economy enterprises</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP5" xml:space="preserve">
+    <value>The program operates under the auspices of the United Nations Development Program (UNDP) and the supervision of relevant ministerial sectors, where the Agency acts as a key partner, it contributes to accompanying the creation and expansion of microenterprise projects within the social and solidarity economy in line with the defined objectives.</value>
+  </data>
   <data name="ProjetsFinancees" xml:space="preserve">
     <value>Projets Microentreprises Financés</value>
   </data>
   <data name="Q1" xml:space="preserve">
-    <value>Quelles sont les conditions d'éligibilité pour le dispositif NESDA ?</value>
+    <value>Can I establish an enterprise only in my home wilaya, or am I allowed to do so in any wilaya?</value>
+  </data>
+  <data name="Q10" xml:space="preserve">
+    <value>Does NESDA provide support for projects that target innovation?</value>
+  </data>
+  <data name="Q11" xml:space="preserve">
+    <value>Can I create a project in a field where I don’t have a degree but have experience?</value>
+  </data>
+  <data name="Q12" xml:space="preserve">
+    <value>How long does the application review process take to obtain financing?</value>
+  </data>
+  <data name="Q13" xml:space="preserve">
+    <value>What should I do if my application for financing is rejected?</value>
+  </data>
+  <data name="Q14" xml:space="preserve">
+    <value>Does NESDA help in finding partners or investors?</value>
+  </data>
+  <data name="Q15" xml:space="preserve">
+    <value>What is the maximum amount of financing that can be obtained?</value>
+  </data>
+  <data name="Q16" xml:space="preserve">
+    <value>Can I repay the loan before the due date without penalties?</value>
+  </data>
+  <data name="Q17" xml:space="preserve">
+    <value>Does the agency provide opportunities to participate in trade fairs or economic events?</value>
   </data>
   <data name="Q2" xml:space="preserve">
-    <value>Quelles sont les démarches nécessaires pour créer une microentreprise ?</value>
+    <value>What sectors and activities are eligible for financing under NESDA?</value>
   </data>
   <data name="Q3" xml:space="preserve">
-    <value>Quels sont les documents composant le dossier à déposer à NESDA ?</value>
+    <value>Is training mandatory to benefit from the support?</value>
   </data>
   <data name="Q4" xml:space="preserve">
-    <value>Quelles sont les conditions pour bénéficier de l'extension de mon activité ?</value>
+    <value>Is there any accompaniment available after the launch of the project to help me ensure its success?</value>
+  </data>
+  <data name="Q5" xml:space="preserve">
+    <value>Is there a required period that must pass after the project’s establishment before applying for an expansion?</value>
+  </data>
+  <data name="Q6" xml:space="preserve">
+    <value>How can I track the progress of my application after submission?</value>
+  </data>
+  <data name="Q7" xml:space="preserve">
+    <value>Should the project idea be related to the field study or the training certificate?</value>
+  </data>
+  <data name="Q8" xml:space="preserve">
+    <value>Is registration with the National Employment Agency (ANEM) required to be eligible for support?</value>
+  </data>
+  <data name="Q9" xml:space="preserve">
+    <value>Can individuals with special needs benefit from special conditions?</value>
+  </data>
+  <data name="QuestionGenerale" xml:space="preserve">
+    <value>Do you need more information?</value>
   </data>
   <data name="R1" xml:space="preserve">
-    <value>Les conditions d'éligibilité au dispositif de NESDA sont
-                                        : l'âge, la compétence reconnue (formation CDE, attestation.)</value>
+    <value>Yes, the project holder has the right to establish his project in any wilaya he wishes, as long as he provides a document proving his presence there.</value>
+  </data>
+  <data name="R10" xml:space="preserve">
+    <value>The agency aims to create projects that will cover the local market and encourage it to access global markets.</value>
+  </data>
+  <data name="R11" xml:space="preserve">
+    <value>The Algerian state has established several official bodies concerned with proving and validating acquired professional experience.</value>
+  </data>
+  <data name="R12" xml:space="preserve">
+    <value>A specific period cannot be determined, given that there are several criteria that vary depending on the financing method.</value>
+  </data>
+  <data name="R13" xml:space="preserve">
+    <value>Contact the officer responsible for your file to understand the procedures to follow based on the reason for the rejection.</value>
+  </data>
+  <data name="R14" xml:space="preserve">
+    <value>The project holder can benefit from projects within the framework of agreements concluded with various economic sectors.</value>
+  </data>
+  <data name="R15" xml:space="preserve">
+    <value>The total value of the project cannot exceed ten (10) million Algerian dinars.</value>
+  </data>
+  <data name="R16" xml:space="preserve">
+    <value>Yes, the project holder can pay the financial dues related to his project before the agreed deadlines.</value>
+  </data>
+  <data name="R17" xml:space="preserve">
+    <value>The agency works to encourage new projects and enterprises by promoting them through various events.</value>
   </data>
   <data name="R2" xml:space="preserve">
-    <value>Pour la création d'une microentreprise : formation CDE, inscription en ligne, dépôt dossier et entretien, CSVF.</value>
+    <value>NESDA is responsible for financing all activities in various sectors (Industry, Production, Agriculture, Services, Crafts and Liberal Professions…etc.)</value>
   </data>
   <data name="R3" xml:space="preserve">
-    <value>Le dossier est composé des documents suivants : business plan, facture proforma.</value>
+    <value>Yes, training in entrepreneurship provided by entrepreneurship development centers (CDE) is a prerequisite for benefiting from the subsidies and privileges granted under the agency’s mechanism.</value>
   </data>
   <data name="R4" xml:space="preserve">
-    <value>Les conditions communes pour bénéficier de l'extension d'activité sont : l'âge, la justification de 2 années d'activité effective.</value>
+    <value>One of the agency’s key missions is to provide accompaniment to project holders both before and after the implementation of their projects.</value>
+  </data>
+  <data name="R5" xml:space="preserve">
+    <value>One of the conditions for benefiting from project expansion is the submission of the enterprise’s annual reports for the past two years.</value>
+  </data>
+  <data name="R6" xml:space="preserve">
+    <value>Through the project holder's space which is dedicated to project holder to manage his information, monitor the progress of his project, and complete various procedures via the electronic platform.</value>
+  </data>
+  <data name="R7" xml:space="preserve">
+    <value>The project holder can pursue any viable and profitable activity with market potential, as long as they have the skills to manage it successfully.</value>
+  </data>
+  <data name="R8" xml:space="preserve">
+    <value>No. However, those registered with the employment agency can benefit from subsidies and privileges granted under the agency's mechanism to support the creation of activities.</value>
+  </data>
+  <data name="R9" xml:space="preserve">
+    <value>The agency has put in place simplified and easy procedures that take into account all categories of project holders.</value>
+  </data>
+  <data name="reponse" xml:space="preserve">
+    <value>We have answered the most common questions below. If you do not find the information you are looking for, please do not hesitate to contact us</value>
+  </data>
+  <data name="responseNotFound" xml:space="preserve">
+    <value>Didn’t you find an answer to your question?</value>
+  </data>
+  <data name="ReunionConseilAdmin" xml:space="preserve">
+    <value>The Board of Directors meets in ordinary session at least four times a year, upon the summons of its Chairman, who sets the agenda based on a proposal from the Director General of the Agency. It may also meet in extraordinary session upon the summons of its Chairman, or at the request of the supervisory authority, the Director General of the Agency, or a majority of its members.</value>
   </data>
   <data name="Scoring" xml:space="preserve">
     <value>Scoring</value>
@@ -378,8 +1074,8 @@ des microentreprises à travers les CDE</value>
   <data name="Services" xml:space="preserve">
     <value>Secteur des services</value>
   </data>
-  <data name="Servicesdigitaux" xml:space="preserve">
-    <value>Services digitaux</value>
+  <data name="ServicesdigitauxDetail" xml:space="preserve">
+    <value>NESDA agency offers a range of innovative digital services designed to support entrepreneurship and facilitate various administrative procedures for youth</value>
   </data>
   <data name="ServicesT1" xml:space="preserve">
     <value>Offrez Solution &amp;</value>
@@ -396,10 +1092,187 @@ des microentreprises à travers les CDE</value>
   <data name="SousTraitance" xml:space="preserve">
     <value>Nesda Sous-Traitance</value>
   </data>
+  <data name="SousTraitanceAvantage1,1" xml:space="preserve">
+    <value>Reducing costs, especially fixed expenses and tax burdens</value>
+  </data>
+  <data name="SousTraitanceAvantage1,2" xml:space="preserve">
+    <value>Focusing on core enterprise activities and accessing high-level competencies</value>
+  </data>
+  <data name="SousTraitanceAvantage1,3" xml:space="preserve">
+    <value>Improving the quality of services or production</value>
+  </data>
+  <data name="SousTraitanceAvantage1,4" xml:space="preserve">
+    <value>Benefiting from external expertise or technologies not available internally</value>
+  </data>
+  <data name="SousTraitanceAvantage1,5" xml:space="preserve">
+    <value>Increasing operational flexibility and adaptability to demand</value>
+  </data>
+  <data name="SousTraitanceAvantage2,1" xml:space="preserve">
+    <value>Growth opportunities and a stable cash flow through contracting with large enterprises</value>
+  </data>
+  <data name="SousTraitanceAvantage2,2" xml:space="preserve">
+    <value>Reducing the risk of dependency on individual clients and focus on long-term partnerships</value>
+  </data>
+  <data name="SousTraitanceAvantage2,3" xml:space="preserve">
+    <value>Building relationships, business networks, enhancing trust in the market</value>
+  </data>
+  <data name="SousTraitanceAvantage2,4" xml:space="preserve">
+    <value>Optimal use of resources in contracted projects and reducing work or production downtime</value>
+  </data>
+  <data name="SousTraitanceAvantage2,5" xml:space="preserve">
+    <value>Improving efficiency and productivity at the core of the activity</value>
+  </data>
+  <data name="SousTraitanceDescP1" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency implementing a dedicated program to promote and encourage subcontracting among micro-enterprises, given their capacities and competencies in various fields across the different value chains activities of the economic sectors.</value>
+  </data>
+  <data name="SousTraitanceDescP2" xml:space="preserve">
+    <value>The Agency works to promote subcontracting within the State's economic sector: public groups, public economic institutions, and large private companies, in order to showcase micro-enterprises and the advantages they offer in this field.</value>
+  </data>
+  <data name="SousTraitanceModels1" xml:space="preserve">
+    <value>Contracting with micro-enterprises operating in services such as equipment and machinery maintenance, goods transport, training, engineering and studies, catering, cleaning, and others</value>
+  </data>
+  <data name="SousTraitanceModels2" xml:space="preserve">
+    <value>Using micro-enterprises specialized in digital services such as programming, data analysis, e-marketing, etc</value>
+  </data>
+  <data name="SousTraitanceModels3" xml:space="preserve">
+    <value>Contracting with micro-enterprises producing raw materials and semi-finished products, such as agricultural products, packaging materials, spare parts, chemicals, and others</value>
+  </data>
+  <data name="SousTraitanceModels4" xml:space="preserve">
+    <value>Engaging micro-enterprises active in recycling and material recovery such as paper, plastic, and metals</value>
+  </data>
+  <data name="SousTraitanceModels5" xml:space="preserve">
+    <value>Using micro-enterprises specialized in distribution and marketing, customer service, bill collection, and similar activities</value>
+  </data>
+  <data name="SousTraitanceQuestion" xml:space="preserve">
+    <value>Would you like to benefit from the subcontracting program?</value>
+  </data>
+  <data name="SousTraitanceSupportP1" xml:space="preserve">
+    <value>As part of its support for subcontracting through micro-enterprises, the Agency has worked to sign several agreements with public and private economic operators in this regard with micro-enterprises, at both local and national levels.</value>
+  </data>
+  <data name="SousTraitanceSupportP2" xml:space="preserve">
+    <value>The Agency also strives to promote the capacities and potential of micro-enterprises in various forms of subcontracting on different occasions and opportunities, with the aim of concluding agreements and translating them into concrete actions that contribute to driving economic growth.</value>
+  </data>
   <data name="Suivivotredemande" xml:space="preserve">
-    <value>Suivi votre demande</value>
+    <value>Track your application</value>
+  </data>
+  <data name="TacheFG1" xml:space="preserve">
+    <value>	The equipment pledge is made first in favor of the bank, then in favor of the National Entrepreneurship Support and Development Agency.</value>
+  </data>
+  <data name="TacheFG2" xml:space="preserve">
+    <value>	Pledge of movable equipment.</value>
+  </data>
+  <data name="TacheFG3" xml:space="preserve">
+    <value>	Comprehensive insurance covering all project equipment against various risks.</value>
+  </data>
+  <data name="TaxDescription" xml:space="preserve">
+    <value>The project owner benefits from tax privileges during the phases of establishing the project and expanding its production capacity, which helps reduce financial burdens and encourages investment in various economic projects.</value>
+  </data>
+  <data name="TaxPhase1,1" xml:space="preserve">
+    <value>Exemption from property transfer duties for real estate acquisitions made for a financial consideration within the framework of creating an industrial activity.</value>
+  </data>
+  <data name="TaxPhase1,2" xml:space="preserve">
+    <value>Exemption from value-added tax (VAT) on the acquisition of equipment and services that are directly involved in the implementation of the investment during both the establishment and expansion phases, for activities subject to the real tax system. (Passenger vehicles are excluded from this measure unless they constitute the main tool of the activity).</value>
+  </data>
+  <data name="TaxPhase1,3" xml:space="preserve">
+    <value>Application of a reduced 5% customs duty rate on imported equipment directly used in the implementation of the investment.</value>
+  </data>
+  <data name="TaxPhase2,1" xml:space="preserve">
+    <value>Exemption from property tax on buildings and additional constructions for 3, 6 or 10 years, depending on the project's location, starting from the date of completion.</value>
+  </data>
+  <data name="TaxPhase2,2" xml:space="preserve">
+    <value>Exemption from the single lump-sum tax (IFU) or, as applicable, from Corporate Income Tax (IBS) or Personal Income Tax (IRG) for a period of 3, 6, or 10 years, depending on the project’s location, starting from the date operation.</value>
+  </data>
+  <data name="TaxPhase2,3" xml:space="preserve">
+    <value>Upon expiration of the exemption period mentioned above, it may be extended for 2 years when the investor undertakes to employ at least 3 workers on a permanent basis.</value>
+  </data>
+  <data name="TaxWarningMsg" xml:space="preserve">
+    <value>Failure to respect the commitment to create jobs will result in the withdrawal of granted privileges and the requirement to pay the due fees and charges.</value>
+  </data>
+  <data name="TextJuridiqueDescription" xml:space="preserve">
+    <value>A comprehensive collection of legal texts related to the Agency and its mechanism, available for download and view.</value>
   </data>
   <data name="Àpropos" xml:space="preserve">
-    <value>À propos</value>
+    <value>About the Agency</value>
+  </data>
+  <data name="accord" xml:space="preserve">
+    <value>I authorize NESDA to process my personal data in accordance with the conditions stipulated in Law No. 18-07 relating to the protection of natural persons in the processing of personal data.</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="contactFormText" xml:space="preserve">
+    <value>Please fill out the following form carefully and we will get back to you as soon as possible. All fields are required to ensure we provide you with the best service.</value>
+  </data>
+  <data name="ContactInfoText" xml:space="preserve">
+    <value>We welcome your questions and inquiries about our services and programs. You can contact us through the following channels or fill out the form below, and we will respond as soon as possible</value>
+  </data>
+  <data name="lienAccord" xml:space="preserve">
+    <value>You can consult the agency's general policy for the protection of personal data</value>
+  </data>
+  <data name="NesdaPolitique1" xml:space="preserve">
+    <value>I authorize Nasda to process my personal data in accordance with the provisions of Law 18/07 on the protection of individuals with regard to the processing of personal data. You can consult</value>
+  </data>
+  <data name="NesdaPolitique2" xml:space="preserve">
+    <value>the Agency's general policy on the protection of personal data</value>
+  </data>
+  <data name="QuestionDepot" xml:space="preserve">
+    <value>At which agency did you submit the file?</value>
+  </data>
+  <data name="Taille" xml:space="preserve">
+    <value>The file must be in PDF or JPG format. The maximum size is 2 MB</value>
+  </data>
+  <data name="TailleDH" xml:space="preserve">
+    <value>The size must not exceed 2 MB. The affidavit file must be in PDF format</value>
+  </data>
+  <data name="TaillePDF" xml:space="preserve">
+    <value>The file must be in PDF format. The maximum size is 2 MB</value>
+  </data>
+  <data name="Politique" xml:space="preserve">
+    <value>Data Processing Policy</value>
+  </data>
+  <data name="PolitiqueText" xml:space="preserve">
+    <value>Protecting your personal data is an absolute commitment to us. This policy aims to inform you clearly and transparently about how your personal data is collected and processed by the National Entrepreneurship Support and Development Agency (NESDA).</value>
+  </data>
+  <data name="AccesPortalDesc" xml:space="preserve">
+    <value>To access the electronic portal for public procurement and begin the registration process, please click on the following link:</value>
+  </data>
+  <data name="AssistanceDescP1" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency (NESDA) is keen to provide the necessary support to micro-enterprises in the process of registration and benefiting from the services of the public procurement portal, through organizing training sessions and introductory workshops on how to make the best use of these digital services.</value>
+  </data>
+  <data name="AssistanceDescP2" xml:space="preserve">
+    <value>The Agency also seeks to facilitate access to the public market for micro-enterprises by coordinating with the relevant authorities and providing the necessary guidance and instructions to ensure effective participation in public procurement.</value>
+  </data>
+  <data name="EtapesInscription1P1" xml:space="preserve">
+    <value>Step one:</value>
+  </data>
+  <data name="EtapesInscription1P2" xml:space="preserve">
+    <value>access to the electronic portal of public procurement.</value>
+  </data>
+  <data name="EtapesInscription2P1" xml:space="preserve">
+    <value>Step two:</value>
+  </data>
+  <data name="EtapesInscription2P2" xml:space="preserve">
+    <value>Click on “create a new account or “register”.</value>
+  </data>
+  <data name="EtapesInscription3P1" xml:space="preserve">
+    <value>Step three:</value>
+  </data>
+  <data name="EtapesInscription3P2" xml:space="preserve">
+    <value>fill requested data (institution information, communication data).</value>
+  </data>
+  <data name="EtapesInscription4P1" xml:space="preserve">
+    <value>Step four:</value>
+  </data>
+  <data name="EtapesInscription4P2" xml:space="preserve">
+    <value>Upload the required documents (commercial register, enterprise card...).</value>
+  </data>
+  <data name="EtapesInscription5P1" xml:space="preserve">
+    <value>Step five:</value>
+  </data>
+  <data name="EtapesInscription5P2" xml:space="preserve">
+    <value>Confirm registration and wait for approval.</value>
+  </data>
+  <data name="Tawtin" xml:space="preserve">
+    <value>Al Tawteen</value>
   </data>
 </root>

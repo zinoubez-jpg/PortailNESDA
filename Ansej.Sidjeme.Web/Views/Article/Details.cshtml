@@ -1,8 +1,14 @@
 ﻿@model Ansej.Sidjeme.Domain.Entities.Article
+@using System.Globalization
 @{
-    ViewData["Title"] = "تفاصيل المقال";
-}
+    ViewData["Title"] = localizer["DetailArticle"];
 
+    // Récupère le nom de la culture (ex: "ar", "ar-SA", "en", "en-US")
+    var currentLanguage = CultureInfo.CurrentCulture.Name;
+
+    // Vérifie si c'est de l'arabe
+    bool isArabic = currentLanguage.StartsWith("ar");
+}
 @section Head {
 }
 
@@ -16,7 +22,7 @@
         <nav class="breadcrumbs">
             <ol>
                 <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
-                <li><a asp-controller="Article" asp-action="Paged">الأخبار والمستجدات</a></li>
+                <li><a asp-controller="Article" asp-action="Paged">@localizer["News&MAJ"]</a></li>
                 <li class="current"> @ViewData["Title"]</li>
             </ol>
         </nav>
@@ -29,24 +35,41 @@
         <article class="article">
             <div class="article-header">
                 <div class="meta-categories" data-aos="fade-up">
-                    <a asp-controller="Article" asp-action="Paged" class="category">كافة المقالات</a>
-                   
-                </div>
+                    <a asp-controller="Article" asp-action="Paged" class="category">@localizer["ToutLesArticles"] </a>
 
-                <h1 class="title" data-aos="fade-up" data-aos-delay="100">@Model.Title</h1>
+                </div>
+                @if (isArabic)
+                {
+                    <h1 class="title" data-aos="fade-up" data-aos-delay="100">@Model.Title</h1>
+                }
+                else
+                {
+                    <h1 class="title" data-aos="fade-up" data-aos-delay="100">@Model.TitleEn</h1>
+                }
+
 
                 <div class="article-meta" data-aos="fade-up" data-aos-delay="200">
                     <div class="author">
 
-                      
+
                         <img src="~/NesdaTMP/assets/img/NesdaImg/logoperson.jpg" alt="logonesda" class="author-img">
                         <div class="author-info">
-                            <h4>خلية الإتصال</h4>
+                            @*<h4>@localizer["callCenter"]</h4>*@
+                            <h4>@localizer["CommunicationCell"]</h4>
                             <span>@messageslocalizer["NesdaNomination"]</span>
                         </div>
                     </div>
                     <div class="post-info">
-                        <span><i class="bi bi-calendar4-week"></i> @Model.CreatedAt.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("ar-DZ"))</span>
+                        @if (isArabic)
+                        {
+                            <span><i class="bi bi-calendar4-week"></i> @Model.CreatedAt.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("ar-DZ"))</span>
+
+                        }
+                        else
+                        {
+                            <span><i class="bi bi-calendar4-week"></i> @Model.CreatedAt.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("en-US"))</span>
+
+                        }
                         @*<span><i class="bi bi-clock"></i> 10 min read</span>
                     <span><i class="bi bi-chat-square-text"></i> 32 Comments</span>*@
                     </div>
@@ -55,30 +78,60 @@
 
             @if (!string.IsNullOrEmpty(Model.ImageUrl))
             {
+
+
                 <div class="article-featured-image" data-aos="zoom-in">
-                    <img src="@Model.ImageUrl" alt="@Model.Title" class="img-fluid">
+                    @if (isArabic)
+                    {
+                        <img src="@Model.ImageUrl" alt="@Model.Title" class="img-fluid">
+                    }
+                    else
+                    {
+                        <img src="@Model.ImageUrl" alt="@Model.TitleEn" class="img-fluid">
+                    }
+
                 </div>
             }
-            
+
 
             <div class="article-wrapper">
 
                 <div class="article-content">
                     <div class="content-section" id="introduction" data-aos="fade-up">
 
-                        <div class="highlight-quote">
-                            <blockquote>
-                                @if (!string.IsNullOrWhiteSpace(Model.Summary))
-                                {
-                                    <p>@Model.Summary</p>
-                                }
+                        @if (isArabic)
+                        {
+                            <div class="highlight-quote">
+                                <blockquote>
+                                    @if (!string.IsNullOrWhiteSpace(Model.Summary))
+                                    {
+                                        <p>@Model.Summary</p>
+                                    }
 
-                            </blockquote>
-                        </div>
+                                </blockquote>
+                            </div>
 
-                        <p class="lead">
-                            @Html.Raw(Model.Content)
-                        </p>
+                            <p class="lead">
+                                @Html.Raw(Model.Content)
+                            </p>
+                        }
+                        else
+                        {
+                            <div class="highlight-quote">
+                                <blockquote>
+                                    @if (!string.IsNullOrWhiteSpace(Model.SummaryEn))
+                                    {
+                                        <p>@Model.SummaryEn</p>
+                                    }
+
+                                </blockquote>
+                            </div>
+
+                            <p class="lead">
+                                @Html.Raw(Model.ContentEn)
+                            </p>
+                        }
+
                     </div>
 
                 </div>
@@ -92,7 +145,7 @@
                     var shareTitle = System.Net.WebUtility.UrlEncode(Model.Title);
                 }
                 <div class="share-article">
-                    <h4>مشاركة المقال</h4>
+                    <h4> @localizer["Share"]</h4>
                     <div class="share-buttons">
                         <a href="https://twitter.com/intent/tweet?url=@shareUrl&text=@shareTitle"
                            class="share-button twitter" target="_blank">
@@ -119,10 +172,6 @@
 
     </div>
 </section><!-- /Blog Details Section -->
-
-
-
-
 @* @model Ansej.Sidjeme.Domain.Entities.Article
 
     @{

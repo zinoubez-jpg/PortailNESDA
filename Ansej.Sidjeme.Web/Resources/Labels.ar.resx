@@ -121,412 +121,415 @@
     <value>Actuelle</value>
   </data>
   <data name="AddDemandeSession" xml:space="preserve">
-    <value>إضافة طلب إلى الجلسة</value>
+    <value>Ajouter Demande a la Session</value>
   </data>
   <data name="AdressAr" xml:space="preserve">
-    <value>العنوان بالعربية</value>
+    <value>Adresse en Arab</value>
   </data>
   <data name="Adresse" xml:space="preserve">
     <value>العنوان</value>
   </data>
   <data name="AdressFr" xml:space="preserve">
-    <value>العنوان بالفرنسية</value>
+    <value>Adresse en Français</value>
   </data>
   <data name="Age" xml:space="preserve">
-    <value>السن</value>
+    <value>Age</value>
   </data>
   <data name="Agence" xml:space="preserve">
-    <value>وكالة</value>
+    <value>الوكالة الوطنية لدعم و تنمية المقاولاتية</value>
   </data>
   <data name="AgenceId" xml:space="preserve">
-    <value>مكان التعيين</value>
+    <value>Agence</value>
   </data>
   <data name="Agences" xml:space="preserve">
-    <value>الوكالات</value>
+    <value>الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
   </data>
   <data name="Annuaire" xml:space="preserve">
-    <value>دليل الهاتف</value>
+    <value>Annuaire</value>
   </data>
   <data name="AssocieDemandeSession" xml:space="preserve">
-    <value>تقديم طلب إلى الجلسة</value>
+    <value>Associe une demande a la Session</value>
   </data>
   <data name="Banque" xml:space="preserve">
-    <value>بنك</value>
+    <value>Banque</value>
   </data>
   <data name="BanqueId" xml:space="preserve">
-    <value>البنك</value>
+    <value>Banque</value>
   </data>
   <data name="Banques" xml:space="preserve">
-    <value>البنوك</value>
+    <value>Banques</value>
   </data>
   <data name="ChoisiFichier" xml:space="preserve">
-    <value>اختر الملف</value>
+    <value>sélectionner fichiers ...</value>
   </data>
-  <data name="Code" xml:space="preserve">
+  <data name="code" xml:space="preserve">
     <value>الرمز</value>
   </data>
   <data name="Commitee" xml:space="preserve">
-    <value> لجنة مشاركة</value>
+    <value>Comité Participation</value>
   </data>
   <data name="Commitees" xml:space="preserve">
-    <value>لجان المشاركة</value>
+    <value>Comités Participation</value>
   </data>
   <data name="CommitteeDiscription" xml:space="preserve">
-    <value>التعريف باللجنة</value>
+    <value>Présentation du comité</value>
   </data>
   <data name="CommitteeId" xml:space="preserve">
-    <value>إسم لجنة المشاركة</value>
+    <value>Nom du Comité de Participation</value>
   </data>
   <data name="Commune" xml:space="preserve">
-    <value>البلدية</value>
+    <value>Commune</value>
   </data>
   <data name="CommuneNaissanceId" xml:space="preserve">
-    <value>بلدية الميلاد</value>
+    <value>Commune Naissance</value>
   </data>
   <data name="CommuneResidenceId" xml:space="preserve">
-    <value>بلدية الإقامة</value>
+    <value>Commune Résidence</value>
   </data>
   <data name="Communes" xml:space="preserve">
-    <value>البلديات</value>
+    <value>Communes</value>
   </data>
   <data name="Create" xml:space="preserve">
-    <value>إضافة</value>
+    <value>Créer</value>
   </data>
   <data name="CreateA" xml:space="preserve">
-    <value>إضافة {0}</value>
+    <value>Créer {0}</value>
   </data>
   <data name="CreateCompte" xml:space="preserve">
-    <value>إنشاء حساب</value>
+    <value>Créer un Compt</value>
   </data>
   <data name="Date" xml:space="preserve">
-    <value>التاريخ</value>
+    <value>Date</value>
   </data>
   <data name="DateDemande" xml:space="preserve">
-    <value>تاريخ الطلب</value>
+    <value>Date Demande</value>
   </data>
   <data name="DateEmbauche" xml:space="preserve">
-    <value>تاريخ التوظيف</value>
+    <value>Date Embauche</value>
   </data>
   <data name="DateNaissance" xml:space="preserve">
-    <value>تاريخ الميلاد</value>
+    <value>تاريخ الازدياد</value>
   </data>
   <data name="Delete" xml:space="preserve">
-    <value>حذف</value>
+    <value>Supprimer</value>
   </data>
   <data name="DeleteA" xml:space="preserve">
-    <value>حذف {0}</value>
+    <value>Supprimer {0}</value>
   </data>
   <data name="Demande" xml:space="preserve">
-    <value>طلب</value>
+    <value>Demande</value>
   </data>
   <data name="DemandeId" xml:space="preserve">
-    <value>رقم الطلب</value>
+    <value>Numéro de la demande</value>
   </data>
   <data name="DemandeNonTrait" xml:space="preserve">
-    <value>قائمة الطلبات قيد المعالجة</value>
+    <value>Liste demandes en cour de traitement</value>
   </data>
   <data name="DemandeRejete" xml:space="preserve">
-    <value>الطلبات المرفوضة</value>
+    <value>Demandes rejetées</value>
   </data>
   <data name="Demandes" xml:space="preserve">
-    <value>الطلبات</value>
+    <value>Demandes</value>
   </data>
   <data name="DemandeTrait" xml:space="preserve">
-    <value>قائمة الطلبات اللتي تم معالجتها</value>
+    <value>Liste demandes traitées</value>
   </data>
   <data name="Demandeur" xml:space="preserve">
-    <value>العامل </value>
+    <value>Employé</value>
   </data>
   <data name="DemandeurId" xml:space="preserve">
-    <value>العامل</value>
+    <value>Employé</value>
   </data>
   <data name="Demandeurs" xml:space="preserve">
-    <value>العمال </value>
+    <value>Employés</value>
   </data>
   <data name="DemandeValide" xml:space="preserve">
-    <value> الطلبات المقبولة</value>
+    <value>Demandes validées</value>
   </data>
   <data name="DesignationAr" xml:space="preserve">
-    <value>التسمية بالعربية</value>
+    <value>Designation Arabe</value>
   </data>
   <data name="DesignationFr" xml:space="preserve">
-    <value>التسمية بالفرنسية</value>
+    <value>Designation Français</value>
   </data>
   <data name="DetailsA" xml:space="preserve">
-    <value>تفاصيل {0}</value>
+    <value>Details {0}</value>
   </data>
   <data name="DocumentPdf" xml:space="preserve">
-    <value>رفع الوثائق والمستندات</value>
+    <value>Charger Documents et fichies PDF</value>
   </data>
   <data name="DuDate" xml:space="preserve">
-    <value>بتاريخ</value>
+    <value>Du</value>
   </data>
   <data name="Edit" xml:space="preserve">
-    <value>تعديل</value>
+    <value>Editer</value>
   </data>
   <data name="EditA" xml:space="preserve">
-    <value>تعديل {0}</value>
+    <value>Modifier {0}</value>
   </data>
   <data name="Email" xml:space="preserve">
-    <value>البريد الإلكنروني</value>
+    <value>البريد الإلكتروني</value>
   </data>
   <data name="EndDate" xml:space="preserve">
-    <value>تاريخ انتهاء الصلاحية</value>
+    <value>Date Expiration</value>
   </data>
   <data name="Etape" xml:space="preserve">
-    <value>المرحلة</value>
+    <value>Etape</value>
   </data>
   <data name="Etat" xml:space="preserve">
-    <value>مقفلة</value>
+    <value>Verrouiller</value>
   </data>
   <data name="FullName" xml:space="preserve">
-    <value> الإسم الكامل بالفرنسية</value>
+    <value>الاسم الكامل</value>
   </data>
   <data name="FullNameAr" xml:space="preserve">
-    <value>الإسم الكامل بالعربية</value>
+    <value>Nom Complet Arab</value>
   </data>
   <data name="Genre" xml:space="preserve">
     <value>الجنس</value>
   </data>
   <data name="GenreId" xml:space="preserve">
-    <value>الجنس</value>
+    <value>Genre</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>الرئيسية</value>
+    <value>Home</value>
   </data>
   <data name="Id" xml:space="preserve">
-    <value>مميّز</value>
+    <value>Identifiant</value>
   </data>
   <data name="IdentPersonel" xml:space="preserve">
-    <value>التعريف الشخصي</value>
+    <value>Identification Personelle</value>
+  </data>
+  <data name="IdentProfessionnel" xml:space="preserve">
+    <value>Identification Professionnelle</value>
   </data>
   <data name="ListMembres" xml:space="preserve">
-    <value>القائمة الإسمية لأعضاء لجنة المشاركة</value>
+    <value>liste nomitative des Membres du Comité de participation</value>
   </data>
   <data name="ListOf" xml:space="preserve">
-    <value>قائمة {0}</value>
+    <value>La liste des {0}</value>
   </data>
   <data name="ListPresSession" xml:space="preserve">
-    <value>قائمة الطلبات المقدمة في الدورة رقم</value>
+    <value>liste des demandes présenter a la Session N°</value>
   </data>
   <data name="MatriculeERP" xml:space="preserve">
-    <value>  ترقيم (ERP) </value>
+    <value>Matricule ERP</value>
   </data>
   <data name="Membre" xml:space="preserve">
-    <value> عضو لجنة المشاركة</value>
+    <value>Membre CP</value>
   </data>
   <data name="Membres" xml:space="preserve">
-    <value>أعضاء اللجنة</value>
+    <value>Membres</value>
   </data>
   <data name="Montant" xml:space="preserve">
-    <value>المبلغ</value>
+    <value>Montant </value>
   </data>
   <data name="MontantAccorde" xml:space="preserve">
-    <value>المبلغ المقبول</value>
+    <value>Montant Accorede</value>
   </data>
   <data name="MontantAccorder" xml:space="preserve">
-    <value>المبلغ الممنوح</value>
+    <value>Montant Accorder</value>
   </data>
   <data name="Motif" xml:space="preserve">
     <value>Motif</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>الإسم بالفرنسية </value>
+    <value>Nom en français </value>
   </data>
   <data name="NameAr" xml:space="preserve">
-    <value>الإسم بالعربية</value>
+    <value>Nom en arabe </value>
   </data>
   <data name="NbrDemande" xml:space="preserve">
-    <value>عدد الطلبات</value>
+    <value>Nombre de Demandes</value>
   </data>
   <data name="NbrDemandePres" xml:space="preserve">
-    <value>عدد الطلبات المقدمة</value>
+    <value>NBR Demandes Présentés</value>
   </data>
   <data name="NbrDemandeur" xml:space="preserve">
-    <value>العمال المسجلين</value>
+    <value>Salariés enregistrés</value>
   </data>
   <data name="NbSessionsValidation" xml:space="preserve">
-    <value>عدد الجلسات</value>
+    <value>SessionsValidation</value>
   </data>
   <data name="NIN" xml:space="preserve">
-    <value>رقم التعريف الوطني</value>
+    <value>NIN</value>
   </data>
   <data name="NomAr" xml:space="preserve">
-    <value>اللقب بالعربية</value>
+    <value>Nom en Arab</value>
   </data>
   <data name="NombreAnneeTravail" xml:space="preserve">
-    <value>سنوات الخدمة</value>
+    <value>Années de Service</value>
   </data>
   <data name="NomFr" xml:space="preserve">
-    <value>اللقب بالفرنسية</value>
+    <value>Nom en Français</value>
   </data>
   <data name="NomJeunneFille" xml:space="preserve">
-    <value>اللقب الأصلي للمرأة بالفرنسية</value>
+    <value>Nom Jeunne Fille en Français</value>
   </data>
   <data name="NomJeunneFilleAr" xml:space="preserve">
-    <value>اللقب الأصلي للمرأة بالعربية</value>
+    <value>Nom Jeunne Fille en Arab</value>
   </data>
   <data name="Nouveau" xml:space="preserve">
-    <value>جديد</value>
+    <value>Nouveau</value>
   </data>
   <data name="Numero" xml:space="preserve">
-    <value>الرقم</value>
+    <value>Numéro</value>
   </data>
   <data name="NumTelephone" xml:space="preserve">
-    <value>رقم الهاتف</value>
+    <value>N° Telephone</value>
   </data>
   <data name="Observation" xml:space="preserve">
-    <value>ملاحظة</value>
+    <value>Observation</value>
   </data>
   <data name="Photo" xml:space="preserve">
-    <value>صورة شخصية</value>
+    <value>Photo personlle</value>
   </data>
   <data name="Poste" xml:space="preserve">
-    <value>المنصب</value>
+    <value>Poste</value>
   </data>
   <data name="PosteId" xml:space="preserve">
-    <value>المنصب</value>
+    <value>Poste </value>
   </data>
-  <data name="sddd" xml:space="preserve">
-    <value>المناصب</value>
+  <data name="MotDG" xml:space="preserve">
+    <value>كلمة المدير العام</value>
   </data>
   <data name="PrenomAr" xml:space="preserve">
-    <value>الإسم بالعربية</value>
+    <value>Prénom en Arab</value>
   </data>
   <data name="PrenomFr" xml:space="preserve">
-    <value>الإسم بالفرنسية</value>
+    <value>Prénom en Français</value>
   </data>
   <data name="PresidentMsg" xml:space="preserve">
-    <value>كلمة رئيس لحنة المشاركة</value>
+    <value>Mot du Président du comité de participation</value>
   </data>
   <data name="RequiredMessage" xml:space="preserve">
-    <value>{0} حقل إجباري</value>
+    <value>{0} est requis !</value>
   </data>
   <data name="Resultat" xml:space="preserve">
-    <value>النتيجة</value>
+    <value>Résultat</value>
   </data>
   <data name="ResultatSession" xml:space="preserve">
-    <value>قرار اللجنة</value>
+    <value>Décision Commission</value>
   </data>
   <data name="ResultatSessionValidationId" xml:space="preserve">
-    <value>قرار اللجنة</value>
+    <value>Décision Commission</value>
   </data>
   <data name="ResultatSessionValidations" xml:space="preserve">
-    <value>نتائج جلسة التحقق من طلبات</value>
+    <value>Resultat Session Validations</value>
   </data>
   <data name="Return" xml:space="preserve">
-    <value>رجوع</value>
+    <value>Retour</value>
   </data>
   <data name="Rib" xml:space="preserve">
-    <value>رقم الهوية البنكية/البريدية</value>
+    <value>Relevé d'identité bancaire / Postal</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>حفظ</value>
+    <value>Enregistrer</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value> ... إختيارات</value>
+    <value>Sélections ...</value>
   </data>
   <data name="SelectFichier" xml:space="preserve">
-    <value>اختر ملف </value>
+    <value>Sélectionné Fichier</value>
   </data>
   <data name="SelectPhoto" xml:space="preserve">
-    <value>اختر صورة </value>
+    <value>Sélectionné une Photo valide</value>
   </data>
   <data name="SessionsValidation" xml:space="preserve">
-    <value>الجلسات</value>
+    <value>Sessions validation</value>
   </data>
   <data name="SessionValidation" xml:space="preserve">
-    <value>جلسة</value>
+    <value>Session validation</value>
   </data>
   <data name="SessionValidationId" xml:space="preserve">
-    <value>جلسة التحقق من الصحة</value>
+    <value>Session Validation</value>
   </data>
   <data name="SituationFamiliale" xml:space="preserve">
-    <value>الحالة العائلية</value>
+    <value>Situation Familiale</value>
   </data>
   <data name="SituationFamilialeId" xml:space="preserve">
-    <value>الحالة العائلية</value>
+    <value>Situation Familiale</value>
   </data>
   <data name="SituationFamiliales" xml:space="preserve">
-    <value>الحالة العائلية</value>
+    <value>Situation Familiale</value>
   </data>
   <data name="SousTypeDemande" xml:space="preserve">
-    <value>طبيعة الطلب</value>
+    <value>Sous Type Demande</value>
   </data>
   <data name="SousTypeDemandeId" xml:space="preserve">
-    <value>طبيعة الطلب</value>
+    <value>Nature de la demande</value>
   </data>
   <data name="SousTypesDemandes" xml:space="preserve">
-    <value>طبيعة الطلبات</value>
+    <value>Nature demandes</value>
   </data>
   <data name="StartDate" xml:space="preserve">
-    <value>تاريخ الإنشاء</value>
+    <value>Date Création</value>
   </data>
   <data name="StringLengthMessage" xml:space="preserve">
-    <value>{0} يجب أن يحتوي على الأكثر {1} حرف!</value>
+    <value>{0} ne doit pas dépasser {1} caractères !</value>
   </data>
   <data name="SuiviDemandeService" xml:space="preserve">
-    <value>تتبع طلبك</value>
+    <value>Suivi Votre demande</value>
   </data>
   <data name="TelechargerPDF" xml:space="preserve">
-    <value>تحميل PDF</value>
+    <value>Telecharger PDF</value>
   </data>
   <data name="TypeDemande" xml:space="preserve">
-    <value>نوع الطلب</value>
+    <value>Type Demande</value>
   </data>
   <data name="TypeDemandeId" xml:space="preserve">
-    <value>نوع الطلب</value>
+    <value>Type Demande</value>
   </data>
   <data name="TypeMembre" xml:space="preserve">
-    <value>نوع العضوية</value>
+    <value>Type: Membre</value>
   </data>
   <data name="TypeMembreId" xml:space="preserve">
-    <value>نوع العضوية</value>
+    <value>Type Membre</value>
   </data>
   <data name="TypesDemandes" xml:space="preserve">
-    <value>أنواع الطلبات</value>
+    <value>Types demandes</value>
   </data>
   <data name="TypesMembres" xml:space="preserve">
-    <value>أنواع العضويات</value>
+    <value>Types Membres</value>
   </data>
   <data name="TélechargerDocuments" xml:space="preserve">
-    <value>تحميل الوثائق والمستندات</value>
+    <value>Télecharger Documents de la demande</value>
   </data>
   <data name="UserId" xml:space="preserve">
-    <value>اسم المستخدم</value>
+    <value>Utilisateur</value>
   </data>
   <data name="Username" xml:space="preserve">
-    <value>اسم المستخدم</value>
+    <value>Nom d'utilisateur</value>
   </data>
   <data name="Wilaya" xml:space="preserve">
     <value>الولاية</value>
   </data>
   <data name="WilayaId" xml:space="preserve">
-    <value>الولاية</value>
+    <value>Wilaya</value>
   </data>
   <data name="WilayaNaissanceId" xml:space="preserve">
-    <value>ولاية الميلاد</value>
+    <value>Wilaya Naissance</value>
   </data>
   <data name="WilayaResidenceId" xml:space="preserve">
-    <value>ولاية الإقامة</value>
+    <value>Wilaya Residence</value>
   </data>
   <data name="Wilayas" xml:space="preserve">
-    <value>الولايات</value>
+    <value>Wilayas</value>
   </data>
   <data name="DateAffectation" xml:space="preserve">
-    <value>تاريخ التعيين</value>
+    <value />
   </data>
   <data name="DetailsOf" xml:space="preserve">
-    <value>معلومات {0}</value>
+    <value />
   </data>
   <data name="FactureId" xml:space="preserve">
-    <value>الفاتورة</value>
+    <value />
   </data>
   <data name="FournisseurId" xml:space="preserve">
-    <value>ممول</value>
+    <value />
   </data>
   <data name="IdentProfetionel" xml:space="preserve">
-    <value>التعريف المهني</value>
+    <value />
   </data>
   <data name="Nom" xml:space="preserve">
     <value>اللقب</value>
@@ -535,6 +538,1774 @@
     <value>الاسم</value>
   </data>
   <data name="Sessions" xml:space="preserve">
-    <value>الجلسات</value>
+    <value />
+  </data>
+  <data name="Activite" xml:space="preserve">
+    <value>النشاط</value>
+  </data>
+  <data name="ActiviteId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Activites" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CommuneNaisanceId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DateSortie" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DenominationCommercial" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Designation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DesignationArticle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Discriminator" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MontantApportPersonnel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MontantPNR" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MontantPretBancaire" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MontantSubvention" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NiveauInstruction" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NiveauInstructionId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NiveauxInstruction" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NomPrenomMere" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NumeroCarteANEM" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ParentId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PaysNaisanceId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PaysResidenceId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PhaseProjet" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PhaseProjetId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PhasesProjet" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrenomPere" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrixUnitaire" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ProjetCreationId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ProjetId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PromoteurId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qualite" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QualiteId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Qualites" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Quantite" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SecteurActivite" xml:space="preserve">
+    <value>قطاع النشاط</value>
+  </data>
+  <data name="SecteurActiviteId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SecteursActivite" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Structure" xml:space="preserve">
+    <value>الوكالة</value>
+  </data>
+  <data name="Tel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TypeDocument" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TypeDocumentId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TypeFacture" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TypeFactureId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TypeFinancement" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TypeFinancementId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TypesDocument" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TypeSession" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TypeSessionId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TypesFacture" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TypesFinancement" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TypesSession" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AgenceNesda" xml:space="preserve">
+    <value>الوكالة الوطنية لدعم وتنمية المقاولاتية (NESDA)</value>
+  </data>
+  <data name="CentreCDE" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية (CDE)</value>
+  </data>
+  <data name="Directeur" xml:space="preserve">
+    <value>بلال عشاشة</value>
+  </data>
+  <data name="MotAgence" xml:space="preserve">
+    <value>الوكالة</value>
+  </data>
+  <data name="MotVisiteurs" xml:space="preserve">
+    <value>زوّار موقعنا الأعزاء</value>
+  </data>
+  <data name="NesdaKPI" xml:space="preserve">
+    <value>NESDA KPI,</value>
+  </data>
+  <data name="NesdaRating" xml:space="preserve">
+    <value>NESDA Rating</value>
+  </data>
+  <data name="OutilsNumeriques" xml:space="preserve">
+    <value>مخطط الاعمال الرقمي، مركز الاتصال، منصات رقمية</value>
+  </data>
+  <data name="PosteDirecteur" xml:space="preserve">
+    <value>المدير العام</value>
+  </data>
+  <data name="verbepresentation" xml:space="preserve">
+    <value>تشهد</value>
+  </data>
+  <data name="VerbePresentation1" xml:space="preserve">
+    <value>في هذا الصدد، تضع</value>
+  </data>
+  <data name="axesStrategique" xml:space="preserve">
+    <value>المحاور الاستراتيجية</value>
+  </data>
+  <data name="axesStrategique1" xml:space="preserve">
+    <value>تعزيز مرافقة حاملي المشاريع</value>
+  </data>
+  <data name="axesStrategique2" xml:space="preserve">
+    <value>المساهمة في ترقية نظام بيئي للمقاولاتية</value>
+  </data>
+  <data name="axesStrategique3" xml:space="preserve">
+    <value>تعزيز قدرات الوكالة وتحسين تسييرها للمخاطر</value>
+  </data>
+  <data name="mission1" xml:space="preserve">
+    <value>المهمة</value>
+  </data>
+  <data name="mission2" xml:space="preserve">
+    <value>المبادئ</value>
+  </data>
+  <data name="mission2-1" xml:space="preserve">
+    <value>الشمولية</value>
+  </data>
+  <data name="mission2-2" xml:space="preserve">
+    <value>المصداقية</value>
+  </data>
+  <data name="mission2-3" xml:space="preserve">
+    <value>الصمود</value>
+  </data>
+  <data name="mission2-4" xml:space="preserve">
+    <value>الابتكار</value>
+  </data>
+  <data name="organisationNesda" xml:space="preserve">
+    <value>تنظيم الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="AvantageProgrammeTitre" xml:space="preserve">
+    <value>مزايا البرنامج</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>تواصل معنا</value>
+  </data>
+  <data name="ContactUsNow" xml:space="preserve">
+    <value>تواصل معنا الآن</value>
+  </data>
+  <data name="decrets1" xml:space="preserve">
+    <value>المراسيم الرئاسية (دعم تشغيل الشباب)</value>
+  </data>
+  <data name="decrets2" xml:space="preserve">
+    <value>المراسيم التنفيذية (إنشاء الوكالة)</value>
+  </data>
+  <data name="decrets3" xml:space="preserve">
+    <value>المراسيم التنفيذية (شروط الإعانة المقدمة لحاملي المشاريع ومستواها)</value>
+  </data>
+  <data name="EnvironementProgrammeTitre" xml:space="preserve">
+    <value>إطار ومحيط البرنامج</value>
+  </data>
+  <data name="FonctionnementFG" xml:space="preserve">
+    <value>آلية عمل صندوق الضمان</value>
+  </data>
+  <data name="fond" xml:space="preserve">
+    <value>صندوق</value>
+  </data>
+  <data name="garantie" xml:space="preserve">
+    <value>الضمان</value>
+  </data>
+  <data name="NesdaExtensionTitre" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="ParticipationFG" xml:space="preserve">
+    <value>كيفية الاشتراك في صندوق الضمان</value>
+  </data>
+  <data name="TachesFG" xml:space="preserve">
+    <value>مهام صندوق الضمان</value>
+  </data>
+  <data name="TaxPhase1" xml:space="preserve">
+    <value>المرحلة الأولى: مرحلة الإنجاز</value>
+  </data>
+  <data name="TaxPhase2" xml:space="preserve">
+    <value>المرحلة الثانية: مرحلة الاستغلال</value>
+  </data>
+  <data name="TaxTitre1" xml:space="preserve">
+    <value>المزايا </value>
+  </data>
+  <data name="TaxTitre2" xml:space="preserve">
+    <value>الضريبية</value>
+  </data>
+  <data name="telecharger" xml:space="preserve">
+    <value>تحميل</value>
+  </data>
+  <data name="TexteJuridiqueTitre1" xml:space="preserve">
+    <value>النصوص</value>
+  </data>
+  <data name="TexteJuridiqueTitre2" xml:space="preserve">
+    <value>القانونية</value>
+  </data>
+  <data name="Accompagnement" xml:space="preserve">
+    <value>المرافقةالقبلية والبعدية</value>
+  </data>
+  <data name="AccompagnementTitre1" xml:space="preserve">
+    <value>مرافقة شاملة لإنجاح مشروعك</value>
+  </data>
+  <data name="AccompagnementTitre1Text" xml:space="preserve">
+    <value>الوكالة الوطنية لدعم وتنمية المقاولاتية ترافقكم في كل مراحل مشروعكم، من بزوغ الفكرة إلى استقرار المؤسسة. سواء كنتم تبحثون عن أفكار مشاريع، أو تسعون للحصول على تمويل، فنحن هنا لتقديم الدعم اللازم عبر مرافقة متخصصة وشاملة.</value>
+  </data>
+  <data name="AccompagnementTitre1TextP1" xml:space="preserve">
+    <value>مرافقة من الفكرة إلى التجسيد</value>
+  </data>
+  <data name="AccompagnementTitre1TextP2" xml:space="preserve">
+    <value>دعم متخصص ومستمر</value>
+  </data>
+  <data name="AccompagnementTitre1TextP3" xml:space="preserve">
+    <value>متابعة نمو واستدامة المشروع</value>
+  </data>
+  <data name="AccompagnementTitre2" xml:space="preserve">
+    <value>مراحل المرافقة الشاملة</value>
+  </data>
+  <data name="AccompagnementTitre2SousTitre1" xml:space="preserve">
+    <value>مرحلة الإعداد</value>
+  </data>
+  <data name="AccompagnementTitre2SousTitre2" xml:space="preserve">
+    <value>ما بعد الإنشاء</value>
+  </data>
+  <data name="AccompagnementTitre2Text" xml:space="preserve">
+    <value>ندعمكم في كل خطوة من خطوات مشروعكم من خلال مرافقة متخصصة ومدروسة</value>
+  </data>
+  <data name="AccompCreaText" xml:space="preserve">
+    <value>لا تتوقف مرافقة الوكالة بعد إنشاء المؤسسة، بل نواصل دعمنا لضمان استدامة المشروع وتوسعه.</value>
+  </data>
+  <data name="AccompCreaTextP1" xml:space="preserve">
+    <value>زيارات ميدانية دورية</value>
+  </data>
+  <data name="AccompCreaTextP2" xml:space="preserve">
+    <value>المساعدة في تجاوز الصعوبات</value>
+  </data>
+  <data name="AccompCreaTextP3" xml:space="preserve">
+    <value>دعم التوسعة والتمويل الإضافي</value>
+  </data>
+  <data name="AccompCreaTextP4" xml:space="preserve">
+    <value>تشجيع المبادرة والابتكار</value>
+  </data>
+  <data name="AccompCreaTitre" xml:space="preserve">
+    <value>المرافقة بعد الإنشاء</value>
+  </data>
+  <data name="AccompPrepText" xml:space="preserve">
+    <value>نضع ضمن أولوياتنا مرافقة حاملي أفكار المشاريع قبل مرحلة الإنشاء، بهدف تحويل الطموحات إلى مؤسسات فعلية تقوم على أسس متينة.</value>
+  </data>
+  <data name="AccompPrepTextP1" xml:space="preserve">
+    <value>التحسيس بروح ريادة الأعمال</value>
+  </data>
+  <data name="AccompPrepTextP2" xml:space="preserve">
+    <value>الاستقبال والتوجيه المتخصص</value>
+  </data>
+  <data name="AccompPrepTextP3" xml:space="preserve">
+    <value>دورات تكوينية قصيرة</value>
+  </data>
+  <data name="AccompPrepTextP4" xml:space="preserve">
+    <value>تعلم المحاسبة والتسويق</value>
+  </data>
+  <data name="AccompPrepTitre" xml:space="preserve">
+    <value>المرافقة في مرحلة الإعداد والتأطير</value>
+  </data>
+  <data name="ComiteSuivi" xml:space="preserve">
+    <value>لجنة المراقبة</value>
+  </data>
+  <data name="CompositionConseilAdmin" xml:space="preserve">
+    <value>تشكيلة مجلس الإدارة</value>
+  </data>
+  <data name="CompositionConseilAdmin1" xml:space="preserve">
+    <value>ممثلان (2) عن الوزير المكلف بالمؤسسات المصغرة، أحدهما رئيس</value>
+  </data>
+  <data name="CompositionConseilAdmin10" xml:space="preserve">
+    <value>رئيس جمعية البنوك والمؤسسات المالية، أو ممثله</value>
+  </data>
+  <data name="CompositionConseilAdmin11" xml:space="preserve">
+    <value>ممثل عن منظمة الشباب ذوي المشاريع، الأكثر تمثيلا على المستوى الوطني</value>
+  </data>
+  <data name="CompositionConseilAdmin12" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CompositionConseilAdmin2" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالشؤون الخارجية</value>
+  </data>
+  <data name="CompositionConseilAdmin3" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالداخلية والجماعات المحلية</value>
+  </data>
+  <data name="CompositionConseilAdmin4" xml:space="preserve">
+    <value>ممثلان (2) عن الوزير المكلف بالمالية</value>
+  </data>
+  <data name="CompositionConseilAdmin5" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالتجارة</value>
+  </data>
+  <data name="CompositionConseilAdmin6" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالعمل والتشغيل والضمان الاجتماعي</value>
+  </data>
+  <data name="CompositionConseilAdmin7" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالتضامن الوطني وشؤون المرأة</value>
+  </data>
+  <data name="CompositionConseilAdmin8" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالصناعة</value>
+  </data>
+  <data name="CompositionConseilAdmin9" xml:space="preserve">
+    <value>الأمين الدائم لصندوق الكفالة المشتركة لضمان أخطار القروض الممنوحة للشباب ذوو المشاريع، أو ممثله</value>
+  </data>
+  <data name="ConseilAdministration" xml:space="preserve">
+    <value>مجلس الإدارة</value>
+  </data>
+  <data name="FormationIntroP1" xml:space="preserve">
+    <value>برامج تكوينية متخصصة ومتكاملة</value>
+  </data>
+  <data name="FormationIntroP2" xml:space="preserve">
+    <value>مدربين معتمدين من منظمة العمل الدولية</value>
+  </data>
+  <data name="FormationIntroP3" xml:space="preserve">
+    <value>تحويل الأفكار إلى مشاريع ناجحة</value>
+  </data>
+  <data name="FormationSousTitre1" xml:space="preserve">
+    <value>منظمة العمل الدولية</value>
+  </data>
+  <data name="FormationSousTitre1Text" xml:space="preserve">
+    <value>برامج تكوينية معتمدة من منظمة العمل الدولية تهدف إلى تطوير مهارات المقاولاتية وتسيير المؤسسات المصغرة</value>
+  </data>
+  <data name="FormationSousTitre1TextP1" xml:space="preserve">
+    <value>دورة "اوجد فكرة مشروعك" - 3 أيام</value>
+  </data>
+  <data name="FormationSousTitre1TextP2" xml:space="preserve">
+    <value>دورة "ابدأ وحسن مشروعك" - 7 أيام</value>
+  </data>
+  <data name="FormationSousTitre1TextP3" xml:space="preserve">
+    <value>أكثر من 107 مدرب معتمد</value>
+  </data>
+  <data name="FormationSousTitre1TextP4" xml:space="preserve">
+    <value>متابعة ما بعد التدريب</value>
+  </data>
+  <data name="FormationSousTitre1Titre" xml:space="preserve">
+    <value>دورات وفق برامج منظمة العمل الدولية</value>
+  </data>
+  <data name="FormationSousTitre2" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="FormationSousTitre2Text" xml:space="preserve">
+    <value>دورات تكوينية بالشراكة مع مؤسسات التعليم العالي والتكوين المهني لتطوير المهارات الأساسية</value>
+  </data>
+  <data name="FormationSousTitre2TextP1" xml:space="preserve">
+    <value>مدة التكوين: 5 إلى 15 يوم</value>
+  </data>
+  <data name="FormationSousTitre2TextP2" xml:space="preserve">
+    <value>التخطيط الاستراتيجي</value>
+  </data>
+  <data name="FormationSousTitre2TextP3" xml:space="preserve">
+    <value>التسيير العملياتي</value>
+  </data>
+  <data name="FormationSousTitre2TextP4" xml:space="preserve">
+    <value>الجوانب القانونية</value>
+  </data>
+  <data name="FormationSousTitre2TextP5" xml:space="preserve">
+    <value>استراتيجيات النمو والابتكار</value>
+  </data>
+  <data name="FormationSousTitre2Titre" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="FormationSousTitre3" xml:space="preserve">
+    <value>دورات متخصصة</value>
+  </data>
+  <data name="FormationSousTitre3Text" xml:space="preserve">
+    <value>دورات متخصصة بالشراكة مع المصالح العمومية حول مواضيع محل اهتمام المؤسسات المصغرة</value>
+  </data>
+  <data name="FormationSousTitre3TextP1" xml:space="preserve">
+    <value>الضرائب والمنازعات الجبائية</value>
+  </data>
+  <data name="FormationSousTitre3TextP2" xml:space="preserve">
+    <value>الضمان الاجتماعي</value>
+  </data>
+  <data name="FormationSousTitre3TextP3" xml:space="preserve">
+    <value>التأمين الفلاحي</value>
+  </data>
+  <data name="FormationSousTitre3TextP4" xml:space="preserve">
+    <value>بالشراكة مع المصالح العمومية</value>
+  </data>
+  <data name="FormationSousTitre3Titre" xml:space="preserve">
+    <value>دورات تكوينية موضوعاتية</value>
+  </data>
+  <data name="FormationTitre" xml:space="preserve">
+    <value>برامج تكوينية متخصصة ومتكاملة</value>
+  </data>
+  <data name="MissionConseilSuivi" xml:space="preserve">
+    <value>مهام لجنة المراقبة</value>
+  </data>
+  <data name="MissionConseilSuivi1" xml:space="preserve">
+    <value>ممارسة الرقابة اللاحقة لتطبيق قرارات مجلس الإدارة؛</value>
+  </data>
+  <data name="MissionConseilSuivi2" xml:space="preserve">
+    <value>تقديم الملاحظات والتوصيات للمدير العام؛</value>
+  </data>
+  <data name="MissionConseilSuivi3" xml:space="preserve">
+    <value>إبداء الرأي في التقارير الدورية عن المتابعة والتنفيذ والتقييم؛</value>
+  </data>
+  <data name="MissionConseilSuivi4" xml:space="preserve">
+    <value>مراقبة وتدقيق الحسابات لاستعمال أموال الوكالة؛</value>
+  </data>
+  <data name="MissionConseilSuivi5" xml:space="preserve">
+    <value>تقديم الملاحظات حول البيانات التقديرية للإيرادات والنفقات.</value>
+  </data>
+  <data name="ProgFormation" xml:space="preserve">
+    <value>برامج التكوين</value>
+  </data>
+  <data name="ReunionConseilAdmin" xml:space="preserve">
+    <value>اجتماعات مجلس الإدارة</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Titre" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية في قطاع التعليم والتكوين المهني</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Titre" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية في قطاع التعليم العالي والبحث العلمي</value>
+  </data>
+  <data name="Inscription_CDE_Titre" xml:space="preserve">
+    <value>التسجيل في مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="Lien_CDE" xml:space="preserve">
+    <value>رابط التسجيل: www.cde.dz</value>
+  </data>
+  <data name="Lien_FPCDE" xml:space="preserve">
+    <value>رابط التسجيل: www.fp.cde.dz</value>
+  </data>
+  <data name="Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>هل يمكن التسجيل عبر الإنترنت أم يتطلب الحضور شخصياً؟</value>
+  </data>
+  <data name="Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>ما هي الدورات أو البرامج المتاحة في المركز؟ وهل يوفر المركز تدريباً عملياً؟</value>
+  </data>
+  <data name="Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>هل يمكن لجميع الطلاب التسجيل في مراكز تطوير المقاولاتية، أم يقتصر الأمر على المتخرجين فقط؟</value>
+  </data>
+  <data name="Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>هل يجب التسجيل في المراكز حسب ولاية التكوين؟</value>
+  </data>
+  <data name="Questions_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>الأسئلة الشائعة حول مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>تتم عملية التسجيل ودراسة الطلب الكترونيا دون الحاجة الى التنقل الى مراكز تطوير المقاولاتية.</value>
+  </data>
+  <data name="Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>يمكن أن تشمل البرامج دورات في المقاولاتية، وإدارة المشاريع، والتسويق، وغيرها، وعادةً ما يتم تضمين تدريب عملي ضمن البرنامج</value>
+  </data>
+  <data name="Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>يجب أن يكون الطالب متخرجًا للتسجيل في مراكز تطوير المقاولاتية.</value>
+  </data>
+  <data name="Réponse_Pour_Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>يمكن التسجيل في مراكز تطوير المقاولاتية بغض النظر عن معهد التكوين التي درس فيها. يعتمد هذا على سياسة المركز وقواعد التسجيل التي يحددها</value>
+  </data>
+  <data name="AxesProgramme" xml:space="preserve">
+    <value>محاور وأنشطة البرنامج</value>
+  </data>
+  <data name="ButProgramme" xml:space="preserve">
+    <value>غاية البرنامج</value>
+  </data>
+  <data name="CadreProgramme" xml:space="preserve">
+    <value>إطار البرنامج</value>
+  </data>
+  <data name="ConditionBeneficier1" xml:space="preserve">
+    <value>1. المستفيدين من جهاز الوكالة سابقا:</value>
+  </data>
+  <data name="ConditionBeneficier1,1" xml:space="preserve">
+    <value>1.1. شروط الاستفادة من "توسعة نفس النشاط او نشاط فرعي"</value>
+  </data>
+  <data name="ConditionBeneficier1,2" xml:space="preserve">
+    <value>1.2. شروط الاستفادة من "توسعة نشاط جديد"</value>
+  </data>
+  <data name="ConditionBeneficier2" xml:space="preserve">
+    <value>2. الغير مستفيدين من جهاز الوكالة سابقا:</value>
+  </data>
+  <data name="ConditionBeneficierCommun" xml:space="preserve">
+    <value>الشروط المشتركة:</value>
+  </data>
+  <data name="ConditionBeneficierTitre" xml:space="preserve">
+    <value>شروط الاستفادة من البرنامج</value>
+  </data>
+  <data name="ContributionATitre" xml:space="preserve">
+    <value>مساهمة الوكالة (قرض غير مكافئ)</value>
+  </data>
+  <data name="ContributionBTitre" xml:space="preserve">
+    <value>مساهمة البنك (القرض البنكي)</value>
+  </data>
+  <data name="ContributionPTitre" xml:space="preserve">
+    <value>المساهمة الشخصية</value>
+  </data>
+  <data name="DeclarationHonneur" xml:space="preserve">
+    <value>الاستفادة من استراد المعدات و العمليات و الخدمات</value>
+  </data>
+  <data name="DefinitionProgramme" xml:space="preserve">
+    <value>تعريف البرنامج</value>
+  </data>
+  <data name="EnvironementProgramme" xml:space="preserve">
+    <value>محيط البرنامج</value>
+  </data>
+  <data name="EtapesBeneficier" xml:space="preserve">
+    <value>مراحل الاستفادة من البرنامج</value>
+  </data>
+  <data name="ModeFinancementTitre" xml:space="preserve">
+    <value>صيغ التمويل</value>
+  </data>
+  <data name="MotLiaison" xml:space="preserve">
+    <value>الى</value>
+  </data>
+  <data name="Partenaire1" xml:space="preserve">
+    <value>مؤسسات التعليم العالي والبحث العلمي</value>
+  </data>
+  <data name="Partenaire2" xml:space="preserve">
+    <value>مؤسسات التعليم والتكوين المهني</value>
+  </data>
+  <data name="Partenaire3" xml:space="preserve">
+    <value>المؤسسات البنكية</value>
+  </data>
+  <data name="Partenaire4" xml:space="preserve">
+    <value>المؤسسات الاقتصادية</value>
+  </data>
+  <data name="Partenaire5" xml:space="preserve">
+    <value>المؤسسات والهيئات العمومية</value>
+  </data>
+  <data name="Partenariat1" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="Partenariat2" xml:space="preserve">
+    <value>الشراكات</value>
+  </data>
+  <data name="Programme" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="RegisterNow" xml:space="preserve">
+    <value>سجل الآن!</value>
+  </data>
+  <data name="SousTraitance1" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="SousTraitance2" xml:space="preserve">
+    <value>المناولة</value>
+  </data>
+  <data name="SousTraitanceAvantages1" xml:space="preserve">
+    <value>أهم مزايا المناولة بالنسبة للمؤسسات الكبرى</value>
+  </data>
+  <data name="SousTraitanceAvantages2" xml:space="preserve">
+    <value>أهم مزايا المناولة بالنسبة للمؤسسات المصغرة</value>
+  </data>
+  <data name="SousTraitanceModels" xml:space="preserve">
+    <value>بعض نماذج المناولة عبر المؤسسات المصغرة</value>
+  </data>
+  <data name="SousTraitanceSupport" xml:space="preserve">
+    <value>دعم الوكالة للمناولة</value>
+  </data>
+  <data name="TypeFinancemet1" xml:space="preserve">
+    <value>التمويل الذاتي</value>
+  </data>
+  <data name="TypeFinancemet2" xml:space="preserve">
+    <value>التمويل الثنائي</value>
+  </data>
+  <data name="TypeFinancemet3" xml:space="preserve">
+    <value>التمويل الثلاثي</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>رابط التسجيل الإلكتروني</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_02" xml:space="preserve">
+    <value>ربح الوقت وتوفير جهد التنقل</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_04" xml:space="preserve">
+    <value>الشفافية والأمان</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_Titre" xml:space="preserve">
+    <value>مزايا المنصة الرقمية</value>
+  </data>
+  <data name="Beneficiaires_Titre" xml:space="preserve">
+    <value>المستفيدون:</value>
+  </data>
+  <data name="Beneficiaire_01" xml:space="preserve">
+    <value>الشباب حاملو أفكار المشاريع</value>
+  </data>
+  <data name="Beneficiaire_02" xml:space="preserve">
+    <value>المتكونون في مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="Beneficiaire_03" xml:space="preserve">
+    <value>خريجو الجامعات</value>
+  </data>
+  <data name="Beneficiaire_04" xml:space="preserve">
+    <value>خريجو معاهد التكوين المهني</value>
+  </data>
+  <data name="Beneficiaire_05" xml:space="preserve">
+    <value>المستفيدون السابقون من الوكالة</value>
+  </data>
+  <data name="Beneficiaire_06" xml:space="preserve">
+    <value>مستفيدو أونجام (ANGEM)</value>
+  </data>
+  <data name="Beneficiaire_07" xml:space="preserve">
+    <value>مستفيدو كناك (CNAC)</value>
+  </data>
+  <data name="Beneficiaire_08" xml:space="preserve">
+    <value>الفلاحون</value>
+  </data>
+  <data name="Beneficiaire_09" xml:space="preserve">
+    <value>الحرفيون</value>
+  </data>
+  <data name="Beneficiaire_10" xml:space="preserve">
+    <value>أصحاب السجلات التجارية</value>
+  </data>
+  <data name="Beneficiaire_11" xml:space="preserve">
+    <value>أصحاب التراخيص</value>
+  </data>
+  <data name="Creation_Micro_Enterprise_Lien" xml:space="preserve">
+    <value>التسجيل لإنشاء مؤسسة مصغرة</value>
+  </data>
+  <data name="Creation_Micro_Enterprise_Titre" xml:space="preserve">
+    <value>إنشاء مؤسسة مصغرة</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Lien" xml:space="preserve">
+    <value>التسجيل لتوسعة النشاط</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Titre" xml:space="preserve">
+    <value>توسعة النشاط</value>
+  </data>
+  <data name="Inscription_CNRC_Titre" xml:space="preserve">
+    <value>التسجيل في المركز الوطني للسجل التجاري</value>
+  </data>
+  <data name="Inscription_MPDZ_Titre" xml:space="preserve">
+    <value>البوابة الإلكترونية للصفقات العمومية</value>
+  </data>
+  <data name="Inscription_NESDA_Titre" xml:space="preserve">
+    <value>التسجيل في الجهاز</value>
+  </data>
+  <data name="Objectives_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>أهداف البوابة الإلكترونية للصفقات العمومية</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_01" xml:space="preserve">
+    <value>تكريس إجراءات أكثر حداثة وبساطة في التعامل</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_02" xml:space="preserve">
+    <value>ضمان المساواة بين جميع المرشحين والمتعاملين</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_03" xml:space="preserve">
+    <value>توفير الشفافية الكاملة في جميع الإجراءات</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_04" xml:space="preserve">
+    <value>تسهيل الوصول إلى الطلب العمومي لجميع المتعاملين</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_05" xml:space="preserve">
+    <value>تسريع عمليات التعاقد والمناقصات العمومية</value>
+  </data>
+  <data name="Portail_Electronique_lien" xml:space="preserve">
+    <value>رابط التسجيل: sidjilcom-entreprise.cnrc.dz/ar/acceuil2</value>
+  </data>
+  <data name="Portail_Electronique_Texte" xml:space="preserve">
+    <value>للولوج الى البوابة الإلكترونية لإنشاء المؤسسات الرابط التالي:</value>
+  </data>
+  <data name="Portail_Electronique_Titre" xml:space="preserve">
+    <value>الوصول إلى البوابة الإلكترونية</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_01" xml:space="preserve">
+    <value>المديرية العامة للضرائب</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_02" xml:space="preserve">
+    <value>الصندوق الوطني للضمان الخاص بغير الأجراء</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_03" xml:space="preserve">
+    <value>الصندوق الوطني للضمان الإجتماعي للعمال الأجراء</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_04" xml:space="preserve">
+    <value>الديوان الوطني للإحصائيات</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Titre" xml:space="preserve">
+    <value>البوابة الإلكترونية لإنشاء المؤسسات</value>
+  </data>
+  <data name="Portail_Services_Titre" xml:space="preserve">
+    <value>خدمات البوابة</value>
+  </data>
+  <data name="ActiviteNesda" xml:space="preserve">
+    <value>أنشطة الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="ActiviteNesdaText" xml:space="preserve">
+    <value>تغطي مزايا جهاز الوكالة الوطنية لدعم وتنمية المقاولاتية مراحل إنشاء المؤسسات المصغرة وتوسعة نشاطها، كما يشمل الجهاز مختلف القطاعات الاقتصادية الحيوية لتشجيع ريادة الأعمال والاستثمار في الجزائر.</value>
+  </data>
+  <data name="ActiviteP1" xml:space="preserve">
+    <value>إنشاء مؤسسة مصغرة</value>
+  </data>
+  <data name="ActiviteP1Text" xml:space="preserve">
+    <value>يشمل دعم إنشاء المؤسسات المصغرة للشباب أصحاب المشاريع من خلال التمويل والمرافقة الإدارية والتقنية، مع توفير التكوين اللازم وضمان متابعة المشروع من البداية حتى بدء النشاط.</value>
+  </data>
+  <data name="ActiviteP2" xml:space="preserve">
+    <value>توسعة نشاط المؤسسة</value>
+  </data>
+  <data name="ActiviteP2Text" xml:space="preserve">
+    <value>يهدف إلى تطوير النشاط الحالي للمؤسسات المصغرة من خلال إضافة خطوط إنتاج جديدة، تنويع المنتجات، أو إطلاق أنشطة جديدة مكملة أو مستقلة لتوسيع نطاق العمل وزيادة الإيرادات.</value>
+  </data>
+  <data name="ActiviteTitre" xml:space="preserve">
+    <value>إنشاء مؤسسة مصغرة</value>
+  </data>
+  <data name="ActiviteTitre1" xml:space="preserve">
+    <value>شروط الاستفادة</value>
+  </data>
+  <data name="ActiviteTitre1P1" xml:space="preserve">
+    <value>العمر: </value>
+  </data>
+  <data name="ActiviteTitre1P12" xml:space="preserve">
+    <value>18 - 55 سنة</value>
+  </data>
+  <data name="ActiviteTitre1P2" xml:space="preserve">
+    <value>عدم الاستفادة سابقاً من أي جهاز دعم لإنشاء مؤسسة مصغرة</value>
+  </data>
+  <data name="ActiviteTitre1P3" xml:space="preserve">
+    <value>حيازة شهادة أو مؤهل مهني و/أو امتلاك مهارات معرفية معترف بها بشهادة</value>
+  </data>
+  <data name="ActiviteTitre1P4" xml:space="preserve">
+    <value>تقديم مساهمة مالية شخصية مطابقة لأحد صيغ التمويل المختارة</value>
+  </data>
+  <data name="ActiviteTitre2" xml:space="preserve">
+    <value>مراحل الإنشاء</value>
+  </data>
+  <data name="ActiviteTitre2P1" xml:space="preserve">
+    <value>التسجيل عبر المنصة الرقمية بعد التكوين على مستوى أحد مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="ActiviteTitre2P1Titre" xml:space="preserve">
+    <value>التسجيل الإلكتروني والتكوين</value>
+  </data>
+  <data name="ActiviteTitre2P2" xml:space="preserve">
+    <value>تقييم المشروع من طرف مصالح الوكالة وفق نظام تقييم المخاطر باعتبار معايير الجدوى والنجاعة والتمويل، ورفعه إلى اللجنة الولائية في حالة تجاوز التقييم 50%</value>
+  </data>
+  <data name="ActiviteTitre2P2Titre" xml:space="preserve">
+    <value>تقييم المشروع</value>
+  </data>
+  <data name="ActiviteTitre2P3" xml:space="preserve">
+    <value>عرض المشروع من طرف صاحبه على لجنة انتقاء واعتماد وتمويل مشاريع الاستثمار على مستوى الولاية</value>
+  </data>
+  <data name="ActiviteTitre2P3Titre" xml:space="preserve">
+    <value>عرض المشروع على اللجنة</value>
+  </data>
+  <data name="ActiviteTitre2P4" xml:space="preserve">
+    <value>إصدار مصالح الوكالة لشهادة القابلية والتمويل في حالة موافقة اللجنة، ومباشرة الإجراءات الإدارية مع مختلف المصالح والموردين</value>
+  </data>
+  <data name="ActiviteTitre2P4Titre" xml:space="preserve">
+    <value>إصدار شهادة القابلية والتمويل</value>
+  </data>
+  <data name="ActiviteTitre2P5" xml:space="preserve">
+    <value>بداية النشاط بعد استيفاء كافة الإجراءات رفقة مصالح الوكالة</value>
+  </data>
+  <data name="ActiviteTitre2P5Titre" xml:space="preserve">
+    <value>بداية النشاط</value>
+  </data>
+  <data name="ActiviteTitre2P6" xml:space="preserve">
+    <value>في حالة رفض المشروع، يمكن إيداع طعن لدى أمانة اللجنة خلال 15 يوماً من تاريخ التبليغ، وفي حالة الرفض النهائي يمكن اللجوء إلى اللجنة الوطنية للطعن.</value>
+  </data>
+  <data name="ActiviteTitre2P6Titre" xml:space="preserve">
+    <value>إجراءات الطعن</value>
+  </data>
+  <data name="ActiviteTitre3" xml:space="preserve">
+    <value>توسعة نشاط مؤسسة مصغرة</value>
+  </data>
+  <data name="ActiviteTitre3-1" xml:space="preserve">
+    <value>تطوير النشاط الحالي</value>
+  </data>
+  <data name="ActiviteTitre3-1P1" xml:space="preserve">
+    <value>خط إنتاج جديد</value>
+  </data>
+  <data name="ActiviteTitre3-1P2" xml:space="preserve">
+    <value>آلة جديدة</value>
+  </data>
+  <data name="ActiviteTitre3-1P3" xml:space="preserve">
+    <value>منتوج جديد تكميلي</value>
+  </data>
+  <data name="ActiviteTitre3-1P4" xml:space="preserve">
+    <value>نشاط مرتبط بالنشاط الرئيسي</value>
+  </data>
+  <data name="ActiviteTitre3-2" xml:space="preserve">
+    <value>إطلاق نشاط جديد</value>
+  </data>
+  <data name="ActiviteTitre3-2P1" xml:space="preserve">
+    <value>تنويع النشاط الرئيسي</value>
+  </data>
+  <data name="ActiviteTitre3-2P2" xml:space="preserve">
+    <value>اكتشاف مجالات نشاط أخرى</value>
+  </data>
+  <data name="ActiviteTitre3-2P3" xml:space="preserve">
+    <value>أنشطة مستقلة جديدة</value>
+  </data>
+  <data name="ActiviteTitre4" xml:space="preserve">
+    <value>الفئات المستهدفة</value>
+  </data>
+  <data name="ActiviteTitre4P1" xml:space="preserve">
+    <value>أصحاب المؤسسات المصغرة المستفيدين سابقاً من دعم جهاز الوكالة</value>
+  </data>
+  <data name="ActiviteTitre4P2" xml:space="preserve">
+    <value>المستفيدين من جهاز الوكالة الوطنية لتسيير القرض المصغر (ANGEM)</value>
+  </data>
+  <data name="ActiviteTitre4P3" xml:space="preserve">
+    <value>المستفيدين من جهاز الصندوق الوطني للتأمين عن البطالة (CNAC)</value>
+  </data>
+  <data name="ActiviteTitre4P4" xml:space="preserve">
+    <value>الفلاحين والحرفيين وأصحاب التراخيص والسجل التجاري</value>
+  </data>
+  <data name="ActiviteTitre5" xml:space="preserve">
+    <value>الشروط العامة</value>
+  </data>
+  <data name="ActiviteTitre5P1" xml:space="preserve">
+    <value>20 - 58 سنة</value>
+  </data>
+  <data name="ActiviteTitre5P2" xml:space="preserve">
+    <value>أن يكون في حالة نشاط خلال السنتين الأخيرتين مع إثبات ذلك</value>
+  </data>
+  <data name="ActiviteTitre5P3" xml:space="preserve">
+    <value>تقديم الحصائل المحاسبية والتصريحات الجبائية (G12, C20)</value>
+  </data>
+  <data name="ActiviteTitre6" xml:space="preserve">
+    <value>مراحل الاستفادة من التوسعة</value>
+  </data>
+  <data name="ActiviteTitre6P1" xml:space="preserve">
+    <value>التسجيل عبر المنصة الرقمية الخاصة بجهاز الوكالة</value>
+  </data>
+  <data name="ActiviteTitre6P1Titre" xml:space="preserve">
+    <value>التسجيل الإلكتروني</value>
+  </data>
+  <data name="ActiviteTitre6P2" xml:space="preserve">
+    <value>تقييم المشروع وفق نظام تقييم المخاطر وتوجيه حامل المشروع إلى التكوين في حالة تجاوز نسبة 50%</value>
+  </data>
+  <data name="ActiviteTitre6P2Titre" xml:space="preserve">
+    <value>تقييم مشروع التوسعة</value>
+  </data>
+  <data name="ActiviteTitre6P3" xml:space="preserve">
+    <value>إجراء تكوين خاص حول مهارات وأساسيات التسيير لمدة 5 أيام على مستوى الوكالة</value>
+  </data>
+  <data name="ActiviteTitre6P3Titre" xml:space="preserve">
+    <value>التكوين الخاص</value>
+  </data>
+  <data name="ActiviteTitre6P4" xml:space="preserve">
+    <value>عرض مشروع التوسعة على لجنة انتقاء واعتماد وتمويل مشاريع الاستثمار الولائية</value>
+  </data>
+  <data name="ActiviteTitre6P4Titre" xml:space="preserve">
+    <value>عرض المشروع على اللجنة</value>
+  </data>
+  <data name="ActiviteTitre6P5" xml:space="preserve">
+    <value>إصدار شهادة القابلية والتمويل ومباشرة الإجراءات الإدارية وبدء النشاط الجديد</value>
+  </data>
+  <data name="ActiviteTitre6P5Titre" xml:space="preserve">
+    <value>الحصول على الشهادة وبدء النشاط</value>
+  </data>
+  <data name="ActiviteTitre7" xml:space="preserve">
+    <value>قطاعات النشاط المدعومة</value>
+  </data>
+  <data name="ActiviteTitre7Text" xml:space="preserve">
+    <value>تسهر الوكالة على تمويل وتشجيع المشاريع في مختلف القطاعات الاقتصادية ولاسيما تلك التي تساهم في خلق الثروة ومناصب الشغل:</value>
+  </data>
+  <data name="ActiviteTitre7TextP1" xml:space="preserve">
+    <value>الفلاحة</value>
+  </data>
+  <data name="ActiviteTitre7TextP2" xml:space="preserve">
+    <value>البناء والأشغال العمومية</value>
+  </data>
+  <data name="ActiviteTitre7TextP3" xml:space="preserve">
+    <value>الصناعة</value>
+  </data>
+  <data name="ActiviteTitre7TextP4" xml:space="preserve">
+    <value>الخدمات</value>
+  </data>
+  <data name="ActiviteTitre7TextP5" xml:space="preserve">
+    <value>الصيد البحري</value>
+  </data>
+  <data name="ActiviteTitre7TextP6" xml:space="preserve">
+    <value>الري</value>
+  </data>
+  <data name="ActiviteTitre7TextP7" xml:space="preserve">
+    <value>النقل</value>
+  </data>
+  <data name="ActiviteTitre7TextP8" xml:space="preserve">
+    <value>المهن الحرة</value>
+  </data>
+  <data name="ActiviteTitre7TextP9" xml:space="preserve">
+    <value>الصناعة التقليدية</value>
+  </data>
+  <data name="Agrandir" xml:space="preserve">
+    <value>تكبير</value>
+  </data>
+  <data name="annee" xml:space="preserve">
+    <value>سنة</value>
+  </data>
+  <data name="auteur" xml:space="preserve">
+    <value>المؤلف</value>
+  </data>
+  <data name="BouttonInscription" xml:space="preserve">
+    <value>منصة التسجيل الإلكتروني</value>
+  </data>
+  <data name="DatePublication" xml:space="preserve">
+    <value>تاريخ النشر</value>
+  </data>
+  <data name="DecouvrirMag1" xml:space="preserve">
+    <value>اكتشف العدد الأول</value>
+  </data>
+  <data name="DecouvrirMag1Text" xml:space="preserve">
+    <value>تصفح مجلة ناسدا Mag الآن واطلع على أحدث المحتويات في عالم المقاولاتية وريادة الأعمال</value>
+  </data>
+  <data name="DernierNews" xml:space="preserve">
+    <value>آخر التحديثات والأخبار</value>
+  </data>
+  <data name="Electronique" xml:space="preserve">
+    <value>الإلكترونية</value>
+  </data>
+  <data name="FinancementExploitation" xml:space="preserve">
+    <value>تمويل الاستغلال والكراء</value>
+  </data>
+  <data name="FinancementExploitationT1" xml:space="preserve">
+    <value>قرض إضافي غير مكافئ لكراء محل</value>
+  </data>
+  <data name="FinancementExploitationT1Text1" xml:space="preserve">
+    <value>عند الضرورة يمكن لحاملي المشاريع الإستفادة من قرض إضافي غير مكافئ للتكفل بإيجار المحل أو مكان الرسو على مستوى الموانئ المخصص لإحداث أنشطة إنتاج السلع والخدمات بإستثناء الأنشطة غير المقيمة</value>
+  </data>
+  <data name="FinancementExploitationT1Text2" xml:space="preserve">
+    <value>يمنح هذا القرض عندما يلجأ حاملي المشاريع الى التمويل البنكي في مرحلة إحداث النشاطات</value>
+  </data>
+  <data name="FinancementExploitationT1Text2Titre" xml:space="preserve">
+    <value>شرط</value>
+  </data>
+  <data name="FinancementExploitationT2" xml:space="preserve">
+    <value>قرض إضافي غير مكافئ للإستغلال</value>
+  </data>
+  <data name="FinancementExploitationT2Text1" xml:space="preserve">
+    <value>يمكن لحاملي المشاريع من الاستفادة من قرض اضافي غير مكافئ للإستغلال بصفة استثنائية</value>
+  </data>
+  <data name="FinancementExploitationT2Text2" xml:space="preserve">
+    <value>استثنائي لتغطية احتياجات الاستغلال والتشغيل</value>
+  </data>
+  <data name="FinancementExploitationT2Text2Titre" xml:space="preserve">
+    <value>طبيعة القرض</value>
+  </data>
+  <data name="FinancementExploitationText" xml:space="preserve">
+    <value>قروض إضافية غير مكافئة لتغطية احتياجات خاصة</value>
+  </data>
+  <data name="FinancementTitre1" xml:space="preserve">
+    <value>التمويل ينقلك من الفكرة إلى تجسيد مشروع</value>
+  </data>
+  <data name="FinancementTitre1Text" xml:space="preserve">
+    <value>تتميز الحلول التمويلية التي تقدمها الوكالة بالمميزات التالية</value>
+  </data>
+  <data name="FinancementTitre1TextP1" xml:space="preserve">
+    <value>قرض غير مكافئ لتمويل مشاريع انشاء مؤسسات مصغرة وتوسعة نشاطها</value>
+  </data>
+  <data name="FinancementTitre1TextP2" xml:space="preserve">
+    <value>تمويل المشاريع قد يصل الى غاية 10.000.000 دج</value>
+  </data>
+  <data name="FinancementTitre1TextP3" xml:space="preserve">
+    <value>صيغ تمويل مشتركة ثنائية وثلاثية بين صاحب المشروع، الوكالة والبنك</value>
+  </data>
+  <data name="FinancementTitre1TextP4" xml:space="preserve">
+    <value>قروض بنسبة فائدة مخفضة بنسبة مئة بالمئة</value>
+  </data>
+  <data name="FinancementTitre1TextP5" xml:space="preserve">
+    <value>مدة سداد القروض مغرية</value>
+  </data>
+  <data name="FinancementTitre1TextP6" xml:space="preserve">
+    <value>قروض غير مكافئة إضافية: للاستغلال والكراء</value>
+  </data>
+  <data name="FinancementTitre2" xml:space="preserve">
+    <value>صيغ التمويل</value>
+  </data>
+  <data name="FinancementTitre2p1" xml:space="preserve">
+    <value>التمويل الذاتي</value>
+  </data>
+  <data name="FinancementTitre2p1Text" xml:space="preserve">
+    <value>حيث يقوم صاحب المشروع بتمويل الاستثمار بالكامل بشكل مستقل، دون اللجوء إلى مصادر خارجية</value>
+  </data>
+  <data name="FinancementTitre2p1TextD" xml:space="preserve">
+    <value>المساهمة الشخصية</value>
+  </data>
+  <data name="FinancementTitre2p2" xml:space="preserve">
+    <value>التمويل الثنائي</value>
+  </data>
+  <data name="FinancementTitre2p2Text" xml:space="preserve">
+    <value>حيث يساهم كل من صاحب المشروع والوكالة بنسبة 50% من مبلغ الاستثمار</value>
+  </data>
+  <data name="FinancementTitre2p2TextD" xml:space="preserve">
+    <value>صاحب المشروع + الوكالة</value>
+  </data>
+  <data name="FinancementTitre2p3" xml:space="preserve">
+    <value>تمويل ثلاثي</value>
+  </data>
+  <data name="FinancementTitre2p3Text" xml:space="preserve">
+    <value>حيث يساهم كل من صاحب المشروع والوكالة بنسبة 50% من مبلغ الاستثمار</value>
+  </data>
+  <data name="FinancementTitre2p3TextD" xml:space="preserve">
+    <value>صاحب المشروع + الوكالة + البنك</value>
+  </data>
+  <data name="FinancementTitre2Text" xml:space="preserve">
+    <value>تعرض الوكالة عدة صيغ تمويلية لانشاء وتوسعة المؤسسات المُصغّرة عبر 3 تركيبات مالية</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>الصيغة</value>
+  </data>
+  <data name="FullScreen" xml:space="preserve">
+    <value>عرض بملء الشاشة</value>
+  </data>
+  <data name="ImprimerMag" xml:space="preserve">
+    <value> طباعة المجلة</value>
+  </data>
+  <data name="LeMag" xml:space="preserve">
+    <value>المجلة</value>
+  </data>
+  <data name="LesTypesFinancement" xml:space="preserve">
+    <value>التمويل الذاتي، الثنائي، الثلاثي</value>
+  </data>
+  <data name="Mag" xml:space="preserve">
+    <value>مجلة</value>
+  </data>
+  <data name="MagNesda" xml:space="preserve">
+    <value>ناسدا Mag</value>
+  </data>
+  <data name="MagNumero" xml:space="preserve">
+    <value>العدد رقم</value>
+  </data>
+  <data name="MagTitre1" xml:space="preserve">
+    <value>رؤية المجلة</value>
+  </data>
+  <data name="MagTitre2" xml:space="preserve">
+    <value>ما تقدمه المجلة</value>
+  </data>
+  <data name="MagTitre2Text" xml:space="preserve">
+    <value>هذه المجلة هي فضاء معرفي جديد ومتميز، وستكون مصدركم الأول للاطلاع على:</value>
+  </data>
+  <data name="MagTitre2TextP1" xml:space="preserve">
+    <value>آخر المستجدات في مجال المقاولاتية وريادة الاعمال</value>
+  </data>
+  <data name="MagTitre2TextP2" xml:space="preserve">
+    <value>قصص النجاحات الملهمة لرواد الأعمال الجزائريين</value>
+  </data>
+  <data name="MagTitre2TextP3" xml:space="preserve">
+    <value>تحليلات متعمقة لواقع ومستقبل القطاع في الجزائر</value>
+  </data>
+  <data name="MagTitre2TextP4" xml:space="preserve">
+    <value>نصائح وإرشادات عملية لمرافقة و دعم المؤسسات المصغرة</value>
+  </data>
+  <data name="MagTitre2TextP5" xml:space="preserve">
+    <value>حوارات مع مختلف الفاعلين في مجال المقاولاتية</value>
+  </data>
+  <data name="Minimiser" xml:space="preserve">
+    <value>تصغير</value>
+  </data>
+  <data name="ParcourirMag" xml:space="preserve">
+    <value>تصفح المجلة الآن</value>
+  </data>
+  <data name="partage" xml:space="preserve">
+    <value>مشاركة</value>
+  </data>
+  <data name="PosteDirecteurNesda" xml:space="preserve">
+    <value>المدير العام للوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="poucentage" xml:space="preserve">
+    <value>نسبة التقييم المطلوبة</value>
+  </data>
+  <data name="precedent" xml:space="preserve">
+    <value>السابق</value>
+  </data>
+  <data name="Principal" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+  <data name="ProgCoopérations" xml:space="preserve">
+    <value>برنامج التعاون</value>
+  </data>
+  <data name="ProgCoopérationsTitre1" xml:space="preserve">
+    <value>برنامج تمكين الشباب المقاول في المجال الفلاحي (ProAgro Jeunes)</value>
+  </data>
+  <data name="ProgCoopérationsTitre2" xml:space="preserve">
+    <value>برنامج الحوار الاجتماعي من أجل النظامية وقابلية التشغيل في منطقة الجوار الجنوبي (سوليفم)</value>
+  </data>
+  <data name="ProgCoopérationsTitre3" xml:space="preserve">
+    <value>برنامج الاقتصاد الاجتماعي والتضامني</value>
+  </data>
+  <data name="refaire" xml:space="preserve">
+    <value>إعادة تعيين</value>
+  </data>
+  <data name="retour" xml:space="preserve">
+    <value>العودة</value>
+  </data>
+  <data name="retourListe" xml:space="preserve">
+    <value>العودة للقائمة</value>
+  </data>
+  <data name="SolutionFinancement" xml:space="preserve">
+    <value>حلول التمويل</value>
+  </data>
+  <data name="SolutionFinancementText" xml:space="preserve">
+    <value>تلعب الوكالة الوطنية لدعم وتنمية المقاولاتية دوراً محورياً في تمويل المؤسسات المصغرة، عبر مرافقة حاملي الأفكار الريادية الراغبين في تحويلها إلى مشاريع واقعية تخلق الثروة ومناصب الشغل، وفقا للمقاربة الاقتصادية المنتهجة الرامية الى تعزيز آليات التمويل وتسيير المخاطر المتعلقة بها، بهدف تحريك عجلة التنمية الوطنية.</value>
+  </data>
+  <data name="SousDirectionCommunication" xml:space="preserve">
+    <value>المديرية الفرعية للإتصال</value>
+  </data>
+  <data name="suivant" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+  <data name="TableauTypeFinanement" xml:space="preserve">
+    <value>جدول صيغ التمويل</value>
+  </data>
+  <data name="TableauTypeFinanementColonne1" xml:space="preserve">
+    <value>نوع التمويل</value>
+  </data>
+  <data name="TableauTypeFinanementColonne2" xml:space="preserve">
+    <value>المساهمة الشخصية</value>
+  </data>
+  <data name="TableauTypeFinanementColonne3" xml:space="preserve">
+    <value>الوكالة (قرض غير مكافئ)</value>
+  </data>
+  <data name="TableauTypeFinanementColonne4" xml:space="preserve">
+    <value>البنك (قرض بنكي)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne1" xml:space="preserve">
+    <value>التمويل الثلاثي - الطلبة والبطالين</value>
+  </data>
+  <data name="TableauTypeFinanementLigne2" xml:space="preserve">
+    <value>التمويل الثلاثي - غير البطالين (مناطق الجنوب)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne3" xml:space="preserve">
+    <value>التمويل الثلاثي - غير البطالين (الهضاب العليا والمناطق الخاصة)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne4" xml:space="preserve">
+    <value>التمويل الثلاثي - غير البطالين (باقي المناطق)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne5" xml:space="preserve">
+    <value>التمويل الثنائي</value>
+  </data>
+  <data name="TableauTypeFinanementLigne6" xml:space="preserve">
+    <value>التمويل الذاتي</value>
+  </data>
+  <data name="TableauTypeFinanementText" xml:space="preserve">
+    <value>تفاصيل نسب المساهمة لكل نوع من صيغ التمويل المتاحة</value>
+  </data>
+  <data name="TelechargerMag" xml:space="preserve">
+    <value>تحميل المجلة</value>
+  </data>
+  <data name="TrancheAgeCreation" xml:space="preserve">
+    <value>سن الإنشاء</value>
+  </data>
+  <data name="TrancheAgeExtension" xml:space="preserve">
+    <value>سن التوسعة</value>
+  </data>
+  <data name="AdresseDG" xml:space="preserve">
+    <value>شارع محمد ارزقي بن بوزيد، العناصر-   الجزائر العاصمة، الجزائر</value>
+  </data>
+  <data name="AfficherDoc" xml:space="preserve">
+    <value>عرض الوثيقة</value>
+  </data>
+  <data name="bienvenue" xml:space="preserve">
+    <value>مرحبًا بكم في الموقع الرسمي للوكالة، فضاؤكم لمرافقة الأفكار وتحويلها إلى مشاريع ناجحة.</value>
+  </data>
+  <data name="callCenter" xml:space="preserve">
+    <value>خلية الإتصال</value>
+  </data>
+  <data name="Centre" xml:space="preserve">
+    <value>وسط</value>
+  </data>
+  <data name="consultation" xml:space="preserve">
+    <value>الإستشارات</value>
+  </data>
+  <data name="contactForm" xml:space="preserve">
+    <value>نموذج الاتصال</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>معلومات الاتصال</value>
+  </data>
+  <data name="contactsAgences" xml:space="preserve">
+    <value>للاطلاع على معلومات مفصلة، اضغط على الولاية</value>
+  </data>
+  <data name="contactTitre" xml:space="preserve">
+    <value>معلومات الاتصال الخاصة بالوكالات الولائية</value>
+  </data>
+  <data name="ContenuEmail" xml:space="preserve">
+    <value>الرسالة</value>
+  </data>
+  <data name="ContenuEmailD" xml:space="preserve">
+    <value>اكتب رسالتك هنا...</value>
+  </data>
+  <data name="demandeSuccee" xml:space="preserve">
+    <value>تم إرسال طلبكم بنجاح</value>
+  </data>
+  <data name="EmailD" xml:space="preserve">
+    <value>أدخل بريدك الإلكتروني</value>
+  </data>
+  <data name="envoyerMessage" xml:space="preserve">
+    <value>إرسال الرسالة</value>
+  </data>
+  <data name="Est" xml:space="preserve">
+    <value>شرق</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>الفاكس</value>
+  </data>
+  <data name="FullNameD" xml:space="preserve">
+    <value>أدخل اسمك الكامل</value>
+  </data>
+  <data name="infoComplet" xml:space="preserve">
+    <value>البيانات الشاملة متوفرة</value>
+  </data>
+  <data name="informations" xml:space="preserve">
+    <value>المعلومات</value>
+  </data>
+  <data name="latest" xml:space="preserve">
+    <value>آخر</value>
+  </data>
+  <data name="merci" xml:space="preserve">
+    <value>شكرا لكم</value>
+  </data>
+  <data name="msgSuccessContactUs" xml:space="preserve">
+    <value>شكراً لتواصلكم معنا — لقد استلمنا رسالتكم وسنرد عليكم في أقرب وقت ممكن</value>
+  </data>
+  <data name="msgSuccessContactUsT" xml:space="preserve">
+    <value>ما الخطوة التالية؟</value>
+  </data>
+  <data name="msgSuccessContactUsT1" xml:space="preserve">
+    <value>سيقوم فريقنا بمراجعة رسالتكم خلال 24 ساعة</value>
+  </data>
+  <data name="msgSuccessContactUsT2" xml:space="preserve">
+    <value>سنتواصل معكم عبر البريد الإلكتروني أو الهاتف</value>
+  </data>
+  <data name="msgSuccessContactUsT3" xml:space="preserve">
+    <value>في حالة الاستعجال، يمكنكم الاتصال بنا مباشرة</value>
+  </data>
+  <data name="msgSuccessMI" xml:space="preserve">
+    <value>شكراً لتواصلكم معنا — لقد تم تسجيل طلبكم يرجى تقربكم من وكالتنا الولائية مرفوقين بالبرنامج التقديري للعتاد</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>الأخبار</value>
+  </data>
+  <data name="News&amp;MAJ" xml:space="preserve">
+    <value>الأخبار والمستجدات</value>
+  </data>
+  <data name="nombreAgences" xml:space="preserve">
+    <value>61 وكالة ولائية</value>
+  </data>
+  <data name="ObjetEmail" xml:space="preserve">
+    <value>موضوع الرسالة</value>
+  </data>
+  <data name="ObjetEmailD" xml:space="preserve">
+    <value>أدخل موضوع رسالتك</value>
+  </data>
+  <data name="Ouest" xml:space="preserve">
+    <value>غرب</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="PhoneD" xml:space="preserve">
+    <value>أدخل رقم هاتفك</value>
+  </data>
+  <data name="PolitiqueText" xml:space="preserve">
+    <value>تُعد حماية بياناتكم الشخصية التزامًا مطلقًا بالنسبة لنا. تهدف هذه السياسة إلى إعلامكم بشكل واضح وشفاف حول كيفيات جمع ومعالجة بياناتكم الشخصية من قبل الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="PolitiqueTitre" xml:space="preserve">
+    <value>سياسة حماية البيانات الشخصية وملفات تعريف الارتباط</value>
+  </data>
+  <data name="PolitiqueTitre1" xml:space="preserve">
+    <value>1. مقدمة والتزام</value>
+  </data>
+  <data name="PolitiqueTitre10" xml:space="preserve">
+    <value>الاتصال</value>
+  </data>
+  <data name="PolitiqueTitre10Text" xml:space="preserve">
+    <value>لأية أسئلة تتعلق بسياسة حماية البيانات الشخصية وملفات تعريف الارتباط الحالية، أو لممارسة حقوقكم، يمكنكم الاتصال بـ NESDA:</value>
+  </data>
+  <data name="PolitiqueTitre1P1" xml:space="preserve">
+    <value>في إطار أنشطتها، تُعنى الوكالة الوطنية لدعم وتنمية المقاولاتية، والتي يُشار إليها أسفلها بـ "NESDA"، بجمع ومعالجة وتخزين بيانات ذات طابع شخصي. تُعد حماية هذه البيانات التزامًا مطلقًا على جميع موظفي NESDA، وذلك امتثالًا تامًا لأحكام القانون رقم 18-07 المؤرخ في 10 جوان 2018 والمتعلق بحماية الأشخاص الطبيعيين في مجال معالجة البيانات ذات الطابع الشخصي.</value>
+  </data>
+  <data name="PolitiqueTitre1P2" xml:space="preserve">
+    <value>تعمل NESDA، التي يقع مقرها الاجتماعي في 8، شارع أرزقي بن بوزيد -- العناصر الجزائر -- الجزائر، بصفتها مسؤول المعالجة للبيانات التي يتم جمعها عبر موقعها الإلكتروني.</value>
+  </data>
+  <data name="PolitiqueTitre2" xml:space="preserve">
+    <value>2. الموافقة وقبول السياسة</value>
+  </data>
+  <data name="PolitiqueTitre2P" xml:space="preserve">
+    <value>باستخدام موقع الويب www.nesda.dz والروابط المتاحة عليه، فإنكم تقرون بأنكم قرأتم وفهمتم هذه السياسة وتوافقون على جمع ومعالجة واستخدام وحفظ معلوماتكم وفقًا للطرق الموضحة أدناه، وذلك امتثالًا لأحكام القانون رقم 18-07 المؤرخ في 25 رمضان 1439 الموافق لـ 10 جوان 2018 والمتعلق بحماية الأشخاص الطبيعيين في مجال معالجة البيانات ذات الطابع الشخصي.</value>
+  </data>
+  <data name="PolitiqueTitre3" xml:space="preserve">
+    <value>3. مبادئ حماية البيانات الشخصية</value>
+  </data>
+  <data name="PolitiqueTitre3P1" xml:space="preserve">
+    <value>شرعية المعالجة ونزاهتها وشفافيتها</value>
+  </data>
+  <data name="PolitiqueTitre3P2" xml:space="preserve">
+    <value>تحديد أغراض المعالجة وحصرها</value>
+  </data>
+  <data name="PolitiqueTitre3P3" xml:space="preserve">
+    <value>تقليل البيانات التي يتم جمعها</value>
+  </data>
+  <data name="PolitiqueTitre3P4" xml:space="preserve">
+    <value>دقة البيانات وتحديثها بانتظام</value>
+  </data>
+  <data name="PolitiqueTitre3P5" xml:space="preserve">
+    <value>تحديد مدة الاحتفاظ بالبيانات</value>
+  </data>
+  <data name="PolitiqueTitre3P6" xml:space="preserve">
+    <value>سلامة البيانات وسريتها، بما في ذلك أمن المعالجة</value>
+  </data>
+  <data name="PolitiqueTitre3P7" xml:space="preserve">
+    <value>احترام حقوق الأشخاص المعنيين</value>
+  </data>
+  <data name="PolitiqueTitre3Text" xml:space="preserve">
+    <value>تلتزم NESDA باحترام جميع المبادئ الأساسية المتعلقة بحماية البيانات الشخصية وفقًا للتشريعات المعمول بها، ولا سيما فيما يتعلق بما يلي:</value>
+  </data>
+  <data name="PolitiqueTitre4" xml:space="preserve">
+    <value>4. فئات البيانات الشخصية التي يتم جمعها</value>
+  </data>
+  <data name="PolitiqueTitre4P1" xml:space="preserve">
+    <value>بيانات التعريف</value>
+  </data>
+  <data name="PolitiqueTitre4P1Text" xml:space="preserve">
+    <value>الاسم، اللقب، الاسم المستعار، تاريخ الميلاد، الرقم الوطني للتعريف
+  (NIN)، رقم الحساب البنكي (RIB) / رقم الحساب الجاري البريدي (CCP)، رقم الضمان الاجتماعي</value>
+  </data>
+  <data name="PolitiqueTitre4P2" xml:space="preserve">
+    <value>بيانات الاتصال</value>
+  </data>
+  <data name="PolitiqueTitre4P2Text" xml:space="preserve">
+    <value>رقم الهاتف الثابت أو المحمول، العنوان البريدي، عنوان البريد الإلكتروني.</value>
+  </data>
+  <data name="PolitiqueTitre4P3" xml:space="preserve">
+    <value>بيانات العمليات والمعاملات المصرفية</value>
+  </data>
+  <data name="PolitiqueTitre4P3Text" xml:space="preserve">
+    <value>طبيعة العمليات، التاريخ، تفاصيل المدفوعات بالبطاقة، التحويلات، الاقتطاعات، المبلغ، البيان</value>
+  </data>
+  <data name="PolitiqueTitre4P4" xml:space="preserve">
+    <value>بيانات الاتصال التقنية</value>
+  </data>
+  <data name="PolitiqueTitre4P4Text" xml:space="preserve">
+    <value>معرفات وبيانات المصادقة الخاصة بكم في مساحاتكم المتصلة، سجلات الدخول (logs)، ملفات تعريف الارتباط (cookies) وغيرها من أدوات التتبع، بيانات التصفح على الموقع الإلكتروني (عنوان IP، نوع المتصفح، الصفحات التي تمت زيارتها، إلخ).</value>
+  </data>
+  <data name="PolitiqueTitre4Text" xml:space="preserve">
+    <value>عند استخدامكم لخدمات NESDA وموقعها الإلكتروني، قد يتم جمع فئات البيانات الشخصية التالية:</value>
+  </data>
+  <data name="PolitiqueTitre5" xml:space="preserve">
+    <value>5. أغراض معالجة البيانات الشخصية</value>
+  </data>
+  <data name="PolitiqueTitre5P1" xml:space="preserve">
+    <value>الامتثال للالتزامات القانونية والتنظيمية</value>
+  </data>
+  <data name="PolitiqueTitre5P10" xml:space="preserve">
+    <value>حفظ وأرشفة المعلومات</value>
+  </data>
+  <data name="PolitiqueTitre5P11" xml:space="preserve">
+    <value>التشغيل السليم لنظام المعلومات</value>
+  </data>
+  <data name="PolitiqueTitre5P12" xml:space="preserve">
+    <value>التعاون مع شركاء NESDA</value>
+  </data>
+  <data name="PolitiqueTitre5P2" xml:space="preserve">
+    <value>التكوين والمرافقة وإنشاء وترقية المؤسسات المصغرة</value>
+  </data>
+  <data name="PolitiqueTitre5P3" xml:space="preserve">
+    <value>إدارة الحسابات والعلاقة مع المرقين والشركاء</value>
+  </data>
+  <data name="PolitiqueTitre5P4" xml:space="preserve">
+    <value>تقييم وإدارة المخاطر</value>
+  </data>
+  <data name="PolitiqueTitre5P5" xml:space="preserve">
+    <value>منع وكشف وتحري حالات عدم الدفع والاحتيال</value>
+  </data>
+  <data name="PolitiqueTitre5P6" xml:space="preserve">
+    <value>التحصيل</value>
+  </data>
+  <data name="PolitiqueTitre5P7" xml:space="preserve">
+    <value>التوظيف وإدارة شؤون الموظفين</value>
+  </data>
+  <data name="PolitiqueTitre5P8" xml:space="preserve">
+    <value>تقديم المشورة والمعلومات</value>
+  </data>
+  <data name="PolitiqueTitre5P9" xml:space="preserve">
+    <value>أمن نظام المعلومات والأشخاص والممتلكات</value>
+  </data>
+  <data name="PolitiqueTitre5Text" xml:space="preserve">
+    <value>تعالج NESDA البيانات الشخصية التي يتم جمعها من أجل تحقيق مهامها وفي إطار واحد أو أكثر من الأغراض التالية:</value>
+  </data>
+  <data name="PolitiqueTitre6" xml:space="preserve">
+    <value>6. ملفات تعريف الارتباط (Cookies)</value>
+  </data>
+  <data name="PolitiqueTitre6ST" xml:space="preserve">
+    <value>أنواع ملفات تعريف الارتباط المستخدمة:</value>
+  </data>
+  <data name="PolitiqueTitre6ST11" xml:space="preserve">
+    <value>ملفات تعريف الارتباط الضرورية:</value>
+  </data>
+  <data name="PolitiqueTitre6ST12" xml:space="preserve">
+    <value>ضرورية للتشغيل السليم للموقع وتمكنك من استخدام وظائفه الأساسية</value>
+  </data>
+  <data name="PolitiqueTitre6ST21" xml:space="preserve">
+    <value>ملفات تعريف الارتباط التحليلية:</value>
+  </data>
+  <data name="PolitiqueTitre6ST22" xml:space="preserve">
+    <value>تجمع معلومات حول كيفية استخدام الزوار لموقعنا</value>
+  </data>
+  <data name="PolitiqueTitre6ST31" xml:space="preserve">
+    <value>ملفات تعريف الارتباط الوظيفية:</value>
+  </data>
+  <data name="PolitiqueTitre6ST32" xml:space="preserve">
+    <value>تسمح للموقع بتذكر اختياراتك وتفضيلاتك</value>
+  </data>
+  <data name="PolitiqueTitre6ST41" xml:space="preserve">
+    <value>ملفات تعريف الارتباط الإعلانية:</value>
+  </data>
+  <data name="PolitiqueTitre6ST42" xml:space="preserve">
+    <value>تُستخدم لعرض إعلانات أكثر ملاءمة لك</value>
+  </data>
+  <data name="PolitiqueTitre6Text" xml:space="preserve">
+    <value>يستخدم موقع الويب www.nesda.dz ملفات تعريف الارتباط وتقنيات تتبع أخرى لتحسين تجربة المستخدم، وتخصيص المحتوى، وتحليل حركة المرور على الموقع.</value>
+  </data>
+  <data name="PolitiqueTitre7" xml:space="preserve">
+    <value>7. حقوق الأشخاص المعنيين</value>
+  </data>
+  <data name="PolitiqueTitre7Text" xml:space="preserve">
+    <value>وفقًا للقانون رقم 18-07 المتعلق بحماية البيانات الشخصية، لديكم الحقوق التالية فيما يتعلق ببياناتكم الشخصية:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP11" xml:space="preserve">
+    <value>حق الوصول:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP12" xml:space="preserve">
+    <value>الحصول على تأكيد ما إذا كانت بيانات شخصية تتعلق بكم قيد المعالجة</value>
+  </data>
+  <data name="PolitiqueTitre7TextP21" xml:space="preserve">
+    <value>حق التصحيح:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP22" xml:space="preserve">
+    <value>طلب تصحيح البيانات الشخصية غير الدقيقة أو غير الكاملة</value>
+  </data>
+  <data name="PolitiqueTitre7TextP31" xml:space="preserve">
+    <value>حق المحو:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP32" xml:space="preserve">
+    <value>طلب محو بياناتكم الشخصية في بعض الحالات</value>
+  </data>
+  <data name="PolitiqueTitre7TextP41" xml:space="preserve">
+    <value>حق تقييد المعالجة:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP42" xml:space="preserve">
+    <value>طلب تقييد معالجة بياناتكم في ظروف معينة</value>
+  </data>
+  <data name="PolitiqueTitre7TextP51" xml:space="preserve">
+    <value>حق الاعتراض:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP52" xml:space="preserve">
+    <value>الاعتراض على معالجة بياناتكم لأسباب مشروعة</value>
+  </data>
+  <data name="PolitiqueTitre7TextP61" xml:space="preserve">
+    <value>حق نقل البيانات:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP62" xml:space="preserve">
+    <value>الحصول على بياناتكم بتنسيق منظم وقابل للقراءة آليًا</value>
+  </data>
+  <data name="PolitiqueTitre7TextP71" xml:space="preserve">
+    <value>حق سحب الموافقة:</value>
+  </data>
+  <data name="PolitiqueTitre7TextP72" xml:space="preserve">
+    <value>سحب موافقتكم في أي وقت عندما تستند المعالجة إلى هذه الموافقة</value>
+  </data>
+  <data name="PolitiqueTitre8" xml:space="preserve">
+    <value>8. أمن البيانات الشخصية</value>
+  </data>
+  <data name="PolitiqueTitre8P1" xml:space="preserve">
+    <value>تتخذ NESDA تدابير تقنية وتنظيمية مناسبة لضمان مستوى من الأمان يتناسب مع المخاطر، وذلك لحماية بياناتكم الشخصية من التدمير أو الفقدان أو التغيير أو الكشف غير المصرح به.</value>
+  </data>
+  <data name="PolitiqueTitre8P2" xml:space="preserve">
+    <value>تشمل هذه التدابير استخدام تقنيات إخفاء الهوية وتشفير البيانات، وضمان سرية وسلامة أنظمة المعالجة، وإجراءات استعادة البيانات، بالإضافة إلى بنود سرية صارمة للموظفين.</value>
+  </data>
+  <data name="PolitiqueTitre9" xml:space="preserve">
+    <value>9. مدة الاحتفاظ بالبيانات</value>
+  </data>
+  <data name="PolitiqueTitre9Text" xml:space="preserve">
+    <value>تحتفظ NESDA ببياناتكم الشخصية فقط للمدة اللازمة للأغراض التي جمعت وعولجت من أجلها، وفقًا للالتزامات القانونية والتنظيمية المعمول بها. يتم تحديد مدة الاحتفاظ بناءً على أغراض المعالجة، والقيود التشغيلية، وكذلك فترات التقادم القانونية.</value>
+  </data>
+  <data name="PolitiqueUpdate" xml:space="preserve">
+    <value>آخر تحديث: مارس 2025</value>
+  </data>
+  <data name="QstUrgent" xml:space="preserve">
+    <value>للاستفسارات العاجلة :</value>
+  </data>
+  <data name="Recherche" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="RechercheArticleNews" xml:space="preserve">
+    <value>ابحث عن مقال أو خبر...</value>
+  </data>
+  <data name="RechercheDansArticle" xml:space="preserve">
+    <value>البحث في المقالات والأخبار</value>
+  </data>
+  <data name="retourPagePrincipal" xml:space="preserve">
+    <value>العودة إلى الصفحة الرئيسية</value>
+  </data>
+  <data name="Site" xml:space="preserve">
+    <value>الموقع الإلكتروني:</value>
+  </data>
+  <data name="StructureAgence" xml:space="preserve">
+    <value>الوكالة الولائية</value>
+  </data>
+  <data name="StructureDG" xml:space="preserve">
+    <value>المديرية العامة</value>
+  </data>
+  <data name="StructuresAgences" xml:space="preserve">
+    <value>الوكالات الولائية</value>
+  </data>
+  <data name="Sud" xml:space="preserve">
+    <value>جنوب</value>
+  </data>
+  <data name="TitreConsultation" xml:space="preserve">
+    <value>عنوان الإستشارة</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>التحديثات</value>
+  </data>
+  <data name="WilayaD" xml:space="preserve">
+    <value>اختر الولاية</value>
+  </data>
+  <data name="AgenceDepot" xml:space="preserve">
+    <value>وكالة الإيداع</value>
+  </data>
+  <data name="CertificatNIF" xml:space="preserve">
+    <value>رفع مستند شهادة تخصيص رقم التعريف الضريبي</value>
+  </data>
+  <data name="champObligatoir" xml:space="preserve">
+    <value>الحقل مطلوب</value>
+  </data>
+  <data name="ChampTitre" xml:space="preserve">
+    <value>"الرجاء إدخال أحرف عربية فقط"</value>
+  </data>
+  <data name="Choisir" xml:space="preserve">
+    <value>اختر</value>
+  </data>
+  <data name="ChoisirActivite" xml:space="preserve">
+    <value>اختر النشاط</value>
+  </data>
+  <data name="ChoisirGenre" xml:space="preserve">
+    <value>اختر الجنس</value>
+  </data>
+  <data name="ChoisirSA" xml:space="preserve">
+    <value>اختر قطاع النشاط</value>
+  </data>
+  <data name="ChoisirTypeBesoin" xml:space="preserve">
+    <value>اختر نوع الاحتياج</value>
+  </data>
+  <data name="ChoisirWilaya" xml:space="preserve">
+    <value>اختر الولاية</value>
+  </data>
+  <data name="DeclarationHonneurTitre" xml:space="preserve">
+    <value>تصريح شرفي</value>
+  </data>
+  <data name="Ecrire" xml:space="preserve">
+    <value>"اكتب هنا بالعربية"</value>
+  </data>
+  <data name="Envoyer" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="FormeJuridique" xml:space="preserve">
+    <value>الشكل القانوني</value>
+  </data>
+  <data name="InformationPersonnel" xml:space="preserve">
+    <value>معلومات شخصية</value>
+  </data>
+  <data name="InformationSociete" xml:space="preserve">
+    <value>معلومات المؤسسة</value>
+  </data>
+  <data name="NIF" xml:space="preserve">
+    <value>رقم التعريف الضريبي</value>
+  </data>
+  <data name="NIN1" xml:space="preserve">
+    <value>رقم التعريف الوطني</value>
+  </data>
+  <data name="Nombre" xml:space="preserve">
+    <value>رقم مطلوب</value>
+  </data>
+  <data name="NomSociete" xml:space="preserve">
+    <value>إسم المؤسسة</value>
+  </data>
+  <data name="NumDossier" xml:space="preserve">
+    <value>رقم الملف</value>
+  </data>
+  <data name="NumRegistreCommerce" xml:space="preserve">
+    <value>رقم السجل التجاري/ الاعتماد</value>
+  </data>
+  <data name="responsabilite" xml:space="preserve">
+    <value>المسؤولية والالتزام</value>
+  </data>
+  <data name="TelechargeProgrammeDetection" xml:space="preserve">
+    <value>تحميل برنامج التنبؤ بالمعدات أو الخدمات</value>
+  </data>
+  <data name="TelechargerDH" xml:space="preserve">
+    <value>تحميل التصريح الشرفي</value>
+  </data>
+  <data name="TelechargerRC" xml:space="preserve">
+    <value>تحميل السجل التجاري</value>
+  </data>
+  <data name="TypeBesoin" xml:space="preserve">
+    <value>نوع الاحتياج</value>
+  </data>
+  <data name="AccesPortal" xml:space="preserve">
+    <value>الولوج إلى البوابة الإلكترونية</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_01" xml:space="preserve">
+    <value>الوصول المباشر إلى جميع الفرص التجارية الحكومية</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_02" xml:space="preserve">
+    <value>توفير الوقت والجهد في البحث عن المناقصات</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_03" xml:space="preserve">
+    <value>ضمان عدم تفويت أي فرصة استثمارية مهمة</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_04" xml:space="preserve">
+    <value>سهولة تقديم العروض والمتابعة الإلكترونية</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_05" xml:space="preserve">
+    <value>الحصول على إشعارات فورية للمناقصات الجديدة</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>مزايا التسجيل في البوابة</value>
+  </data>
+  <data name="Assistance" xml:space="preserve">
+    <value>الدعم والمساعدة</value>
+  </data>
+  <data name="EtapesInscription" xml:space="preserve">
+    <value>خطوات التسجيل</value>
+  </data>
+  <data name="Services_Portail_MPDZ_01" xml:space="preserve">
+    <value>الإطلاع على جميع الاستشارات والصفقات العمومية على المستوى الوطني</value>
+  </data>
+  <data name="Services_Portail_MPDZ_02" xml:space="preserve">
+    <value>متابعة مختلف دعوات المنافسة والمناقصات الجارية</value>
+  </data>
+  <data name="Services_Portail_MPDZ_03" xml:space="preserve">
+    <value>تحميل كافة دفاتر الشروط والوثائق المطلوبة</value>
+  </data>
+  <data name="Services_Portail_MPDZ_04" xml:space="preserve">
+    <value>تقديم العروض والمشاركة في المناقصات إلكترونياً</value>
+  </data>
+  <data name="Services_Portail_MPDZ_05" xml:space="preserve">
+    <value>متابعة حالة العروض المقدمة والنتائج</value>
+  </data>
+  <data name="Services_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>الخدمات المتاحة عبر البوابة</value>
+  </data>
+  <data name="organigrammeNesda" xml:space="preserve">
+    <value>الهيكل التنظيمي للوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="organigrammeNesdaText" xml:space="preserve">
+    <value>قرار المؤرخ في 23 شوال 1446 الموافق 22 ابريل 2025 يتضمن التنظيم الداخلي للوكالة الوطنية لدعم وتنمية المقاوالتية</value>
+  </data>
+  <data name="organigrammeNesdaTitre1" xml:space="preserve">
+    <value>الهيكل التنظيمي للوكالة الولائية لدعم وتنمية المقاوالتية</value>
+  </data>
+  <data name="organigrammeNesdaTitre1Text" xml:space="preserve">
+    <value>الهيكل التنظيمي للوكالة الولائية لدعم وتنمية المقاوالتيةقرار المؤرخ في 23 شوال 1446 الموافق 22 ابريل 2025 يتضمن التنظيم الداخلي للوكالة الوطنية لدعم وتنمية المقاوالتية</value>
+  </data>
+  <data name="LireEncore" xml:space="preserve">
+    <value>[قراءة المزيد]</value>
+  </data>
+  <data name="CleRecherche" xml:space="preserve">
+    <value>اكتب كلمة مفتاحية للبحث...</value>
+  </data>
+  <data name="DetailArticle" xml:space="preserve">
+    <value>تفاصيل المقال</value>
+  </data>
+  <data name="RechercheSujet" xml:space="preserve">
+    <value>ابحث حسب الموضوع...</value>
+  </data>
+  <data name="TitreRecherche" xml:space="preserve">
+    <value>أدخل عنوان المقال هنا...</value>
+  </data>
+  <data name="ToutLesArticles" xml:space="preserve">
+    <value>كافة المقالات</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>مشاركة المقال</value>
+  </data>
+  <data name="annule" xml:space="preserve">
+    <value>ملغى</value>
+  </data>
+  <data name="legistaliveText" xml:space="preserve">
+    <value>النصوص القانونية</value>
+  </data>
+  <data name="frequente" xml:space="preserve">
+    <value>الشائعة</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>الأسئلة</value>
+  </data>
+  <data name="CentreComunication" xml:space="preserve">
+    <value>مركز الإتصالات</value>
+  </data>
+  <data name="CommunicationCell" xml:space="preserve">
+    <value>خلية الإتصال</value>
+  </data>
+  <data name="nomWilaya" xml:space="preserve">
+    <value>اسم الولاية</value>
   </data>
 </root>

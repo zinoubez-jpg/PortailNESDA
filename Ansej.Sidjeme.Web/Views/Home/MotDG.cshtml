@@ -28,37 +28,43 @@
         font-family: Georgia, serif;
     }
 
-        .message-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            position: relative;
-            z-index: 1;
-            text-align:justify;
-        }
+    .message-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+        text-align: justify;
+    }
+
     .highlight {
         color: #2d465e;
         font-weight: 600;
     }
-       
-        @@media (max-width: 768px) {
-           
-            .content-section {
-                padding: 40px 20px;
-            }
 
-          
+    @@media (max-width: 768px) {
+
+        .content-section {
+            padding: 40px 20px;
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 1s ease-in;
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
         }
 
-        .fade-in {
-            animation: fadeIn 1s ease-in;
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
-
-        @@keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+    }
 
     .final-signature {
         margin-top: 50px;
@@ -105,7 +111,7 @@
         position: relative;
     }
 
-        
+
     .signature-section {
         margin-bottom: 30px;
     }
@@ -118,8 +124,8 @@
             margin-bottom: 20px;
             position: relative;
         }
-
 </style>
+
 
 
 
@@ -141,7 +147,7 @@
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    
+
 
         <div class="leadership-team">
             <div class="row">
@@ -156,9 +162,9 @@
                             </div>
                         </div>
                         <div class="leader-info">
-                            <h4> بلال عشاشة</h4>
-                            <p class="position">المدير العام</p>
-                            <p class="bio">الوكالة الوطنية لدعم وتنمية المقاولاتية</p>
+                            <h4> @localizer["Directeur"]</h4>
+                            <p class="position">@localizer["PosteDirecteur"]</p>
+                            <p class="bio">@localizer["Agences"]</p>
                         </div>
                     </div>
                 </div>
@@ -168,37 +174,36 @@
                         <div class="welcome-message">
                             <div class="quote-mark">"</div>
 
-                            <h1 class="title">كلمة المدير العام</h1>
+                            <h1 class="title">@localizer["MotDG"]</h1>
 
                             <div class="signature-section">
-                                <p class="highlight">زوّار موقعنا الأعزاء</p>
+                                <p class="highlight">@localizer["MotVisiteurs"]</p>
                             </div>
 
                             <p class="message-text">
-                                تشهد <span class="highlight">الوكالة الوطنية لدعم وتنمية المقاولاتية (NESDA)</span>، منذ سنة 2024، ديناميكية كبيرة، تمثل نقطة تحول حاسمة في الجهاز الوطني لدعم إنشاء المؤسسات المصغرة ويعكس تغييرًا استراتيجيًا هامًا، عبر الانتقال من نموذج إداري لدعم تشغيل الشباب إلى جهاز اقتصادي يركز على إنشاء مؤسسات مصغرة ناجحة ومستدامة. حيث يستند هذا التوجه الجديد إلى دعم أكبر لحاملي المشاريع، بهدف مساعدة ظهور الأفكار، نضجها وتحويلها إلى مشاريع مربحة وقابلة للاستمرار.
+                                @localizer["verbepresentation"] <span class="highlight">@localizer["AgenceNesda"]</span>، @messageslocalizer["date"]،@messageslocalizer["DescriptionAgenceP1"]
+
+                            <p class="message-text">
+                                @localizer["VerbePresentation1"] <span class="highlight">@localizer["MotAgence"]</span> @messageslocalizer["DescriptionAgenceP2"].
                             </p>
 
                             <p class="message-text">
-                                في هذا الصدد، تضع <span class="highlight">الوكالة</span> نفسها كمحرك حقيقي للتحول الاقتصادي، عبر المساهمة بفعالية في جهود السلطات العمومية الرامية إلى خفض فاتورة الواردات، تنويع الاقتصاد، زيادة مرونته وتوليد فرص عمل ذات قيمة مضافة عالية.
+                                @messageslocalizer["DescriptionAgenceP2,1"] <span class="highlight">@localizer["CentreCDE"]</span>@messageslocalizer["DescriptionAgenceP2,2"].
                             </p>
 
                             <p class="message-text">
-                                وقد استلزم التحول الاستراتيجي لدور الوكالة جملة من التعديلات، من جهة، على الصعيد الخارجي، وذلك عبر إبرام شراكات استراتيجية مع القطاعات الرئيسية في النظام البيئي للمقاولاتية، وهي التعليم العالي والبحث العلمي، وكذلك التكوين المهني لإنشاء <span class="highlight">مراكز تطوير المقاولاتية (CDE)</span> والترويج لها عبر كافة تراب الوطن، بالإضافة الى شراكات مهمة مع جهات اجتماعية واقتصادية فاعلة في القطاعات الرئيسية على غرار الشغل، التأمين والفلاحة.
+                                @messageslocalizer["DescriptionAgenceP3,1"] <span class="highlight">@localizer["OutilsNumeriques"]</span> @messageslocalizer["DescriptionAgenceP3,2"] <span class="highlight">@localizer["NesdaRating"]</span> @messageslocalizer["DescriptionAgenceP3,3"] <span class="highlight">@localizer["NesdaKPI"]</span> @messageslocalizer["DescriptionAgenceP3,4"].
                             </p>
 
                             <p class="message-text">
-                                ومن جهة أخرى، على الصعيد الداخلي، عززت الوكالة قدراتها في مجال تقييم المشاريع وإدارة المخاطر من خلال تنفيذ برامج تكوينية لموظفيها واعتماد تنظيم داخلي جديد يضمن مواءمة استراتيجية متناسقة وتعزيز الوظائف الرئيسية للوكالة، مثل التخطيط، الدعم، التقييم، التحصيل وإدارة الموارد. بالإضافة إلى ذلك، قامت الوكالة بإطلاق وسائل رقمية مثل <span class="highlight">مخطط الاعمال الرقمي، مركز الاتصال، منصات رقمية</span> على غرار منصة تقييم المشاريع  <span class="highlight">NESDA Rating</span> ومنصة متابعة الأداء <span class="highlight">NESDA KPI</span>، بالإضافة إلى الموقع الإلكتروني الحالي.
+                                @messageslocalizer["DescriptionAgenceP4"]
                             </p>
 
-                            <p class="message-text">
-                                تعتزم الوكالة مواصلة ديناميكية تطوير وتحويل مخطط سير جهازها، بهدف تعزيز متغير"الثقة" لدى حاملي المشاريع وتشجيع إدماج المشاريع المصغرة والصغيرة في سلاسل القيم الوطنية. حيث ان الهدف النهائي هو تمكين الوكالة من أداء دورها الكامل كرافعة للتحول الاقتصادي في خدمة التنمية الوطنية.
-                            </p>
 
-                           
 
                             <div class="final-signature">
-                                <p class="director-name">بلال عشاشة</p>
-                                <p class="director-title">المدير العام</p>
+                                <p class="director-name">@localizer["Directeur"]</p>
+                                <p class="director-title">@localizer["PosteDirecteur"]</p>
                             </div>
                         </div>
                     </div>

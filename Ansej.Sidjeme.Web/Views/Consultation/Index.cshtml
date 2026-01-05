@@ -1,314 +1,326 @@
-﻿@model IEnumerable<Ansej.Sidjeme.Web.Views.ViewModels.TopStructureGroup>
-
+﻿@model IEnumerable<Ansej.Sidjeme.Domain.Entities.Consultation>
+@using System.Globalization
 @{
-    ViewData["Title"] = "الإستشارات";
+    ViewData["Title"] = localizer["consultation"];
+    // Récupère le nom de la culture (ex: "ar", "ar-SA", "en", "en-US")
+    var currentLanguage = CultureInfo.CurrentCulture.Name;
+
+    // Vérifie si c'est de l'arabe
+    bool isArabic = currentLanguage.StartsWith("ar");
 }
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+@section head {
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
 
-<style>
+    <style>
 
-    .main-content {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    /* Header Section */
-    .section-title {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: var(--heading-color);
-        text-align: center;
-        margin-bottom: 3rem;
-        position: relative;
-    }
-
-        .section-title::after {
-            content: "";
-            position: absolute;
-            width: 100px;
-            height: 4px;
-            background-color: var(--accent-color);
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: -10px;
-            border-radius: 2px;
+        .main-content {
+            padding-top: 60px;
+            padding-bottom: 60px;
         }
 
-    /* Stats Card */
-    .stats-card {
-        background-color: var(--surface-color);
-        border-radius: 20px;
-        padding: 2rem;
-        margin-bottom: 3rem;
-        text-align: center;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        border-bottom: 4px solid var(--accent-color);
-        transition: transform 0.3s ease;
-        position: relative;
-        overflow: hidden;
-    }
-
-        .stats-card::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 0;
-            background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
-            transition: height 0.5s ease;
-            z-index: 0;
-        }
-
-        .stats-card:hover::before {
-            height: 100%;
-        }
-
-        .stats-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .stats-card > * {
-            position: relative;
-            z-index: 1;
-        }
-
-    .stats-number {
-        font-size: 3.5rem;
-        font-weight: 700;
-        color: var(--accent-color);
-        margin-bottom: 0.5rem;
-        transition: color 0.3s ease;
-    }
-
-    .stats-card:hover .stats-number {
-        color: var(--contrast-color);
-    }
-
-    .stats-label {
-        font-size: 1.125rem;
-        color: color-mix(in srgb, var(--default-color), transparent 20%);
-        font-weight: 600;
-        transition: color 0.3s ease;
-    }
-
-    .stats-card:hover .stats-label {
-        color: var(--contrast-color);
-    }
-
-    /* Structure Section */
-    .structure-section {
-        margin-bottom: 3rem;
-    }
-
-    .structure-title {
-        background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
-        color: var(--contrast-color);
-        padding: 1.5rem 2rem;
-        border-radius: 15px 15px 0 0;
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin: 0;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        position: relative;
-    }
-
-        .structure-title::after {
-            content: "";
-            position: absolute;
-            width: 50px;
-            height: 3px;
-            background-color: rgba(255, 255, 255, 0.3);
-            bottom: 10px;
-            right: 2rem;
-            border-radius: 2px;
-        }
-
-    /* Table Styles */
-    .consultations-table {
-        width: 100%;
-        background-color: var(--surface-color);
-        border-radius: 0 0 15px 15px;
-        overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        border-collapse: collapse;
-    }
-
-    .table-header {
-        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-    }
-
-        .table-header th {
-            padding: 1.25rem 1.5rem;
+        /* Header Section */
+        .section-title {
+            font-size: 2.5rem;
             font-weight: 700;
             color: var(--heading-color);
-            border: none;
-            font-size: 1rem;
             text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
         }
 
-    .consultations-table tbody tr {
-        transition: all 0.3s ease;
-        border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 90%);
-    }
+            .section-title::after {
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 4px;
+                background-color: var(--accent-color);
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -10px;
+                border-radius: 2px;
+            }
 
-        .consultations-table tbody tr:hover {
-            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-            transform: scale(1.01);
-        }
-
-        .consultations-table tbody tr:last-child {
-            border-bottom: none;
-        }
-
-    .consultations-table td {
-        padding: 1.25rem 1.5rem;
-        border: none;
-        vertical-align: middle;
-        text-align: center;
-    }
-
-    .date-cell {
-        font-weight: 600;
-        color: var(--accent-color);
-        font-size: 0.95rem;
-    }
-
-    .title-cell {
-        font-weight: 600;
-        color: var(--heading-color);
-        text-align: right;
-        max-width: 300px;
-    }
-
-    /* Document Button */
-    .document-btn {
-        background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
-        color: var(--contrast-color);
-        padding: 0.75rem 1.5rem;
-        border-radius: 25px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: all 0.3s ease;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: 0.9rem;
-        box-shadow: 0 4px 15px rgba(65, 193, 186, 0.3);
-    }
-
-        .document-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(65, 193, 186, 0.4);
-            color: var(--contrast-color);
-            text-decoration: none;
-        }
-
-        .document-btn::before {
-            content: "\f15c";
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-        }
-
-    /* Responsive Design */
-    @@media (max-width: 768px) {
-        .main-content {
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-
+        /* Stats Card */
         .stats-card {
-            padding: 1.5rem;
-            margin-bottom: 2rem;
+            background-color: var(--surface-color);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid var(--accent-color);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
+
+            .stats-card::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
+                transition: height 0.5s ease;
+                z-index: 0;
+            }
+
+            .stats-card:hover::before {
+                height: 100%;
+            }
+
+            .stats-card:hover {
+                transform: translateY(-10px);
+            }
+
+            .stats-card > * {
+                position: relative;
+                z-index: 1;
+            }
 
         .stats-number {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
         }
 
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 2rem;
+        .stats-card:hover .stats-number {
+            color: var(--contrast-color);
+        }
+
+        .stats-label {
+            font-size: 1.125rem;
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .stats-card:hover .stats-label {
+            color: var(--contrast-color);
+        }
+
+        /* Structure Section */
+        .structure-section {
+            margin-bottom: 3rem;
         }
 
         .structure-title {
-            padding: 1rem 1.5rem;
-            font-size: 1.25rem;
+            background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
+            color: var(--contrast-color);
+            padding: 1.5rem 2rem;
+            border-radius: 15px 15px 0 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
-        .consultations-table {
-            font-size: 0.9rem;
-        }
-
-            .table-header th,
-            .consultations-table td {
-                padding: 1rem;
+            .structure-title::after {
+                content: "";
+                position: absolute;
+                width: 50px;
+                height: 3px;
+                background-color: rgba(255, 255, 255, 0.3);
+                bottom: 10px;
+                right: 2rem;
+                border-radius: 2px;
             }
 
-        .title-cell {
-            max-width: 200px;
-            font-size: 0.9rem;
-        }
-
-        .document-btn {
-            padding: 0.6rem 1.2rem;
-            font-size: 0.85rem;
-        }
-    }
-
-    @@media (max-width: 576px) {
+        /* Table Styles */
         .consultations-table {
-            display: block;
-            overflow-x: auto;
-            white-space: nowrap;
+            width: 100%;
+            background-color: var(--surface-color);
+            border-radius: 0 0 15px 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-collapse: collapse;
+        }
+
+        .table-header {
+            background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+        }
+
+            .table-header th {
+                padding: 1.25rem 1.5rem;
+                font-weight: 700;
+                color: var(--heading-color);
+                border: none;
+                font-size: 1rem;
+                text-align: center;
+            }
+
+        .consultations-table tbody tr {
+            transition: all 0.3s ease;
+            border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 90%);
+        }
+
+            .consultations-table tbody tr:hover {
+                background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+                transform: scale(1.01);
+            }
+
+            .consultations-table tbody tr:last-child {
+                border-bottom: none;
+            }
+
+        .consultations-table td {
+            padding: 1.25rem 1.5rem;
+            border: none;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .date-cell {
+            font-weight: 600;
+            color: var(--accent-color);
+            font-size: 0.95rem;
         }
 
         .title-cell {
-            max-width: 150px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-    }
-
-    /* Animation for page load */
-    .structure-section {
-        opacity: 0;
-        transform: translateY(20px);
-        animation: fadeInUp 0.6s ease forwards;
-    }
-
-        .structure-section:nth-child(even) {
-            animation-delay: 0.1s;
+            font-weight: 600;
+            color: var(--heading-color);
+            text-align: right;
+            max-width: 300px;
         }
 
-        .structure-section:nth-child(odd) {
-            animation-delay: 0.2s;
+        /* Document Button */
+        .document-btn {
+            background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
+            color: var(--contrast-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 15px rgba(65, 193, 186, 0.3);
         }
 
-    @@keyframes fadeInUp {
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+            .document-btn:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 25px rgba(65, 193, 186, 0.4);
+                color: var(--contrast-color);
+                text-decoration: none;
+            }
 
-    /* Stats card animation */
-    .stats-card {
-        opacity: 0;
-        transform: scale(0.9);
-        animation: scaleIn 0.5s ease forwards;
-    }
+            .document-btn::before {
+                content: "\f15c";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+            }
 
-    @@keyframes scaleIn {
-        to {
-            opacity: 1;
-            transform: scale(1);
+        /* Responsive Design */
+        @@media (max-width: 768px) {
+            .main-content {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            .stats-card {
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .stats-number {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .structure-title {
+                padding: 1rem 1.5rem;
+                font-size: 1.25rem;
+            }
+
+            .consultations-table {
+                font-size: 0.9rem;
+            }
+
+                .table-header th,
+                .consultations-table td {
+                    padding: 1rem;
+                }
+
+            .title-cell {
+                max-width: 200px;
+                font-size: 0.9rem;
+            }
+
+            .document-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.85rem;
+            }
         }
-    }
-</style>
+
+        @@media (max-width: 576px) {
+            .consultations-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .title-cell {
+                max-width: 150px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        /* Animation for page load */
+        .structure-section {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+            .structure-section:nth-child(even) {
+                animation-delay: 0.1s;
+            }
+
+            .structure-section:nth-child(odd) {
+                animation-delay: 0.2s;
+            }
+
+        @@keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Stats card animation */
+        .stats-card {
+            opacity: 0;
+            transform: scale(0.9);
+            animation: scaleIn 0.5s ease forwards;
+        }
+
+        @@keyframes scaleIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+
+
+}
+
+
 
 <!-- Page Title -->
 <div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/isticharat.jpg);">
@@ -331,99 +343,115 @@
     <div class="container">
         <!-- Stats Card -->
         <!--<div class="stats-card">
-            <div class="stats-number" id="totalConsultations">@ViewBag.ConsultationVivante</div>
-            <div class="stats-label">إجمالي الاستشارات المتاحة</div>
-        </div>-->
+        <div class="stats-number" id="totalConsultations">@ViewBag.ConsultationVivante</div>
+        <div class="stats-label">إجمالي الاستشارات المتاحة</div>
+    </div>-->
         <!-- Section Title -->
-        <h2 class="section-title">الاستشارات</h2>
+        <h2 class="section-title">@localizer["consultation"]</h2>
 
-        <!-- Consultations Groups -->
-        @foreach (var group in Model)
-        {
-            var structureName = group.TopStructure.NameAr;
+        <!-- Consultations -->
+      
             <div class="structure-section">
-                <h4 class="structure-title">@structureName</h4>
+
                 <table class="consultations-table">
                     <thead class="table-header">
                         <tr>
-                            @if (group.IsFromChild)
-                            {
-                                <th>الوكالة الولائية</th>
-                            }
-                            <th>تاريخ النشر</th>
-                            <th>العنوان الإستشارة</th>
+                            <th>@localizer["Structure"]</th>
+                            <th>@localizer["DatePublication"]</th>
+                            <th>@localizer["TitreConsultation"]</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var consultation in group.Consultations)
+                        @foreach (var consultation in Model)
                         {
                             <tr>
-                                @if (group.IsFromChild)
+
+                                @if (isArabic)
                                 {
                                     <td>@consultation.StructureManager?.NameAr</td>
                                 }
+                                else
+                                {
+                                    <td>@consultation.StructureManager?.NameEn</td>
+                                }
+
                                 <td class="date-cell">@consultation.PublishDate.ToString("dd/MM/yyyy")</td>
-                                <td class="title-cell">@consultation.TitleAr</td>
+
+                                @if (isArabic)
+                                {
+                                    <td class="title-cell">@consultation.TitleAr</td>
+                                }
+                                else
+                                {
+                                    <td class="title-cell">@consultation.TitleEn</td>
+                                }
+
                                 <td>
                                     <a href="@consultation.FilePath" class="document-btn" target="_blank">
-                                        عرض الوثيقة
+                                        @localizer["AfficherDoc"]
                                     </a>
                                 </td>
                             </tr>
                         }
-                    </tbody>
+                        </tbody>
                 </table>
             </div>
         }
     </div>
 </div>
+@section scripts {
 
+    @*<script>
+            // Animation for numbers counting up
+            document.addEventListener('DOMContentLoaded', function () {
+                const statsNumber = document.getElementById('totalConsultations');
+                if (statsNumber) {
+                    const finalNumber = parseInt(statsNumber.textContent.replace(/[^\d]/g, ''));
+                    let currentNumber = 0;
+                    const increment = Math.ceil(finalNumber / 50);
 
-<script>
-    // Animation for numbers counting up
-    document.addEventListener('DOMContentLoaded', function () {
-        const statsNumber = document.getElementById('totalConsultations');
-        if (statsNumber) {
-            const finalNumber = parseInt(statsNumber.textContent.replace(/[^\d]/g, ''));
-            let currentNumber = 0;
-            const increment = Math.ceil(finalNumber / 50);
-
-            const timer = setInterval(() => {
-                currentNumber += increment;
-                if (currentNumber >= finalNumber) {
-                    currentNumber = finalNumber;
-                    clearInterval(timer);
+                    const timer = setInterval(() => {
+                        currentNumber += increment;
+                        if (currentNumber >= finalNumber) {
+                            currentNumber = finalNumber;
+                            clearInterval(timer);
+                        }
+                        statsNumber.textContent = currentNumber + (statsNumber.textContent.includes('+') ? '+' : '');
+                    }, 30);
                 }
-                statsNumber.textContent = currentNumber + (statsNumber.textContent.includes('+') ? '+' : '');
-            }, 30);
-        }
 
-        // Add smooth scroll for better UX
-        const documentBtns = document.querySelectorAll('.document-btn');
-        documentBtns.forEach(btn => {
-            btn.addEventListener('click', function (e) {
-                // Add a subtle animation when clicked
-                this.style.transform = 'scale(0.95)';
-                setTimeout(() => {
-                    this.style.transform = '';
-                }, 150);
-            });
-        });
+                // Add smooth scroll for better UX
+                const documentBtns = document.querySelectorAll('.document-btn');
+                documentBtns.forEach(btn => {
+                    btn.addEventListener('click', function (e) {
+                        // Add a subtle animation when clicked
+                        this.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            this.style.transform = '';
+                        }, 150);
+                    });
+                });
 
-        // Table row click enhancement
-        const tableRows = document.querySelectorAll('.consultations-table tbody tr');
-        tableRows.forEach(row => {
-            row.addEventListener('mouseenter', function () {
-                this.style.boxShadow = '0 5px 15px rgba(65, 193, 186, 0.2)';
-            });
+                // Table row click enhancement
+                const tableRows = document.querySelectorAll('.consultations-table tbody tr');
+                tableRows.forEach(row => {
+                    row.addEventListener('mouseenter', function () {
+                        this.style.boxShadow = '0 5px 15px rgba(65, 193, 186, 0.2)';
+                    });
 
-            row.addEventListener('mouseleave', function () {
-                this.style.boxShadow = '';
+                    row.addEventListener('mouseleave', function () {
+                        this.style.boxShadow = '';
+                    });
+                });
             });
-        });
-    });
-</script>
+        </script>*@
+
+
+
+
+
+}
 
 
 

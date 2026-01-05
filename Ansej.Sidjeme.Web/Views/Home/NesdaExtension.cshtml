@@ -6,32 +6,32 @@
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <style>
-       
 
-        .nesda-extension {
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
+
+    .nesda-extension {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
         .nesda-extension .display-6 {
             line-height: 1.2;
         }
 
-        .nesda-extension .display-6 span {
-            position: relative;
-            color: var(--accent-color);
-        }
+            .nesda-extension .display-6 span {
+                position: relative;
+                color: var(--accent-color);
+            }
 
-        .nesda-extension .display-6 span:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 10px;
-            background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
-            left: 0;
-            bottom: 5px;
-            z-index: -1;
-        }
+                .nesda-extension .display-6 span:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+                    left: 0;
+                    bottom: 5px;
+                    z-index: -1;
+                }
 
         .nesda-extension .lead {
             color: color-mix(in srgb, var(--default-color), transparent 20%);
@@ -51,25 +51,25 @@
             border-bottom: 3px solid var(--accent-color);
         }
 
-        .nesda-extension .info-item:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 0;
-            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-            transition: height 0.5s ease;
-            z-index: -1;
-        }
+            .nesda-extension .info-item:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+                transition: height 0.5s ease;
+                z-index: -1;
+            }
 
-        .nesda-extension .info-item:hover {
-            transform: translateY(-5px);
-        }
+            .nesda-extension .info-item:hover {
+                transform: translateY(-5px);
+            }
 
-        .nesda-extension .info-item:hover:before {
-            height: 100%;
-        }
+                .nesda-extension .info-item:hover:before {
+                    height: 100%;
+                }
 
         .nesda-extension .info-header {
             padding: 1.5rem 2rem;
@@ -78,74 +78,75 @@
             justify-content: space-between;
         }
 
-        .nesda-extension .info-header h5 {
-            margin: 0;
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--heading-color);
-            flex: 1;
-        }
+            .nesda-extension .info-header h5 {
+                margin: 0;
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: var(--heading-color);
+                flex: 1;
+            }
 
-        .nesda-extension .info-header .info-icon {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-            border-radius: 50%;
-            margin-left: 1rem;
-            transition: all 0.3s ease;
-            flex-shrink: 0;
-        }
+            .nesda-extension .info-header .info-icon {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+                border-radius: 50%;
+                margin-left: 1rem;
+                transition: all 0.3s ease;
+                flex-shrink: 0;
+            }
 
-        .nesda-extension .info-header .info-icon i {
-            font-size: 1rem;
-            color: var(--accent-color);
-            transition: all 0.3s ease;
-        }
+                .nesda-extension .info-header .info-icon i {
+                    font-size: 1rem;
+                    color: var(--accent-color);
+                    transition: all 0.3s ease;
+                }
 
         .nesda-extension .info-item:hover .info-header .info-icon {
             background-color: var(--accent-color);
         }
 
-        .nesda-extension .info-item:hover .info-header .info-icon i {
-            color: var(--contrast-color);
-        }
+            .nesda-extension .info-item:hover .info-header .info-icon i {
+                color: var(--contrast-color);
+            }
 
         .nesda-extension .info-content {
             padding: 0 2rem 1.5rem 2rem;
         }
 
-        .nesda-extension .info-content p {
-            margin: 0 0 1rem 0;
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            text-align: justify;
-            line-height: 1.6;
-        }
+            .nesda-extension .info-content p {
+                margin: 0 0 1rem 0;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                text-align: justify;
+                line-height: 1.6;
+            }
 
-        .nesda-extension .info-content ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+            .nesda-extension .info-content ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
 
-        .nesda-extension .info-content li {
-            position: relative;
-            padding-right: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            line-height: 1.6;
-        }
+            .nesda-extension .info-content li {
+                position: relative;
+                padding-right: 1.5rem;
+                margin-bottom: 0.75rem;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                line-height: 1.6;
+            }
 
-        .nesda-extension .info-content li:before {
-            content: "•";
-            position: absolute;
-            right: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
+                .nesda-extension .info-content li:before {
+                    content: "•";
+                    /*position: absolute;*/
+                    margin-inline:8px;
+                    right: 0;
+                    color: var(--accent-color);
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
 
         .nesda-extension .percentage-highlight {
             background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
@@ -165,22 +166,22 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
 
-        .nesda-extension .financing-table th,
-        .nesda-extension .financing-table td {
-            padding: 1rem;
-            text-align: center;
-            border-bottom: 1px solid #e9ecef;
-        }
+            .nesda-extension .financing-table th,
+            .nesda-extension .financing-table td {
+                padding: 1rem;
+                text-align: center;
+                border-bottom: 1px solid #e9ecef;
+            }
 
-        .nesda-extension .financing-table th {
-            background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-            color: var(--heading-color);
-            font-weight: 700;
-        }
+            .nesda-extension .financing-table th {
+                background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+                color: var(--heading-color);
+                font-weight: 700;
+            }
 
-        .nesda-extension .financing-table td:first-child {
-            text-align: right;
-        }
+            .nesda-extension .financing-table td:first-child {
+                text-align: right;
+            }
 
         .nesda-extension .process-steps {
             counter-reset: step-counter;
@@ -198,56 +199,56 @@
             transition: all 0.3s ease;
         }
 
-        .nesda-extension .process-step:hover {
-            transform: translateY(-5px);
-        }
+            .nesda-extension .process-step:hover {
+                transform: translateY(-5px);
+            }
 
-        .nesda-extension .process-step::before {
-            content: counter(step-counter);
-            position: absolute;
-            top: -10px;
-            right: 20px;
-            background-color: var(--accent-color);
-            color: var(--contrast-color);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
+            .nesda-extension .process-step::before {
+                content: counter(step-counter);
+                position: absolute;
+                top: -10px;
+                right: 20px;
+                background-color: var(--accent-color);
+                color: var(--contrast-color);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 1.1rem;
+            }
 
-        .nesda-extension .process-step p {
-            margin: 0 0 1rem 0;
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            line-height: 1.6;
-            text-align: justify;
-        }
+            .nesda-extension .process-step p {
+                margin: 0 0 1rem 0;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                line-height: 1.6;
+                text-align: justify;
+            }
 
-        .nesda-extension .process-step ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+            .nesda-extension .process-step ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
 
-        .nesda-extension .process-step li {
-            position: relative;
-            padding-right: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            line-height: 1.6;
-        }
+            .nesda-extension .process-step li {
+                position: relative;
+                padding-right: 1.5rem;
+                margin-bottom: 0.75rem;
+                color: color-mix(in srgb, var(--default-color), transparent 20%);
+                line-height: 1.6;
+            }
 
-        .nesda-extension .process-step li:before {
-            content: "•";
-            position: absolute;
-            right: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
+                .nesda-extension .process-step li:before {
+                    content: "•";
+                    position: absolute;
+                    right: 0;
+                    color: var(--accent-color);
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
 
         .nesda-extension .thm-btnrg {
             display: inline-block;
@@ -261,31 +262,32 @@
             margin-top: 1rem;
         }
 
-        .nesda-extension .thm-btnrg:hover {
-            background-color: color-mix(in srgb, var(--accent-color), black 10%);
-            color: var(--contrast-color);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(65, 193, 186, 0.3);
+            .nesda-extension .thm-btnrg:hover {
+                background-color: color-mix(in srgb, var(--accent-color), black 10%);
+                color: var(--contrast-color);
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(65, 193, 186, 0.3);
+            }
+
+    @@media (max-width: 768px) {
+        .nesda-extension .info-header {
+            padding: 1rem 1.5rem;
         }
 
-        @@media (max-width: 768px) {
-            .nesda-extension .info-header {
-                padding: 1rem 1.5rem;
-            }
-
-            .nesda-extension .info-content {
-                padding: 0 1.5rem 1rem 1.5rem;
-            }
-
-            .nesda-extension .info-header h5 {
-                font-size: 1.1rem;
-            }
-
-            .nesda-extension .process-step {
-                padding: 1.5rem;
-            }
+        .nesda-extension .info-content {
+            padding: 0 1.5rem 1rem 1.5rem;
         }
+
+        .nesda-extension .info-header h5 {
+            font-size: 1.1rem;
+        }
+
+        .nesda-extension .process-step {
+            padding: 1.5rem;
+        }
+    }
 </style>
+
 
 
 <div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
@@ -311,12 +313,12 @@
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                     <div class="intro-content">
                         <h2 class="fw-bold">
-                            برنامج <span>@messageslocalizer["NesdaExtension"]</span>
+                            @localizer["NesdaExtensionTitre"] <span>@messageslocalizer["NesdaExtension"]</span>
 
 
                         </h2>
                         <p class="lead">
-                            هو برنامج خاص للوكالة الــوطنـيـة لـدعـم وتنمية المقـاولاتيـة موجه للمؤسسات المصغرة التي تهتم بتوسعة نشاطها، يحمل عنوان "NESDA EXTENSION"
+                            @messageslocalizer["NesdaExtensionDescription"]
                         </p>
 
                     </div>
@@ -346,7 +348,7 @@
 
 <section class="nesda-extension">
     <div class="container">
-      
+
         <!-- Information Items -->
         <div class="row justify-content-center">
             <div class="col-lg-12">
@@ -354,18 +356,18 @@
                 <!-- إطار ومحيط البرنامج -->
                 <div class="info-item">
                     <div class="info-header">
-                        <h5>إطار ومحيط البرنامج</h5>
+                        <h5>@localizer["EnvironementProgrammeTitre"]</h5>
                         <div class="info-icon">
                             <i class="fas fa-expand-arrows-alt"></i>
                         </div>
                     </div>
                     <div class="info-content">
-                        <p>جاء البرنامج لتعزيز مجال توسعة نشاطات المؤسسات المصغرة واعطاءها مزيد من الفرص للتطور والنجاح، وذلك في اطار جهود اصلاح جهاز الوكالة، باعتبار معايير التكوين في المقاولاتية والتحكم في المخاطر المتعلقة بتمويل النشاط.</p>
-                        <p>يشمل البرنامج أصحاب المؤسسات المصغرة الذين استفادوا سابقا من دعم جهاز الوكالة في الاطار الانشاء وكذا أولئك الذين لم يستفيدوا سابقا منه، على غرار الذين باشروا نشاطاتهم عبر جهاز الوكالة الوطنية لتسيير القرض المصغر (ANGEM) او جهاز الصندوق الوطني للتأمين عن البطالة (CNAC)، بالاضافة الى الفلاحين، الحرفيين، او أصحاب التراخيص او/و السجل التجاري.</p>
-                        <p><strong>حيث تضم توسعة النشاط مختلف القطاعات الاقتصادية وتشمل:</strong></p>
+                        <p>@messageslocalizer["EnvironementProgrammeParag1"]</p>
+                        <p>@messageslocalizer["EnvironementProgrammeParag2"]</p>
+                        <p><strong>@messageslocalizer["EnvironementProgrammeParag3"]</strong></p>
                         <ul>
-                            <li>تطوير نشاط رئيسي او اطلاق نشاط فرعي: خط انتاج جديد، آلة جديدة، منتوج جديد تكميلي او مرتبط بالنشاط الرئيسي</li>
-                            <li>اطلاق نشاط جديد: عبر تنويع نشاط رئيسي واكتشاف مجالات نشاط أخرى</li>
+                            <li>@messageslocalizer["EnvironementProgrammeParag3P1"]</li>
+                            <li>@messageslocalizer["EnvironementProgrammeParag3P1"]</li>
                         </ul>
                     </div>
                 </div>
@@ -373,19 +375,19 @@
                 <!-- مزايا البرنامج -->
                 <div class="info-item">
                     <div class="info-header">
-                        <h5>مزايا البرنامج</h5>
+                        <h5>@localizer["AvantageProgrammeTitre"]</h5>
                         <div class="info-icon">
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
                     <div class="info-content">
                         <ul>
-                            <li>تمويل المشاريع قد يصل الى غاية <span class="percentage-highlight">10.000.000 دج</span></li>
-                            <li>دورة تكوينية حول المقاولاتية لمدة <span class="percentage-highlight">5 أيام</span> على مستوى الوكالة</li>
-                            <li>صيغ تمويل مشتركة ثنائية بين صاحب المشروع والوكالة، وثلاثية بين صاحب المشروع، الوكالة والبنك</li>
-                            <li>قروض بنسبة فائدة مخفضة بنسبة <span class="percentage-highlight">مئة بالمئة</span></li>
-                            <li>مدة سداد القروض مغرية</li>
-                            <li>مزايا جبائية وفق الشروط المحددة في التشريع الجبائي الحالي</li>
+                            <li>@messageslocalizer["AvantageProgramme1,1"]<span class="percentage-highlight">@messageslocalizer["AvantageProgramme1,2"]</span></li>
+                            <li>@messageslocalizer["AvantageProgramme2,1"] <span class="percentage-highlight">@messageslocalizer["AvantageProgramme2,2"]</span> @messageslocalizer["AvantageProgramme2,3"]</li>
+                            <li>@messageslocalizer["AvantageProgramme3"]</li>
+                            <li>@messageslocalizer["AvantageProgramme4,1"] <span class="percentage-highlight">@messageslocalizer["AvantageProgramme4,2"]</span>@messageslocalizer["AvantageProgramme4,3"]</li>
+                            <li>@messageslocalizer["AvantageProgramme5"]</li>
+                            <li>@messageslocalizer["AvantageProgramme6"]</li>
                         </ul>
                     </div>
                 </div>
@@ -393,7 +395,7 @@
                 <!-- صيغ التمويل -->
                 <div class="info-item">
                     <div class="info-header">
-                        <h5>صيغ التمويل</h5>
+                        <h5>@localizer["ModeFinancementTitre"]</h5>
                         <div class="info-icon">
                             <i class="fas fa-chart-pie"></i>
                         </div>
@@ -403,28 +405,28 @@
                             <thead>
                                 <tr>
                                     <th></th>
-                                    <th>المساهمة الشخصية</th>
-                                    <th>مساهمة الوكالة (قرض غير مكافئ)</th>
-                                    <th>مساهمة البنك (القرض البنكي)</th>
+                                    <th>@localizer["ContributionPTitre"]</th>
+                                    <th>@localizer["ContributionATitre"]</th>
+                                    <th>@localizer["ContributionBTitre"]</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>التمويل الذاتي</strong></td>
+                                    <td><strong>@localizer["TypeFinancemet1"]</strong></td>
                                     <td>100%</td>
                                     <td>-</td>
                                     <td>-</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>التمويل الثنائي</strong></td>
+                                    <td><strong>@localizer["TypeFinancemet2"]</strong></td>
                                     <td>50%</td>
                                     <td>50%</td>
                                     <td>-</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>التمويل الثلاثي</strong></td>
-                                    <td>12% الى 15%</td>
-                                    <td>15% الى 18%</td>
+                                    <td><strong>@localizer["TypeFinancemet3"]</strong></td>
+                                    <td>12% @localizer["MotLiaison"] 15%</td>
+                                    <td>15% @localizer["MotLiaison"] 18%</td>
                                     <td>70%</td>
                                 </tr>
                             </tbody>
@@ -435,41 +437,41 @@
                 <!-- شروط الاستفادة من البرنامج -->
                 <div class="info-item">
                     <div class="info-header">
-                        <h5>شروط الاستفادة من البرنامج</h5>
+                        <h5>@localizer["ConditionbeneficierTitre"]</h5>
                         <div class="info-icon">
                             <i class="fas fa-list-check"></i>
                         </div>
                     </div>
                     <div class="info-content">
-                        <p>للاستفادة من مزايا جهاز الوكالة لتوسعة النشاط، على صاحب المؤسسة استيفاء الشروط الاتية:</p>
+                        <p>@messageslocalizer["ConditionBeneficierDesc"]</p>
 
-                        <p><strong>الشروط المشتركة:</strong></p>
+                        <p><strong>@localizer["ConditionbeneficierCommun"]</strong></p>
                         <ul>
-                            <li>ان يتراوح السن بين 20 و 58 سنة</li>
-                            <li>ان يكون في حالة نشاط خلال السنتين الأخيرتين مع اثبات ذلك (حصائل محاسبية، التصريحات الجبائية G12 C20)</li>
+                            <li>@messageslocalizer["ConditionbeneficierCommun1"]</li>
+                            <li>@messageslocalizer["ConditionbeneficierCommun2"]</li>
                         </ul>
 
-                        <p><strong>1. المستفيدين من جهاز الوكالة سابقا:</strong></p>
-                        <p><em>1.1. شروط الاستفادة من "توسعة نفس النشاط او نشاط فرعي"</em></p>
+                        <p><strong>@localizer["Conditionbeneficier1"]</strong></p>
+                        <p><em>@localizer["Conditionbeneficier1,1"]</em></p>
                         <ul>
-                            <li>ان لا يكون قد شُطب من السجل التجاري، بطاقة الحرفي، الترخيص</li>
-                            <li>ان يكون ملتزمًا بجدول السداد (القرض البنكي والقرض غير المكافئ)، دون أن يكون متأخرًا عن الجدول الزمني بأكثر من خمس سنوات</li>
-                            <li>ان يكون قد اتم سداد القرض البنكي و/او القرض غير المكافئ، حسب الحالة (تمويل ثنائي، ثلاثي، تغيير البنك)</li>
-                            <li>ان يمتلك جميع المعدات الضرورية للنشاط والتي تم اقتنائها (في مرحلة الانشاء) او تلك التي تم استبدالها خلال استغلال النشاط في حالة التعويض الكامل للقرض البنكي و القرض غير المكافئ</li>
+                            <li>@messageslocalizer["Conditionbeneficier1,1,1"]</li>
+                            <li>@messageslocalizer["Conditionbeneficier1,1,2"]</li>
+                            <li>@messageslocalizer["Conditionbeneficier1,1,3"]</li>
+                            <li>@messageslocalizer["Conditionbeneficier1,1,4"]</li>
                         </ul>
 
-                        <p><em>1.2. شروط الاستفادة من "توسعة نشاط جديد"</em></p>
+                        <p><em>@localizer["Conditionbeneficier1,2"]</em></p>
                         <ul>
-                            <li>ان يمتلك تأهيل (من طرف المسير، احد شركاء اوالعمال) في المجال محل الطلب التوسعة</li>
-                            <li>ان يكون قد اتم سداد القرض البنكي و/او القرض غير المكافئ في اطار انشاء النشاط</li>
-                            <li>ان يكون في حالة نشاط بالنسبة للنشاط الرئيسي اوغيره (تغيير النشاط دون الشطب من السجل التجاري، بطاقة الحرفي، الترخيص) الذي تم انشاءه في اطار الجهاز</li>
+                            <li>@messageslocalizer["Conditionbeneficier1,2,1"]</li>
+                            <li>@messageslocalizer["Conditionbeneficier1,2,2"]</li>
+                            <li>@messageslocalizer["Conditionbeneficier1,2,3"]</li>
                         </ul>
 
-                        <p><strong>2. الغير مستفيدين من جهاز الوكالة سابقا:</strong></p>
+                        <p><strong>@localizer["Conditionbeneficier2"]</strong></p>
                         <ul>
-                            <li>ان لا يكون قد استفاد من اعانات ومزايا توسعة النشاط المقدمة من احد أجهزة الدعم العمومية (جهاز الوكالة الوطنية لتسيير القرض المصغر (ANGEM) او جهاز الصندوق الوطني للتأمين عن البطالة (CNAC))</li>
-                            <li>ان لا يكون قد استفاد من اعانات ومزايا انشاء نشاط في اطار الوكالة الجزائرية للاستثمار (AAPI)</li>
-                            <li>ان يمتلك تأهيل متعلق بالنشاط محل التوسعة وذلك من طرف المسير، أحد شركاء او العمال</li>
+                            <li>@messageslocalizer["Conditionbeneficier2,1"]</li>
+                            <li>@messageslocalizer["Conditionbeneficier2,2"]</li>
+                            <li>@messageslocalizer["Conditionbeneficier2,3"]</li>
                         </ul>
                     </div>
                 </div>
@@ -477,49 +479,49 @@
                 <!-- مراحل الاستفادة من البرنامج -->
                 <div class="info-item">
                     <div class="info-header">
-                        <h5>مراحل الاستفادة من البرنامج</h5>
+                        <h5>@localizer["EtapesBeneficier"]</h5>
                         <div class="info-icon">
                             <i class="fas fa-road"></i>
                         </div>
                     </div>
                     <div class="info-content">
-                        <p>مراحل الاستفادة من توسعة النشاط في إطار جهاز الوكالة يشمل ما يلي:</p>
+                        <p>@messageslocalizer["EtapesBeneficierdESC"]</p>
 
                         <div class="process-steps">
                             <div class="process-step">
-                                <p>التسجيل الالكتروني عبر المنصة الرقمية الخاصة بجهاز الوكالة</p>
+                                <p>@messageslocalizer["EtapesBeneficier1"]</p>
                                 <a href="https://myproject.nesda.dz/Inscription/CreateInscription/2" class="thm-btnrg" target="_blank">
-                                    رابط التسجيل الإلكتروني
+                                    @localizer["URL"]
                                 </a>
                             </div>
 
                             <div class="process-step">
-                                <p>تقييم مشروع توسعة النشاط من طرف مصالح الوكالة وفق نظام تقييم المخاطر (scoring) باعتبار المعايير المتعلقة:</p>
+                                <p>@messageslocalizer["EtapesBeneficier2"]</p>
                                 <ul>
-                                    <li>بالجدوى</li>
-                                    <li>النجاعة والتمويل</li>
-                                    <li>توجيه حامل المشروع الى التكوين في حالة فاق تقييمه <span class="percentage-highlight">50%</span></li>
+                                    <li>@messageslocalizer["EtapesBeneficier2,1"]</li>
+                                    <li>@messageslocalizer["EtapesBeneficier2,2"]</li>
+                                    <li>@messageslocalizer["EtapesBeneficier2,3"] <span class="percentage-highlight">50%</span></li>
                                 </ul>
                             </div>
 
                             <div class="process-step">
-                                <p>اجراء تكوين خاص حول مهارات واساسيات التسيير لمدة <span class="percentage-highlight">خمسة (5) أيام</span> على مستوى الوكالة</p>
+                                <p>@messageslocalizer["EtapesBeneficier3P1"] <span class="percentage-highlight">@messageslocalizer["EtapesBeneficier3P2"]</span> @messageslocalizer["EtapesBeneficier3P3"]</p>
                             </div>
 
                             <div class="process-step">
-                                <p>عرض مشروع توسعة النشاط من طرف صاحبه على لجنة انتقاء واعتماد وتمويل مشاريع الاستثمار على مستوى الولاية</p>
+                                <p>@messageslocalizer["EtapesBeneficier4"]</p>
                             </div>
 
                             <div class="process-step">
-                                <p>اصدار مصالح الوكالة لشهادة القابلية والتمويل لحامل المشروع في حالة موافقة اللجنة عليه، ومباشرة الإجراءات الإدارية المتعلقة بتوسعة النشاط، حسب الحالة، مع:</p>
+                                <p>@messageslocalizer["EtapesBeneficier5"]</p>
                                 <ul>
-                                    <li>مختلف المصالح الإدارية (الضرائب، الضمان الاجتماعي)</li>
-                                    <li>الموردين (المحل، العتاد)</li>
+                                    <li>@messageslocalizer["EtapesBeneficier5,1"]</li>
+                                    <li>@messageslocalizer["EtapesBeneficier5,2"]</li>
                                 </ul>
                             </div>
 
                             <div class="process-step">
-                                <p>بداية النشاط الجديد بعد استيفاء كافة الإجراءات رفقة مصالح الوكالة</p>
+                                <p>@messageslocalizer["EtapesBeneficier6"]</p>
                             </div>
                         </div>
                     </div>
@@ -535,10 +537,10 @@
                     <div class="card-icon" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background-color: color-mix(in srgb, var(--accent-color), transparent 90%); border-radius: 50%; margin: 0 auto 1.5rem;">
                         <i class="fas fa-handshake" style="font-size: 1.75rem; color: var(--accent-color);"></i>
                     </div>
-                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700; color: var(--heading-color);">هل تحتاج إلى مزيد من المعلومات؟</h3>
-                    <p style="margin-bottom: 1.5rem; color: color-mix(in srgb, var(--default-color), transparent 20%);">تواصل معنا للحصول على تفاصيل أكثر حول برنامج توسعة النشاط وكيفية الاستفادة من خدماته</p>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700; color: var(--heading-color);">@messageslocalizer["QuestionGenerale"]</h3>
+                    <p style="margin-bottom: 1.5rem; color: color-mix(in srgb, var(--default-color), transparent 20%);">@messageslocalizer["InfoProgrammeExtension"]</p>
                     <a asp-controller="Contactus" asp-action="Index" class="btn btn-lg" style="background-color: var(--accent-color); color: var(--contrast-color); padding: 0.75rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
-                        تواصل معنا 
+                        @localizer["ContactUs"]
                     </a>
                 </div>
             </div>

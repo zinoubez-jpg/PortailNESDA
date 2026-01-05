@@ -1,5 +1,7 @@
 ﻿@using Ansej.Sidjeme.Web
 @using Ansej.Sidjeme.Web.Models
+
+
 @{ /*TODO: Import namespace Microsoft.Extensions.Localization; */}
 @using Microsoft.Extensions.Localization;
 @{ /*TODO: Import namespace Microsoft.AspNetCore.Mvc.Localization; */}
@@ -12,3 +14,4 @@
 @inject IStringLocalizer<Labels> localizer
 @{/*TODO: Inject IHtmlLocalizer for Messages shared resource in messageslocalizer variable */}
 @inject IHtmlLocalizer<Messages> messageslocalizer
+@inject IStringLocalizer<Menu> menulocalizer

@@ -139,7 +139,8 @@
                     content: "\f00c";
                     font-family: "Font Awesome 6 Free";
                     font-weight: 900;
-                    position: absolute;
+                    /*position: absolute;*/
+                    margin-inline:8px;
                     right: 0;
                     color: var(--accent-color);
                     font-size: 0.9rem;
@@ -248,11 +249,11 @@
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                     <div class="intro-content">
                         <h2 class="fw-bold">
-                            <span>المزايا</span> الضريبية
+                            <span>@localizer["TaxTitre1"]</span> @localizer["TaxTitre2"]
 
                         </h2>
                         <p class="lead">
-                            يستفيد صاحب المشروع من امتيازات ضريبية خلال مرحلتي إنشاء المشروع وتوسيع طاقته الإنتاجية، مما يساهم في تخفيف الأعباء المالية وتشجيع الاستثمار في المشاريع الاقتصادية المختلفة.
+                            @messageslocalizer["TaxDescription"]
                         </p>
 
                     </div>
@@ -262,7 +263,7 @@
                         <div class="intro-image main-image">
                             <img src="~/NesdaTMP/assets/img/NesdaImg/aventage.png" alt="call center" class="img-fluid rounded">
                         </div>
-                       
+
 
                     </div>
                 </div>
@@ -277,7 +278,7 @@
 
 <section class="advantages">
     <div class="container">
-   
+
         <!-- Advantages Items -->
         <div class="row justify-content-center">
             <div class="col-lg-12">
@@ -285,16 +286,16 @@
                 <!-- Stage 1: Implementation Phase -->
                 <div class="advantage-item">
                     <div class="advantage-header">
-                        <h3>المرحلة الأولى: مرحلة الإنجاز</h3>
+                        <h3>@localizer["TaxPhase1"]</h3>
                         <div class="advantage-icon">
                             <i class="fas fa-briefcase"></i>
                         </div>
                     </div>
                     <div class="advantage-content">
                         <ul>
-                            <li>الاعفاء من حقوق نقل الملكية بمقابل مالي للإكتسابات العقارية الخاصة في اطار إنشاء نشاط صناعي</li>
-                            <li>الاعفاء من الرسم على القيمة المضافة لمقتنيات التجهيزات والخدمات التي تدخل مباشرة في انجاز الاستثمار الخاص بمرحلتي الانشاء والتوسيع بالنسبة للنشاطات الخاضعة للنظام الضريبي الحقيقي (لا تستفيد السيارات السياحية من هذا التدبير إلا اذا كانت تشكل الأداة الرئيسية للنشاط)</li>
-                            <li>تطبيق نسبة مخفضة بـ 5% تخص الحقوق الجمركية للتجهيزات المستوردة والداخلة مباشرة في انجاز الاستثمار</li>
+                            <li>@messageslocalizer["TaxPhase1,1"]</li>
+                            <li>@messageslocalizer["TaxPhase1,2"]</li>
+                            <li>@messageslocalizer["TaxPhase1,3"]</li>
                         </ul>
                     </div>
                 </div>
@@ -302,28 +303,28 @@
                 <!-- Stage 2: Exploitation Phase -->
                 <div class="advantage-item">
                     <div class="advantage-header">
-                        <h3>المرحلة الثانية: مرحلة الاستغلال</h3>
+                        <h3>@localizer["TaxPhase2"]</h3>
                         <div class="advantage-icon">
                             <i class="fas fa-chart-line"></i>
                         </div>
                     </div>
                     <div class="advantage-content">
                         <ul>
-                            <li>الاعفاء من الرسم العقاري على البناءات والبناءات الاضافية لمدة 03 سنوات، 06 سنوات أو 10 سنوات حسب موقع المشروع، ابتداءا من تاريخ اتمامها</li>
-                            <li>الاعفاء من الضريبة الجزافية الوحيدة أو حسب الحالة (الضريبة على الدخل الإجمالي او الضريبة على أرباح الشركات) لمدة 03 سنوات، 06 سنوات أو 10 سنوات، حسب موقع المشروع ابتداءا من تاريخ الاستغلال</li>
-                            <li>عند انتهاء فترة الاعفاء المذكورة في المطة السابقة، يمكن تمديدها لسنتين (02) عندما يتعهد المستثمر بتوظيف ثلاثة (03) عمال على الأقل لمدة غير محددة</li>
+                            <li>@messageslocalizer["TaxPhase2,1"]</li>
+                            <li>@messageslocalizer["TaxPhase2,2"]</li>
+                            <li>@messageslocalizer["TaxPhase2,3"]</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Warning Box -->
                 <div class="warning-box">
-                    <p>عدم احترام التعهد الخاص بخلق مناصب الشغل يؤدي الى سحب الامتيازات الممنوحة والمطالبة بالحقوق والرسوم الواجب دفعها</p>
+                    <p>@messageslocalizer["TaxWarningMsg"]</p>
                 </div>
 
             </div>
         </div>
 
-      
+
     </div>
 </section>

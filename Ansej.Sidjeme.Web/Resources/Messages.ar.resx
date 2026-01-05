@@ -168,11 +168,98 @@
   <data name="Aproposdetails" xml:space="preserve">
     <value>هي هيئة حكومية ذات طابع خاص، موضوعة تحت وصاية وزارة اقتصاد المعرفة والمؤسسات الناشئة والمؤسسات المُصغّرة.تتكفل الوكالة بتسيير جهاز ذو مقاربة اقتصادية، يهدف الى مرافقة حاملي المشاريع لإنشاء وتوسيع مؤسسات مصغرة في مجال انتاج الخدمات والسلع، قصد خلق الثروة ومناصب عمل بصفة مستدامة. تتمحور مهام الوكالة حول الأنشطة الأساسية التالية</value>
   </data>
+  <data name="askUs" xml:space="preserve">
+    <value>تواصل معنا مباشرة وسنكون سعداء للإجابة على جميع استفساراتك</value>
+  </data>
   <data name="Avantage" xml:space="preserve">
     <value>المزايا</value>
   </data>
+  <data name="Avantages_Plateforme_Numerique_01" xml:space="preserve">
+    <value>تسمح المنصة الرقمية من</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_03" xml:space="preserve">
+    <value>لمباشرة الإجراءات المتعلقة بجهاز الوكالة، بالإضافة الى السرعة والسهولة في الولوج والاستخدام، وكذا ضمان</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_05" xml:space="preserve">
+    <value>في معالجة البيانات خلال كافة مراحل الإجراءات.</value>
+  </data>
+  <data name="AvantageProgramme1,1" xml:space="preserve">
+    <value>تمويل المشاريع قد يصل الى غاية</value>
+  </data>
+  <data name="AvantageProgramme1,2" xml:space="preserve">
+    <value>10.000.000 دج</value>
+  </data>
+  <data name="AvantageProgramme2,1" xml:space="preserve">
+    <value>دورة تكوينية حول المقاولاتية لمدة</value>
+  </data>
+  <data name="AvantageProgramme2,2" xml:space="preserve">
+    <value>5 أيام</value>
+  </data>
+  <data name="AvantageProgramme2,3" xml:space="preserve">
+    <value>على مستوى الوكالة</value>
+  </data>
+  <data name="AvantageProgramme3" xml:space="preserve">
+    <value>صيغ تمويل مشتركة ثنائية بين صاحب المشروع والوكالة، وثلاثية بين صاحب المشروع، الوكالة والبنك</value>
+  </data>
+  <data name="AvantageProgramme4,1" xml:space="preserve">
+    <value>قروض بنسبة فائدة مخفضة بنسبة</value>
+  </data>
+  <data name="AvantageProgramme4,2" xml:space="preserve">
+    <value>مئة بالمئة</value>
+  </data>
+  <data name="AvantageProgramme4,3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AvantageProgramme5" xml:space="preserve">
+    <value>مدة سداد القروض مغرية</value>
+  </data>
+  <data name="AvantageProgramme6" xml:space="preserve">
+    <value>مزايا جبائية وفق الشروط المحددة في التشريع الجبائي الحالي</value>
+  </data>
   <data name="Avril2025" xml:space="preserve">
     <value>أفريل 2025</value>
+  </data>
+  <data name="AxesProgramme1P1" xml:space="preserve">
+    <value>محور الإدراك (Perception):</value>
+  </data>
+  <data name="AxesProgramme1P2" xml:space="preserve">
+    <value>الذي يهدف الى التحسيس بأهمية المقاولاتية ودور المؤسسات المصغرة في تنمية الاقتصاد المحلي بهدف غرس إدراك في المجتمع للفرص التي يتيحها جهاز الوكالة بصيغته الجديدة وإحداث القطيعة مع الأفكار السابقة حوله</value>
+  </data>
+  <data name="AxesProgramme2P1" xml:space="preserve">
+    <value>محور الفكر الريادي (Mindset):</value>
+  </data>
+  <data name="AxesProgramme2P2" xml:space="preserve">
+    <value>الذي يعنى بإرساء الفكر الريادي لدى الشباب من فئات ومستويات مختلفة وتعزيز روح المقاولاتية لديهم وتزويدهم بالمعارف الأساسية التي تساعدهم على رفع التحديات المتعلقة بإنشاء وتسيير المؤسسات المصغرة</value>
+  </data>
+  <data name="AxesProgramme3P1" xml:space="preserve">
+    <value>محور الإنشاء (Creation):</value>
+  </data>
+  <data name="AxesProgramme3P2" xml:space="preserve">
+    <value>الذي يهدف الى دعم إنشاء المؤسسات المصغرة في مختلف القطاعات الاقتصادية للتنمية المحلية، توافقا مع خصوصيات، قدرات واحتياجات كل ولاية، مع تسخير مختلف الموارد والإمكانات المتاحة في النظام البيئي للمقاولاتية</value>
+  </data>
+  <data name="AxesProgramme4P1" xml:space="preserve">
+    <value>محور التطوير (Development):</value>
+  </data>
+  <data name="AxesProgramme4P2" xml:space="preserve">
+    <value>الذي يسعى الى دعم تطوير المؤسسات المصغرة عبر توسيع نشاطها في مختلف القطاعات الاقتصادية للتنمية المحلية، باعتبار مميزات، قدرات واحتياجات كل ولاية، مع استغلال مختلف الموارد والإمكانات المتاحة في النظام البيئي للمقاولاتية</value>
+  </data>
+  <data name="AxesProgramme5P1" xml:space="preserve">
+    <value>محور التشغيل (Employment):</value>
+  </data>
+  <data name="AxesProgramme5P2" xml:space="preserve">
+    <value>الذي يهدف إبراز مساهمة المؤسسات المصغرة في سوق العمل على المستوى المحلي عبر توفير مناصب شغل مباشرة وغير مباشرة وفق مميزات سلاسل قيم القطاعات الاقتصادية</value>
+  </data>
+  <data name="AxesProgrammeDesc" xml:space="preserve">
+    <value>يتكون البرنامج من المحاور الخمسة الآتية، والتي تشكل في نفس الوقت الأهداف المسطرة له:</value>
+  </data>
+  <data name="axesStrategiqueP1" xml:space="preserve">
+    <value>مواصلة وتعزيز مرافقة الشباب حاملي المشاريع وتطوير سبل الدعم، من حيث برامج التكوين المتخصصة وكذا تنويع صيغ التمويل وادراج حلول نوعية ومبتكرة.</value>
+  </data>
+  <data name="axesStrategiqueP2" xml:space="preserve">
+    <value>تكثيف العمل المُشترك مع مختلف الفاعلين من هيئات ومؤسسات حكومية، مؤسسات عمومية وخاصة، شركاء اجتماعيين ومجتمع مدني، بهدف تطوير نظام بيئي للمقاولاتية والمؤسسات المصغرة مستقر ودائم؛ والذي من شأنه رفع قدرة المؤسسات المصغرة على النمو والصمود، وخاصة التنافسية.</value>
+  </data>
+  <data name="axesStrategiqueP3" xml:space="preserve">
+    <value>تطوير الوكالة ودعم قدراتها العملية من خلال مراجعة مخطط العمل وتقييم المشاريع، تحسين مهارات المستخدمين، رقمنة الخدمات وتعزيز الوسائل والمنشآت لتحسين ظروف العمل والاستقبال والتي ستنعكس على اداءها.</value>
   </data>
   <data name="BienvenueFAQ" xml:space="preserve">
     <value>مرحباً بكم في قسم الأسئلة الشائعة لدينا</value>
@@ -186,11 +273,98 @@
   <data name="BTPT2" xml:space="preserve">
     <value>تصنع واقعنا</value>
   </data>
+  <data name="ButProgrammeDesc1" xml:space="preserve">
+    <value>يعتمد البرنامج على مقاربة شمولية تضم مختلف الفاعلين في النظام البيئي المقاولاتي المحلي: الولاية، البلدية، المصالح اللامركزية، الهيئات والمؤسسات ذات الصلة، حيث أنّ نجاح البرنامج يعتمد على تضافر جهود جميع الأطراف الفاعلة في التنمية المحلية، من أجل تجسيد توجيهات رئيس الجمهورية السيد عبد المجيد تبون الرامية الى خلق 450000 منصب شغل وإرساء تنمية محلية مستدامة، لبلوغ سنة 2027، والتي ستكون سنة حاسمة للجزائر مع إتمام الرقمنة وجني ثمار تطوير الاقتصاد الوطني.</value>
+  </data>
+  <data name="ButProgrammeDesc2" xml:space="preserve">
+    <value>حيث أنّ ترقية المؤسسات المصغرة المحلية هو ترقية سلسلة قيم الإنتاج الوطني وطريق للاكتفاء الذاتي من أجل تحقيق "إنتاج جزائري للجزائريين"</value>
+  </data>
+  <data name="CadreProgramme1" xml:space="preserve">
+    <value>جاء البرنامج تنفيذا لالتزامات رئيس الجمهورية السيد عبد المجيد تبون الهادفة الى تطوير "نموذج اقتصادي جديد قائم على تنويع النمو و اقتصاد المعرفة"، تلك الالتزامات النابعة عن حرصه واهتمامه بالشباب وتعزيز المقاولاتية لديهم وتشجيعهم على مشاريعهم.</value>
+  </data>
+  <data name="CadreProgramme2" xml:space="preserve">
+    <value>وذلك، تجسيدا لتوجيهاته السامية التي تهدف الى رفع رهان الإنعاش الاقتصادي من أجل بناء اقتصاد منتج ومتنوع يخلق القيمة و فرص عمل ذات جودة و إرساء تنمية محلية مستدامة.</value>
+  </data>
+  <data name="CadreProgramme3" xml:space="preserve">
+    <value>حيث يمثل البرنامج مساهمة في تعزيز دور الجماعات المحلية كقاطرة في التنمية الوطنية.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_01" xml:space="preserve">
+    <value>تعتبر مراكز تطوير المقاولاتية التي تم إنشاؤها في مختلف مؤسسات التعليم والتكوين المهني: معاهد ومدارس التكوين، كجزء من البرنامج الحكومي الهادف الى تعزيز ثقافة المقاولاتية، بهدف توفير للمتدربين المقاولين بيئة مواتية لتحقيق أفكارهم ومشاريعهم التجارية، حيث انها مجهزة بالموارد والمرافق الحديثة التي تدعم تطوير مهاراتهم في مجال المقاولاتية.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_02" xml:space="preserve">
+    <value>يعتبر التكوين في مراكز تطوير المقاولاتية كأحد الشروط الأساسية لانشاء مؤسسة مصغرة في اطار جهاز الوكالة الوطنية لدعم وتنمية المقاولاتية والاستفادة من صيغ التمويل التي توفرها.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_03" xml:space="preserve">
+    <value>يتم التسجيل على مستوى مراكز تطوير المقاولاتية في قطاع التعليم والتكوين المهني حصريا عبر الخط عن طريق الرابط التالي:</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_01" xml:space="preserve">
+    <value>تشكل مراكز تطوير المقاولاتية التي تم إنشاؤها في مختلف مؤسسات التعليم العالي والبحث العلمي: من جامعات، معاهد ومدارس عليا، كجزء من البرنامج الحكومي الرامي الى تشجيع المقاولاتية في الوسط الجامعي، بهدف توفير للطلاب المقاولين بيئة مواتية لتحقيق أفكارهم ومشاريعهم التجارية، حيث انها مجهزة بالموارد والمرافق الحديثة لدعم تنمية مهارات الطلاب في المقاولاتية.</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_02" xml:space="preserve">
+    <value>يعتبر التكوين في مراكز تطوير المقاولاتية كأحد الشروط الأساسية لانشاء مؤسسة مصغرة في إطار جهاز الوكالة الوطنية لدعم وتنمية المقاولاتية والاستفادة من صيغ التمويل التي توفرها.</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_03" xml:space="preserve">
+    <value>يتم التسجيل على مستوى مراكز تطوير المقاولاتية في قطاع التعليم العالي والبحث العلمي حصريا عبر الخط عن طريق الرابط التالي:</value>
+  </data>
+  <data name="CentreComunicationD1" xml:space="preserve">
+    <value>يوفر مركز الإتصال التابع لوكالة ناسدا قناة تواصل مباشرة  ، ويعمل من أجل الاستجابة السريعة لانشغالاتكم وتوجيهاتكم</value>
+  </data>
+  <data name="CentreComunicationD2" xml:space="preserve">
+    <value>نسعى من خلاله إلى تعزيز الشفافية وتحسين تجربة المستخدم</value>
+  </data>
+  <data name="ComiteSuivi" xml:space="preserve">
+    <value>تكلف لجنة المراقبة بممارسة الرقابة اللاحقة لتطبيق قرارات مجلس الإدارة، حيث تجتمع في نهاية كل ثلاثي وتقدم الملاحظات والتوصيات المفيدة عن أحسن الكيفيات لتطبيق البرامج والمشاريع التي شرعت فيها الوكالة.</value>
+  </data>
   <data name="commentpeut-onvousaider?" xml:space="preserve">
     <value>كيف يمكننا مساعدتك؟</value>
   </data>
+  <data name="Conditionbeneficier1,1,1" xml:space="preserve">
+    <value>ان لا يكون قد شُطب من السجل التجاري، بطاقة الحرفي، الترخيص</value>
+  </data>
+  <data name="Conditionbeneficier1,1,2" xml:space="preserve">
+    <value>ان يكون ملتزمًا بجدول السداد (القرض البنكي والقرض غير المكافئ)، دون أن يكون متأخرًا عن الجدول الزمني بأكثر من خمس سنوات</value>
+  </data>
+  <data name="Conditionbeneficier1,1,3" xml:space="preserve">
+    <value>ان يكون قد اتم سداد القرض البنكي و/او القرض غير المكافئ، حسب الحالة (تمويل ثنائي، ثلاثي، تغيير البنك)</value>
+  </data>
+  <data name="Conditionbeneficier1,1,4" xml:space="preserve">
+    <value>ان يمتلك جميع المعدات الضرورية للنشاط والتي تم اقتنائها (في مرحلة الانشاء) او تلك التي تم استبدالها خلال استغلال النشاط في حالة التعويض الكامل للقرض البنكي و القرض غير المكافئ</value>
+  </data>
+  <data name="Conditionbeneficier1,2,1" xml:space="preserve">
+    <value>ان يمتلك تأهيل (من طرف المسير، احد شركاء اوالعمال) في المجال محل الطلب التوسعة</value>
+  </data>
+  <data name="Conditionbeneficier1,2,2" xml:space="preserve">
+    <value>ان يكون قد اتم سداد القرض البنكي و/او القرض غير المكافئ في اطار انشاء النشاط</value>
+  </data>
+  <data name="Conditionbeneficier1,2,3" xml:space="preserve">
+    <value>ان يكون في حالة نشاط بالنسبة للنشاط الرئيسي اوغيره (تغيير النشاط دون الشطب من السجل التجاري، بطاقة الحرفي، الترخيص) الذي تم انشاءه في اطار الجهاز</value>
+  </data>
+  <data name="Conditionbeneficier2,1" xml:space="preserve">
+    <value>ان لا يكون قد استفاد من اعانات ومزايا توسعة النشاط المقدمة من احد أجهزة الدعم العمومية (جهاز الوكالة الوطنية لتسيير القرض المصغر (ANGEM) او جهاز الصندوق الوطني للتأمين عن البطالة (CNAC))</value>
+  </data>
+  <data name="Conditionbeneficier2,2" xml:space="preserve">
+    <value>ان لا يكون قد استفاد من اعانات ومزايا انشاء نشاط في اطار الوكالة الجزائرية للاستثمار (AAPI)</value>
+  </data>
+  <data name="Conditionbeneficier2,3" xml:space="preserve">
+    <value>ان يمتلك تأهيل متعلق بالنشاط محل التوسعة وذلك من طرف المسير، أحد شركاء او العمال</value>
+  </data>
+  <data name="ConditionbeneficierCommun1" xml:space="preserve">
+    <value>ان يتراوح السن بين 20 و 58 سنة</value>
+  </data>
+  <data name="ConditionbeneficierCommun2" xml:space="preserve">
+    <value>ان يكون في حالة نشاط خلال السنتين الأخيرتين مع اثبات ذلك (حصائل محاسبية، التصريحات الجبائية G12 C20)</value>
+  </data>
+  <data name="ConditionBeneficierDesc" xml:space="preserve">
+    <value>للاستفادة من مزايا جهاز الوكالة لتوسعة النشاط، على صاحب المؤسسة استيفاء الشروط الاتية:</value>
+  </data>
+  <data name="ConseilAdministration" xml:space="preserve">
+    <value>يتداول مجلس الإدارة وفقا للقوانين والتنظيمات المعمول بها، حول برنامج نشاط الوكالة، الميزانية التقديرية، تنظيم الوكالة ونظامها الداخليان، والمخطط السنوي لتمويل نشاطات الوكالة، بالإضافة إلى استعمال الوسائل المالية وإنشاء الملاحق وإنجاز الاستثمارات.</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>اتصل بنا</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>اتصل الآن – فريقنا جاهز لخدمتك على مدار الساعة</value>
   </data>
   <data name="Coopérations" xml:space="preserve">
     <value>التعاون</value>
@@ -198,29 +372,269 @@
   <data name="CreationAgence" xml:space="preserve">
     <value>نشأة الوكالة</value>
   </data>
+  <data name="Creation_Micro_Enterprise_Text" xml:space="preserve">
+    <value>يستفيد من تمويل المشاريع الجديدة جميع الشباب حاملي أفكار المشاريع الذين استفادوا من تكوين في مراكز تطوير المقاولاتية الخاصة بالجامعيين أو خريجي معاهد التكوين المهني.</value>
+  </data>
   <data name="CSVF" xml:space="preserve">
     <value>CSVF</value>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>منذ سنة 2024</value>
+  </data>
+  <data name="Declaration" xml:space="preserve">
+    <value>يرجى تحميل التصريح الشرفي من هنا ملأه و المصادقة عليه</value>
+  </data>
+  <data name="DeclarationHonneur1" xml:space="preserve">
+    <value>في إطار تعزيز وزارة التجارة الخارجية لإجراءات الاستيراد ولضمان حماية أفضل للمنتج الوطني، ُنعلم جميع المؤسسات الناشئة و المصغرة التابعة لإداراتنا الوزارية أنه وفقًا للأحكام التنظيمية الجديدة، يجب أولاً الموافقة على أي وثيقة تتعلق ببرنامج الاستيراد المتوقع للمعدات والعمليات، المقدمة للتحقق النهائي من قبل وزارة التجارة، من قبل الإدارات المعتمدة داخل وزارة اقتصاد المعرفة والشركات الناشئة والصغيرة</value>
+  </data>
+  <data name="DeclarationHonneur2" xml:space="preserve">
+    <value>أصبحت الموافقة الإلزامية على برنامج الاستيراد المتوقع شرطًا أساسيًا وضروريًا لأي عملية تحقق مع وزارة التجارة الخارجية</value>
+  </data>
+  <data name="DeclarationHonneur3" xml:space="preserve">
+    <value>بالنسبة لواردات الخدمات، ووفقًا للمرسوم الوزاري رقم 55 المؤرخ 13 يوليو 2025، تم إنشاء لجنة وزارية مشتركة، مُفوضة بتقييم وترخيص الواردات الاستثنائية للخدمات</value>
+  </data>
+  <data name="DeclarationHonneurInfo" xml:space="preserve">
+    <value>يرجى التسجيل والإعلان عن خططكم لاستيراد المعدات والعمليات والخدمات وفقًا للمتطلبات الحالية. هذا مطلوب لأي برنامج استيراد يتطلب موافقة خدماتنا</value>
   </data>
   <data name="DeclarationHonneurMI" xml:space="preserve">
     <value>الاستفادة من استراد المعدات و العمليات و الخدمات</value>
   </data>
+  <data name="decrets1,1" xml:space="preserve">
+    <value>المرسوم الرئاسي رقم 96 - 234 مؤرخ في 16 صفر عام 1417 الموافق 2 يوليو سنة 1996، المتعلق بدعم تشغيل الشباب.</value>
+  </data>
+  <data name="decrets1,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 96-296 المؤرخ في 24 ربيع الثاني عام 1417 الموافق 8 سبتمبر سنة 1996 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets1,3" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 03-290 المؤرخ في 9 رجب عام 1424الموافق 6 سبتمبر سنة 2003 ، يحدد شروط الإعانة المقدمة لحاملي المشاريع ومستواها.</value>
+  </data>
+  <data name="decrets2,1" xml:space="preserve">
+    <value>المرسوم رئاسي رقم 03-300 مؤرخ في 14 رجب عام 1424 الموافق 11 سبتمبر سنة 2003، المتعلق بدعم تشغيل الشباب.</value>
+  </data>
+  <data name="decrets2,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 98-231 المؤرخ في 19 ربيع الأول عام 1419 الموافق 13 يوليو سنة 1998 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets2,3" xml:space="preserve">
+    <value>المـرسـوم تـــنــفـــيـذي رقم 10-157 مــؤرخ في 7 رجب عــام 1431 المـوافـق 20 يـونـيــو سـنـة 2010، يحدد شروط الإعانة المقدمة لحاملي المشاريع ومستواها.</value>
+  </data>
+  <data name="decrets3,1" xml:space="preserve">
+    <value>المرسوم رئاسي رقم 11-100 مؤرخ في أول ربيع الثاني عام 1432 الموافق 06 مارس سنة 2011، المتعلق بدعم تشغيل الشباب.</value>
+  </data>
+  <data name="decrets3,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 01-162 المؤرخ في 18 ربيع الثاني عام 1422 الموافق 10 يوليو سنة 2001 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets4,1" xml:space="preserve">
+    <value>المرسوم رئاسي رقم 20-441 مؤرخ في 15 جمادى الأولى عام 1442 الموافق 30 ديسمبر سنة 2020، المتعلق بدعم تشغيل الشباب.</value>
+  </data>
+  <data name="decrets4,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 03-288 المؤرخ في 09 رجب عام 1424 الموافق 6 سبتمبر سنة 2003 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets5,1" xml:space="preserve">
+    <value>المرسوم رئاسي رقم 22-42 مؤرخ في 16 جمادى الثانية عام 1443 الموافق 19 جانفي سنة 2022، المتعلق بدعم تشغيل الشباب.</value>
+  </data>
+  <data name="decrets5,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 11-102 المؤرخ في أول ربيع الثاني عام 1432 الموافق 6 مارس سنة 2011 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets6,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 18-201 المؤرخ في 20 ذي القعدة عام 1439 الموافق 2 غشت سنة 2018 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets7,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 20-329 المؤرخ في 6 ربيع الثاني عام 1442 الموافق 22 نوفمبر سنة 2020 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets8,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 23-330 المؤرخ في أول ربيع الأول عام 1445 الموافق 17 سبتمبر سنة 2023 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decrets9,2" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 24-197 المؤرخ في 05 ذي الحجة عام 1445 الموافق 11 يونيو سنة 2024 والمتضمن إنشاء الوكالة الوطنية لدعم و تنمية المقاولاتية وتحديد قانونها الأساسي.</value>
+  </data>
+  <data name="decretsAnnule1" xml:space="preserve">
+    <value>المرسوم التنفيذي رقم 96-297 المؤرخ في 24 ربيع الثاني عام 1417 الموافق 8 سبتمبر سنة 1996 ، يحدد شروط الإعانة المقدمة لحاملي المشاريع ومستواها.</value>
+  </data>
+  <data name="DefinitionProgrammeImpact70P1" xml:space="preserve">
+    <value>هو برنامج جديد للوكالة الوطنية لدعم وتنمية المقاولاتية يعنى بالمؤسسات المصغرة التي تهتم بالتنمية المحلية، يحمل عنوان IMPACT 70</value>
+  </data>
+  <data name="DefinitionProgrammeImpact70P2" xml:space="preserve">
+    <value>حيث جاءت تسميته من الأثر (IMPACT) الذي تتركه المؤسسة المصغرة حول محيطها : الاقتصادي (خلق قيمة مضافة، تحويل موارد أولية،...)، الاجتماعي (مناصب شغل، خدمات جوارية، ...) والفردي (تحقيق الذات، ريادة الاعمال،....)، في حين أن الرقم 70 يهدف الى تخليد الذكرى السبعين لاندلاع ثورة 1 نوفمبر 1954 المجيدة، التي تزامنت مع اطلاق البرنامج.</value>
+  </data>
   <data name="Depuis" xml:space="preserve">
     <value>منذ</value>
+  </data>
+  <data name="DescriptionAgenceP1" xml:space="preserve">
+    <value>ديناميكية كبيرة، تمثل نقطة تحول حاسمة في الجهاز الوطني لدعم إنشاء المؤسسات المصغرة ويعكس تغييرًا استراتيجيًا هامًا، عبر الانتقال من نموذج إداري لدعم تشغيل الشباب إلى جهاز اقتصادي يركز على إنشاء مؤسسات مصغرة ناجحة ومستدامة. حيث يستند هذا التوجه الجديد إلى دعم أكبر لحاملي المشاريع، بهدف مساعدة ظهور الأفكار، نضجها وتحويلها إلى مشاريع مربحة وقابلة للاستمرار.</value>
+  </data>
+  <data name="DescriptionAgenceP2" xml:space="preserve">
+    <value>نفسها كمحرك حقيقي للتحول الاقتصادي، عبر المساهمة بفعالية في جهود السلطات العمومية الرامية إلى خفض فاتورة الواردات، تنويع الاقتصاد، زيادة مرونته وتوليد فرص عمل ذات قيمة مضافة عالية</value>
+  </data>
+  <data name="DescriptionAgenceP2,1" xml:space="preserve">
+    <value>وقد استلزم التحول الاستراتيجي لدور الوكالة جملة من التعديلات، من جهة، على الصعيد الخارجي، وذلك عبر إبرام شراكات استراتيجية مع القطاعات الرئيسية في النظام البيئي للمقاولاتية، وهي التعليم العالي والبحث العلمي، وكذلك التكوين المهني لإنشاء</value>
+  </data>
+  <data name="DescriptionAgenceP2,2" xml:space="preserve">
+    <value>المقاولاتية (CDE) والترويج لها عبر كافة تراب الوطن، بالإضافة الى شراكات مهمة مع جهات اجتماعية واقتصادية فاعلة في القطاعات الرئيسية على غرار الشغل، التأمين والفلاحة</value>
+  </data>
+  <data name="DescriptionAgenceP3,1" xml:space="preserve">
+    <value>ومن جهة أخرى، على الصعيد الداخلي، عززت الوكالة قدراتها في مجال تقييم المشاريع وإدارة المخاطر من خلال تنفيذ برامج تكوينية لموظفيها واعتماد تنظيم داخلي جديد يضمن مواءمة استراتيجية متناسقة وتعزيز الوظائف الرئيسية للوكالة، مثل التخطيط، الدعم، التقييم، التحصيل وإدارة الموارد. بالإضافة إلى ذلك، قامت الوكالة بإطلاق وسائل رقمية مثل</value>
+  </data>
+  <data name="DescriptionAgenceP3,2" xml:space="preserve">
+    <value>على غرار منصة تقييم المشاريع</value>
+  </data>
+  <data name="DescriptionAgenceP3,3" xml:space="preserve">
+    <value>ومنصة متابعة الأداء</value>
+  </data>
+  <data name="DescriptionAgenceP3,4" xml:space="preserve">
+    <value>بالإضافة إلى الموقع الإلكتروني الحالي </value>
+  </data>
+  <data name="DescriptionAgenceP4" xml:space="preserve">
+    <value>تعتزم الوكالة مواصلة ديناميكية تطوير وتحويل مخطط سير جهازها، بهدف تعزيز متغير"الثقة" لدى حاملي المشاريع وتشجيع إدماج المشاريع المصغرة والصغيرة في سلاسل القيم الوطنية. حيث ان الهدف النهائي هو تمكين الوكالة من أداء دورها الكامل كرافعة للتحول الاقتصادي في خدمة التنمية الوطنية.</value>
+  </data>
+  <data name="DescriptionFG" xml:space="preserve">
+    <value>يسهر صندوق الكفالة المشترك لضمان أخطار القروض الممنوحة لحاملي المشاريع على تغطية المخاطر المرتبطة بالقروض البنكية الممنوحة لفائدة المؤسسات المصغرة الممولة في إطار جهاز الوكالة الوطنية لدعم وتنمية المقاولاتية، حيث يشكل الصندوق ضمانا مُكملا لفائدة البنوك، إلى جانب الضمانات المقدمة من المؤسسات المصغرة، مما يساهم في تعزيز ثقة البنوك في تمويل المشاريع المقاولاتية.</value>
+  </data>
+  <data name="DescriptionTachesFG" xml:space="preserve">
+    <value>يعتبر صندوق الضمان أداة لتقليل المخاطر المالية المرتبطة بتمويل المؤسسات المصغرة، حيث يوفر ضمانا إضافيا للبنوك، إلى جانب الضمانات المقدمة من طرف المقاولين أنفسهم، والتي تشمل:</value>
   </data>
   <data name="desExpo-Vente" xml:space="preserve">
     <value>معارض للبيع</value>
   </data>
+  <data name="ElementFonctionnementFG1" xml:space="preserve">
+    <value>يتلقى الصندوق طلبا رسميا من البنك بعد التصريح بعدم دفع ثلاثة أقساط سداسية</value>
+  </data>
+  <data name="ElementFonctionnementFG2" xml:space="preserve">
+    <value>يقوم الصندوق بـزيارة ميدانية للتحقق من وضعية المؤسسة المصغرة ومدى عجزها عن السداد</value>
+  </data>
+  <data name="ElementFonctionnementFG3P1" xml:space="preserve">
+    <value>يتم تعويض البنك بنسبة</value>
+  </data>
+  <data name="ElementFonctionnementFG3P2" xml:space="preserve">
+    <value>من الدين المتبقي (أصل + فوائد)</value>
+  </data>
+  <data name="ElementFonctionnementFG4" xml:space="preserve">
+    <value>بعد التعويض، يقوم البنك بتحويل حقوق الدين المتبقية لصالح الصندوق</value>
+  </data>
+  <data name="ElementFonctionnementFG5" xml:space="preserve">
+    <value>يتولى الصندوق مهام مرافقة ومتابعة المؤسسة المتعثرة بعد التعويض، من اجل بعث نشاطها وتمكينها من سداد التزاماتها المالية</value>
+  </data>
+  <data name="ElementParticipationFG1" xml:space="preserve">
+    <value>يتم انخراط المؤسسة المصغرة بعد الموافقة البنكية</value>
+  </data>
+  <data name="ElementParticipationFG2P1" xml:space="preserve">
+    <value>نسبة اشتراك المؤسسة المصغرة في الصندوق محددة بـ</value>
+  </data>
+  <data name="ElementParticipationFG2P2" xml:space="preserve">
+    <value> سنويا، تحسب على أساس مبلغ وقيمة القرض البنكي، وتدفع كاملا مرة واحدة</value>
+  </data>
+  <data name="ElementParticipationFG3P1" xml:space="preserve">
+    <value>نسبة اشتراك البنوك في الصندوق محددة بـ   </value>
+  </data>
+  <data name="ElementParticipationFG3P2" xml:space="preserve">
+    <value> من الباقي من الدين سنويا</value>
+  </data>
+  <data name="ElementParticipationFG4" xml:space="preserve">
+    <value>في حالة تعثر الدفع (3 أقساط سداسية غير مدفوعة):</value>
+  </data>
+  <data name="ElementParticipationFG4,1" xml:space="preserve">
+    <value>يقوم الصندوق بزيارة ميدانية</value>
+  </data>
+  <data name="ElementParticipationFG4,2P1" xml:space="preserve">
+    <value>يعوض البنك بنسبة </value>
+  </data>
+  <data name="ElementParticipationFG4,2P2" xml:space="preserve">
+    <value>من المبلغ المتبقي</value>
+  </data>
+  <data name="ElementParticipationFG4,3" xml:space="preserve">
+    <value>يتكفل بمتابعة المؤسسة المتعثرة</value>
+  </data>
   <data name="Enligne" xml:space="preserve">
     <value>عبر الإنترنت</value>
   </data>
+  <data name="EnvironementProgramme1" xml:space="preserve">
+    <value>فرص الاستثمار</value>
+  </data>
+  <data name="EnvironementProgramme2" xml:space="preserve">
+    <value>الإمكانات الاقتصادية</value>
+  </data>
+  <data name="EnvironementProgramme3" xml:space="preserve">
+    <value>قطاعات استراتيجية وأولوية</value>
+  </data>
+  <data name="EnvironementProgramme4" xml:space="preserve">
+    <value>احتياجات تنموية</value>
+  </data>
+  <data name="EnvironementProgrammeP1" xml:space="preserve">
+    <value>يضم البرنامج كافة القطاعات الاقتصادية المتعلقة بالتنمية المحلية، على غرار : الفلاحة، البناء والأشغال العمومية، الصناعة، الصيد البحري، الري، الخدمات، النقل، الصيانة، المهن الحرة والصناعة التقليدية.</value>
+  </data>
+  <data name="EnvironementProgrammeP2" xml:space="preserve">
+    <value>وذلك مع اعتبار مميزات وخصوصيات كل ولاية، من:</value>
+  </data>
+  <data name="EnvironementProgrammeP3" xml:space="preserve">
+    <value>بهدف إرساء مقومات تنمية مستدامة ومنصفة عبر كافة إقليم الوطن، وفق مخططات تهيئة الإقليم المعتمدة، على غرار مخططات الهيكل الساحلي، الهضاب العليا، الجنوب، مناطق التدخل ذات الأولوية وتنمية الحدود، أقطاب جاذبية ومناطق مندمجة للتنمية الصناعية.</value>
+  </data>
+  <data name="EnvironementProgrammeParag1" xml:space="preserve">
+    <value>جاء البرنامج لتعزيز مجال توسعة نشاطات المؤسسات المصغرة واعطاءها مزيد من الفرص للتطور والنجاح، وذلك في اطار جهود اصلاح جهاز الوكالة، باعتبار معايير التكوين في المقاولاتية والتحكم في المخاطر المتعلقة بتمويل النشاط.</value>
+  </data>
+  <data name="EnvironementProgrammeParag2" xml:space="preserve">
+    <value>يشمل البرنامج أصحاب المؤسسات المصغرة الذين استفادوا سابقا من دعم جهاز الوكالة في الاطار الانشاء وكذا أولئك الذين لم يستفيدوا سابقا منه، على غرار الذين باشروا نشاطاتهم عبر جهاز الوكالة الوطنية لتسيير القرض المصغر (ANGEM) او جهاز الصندوق الوطني للتأمين عن البطالة (CNAC)، بالاضافة الى الفلاحين، الحرفيين، او أصحاب التراخيص او/و السجل التجاري.</value>
+  </data>
+  <data name="EnvironementProgrammeParag3" xml:space="preserve">
+    <value>حيث تضم توسعة النشاط مختلف القطاعات الاقتصادية وتشمل:</value>
+  </data>
+  <data name="EnvironementProgrammeParag3P1" xml:space="preserve">
+    <value>تطوير نشاط رئيسي او اطلاق نشاط فرعي: خط انتاج جديد، آلة جديدة، منتوج جديد تكميلي او مرتبط بالنشاط الرئيسي</value>
+  </data>
+  <data name="EnvironementProgrammeParag3P2" xml:space="preserve">
+    <value>اطلاق نشاط جديد: عبر تنويع نشاط رئيسي واكتشاف مجالات نشاط أخرى</value>
+  </data>
   <data name="Etapes" xml:space="preserve">
     <value>المراحل الرئيسية</value>
+  </data>
+  <data name="EtapesBeneficier1" xml:space="preserve">
+    <value>التسجيل الالكتروني عبر المنصة الرقمية الخاصة بجهاز الوكالة</value>
+  </data>
+  <data name="EtapesBeneficier2" xml:space="preserve">
+    <value>تقييم مشروع توسعة النشاط من طرف مصالح الوكالة وفق نظام تقييم المخاطر (scoring) باعتبار المعايير المتعلقة:</value>
+  </data>
+  <data name="EtapesBeneficier2,1" xml:space="preserve">
+    <value>بالجدوى</value>
+  </data>
+  <data name="EtapesBeneficier2,2" xml:space="preserve">
+    <value>النجاعة والتمويل</value>
+  </data>
+  <data name="EtapesBeneficier2,3" xml:space="preserve">
+    <value>توجيه حامل المشروع الى التكوين في حالة فاق تقييمه</value>
+  </data>
+  <data name="EtapesBeneficier3P1" xml:space="preserve">
+    <value>اجراء تكوين خاص حول مهارات واساسيات التسيير لمدة</value>
+  </data>
+  <data name="EtapesBeneficier3P2" xml:space="preserve">
+    <value>خمسة (5) أيام</value>
+  </data>
+  <data name="EtapesBeneficier3P3" xml:space="preserve">
+    <value>على مستوى الوكالة</value>
+  </data>
+  <data name="EtapesBeneficier4" xml:space="preserve">
+    <value>عرض مشروع توسعة النشاط من طرف صاحبه على لجنة انتقاء واعتماد وتمويل مشاريع الاستثمار على مستوى الولاية</value>
+  </data>
+  <data name="EtapesBeneficier5" xml:space="preserve">
+    <value>اصدار مصالح الوكالة لشهادة القابلية والتمويل لحامل المشروع في حالة موافقة اللجنة عليه، ومباشرة الإجراءات الإدارية المتعلقة بتوسعة النشاط، حسب الحالة، مع:</value>
+  </data>
+  <data name="EtapesBeneficier5,1" xml:space="preserve">
+    <value>مختلف المصالح الإدارية (الضرائب، الضمان الاجتماعي)</value>
+  </data>
+  <data name="EtapesBeneficier5,2" xml:space="preserve">
+    <value>الموردين (المحل، العتاد)</value>
+  </data>
+  <data name="EtapesBeneficier6" xml:space="preserve">
+    <value>بداية النشاط الجديد بعد استيفاء كافة الإجراءات رفقة مصالح الوكالة</value>
+  </data>
+  <data name="EtapesBeneficierdESC" xml:space="preserve">
+    <value>مراحل الاستفادة من توسعة النشاط في إطار جهاز الوكالة يشمل ما يلي:</value>
   </data>
   <data name="Evaluation" xml:space="preserve">
     <value>التقييم</value>
   </data>
   <data name="Expérience" xml:space="preserve">
     <value>خبرة</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Text" xml:space="preserve">
+    <value>يستفيد من تمويل المشاريع التوسعية جميع أصحاب المشاريع، سواء كانوا مستفيدين سابقين من خدمات الوكالة أو من أنشأوا مشاريعهم بشكل مستقل أو بدعم من أجهزة أخرى.</value>
   </data>
   <data name="FCMG" xml:space="preserve">
     <value>صندوق الضمان</value>
@@ -234,6 +648,9 @@
   <data name="FINANCEMENTDETAIS" xml:space="preserve">
     <value>تمنح الوكالة اعانات مالية وفق صيغ تمويلية متنوعة، رفقة شركاءها من القطاع البنكي العمومي، بالإضافة الى امتيازات جبائية للمستفيدين من جهاز الوكالة، حسب التنظيم التشريعي الساري.</value>
   </data>
+  <data name="FonctionnementFGDescription" xml:space="preserve">
+    <value>يتدخل صندوق الكفالة المشتركة عند تسجيل تعثر في السداد، وفقا لسلسلة من الإجراءات المنظمة كما يلي:</value>
+  </data>
   <data name="FORMATION" xml:space="preserve">
     <value>التكوين</value>
   </data>
@@ -243,8 +660,17 @@
   <data name="Formationenligne" xml:space="preserve">
     <value>التكوين عبر الإنترنت</value>
   </data>
+  <data name="FormationIntro" xml:space="preserve">
+    <value>تولي الوكالة الوطنية لدعم وتنمية المقاولاتية أهمية بالغة لمرحلة التكوين باعتبارها حجر الأساس في مسار إنشاء وتطوير المؤسسات المصغرة. وتندرج هذه المرحلة ضمن مقاربة شاملة تهدف إلى تمكين حاملي المشاريع من اكتساب المعارف والمهارات اللازمة لتحويل أفكارهم إلى مشاريع واقعية ناجحة ومستدامة.</value>
+  </data>
+  <data name="FormationTitre" xml:space="preserve">
+    <value>تعد برامج التكوين من الركائز الأساسية التي تعتمد عليها الوكالة الوطنية لدعم وتنمية المقاولاتية في مرافقة حاملي الأفكار والمشاريع</value>
+  </data>
   <data name="Impact70" xml:space="preserve">
     <value>امباكت 70</value>
+  </data>
+  <data name="Impact70Desc" xml:space="preserve">
+    <value>برنامج جديد للوكالة الوطنية لدعم وتنمية المقاولاتية يعنى بالمؤسسات المصغرة التي تهتم بالتنمية المحلية</value>
   </data>
   <data name="Impact70Details" xml:space="preserve">
     <value>جاء البرنامج تنفيذا لالتزامات رئيس الجمهورية السيد عبد المجيد تبون الهادفة الى تطوير "نمــوذج اقتصــادي جديــد قائــم علــى تنويــع النمـو و اقتصـاد المعرفـة"، تلك الالتزامات النابعة عن حرصه واهتمامه بالشباب وتعزيز المقاولاتية لديهم وتشجيعهم على مشاريعهم.
@@ -262,6 +688,15 @@
   </data>
   <data name="IndustrieT2" xml:space="preserve">
     <value>يلامس احتياجات السوق ويساهم في بناء اقتصاد الوطن</value>
+  </data>
+  <data name="InfoGenerale" xml:space="preserve">
+    <value>تواصل معنا للحصول على تفاصيل أكثر حول صندوق الضمان وكيفية الاستفادة من خدماته</value>
+  </data>
+  <data name="InfoProgrammeExtension" xml:space="preserve">
+    <value>تواصل معنا للحصول على تفاصيل أكثر حول برنامج توسعة النشاط وكيفية الاستفادة من خدماته</value>
+  </data>
+  <data name="InfoTextJuridique" xml:space="preserve">
+    <value>تواصل معنا للحصول على المساعدة أو الاستشارة القانونية المتعلقة بهذه النصوص</value>
   </data>
   <data name="Inscription" xml:space="preserve">
     <value>التسجيل </value>
@@ -281,14 +716,44 @@
   <data name="InscriptionsMPDZ" xml:space="preserve">
     <value>التسجيل في بوابة الصفقات العمومية</value>
   </data>
+  <data name="Inscription_CDE_Text" xml:space="preserve">
+    <value>تمثل مراكز تطوير المقاولاتية فضاءات مشتركة بين الوكالة الوطنية لدعم وتنمية المقاولاتية وشركاءها، حيث توفر مساحات مخصصة لتعزيز المقاولاتية لدى الشباب ورفع قدراتهم ومهاراتهم في انشاء وتسيير المؤسسات المصغرة، عبر توفير دورات تدريبية نوعية يقدمها مدربون من الوكالة معتمدين من قبل المنظمة العالمية للعمل، مناصفة مع مدربي القطاع الشريك.</value>
+  </data>
+  <data name="Inscription_CNRC_Text" xml:space="preserve">
+    <value>في إطار تدابير القانون رقم 04-08 المؤرخ في 27 جمادى الثانية عام 1425 الموافق 14 غشت سنة 2004، المعدل و المتمم و كذا المرسوم التنفيذي رقم 23-169 مؤرخ في 24 أفريل سنة 2023، يحدد كيفيات تسيير و سير البوابة الالكترونية المخصصة لانشاء المؤسسات و كذا كيفيات التسجيل و التحويل و استلام الوثائق الالكترونية و منح رقم التعريف المشترك.</value>
+  </data>
+  <data name="Inscription_MPDZ_Text_01" xml:space="preserve">
+    <value>توفر البوابة الإلكترونية للصفقات العمومية منهج الجديد للعمل يطمح إلى تكريس إجراءات أكثر حداثة، بساطة، سهولة و سرعة بين المتعاملين الاقتصاديين والمصالح المتعاقدة في مجال الطلب العمومي. حيث تهدف الى توفير ضمان احترام أكبر لمبادئ حرية الوصول إلى الطلب العمومي، المساواة بين المرشحين و شفافية الإجراءات.</value>
+  </data>
+  <data name="Inscription_MPDZ_Text_02" xml:space="preserve">
+    <value>كما تقدم البوابة الالكترونية للمتعاملين الاقتصاديين وأصحاب المؤسسات المصغرة مختلف المعلومات والبيانات المتعلقة بالطلب العمومي على كافة مستوى الوطن، ولاسيما الاستشارات والصفقات العمومية، بالإضافة الى توفير خدمات أخرى على غرار الإطلاع على مختلف دعوات المنافسة وكذا تحميل دفاتر الشروط.</value>
+  </data>
+  <data name="Inscription_NESDA_Text" xml:space="preserve">
+    <value>توفر الوكالة الوطنية لدعم وتنمية المقاولاتية منصة رقمية خاصة لحاملي المشاريع الراغبين في انشاء مؤسسات مصغرة او توسعة نشاطاتهم، من اجل التسجيل عن بعد للاستفادة من مزايا جهاز الوكالة من مرافقة وتمويل</value>
+  </data>
   <data name="Lancement" xml:space="preserve">
     <value>الانطلاق</value>
+  </data>
+  <data name="LectureMag" xml:space="preserve">
+    <value>المجلة الإلكترونية الخاصة بالوكالة</value>
   </data>
   <data name="Lesmisesàjourrécentes" xml:space="preserve">
     <value>آخر المستجدات</value>
   </data>
   <data name="lireSuite" xml:space="preserve">
     <value>إقرأ المزيد</value>
+  </data>
+  <data name="Mag" xml:space="preserve">
+    <value>مجلة ناسدا Mag</value>
+  </data>
+  <data name="MagDeclarationDG" xml:space="preserve">
+    <value>و في تصريح له بهذه المناسبة, أكد السيد بلال عشاشة المدير العام للوكالة الوطنية لدعم وتنمية المقاولاتية على أن إطلاق هذه المجلة يمثل إضافة نوعية للمشهد الاقتصادي الوطني، وخطوة أساسية في الاستراتيجية الجديدة التي ترتكز على التكوين والمرافقة وتمكين حاملي الافكار و المشاريع من أدوات النجاح. هذه المجلة هي التزام منا بمواكبة التحول الرقمي وضمان وصول المعلومة الصحيحة والمحفزة إلى جميع رواد الاعمال في كافة ربوع الوطن.</value>
+  </data>
+  <data name="MagText" xml:space="preserve">
+    <value>تعلن الوكالة الوطنية لدعم وتنمية المقاولاتية (NESDA) عن الإصدار الرسمي للعدد الأول من مجلتها المتخصصة، لتكون بذلك أول مجلة متكاملة في مجال المقاولاتية في الجزائر. وتأتي هذه الخطوة الاستراتيجية في إطار التزام الوكالة بتعزيز ثقافة ريادة الأعمال وتوفير مرجع معرفي ومنصة تفاعلية لجميع الفاعلين في منظومة المقاولاتية و ريادة الاعمال.</value>
+  </data>
+  <data name="MagTitre1Text" xml:space="preserve">
+    <value>تهدف المجلة، التي تحمل عنوان "ناسدا Mag"، إلى تقديم محتوى نوعي يجمع بين الجانب الأكاديمي والعملي، ويسلط الضوء على الفرص الاستثمارية الواعدة في مختلف القطاعات الاقتصادية.</value>
   </data>
   <data name="Marketplace" xml:space="preserve">
     <value>Market place</value>
@@ -305,11 +770,23 @@
   <data name="Mission" xml:space="preserve">
     <value>المهام والرؤية</value>
   </data>
+  <data name="mission1" xml:space="preserve">
+    <value>ترقية نظام بيئي للمقاولاتية يحفز على إنشاء، تمويل وتطوير المؤسسات المُصغّرة عالية الأداء، ذات صمود وتخلق قيمة مُضافة مستدامة للمواطنين وللوطن.</value>
+  </data>
+  <data name="MissionP1" xml:space="preserve">
+    <value>تعتمد الوكالة الوطنية لدعم وتنمية المقاولاتية على توجيهات رئيس الجمهورية السيد عبد المجيد تبون الرامية الى رفع رهان الإنعاش الاقتصادي وبناء اقتصاد منتج ومتنوع يخلق القيمة وفرص عمل ذات جودة، في اطار تطوير نمــوذج اقتصــادي جديــد قائــم علــى تنويــع النمـو و اقتصـاد المعرفـة</value>
+  </data>
+  <data name="MissionP2" xml:space="preserve">
+    <value>تقوم التوجهات الاستراتيجية للوكالة حول مايلي:</value>
+  </data>
   <data name="NESDA" xml:space="preserve">
     <value>ناسدا</value>
   </data>
   <data name="NesdaExtension" xml:space="preserve">
     <value>توسعة النشاط "ناسدا اكستنشن"</value>
+  </data>
+  <data name="NesdaExtensionDescription" xml:space="preserve">
+    <value>هو برنامج خاص للوكالة الــوطنـيـة لـدعـم وتنمية المقـاولاتيـة موجه للمؤسسات المصغرة التي تهتم بتوسعة نشاطها، يحمل عنوان "NESDA EXTENSION"</value>
   </data>
   <data name="NesdaNomination" xml:space="preserve">
     <value>الوكالة الوطنية لدعم و تنمية المقاولاتية</value>
@@ -329,8 +806,80 @@
   <data name="Organisation" xml:space="preserve">
     <value>التنظيــــــم</value>
   </data>
+  <data name="organisationNesdaText" xml:space="preserve">
+    <value>بموجب تدابير المرسوم التنفيذي رقم 96-296 المؤرخ في 24 ربيع الثاني عام 1417 الموافق 8 سبتمبر سنة 1996، المعدل والمتمم، والمتضمن إنشاء الوكالة الوطنية لدعم وتنمية المقاولاتية وتحديد قانونها الأساسي، يسير الوكالة مجلس إدارة ويديرها مدير عام، كما هي مزودة بلجنة مراقبة.</value>
+  </data>
+  <data name="Partenaire1P1" xml:space="preserve">
+    <value>تندرج الشراكة مع مؤسسات قطاع التعليم العالي والبحث العلمي، تحت إشراف الوزارة الوصية، في إطار فتح مراكز تطوير المقاولاتية عبر الشبكة الجامعية، بهدف تنسيق تسييرها وتنظيم الدورات التكوينية على مستواها، والتي تتم بصفة مشتركة بين أساتذة جامعيين ومدربين من الوكالة وفق برامج العمل المسطرة.</value>
+  </data>
+  <data name="Partenaire1P2" xml:space="preserve">
+    <value>حيث تلعب مراكز تطوير المقاولاتية دورًا حيويًا في تعزيز المقاولاتية وريادة الأعمال في الوسط الجامعي، من خلال بعثات التدريب، التوعية والدعم التي توفرها.</value>
+  </data>
+  <data name="Partenaire2P1" xml:space="preserve">
+    <value>في إطار تعميم تجربة مراكز تطوير المقاولاتية على مستوى شبكة مؤسسات التعليم والتكوين المهني، تندرج هذه الشراكة، تحت إشراف الوزارة الوصية، والتي تهدف إلى تنسيق عملية فتح هذه المراكز، وضبط تسييرها وتنظيم الدورات التكوينية على مستواها، بالإضافة إلى تكوين المكونين من القطاع ومرافقتهم من طرف مدربين من الوكالة.</value>
+  </data>
+  <data name="Partenaire2P2" xml:space="preserve">
+    <value>حيث تعتبر مراكز تطوير المقاولاتية عامل مهم في تعزيز الفكر المقاولاتي وريادة الأعمال في مسار التعليم والتكوين المهني، من خلال أنشطة التدريب، التوعية والدعم التي توفرها.</value>
+  </data>
+  <data name="Partenaire3P1" xml:space="preserve">
+    <value>تندرج الشراكة مع المؤسسات البنكية العمومية في إطار جهاز الوكالة وتتجلى في صيغة التمويل الثلاثي، أين يمثل القرض البنكي نسبة 70% من الاستثمار، بالإضافة إلى نسبة فائدة القرض المخفضة بنسبة مئة بالمئة، التي تعتبر حافز لإنشاء المؤسسات المصغرة وتوسعة نشاطها.</value>
+  </data>
+  <data name="Partenaire3P2" xml:space="preserve">
+    <value>يلعب التمويل البنكي دور محوري في جهاز الوكالة بالنظر لأهمية التمويل في مسار مشاريع إنشاء المؤسسات المصغرة وتوسعة نشاطها.</value>
+  </data>
+  <data name="Partenaire4P1" xml:space="preserve">
+    <value>في إطار مرافقة المؤسسات المصغرة ودعم نشاطها، تحرص الوكالة على التعاون مع المتعاملين الاقتصاديين، العموميين والخواص، للترويج لمنتجات وخدمات المؤسسات المصغرة وللمزايا التي تقدمها عبر سلسلة القيم الاقتصادية من توفير مدخلات النشاط، خدمات مساعدة ومناولة باطنية.</value>
+  </data>
+  <data name="Partenaire4P2" xml:space="preserve">
+    <value>حيث سمحت الشراكة مع المتعاملين الاقتصاديين من تقريب المؤسسات المصغرة وتبادل الخبرات واستغلال فرص التعاون التجاري، من توريد المواد الأولية إلى مناولة بعض النشاطات.</value>
+  </data>
+  <data name="Partenaire4P3" xml:space="preserve">
+    <value>في هذا الصدد، تسهر الوكالة على إبرام اتفاقيات شراكة مع مختلف المتعاملين الاقتصاديين، حيث تم إبرام عدة اتفاقيات على المستوى المحلي والوطني، على غرار المتعاملين:</value>
+  </data>
+  <data name="Partenaire4P3,1" xml:space="preserve">
+    <value>الفروع الجهوية لمجلس التجديد الاقتصادي الجزائري</value>
+  </data>
+  <data name="Partenaire4P3,2" xml:space="preserve">
+    <value>الصندوق الوطني للتعاون الفلاحي</value>
+  </data>
+  <data name="Partenaire4P3,3" xml:space="preserve">
+    <value>شركة المياه والتطهير للجزائر - سيال</value>
+  </data>
+  <data name="Partenaire4P3,4" xml:space="preserve">
+    <value>شركة الجزائرية للمياه</value>
+  </data>
+  <data name="Partenaire4P3,5" xml:space="preserve">
+    <value>شركات اقتصادية محلية في مجال الصناعات الغذائية، الصناعات التحويلية والخدمات</value>
+  </data>
+  <data name="Partenaire5P1" xml:space="preserve">
+    <value>حرصا على التنسيق المتواصل مع مختلف المؤسسات والهيئات العمومية الفاعلة في مرافقة المؤسسات المصغرة عبر مختلف مراحل إنشاءها وسيرها، وسعيا منها إلى إرساء نظام بيئي للمقاولاتية محفز لريادة الأعمال ويخلق الفرص، تهدف الوكالة من خلال هذه الشراكات إلى تبسيط الإجراءات وتحسينها، تبادل الخبرات والبيانات، تنسيق النشاطات ولاسيما تلك المتعلقة بالتحسيس، الاتصال والمرافقة، وفق التشريعات والتنظيمات السارية.</value>
+  </data>
+  <data name="Partenaire5P2" xml:space="preserve">
+    <value>في هذا الإطار، تسهر الوكالة على إبرام اتفاقيات شراكة مع مختلف المؤسسات والهيئات العمومية، على غرار:</value>
+  </data>
+  <data name="Partenaire5P2,1" xml:space="preserve">
+    <value>الوكالة الوطنية لتسيير القرض المصغر</value>
+  </data>
+  <data name="Partenaire5P2,2" xml:space="preserve">
+    <value>وكالة تطوير المؤسسات الصغيرة والمتوسطة وترقية الابتكار</value>
+  </data>
+  <data name="Partenaire5P2,3" xml:space="preserve">
+    <value>الوكالة الوطنية للتشغيل</value>
+  </data>
   <data name="Partenariat" xml:space="preserve">
     <value>الشراكة</value>
+  </data>
+  <data name="PartenariatContact" xml:space="preserve">
+    <value>تواصل للشراكة</value>
+  </data>
+  <data name="PartenariatDesc" xml:space="preserve">
+    <value>في إطار تعزيز المحيط البيئي للمقاولاتية والمؤسسات المصغرة، تحرص الوكالة الوطنية لدعم وتنمية المقاولاتية على التنسيق المستمر، تحت إشراف الوزارة الوصية، مع مختلف الأطراف الفاعلة فيه</value>
+  </data>
+  <data name="PartenariatInfo" xml:space="preserve">
+    <value>تواصل معنا لاستكشاف فرص الشراكة والتعاون في دعم المقاولاتية وريادة الأعمال</value>
+  </data>
+  <data name="PartenariatQuestion" xml:space="preserve">
+    <value>هل تريد تطوير شراكة معنا؟</value>
   </data>
   <data name="Partenariats" xml:space="preserve">
     <value>الشراكات</value>
@@ -344,38 +893,179 @@
   <data name="Politique" xml:space="preserve">
     <value>سياسة معالجة البيانات</value>
   </data>
+  <data name="Portail_Inscription_CNRC_Text" xml:space="preserve">
+    <value>يوفر المركز الوطني للسجل التجاري بوابة الكترونية خاصة للإجراءات المتعلقة بإنشاء المؤسسات، وذلك بالتنسيق مع المصالح ذات الصلة ولا سيما:</value>
+  </data>
+  <data name="Portail_Services_Texte_01" xml:space="preserve">
+    <value>حيث تقدم البوابة الالكترونية مختلف المعلومات والإجراءات المتعلقة بإنشاء مؤسسة، وفق التشريع المعمول به، في مجال السجل التجاري، الضرائب، الضمان الاجتماعي والاحصاء الاقتصادي.</value>
+  </data>
+  <data name="Portail_Services_Texte_02" xml:space="preserve">
+    <value>كما يشكل تسجيل المؤسسة عن طريق البوابة الإلكترونية لإنشاء المؤسسات التسجيل الوحيد بعد المصادقة عليه من طرف المركز الوطني للسجل التجاري و تأكيده من طرف المصالح المختصة.</value>
+  </data>
   <data name="Principal" xml:space="preserve">
     <value>الرئيسية</value>
   </data>
   <data name="Professionslibérales" xml:space="preserve">
     <value>المهن الحرة</value>
   </data>
+  <data name="ProgCoopérationsText" xml:space="preserve">
+    <value>في إطار ترقية روح المقاولاتية وتعزيز مهارات المؤسسات المصغرة، تعنى الوكالة الوطنية لدعم وتنمية المقاولاتية بتطوير قدراتها عبر ربط علاقات تعاون مع مختلف الهيئات الدولية والاقليمية المعتمدة، للاستفادة من الخبرات والتجارب، بالإضافة الى توسيع فرص التبادل والابتكار. حيث تساهم الوكالة كشريك هام في برامج تعاون دولية عديدة بالجزائر.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP1" xml:space="preserve">
+    <value>يهدف هذا البرنامج الإقليمي إلى دعم ريادة الأعمال الفلاحية لدى الشباب، عبر تمكينهم من تطوير مشاريع جديدة ذات طابع مبتكر ومستدام، من شأنها خلق فرص عمل للشباب في القطاعات الفلاحية الواعدة في الجزائر.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP2" xml:space="preserve">
+    <value>يقع البرنامج تحت رعاية منظمة العمل الدولية وتمويل صندوق التنمية الزراعية الدولي التابع لمنظمة الأمم المتحدة، واشراف القطاعات الوزارية ذات الصلة، حيث تعتبر الوكالة كشريك رئيسي في البرنامج، رفقة كل من المكتب الوطني لدراسات التنمية الريفية والمسرع العمومي أ-فنتور، الوكالة الوطنية لتسيير القرض المصغر والوكالة الوطنية للتشغيل.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP3" xml:space="preserve">
+    <value>ساهمت الوكالة خلال سنة 2024 في تنظيم مسابقة خطط الاعمال الموجهة الى أصحاب المشاريع لاستفادة من تعزيز قدراتهم في ريادة الاعمال و إطلاق أنشطة مجدية اقتصاديًا في المجال الفلاحي، محددة مسبقا وفق سلاسل القيم، وهي البطاطا في مستغانم، وتربية الأحياء المائية في بسكرة وإنتاج الألبان في قالمة، بالإضافة الى الاستفادة من الدعم التقني لبناء خطة عمل صالحة وكذا تمويل مشاريعهم حسب الحالة.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP4" xml:space="preserve">
+    <value>حيث شهد البرنامج مشاركة هامة سمحت بالتعرف على العديد من المشاريع المبتكرة، اين استفاد المشاركون من دورات تكوينية سمحت بتعزيز قدراتهم في اعداد خطط الاعمال بالإضافة الى رفع مهاراتهم في ريادة الاعمال وخبراتهم في المجال الفلاحي المستهدف. كما عرف البرنامج تكريم الفائزين الأوائل عن ولايات الثلاث المعنية، حيث سيستفيدون من مرافقة الوكالة لإنشاء مؤسساتهم المصغرة.</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP1" xml:space="preserve">
+    <value>يمثل البرنامج مشروع إقليمي لمنظمة العمل الدولية تموله المديرية العامة لمفاوضات سياسات الجوار والتوسع بالمفوضية الأوربية ويدعم المشروع الانتقال من الاقتصاد غير المنظم إلى الاقتصاد المنظم من خلال الحوار الاجتماعي الثلاثي في بلدان العالم العربي، مع التركيز بشكل خاص على الجزائر ومصر ولبنان وفلسطين.</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP2" xml:space="preserve">
+    <value>يهدف المشروع إلى زيادة تشغيل العمال وعمل المنشآت بالمنطقة في القطاع المنظم. والذي من شأنه أن يسهم في تحقيق العمل اللائق للجميع والحد من الفقر، بالإضافة الى بناء مجتمعات أكثر إنصافًا وتماسكًا. ولهذه الغاية يسعى البرنامج الى تعزيز قدرات الأطراف الثلاثة المكونة لمنظمة العمل الدولية أي الحكومات ومنظمات أصحاب العمل والعمال- للتحرك من خلال الحوار الاجتماعي على صعيدين:</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP3" xml:space="preserve">
+    <value>أولا: تطوير سياسات شاملة حول الانتقال للاقتصاد المنظم</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP4" xml:space="preserve">
+    <value>ثانيا: تطوير نظم التدريب الوطنية والاعتراف بالمهارات بالتركيز على الشباب والنساء في القطاع غير المنظم</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP1" xml:space="preserve">
+    <value>يهدف برنامج «الاقتصاد الاجتماعي والتضامني في خدمة الإدماج الاقتصادي المستدام لفائدة الشباب من رواد ورائدات الأعمال في الجزائر» إلى تشجيع تشغيل الشباب، والمساهمة في خلق الثروة من خلال إقامة منظومة داعمة لتطوير الاقتصاد الاجتماعي والتضامني.</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP2" xml:space="preserve">
+    <value>ولتحقيق ذلك، يتضمن المشروع عدة مكونات رئيسية، تعمل كل واحدة منها على مستويات مختلفة من هذا النظام البيئي، وتستهدف مختلف الفاعلين المكوِّنين له، والتي تدور حول الهدفين الرئيسين:</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP3" xml:space="preserve">
+    <value>تعزيز النظام البيئي الاقتصاد الاجتماعي والتضامني</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP4" xml:space="preserve">
+    <value>دعم انشاء وتطوير مؤسسات الاقتصاد الاجتماعي والتضامني</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP5" xml:space="preserve">
+    <value>يقع البرنامج تحت رعاية برنامج الأمم المتحدة الإنمائي واشراف القطاعات الوزارية ذات الصلة، حيث تمثل الوكالة كشريك هام في البرنامج، حيث تساهم في مرافقة انشاء وتوسعة مشاريع المؤسسات المصغرة المندرجة في مجال الاقتصاد الاجتماعي والتضامني بما يتوافق مع الأهداف المسطرة.</value>
+  </data>
   <data name="ProjetsFinancees" xml:space="preserve">
     <value>مشاريع المؤسسات المصغرة الممولة</value>
   </data>
   <data name="Q1" xml:space="preserve">
-    <value>ما هي شروط التأهيل للإستفادة من جهاز ناسدا ؟ </value>
+    <value>هل يمكنني إنشاء مؤسسة في ولايتي الأصلية فقط أم في أي ولاية؟</value>
+  </data>
+  <data name="Q10" xml:space="preserve">
+    <value>هل تقدم ناسدا دعما للمشاريع التي تستهدف الإبتكار؟</value>
+  </data>
+  <data name="Q11" xml:space="preserve">
+    <value>هل يمكنني إنشاء مشروع في مجال لا أملك فيه شهادة لكن لدي خبرة ميدانية؟</value>
+  </data>
+  <data name="Q12" xml:space="preserve">
+    <value>كم تستغرق فترة دراسة الملف للحصول على التمويل؟</value>
+  </data>
+  <data name="Q13" xml:space="preserve">
+    <value>ماذا أفعل إذا تم رفض طلبي للتمويل؟</value>
+  </data>
+  <data name="Q14" xml:space="preserve">
+    <value>هل تساعد ناسدا في إيجاد شركاء أو مستثمرين؟</value>
+  </data>
+  <data name="Q15" xml:space="preserve">
+    <value>ما هو الحد الأقصى للتمويل الذي يمكن الحصول عليه؟</value>
+  </data>
+  <data name="Q16" xml:space="preserve">
+    <value>هل يمكنني تسديد القرض قبل الآجال المحددة دون غرامات؟</value>
+  </data>
+  <data name="Q17" xml:space="preserve">
+    <value>هل توفر الوكالة فرصا للمشاركة في المعارض أو الفعاليات الاقتصادية؟</value>
   </data>
   <data name="Q2" xml:space="preserve">
-    <value>ما هي الخطوات اللازمة لإنشاء مؤسسة مصغرة؟</value>
+    <value>ما هي المجالات و الأنشطة التي تمولها ناسدا؟</value>
   </data>
   <data name="Q3" xml:space="preserve">
-    <value>ما هي الوثائق التي يتكون منها الملف الذي يجب إيداعه في ناسدا ؟ </value>
+    <value>هل التكوين إجباري للإستفادة من الدعم؟</value>
   </data>
   <data name="Q4" xml:space="preserve">
-    <value>ما هي شروط الاستفادة من توسيع نشاطي؟</value>
+    <value>هل هناك مرافقة بعد إطلاق المشروع لمساعدتي على النجاح؟</value>
+  </data>
+  <data name="Q5" xml:space="preserve">
+    <value>هل يشترط مرور مدة معينة على إنشاء المشروع للإستفادة من التوسعة؟</value>
+  </data>
+  <data name="Q6" xml:space="preserve">
+    <value>كيف يمكنني تتبع دراسة ملفي بعد إيداعه؟</value>
+  </data>
+  <data name="Q7" xml:space="preserve">
+    <value>هل يجب أن تكون فكرة المشروع مرتبطة بالتخصص الدراسي أو شهادة التكوين؟</value>
+  </data>
+  <data name="Q8" xml:space="preserve">
+    <value>هل يجب أن أكون مسجلا في وكالة التشغيل للإستفاة من الدعم؟</value>
+  </data>
+  <data name="Q9" xml:space="preserve">
+    <value>هل يمكن ذوي الإحتياجات الخاصة الإستفادة من شروط خاصة؟</value>
+  </data>
+  <data name="QuestionGenerale" xml:space="preserve">
+    <value>هل تحتاج إلى مزيد من المعلومات؟</value>
   </data>
   <data name="R1" xml:space="preserve">
-    <value>شروط التأهيل لجهاز NESDA هي: العمر، الكفاءة المعترف بها (تكوين CDE، شهادة).</value>
+    <value>نعم، يحق لحامل المشروع إنشاء مشروعه في أي ولاية شاء، شريطة تقديمه لوثيقة تثبت تواجده بالولاية المراد الإستثمار فيها</value>
+  </data>
+  <data name="R10" xml:space="preserve">
+    <value>تهدف الوكالة إلى إحداث مشاريع من شأنها أن تغطي السوق المحلي، و تشجيعها على الولوج إلى الأسواق العالمية</value>
+  </data>
+  <data name="R11" xml:space="preserve">
+    <value>لقد وضعت الدولة الجزائرية عدة هيئات رسمية تعنى بإثبات و المصادقة على الخبرة المهنية المكتسبة</value>
+  </data>
+  <data name="R12" xml:space="preserve">
+    <value>لا يمكن تحديد فترة معينة، نظرا لوجود عدة معايير تختلف بإختلاف نمط التمويل</value>
+  </data>
+  <data name="R13" xml:space="preserve">
+    <value>التقرب من المرافق المكلف بملفكم ليفيدكم بالطرق الواجب إتباعها وفقا لسبب الرفض</value>
+  </data>
+  <data name="R14" xml:space="preserve">
+    <value>يمكن لحامل المشروع الاستفادة من مشاريع في اطار الاتفاقيات المبرمة مع مختلف القطاعات الاقتصادية</value>
+  </data>
+  <data name="R15" xml:space="preserve">
+    <value>لا يمكن أن تتجاوز القيمة الإجمالية للمشروع عشر (10) ملايين دينار جزائري</value>
+  </data>
+  <data name="R16" xml:space="preserve">
+    <value>نعم، يمكن لصاحب المشروع تسديد المستحقات المالي المترتبة على مشروعه قبل الآجال المتفق عليها</value>
+  </data>
+  <data name="R17" xml:space="preserve">
+    <value>تعمل الوكالة على تشجيع المشاريع و المؤسسات المستحدثة من خلال الترويج لها عبر مختلف الفعاليات</value>
   </data>
   <data name="R2" xml:space="preserve">
-    <value>لإنشاء مؤسسة مصغرة: تكوين CDE، التسجيل عبر الإنترنت، إيداع الملف والمقابلة، اللجنة الوطنية للتمويل (CSVF).</value>
+    <value>تعنى الوكالة بتمويل كل الأنشطة في مختلف المجالات (الصناعة، الإنتاج، الفلاحة، الخدمات، الحرف و المهن الحرة...إلخ</value>
   </data>
   <data name="R3" xml:space="preserve">
-    <value>يتكون الملف من الوثائق التالية: خطة عمل (business plan)، فاتورة شكلية (facture proforma).</value>
+    <value>نعم، التكوين في مجال المقاولاتية الذي تؤمنه مراكز تطوير المقاولاتية شرط أساسي للإستفادة من الإعانات و الإمتيازات الممنوحة في إطار جهاز الوكالة</value>
   </data>
   <data name="R4" xml:space="preserve">
-    <value>الشروط المشتركة للاستفادة من توسيع النشاط هي: العمر، تبرير سنتين من النشاط الفعلي.</value>
+    <value>من بين المهام الموكلة للوكالة، مرافقة حاملي المشاريع قبل و بعد تجسيد مشاريعهم</value>
+  </data>
+  <data name="R5" xml:space="preserve">
+    <value>من بين شروط الإستفادة من التوسعة تقديم الحصيلة السنوية الخاصة بمؤسسته للسنتين الأخيرتين</value>
+  </data>
+  <data name="R6" xml:space="preserve">
+    <value>عبر  فضاء صاحب المشروع مخصص لصاحب المشروع لإدارة معلوماته، متابعة تقدم مشروعه، وإنجاز مختلف الإجراءات عبر المنصة الإلكترونية</value>
+  </data>
+  <data name="R7" xml:space="preserve">
+    <value>يمكن لحامل المشروع أن يحدث أي نشاط ذو جدوى و مردودية و يمكنه تحقيق مكانة في الأسواق، شريطة إثباته لقدرات تمكنه من التحكم في هذا الأخير.</value>
+  </data>
+  <data name="R8" xml:space="preserve">
+    <value>لا، إلا أن المسجلين في وكالة التشغيل يمكنه الإستفادة من الإعانات و الإمتيازات الممنوحة في إطار جهاز الوكالة بغرض إحداث أنشطة</value>
+  </data>
+  <data name="R9" xml:space="preserve">
+    <value>وضعت الوكالة إجراءات مبسطة و سهلة تراعي كل الفئات من حاملي المشاريع</value>
+  </data>
+  <data name="reponse" xml:space="preserve">
+    <value>نجيب على أكثر الأسئلة شيوعاً التي تم طرحها من قبل. إذا لم تجد إجابة لسؤالك هنا، فلا تتردد في التواصل معنا مباشرة</value>
+  </data>
+  <data name="responseNotFound" xml:space="preserve">
+    <value>لم تجد إجابة لسؤالك؟</value>
+  </data>
+  <data name="ReunionConseilAdmin" xml:space="preserve">
+    <value>يجتمع مجلس الإدارة في دورة عادية أربع مرات في السنة، على الأقل، بناء على استدعاء من رئيسه الذي يحدد جدول الأعمال بناء على اقتراح من المدير العام للوكالة. ويمكن أن يجتمع في دورة غير عادية بناء على استدعاء من رئيسه أو بطلب من السلطة الوصية أو المدير العام للوكالة أو أغلبية أعضائه.</value>
   </data>
   <data name="Scoring" xml:space="preserve">
     <value>التنقيط</value>
@@ -385,6 +1075,9 @@
   </data>
   <data name="Servicesdigitaux" xml:space="preserve">
     <value>الخدمات الرقمية</value>
+  </data>
+  <data name="ServicesdigitauxDetail" xml:space="preserve">
+    <value>تقدم وكالة ناسدا مجموعة من الخدمات الرقمية المبتكرة التي تهدف إلى دعم المقاولاتية، وتسهيل مختلف الإجراءات الإدارية لفائدة الشباب</value>
   </data>
   <data name="ServicesT1" xml:space="preserve">
     <value>ابدأ مؤسستك المصغرة</value>
@@ -401,10 +1094,181 @@
   <data name="SousTraitance" xml:space="preserve">
     <value>المناولة</value>
   </data>
+  <data name="SousTraitanceAvantage1,1" xml:space="preserve">
+    <value>تقليل التكاليف ولاسيما النفقات الثابتة والاعباء الجبائية</value>
+  </data>
+  <data name="SousTraitanceAvantage1,2" xml:space="preserve">
+    <value>التركيز على الأنشطة الأساسية للمؤسسة والوصول إلى كفاءات عالية</value>
+  </data>
+  <data name="SousTraitanceAvantage1,3" xml:space="preserve">
+    <value>تحسين جودة الخدمات أو الإنتاج</value>
+  </data>
+  <data name="SousTraitanceAvantage1,4" xml:space="preserve">
+    <value>الاستفادة من خبرات أو تقنيات غير متوفرة داخليًا</value>
+  </data>
+  <data name="SousTraitanceAvantage1,5" xml:space="preserve">
+    <value>زيادة المرونة التشغيلية وقابلية التكيف مع الطلب</value>
+  </data>
+  <data name="SousTraitanceAvantage2,1" xml:space="preserve">
+    <value>فرص للنمو وتوفير تدفق مالي مستقر عبر التعاقد مع مؤسسات كبرى</value>
+  </data>
+  <data name="SousTraitanceAvantage2,2" xml:space="preserve">
+    <value>تقليص خطر الاعتماد على زبائن فرديين، والتركيز على شراكات طويلة الأمد</value>
+  </data>
+  <data name="SousTraitanceAvantage2,3" xml:space="preserve">
+    <value>بناء علاقات وشبكات عمل وتعزيز الثقة في السوق</value>
+  </data>
+  <data name="SousTraitanceAvantage2,4" xml:space="preserve">
+    <value>استغلال امثل للموارد في المشاريع المتعاقد عليها وتقليص فترات توقف العمل أو الانتاج</value>
+  </data>
+  <data name="SousTraitanceAvantage2,5" xml:space="preserve">
+    <value>تحسين الكفاءة والإنتاجية في قلب النشاط</value>
+  </data>
+  <data name="SousTraitanceDescP1" xml:space="preserve">
+    <value>تعمل الوكالة الوطنية لدعم وتنمية المقاولاتية على برنامج خاص لترقية وتشجيع المناولة وسط المؤسسات المصغرة، لما تملكه من قدرات وكفاءات في مجالات متنوعة عبر مختلف أنشطة سلاسل قيم القطاعات الاقتصادية.</value>
+  </data>
+  <data name="SousTraitanceDescP2" xml:space="preserve">
+    <value>حيث تسهر الوكالة على الترويج للمناولة على مستوى القطاع الاقتصادي للدولة: المجمعات العمومية، المؤسسات العمومية الاقتصادية وغيرها وكذا المؤسسات الخاصة الكبرى من اجل الترويج للمؤسسات المصغرة والمزايا التي تقدمها في هذا المجال.</value>
+  </data>
+  <data name="SousTraitanceModels1" xml:space="preserve">
+    <value>التعاقد مع مؤسسات مصغرة ناشطة في مجال الخدمات على غرار صيانة المعدات والآلات، نقل السلع، التكوين، الدراسات والهندسة، الاطعام، النظافة، وغيرها</value>
+  </data>
+  <data name="SousTraitanceModels2" xml:space="preserve">
+    <value>الاستعانة بمؤسسات مصغرة مختصة في الخدمات الرقمية كالبرمجة، تحليل البيانات، التسويق الإلكتروني وغيرها</value>
+  </data>
+  <data name="SousTraitanceModels3" xml:space="preserve">
+    <value>التعاقد مع مؤسسات مصغرة منتجة لمواد أولية ومواد نصف مصنعة على غرار المنتجات الفلاحية، مواد التغليف والتعبئة، قطع الغيار، المواد الكيميائية وغيرها</value>
+  </data>
+  <data name="SousTraitanceModels4" xml:space="preserve">
+    <value>الاستعانة بمؤسسات مصغرة ناشطة في مجال الرسكلة وإعادة تدوير المواد على غرار الورق، البلاستيك والمعادن</value>
+  </data>
+  <data name="SousTraitanceModels5" xml:space="preserve">
+    <value>الاستعانة بمؤسسات مصغرة متخصصة في التوزيع والتسويق، خدمة العملاء، تحصيل الفواتير وغيرها</value>
+  </data>
+  <data name="SousTraitanceQuestion" xml:space="preserve">
+    <value>هل تريد الاستفادة من برنامج المناولة؟</value>
+  </data>
+  <data name="SousTraitanceSupportP1" xml:space="preserve">
+    <value>في إطار دعم الوكالة للمناولة عبر المؤسسات المصغرة، سهرت الوكالة على امضاء عدة اتفاقيات مع متعاملين اقتصاديين عموميين وخواص في هذا الصدد مع مؤسسات مصغرة، على المستوى المحلي والوطني.</value>
+  </data>
+  <data name="SousTraitanceSupportP2" xml:space="preserve">
+    <value>كما تحرص الوكالة على الترويج لقدرات وإمكانات المؤسسات المصغرة في مجال المناولة بشتى اشكالها في مختلف المناسبات والفرص، من اجل ابرام الاتفاقيات وترجمتها الى الواقع للمساهمة في عجلة النمو الاقتصادي.</value>
+  </data>
   <data name="Suivivotredemande" xml:space="preserve">
     <value>متابعة طلبك</value>
   </data>
+  <data name="TacheFG1" xml:space="preserve">
+    <value>الرهن الحيازي للتجهيزات، لفائدة البنك في الدرجة الأولى، و الوكالة الوطنية لدعم وتنمية المقاولاتية في الدرجة الثانية</value>
+  </data>
+  <data name="TacheFG2" xml:space="preserve">
+    <value>الرهن الحيازي للعتاد المتنقل</value>
+  </data>
+  <data name="TacheFG3" xml:space="preserve">
+    <value>تأمين شامل لكافة تجهيزات المشروع ضد مختلف الأخطار</value>
+  </data>
+  <data name="TaxDescription" xml:space="preserve">
+    <value>يستفيد صاحب المشروع من امتيازات ضريبية خلال مرحلتي إنشاء المشروع وتوسيع طاقته الإنتاجية، مما يساهم في تخفيف الأعباء المالية وتشجيع الاستثمار في المشاريع الاقتصادية المختلفة.</value>
+  </data>
+  <data name="TaxPhase1,1" xml:space="preserve">
+    <value>الاعفاء من حقوق نقل الملكية بمقابل مالي للإكتسابات العقارية الخاصة في اطار إنشاء نشاط صناعي</value>
+  </data>
+  <data name="TaxPhase1,2" xml:space="preserve">
+    <value>الاعفاء من الرسم على القيمة المضافة لمقتنيات التجهيزات والخدمات التي تدخل مباشرة في انجاز الاستثمار الخاص بمرحلتي الانشاء والتوسيع بالنسبة للنشاطات الخاضعة للنظام الضريبي الحقيقي (لا تستفيد السيارات السياحية من هذا التدبير إلا اذا كانت تشكل الأداة الرئيسية للنشاط)</value>
+  </data>
+  <data name="TaxPhase1,3" xml:space="preserve">
+    <value>تطبيق نسبة مخفضة بـ 5% تخص الحقوق الجمركية للتجهيزات المستوردة والداخلة مباشرة في انجاز الاستثمار</value>
+  </data>
+  <data name="TaxPhase2,1" xml:space="preserve">
+    <value>الاعفاء من الرسم العقاري على البناءات والبناءات الاضافية لمدة 03 سنوات، 06 سنوات أو 10 سنوات حسب موقع المشروع، ابتداءا من تاريخ اتمامها</value>
+  </data>
+  <data name="TaxPhase2,2" xml:space="preserve">
+    <value>الاعفاء من الضريبة الجزافية الوحيدة أو حسب الحالة (الضريبة على الدخل الإجمالي او الضريبة على أرباح الشركات) لمدة 03 سنوات، 06 سنوات أو 10 سنوات، حسب موقع المشروع ابتداءا من تاريخ الاستغلال</value>
+  </data>
+  <data name="TaxPhase2,3" xml:space="preserve">
+    <value>عند انتهاء فترة الاعفاء المذكورة في المطة السابقة، يمكن تمديدها لسنتين (02) عندما يتعهد المستثمر بتوظيف ثلاثة (03) عمال على الأقل لمدة غير محددة</value>
+  </data>
+  <data name="TaxWarningMsg" xml:space="preserve">
+    <value>عدم احترام التعهد الخاص بخلق مناصب الشغل يؤدي الى سحب الامتيازات الممنوحة والمطالبة بالحقوق والرسوم الواجب دفعها</value>
+  </data>
+  <data name="TextJuridiqueDescription" xml:space="preserve">
+    <value>مجموعة شاملة من النصوص القانونية المتعلقة بالوكالة وجهازها، متاحة للتحميل والاطلاع.</value>
+  </data>
   <data name="Àpropos" xml:space="preserve">
     <value>عن الوكالة</value>
+  </data>
+  <data name="accord" xml:space="preserve">
+    <value>أسمح لناسدا بمعالجة بياناتي الشخصية وفق للشروط المنصوص عليها في القانون 18/07 المتعلقة بحماية الأشخاص الطبيعين في معالجة المعطيات الشخصية،يمكنك الإطلاع على.</value>
+  </data>
+  <data name="contactFormText" xml:space="preserve">
+    <value>يرجى تعبئة النموذج التالي بعناية وسنقوم بالرد عليكم في أقرب وقت ممكن. جميع الحقول مطلوبة لضمان تقديم أفضل خدمة لكم.</value>
+  </data>
+  <data name="ContactInfoText" xml:space="preserve">
+    <value>نرحب بأسئلتكم واستفساراتكم حول خدماتنا وبرامجنا. يمكنكم التواصل معنا عبر القنوات التالية أو تعبئة النموذج أدناه وسنقوم بالرد عليكم في أقرب وقت ممكن.</value>
+  </data>
+  <data name="lienAccord" xml:space="preserve">
+    <value>السياسة العامة لحماية المعطيات دات الطابع الشخصي الخاصة بالوكالة .</value>
+  </data>
+  <data name="NesdaPolitique1" xml:space="preserve">
+    <value>أسمح لناسدا بمعالجة بياناتي الشخصية وفق للشروط المنصوص عليها في القانون 18/07 المتعلقة بحماية الأشخاص الطبيعين في معالجة المعطيات الشخصية،يمكنك الإطلاع على</value>
+  </data>
+  <data name="NesdaPolitique2" xml:space="preserve">
+    <value>السياسة العامة لحماية المعطيات دات الطابع الشخصي الخاصة بالوكالة</value>
+  </data>
+  <data name="QuestionDepot" xml:space="preserve">
+    <value>في أي وكالة قدمت الملف؟</value>
+  </data>
+  <data name="Taille" xml:space="preserve">
+    <value>يجب أن يكون الملف بصيغة PDF أو JPG. الحد الأقصى للحجم هو ٢ ميجابايت</value>
+  </data>
+  <data name="TailleDH" xml:space="preserve">
+    <value>ويجب ألا يتجاوز الحجم 2 ميجاPDF يجب أن يكون ملف التصريح الشرفي بصيغة</value>
+  </data>
+  <data name="TaillePDF" xml:space="preserve">
+    <value>يجب أن يكون الملف بصيغة PDF. الحد الأقصى للحجم هو ٢ ميجابايت</value>
+  </data>
+  <data name="PolitiqueText" xml:space="preserve">
+    <value>تُعد حماية بياناتكم الشخصية التزامًا مطلقًا بالنسبة لنا. تهدف هذه السياسة إلى إعلامكم بشكل واضح وشفاف حول كيفيات جمع ومعالجة بياناتكم الشخصية من قبل الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="AccesPortalDesc" xml:space="preserve">
+    <value>للولوج الى البوابة الإلكترونية للصفقات العمومية والبدء في عملية التسجيل، يرجى النقر على الرابط التالي:</value>
+  </data>
+  <data name="AssistanceDescP1" xml:space="preserve">
+    <value>تحرص الوكالة الوطنية لدعم وتنمية المقاولاتية على تقديم الدعم اللازم للمؤسسات المصغرة في عملية التسجيل والاستفادة من خدمات البوابة الإلكترونية للصفقات العمومية، من خلال تنظيم دورات تدريبية وورش عمل تعريفية بكيفية الاستفادة المثلى من هذه الخدمات الرقمية.</value>
+  </data>
+  <data name="AssistanceDescP2" xml:space="preserve">
+    <value>كما تسعى الوكالة إلى تسهيل عملية الولوج إلى السوق العمومية للمؤسسات المصغرة من خلال التنسيق مع الجهات المختصة وتقديم الإرشادات والتوجيهات اللازمة لضمان المشاركة الفعالة في الصفقات العمومية.</value>
+  </data>
+  <data name="EtapesInscription1P1" xml:space="preserve">
+    <value>الخطوة الأولى:</value>
+  </data>
+  <data name="EtapesInscription1P2" xml:space="preserve">
+    <value>الدخول إلى البوابة الإلكترونية للصفقات العمومية</value>
+  </data>
+  <data name="EtapesInscription2P1" xml:space="preserve">
+    <value>الخطوة الثانية:</value>
+  </data>
+  <data name="EtapesInscription2P2" xml:space="preserve">
+    <value>النقر على "إنشاء حساب جديد" أو "التسجيل"</value>
+  </data>
+  <data name="EtapesInscription3P1" xml:space="preserve">
+    <value>الخطوة الثالثة:</value>
+  </data>
+  <data name="EtapesInscription3P2" xml:space="preserve">
+    <value>ملء البيانات المطلوبة (معلومات المؤسسة، بيانات الاتصال)</value>
+  </data>
+  <data name="EtapesInscription4P1" xml:space="preserve">
+    <value>الخطوة الرابعة:</value>
+  </data>
+  <data name="EtapesInscription4P2" xml:space="preserve">
+    <value>رفع الوثائق المطلوبة (السجل التجاري، بطاقة المؤسسة...)</value>
+  </data>
+  <data name="EtapesInscription5P1" xml:space="preserve">
+    <value>الخطوة الخامسة:</value>
+  </data>
+  <data name="EtapesInscription5P2" xml:space="preserve">
+    <value>تأكيد التسجيل وانتظار الموافقة</value>
+  </data>
+  <data name="Tawtin" xml:space="preserve">
+    <value>التوطين</value>
   </data>
 </root>

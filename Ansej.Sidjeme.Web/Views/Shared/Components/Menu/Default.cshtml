@@ -89,10 +89,10 @@
 
 
                         @*@{ if(directeur)
-                   {
-                       <li><a asp-controller="DeclarationHonneurMI" asp-action="Index">قائمةالتصريحات</a></li>
-                   }
-                }*@
+                       {
+                           <li><a asp-controller="DeclarationHonneurMI" asp-action="Index">قائمةالتصريحات</a></li>
+                       }
+                    }*@
                     </ul>
                 </li>
 
@@ -110,7 +110,7 @@
                         <li><a asp-action="Index" asp-controller="Consultation">@menuLocalizer["Consultations"]</a></li>
                         <li><a asp-action="Paged" asp-controller="Article">@menuLocalizer["Actualités"]</a></li>
                         @*<li><a>@menuLocalizer["SuccessStories"]</a></li>
-                <li><a>@menuLocalizer["Médiathèque"]</a></li>*@
+                    <li><a>@menuLocalizer["Médiathèque"]</a></li>*@
                     </ul>
                 </li>
 
@@ -119,16 +119,19 @@
                     <ul>
                         <li><a asp-action="Index" asp-controller="Contactus">@menuLocalizer["ContactDGAWAntennes"]</a></li>
                         @*<li><a>@menuLocalizer["Doléances"]</a></li>
-                <li><a>@menuLocalizer["QuestionnaireQualité"]</a></li>*@
+                    <li><a>@menuLocalizer["QuestionnaireQualité"]</a></li>*@
                         <li><a asp-action="Privacy" asp-controller="Home">@menuLocalizer["Politique"]</a></li>
                     </ul>
+                </li>
+                <li>
+                    @await Html.PartialAsync("_SelectLanguagePartial")
                 </li>
 
                 <li>
                     @await Html.PartialAsync("_LoginPartial")
                 </li>
             </ul>
-
+          
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
     </div>

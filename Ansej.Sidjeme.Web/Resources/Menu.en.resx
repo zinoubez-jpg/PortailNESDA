@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Accompagnement" xml:space="preserve">
-    <value>Accompagnement</value>
+    <value>Accompaniment</value>
   </data>
   <data name="Activité" xml:space="preserve">
     <value>Activity</value>
@@ -136,7 +136,7 @@
     <value>Definition / About the Agency</value>
   </data>
   <data name="Avantages" xml:space="preserve">
-    <value>Advantages</value>
+    <value>Privileges</value>
   </data>
   <data name="Chiffres" xml:space="preserve">
     <value>Key Figures</value>
@@ -148,7 +148,7 @@
     <value>Contact</value>
   </data>
   <data name="ContactDGAWAntennes" xml:space="preserve">
-    <value>Contact DG/AW/Antennes</value>
+    <value>General Directorate &amp; Wilaya agencies</value>
   </data>
   <data name="Coopérations" xml:space="preserve">
     <value>Cooperation</value>
@@ -160,49 +160,49 @@
     <value>Complaints</value>
   </data>
   <data name="FCMG" xml:space="preserve">
-    <value>FCMG</value>
+    <value>Guarantee fund FCMG</value>
   </data>
   <data name="Financement" xml:space="preserve">
-    <value>Financing</value>
+    <value>Funding</value>
   </data>
   <data name="Formation" xml:space="preserve">
     <value>Training</value>
   </data>
   <data name="InscriptionCNRC" xml:space="preserve">
-    <value>CNRC Registrations</value>
+    <value>Registration in the National Center of the Commercial Register (CNRC)</value>
   </data>
   <data name="InscriptionDispositif" xml:space="preserve">
-    <value>NESDA Registrations</value>
+    <value>Registration in mechanism</value>
   </data>
   <data name="InscriptionportailMP" xml:space="preserve">
-    <value>Portail MP Registrations</value>
+    <value>Registration in the Public Procurement Portal</value>
   </data>
   <data name="InscriptionsCDE" xml:space="preserve">
-    <value>CDE Registrations</value>
+    <value>Registration in Entrepreneurship Development Centers (CDE)</value>
   </data>
   <data name="Inscriptionsous-traitance" xml:space="preserve">
-    <value>Subcontracting Registration</value>
+    <value>Registration in Subcontracting </value>
   </data>
   <data name="Localisation" xml:space="preserve">
     <value>Algiers, Algeria</value>
   </data>
   <data name="Missions" xml:space="preserve">
-    <value>Missions and Vision</value>
+    <value>Missions &amp; Vision</value>
   </data>
   <data name="MotDG" xml:space="preserve">
-    <value>Message CEO</value>
+    <value>Word of the Director General</value>
   </data>
   <data name="Médiathèque" xml:space="preserve">
     <value>Media Library</value>
   </data>
   <data name="NesdaExtension" xml:space="preserve">
-    <value>Nesda Extension</value>
+    <value>NESDA expansion</value>
   </data>
   <data name="NesdaSous-Traitance" xml:space="preserve">
     <value>Nesda Subcontracting</value>
   </data>
   <data name="Organigramme" xml:space="preserve">
-    <value>Organizational Chart</value>
+    <value>Organizational Structure</value>
   </data>
   <data name="Organisation" xml:space="preserve">
     <value>Organization</value>
@@ -236,5 +236,20 @@
   </data>
   <data name="Journal" xml:space="preserve">
     <value>Journal</value>
+  </data>
+  <data name="Anglais" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Arabe" xml:space="preserve">
+    <value>Arabe</value>
+  </data>
+  <data name="DeclarationHonneurMI" xml:space="preserve">
+    <value>Honor declaration</value>
+  </data>
+  <data name="EJournal" xml:space="preserve">
+    <value>NESDA magazine</value>
+  </data>
+  <data name="Langage" xml:space="preserve">
+    <value>Language</value>
   </data>
 </root>

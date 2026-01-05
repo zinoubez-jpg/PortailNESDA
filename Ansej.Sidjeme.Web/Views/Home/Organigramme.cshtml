@@ -1,6 +1,11 @@
 ﻿@using System.Globalization
 @{
     ViewData["Title"] = messageslocalizer["Organigramme"];
+    // Récupère le nom de la culture (ex: "ar", "ar-SA", "en", "en-US")
+    var currentLanguage = CultureInfo.CurrentCulture.Name;
+
+    // Vérifie si c'est de l'arabe
+    bool isArabic = currentLanguage.StartsWith("ar");
 }
 
 <!-- Page Title -->
@@ -27,12 +32,12 @@
             <div class="article-header">
 
 
-                <h1 class="title" data-aos="fade-up" data-aos-delay="100">الهيكل التنظيمي للوكالة الوطنية لدعم وتنمية المقاولاتية</h1>
+                <h1 class="title" data-aos="fade-up" data-aos-delay="100">@localizer["organigrammeNesda"] </h1>
 
                 <div class="article-meta" data-aos="fade-up" data-aos-delay="200">
                     <div class="author">
                         <div class="author-info">
-                            <h4>قرار المؤرخ في 23 شوال 1446 الموافق 22 ابريل 2025 يتضمن التنظيم الداخلي للوكالة الوطنية لدعم وتنمية المقاوالتية</h4>
+                            <h4>@localizer["organigrammeNesdaText"] </h4>
                         </div>
                     </div>
 
@@ -40,7 +45,15 @@
             </div>
 
             <div class="article-featured-image" data-aos="zoom-in">
-                <img src="~/NesdaTMP/assets/img/NesdaImg/Dg.png" alt="UI Design Evolution" class="img-fluid">
+                @if (isArabic)
+                {
+                    <img src="~/NesdaTMP/assets/img/NesdaImg/Dg.png" alt="UI Design Evolution" class="img-fluid">
+                }
+                else
+                {
+                    <img src="~/NesdaTMP/assets/img/NesdaImg/DG-ENG.png" alt="UI Design Evolution" class="img-fluid" style=" object-fit: contain;">
+                }
+
             </div>
             <div class="article-header">
 
@@ -49,15 +62,23 @@
                 <div class="article-meta" data-aos="fade-up" data-aos-delay="200">
                     <div class="author">
                         <div class="author-info">
-                            <h4>الهيكل التنظيمي للوكالة الولائية لدعم وتنمية المقاوالتية</h4>
-                            <span>قرار المؤرخ في 23 شوال 1446 الموافق 22 ابريل 2025 يتضمن التنظيم الداخلي للوكالة الوطنية لدعم وتنمية المقاوالتية</span>
+                            <h4>@localizer["organigrammeNesdaTitre1"]</h4>
+                            <span>@localizer["organigrammeNesdaTitre1Text"]</span>
                         </div>
                     </div>
 
                 </div>
             </div>
             <div class="article-featured-image" data-aos="zoom-in">
-                <img src="~/NesdaTMP/assets/img/NesdaImg/Aw.png" alt="UI Design Evolution" class="img-fluid">
+                @if (isArabic)
+                {
+                    <img src="~/NesdaTMP/assets/img/NesdaImg/Aw.png" alt="UI Design Evolution" class="img-fluid">
+                }
+                else
+                {
+                    <img src="~/NesdaTMP/assets/img/NesdaImg/AW-ENG.png" alt="UI Design Evolution" class="img-fluid " style=" object-fit:contain;">
+                }
+
             </div>
         </article>
 

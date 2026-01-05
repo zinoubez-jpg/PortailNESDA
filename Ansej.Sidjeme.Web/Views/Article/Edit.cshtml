@@ -313,29 +313,76 @@
         <input type="hidden" asp-for="Id" />
 
         <div class="mb-3">
-            <label asp-for="Title" class="form-label">عنوان المقال *</label>
-            <input asp-for="Title" class="form-control" placeholder="أدخل عنوان المقال..." />
-            <span asp-validation-for="Title" class="text-danger"></span>
+            <label asp-for="Article.Title" class="form-label">  عنوان المقال بالعربية *</label>
+            <input asp-for="Article.Title" class="form-control"
+                   placeholder="أدخل عنوان المقال باللغة العربية..."
+                   pattern="^[\u0621-\u064A\u0660-\u0669\s]+$"
+                   oninput="this.value = this.value.replace(/[A-Za-z]/g, '');"
+                   title="يرجى إدخال حروف عربية فقط"
+                   required />
+            <span asp-validation-for="Article.Title" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Article.TitleEn" class="form-label">عنوان المقال بالانجليزية *</label>
+            <input asp-for="Article.TitleEn" class="form-control"
+                   placeholder=" باللغة الانجليزيةأدخل عنوان المقال..."
+                   pattern="^[A-Za-z0-9\s.,!?-]+$"
+                   oninput="this.value = this.value.replace(/[^\x00-\x7F]/g, '');"
+                   title="Please use English letters and standard punctuation only."
+                   required />
+            <span asp-validation-for="Article.TitleEn" class="text-danger"></span>
         </div>
 
         <div class="mb-3">
-            <label asp-for="Summary" class="form-label">ملخص المقال *</label>
-            <textarea asp-for="Summary" class="form-control" rows="3" placeholder="أدخل ملخصاً مختصراً للمقال..."></textarea>
+            <label asp-for="Article.Summary" class="form-label">ملخص المقال بالعربية *</label>
+            <textarea asp-for="Article.Summary" class="form-control" rows="3"
+                      placeholder="أدخل ملخصاً مختصراً للمقال باللغة العربية ..."
+                      pattern="^[\u0621-\u064A\u0660-\u0669\s]+$"
+                      oninput="this.value = this.value.replace(/[A-Za-z]/g, '');"
+                      title="يرجى إدخال حروف عربية فقط"
+                      required></textarea>
             <div class="character-count" id="summary-count">0 حرف</div>
-            <span asp-validation-for="Summary" class="text-danger"></span>
+            <span asp-validation-for="Article.Summary" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Article.SummaryEn" class="form-label">ملخص المقال  بالانجليزية *</label>
+            <textarea asp-for="Article.SummaryEn" class="form-control" rows="3"
+                      placeholder="أدخل ملخصاً مختصراً للمقال باللغة الانجليزية ..."
+                      pattern="^[A-Za-z0-9\s.,!?-]+$"
+                      oninput="this.value = this.value.replace(/[^\x00-\x7F]/g, '');"
+                      title="Please use English letters and standard punctuation only."
+                      required></textarea>
+            <div class="character-count" id="summary-count">0 حرف</div>
+            <span asp-validation-for="Article.SummaryEn" class="text-danger"></span>
         </div>
 
         <div class="mb-3">
-            <label asp-for="Content" class="form-label">محتوى المقال *</label>
-            <textarea asp-for="Content" class="form-control content-textarea" rows="10" placeholder="أدخل المحتوى الكامل للمقال..."></textarea>
+            <label asp-for="Article.Content" class="form-label">محتوى المقال  بالعربية *</label>
+            <textarea asp-for="Article.Content" class="form-control content-textarea" rows="10"
+                      placeholder="أدخل المحتوى الكامل للمقال باللغة العربية..."
+                      pattern="^[\u0621-\u064A\u0660-\u0669\s]+$"
+                      oninput="this.value = this.value.replace(/[A-Za-z]/g, '');"
+                      title="يرجى إدخال حروف عربية فقط"
+                      required></textarea>
             <div class="character-count" id="content-count">0 حرف</div>
-            <span asp-validation-for="Content" class="text-danger"></span>
+            <span asp-validation-for="Article.Content" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Article.ContentEn" class="form-label">محتوى المقال  بالانجليزية *</label>
+            <textarea asp-for="Article.ContentEn" class="form-control content-textarea" rows="10"
+                      placeholder="أدخل المحتوى الكامل للمقال باللغة الانجليزية..."
+                      pattern="^[A-Za-z0-9\s.,!?-]+$"
+                      oninput="this.value = this.value.replace(/[^\x00-\x7F]/g, '');"
+                      title="Please use English letters and standard punctuation only."
+                      required></textarea>
+            <div class="character-count" id="content-count">0 حرف</div>
+            <span asp-validation-for="Article.ContentEn" class="text-danger"></span>
         </div>
 
         <div class="mb-3">
             <label asp-for="Image" class="form-label">تغيير صورة المقال</label>
 
-           
+
 
             <div class="file-input-wrapper">
                 <input type="file" asp-for="Image" accept="image/*" />
@@ -351,13 +398,13 @@
         </div>
 
         <div class="form-check form-switch mb-3">
-            <input asp-for="IsPinned" class="form-check-input" type="checkbox" />
-            <label asp-for="IsPinned" class="form-check-label">تثبيت المقال في أعلى الصفحة</label>
+            <input asp-for="Article.IsPinned" class="form-check-input" type="checkbox" />
+            <label asp-for="Article.IsPinned" class="form-check-label">تثبيت المقال في أعلى الصفحة</label>
         </div>
 
         <div class="form-check form-switch mb-3">
-            <input asp-for="IsPublished" class="form-check-input" type="checkbox" />
-            <label asp-for="IsPublished" class="form-check-label">نشر المقال</label>
+            <input asp-for="Article.IsPublished" class="form-check-input" type="checkbox" />
+            <label asp-for="Article.IsPublished" class="form-check-label">نشر المقال</label>
         </div>
 
         <div class="button-group">

@@ -3,7 +3,6 @@
     ViewData["Title"] = messageslocalizer["ACCOMPAGNEMENT"];
 }
 
-
 <style>
 
 
@@ -320,13 +319,15 @@
         }
     }
 </style>
+
+
 <!-- Page Title -->
 <div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
     <div class="container position-relative">
         <h1>@ViewData["Title"]</h1>
         <p>@messageslocalizer["NesdaNomination"]</p>
 
-       
+
         <nav class="breadcrumbs">
             <ol>
                 <li><a asp-controller="home" asp-action="Index">@messageslocalizer["Principal"]</a></li>
@@ -352,23 +353,23 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="intro-content">
-                        <span class="subtitle">المرافقةالقبلية والبعدية</span>
-                        <h2>مرافقة شاملة لإنجاح مشروعك</h2>
+                        <span class="subtitle">@localizer["Accompagnement"]</span>
+                        <h2>@localizer["AccompagnementTitre1"]</h2>
                         <p class="intro-text">
-                            الوكالة الوطنية لدعم وتنمية المقاولاتية ترافقكم في كل مراحل مشروعكم، من بزوغ الفكرة إلى استقرار المؤسسة. سواء كنتم تبحثون عن أفكار مشاريع، أو تسعون للحصول على تمويل، فنحن هنا لتقديم الدعم اللازم عبر مرافقة متخصصة وشاملة.
+                            @localizer["AccompagnementTitre1Text"]
                         </p>
                         <div class="key-highlights">
                             <div class="highlight-item">
                                 <i class="bi bi-check-circle-fill"></i>
-                                <span>مرافقة من الفكرة إلى التجسيد</span>
+                                <span> @localizer["AccompagnementTitre1TextP1"]</span>
                             </div>
                             <div class="highlight-item">
                                 <i class="bi bi-check-circle-fill"></i>
-                                <span>دعم متخصص ومستمر</span>
+                                <span> @localizer["AccompagnementTitre1TextP2"]</span>
                             </div>
                             <div class="highlight-item">
                                 <i class="bi bi-check-circle-fill"></i>
-                                <span>متابعة نمو واستدامة المشروع</span>
+                                <span> @localizer["AccompagnementTitre1TextP3"]</span>
                             </div>
                         </div>
                     </div>
@@ -378,8 +379,8 @@
 
         <!-- مراحل المرافقة -->
         <div class="section-title">
-            <h2>مراحل المرافقة الشاملة</h2>
-            <p>ندعمكم في كل خطوة من خطوات مشروعكم من خلال مرافقة متخصصة ومدروسة</p>
+            <h2>@localizer["AccompagnementTitre2"]</h2>
+            <p>@localizer["AccompagnementTitre2Text"]</p>
         </div>
 
         <section class="phases-content">
@@ -391,16 +392,16 @@
                             <div class="phase-icon">
                                 <i class="bi bi-1-circle"></i>
                             </div>
-                            <div class="phase-type">مرحلة الإعداد</div>
+                            <div class="phase-type">@localizer["AccompagnementTitre2SousTitre1"]</div>
                         </div>
                         <div class="phase-body">
-                            <h3>المرافقة في مرحلة الإعداد والتأطير</h3>
-                            <p>نضع ضمن أولوياتنا مرافقة حاملي أفكار المشاريع قبل مرحلة الإنشاء، بهدف تحويل الطموحات إلى مؤسسات فعلية تقوم على أسس متينة.</p>
+                            <h3>@localizer["AccompPrepTitre"]</h3>
+                            <p>@localizer["AccompPrepText"]</p>
                             <ul class="phase-details">
-                                <li> <i class="bi bi-check-circle-fill"></i>التحسيس بروح ريادة الأعمال</li>
-                                <li> <i class="bi bi-check-circle-fill"></i>الاستقبال والتوجيه المتخصص</li>
-                                <li> <i class="bi bi-check-circle-fill"></i>دورات تكوينية قصيرة</li>
-                                <li><i class="bi bi-check-circle-fill"></i>تعلم المحاسبة والتسويق</li>
+                                <li> <i class="bi bi-check-circle-fill"></i>@localizer["AccompPrepTextP1"]</li>
+                                <li> <i class="bi bi-check-circle-fill"></i>@localizer["AccompPrepTextP2"]</li>
+                                <li> <i class="bi bi-check-circle-fill"></i>@localizer["AccompPrepTextP3"]</li>
+                                <li><i class="bi bi-check-circle-fill"></i>@localizer["AccompPrepTextP4"]</li>
                             </ul>
                         </div>
                     </div>
@@ -413,16 +414,16 @@
                             <div class="phase-icon">
                                 <i class="bi bi-2-circle"></i>
                             </div>
-                            <div class="phase-type">ما بعد الإنشاء</div>
+                            <div class="phase-type">@localizer["AccompagnementTitre2SousTitre2"]</div>
                         </div>
                         <div class="phase-body">
-                            <h3>المرافقة بعد الإنشاء</h3>
-                            <p>لا تتوقف مرافقة الوكالة بعد إنشاء المؤسسة، بل نواصل دعمنا لضمان استدامة المشروع وتوسعه.</p>
+                            <h3>@localizer["AccompCreaTitre"]</h3>
+                            <p>@localizer["AccompCreaText"]</p>
                             <ul class="phase-details">
-                                <li><i class="bi bi-check-circle-fill"></i>زيارات ميدانية دورية</li>
-                                <li><i class="bi bi-check-circle-fill"></i>المساعدة في تجاوز الصعوبات</li>
-                                <li><i class="bi bi-check-circle-fill"></i>دعم التوسعة والتمويل الإضافي</li>
-                                <li><i class="bi bi-check-circle-fill"></i>تشجيع المبادرة والابتكار</li>
+                                <li><i class="bi bi-check-circle-fill"></i>@localizer["AccompCreaTextP1"]</li>
+                                <li><i class="bi bi-check-circle-fill"></i>@localizer["AccompCreaTextP2"]</li>
+                                <li><i class="bi bi-check-circle-fill"></i>@localizer["AccompCreaTextP3"]</li>
+                                <li><i class="bi bi-check-circle-fill"></i>@localizer["AccompCreaTextP4"]</li>
                             </ul>
                         </div>
                     </div>

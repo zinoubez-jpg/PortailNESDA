@@ -618,7 +618,7 @@ namespace Ansej.Sidjeme.Web.Controllers
             registrant.DownloadFiles = _downloadFileBusiness.GetAllFiltered(x => x.DeclarationHonneurMIId == requestId, x => x.TypeFile); 
             
             InitializeListViewBags();
-            ViewBag.activites = GetActivitiesBySector(registrant.Activity.secteurActiviteId).ToList();
+            ViewBag.activites = GetActivitiesBySector(registrant.Activity.secteurActiviteId);
             ViewBag.activite = registrant.Activity.DesignationAr;
             ViewBag.activiteId = registrant.ActivityId;
              RegistrantDeclarationHonorViewModel model=new();
@@ -768,14 +768,18 @@ namespace Ansej.Sidjeme.Web.Controllers
             return PartialView($"_{nameof(Details)}", request);
         }
 
-        public List<Activite> GetActivitiesBySector(int sectorId)
+        public IActionResult GetActivitiesBySector(int sectorId)
         {
-            var children = _activiteBusinessService.GetAllFiltered(x => x.secteurActiviteId == sectorId)
-                //.Select(s => new { s.Id, s.DesignationAr })
+            var activites = _activiteBusinessService.GetAllFiltered(x => x.secteurActiviteId == sectorId)
+                .Select(a => new {
+                    id = a.Id,
+                    designationAr = a.DesignationAr,
+                    designationEn = a.DesignationEn
+                })
                 .ToList();
 
-            //return Json(children);
-            return children;
+            return Json(activites);
+           
         }
        
         public IActionResult ThankYouPage()
@@ -873,6 +877,13 @@ namespace Ansej.Sidjeme.Web.Controllers
             ViewBag.genre = new SelectList(genre, nameof(Genre.Id), nameof(Genre.DesignationAr));
             ViewBag.typeOfNeed = new SelectList(typeOfNeed, nameof(TypeOfNeed.Id), nameof(TypeOfNeed.DesignationAr));
             
+            ViewBag.WilayasEn = new SelectList(wilayas, nameof(Wilaya.Id), nameof(Wilaya.DisplayNameEn));
+            ViewBag.structuresEn = new SelectList(structures, nameof(StructureManager.Id), nameof(StructureManager.NameEn));
+            ViewBag.secteursEn = new SelectList(secteurs, nameof(SecteurActivite.Id), nameof(SecteurActivite.DesignationEn));
+            ViewBag.formesJuridiqueEn = new SelectList(formesJuridique, nameof(FormeJuridique.Id), nameof(FormeJuridique.DesignationEn));
+            ViewBag.genreEn = new SelectList(genre, nameof(Genre.Id), nameof(Genre.DesignationEn));
+            ViewBag.typeOfNeedEn = new SelectList(typeOfNeed, nameof(TypeOfNeed.Id), nameof(TypeOfNeed.DesignationEn));
+
         }
 
 

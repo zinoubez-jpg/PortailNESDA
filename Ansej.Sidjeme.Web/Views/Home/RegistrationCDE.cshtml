@@ -24,7 +24,6 @@
         font-family: var(--default-font);
         background-color: var(--background-color);
         color: var(--default-color);
-        direction: rtl;
     }
 
     .entrepreneurship-section {
@@ -267,10 +266,12 @@
         }
     }
 </style>
+
+
 <div class="page-title dark-background" style="background-image: url(/NesdaTMP/assets/img/NesdaImg/accpg.jpg); ">
     <div class="container position-relative">
         <h1>@ViewData["Title"]</h1>
-      
+
 
 
         <nav class="breadcrumbs">
@@ -291,12 +292,15 @@
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                     <div class="intro-content">
                         <h2 class="fw-bold">
-                            التسجيل في مراكز <span>تطوير المقاولاتية</span>
+
+                            <span>
+                                @localizer["Inscription_CDE_Titre"]
+                            </span>
 
 
                         </h2>
                         <p class="lead">
-                            تمثل مراكز تطوير المقاولاتية فضاءات مشتركة بين الوكالة الوطنية لدعم وتنمية المقاولاتية وشركاءها، حيث توفر مساحات مخصصة لتعزيز المقاولاتية لدى الشباب ورفع قدراتهم ومهاراتهم في انشاء وتسيير المؤسسات المصغرة، عبر توفير دورات تدريبية نوعية يقدمها مدربون من الوكالة معتمدين من قبل المنظمة العالمية للعمل، مناصفة مع مدربي القطاع الشريك.
+                            @messageslocalizer["Inscription_CDE_Text"]
                         </p>
 
                     </div>
@@ -332,37 +336,43 @@
 
                 <!-- Higher Education Centers -->
                 <div class="info-card">
-                    <h3><i class="fas fa-university" style="color: var(--accent-color); margin-left: 1rem;"></i>مراكز تطوير المقاولاتية في قطاع التعليم العالي والبحث العلمي</h3>
+                    <h3>
+                        <i class="fas fa-university" style="color: var(--accent-color); margin-left: 1rem;"></i>
+                        @localizer["CDE_Dans_EnseignementSup_RechercheScientifique_Titre"]
+                    </h3>
                     <p>
-                        تشكل مراكز تطوير المقاولاتية التي تم إنشاؤها في مختلف مؤسسات التعليم العالي والبحث العلمي: من جامعات، معاهد ومدارس عليا، كجزء من البرنامج الحكومي الرامي الى تشجيع المقاولاتية في الوسط الجامعي، بهدف توفير للطلاب المقاولين بيئة مواتية لتحقيق أفكارهم ومشاريعهم التجارية، حيث انها مجهزة بالموارد والمرافق الحديثة لدعم تنمية مهارات الطلاب في المقاولاتية.
+                        @messageslocalizer["CDE_Dans_EnseignementSup_RechercheScientifique_Text_01"]
                     </p>
                     <p>
-                        يعتبر التكوين في مراكز تطوير المقاولاتية كأحد الشروط الأساسية لانشاء مؤسسة مصغرة في اطار جهاز الوكالة الوطنية لدعم وتنمية المقاولاتية والاستفادة من صيغ التمويل التي توفرها.
+                        @messageslocalizer["CDE_Dans_EnseignementSup_RechercheScientifique_Text_02"]
                     </p>
                     <p>
-                        يتم التسجيل على مستوى مراكز تطوير المقاولاتية في قطاع التعليم العالي والبحث العلمي حصريا عبر الخط عن طريق الرابط التالي:
+                        @messageslocalizer["CDE_Dans_EnseignementSup_RechercheScientifique_Text_03"]
                     </p>
                     <a href="https://cde.dz" target="_blank" class="register-link">
                         <i class="fas fa-external-link-alt"></i>
-                        رابط التسجيل: www.cde.dz
+                        @localizer["Lien_CDE"]
                     </a>
                 </div>
 
                 <!-- Vocational Training Centers -->
                 <div class="info-card">
-                    <h3><i class="fas fa-tools" style="color: var(--accent-color); margin-left: 1rem;"></i>مراكز تطوير المقاولاتية في قطاع التعليم والتكوين المهني</h3>
+                    <h3>
+                        <i class="fas fa-tools" style="color: var(--accent-color); margin-left: 1rem;"></i>
+                        @localizer["CDE_Dans_Education_FormationProfessionnelle_Titre"]
+                    </h3>
                     <p>
-                        تعتبر مراكز تطوير المقاولاتية التي تم إنشاؤها في مختلف مؤسسات التعليم والتكوين المهني: معاهد ومدارس التكوين، كجزء من البرنامج الحكومي الهادف الى تعزيز ثقافة المقاولاتية، بهدف توفير للمتدربين المقاولين بيئة مواتية لتحقيق أفكارهم ومشاريعهم التجارية، حيث انها مجهزة بالموارد والمرافق الحديثة التي تدعم تطوير مهاراتهم في مجال المقاولاتية.
+                        @messageslocalizer["CDE_Dans_Education_FormationProfessionnelle_Text_01"]
                     </p>
                     <p>
-                        يعتبر التكوين في مراكز تطوير المقاولاتية كأحد الشروط الأساسية لانشاء مؤسسة مصغرة في اطار جهاز الوكالة الوطنية لدعم وتنمية المقاولاتية والاستفادة من صيغ التمويل التي توفرها.
+                        @messageslocalizer["CDE_Dans_Education_FormationProfessionnelle_Text_02"]
                     </p>
                     <p>
-                        يتم التسجيل على مستوى مراكز تطوير المقاولاتية في قطاع التعليم والتكوين المهني حصريا عبر الخط عن طريق الرابط التالي:
+                        @messageslocalizer["CDE_Dans_Education_FormationProfessionnelle_Text_03"]
                     </p>
                     <a href="https://fp.cde.dz" target="_blank" class="register-link">
                         <i class="fas fa-external-link-alt"></i>
-                        رابط التسجيل: www.fp.cde.dz
+                        @localizer["Lien_FPCDE"]
                     </a>
                 </div>
 
@@ -373,65 +383,84 @@
         <div class="row justify-content-center mt-5">
             <div class="col-lg-10">
                 <h2 class="display-6 fw-bold mb-4 text-center">
-                    الأسئلة <span>الشائعة</span> حول مراكز تطوير المقاولاتية
+                    <span>
+                        @localizer["Questions_Fréquemment_Posées_Sur_CDE"]
+                    </span>
                 </h2>
 
                 <!-- FAQ Item 1 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل يمكن التسجيل عبر الإنترنت أم يتطلب الحضور شخصياً؟</h5>
+                        <h5>
+                            @localizer["Questions_01_Fréquemment_Posées_Sur_CDE"]
+                        </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>تتم عملية التسجيل ودراسة الطلب الكترونيا دون الحاجة الى التنقل الى مراكز تطوير المقاولاتية</p>
+                        <p>
+                            @localizer["Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE"]
+                        </p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 2 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>ما هي الدورات أو البرامج المتاحة في المركز؟ وهل يوفر المركز تدريباً عملياً؟</h5>
+                        <h5>
+                            @localizer["Questions_02_Fréquemment_Posées_Sur_CDE"]
+                        </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>يمكن أن تشمل البرامج دورات في المقاولاتية، وإدارة المشاريع، والتسويق، وغيرها، وعادةً ما يتم تضمين تدريب عملي ضمن البرنامج</p>
+                        <p>
+                            @localizer["Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE"]
+                        </p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 3 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل يمكن لجميع الطلاب التسجيل في مراكز تطوير المقاولاتية، أم يقتصر الأمر على المتخرجين فقط؟</h5>
+                        <h5>
+                            @localizer["Questions_03_Fréquemment_Posées_Sur_CDE"]
+                        </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>يجب أن يكون الطالب متخرجًا للتسجيل في مراكز تطوير المقاولاتية.</p>
+                        <p>
+                            @localizer["Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE"]                            
+                        </p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 4 -->
                 <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="faq-question">
-                        <h5>هل يجب التسجيل في المراكز حسب ولاية التكوين؟</h5>
+                        <h5>
+                            @localizer["Questions_04_Fréquemment_Posées_Sur_CDE"]
+                        </h5>
                         <div class="faq-icon">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </button>
                     <div class="faq-answer">
-                        <p>يمكن التسجيل في مراكز تطوير المقاولاتية بغض النظر عن معهد التكوين التي درس فيها. يعتمد هذا على سياسة المركز وقواعد التسجيل التي يحددها</p>
+                        <p>
+                            @localizer["Réponse_Pour_Questions_04_Fréquemment_Posées_Sur_CDE"]
+                            
+                        </p>
                     </div>
                 </div>
 
             </div>
         </div>
 
-      
+
     </div>
 </section>
 

@@ -36,45 +36,11 @@ namespace Ansej.Sidjeme.Web.Controllers
               .GetAllFiltered(s => s.ParentStructureManagerId == null, _administrativeStructureBusinessService.GetDefaultLoadProperties())
               .ToList();
 
+            var Consultations = _consultationBusinessService.GetAllFiltered(x => x.IsArchived == false,x=>x.StructureManager).OrderByDescending(c=>c.PublishDate); 
 
-
-            //prepare result list
-            var result = new List<TopStructureGroup>();
-
-            foreach (var top in topStructures)
-            {
-                var hasChildren = top.SubStructures != null && top.SubStructures.Any();
-
-                List<Consultation> consultations;
-                bool IsFromChild = false;
-
-                if (!hasChildren)
-                {
-
-                    consultations = top.Consultations
-                    .OrderByDescending(c => c.PublishDate)
-                    .ToList();
-                }
-                else
-                {
-                    var childIds = top.SubStructures.Select(s => s.Id).ToList();
-
-                    consultations = _consultationBusinessService
-                        .GetAllFiltered(c => childIds.Contains(c.StructureManagerId), _consultationBusinessService.GetDefaultLoadProperties())
-                        .OrderByDescending(c => c.PublishDate)
-                        .ToList();
-                    IsFromChild = true;
-                }
-
-                result.Add(new TopStructureGroup
-                {
-                    TopStructure = top,
-                    Consultations = consultations,
-                    IsFromChild = IsFromChild
-                });
-            }
-            return View(result);
+            return View(Consultations);
         }
+
 
         [Authorize(Roles = "Admin,GestionConsultation")]
         [HttpGet]

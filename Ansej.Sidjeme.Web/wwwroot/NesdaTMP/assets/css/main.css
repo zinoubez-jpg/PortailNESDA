@@ -5314,10 +5314,11 @@ section,
 }
 
 .blog-details .article-header .title {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 2rem;
   color: var(--heading-color);
+  text-align:justify;
 }
 
 @media (max-width: 768px) {
@@ -5409,10 +5410,11 @@ section,
 }
 
 .blog-details .article-wrapper {
-  display: grid;
-  grid-template-columns: minmax(200px, 300px) 1fr;
-  gap: 3rem;
-  position: relative;
+    display: grid;
+    grid-template-columns: minmax(200px, 300px) 1fr;
+    gap: 3rem;
+    /*  position: relative;*/
+    display: flex;
 }
 
 @media (max-width: 992px) {
@@ -5495,12 +5497,13 @@ section,
   margin-bottom: 4rem;
 }
 
-.blog-details .article-wrapper .article-content .content-section .lead {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  color: var(--heading-color);
-  margin-bottom: 2rem;
-}
+    .blog-details .article-wrapper .article-content .content-section .lead {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        color: var(--heading-color);
+        margin-bottom: 2rem;
+        text-align: justify;
+    }
 
 .blog-details .article-wrapper .article-content .content-section h2 {
   font-size: 2.2rem;
@@ -5531,12 +5534,13 @@ section,
   padding-left: 3rem;
 }
 
-.blog-details .article-wrapper .article-content .content-section .highlight-quote blockquote p {
-  font-size: 1.5rem;
-  font-style: italic;
-  color: var(--heading-color);
-  margin-bottom: 1rem;
-}
+    .blog-details .article-wrapper .article-content .content-section .highlight-quote blockquote p {
+        font-size: 1.5rem;
+        font-style: italic;
+        color: var(--heading-color);
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
 
 .blog-details .article-wrapper .article-content .content-section .highlight-quote blockquote cite {
   font-style: normal;
@@ -8223,4 +8227,18 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.cancelled-text:before {
+    content: attr(data-annule-text);
+    /* ... reste du style ... */
+    position: absolute;
+    top: 10px;
+
+    background-color: #dc3545;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
 }

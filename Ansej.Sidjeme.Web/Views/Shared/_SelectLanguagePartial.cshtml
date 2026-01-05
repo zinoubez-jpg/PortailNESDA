@@ -6,96 +6,80 @@
 
 @inject IViewLocalizer Localizer
 @inject IOptions<RequestLocalizationOptions> LocOptions
-
-<style>
-    /* Language Buttons Container */
-    .language-btn-group {
-        display: flex; /* Use flexbox for horizontal arrangement */
-        gap: 5px; /* Small space between buttons */
-        background-color: var(--meciy-white, #fff); /* White background */
-        border-radius: 8px; /* Rounded corners for the group */
-        padding: 6px; /* Padding around the buttons */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-        font-family: var(--meciy-font, 'Poppins', sans-serif);
-    }
-
-        /* Individual Language Button Style */
-        .language-btn-group button {
-            display: flex; /* Use flexbox for icon and text alignment */
-            align-items: center;
-            justify-content: center;
-            padding: 10px 15px;
-            border: 1px solid var(--meciy-bdr-color, #e6e6e6); /* Border from meciy.css */
-            border-radius: 5px; /* Rounded corners for individual buttons */
-            background-color: transparent; /* Transparent background by default */
-            color: var(--meciy-black, #333); /* Text color */
-            font-size: 15px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out; /* Smooth transitions */
-            min-width: 60px; /* Ensure minimum width for smaller languages */
-        }
-
-            .language-btn-group button:hover {
-                border-color: var(--meciy-base, #19776b); /* Highlight border on hover */
-                color: var(--meciy-base, #19776b); /* Text color change on hover */
-                background-color: rgba(var(--meciy-base-rgb, 25, 119, 107), 0.05); /* Very light background on hover */
-            }
-
-            /* Active Language Button Style */
-            .language-btn-group button.active {
-                background-color: var(--meciy-base, #19776b); /* Solid background for active button */
-                color: var(--meciy-white, #fff); /* White text for active button */
-                border-color: var(--meciy-base, #19776b); /* Matching border for active button */
-                box-shadow: 0 2px 8px rgba(var(--meciy-base-rgb, 25, 119, 107), 0.3); /* Stronger shadow for active */
-            }
-
-            /* Icon within the button */
-            .language-btn-group button .lang-icon {
-                margin-right: 8px; /* Space between icon and text */
-                font-size: 18px; /* Icon size */
-                color: inherit; /* Inherit color from parent button */
-            }
-
-            .language-btn-group button.active .lang-icon {
-                color: var(--meciy-white, #fff); /* White icon for active button */
-            }
-
-        .language-btn-group form {
-            display: contents; /* Makes the form's children flow as if the form element wasn't there */
-        }
-
-        .language-btn-group .form-control[hidden] {
-            display: none !important;
-        }
-</style>
+@inject IStringLocalizer<Menu> menuLocalizer
+@inject Dictionary<string, string> CultureDisplayNames
 
 @{
     var requestCulture = Context.Features.Get<IRequestCultureFeature>();
     var cultureItems = LocOptions.Value.SupportedUICultures
-        .Select(c => new SelectListItem { Value = c.Name, Text = c.DisplayName })
+        .Select(c => new SelectListItem
+        {
+            Value = c.Name,
+            Text = CultureDisplayNames.ContainsKey(c.Name) ? CultureDisplayNames[c.Name] : c.DisplayName
+        })
         .ToList();
     var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}";
 }
 
-<div title="@Localizer["Request culture provider:"] @requestCulture?.Provider?.GetType().Name" class="language-btn-group">
-    <form id="selectLanguageForm" asp-controller="Home"
-          asp-action="SetLanguage" asp-route-returnUrl="@returnUrl"
-          method="post" role="form">
-        <input type="hidden" name="culture" id="selectedCulture" value="@requestCulture.RequestCulture.UICulture.Name" />
+<style>
+    .language-selector {
+        position: relative;
+        display: inline-block;
+    }
 
-        @if (requestCulture.RequestCulture.UICulture.Name != "ar-DZ")
-        {
-            <button type="button" data-culture="ar-DZ">AR</button>
+    #selectLanguage {
+        margin: 0;
+    }
+
+        #selectLanguage select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: #fff;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 8px 32px 8px 12px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #2d3748;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L2 4h8z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 12px;
         }
-        @if (requestCulture.RequestCulture.UICulture.Name != "fr")
-        {
-            <button type="button" data-culture="fr">FR</button>
+
+            #selectLanguage select:hover {
+                border-color: #cbd5e0;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            #selectLanguage select:focus {
+                outline: none;
+                border-color: #4299e1;
+                box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+            }
+    /* Version mobile */
+    @@media (max-width: 768px) {
+        .language-selector {
+            width: 100%;
         }
-        @if (requestCulture.RequestCulture.UICulture.Name != "en")
-        {
-            <button type="button" data-culture="en">EN</button>
+
+        #selectLanguage select {
+            width: 100%;
+            font-size: 16px; /* Évite le zoom sur iOS */
         }
+    }
+</style>
+
+<div class="language-selector">
+    <form id="selectLanguage" asp-controller="Home" asp-action="SetLanguage" asp-route-returnUrl="@returnUrl" method="post">
+        <select name="culture" onchange="this.form.submit();"
+                asp-for="@requestCulture.RequestCulture.UICulture.Name"
+                asp-items="cultureItems"
+                class="form-control form-control-sm">
+        </select>
     </form>
 </div>
 
