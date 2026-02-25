@@ -86,16 +86,14 @@ namespace Ansej.Sidjeme.Web
             var cultures = new List<CultureInfo>
             {
                 new CultureInfo("ar-DZ"),
-                new CultureInfo("en"),
-                new CultureInfo("fr")
+                new CultureInfo("en")
             };
 
             // Dictionnaire pour mapper les codes culture aux noms d'affichage
             var cultureDisplayNames = new Dictionary<string, string>
             {
                 { "ar-DZ", "العربية" },
-                { "en", "Anglais" },
-                { "fr","Francais" }
+                { "en", "Anglais" }
             };
 
             services.Configure<RequestLocalizationOptions>(options =>
