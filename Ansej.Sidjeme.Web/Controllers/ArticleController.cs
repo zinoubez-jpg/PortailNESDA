@@ -128,9 +128,6 @@ namespace Ansej.Sidjeme.Web.Controllers
             model.Article.ImageUrl = filePath;
             model.Article.Slug = slug;
 
-            // set isPublished true
-            model.Article.IsPublished = true;
-
             var result = _articleBusinessService.Add(model.Article);
 
             if (!result.Succeeded)
@@ -405,11 +402,11 @@ namespace Ansej.Sidjeme.Web.Controllers
                 return false;
             
             string[] validExtensions = { ".jpg", ".jpeg", ".png", ".gif" };
-           // int maxSize = 2 * 1024 * 1024; // en octets
+            int maxSize = 2 * 1024 * 1024; // en octets
 
             string extension = Path.GetExtension(file.FileName);
 
-            if (!validExtensions.Contains(extension.ToLower()) /*|| file.Length > maxSize*/)
+            if (!validExtensions.Contains(extension.ToLower()) || file.Length > maxSize)
             {
 
                 return false;
