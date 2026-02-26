@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ACCOMPAGNEMENT" xml:space="preserve">
-    <value>ACCOMPAGNEMENT</value>
+    <value>L’accompagnement</value>
   </data>
   <data name="ACCOMPAGNEMENTDETAILS" xml:space="preserve">
-    <value>Un accompagnement durant tout le processus de création et d'exploitation de votre microentreprise</value>
+    <value> L’Agence veille à accompagner les porteurs d’idées et de projets d’investissement dans les micro-entreprises à toutes les étapes, de l’émergence de l’idée entrepreneuriale au démarrage de l’activité de la micro-entreprise, et même au-delà.</value>
   </data>
   <data name="ActDetails1" xml:space="preserve">
     <value>Durant le mois sacré du Ramadhan, Nesda organise des expo-vente des microentreprises.</value>
@@ -136,7 +136,7 @@
     <value>Activité</value>
   </data>
   <data name="Actualités" xml:space="preserve">
-    <value>Actualités</value>
+    <value>Actualités </value>
   </data>
   <data name="AgenceWAntennes" xml:space="preserve">
     <value>Agences Wilaya
@@ -161,15 +161,15 @@ et Antennes Locales</value>
     <value>Définition / À propos de l'agence</value>
   </data>
   <data name="AproposD2" xml:space="preserve">
-    <value>hjhjkqsdhjqshdjkqhsjkdhqsjkhdjkqshdjkqhdjhqsjkdhqksjdhkjqshdjkqsd</value>
+    <value> L’Agence et son dispositif ont récemment connu des évolutions importantes et significatives, traduisant l’ensemble des réformes engagées en vue d’opérer une transition radicale d’une orientation purement administrative dans le traitement des dossiers vers une approche économique cohérente. Ces réformes visent à améliorer l’efficacité et la performance de la gestion, notamment en ce qui concerne la gestion des risques financiers, tout en renforçant la sensibilisation à la culture entrepreneuriale ainsi que le développement des compétences et du savoir-faire des jeunes, afin d’encourager la création de micro-entreprises performantes, résilientes et génératrices d’une valeur ajoutée durable pour l’économie nationale.</value>
   </data>
   <data name="AproposD3" xml:space="preserve">
-    <value>hjhjkqsdhjqshdjkqhsjkdhqsjkhdjkqshdjkqhdjhqsjkdhqksjdhkjqshdjkqsd</value>
+    <value> L’Agence nationale d’appui et de développement de l’entrepreneuriat comprend 51 Agences de wilaya, et plus de 170 antennes locales réparties sur l’ensemble du territoire national. Elle dispose également de points de présence au niveau des Centres de Développement de l’Entrepreneuriat, dont le nombre dépasse 200 centres, à travers des universités, instituts et écoles relevant du secteur de l’enseignement supérieur, ainsi que des instituts et établissements du secteur de l’enseignement et de la formation professionnels.</value>
   </data>
   <data name="Aproposdetails" xml:space="preserve">
-    <value>Promouvoir un écosystème entrepreneurial favorisant la création,                 le financement et le développement de microentreprises performantes,
- résilientes et créatrices de valeur ajoutée durable pour les citoyens
- et pour la nation.</value>
+    <value>L’Agence est un organisme public à caractère spécifique, placé sous la tutelle du Ministère de l’Économie de la Connaissance, des Start-ups et des Micro‑entreprises.
+Elle est chargée de gérer un dispositif fondé sur une approche économique, visant à accompagner les porteurs de projets pour la création et l’extension de micro‑entreprises de production de biens et de services, afin de générer de la richesse et de créer des emplois durables. Les missions de l’Agence s’articulent autour des activités principales suivantes :
+</value>
   </data>
   <data name="Avantage" xml:space="preserve">
     <value>Avantages</value>
@@ -213,9 +213,6 @@ et Antennes Locales</value>
   <data name="Enligne" xml:space="preserve">
     <value>En ligne</value>
   </data>
-  <data name="Etapes" xml:space="preserve">
-    <value>Principales étapes</value>
-  </data>
   <data name="Evaluation" xml:space="preserve">
     <value>Evaluation</value>
   </data>
@@ -226,21 +223,19 @@ et Antennes Locales</value>
     <value>Fonds de Garantie</value>
   </data>
   <data name="Financement" xml:space="preserve">
-    <value>FINANCEMENT</value>
+    <value>Le financement</value>
   </data>
   <data name="FinancementAlloue" xml:space="preserve">
     <value>Financement alloué aux Microentreprises</value>
   </data>
   <data name="FINANCEMENTDETAIS" xml:space="preserve">
-    <value>Des formules de financement par des prêts non rémunérés (PNR)
- adaptées pour la création et l'extension de votre activité microentreprise</value>
+    <value> L’Agence octroie des aides financières selon différentes formules de financement, en collaboration avec ses partenaires du secteur bancaire public, ainsi que des avantages fiscaux au profit des bénéficiaires du dispositif de l’Agence, conformément à la réglementation législative en vigueur.</value>
   </data>
   <data name="FORMATION" xml:space="preserve">
-    <value>FORMATION</value>
+    <value> La formation</value>
   </data>
   <data name="FORMATIONDETAILS" xml:space="preserve">
-    <value>Des formations sur l'entreprenariat et la gestion
-des microentreprises à travers les CDE</value>
+    <value> À travers cet axe, l’Agence œuvre à promouvoir et à diffuser la culture entrepreneuriale auprès des jeunes, en organisant, en collaboration avec ses partenaires, des sessions de formation au sein des Centres de Développement de l’Entrepreneuriat. Celles-ci portent sur les connaissances et le savoir-faire liées à l’entrepreneuriat ainsi qu’à la création et à la gestion des micro-entreprises.</value>
   </data>
   <data name="Formationenligne" xml:space="preserve">
     <value>Formation en ligne</value>
@@ -249,7 +244,10 @@ des microentreprises à travers les CDE</value>
     <value>Impact 70</value>
   </data>
   <data name="Impact70Details" xml:space="preserve">
-    <value>Le programme national de NESDA destiné à la microentreprise engagée dans le développement local</value>
+    <value>Le programme a été mis en œuvre conformément aux engagements pris par le Président de la République, M. Abdelmadjid Tebboune, visant à développer « un nouveau modèle économique fondé sur une croissance diversifiée et l’économie de la connaissance ».
+Les engagements de Monsieur le Président de la République traduisent une forte volonté d’autonomisation des jeunes et de promotion de l’entrepreneuriat, en encourageant les jeunes à concrétiser leurs projets. Ils s’inscrivent dans sa vision stratégique visant à relever le défi de la relance économique afin de bâtir une économie productive et diversifiée, créatrice de valeur, génératrice d’emplois de qualité et moteur d’un développement local durable.
+Le programme contribue également au renforcement du rôle des collectivités locales en tant que levier du développement national.
+</value>
   </data>
   <data name="Inaugurationnouveausiège" xml:space="preserve">
     <value>Inauguration nouveau siège</value>
@@ -285,7 +283,7 @@ des microentreprises à travers les CDE</value>
     <value>Lancement</value>
   </data>
   <data name="Lesmisesàjourrécentes" xml:space="preserve">
-    <value>Les mises à jour récentes</value>
+    <value>Retrouvez les actualités de NESDA / les dernières mises à jour</value>
   </data>
   <data name="lireSuite" xml:space="preserve">
     <value>Lire la suite</value>
@@ -321,7 +319,7 @@ des microentreprises à travers les CDE</value>
     <value>Nos Partenaires</value>
   </data>
   <data name="Nosservices" xml:space="preserve">
-    <value>Nos services</value>
+    <value>NOS SERVICES</value>
   </data>
   <data name="Organigramme" xml:space="preserve">
     <value>Organigramme</value>
@@ -354,29 +352,28 @@ des microentreprises à travers les CDE</value>
     <value>Projets Microentreprises Financés</value>
   </data>
   <data name="Q1" xml:space="preserve">
-    <value>Quelles sont les conditions d'éligibilité pour le dispositif NESDA ?</value>
+    <value>Puis-je créer une entreprise uniquement dans ma wilaya de résidence ou dans n’importe quelle wilaya ?</value>
   </data>
   <data name="Q2" xml:space="preserve">
-    <value>Quelles sont les démarches nécessaires pour créer une microentreprise ?</value>
+    <value> Quels secteurs et activités sont éligibles au financement de NESDA ?</value>
   </data>
   <data name="Q3" xml:space="preserve">
-    <value>Quels sont les documents composant le dossier à déposer à NESDA ?</value>
+    <value>La formation est-elle obligatoire pour bénéficier du soutien ?</value>
   </data>
   <data name="Q4" xml:space="preserve">
-    <value>Quelles sont les conditions pour bénéficier de l'extension de mon activité ?</value>
+    <value> Existe-t-il un accompagnement après le lancement du projet pour en assurer la réussite ?</value>
   </data>
   <data name="R1" xml:space="preserve">
-    <value>Les conditions d'éligibilité au dispositif de NESDA sont
-                                        : l'âge, la compétence reconnue (formation CDE, attestation.)</value>
+    <value> Oui, le porteur de projet a le droit de créer son projet dans la wilaya de son choix, à condition de fournir un document prouvant sa présence dans ladite wilaya.</value>
   </data>
   <data name="R2" xml:space="preserve">
-    <value>Pour la création d'une microentreprise : formation CDE, inscription en ligne, dépôt dossier et entretien, CSVF.</value>
+    <value> NESDA est chargée de financer toutes les activités relevant de différents secteurs (industrie, production, agriculture, services, artisanat, professions libérales, etc.).</value>
   </data>
   <data name="R3" xml:space="preserve">
-    <value>Le dossier est composé des documents suivants : business plan, facture proforma.</value>
+    <value> Oui, la formation en entrepreneuriat dispensée par les centres de développement de l’entrepreneuriat (CDE) est une condition préalable pour bénéficier des subventions et avantages accordés dans le cadre du dispositif de l’agence.</value>
   </data>
   <data name="R4" xml:space="preserve">
-    <value>Les conditions communes pour bénéficier de l'extension d'activité sont : l'âge, la justification de 2 années d'activité effective.</value>
+    <value>L’une des principales missions de l’agence est d’assurer l’accompagnement des porteurs de projets avant et après la mise en œuvre de leurs projets.</value>
   </data>
   <data name="Scoring" xml:space="preserve">
     <value>Scoring</value>
@@ -385,7 +382,7 @@ des microentreprises à travers les CDE</value>
     <value>Secteur des services</value>
   </data>
   <data name="Servicesdigitaux" xml:space="preserve">
-    <value>Services digitaux</value>
+    <value>Services numériques </value>
   </data>
   <data name="ServicesT1" xml:space="preserve">
     <value>Offrez Solution &amp;</value>
@@ -403,9 +400,114 @@ des microentreprises à travers les CDE</value>
     <value>Nesda Sous-Traitance</value>
   </data>
   <data name="Suivivotredemande" xml:space="preserve">
-    <value>Suivi votre demande</value>
+    <value>Suivi de votre demande</value>
   </data>
   <data name="Àpropos" xml:space="preserve">
-    <value>À propos</value>
+    <value>À propos de l’Agence</value>
+  </data>
+  <data name="askUs" xml:space="preserve">
+    <value>Contactez-nous directement – nous serons ravis de répondre à toutes vos questions.</value>
+  </data>
+  <data name="CentreComunicationD1" xml:space="preserve">
+    <value>Le centre de communication de la NESDA offre un canal de communication direct pour traiter rapidement vos demandes et vos retours.</value>
+  </data>
+  <data name="CentreComunicationD2" xml:space="preserve">
+    <value>À travers ce canal, nous cherchons à renforcer la transparence et à améliorer l’expérience des usagers.</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contactez-nous maintenant – Notre équipe est disponible 24h/24 et 7j/7 pour vous assister.</value>
+  </data>
+  <data name="Q10" xml:space="preserve">
+    <value>La NESDA soutient-elle les projets à caractère innovant ?</value>
+  </data>
+  <data name="Q11" xml:space="preserve">
+    <value>Puis-je créer un projet dans un domaine où je n’ai pas de diplôme mais où j’ai de l’expérience ?</value>
+  </data>
+  <data name="Q12" xml:space="preserve">
+    <value>Combien de temps prend l’étude du dossier pour l’obtention du financement ?</value>
+  </data>
+  <data name="Q13" xml:space="preserve">
+    <value>Que dois-je faire si ma demande de financement est rejetée ?</value>
+  </data>
+  <data name="Q14" xml:space="preserve">
+    <value>La NESDA aide-t-elle à trouver des partenaires ou des investisseurs ?</value>
+  </data>
+  <data name="Q15" xml:space="preserve">
+    <value>Quel est le montant maximal du financement pouvant être accordé ?</value>
+  </data>
+  <data name="Q16" xml:space="preserve">
+    <value>Puis-je rembourser le prêt avant l’échéance sans pénalités ?</value>
+  </data>
+  <data name="Q17" xml:space="preserve">
+    <value>L’agence offre-t-elle des opportunités de participation à des foires commerciales ou à des événements économiques ?</value>
+  </data>
+  <data name="Q5" xml:space="preserve">
+    <value> Y a-t-il un délai requis après la création du projet pour demander une extension ?</value>
+  </data>
+  <data name="Q6" xml:space="preserve">
+    <value>Comment puis-je suivre l’état d’avancement de ma demande après son dépôt ?</value>
+  </data>
+  <data name="Q7" xml:space="preserve">
+    <value>L’idée du projet doit-elle être liée au domaine d’études ou au certificat de formation ?</value>
+  </data>
+  <data name="Q8" xml:space="preserve">
+    <value>L’inscription à l’Agence Nationale de l’Emploi (ANEM) est-elle obligatoire pour bénéficier du soutien ?</value>
+  </data>
+  <data name="Q9" xml:space="preserve">
+    <value>Les personnes à besoins spécifiques peuvent-elles bénéficier de conditions particulières ?</value>
+  </data>
+  <data name="R10" xml:space="preserve">
+    <value>L’agence vise à créer des projets capables de couvrir le marché local et de l’encourager à accéder aux marchés internationaux.</value>
+  </data>
+  <data name="R11" xml:space="preserve">
+    <value>L’État algérien a mis en place plusieurs organismes officiels chargés de la reconnaissance et de la validation de l’expérience professionnelle acquise.</value>
+  </data>
+  <data name="R12" xml:space="preserve">
+    <value>Aucun délai précis ne peut être fixé, car plusieurs critères varient en fonction du mode de financement.</value>
+  </data>
+  <data name="R13" xml:space="preserve">
+    <value>Vous devez contacter l’agent chargé de votre dossier afin de connaître les démarches à suivre selon le motif du rejet.</value>
+  </data>
+  <data name="R14" xml:space="preserve">
+    <value>Le porteur de projet peut bénéficier de projets dans le cadre des conventions conclues avec différents secteurs économiques.</value>
+  </data>
+  <data name="R15" xml:space="preserve">
+    <value>Le coût total du projet ne peut pas dépasser dix (10) millions de dinars algériens.</value>
+  </data>
+  <data name="R16" xml:space="preserve">
+    <value>Oui, le porteur de projet peut régler les échéances financières liées à son projet avant les délais convenus.</value>
+  </data>
+  <data name="R17" xml:space="preserve">
+    <value>L’agence œuvre à encourager les nouveaux projets et entreprises en assurant leur promotion à travers divers événements.</value>
+  </data>
+  <data name="R5" xml:space="preserve">
+    <value>Parmi les conditions pour bénéficier d’une extension du projet figure la présentation des bilans annuels de l’entreprise pour les deux dernières années.</value>
+  </data>
+  <data name="R6" xml:space="preserve">
+    <value>À travers l’espace dédié au porteur de projet, qui lui permet de gérer ses informations, de suivre l’évolution de son projet et d’accomplir diverses démarches via la plateforme électronique.</value>
+  </data>
+  <data name="R7" xml:space="preserve">
+    <value>Le porteur de projet peut exercer toute activité viable et rentable présentant un potentiel de marché, à condition de disposer des compétences nécessaires pour la gérer avec succès.</value>
+  </data>
+  <data name="R8" xml:space="preserve">
+    <value>Non. Toutefois, les personnes inscrites à l’ANEM peuvent bénéficier des subventions et avantages accordés dans le cadre du dispositif de soutien à la création d’activités.</value>
+  </data>
+  <data name="R9" xml:space="preserve">
+    <value>L’agence a mis en place des procédures simplifiées et adaptées, tenant compte de toutes les catégories de porteurs de projets.</value>
+  </data>
+  <data name="reponse" xml:space="preserve">
+    <value>Nous avons répondu ci-dessous aux questions les plus fréquentes. Si vous ne trouvez pas l’information recherchée, n’hésitez pas à nous contacter</value>
+  </data>
+  <data name="responseNotFound" xml:space="preserve">
+    <value>Vous n’avez pas trouvé la réponse à votre question ?</value>
+  </data>
+  <data name="ServicesdigitauxDetail" xml:space="preserve">
+    <value>L’agence NESDA propose une gamme de services numériques innovants destinés à soutenir l’entrepreneuriat et à faciliter diverses démarches administratives au profit des jeunes.</value>
+  </data>
+  <data name="Tawtin" xml:space="preserve">
+    <value>Al Tawteen</value>
+  </data>
+  <data name="Etapes" xml:space="preserve">
+    <value>Principales étapes</value>
   </data>
 </root>

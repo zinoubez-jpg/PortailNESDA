@@ -136,7 +136,7 @@
     <value>Age</value>
   </data>
   <data name="Agence" xml:space="preserve">
-    <value>Agence</value>
+    <value>Agence Nationale d’Appui et de Développement d’Entrepreneuriat</value>
   </data>
   <data name="AgenceId" xml:space="preserve">
     <value>Agence</value>
@@ -689,5 +689,20 @@
   </data>
   <data name="TypesSession" xml:space="preserve">
     <value />
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contactez-nous</value>
+  </data>
+  <data name="bienvenue" xml:space="preserve">
+    <value>Bienvenue sur le site officiel de l’Agence, votre espace d’accompagnement pour transformer vos idées en projets réussis.</value>
+  </data>
+  <data name="frequente" xml:space="preserve">
+    <value>fréquemment posées</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>Questions  </value>
+  </data>
+  <data name="CentreComunication" xml:space="preserve">
+    <value>Centre de contact </value>
   </data>
 </root>
