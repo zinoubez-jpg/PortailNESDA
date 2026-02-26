@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Accompagnement" xml:space="preserve">
-    <value>Accompagnement</value>
+    <value> Accompagnement</value>
   </data>
   <data name="Activité" xml:space="preserve">
     <value>Activité</value>
@@ -142,16 +142,16 @@
     <value>Chiffres clés</value>
   </data>
   <data name="Consultations" xml:space="preserve">
-    <value>Consultations</value>
+    <value> Avis de consultation </value>
   </data>
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
   </data>
   <data name="ContactDGAWAntennes" xml:space="preserve">
-    <value>Contact DG/Agences wilayas</value>
+    <value>Contacter la Direction Générale/ Agences de Wilayas</value>
   </data>
   <data name="Coopérations" xml:space="preserve">
-    <value>Coopérations</value>
+    <value>Coopération</value>
   </data>
   <data name="Dispositif" xml:space="preserve">
     <value>Le Dispositif</value>
@@ -160,7 +160,7 @@
     <value>Doléances</value>
   </data>
   <data name="FCMG" xml:space="preserve">
-    <value>Fonds de Garantie</value>
+    <value>Fonds de garantie FCMG</value>
   </data>
   <data name="Financement" xml:space="preserve">
     <value>Financement</value>
@@ -169,16 +169,16 @@
     <value>Formation</value>
   </data>
   <data name="InscriptionCNRC" xml:space="preserve">
-    <value>Inscription CNRC</value>
+    <value>Inscription au CNRC</value>
   </data>
   <data name="InscriptionDispositif" xml:space="preserve">
-    <value>Inscription Dispositif</value>
+    <value>Inscription au dispositif de l’Agence</value>
   </data>
   <data name="InscriptionportailMP" xml:space="preserve">
-    <value>Inscription portail MP</value>
+    <value> Inscription sur le Portail des Marchés Publics</value>
   </data>
   <data name="InscriptionsCDE" xml:space="preserve">
-    <value>Inscriptions CDE</value>
+    <value>Inscription au CDE</value>
   </data>
   <data name="Inscriptionsous-traitance" xml:space="preserve">
     <value>Inscription sous-traitance</value>
@@ -187,19 +187,19 @@
     <value>Alger, Algèrie</value>
   </data>
   <data name="Missions" xml:space="preserve">
-    <value>Missions et Vision</value>
+    <value> Les missions et la vision </value>
   </data>
   <data name="MotDG" xml:space="preserve">
-    <value>Mot du DG</value>
+    <value>Mot du Directeur Général</value>
   </data>
   <data name="Médiathèque" xml:space="preserve">
     <value>Médiathèque</value>
   </data>
   <data name="NesdaExtension" xml:space="preserve">
-    <value>Nesda Extension</value>
+    <value>Extension NESDA</value>
   </data>
   <data name="NesdaSous-Traitance" xml:space="preserve">
-    <value>Nesda Sous-Traitance</value>
+    <value>Sous-traitance NESDA</value>
   </data>
   <data name="Organigramme" xml:space="preserve">
     <value>Organigramme</value>
@@ -214,7 +214,7 @@
     <value>Partenariats</value>
   </data>
   <data name="Politique" xml:space="preserve">
-    <value>Politique de Traitement des Données</value>
+    <value> Politique de traitement des données</value>
   </data>
   <data name="Principal" xml:space="preserve">
     <value>Principal</value>
@@ -241,6 +241,9 @@
     <value>journal</value>
   </data>
   <data name="EJournal" xml:space="preserve">
-    <value>EJournal</value>
+    <value>Magazine NESDA</value>
+  </data>
+  <data name="DeclarationHonneurMI" xml:space="preserve">
+    <value>Déclaration sur l’honneur</value>
   </data>
 </root>
