@@ -196,7 +196,7 @@ Elle est chargée de gérer un dispositif fondé sur une approche économique, v
     <value>Contact</value>
   </data>
   <data name="Coopérations" xml:space="preserve">
-    <value>Coopérations</value>
+    <value>Coopération</value>
   </data>
   <data name="CreationAgence" xml:space="preserve">
     <value>la création de l'Agence</value>
@@ -268,16 +268,16 @@ Le programme contribue également au renforcement du rôle des collectivités lo
     <value>Inscription en ligne</value>
   </data>
   <data name="InscriptionsCDE" xml:space="preserve">
-    <value>Inscriptions CDE</value>
+    <value>Inscription aux CDE</value>
   </data>
   <data name="InscriptionsCNRC" xml:space="preserve">
-    <value>Inscriptions CNRC</value>
+    <value>Enregistrement auprès du Centre national du registre du commerce (CNRC)</value>
   </data>
   <data name="Inscriptionsdispositif" xml:space="preserve">
-    <value>Inscriptions dispositif</value>
+    <value>Inscription au dispositif</value>
   </data>
   <data name="InscriptionsMPDZ" xml:space="preserve">
-    <value>Inscription portail marchés publics</value>
+    <value>Inscription sur le portail des marchés publics</value>
   </data>
   <data name="Lancement" xml:space="preserve">
     <value>Lancement</value>
@@ -509,5 +509,295 @@ Le programme contribue également au renforcement du rôle des collectivités lo
   </data>
   <data name="Etapes" xml:space="preserve">
     <value>Principales étapes</value>
+  </data>
+  <data name="AccesPortalDesc" xml:space="preserve">
+    <value>Pour accéder au portail électronique dédié aux marchés publics et commencer le processus d'inscription, veuillez cliquer sur le lien suivant :</value>
+  </data>
+  <data name="AssistanceDescP1" xml:space="preserve">
+    <value>L'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA) tient à fournir le soutien nécessaire aux micro-entreprises dans le processus d'enregistrement et d'utilisation des services du portail des marchés publics, en organisant des sessions de formation et des ateliers d'introduction sur la manière de tirer le meilleur parti de ces services numériques.</value>
+  </data>
+  <data name="AssistanceDescP2" xml:space="preserve">
+    <value>L'Agence cherche également à faciliter l'accès des micro-entreprises au marché public en coordonnant ses actions avec les autorités compétentes et en fournissant les conseils et les instructions nécessaires pour garantir une participation efficace aux marchés publics.</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_01" xml:space="preserve">
+    <value>La plateforme numérique permet de</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_03" xml:space="preserve">
+    <value>efforts en évitant les déplacements nécessaires pour effectuer les démarches liées au fonctionnement de l'agence. Elle offre en outre un accès et une utilisation rapides et faciles, tout en garantissant</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_05" xml:space="preserve">
+    <value>du traitement des données à toutes les étapes des procédures.</value>
+  </data>
+  <data name="axesStrategiqueP1" xml:space="preserve">
+    <value>Poursuivre et renforcer l’accompagnement des jeunes porteurs de projets à travers le développement de programmes de formation spécialisés, la diversification des mécanismes de financement et l’intégration de solutions innovantes et qualitatives.</value>
+  </data>
+  <data name="axesStrategiqueP2" xml:space="preserve">
+    <value>Intensifier la collaboration avec les différentes parties prenantes, incluant les institutions publiques, les entreprises publiques et privées, les partenaires sociaux et la société civile, en vue de développer un écosystème entrepreneurial et de micro-entreprises stable, durable et compétitif.</value>
+  </data>
+  <data name="axesStrategiqueP3" xml:space="preserve">
+    <value>Développer les capacités opérationnelles de l’Agence à travers la révision des plans de travail et des mécanismes d’évaluation des projets, l’amélioration des compétences des utilisateurs, la digitalisation des services et le renforcement des moyens et infrastructures afin d’améliorer les conditions de travail et d’accueil, ce qui se répercutera positivement sur sa performance.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_01" xml:space="preserve">
+    <value>Les centres de développement de l'entrepreneuriat (CDE) créés dans divers établissements de la formation et de l'enseignement professionnels, instituts et écoles de formation, dans le cadre du programme gouvernemental visant à promouvoir une culture entrepreneuriale, ont pour objectif de fournir aux entrepreneurs en formation un environnement favorable à la réalisation de leurs idées et projets commerciaux, car ils sont équipés de ressources et d'installations modernes qui soutiennent le développement de leurs compétences entrepreneuriales.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_02" xml:space="preserve">
+    <value>La formation dans les centres de développement de l'entrepreneuriat (CDE) est considérée comme l'une des conditions de base pour créer une micro-entreprise dans le cadre de l'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA) et bénéficier des formules de financement qu'elle propose.</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Text_03" xml:space="preserve">
+    <value>L'inscription au niveau des centres de développement de l'entrepreneuriat (CDE) dans le secteur de la formation et de l'enseignement professionnels se fait exclusivement en ligne via le lien suivant :</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_01" xml:space="preserve">
+    <value>Les centres de développement de l'entrepreneuriat (CDE) créés dans divers établissements d'enseignement supérieur et de recherche scientifique (universités, instituts et écoles supérieures) dans le cadre du programme gouvernemental visant à promouvoir l'entrepreneuriat dans le milieu universitaire ont pour objectif d'offrir aux étudiants entrepreneurs un environnement favorable à la concrétisation de leurs idées et projets commerciaux, car ils sont équipés de ressources et d'installations modernes pour soutenir le développement des compétences entrepreneuriales des étudiants.</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_02" xml:space="preserve">
+    <value>La formation dans les centres de développement de l'entrepreneuriat (CDE) est considérée comme l'une des conditions fondamentales pour créer une micro-entreprise dans le cadre de l'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA) et bénéficier des formules de financement qu'elle propose.</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_03" xml:space="preserve">
+    <value>L'inscription au niveau des centres de développement de l'entrepreneuriat (CDE) dans le secteur de l'enseignement supérieur et de la recherche scientifique se fait exclusivement en ligne via le lien suivant:</value>
+  </data>
+  <data name="ComiteSuivi" xml:space="preserve">
+    <value>Le Comité de Surveillance est chargé d’exercer un contrôle a posteriori sur l’exécution des décisions du Conseil d’Administration. Il se réunit à la fin de chaque trimestre et formule des observations et recommandations visant à améliorer la mise en œuvre des programmes et projets de l’Agence.</value>
+  </data>
+  <data name="ConseilAdministration" xml:space="preserve">
+    <value>Le Conseil d’Administration délibère, conformément aux lois et règlements en vigueur, sur le programme d’activités de l’Agence, le budget prévisionnel, l’organisation et le règlement intérieur, le plan annuel de financement, l’utilisation des moyens financiers, la création des annexes et la réalisation des investissements.</value>
+  </data>
+  <data name="Creation_Micro_Enterprise_Text" xml:space="preserve">
+    <value>Tous les jeunes ayant des idées de projet et ayant bénéficié d'une formation dans les centres de développement de l'entrepreneuriat (CDE) destinés aux étudiants universitaires ou aux diplômés des instituts de formation professionnelle peuvent prétendre à un financement pour leur nouveau projet.</value>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Declaration" xml:space="preserve">
+    <value>Veuillez télécharger la déclaration sur l’honneur à partir d’ici, la remplir et la certifier.</value>
+  </data>
+  <data name="DeclarationHonneur1" xml:space="preserve">
+    <value>Dans le cadre du renforcement des procédures d’importation mises en place par le ministère du Commerce extérieur, et afin d’assurer une meilleure protection du produit national, il est porté à la connaissance de l’ensemble des start-up et des micro-entreprises relevant de nos secteurs ministériels que, conformément aux nouvelles dispositions réglementaires, toute documentation relative au programme prévisionnel d’importation des équipements et des opérations doit faire l’objet d’une approbation préalable par les directions habilitées au sein du ministère de l’Économie de la connaissance, des Start-up et des Micro-entreprises, avant sa soumission pour validation finale auprès du ministère du Commerce extérieur.</value>
+  </data>
+  <data name="DeclarationHonneur2" xml:space="preserve">
+    <value>L’approbation obligatoire du programme prévisionnel d’importation est désormais une condition essentielle et indispensable à toute procédure de validation auprès du ministère du Commerce extérieur.</value>
+  </data>
+  <data name="DeclarationHonneur3" xml:space="preserve">
+    <value>S’agissant de l’importation des services, et conformément aux dispositions du décret ministériel n° 55 du 13 juillet 2025, une commission interministérielle a été mise en place, chargée de l’évaluation et de l’autorisation des importations exceptionnelles de services.</value>
+  </data>
+  <data name="DeclarationHonneurInfo" xml:space="preserve">
+    <value>Veuillez également vous inscrire et déclarer vos plans d’importation d’équipements, d’opérations et de services, conformément aux exigences en vigueur.
+Cette démarche est obligatoire pour tout programme d’importation nécessitant l’approbation de nos services.</value>
+  </data>
+  <data name="DeclarationHonneurMI" xml:space="preserve">
+    <value>Bénéficier de l’importation des équipements, des opérations et des services</value>
+  </data>
+  <data name="DescriptionAgenceP1" xml:space="preserve">
+    <value>connaît une dynamique significative, marquant un tournant décisif dans le dispositif national de soutien à la création de micro-entreprises. Cette évolution traduit un changement stratégique majeur, passant d’un modèle administratif axé sur l’emploi des jeunes à un mécanisme économique centré sur la création de micro-entreprises performantes et durables.
+Cette nouvelle approche repose sur un accompagnement renforcé des porteurs de projets, visant à favoriser l’émergence des idées, leur maturation et leur transformation en projets rentables et viables.</value>
+  </data>
+  <data name="DescriptionAgenceP2" xml:space="preserve">
+    <value>se positionne comme un véritable moteur de la transformation économique, en contribuant activement aux efforts des pouvoirs publics visant à réduire la facture des importations, à diversifier l’économie, à renforcer sa résilience et à générer des emplois à forte valeur ajoutée.</value>
+  </data>
+  <data name="DescriptionAgenceP2,1" xml:space="preserve">
+    <value>La réorientation stratégique du rôle de l’Agence a nécessité plusieurs ajustements. Sur le plan externe, cela s’est traduit par l’établissement de partenariats stratégiques avec des secteurs clés de l’écosystème entrepreneurial, notamment l’enseignement supérieur et la recherche scientifique, ainsi que la formation professionnelle, pour la création et la promotion des</value>
+  </data>
+  <data name="DescriptionAgenceP2,2" xml:space="preserve">
+    <value> à travers l’ensemble du territoire national. Ces efforts ont été complétés par des partenariats importants avec des acteurs sociaux et économiques dans des secteurs clés tels que l’emploi, l’assurance et l’agriculture</value>
+  </data>
+  <data name="DescriptionAgenceP3,1" xml:space="preserve">
+    <value>Sur le plan interne, l’Agence a renforcé ses capacités en matière d’évaluation des projets et de gestion des risques à travers la mise en œuvre de programmes de formation au profit de son personnel et l’adoption d’une nouvelle organisation interne garantissant une cohérence stratégique et le renforcement des fonctions clés de l’Agence, notamment la planification, l’accompagnement, l’évaluation, le recouvrement et la gestion des ressources.
+Par ailleurs, l’Agence a lancé plusieurs outils numériques, dont</value>
+  </data>
+  <data name="DescriptionAgenceP3,2" xml:space="preserve">
+    <value>des plateformes numériques telles que la plateforme d’évaluation des projets</value>
+  </data>
+  <data name="DescriptionAgenceP3,3" xml:space="preserve">
+    <value>et la plateforme de suivi de la performance</value>
+  </data>
+  <data name="DescriptionAgenceP3,4" xml:space="preserve">
+    <value>, en plus de son site web institutionnel</value>
+  </data>
+  <data name="DescriptionAgenceP4" xml:space="preserve">
+    <value>L’Agence entend poursuivre cette dynamique de développement et de transformation de son cadre opérationnel, avec pour objectif de renforcer la confiance des porteurs de projets et de favoriser l’intégration des micros et petites entreprises dans les chaînes de valeur nationales. L’objectif ultime est de permettre à l’Agence de jouer pleinement son rôle de levier de la transformation économique au service du développement national.</value>
+  </data>
+  <data name="EtapesInscription1P1" xml:space="preserve">
+    <value>Première étape :</value>
+  </data>
+  <data name="EtapesInscription1P2" xml:space="preserve">
+    <value>accéder au portail électronique des marchés publics ;</value>
+  </data>
+  <data name="EtapesInscription2P1" xml:space="preserve">
+    <value>Deuxième étape :</value>
+  </data>
+  <data name="EtapesInscription2P2" xml:space="preserve">
+    <value>cliquer sur « créer un nouveau compte » ou « s'inscrire »;</value>
+  </data>
+  <data name="EtapesInscription3P1" xml:space="preserve">
+    <value>Troisième étape :</value>
+  </data>
+  <data name="EtapesInscription3P2" xml:space="preserve">
+    <value>remplir les informations demandées (informations sur l'institution, coordonnées) ;</value>
+  </data>
+  <data name="EtapesInscription4P1" xml:space="preserve">
+    <value>Quatrième étape :</value>
+  </data>
+  <data name="EtapesInscription4P2" xml:space="preserve">
+    <value>télécharger les documents requis (registre du commerce, carte d'entreprise...);</value>
+  </data>
+  <data name="EtapesInscription5P1" xml:space="preserve">
+    <value>Cinquième étape :</value>
+  </data>
+  <data name="EtapesInscription5P2" xml:space="preserve">
+    <value>confirmer l'inscription et attendre la validation.</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Text" xml:space="preserve">
+    <value>Tous les porteurs de projets bénéficient du financement des projets d'expansion, qu'ils aient déjà bénéficié des services de l'agence ou qu'ils aient créé leur projet à partir des services de l'agence ou qu'ils créent leur projet.</value>
+  </data>
+  <data name="Inscription_CDE_Text" xml:space="preserve">
+    <value>Les Centres de développement de l'entrepreneuriat (CDE) sont des espaces partagés entre l'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA) et ses partenaires, où ils offrent des espaces dédiés à la promotion de l'entrepreneuriat chez les jeunes et au renforcement de leurs capacités et compétences en matière de création et de gestion de micro-entreprises, grâce à des formations de qualité dispensées par des formateurs de l'Agence accrédités par l'Organisation internationale du travail (OIT), en partenariat avec des formateurs du secteur partenaire.</value>
+  </data>
+  <data name="Inscription_CNRC_Text" xml:space="preserve">
+    <value>Dans le cadre des mesures prévues par la loi n° 04-08 du 27 Jumada II 1425, correspondant au 14 août 2004, modifiée et complétée, ainsi que par le décret exécutif n° 23-169 du 24 avril 2023, les procédures de gestion et d'exploitation du portail électronique dédié à la création d'institutions, ainsi que les procédures d'enregistrement, de transfert, de réception de documents électroniques et d'attribution du numéro d'identification commun.</value>
+  </data>
+  <data name="Inscription_MPDZ_Text_01" xml:space="preserve">
+    <value>Le portail électronique des marchés publics propose une nouvelle approche du travail, visant à mettre en place des procédures plus modernes, plus simples, plus faciles et plus rapides entre les opérateurs économiques et les pouvoirs adjudicateurs dans le domaine des marchés publics. Il vise à garantir un plus grand respect des principes de libre accès aux marchés publics, d'égalité entre les candidats et de transparence des procédures.</value>
+  </data>
+  <data name="Inscription_MPDZ_Text_02" xml:space="preserve">
+    <value>Le portail électronique fournit également aux opérateurs économiques et aux micro-entrepreneurs diverses informations et données relatives aux marchés publics au niveau national, notamment les consultations et les contrats publics, en plus d'offrir d'autres services tels que la consultation de divers appels d'offres et le téléchargement des conditions générales.</value>
+  </data>
+  <data name="Inscription_NESDA_Text" xml:space="preserve">
+    <value>L'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA) propose une plateforme numérique spéciale aux porteurs de projets qui souhaitent créer des micro-entreprises ou développer leurs activités, afin qu'ils puissent s'enregistrer à distance et bénéficier des services d'aide et de financement de l'agence.</value>
+  </data>
+  <data name="mission1" xml:space="preserve">
+    <value>Mettre à niveau un écosystème entrepreneurial favorisant la création, le financement et le développement de micro-entreprises performantes, résilientes et génératrices de valeur ajoutée durable au profit des citoyens et de la nation.</value>
+  </data>
+  <data name="MissionP1" xml:space="preserve">
+    <value>L’Agence Nationale d’appui et de Développement de l’Entrepreneuriat s’inscrit dans le cadre des orientations du Président de la République, Monsieur Abdelmadjid Tebboune, visant à relever le défi de la relance économique et à bâtir une économie productive et diversifiée, génératrice de valeur et d’emplois de qualité, dans le cadre du développement d’un nouveau modèle économique fondé sur la diversification de la croissance et l’économie de la connaissance.</value>
+  </data>
+  <data name="MissionP2" xml:space="preserve">
+    <value>Les orientations stratégiques de l’Agence reposent sur les éléments suivants :</value>
+  </data>
+  <data name="organisationNesdaText" xml:space="preserve">
+    <value>Conformément aux dispositions du décret exécutif n° 96-296 du 8 septembre 1996, tel que modifié et complété, portant création de l’Agence Nationale d’appui et de Développement de l’Entrepreneuriat et fixant son statut, l’Agence est administrée par un Conseil d’Administration, dirigée par un Directeur Général et dotée d’un Comité de Surveillance.</value>
+  </data>
+  <data name="Partenaire1P1" xml:space="preserve">
+    <value>Le partenariat avec les établissements du secteur de l’enseignement supérieur et de la recherche scientifique, sous l’égide du ministère de tutelle, s’inscrit dans le cadre de l’ouverture de centres de développement de l’entrepreneuriat au sein du réseau universitaire. Il vise à coordonner leur gestion et à organiser des sessions de formation à leur niveau, réalisés conjointement par des professeurs d’universités et des formateurs de l’Agence, selon les programmes des travaux arrêtés.</value>
+  </data>
+  <data name="Partenaire1P2" xml:space="preserve">
+    <value>Ces centres de développement de l’entrepreneuriat jouent un rôle essentiel dans la promotion de l’entrepreneuriat en milieu universitaire, à travers les actions de formation, de sensibilisation et d’accompagnement qu’ils assurent.</value>
+  </data>
+  <data name="Partenaire2P1" xml:space="preserve">
+    <value>Dans le cadre de la généralisation de l’expérience des centres de développement de l’entrepreneuriat au niveau du réseau des établissements de la formation et de l’enseignement professionnels, ce partenariat, placé sous l’égide du ministère de tutelle, vise à coordonner le processus d’ouverture de ces centres, à encadrer leur gestion et à organiser des sessions de formation à leur niveau. Il prévoit également la formation des formateurs du secteur ainsi que leur accompagnement par des formateurs de l’Agence.</value>
+  </data>
+  <data name="Partenaire2P2" xml:space="preserve">
+    <value>Les centres de développement de l’entrepreneuriat constituent un levier important pour la promotion de l’esprit entrepreneurial et de l’entrepreneuriat dans le parcours de l’enseignement et de la formation professionnels, à travers les actions de formation, de sensibilisation et d’accompagnement qu’ils proposent.</value>
+  </data>
+  <data name="Partenaire3P1" xml:space="preserve">
+    <value>Le partenariat avec les institutions bancaires publiques s’inscrit dans le cadre du dispositif de l’Agence et se traduit par une structure de financement triangulaire, dans laquelle le prêt bancaire représente 70 % de l’investissement, assorti d’une bonification d’intérêts à 100 %.
+
+Ce mécanisme constitue un levier incitatif pour la création de micro-entreprises ainsi que pour le développement et l’extension de leurs activités.</value>
+  </data>
+  <data name="Partenaire3P2" xml:space="preserve">
+    <value>Le financement bancaire joue un rôle central dans le dispositif de l’Agence, compte tenu de son importance dans le processus de création des micro-entreprises et dans l’expansion de leurs activités.</value>
+  </data>
+  <data name="Partenaire4P1" xml:space="preserve">
+    <value>Dans le cadre de l’accompagnement et du soutien des micro-entreprises, l’Agence veille à coopérer avec les opérateurs économiques, publics et privés, afin de promouvoir les produits et les services des micro-entreprises ainsi que les avantages qu’elles offrent tout au long de la chaîne de valeur économique, notamment en matière de fourniture d’intrants, de services d’appui et de sous-traitance.</value>
+  </data>
+  <data name="Partenaire4P2" xml:space="preserve">
+    <value>Le partenariat avec les opérateurs économiques a permis de rapprocher les micro-entreprises, de favoriser l’échange d’expertises et d’exploiter les opportunités de coopération commerciale, allant de l’approvisionnement en matières premières à la sous-traitance de certaines activités.</value>
+  </data>
+  <data name="Partenaire4P3" xml:space="preserve">
+    <value>À cet effet, l’Agence œuvre à la conclusion d’accords de partenariat avec divers opérateurs économiques. Plusieurs conventions ont ainsi été conclues aux niveaux local et national, à l’instar des opérateurs suivants :</value>
+  </data>
+  <data name="Partenaire4P3,1" xml:space="preserve">
+    <value>Les antennes régionales du Conseil du Renouveau Économique Algérien ;</value>
+  </data>
+  <data name="Partenaire4P3,2" xml:space="preserve">
+    <value>La caisse nationale de la mutualité agricole ;</value>
+  </data>
+  <data name="Partenaire4P3,3" xml:space="preserve">
+    <value>La Société des Eaux et de l’Assainissement d’Alger (SEAAL) ;</value>
+  </data>
+  <data name="Partenaire4P3,4" xml:space="preserve">
+    <value>L’Algérienne des Eaux (ADE) ;</value>
+  </data>
+  <data name="Partenaire4P3,5" xml:space="preserve">
+    <value>Des entreprises économiques locales opérant dans les secteurs des industries agroalimentaires, des industries de transformation et des services.</value>
+  </data>
+  <data name="Partenaire5P1" xml:space="preserve">
+    <value>Soucieuse d’assurer une coordination continue avec les différentes institutions et organismes publics intervenant dans l’accompagnement des micro-entreprises à toutes les étapes de leur création et de leur fonctionnement, et dans la perspective de mettre en place un écosystème entrepreneurial stimulant l’entrepreneuriat et générateur d’opportunités, l’Agence vise, à travers ces partenariats, à simplifier et améliorer les procédures, à favoriser l’échange d’expertises et de données, ainsi qu’à coordonner les actions, notamment celles liées à la sensibilisation, à la communication et à l’accompagnement, conformément à la législation et à la réglementation en vigueur.</value>
+  </data>
+  <data name="Partenaire5P2" xml:space="preserve">
+    <value>Dans ce cadre, l’Agence veille à la conclusion de conventions de partenariat avec diverses institutions et organismes publics, à l’instar de :</value>
+  </data>
+  <data name="Partenaire5P2,1" xml:space="preserve">
+    <value>L’Agence nationale de gestion du microcrédit (ANGEM) ;</value>
+  </data>
+  <data name="Partenaire5P2,2" xml:space="preserve">
+    <value>L’Agence de développement des PME et de la promotion de l’innovation (ADPMEPI) ;</value>
+  </data>
+  <data name="Partenaire5P2,3" xml:space="preserve">
+    <value>L’Agence nationale de l’emploi (ANEM).</value>
+  </data>
+  <data name="PartenariatContact" xml:space="preserve">
+    <value>Contactez-nous pour un partenariat</value>
+  </data>
+  <data name="PartenariatDesc" xml:space="preserve">
+    <value>Dans le cadre du renforcement de l’écosystème entrepreneurial et des micro-entreprises, l’Agence nationale d’appui et de développement de l’entrepreneuriat veille à assurer une coordination continue, sous l’égide du ministère de tutelle, avec l’ensemble des parties prenantes concernées.</value>
+  </data>
+  <data name="PartenariatInfo" xml:space="preserve">
+    <value>Contactez-nous pour explorer les opportunités de partenariat et de coopération dans le soutien à l’entrepreneuriat.</value>
+  </data>
+  <data name="PartenariatQuestion" xml:space="preserve">
+    <value>Souhaitez-vous développer un partenariat avec nous ?</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Text" xml:space="preserve">
+    <value>Le Centre national du registre du commerce (CNRC) met à disposition un portail électronique dédié aux procédures liées à la création d'entreprises, en coordination avec les autorités compétentes, notamment :</value>
+  </data>
+  <data name="Portail_Services_Texte_01" xml:space="preserve">
+    <value>Le portail électronique fournit diverses informations et procédures relatives à la création d'une institution, conformément à la législation applicable, dans le domaine de l'enregistrement commercial, des impôts, de la sécurité sociale et des statistiques économiques.</value>
+  </data>
+  <data name="Portail_Services_Texte_02" xml:space="preserve">
+    <value>L'enregistrement de l'établissement via le portail électronique pour la création d'établissements constitue le seul enregistrement après avoir été approuvé par le Centre national du registre du commerce et confirmé par les autorités compétentes.</value>
+  </data>
+  <data name="ProgCoopérationsText" xml:space="preserve">
+    <value>Dans le cadre de la promotion de l’esprit entrepreneurial et du renforcement des compétences des micro-entreprises, l’Agence nationale d’appui et de développement de l’entrepreneuriat s’attache à développer ses capacités à travers l’établissement de relations de coopération avec diverses institutions internationales et régionales accréditées, afin de bénéficier des expertises et des expériences, tout en élargissant les opportunités d’échange et d’innovation. À ce titre, l’Agence contribue en tant que partenaire clé à plusieurs programmes de coopération internationale en Algérie.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP1" xml:space="preserve">
+    <value>Ce programme régional vise à soutenir l’entrepreneuriat agricole des jeunes en leur permettant de développer de nouveaux projets innovants et durables, susceptibles de créer des opportunités d’emploi pour les jeunes dans des filières agricoles porteuses en Algérie.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP2" xml:space="preserve">
+    <value>Le programme est placé sous l’égide de l’Organisation Internationale du Travail (OIT) et financé par le Fonds international de développement agricole relevant de l’Organisation des Nations Unies (ONU), avec l’encadrement des secteurs ministériels concernés. L’Agence y intervient en tant que partenaire principal, aux côtés de l’Office national des études du développement rural, de l’Accélérateur public A-Venture, de l’Agence nationale de gestion du microcrédit et de l’Agence nationale de l’emploi.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP3" xml:space="preserve">
+    <value>En 2024, l’Agence a contribué à l’organisation d’un concours de plans d’affaires destiné aux porteurs de projets, en vue de renforcer leurs capacités entrepreneuriales et de lancer des activités économiquement viables dans le domaine agricole, préalablement définies selon des chaînes de valeur ciblées : la pomme de terre à Mostaganem, l’aquaculture à Biskra et la production laitière à Guelma. Les bénéficiaires ont également profité d’un appui technique pour l’élaboration de plans d’affaires viables, ainsi que, selon les cas, d’un financement de leurs projets.</value>
+  </data>
+  <data name="ProgCoopérationsTitre1TextP4" xml:space="preserve">
+    <value>Le programme a enregistré une participation significative, permettant d’identifier de nombreux projets innovants. Les participants ont bénéficié de sessions de formation visant à renforcer leurs compétences en élaboration de plans d’affaires, à améliorer leurs aptitudes entrepreneuriales et à approfondir leurs expertises dans le domaine agricole ciblé. Le programme a également été marqué par la récompense des premiers lauréats des trois wilayas concernées, lesquels bénéficieront de l’accompagnement de l’Agence pour la création de leurs micro-entreprises.</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP1" xml:space="preserve">
+    <value>Ce programme constitue un projet régional de l’Organisation Internationale du Travail, financé par la Direction générale des négociations des politiques de voisinage et de l’élargissement de la Commission européenne. Il vise à soutenir la transition de l’économie informelle vers l’économie formelle à travers le dialogue social tripartite dans les pays du monde arabe, avec un accent particulier sur l’Algérie, l’Égypte, le Liban et la Palestine.</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP2" xml:space="preserve">
+    <value>Le projet a pour objectif d’accroître l’emploi des travailleurs et l’activité des entreprises dans le secteur formel, contribuant ainsi à la promotion du travail décent pour tous et à la réduction de la pauvreté, tout en favorisant la construction de sociétés plus équitables et plus cohésives. À cette fin, le programme s’attache à renforcer les capacités des trois parties constituant l’OIT gouvernements, organisations d’employeurs et de travailleurs à agir par le biais du dialogue social à deux niveaux :</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP3" xml:space="preserve">
+    <value>l’élaboration de politiques globales relatives à la transition vers l’économie formelle ;</value>
+  </data>
+  <data name="ProgCoopérationsTitre2TextP4" xml:space="preserve">
+    <value>le développement des systèmes nationaux de formation et de reconnaissance des compétences, en mettant l’accent sur les jeunes et les femmes opérant dans le secteur informel.</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP1" xml:space="preserve">
+    <value>Le programme « Économie sociale et solidaire au service de l’inclusion économique durable des jeunes entrepreneurs et entrepreneuses en Algérie » vise à promouvoir l’emploi des jeunes et à contribuer à la création de richesse à travers la mise en place d’un dispositif de soutien au développement de l’économie sociale et solidaire.</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP2" xml:space="preserve">
+    <value>Pour atteindre ces objectifs, le projet comprend plusieurs composantes clés, agissant à différents niveaux de cet écosystème et ciblant l’ensemble de ses acteurs, autour de deux axes majeurs :</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP3" xml:space="preserve">
+    <value>Le renforcement de l’écosystème de l’économie sociale et solidaire ;</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP4" xml:space="preserve">
+    <value>Le soutien à la création et au développement des entreprises de l’économie sociale et solidaire.</value>
+  </data>
+  <data name="ProgCoopérationsTitre3TextP5" xml:space="preserve">
+    <value>Le programme est placé sous l’égide du Programme des Nations Unies pour le développement, avec l’encadrement des secteurs ministériels concernés. L’Agence y intervient en tant que partenaire important, contribuant à l’accompagnement de la création et de l’extension des projets de micro-entreprises relevant de l’économie sociale et solidaire, conformément aux objectifs fixés.</value>
+  </data>
+  <data name="ReunionConseilAdmin" xml:space="preserve">
+    <value>Le Conseil d’Administration se réunit en session ordinaire au moins quatre (04) fois par an, sur convocation de son Président, qui fixe l’ordre du jour sur proposition du Directeur Général. Il peut également se réunir en session extraordinaire à l’initiative de son Président, de l’autorité de tutelle, du Directeur Général ou de la majorité de ses membres.</value>
   </data>
 </root>
