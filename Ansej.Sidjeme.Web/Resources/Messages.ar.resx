@@ -210,9 +210,6 @@
   <data name="Enligne" xml:space="preserve">
     <value>عبر الإنترنت</value>
   </data>
-  <data name="Etapes" xml:space="preserve">
-    <value>المراحل الرئيسية</value>
-  </data>
   <data name="Evaluation" xml:space="preserve">
     <value>التقييم</value>
   </data>
@@ -407,6 +404,132 @@
   <data name="askUs" xml:space="preserve">
     <value>تواصل معنا مباشرة وسنكون سعداء للإجابة على جميع استفساراتك</value>
   </data>
+  <data name="CentreComunicationD1" xml:space="preserve">
+    <value>يوفر مركز الإتصال التابع لوكالة ناسدا قناة تواصل مباشرة  ، ويعمل من أجل الاستجابة السريعة لانشغالاتكم وتوجيهاتكم</value>
+  </data>
+  <data name="CentreComunicationD2" xml:space="preserve">
+    <value>نسعى من خلاله إلى تعزيز الشفافية وتحسين تجربة المستخدم</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>اتصل الآن – فريقنا جاهز لخدمتك على مدار الساعة</value>
+  </data>
+  <data name="Q10" xml:space="preserve">
+    <value>هل تقدم ناسدا دعما للمشاريع التي تستهدف الإبتكار؟</value>
+  </data>
+  <data name="Q11" xml:space="preserve">
+    <value>هل يمكنني إنشاء مشروع في مجال لا أملك فيه شهادة لكن لدي خبرة ميدانية؟</value>
+  </data>
+  <data name="Q12" xml:space="preserve">
+    <value>كم تستغرق فترة دراسة الملف للحصول على التمويل؟</value>
+  </data>
+  <data name="Q13" xml:space="preserve">
+    <value>ماذا أفعل إذا تم رفض طلبي للتمويل؟</value>
+  </data>
+  <data name="Q14" xml:space="preserve">
+    <value>هل تساعد ناسدا في إيجاد شركاء أو مستثمرين؟</value>
+  </data>
+  <data name="Q15" xml:space="preserve">
+    <value>ما هو الحد الأقصى للتمويل الذي يمكن الحصول عليه؟</value>
+  </data>
+  <data name="Q16" xml:space="preserve">
+    <value>هل يمكنني تسديد القرض قبل الآجال المحددة دون غرامات؟</value>
+  </data>
+  <data name="Q17" xml:space="preserve">
+    <value>هل توفر الوكالة فرصا للمشاركة في المعارض أو الفعاليات الاقتصادية؟</value>
+  </data>
+  <data name="Q5" xml:space="preserve">
+    <value>هل يشترط مرور مدة معينة على إنشاء المشروع للإستفادة من التوسعة؟</value>
+  </data>
+  <data name="Q6" xml:space="preserve">
+    <value>كيف يمكنني تتبع دراسة ملفي بعد إيداعه؟</value>
+  </data>
+  <data name="Q7" xml:space="preserve">
+    <value>هل يجب أن تكون فكرة المشروع مرتبطة بالتخصص الدراسي أو شهادة التكوين؟</value>
+  </data>
+  <data name="Q8" xml:space="preserve">
+    <value>هل يجب أن أكون مسجلا في وكالة التشغيل للإستفاة من الدعم؟</value>
+  </data>
+  <data name="Q9" xml:space="preserve">
+    <value>هل يمكن ذوي الإحتياجات الخاصة الإستفادة من شروط خاصة؟</value>
+  </data>
+  <data name="R10" xml:space="preserve">
+    <value>تهدف الوكالة إلى إحداث مشاريع من شأنها أن تغطي السوق المحلي، و تشجيعها على الولوج إلى الأسواق العالمية</value>
+  </data>
+  <data name="R11" xml:space="preserve">
+    <value>لقد وضعت الدولة الجزائرية عدة هيئات رسمية تعنى بإثبات و المصادقة على الخبرة المهنية المكتسبة</value>
+  </data>
+  <data name="R12" xml:space="preserve">
+    <value>لا يمكن تحديد فترة معينة، نظرا لوجود عدة معايير تختلف بإختلاف نمط التمويل</value>
+  </data>
+  <data name="R13" xml:space="preserve">
+    <value>التقرب من المرافق المكلف بملفكم ليفيدكم بالطرق الواجب إتباعها وفقا لسبب الرفض</value>
+  </data>
+  <data name="R14" xml:space="preserve">
+    <value>يمكن لحامل المشروع الاستفادة من مشاريع في اطار الاتفاقيات المبرمة مع مختلف القطاعات الاقتصادية</value>
+  </data>
+  <data name="R15" xml:space="preserve">
+    <value>لا يمكن أن تتجاوز القيمة الإجمالية للمشروع عشر (10) ملايين دينار جزائري</value>
+  </data>
+  <data name="R16" xml:space="preserve">
+    <value>نعم، يمكن لصاحب المشروع تسديد المستحقات المالي المترتبة على مشروعه قبل الآجال المتفق عليها</value>
+  </data>
+  <data name="R17" xml:space="preserve">
+    <value>تعمل الوكالة على تشجيع المشاريع و المؤسسات المستحدثة من خلال الترويج لها عبر مختلف الفعاليات</value>
+  </data>
+  <data name="R5" xml:space="preserve">
+    <value>من بين شروط الإستفادة من التوسعة تقديم الحصيلة السنوية الخاصة بمؤسسته للسنتين الأخيرتين</value>
+  </data>
+  <data name="R6" xml:space="preserve">
+    <value>عبر  فضاء صاحب المشروع مخصص لصاحب المشروع لإدارة معلوماته، متابعة تقدم مشروعه، وإنجاز مختلف الإجراءات عبر المنصة الإلكترونية</value>
+  </data>
+  <data name="R7" xml:space="preserve">
+    <value>يمكن لحامل المشروع أن يحدث أي نشاط ذو جدوى و مردودية و يمكنه تحقيق مكانة في الأسواق، شريطة إثباته لقدرات تمكنه من التحكم في هذا الأخير.</value>
+  </data>
+  <data name="R8" xml:space="preserve">
+    <value>لا، إلا أن المسجلين في وكالة التشغيل يمكنه الإستفادة من الإعانات و الإمتيازات الممنوحة في إطار جهاز الوكالة بغرض إحداث أنشطة</value>
+  </data>
+  <data name="R9" xml:space="preserve">
+    <value>وضعت الوكالة إجراءات مبسطة و سهلة تراعي كل الفئات من حاملي المشاريع</value>
+  </data>
+  <data name="reponse" xml:space="preserve">
+    <value>نجيب على أكثر الأسئلة شيوعاً التي تم طرحها من قبل. إذا لم تجد إجابة لسؤالك هنا، فلا تتردد في التواصل معنا مباشرة</value>
+  </data>
+  <data name="responseNotFound" xml:space="preserve">
+    <value>لم تجد إجابة لسؤالك؟</value>
+  </data>
+  <data name="ServicesdigitauxDetail" xml:space="preserve">
+    <value>تقدم وكالة ناسدا مجموعة من الخدمات الرقمية المبتكرة التي تهدف إلى دعم المقاولاتية، وتسهيل مختلف الإجراءات الإدارية لفائدة الشباب</value>
+  </data>
+  <data name="Tawtin" xml:space="preserve">
+    <value>التوطين</value>
+  </data>
+  <data name="Etapes" xml:space="preserve">
+    <value>المراحل الرئيسية</value>
+  </data>
+  <data name="FormationIntro" xml:space="preserve">
+    <value>تولي الوكالة الوطنية لدعم وتنمية المقاولاتية أهمية بالغة لمرحلة التكوين باعتبارها حجر الأساس في مسار إنشاء وتطوير المؤسسات المصغرة. وتندرج هذه المرحلة ضمن مقاربة شاملة تهدف إلى تمكين حاملي المشاريع من اكتساب المعارف والمهارات اللازمة لتحويل أفكارهم إلى مشاريع واقعية ناجحة ومستدامة.</value>
+  </data>
+  <data name="FormationTitre" xml:space="preserve">
+    <value>تعد برامج التكوين من الركائز الأساسية التي تعتمد عليها الوكالة الوطنية لدعم وتنمية المقاولاتية في مرافقة حاملي الأفكار والمشاريع</value>
+  </data>
+  <data name="DescriptionFG" xml:space="preserve">
+    <value>يسهر صندوق الكفالة المشترك لضمان أخطار القروض الممنوحة لحاملي المشاريع على تغطية المخاطر المرتبطة بالقروض البنكية الممنوحة لفائدة المؤسسات المصغرة الممولة في إطار جهاز الوكالة الوطنية لدعم وتنمية المقاولاتية، حيث يشكل الصندوق ضمانا مُكملا لفائدة البنوك، إلى جانب الضمانات المقدمة من المؤسسات المصغرة، مما يساهم في تعزيز ثقة البنوك في تمويل المشاريع المقاولاتية.</value>
+  </data>
+  <data name="DescriptionTachesFG" xml:space="preserve">
+    <value>يعتبر صندوق الضمان أداة لتقليل المخاطر المالية المرتبطة بتمويل المؤسسات المصغرة، حيث يوفر ضمانا إضافيا للبنوك، إلى جانب الضمانات المقدمة من طرف المقاولين أنفسهم، والتي تشمل:</value>
+  </data>
+  <data name="ElementParticipationFG1" xml:space="preserve">
+    <value>يتم انخراط المؤسسة المصغرة بعد الموافقة البنكية</value>
+  </data>
+  <data name="TacheFG1" xml:space="preserve">
+    <value>الرهن الحيازي للتجهيزات، لفائدة البنك في الدرجة الأولى، و الوكالة الوطنية لدعم وتنمية المقاولاتية في الدرجة الثانية</value>
+  </data>
+  <data name="TacheFG2" xml:space="preserve">
+    <value>الرهن الحيازي للعتاد المتنقل</value>
+  </data>
+  <data name="TacheFG3" xml:space="preserve">
+    <value>تأمين شامل لكافة تجهيزات المشروع ضد مختلف الأخطار</value>
+  </data>
   <data name="Avantages_Plateforme_Numerique_01" xml:space="preserve">
     <value>تسمح المنصة الرقمية من</value>
   </data>
@@ -524,12 +647,6 @@
   <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_03" xml:space="preserve">
     <value>يتم التسجيل على مستوى مراكز تطوير المقاولاتية في قطاع التعليم العالي والبحث العلمي حصريا عبر الخط عن طريق الرابط التالي:</value>
   </data>
-  <data name="CentreComunicationD1" xml:space="preserve">
-    <value>يوفر مركز الإتصال التابع لوكالة ناسدا قناة تواصل مباشرة  ، ويعمل من أجل الاستجابة السريعة لانشغالاتكم وتوجيهاتكم</value>
-  </data>
-  <data name="CentreComunicationD2" xml:space="preserve">
-    <value>نسعى من خلاله إلى تعزيز الشفافية وتحسين تجربة المستخدم</value>
-  </data>
   <data name="ComiteSuivi" xml:space="preserve">
     <value>تكلف لجنة المراقبة بممارسة الرقابة اللاحقة لتطبيق قرارات مجلس الإدارة، حيث تجتمع في نهاية كل ثلاثي وتقدم الملاحظات والتوصيات المفيدة عن أحسن الكيفيات لتطبيق البرامج والمشاريع التي شرعت فيها الوكالة.</value>
   </data>
@@ -574,9 +691,6 @@
   </data>
   <data name="ConseilAdministration" xml:space="preserve">
     <value>يتداول مجلس الإدارة وفقا للقوانين والتنظيمات المعمول بها، حول برنامج نشاط الوكالة، الميزانية التقديرية، تنظيم الوكالة ونظامها الداخليان، والمخطط السنوي لتمويل نشاطات الوكالة، بالإضافة إلى استعمال الوسائل المالية وإنشاء الملاحق وإنجاز الاستثمارات.</value>
-  </data>
-  <data name="ContactUs" xml:space="preserve">
-    <value>اتصل الآن – فريقنا جاهز لخدمتك على مدار الساعة</value>
   </data>
   <data name="Creation_Micro_Enterprise_Text" xml:space="preserve">
     <value>يستفيد من تمويل المشاريع الجديدة جميع الشباب حاملي أفكار المشاريع الذين استفادوا من تكوين في مراكز تطوير المقاولاتية الخاصة بالجامعيين أو خريجي معاهد التكوين المهني.</value>
@@ -686,12 +800,6 @@
   <data name="DescriptionAgenceP4" xml:space="preserve">
     <value>تعتزم الوكالة مواصلة ديناميكية تطوير وتحويل مخطط سير جهازها، بهدف تعزيز متغير"الثقة" لدى حاملي المشاريع وتشجيع إدماج المشاريع المصغرة والصغيرة في سلاسل القيم الوطنية. حيث ان الهدف النهائي هو تمكين الوكالة من أداء دورها الكامل كرافعة للتحول الاقتصادي في خدمة التنمية الوطنية.</value>
   </data>
-  <data name="DescriptionFG" xml:space="preserve">
-    <value>يسهر صندوق الكفالة المشترك لضمان أخطار القروض الممنوحة لحاملي المشاريع على تغطية المخاطر المرتبطة بالقروض البنكية الممنوحة لفائدة المؤسسات المصغرة الممولة في إطار جهاز الوكالة الوطنية لدعم وتنمية المقاولاتية، حيث يشكل الصندوق ضمانا مُكملا لفائدة البنوك، إلى جانب الضمانات المقدمة من المؤسسات المصغرة، مما يساهم في تعزيز ثقة البنوك في تمويل المشاريع المقاولاتية.</value>
-  </data>
-  <data name="DescriptionTachesFG" xml:space="preserve">
-    <value>يعتبر صندوق الضمان أداة لتقليل المخاطر المالية المرتبطة بتمويل المؤسسات المصغرة، حيث يوفر ضمانا إضافيا للبنوك، إلى جانب الضمانات المقدمة من طرف المقاولين أنفسهم، والتي تشمل:</value>
-  </data>
   <data name="ElementFonctionnementFG1" xml:space="preserve">
     <value>يتلقى الصندوق طلبا رسميا من البنك بعد التصريح بعدم دفع ثلاثة أقساط سداسية</value>
   </data>
@@ -706,9 +814,6 @@
   </data>
   <data name="ElementFonctionnementFG5" xml:space="preserve">
     <value>يتولى الصندوق مهام مرافقة ومتابعة المؤسسة المتعثرة بعد التعويض، من اجل بعث نشاطها وتمكينها من سداد التزاماتها المالية</value>
-  </data>
-  <data name="ElementParticipationFG1" xml:space="preserve">
-    <value>يتم انخراط المؤسسة المصغرة بعد الموافقة البنكية</value>
   </data>
   <data name="ElementParticipationFG2P1" xml:space="preserve">
     <value>نسبة اشتراك المؤسسة المصغرة في الصندوق محددة بـ</value>
@@ -820,12 +925,6 @@
   </data>
   <data name="FonctionnementFGDescription" xml:space="preserve">
     <value>يتدخل صندوق الكفالة المشتركة عند تسجيل تعثر في السداد، وفقا لسلسلة من الإجراءات المنظمة كما يلي:</value>
-  </data>
-  <data name="FormationIntro" xml:space="preserve">
-    <value>تولي الوكالة الوطنية لدعم وتنمية المقاولاتية أهمية بالغة لمرحلة التكوين باعتبارها حجر الأساس في مسار إنشاء وتطوير المؤسسات المصغرة. وتندرج هذه المرحلة ضمن مقاربة شاملة تهدف إلى تمكين حاملي المشاريع من اكتساب المعارف والمهارات اللازمة لتحويل أفكارهم إلى مشاريع واقعية ناجحة ومستدامة.</value>
-  </data>
-  <data name="FormationTitre" xml:space="preserve">
-    <value>تعد برامج التكوين من الركائز الأساسية التي تعتمد عليها الوكالة الوطنية لدعم وتنمية المقاولاتية في مرافقة حاملي الأفكار والمشاريع</value>
   </data>
   <data name="Impact70Desc" xml:space="preserve">
     <value>برنامج جديد للوكالة الوطنية لدعم وتنمية المقاولاتية يعنى بالمؤسسات المصغرة التي تهتم بالتنمية المحلية</value>
@@ -1004,98 +1103,11 @@
   <data name="ProgCoopérationsTitre3TextP5" xml:space="preserve">
     <value>يقع البرنامج تحت رعاية برنامج الأمم المتحدة الإنمائي واشراف القطاعات الوزارية ذات الصلة، حيث تمثل الوكالة كشريك هام في البرنامج، حيث تساهم في مرافقة انشاء وتوسعة مشاريع المؤسسات المصغرة المندرجة في مجال الاقتصاد الاجتماعي والتضامني بما يتوافق مع الأهداف المسطرة.</value>
   </data>
-  <data name="Q10" xml:space="preserve">
-    <value>هل تقدم ناسدا دعما للمشاريع التي تستهدف الإبتكار؟</value>
-  </data>
-  <data name="Q11" xml:space="preserve">
-    <value>هل يمكنني إنشاء مشروع في مجال لا أملك فيه شهادة لكن لدي خبرة ميدانية؟</value>
-  </data>
-  <data name="Q12" xml:space="preserve">
-    <value>كم تستغرق فترة دراسة الملف للحصول على التمويل؟</value>
-  </data>
-  <data name="Q13" xml:space="preserve">
-    <value>ماذا أفعل إذا تم رفض طلبي للتمويل؟</value>
-  </data>
-  <data name="Q14" xml:space="preserve">
-    <value>هل تساعد ناسدا في إيجاد شركاء أو مستثمرين؟</value>
-  </data>
-  <data name="Q15" xml:space="preserve">
-    <value>ما هو الحد الأقصى للتمويل الذي يمكن الحصول عليه؟</value>
-  </data>
-  <data name="Q16" xml:space="preserve">
-    <value>هل يمكنني تسديد القرض قبل الآجال المحددة دون غرامات؟</value>
-  </data>
-  <data name="Q17" xml:space="preserve">
-    <value>هل توفر الوكالة فرصا للمشاركة في المعارض أو الفعاليات الاقتصادية؟</value>
-  </data>
-  <data name="Q5" xml:space="preserve">
-    <value>هل يشترط مرور مدة معينة على إنشاء المشروع للإستفادة من التوسعة؟</value>
-  </data>
-  <data name="Q6" xml:space="preserve">
-    <value>كيف يمكنني تتبع دراسة ملفي بعد إيداعه؟</value>
-  </data>
-  <data name="Q7" xml:space="preserve">
-    <value>هل يجب أن تكون فكرة المشروع مرتبطة بالتخصص الدراسي أو شهادة التكوين؟</value>
-  </data>
-  <data name="Q8" xml:space="preserve">
-    <value>هل يجب أن أكون مسجلا في وكالة التشغيل للإستفاة من الدعم؟</value>
-  </data>
-  <data name="Q9" xml:space="preserve">
-    <value>هل يمكن ذوي الإحتياجات الخاصة الإستفادة من شروط خاصة؟</value>
-  </data>
   <data name="QuestionGenerale" xml:space="preserve">
     <value>هل تحتاج إلى مزيد من المعلومات؟</value>
   </data>
-  <data name="R10" xml:space="preserve">
-    <value>تهدف الوكالة إلى إحداث مشاريع من شأنها أن تغطي السوق المحلي، و تشجيعها على الولوج إلى الأسواق العالمية</value>
-  </data>
-  <data name="R11" xml:space="preserve">
-    <value>لقد وضعت الدولة الجزائرية عدة هيئات رسمية تعنى بإثبات و المصادقة على الخبرة المهنية المكتسبة</value>
-  </data>
-  <data name="R12" xml:space="preserve">
-    <value>لا يمكن تحديد فترة معينة، نظرا لوجود عدة معايير تختلف بإختلاف نمط التمويل</value>
-  </data>
-  <data name="R13" xml:space="preserve">
-    <value>التقرب من المرافق المكلف بملفكم ليفيدكم بالطرق الواجب إتباعها وفقا لسبب الرفض</value>
-  </data>
-  <data name="R14" xml:space="preserve">
-    <value>يمكن لحامل المشروع الاستفادة من مشاريع في اطار الاتفاقيات المبرمة مع مختلف القطاعات الاقتصادية</value>
-  </data>
-  <data name="R15" xml:space="preserve">
-    <value>لا يمكن أن تتجاوز القيمة الإجمالية للمشروع عشر (10) ملايين دينار جزائري</value>
-  </data>
-  <data name="R16" xml:space="preserve">
-    <value>نعم، يمكن لصاحب المشروع تسديد المستحقات المالي المترتبة على مشروعه قبل الآجال المتفق عليها</value>
-  </data>
-  <data name="R17" xml:space="preserve">
-    <value>تعمل الوكالة على تشجيع المشاريع و المؤسسات المستحدثة من خلال الترويج لها عبر مختلف الفعاليات</value>
-  </data>
-  <data name="R5" xml:space="preserve">
-    <value>من بين شروط الإستفادة من التوسعة تقديم الحصيلة السنوية الخاصة بمؤسسته للسنتين الأخيرتين</value>
-  </data>
-  <data name="R6" xml:space="preserve">
-    <value>عبر  فضاء صاحب المشروع مخصص لصاحب المشروع لإدارة معلوماته، متابعة تقدم مشروعه، وإنجاز مختلف الإجراءات عبر المنصة الإلكترونية</value>
-  </data>
-  <data name="R7" xml:space="preserve">
-    <value>يمكن لحامل المشروع أن يحدث أي نشاط ذو جدوى و مردودية و يمكنه تحقيق مكانة في الأسواق، شريطة إثباته لقدرات تمكنه من التحكم في هذا الأخير.</value>
-  </data>
-  <data name="R8" xml:space="preserve">
-    <value>لا، إلا أن المسجلين في وكالة التشغيل يمكنه الإستفادة من الإعانات و الإمتيازات الممنوحة في إطار جهاز الوكالة بغرض إحداث أنشطة</value>
-  </data>
-  <data name="R9" xml:space="preserve">
-    <value>وضعت الوكالة إجراءات مبسطة و سهلة تراعي كل الفئات من حاملي المشاريع</value>
-  </data>
-  <data name="reponse" xml:space="preserve">
-    <value>نجيب على أكثر الأسئلة شيوعاً التي تم طرحها من قبل. إذا لم تجد إجابة لسؤالك هنا، فلا تتردد في التواصل معنا مباشرة</value>
-  </data>
-  <data name="responseNotFound" xml:space="preserve">
-    <value>لم تجد إجابة لسؤالك؟</value>
-  </data>
   <data name="ReunionConseilAdmin" xml:space="preserve">
     <value>يجتمع مجلس الإدارة في دورة عادية أربع مرات في السنة، على الأقل، بناء على استدعاء من رئيسه الذي يحدد جدول الأعمال بناء على اقتراح من المدير العام للوكالة. ويمكن أن يجتمع في دورة غير عادية بناء على استدعاء من رئيسه أو بطلب من السلطة الوصية أو المدير العام للوكالة أو أغلبية أعضائه.</value>
-  </data>
-  <data name="ServicesdigitauxDetail" xml:space="preserve">
-    <value>تقدم وكالة ناسدا مجموعة من الخدمات الرقمية المبتكرة التي تهدف إلى دعم المقاولاتية، وتسهيل مختلف الإجراءات الإدارية لفائدة الشباب</value>
   </data>
   <data name="SousTraitanceAvantage1,1" xml:space="preserve">
     <value>تقليل التكاليف ولاسيما النفقات الثابتة والاعباء الجبائية</value>
@@ -1156,15 +1168,6 @@
   </data>
   <data name="SousTraitanceSupportP2" xml:space="preserve">
     <value>كما تحرص الوكالة على الترويج لقدرات وإمكانات المؤسسات المصغرة في مجال المناولة بشتى اشكالها في مختلف المناسبات والفرص، من اجل ابرام الاتفاقيات وترجمتها الى الواقع للمساهمة في عجلة النمو الاقتصادي.</value>
-  </data>
-  <data name="TacheFG1" xml:space="preserve">
-    <value>الرهن الحيازي للتجهيزات، لفائدة البنك في الدرجة الأولى، و الوكالة الوطنية لدعم وتنمية المقاولاتية في الدرجة الثانية</value>
-  </data>
-  <data name="TacheFG2" xml:space="preserve">
-    <value>الرهن الحيازي للعتاد المتنقل</value>
-  </data>
-  <data name="TacheFG3" xml:space="preserve">
-    <value>تأمين شامل لكافة تجهيزات المشروع ضد مختلف الأخطار</value>
   </data>
   <data name="TaxDescription" xml:space="preserve">
     <value>يستفيد صاحب المشروع من امتيازات ضريبية خلال مرحلتي إنشاء المشروع وتوسيع طاقته الإنتاجية، مما يساهم في تخفيف الأعباء المالية وتشجيع الاستثمار في المشاريع الاقتصادية المختلفة.</value>
@@ -1265,7 +1268,7 @@
   <data name="EtapesInscription5P2" xml:space="preserve">
     <value>تأكيد التسجيل وانتظار الموافقة</value>
   </data>
-  <data name="Tawtin" xml:space="preserve">
-    <value>التوطين</value>
+  <data name="ElementFonctionnementFG3P2" xml:space="preserve">
+    <value>من الدين المتبقي (أصل + فوائد)</value>
   </data>
 </root>

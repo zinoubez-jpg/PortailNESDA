@@ -162,7 +162,7 @@
   <data name="ChoisiFichier" xml:space="preserve">
     <value>sélectionner fichiers ...</value>
   </data>
-  <data name="code" xml:space="preserve">
+  <data name="Code" xml:space="preserve">
     <value>الرمز</value>
   </data>
   <data name="Commitee" xml:space="preserve">
@@ -389,9 +389,6 @@
   </data>
   <data name="PosteId" xml:space="preserve">
     <value>Poste </value>
-  </data>
-  <data name="MotDG" xml:space="preserve">
-    <value>كلمة المدير العام</value>
   </data>
   <data name="PrenomAr" xml:space="preserve">
     <value>Prénom en Arab</value>
@@ -648,9 +645,6 @@
   <data name="SecteursActivite" xml:space="preserve">
     <value />
   </data>
-  <data name="Structure" xml:space="preserve">
-    <value>الوكالة</value>
-  </data>
   <data name="Tel" xml:space="preserve">
     <value />
   </data>
@@ -689,6 +683,30 @@
   </data>
   <data name="TypesSession" xml:space="preserve">
     <value />
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>تواصل معنا</value>
+  </data>
+  <data name="Principal" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+  <data name="bienvenue" xml:space="preserve">
+    <value>مرحبًا بكم في الموقع الرسمي للوكالة، فضاؤكم لمرافقة الأفكار وتحويلها إلى مشاريع ناجحة.</value>
+  </data>
+  <data name="frequente" xml:space="preserve">
+    <value>الشائعة</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>الأسئلة</value>
+  </data>
+  <data name="CentreComunication" xml:space="preserve">
+    <value>مركز الإتصالات</value>
+  </data>
+  <data name="MotDG" xml:space="preserve">
+    <value>كلمة المدير العام</value>
+  </data>
+  <data name="Structure" xml:space="preserve">
+    <value>الوكالة</value>
   </data>
   <data name="AgenceNesda" xml:space="preserve">
     <value>الوكالة الوطنية لدعم وتنمية المقاولاتية (NESDA)</value>
@@ -758,9 +776,6 @@
   </data>
   <data name="AvantageProgrammeTitre" xml:space="preserve">
     <value>مزايا البرنامج</value>
-  </data>
-  <data name="ContactUs" xml:space="preserve">
-    <value>تواصل معنا</value>
   </data>
   <data name="ContactUsNow" xml:space="preserve">
     <value>تواصل معنا الآن</value>
@@ -1302,7 +1317,7 @@
   <data name="ActiviteP1" xml:space="preserve">
     <value>إنشاء مؤسسة مصغرة</value>
   </data>
-  <data name="ActiviteP1Text" xml:space="preserve">
+  <data name="Elle comprend le soutien à la création de micro-entreprises au profit des jeunes porteurs de projets, à travers le financement, l’accompagnement administratif et technique, la mise à disposition de la formation nécessaire, ainsi que le suivi du projet depuis son lancement jusqu’au démarrage effectif de l’activité." xml:space="preserve">
     <value>يشمل دعم إنشاء المؤسسات المصغرة للشباب أصحاب المشاريع من خلال التمويل والمرافقة الإدارية والتقنية، مع توفير التكوين اللازم وضمان متابعة المشروع من البداية حتى بدء النشاط.</value>
   </data>
   <data name="ActiviteP2" xml:space="preserve">
@@ -1674,9 +1689,6 @@
   <data name="precedent" xml:space="preserve">
     <value>السابق</value>
   </data>
-  <data name="Principal" xml:space="preserve">
-    <value>الرئيسية</value>
-  </data>
   <data name="ProgCoopérations" xml:space="preserve">
     <value>برنامج التعاون</value>
   </data>
@@ -1760,9 +1772,6 @@
   </data>
   <data name="AfficherDoc" xml:space="preserve">
     <value>عرض الوثيقة</value>
-  </data>
-  <data name="bienvenue" xml:space="preserve">
-    <value>مرحبًا بكم في الموقع الرسمي للوكالة، فضاؤكم لمرافقة الأفكار وتحويلها إلى مشاريع ناجحة.</value>
   </data>
   <data name="callCenter" xml:space="preserve">
     <value>خلية الإتصال</value>
@@ -2293,19 +2302,13 @@
   <data name="legistaliveText" xml:space="preserve">
     <value>النصوص القانونية</value>
   </data>
-  <data name="frequente" xml:space="preserve">
-    <value>الشائعة</value>
-  </data>
-  <data name="question" xml:space="preserve">
-    <value>الأسئلة</value>
-  </data>
-  <data name="CentreComunication" xml:space="preserve">
-    <value>مركز الإتصالات</value>
-  </data>
   <data name="CommunicationCell" xml:space="preserve">
     <value>خلية الإتصال</value>
   </data>
   <data name="nomWilaya" xml:space="preserve">
     <value>اسم الولاية</value>
+  </data>
+  <data name="ActiviteP1Text" xml:space="preserve">
+    <value>يشمل دعم إنشاء المؤسسات المصغرة للشباب أصحاب المشاريع من خلال التمويل والمرافقة الإدارية والتقنية، مع توفير التكوين اللازم وضمان متابعة المشروع من البداية حتى بدء النشاط.</value>
   </data>
 </root>
