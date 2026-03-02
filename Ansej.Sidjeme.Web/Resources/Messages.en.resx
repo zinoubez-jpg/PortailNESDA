@@ -208,9 +208,6 @@ et Antennes Locales</value>
   <data name="Enligne" xml:space="preserve">
     <value>En ligne</value>
   </data>
-  <data name="Etapes" xml:space="preserve">
-    <value>Main stages</value>
-  </data>
   <data name="Evaluation" xml:space="preserve">
     <value>Assessment</value>
   </data>
@@ -401,6 +398,132 @@ The programme is a contribution to strengthening the role of local communities a
   <data name="askUs" xml:space="preserve">
     <value>Reach out to us directly—we’ll be glad to answer all your questions.</value>
   </data>
+  <data name="CentreComunicationD1" xml:space="preserve">
+    <value>Nasda’s call center provides a direct communication channel, and works to respond quickly to your concerns and guidance</value>
+  </data>
+  <data name="CentreComunicationD2" xml:space="preserve">
+    <value>Through this channel, we seek to enhance transparency and improve the user experience</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact Us Now – Our team is ready to serve you around the clock</value>
+  </data>
+  <data name="Q10" xml:space="preserve">
+    <value>Does NESDA provide support for projects that target innovation?</value>
+  </data>
+  <data name="Q11" xml:space="preserve">
+    <value>Can I create a project in a field where I don’t have a degree but have experience?</value>
+  </data>
+  <data name="Q12" xml:space="preserve">
+    <value>How long does the application review process take to obtain financing?</value>
+  </data>
+  <data name="Q13" xml:space="preserve">
+    <value>What should I do if my application for financing is rejected?</value>
+  </data>
+  <data name="Q14" xml:space="preserve">
+    <value>Does NESDA help in finding partners or investors?</value>
+  </data>
+  <data name="Q15" xml:space="preserve">
+    <value>What is the maximum amount of financing that can be obtained?</value>
+  </data>
+  <data name="Q16" xml:space="preserve">
+    <value>Can I repay the loan before the due date without penalties?</value>
+  </data>
+  <data name="Q17" xml:space="preserve">
+    <value>Does the agency provide opportunities to participate in trade fairs or economic events?</value>
+  </data>
+  <data name="Q5" xml:space="preserve">
+    <value>Is there a required period that must pass after the project’s establishment before applying for an expansion?</value>
+  </data>
+  <data name="Q6" xml:space="preserve">
+    <value>How can I track the progress of my application after submission?</value>
+  </data>
+  <data name="Q7" xml:space="preserve">
+    <value>Should the project idea be related to the field study or the training certificate?</value>
+  </data>
+  <data name="Q8" xml:space="preserve">
+    <value>Is registration with the National Employment Agency (ANEM) required to be eligible for support?</value>
+  </data>
+  <data name="Q9" xml:space="preserve">
+    <value>Can individuals with special needs benefit from special conditions?</value>
+  </data>
+  <data name="R10" xml:space="preserve">
+    <value>The agency aims to create projects that will cover the local market and encourage it to access global markets.</value>
+  </data>
+  <data name="R11" xml:space="preserve">
+    <value>The Algerian state has established several official bodies concerned with proving and validating acquired professional experience.</value>
+  </data>
+  <data name="R12" xml:space="preserve">
+    <value>A specific period cannot be determined, given that there are several criteria that vary depending on the financing method.</value>
+  </data>
+  <data name="R13" xml:space="preserve">
+    <value>Contact the officer responsible for your file to understand the procedures to follow based on the reason for the rejection.</value>
+  </data>
+  <data name="R14" xml:space="preserve">
+    <value>The project holder can benefit from projects within the framework of agreements concluded with various economic sectors.</value>
+  </data>
+  <data name="R15" xml:space="preserve">
+    <value>The total value of the project cannot exceed ten (10) million Algerian dinars.</value>
+  </data>
+  <data name="R16" xml:space="preserve">
+    <value>Yes, the project holder can pay the financial dues related to his project before the agreed deadlines.</value>
+  </data>
+  <data name="R17" xml:space="preserve">
+    <value>The agency works to encourage new projects and enterprises by promoting them through various events.</value>
+  </data>
+  <data name="R5" xml:space="preserve">
+    <value>One of the conditions for benefiting from project expansion is the submission of the enterprise’s annual reports for the past two years.</value>
+  </data>
+  <data name="R6" xml:space="preserve">
+    <value>Through the project holder's space which is dedicated to project holder to manage his information, monitor the progress of his project, and complete various procedures via the electronic platform.</value>
+  </data>
+  <data name="R7" xml:space="preserve">
+    <value>The project holder can pursue any viable and profitable activity with market potential, as long as they have the skills to manage it successfully.</value>
+  </data>
+  <data name="R8" xml:space="preserve">
+    <value>No. However, those registered with the employment agency can benefit from subsidies and privileges granted under the agency's mechanism to support the creation of activities.</value>
+  </data>
+  <data name="R9" xml:space="preserve">
+    <value>The agency has put in place simplified and easy procedures that take into account all categories of project holders.</value>
+  </data>
+  <data name="reponse" xml:space="preserve">
+    <value>We have answered the most common questions below. If you do not find the information you are looking for, please do not hesitate to contact us</value>
+  </data>
+  <data name="responseNotFound" xml:space="preserve">
+    <value>Didn’t you find an answer to your question?</value>
+  </data>
+  <data name="ServicesdigitauxDetail" xml:space="preserve">
+    <value>NESDA agency offers a range of innovative digital services designed to support entrepreneurship and facilitate various administrative procedures for youth</value>
+  </data>
+  <data name="Tawtin" xml:space="preserve">
+    <value>Al Tawteen</value>
+  </data>
+  <data name="Etapes" xml:space="preserve">
+    <value>Main stages</value>
+  </data>
+  <data name="FormationIntro" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency attaches great importance to the training phase, considering it the cornerstone in the process of the creation and development of micro-enterprises. This phase is part of a comprehensive approach aimed at enabling project holders to acquire the knowledge and skills necessary to transform their ideas into successful and sustainable real-world projects.</value>
+  </data>
+  <data name="FormationTitre" xml:space="preserve">
+    <value>Training programs are among the fundamental pillars upon which the National Entrepreneurship Support and Development Agency relies in supporting idea and project holders.</value>
+  </data>
+  <data name="DescriptionFG" xml:space="preserve">
+    <value>The Mutual Caution Fund to Guarantee Credits Risks of the Project Holders works to cover the risks associated with bank loans granted to micro-enterprises financed within the framework of the National Entrepreneurship Support and Development Agency. The fund constitutes a complementary guarantee for banks, in addition to the guarantees provided by micro-enterprises, which contributes to strengthening banks’ confidence in financing entrepreneurial projects.</value>
+  </data>
+  <data name="DescriptionTachesFG" xml:space="preserve">
+    <value>The guarantee fund is a tool for reducing the financial risks associated with financing micro-enterprises. It provides additional guarantees to banks, alongside those offered by the entrepreneurs themselves, which include:</value>
+  </data>
+  <data name="ElementParticipationFG1" xml:space="preserve">
+    <value>The micro-enterprise is enrolled after bank approval.</value>
+  </data>
+  <data name="TacheFG1" xml:space="preserve">
+    <value>	The equipment pledge is made first in favor of the bank, then in favor of the National Entrepreneurship Support and Development Agency.</value>
+  </data>
+  <data name="TacheFG2" xml:space="preserve">
+    <value>	Pledge of movable equipment.</value>
+  </data>
+  <data name="TacheFG3" xml:space="preserve">
+    <value>	Comprehensive insurance covering all project equipment against various risks.</value>
+  </data>
   <data name="Avantages_Plateforme_Numerique_01" xml:space="preserve">
     <value>The Digital Platform</value>
   </data>
@@ -518,12 +641,6 @@ The programme is a contribution to strengthening the role of local communities a
   <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Text_03" xml:space="preserve">
     <value>Registration at the level of entrepreneurship development centers (CDE) in the higher education and scientific research sector is exclusively online via the following link:</value>
   </data>
-  <data name="CentreComunicationD1" xml:space="preserve">
-    <value>Nasda’s call center provides a direct communication channel, and works to respond quickly to your concerns and guidance</value>
-  </data>
-  <data name="CentreComunicationD2" xml:space="preserve">
-    <value>Through this channel, we seek to enhance transparency and improve the user experience</value>
-  </data>
   <data name="ComiteSuivi" xml:space="preserve">
     <value>The Monitoring Committee is tasked with exercising post-implementation oversight of the Board of Directors’ decisions. It meets at the end of each quarter and provides useful observations and recommendations on the best ways to implement the programs and projects initiated by the agency.</value>
   </data>
@@ -568,9 +685,6 @@ The programme is a contribution to strengthening the role of local communities a
   </data>
   <data name="ConseilAdministration" xml:space="preserve">
     <value>The Board of Directors deliberates, in accordance with applicable laws and regulations, on the Agency’s activity program, estimated budget, the Agency’s organization and internal regulations, the annual plan for financing the Agency’s activities, as well as the use of financial means, the creation of annexes and the completion of investments.</value>
-  </data>
-  <data name="ContactUs" xml:space="preserve">
-    <value>Contact Us Now – Our team is ready to serve you around the clock</value>
   </data>
   <data name="Creation_Micro_Enterprise_Text" xml:space="preserve">
     <value>All young people with project ideas who have benefited from training at entrepreneurship development centers (CDE) for university students or vocational training institute graduates are eligible for new project funding.</value>
@@ -678,12 +792,6 @@ NESDA_Declaration.pdf</value>
   <data name="DescriptionAgenceP4" xml:space="preserve">
     <value>The agency intends to continue the dynamic development and transformation of its operational framework, aiming to enhance the "trust" of project holders and encourage the integration of micro and small enterprises into national value chains. The ultimate goal is to enable the agency to fully play its role as a catalyst for economic transformation in service of national development.</value>
   </data>
-  <data name="DescriptionFG" xml:space="preserve">
-    <value>The Mutual Caution Fund to Guarantee Credits Risks of the Project Holders works to cover the risks associated with bank loans granted to micro-enterprises financed within the framework of the National Entrepreneurship Support and Development Agency. The fund constitutes a complementary guarantee for banks, in addition to the guarantees provided by micro-enterprises, which contributes to strengthening banks’ confidence in financing entrepreneurial projects.</value>
-  </data>
-  <data name="DescriptionTachesFG" xml:space="preserve">
-    <value>The guarantee fund is a tool for reducing the financial risks associated with financing micro-enterprises. It provides additional guarantees to banks, alongside those offered by the entrepreneurs themselves, which include:</value>
-  </data>
   <data name="ElementFonctionnementFG1" xml:space="preserve">
     <value>The fund receives a formal request from the bank after declaring non-payment of three six-month installments.</value>
   </data>
@@ -698,9 +806,6 @@ NESDA_Declaration.pdf</value>
   </data>
   <data name="ElementFonctionnementFG5" xml:space="preserve">
     <value>The fund undertakes the tasks of accompanying and monitoring the micro-enterprise in difficulty after compensation, in order to restoring its activity and enable it to repay its financial obligations.</value>
-  </data>
-  <data name="ElementParticipationFG1" xml:space="preserve">
-    <value>The micro-enterprise is enrolled after bank approval.</value>
   </data>
   <data name="ElementParticipationFG2P1" xml:space="preserve">
     <value>The micro-enterprise's contribution rate to the fund is set at</value>
@@ -812,12 +917,6 @@ NESDA_Declaration.pdf</value>
   </data>
   <data name="FonctionnementFGDescription" xml:space="preserve">
     <value>The Mutual Caution Fund intervenes when a repayment default is recorded, according to a series of organized procedures as follows:</value>
-  </data>
-  <data name="FormationIntro" xml:space="preserve">
-    <value>The National Entrepreneurship Support and Development Agency attaches great importance to the training phase, considering it the cornerstone in the process of the creation and development of micro-enterprises. This phase is part of a comprehensive approach aimed at enabling project holders to acquire the knowledge and skills necessary to transform their ideas into successful and sustainable real-world projects.</value>
-  </data>
-  <data name="FormationTitre" xml:space="preserve">
-    <value>Training programs are among the fundamental pillars upon which the National Entrepreneurship Support and Development Agency relies in supporting idea and project holders.</value>
   </data>
   <data name="Impact70Desc" xml:space="preserve">
     <value>is a new program of the National Entrepreneurship Support and Development Agency, for micro-enterprises interested in local development.</value>
@@ -996,98 +1095,11 @@ NESDA_Declaration.pdf</value>
   <data name="ProgCoopérationsTitre3TextP5" xml:space="preserve">
     <value>The program operates under the auspices of the United Nations Development Program (UNDP) and the supervision of relevant ministerial sectors, where the Agency acts as a key partner, it contributes to accompanying the creation and expansion of microenterprise projects within the social and solidarity economy in line with the defined objectives.</value>
   </data>
-  <data name="Q10" xml:space="preserve">
-    <value>Does NESDA provide support for projects that target innovation?</value>
-  </data>
-  <data name="Q11" xml:space="preserve">
-    <value>Can I create a project in a field where I don’t have a degree but have experience?</value>
-  </data>
-  <data name="Q12" xml:space="preserve">
-    <value>How long does the application review process take to obtain financing?</value>
-  </data>
-  <data name="Q13" xml:space="preserve">
-    <value>What should I do if my application for financing is rejected?</value>
-  </data>
-  <data name="Q14" xml:space="preserve">
-    <value>Does NESDA help in finding partners or investors?</value>
-  </data>
-  <data name="Q15" xml:space="preserve">
-    <value>What is the maximum amount of financing that can be obtained?</value>
-  </data>
-  <data name="Q16" xml:space="preserve">
-    <value>Can I repay the loan before the due date without penalties?</value>
-  </data>
-  <data name="Q17" xml:space="preserve">
-    <value>Does the agency provide opportunities to participate in trade fairs or economic events?</value>
-  </data>
-  <data name="Q5" xml:space="preserve">
-    <value>Is there a required period that must pass after the project’s establishment before applying for an expansion?</value>
-  </data>
-  <data name="Q6" xml:space="preserve">
-    <value>How can I track the progress of my application after submission?</value>
-  </data>
-  <data name="Q7" xml:space="preserve">
-    <value>Should the project idea be related to the field study or the training certificate?</value>
-  </data>
-  <data name="Q8" xml:space="preserve">
-    <value>Is registration with the National Employment Agency (ANEM) required to be eligible for support?</value>
-  </data>
-  <data name="Q9" xml:space="preserve">
-    <value>Can individuals with special needs benefit from special conditions?</value>
-  </data>
   <data name="QuestionGenerale" xml:space="preserve">
     <value>Do you need more information?</value>
   </data>
-  <data name="R10" xml:space="preserve">
-    <value>The agency aims to create projects that will cover the local market and encourage it to access global markets.</value>
-  </data>
-  <data name="R11" xml:space="preserve">
-    <value>The Algerian state has established several official bodies concerned with proving and validating acquired professional experience.</value>
-  </data>
-  <data name="R12" xml:space="preserve">
-    <value>A specific period cannot be determined, given that there are several criteria that vary depending on the financing method.</value>
-  </data>
-  <data name="R13" xml:space="preserve">
-    <value>Contact the officer responsible for your file to understand the procedures to follow based on the reason for the rejection.</value>
-  </data>
-  <data name="R14" xml:space="preserve">
-    <value>The project holder can benefit from projects within the framework of agreements concluded with various economic sectors.</value>
-  </data>
-  <data name="R15" xml:space="preserve">
-    <value>The total value of the project cannot exceed ten (10) million Algerian dinars.</value>
-  </data>
-  <data name="R16" xml:space="preserve">
-    <value>Yes, the project holder can pay the financial dues related to his project before the agreed deadlines.</value>
-  </data>
-  <data name="R17" xml:space="preserve">
-    <value>The agency works to encourage new projects and enterprises by promoting them through various events.</value>
-  </data>
-  <data name="R5" xml:space="preserve">
-    <value>One of the conditions for benefiting from project expansion is the submission of the enterprise’s annual reports for the past two years.</value>
-  </data>
-  <data name="R6" xml:space="preserve">
-    <value>Through the project holder's space which is dedicated to project holder to manage his information, monitor the progress of his project, and complete various procedures via the electronic platform.</value>
-  </data>
-  <data name="R7" xml:space="preserve">
-    <value>The project holder can pursue any viable and profitable activity with market potential, as long as they have the skills to manage it successfully.</value>
-  </data>
-  <data name="R8" xml:space="preserve">
-    <value>No. However, those registered with the employment agency can benefit from subsidies and privileges granted under the agency's mechanism to support the creation of activities.</value>
-  </data>
-  <data name="R9" xml:space="preserve">
-    <value>The agency has put in place simplified and easy procedures that take into account all categories of project holders.</value>
-  </data>
-  <data name="reponse" xml:space="preserve">
-    <value>We have answered the most common questions below. If you do not find the information you are looking for, please do not hesitate to contact us</value>
-  </data>
-  <data name="responseNotFound" xml:space="preserve">
-    <value>Didn’t you find an answer to your question?</value>
-  </data>
   <data name="ReunionConseilAdmin" xml:space="preserve">
     <value>The Board of Directors meets in ordinary session at least four times a year, upon the summons of its Chairman, who sets the agenda based on a proposal from the Director General of the Agency. It may also meet in extraordinary session upon the summons of its Chairman, or at the request of the supervisory authority, the Director General of the Agency, or a majority of its members.</value>
-  </data>
-  <data name="ServicesdigitauxDetail" xml:space="preserve">
-    <value>NESDA agency offers a range of innovative digital services designed to support entrepreneurship and facilitate various administrative procedures for youth</value>
   </data>
   <data name="SousTraitanceAvantage1,1" xml:space="preserve">
     <value>Reducing costs, especially fixed expenses and tax burdens</value>
@@ -1148,15 +1160,6 @@ NESDA_Declaration.pdf</value>
   </data>
   <data name="SousTraitanceSupportP2" xml:space="preserve">
     <value>The Agency also strives to promote the capacities and potential of micro-enterprises in various forms of subcontracting on different occasions and opportunities, with the aim of concluding agreements and translating them into concrete actions that contribute to driving economic growth.</value>
-  </data>
-  <data name="TacheFG1" xml:space="preserve">
-    <value>	The equipment pledge is made first in favor of the bank, then in favor of the National Entrepreneurship Support and Development Agency.</value>
-  </data>
-  <data name="TacheFG2" xml:space="preserve">
-    <value>	Pledge of movable equipment.</value>
-  </data>
-  <data name="TacheFG3" xml:space="preserve">
-    <value>	Comprehensive insurance covering all project equipment against various risks.</value>
   </data>
   <data name="TaxDescription" xml:space="preserve">
     <value>The project owner benefits from tax privileges during the phases of establishing the project and expanding its production capacity, which helps reduce financial burdens and encourages investment in various economic projects.</value>
@@ -1257,9 +1260,6 @@ NESDA_Declaration.pdf</value>
   <data name="EtapesInscription5P2" xml:space="preserve">
     <value>Confirm registration and wait for approval.</value>
   </data>
-  <data name="Tawtin" xml:space="preserve">
-    <value>Al Tawteen</value>
-  </data>
   <data name="AgenceNationaledAppui" xml:space="preserve">
     <value>Agence Nationale d'Appui</value>
   </data>
@@ -1271,5 +1271,8 @@ NESDA_Declaration.pdf</value>
   </data>
   <data name="etdeDéveloppement" xml:space="preserve">
     <value>et de Développement</value>
+  </data>
+  <data name="ElementFonctionnementFG3P2" xml:space="preserve">
+    <value> of the remaining debt (principal + interest).</value>
   </data>
 </root>
