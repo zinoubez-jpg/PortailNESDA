@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ACCOMPAGNEMENT" xml:space="preserve">
-    <value>L’accompagnement</value>
+    <value>Accompagnement</value>
   </data>
   <data name="ACCOMPAGNEMENTDETAILS" xml:space="preserve">
     <value> L’Agence veille à accompagner les porteurs d’idées et de projets d’investissement dans les micro-entreprises à toutes les étapes, de l’émergence de l’idée entrepreneuriale au démarrage de l’activité de la micro-entreprise, et même au-delà.</value>
@@ -223,7 +223,7 @@ Elle est chargée de gérer un dispositif fondé sur une approche économique, v
     <value>Fonds de Garantie</value>
   </data>
   <data name="Financement" xml:space="preserve">
-    <value>Le financement</value>
+    <value>FINANCEMENT</value>
   </data>
   <data name="FinancementAlloue" xml:space="preserve">
     <value>Financement alloué aux Microentreprises</value>
@@ -307,7 +307,7 @@ Le programme contribue également au renforcement du rôle des collectivités lo
     <value>NESDA</value>
   </data>
   <data name="NesdaExtension" xml:space="preserve">
-    <value>Nesda Extension</value>
+    <value> Extension NESDA</value>
   </data>
   <data name="NesdaNomination" xml:space="preserve">
     <value>Agence Nationale d'Appui et de Développement de l'Entreprenariat</value>
@@ -343,7 +343,7 @@ Le programme contribue également au renforcement du rôle des collectivités lo
     <value>Politique</value>
   </data>
   <data name="Principal" xml:space="preserve">
-    <value>Principal</value>
+    <value> Accueil</value>
   </data>
   <data name="Professionslibérales" xml:space="preserve">
     <value>Professions libérales</value>
@@ -352,7 +352,7 @@ Le programme contribue également au renforcement du rôle des collectivités lo
     <value>Projets Microentreprises Financés</value>
   </data>
   <data name="Q1" xml:space="preserve">
-    <value>Puis-je créer une entreprise uniquement dans ma wilaya de résidence ou dans n’importe quelle wilaya ?</value>
+    <value>1. Puis-je créer une entreprise uniquement dans ma wilaya de résidence ou dans n’importe quelle wilaya ?</value>
   </data>
   <data name="Q2" xml:space="preserve">
     <value> Quels secteurs et activités sont éligibles au financement de NESDA ?</value>
@@ -509,5 +509,302 @@ Le programme contribue également au renforcement du rôle des collectivités lo
   </data>
   <data name="Etapes" xml:space="preserve">
     <value>Principales étapes</value>
+  </data>
+  <data name="FormationIntro" xml:space="preserve">
+    <value>L’Agence Nationale d’Appui et de Développement de l’Entrepreneuriat accorde une importance primordiale à la phase de formation, qu’elle considère comme le pilier fondamental du processus de création et de développement des micro-entreprises. Cette étape s’inscrit dans une approche holistique visant à doter les porteurs de projets des connaissances et des compétences nécessaires pour transformer leurs idées en projets concrets, performants et durables.</value>
+  </data>
+  <data name="FormationTitre" xml:space="preserve">
+    <value>Les programmes de formation constituent l’un des principaux leviers sur lesquels s’appuie l’Agence Nationale d’Appui et de Développement de l’Entrepreneuriat pour accompagner les porteurs d’idées et de projets.</value>
+  </data>
+  <data name="DescriptionFG" xml:space="preserve">
+    <value>Le fonds de caution mutuelle de garantie risques/crédits accordés aux porteurs de projets veille à assurer la couverture des risques liés aux crédits bancaires octroyés au profit des micro-entreprises financées dans le cadre du dispositif de l’Agence Nationale d’Appui et de Développement de l’Entrepreneuriat.
+Il constitue une garantie complémentaire au profit des banques, en plus des garanties fournies par les micro-entreprises, contribuant ainsi à renforcer la confiance des banques dans le financement des projets entrepreneuriaux.
+</value>
+  </data>
+  <data name="DescriptionTachesFG" xml:space="preserve">
+    <value>Le Fonds de garantie est un outil permettant de réduire les risques financiers inhérents au financement des micro-entreprises. Il offre aux banques une garantie supplémentaire, en complément des garanties fournies par les entrepreneurs eux-mêmes, lesquelles comprennent notamment :</value>
+  </data>
+  <data name="ElementParticipationFG1" xml:space="preserve">
+    <value> L’adhésion de la micro-entreprise au Fonds de garantie intervient après la notification de l’accord bancaire.</value>
+  </data>
+  <data name="TacheFG1" xml:space="preserve">
+    <value>Le nantissement des équipements, au profit de la banque au premier rang et au profit de l’Agence nationale d’appui et de développement de l’entrepreneuriat au deuxième rang ;</value>
+  </data>
+  <data name="TacheFG2" xml:space="preserve">
+    <value>Le gage du matériel roulant </value>
+  </data>
+  <data name="TacheFG3" xml:space="preserve">
+    <value>une assurance multirisque couvrant l’ensemble des équipements du projet.</value>
+  </data>
+  <data name="decrets1,1" xml:space="preserve">
+    <value>Décret présidentiel n°96-234 du 16 Safar 1417 correspondant au 2 juillet 1996 relatif au soutien à l’emploi des jeunes.  </value>
+  </data>
+  <data name="decrets1,2" xml:space="preserve">
+    <value>Décret exécutif n°96-296 du 24 Rabie Ethani 1417 correspondant au 8 septembre 1996 portant création et fixant les statuts de l’agence nationale d’appui et de développement d’entrepreneuriat</value>
+  </data>
+  <data name="decrets1,3" xml:space="preserve">
+    <value>Décret exécutif n° 03-290 du 9 Rajab 1424 correspondant au 6 septembre 2003, fixant les conditions et le niveau d’aide apportée aux porteurs de projets.</value>
+  </data>
+  <data name="decrets2,1" xml:space="preserve">
+    <value> Décret présidentiel n°03-300 du 14 Rajab 1424 correspondant au 11 septembre 2003 relatif au soutien à l’emploi des jeunes.  </value>
+  </data>
+  <data name="decrets2,2" xml:space="preserve">
+    <value>Décret exécutif n°98-231 du 19 Rabie El Aouel 1419 correspondant au 13 juillet 1998 portant création et fixant les statuts de l’agence nationale d’appui et de développement d’entrepreneuriat. </value>
+  </data>
+  <data name="decrets2,3" xml:space="preserve">
+    <value>Décret exécutif n° 10-157 du 7 Rajab 1431 correspondant au 20 juin 2010, fixant les conditions et le niveau d’aide apportée aux porteurs de projets.</value>
+  </data>
+  <data name="decrets3,1" xml:space="preserve">
+    <value> Décret présidentiel n°11-100 du Aouel Rabie Ethani 1432 correspondant au 6 mars 2011 relatif au soutien à l’emploi des jeunes.  </value>
+  </data>
+  <data name="decrets3,2" xml:space="preserve">
+    <value>Décret exécutif n°01-162 du 18 Rabie Ethani 1422 correspondant au 10 juillet 2001 portant création et fixant les statuts de l’agence nationale d’appui et de développement d’entrepreneuriat. </value>
+  </data>
+  <data name="decrets4,1" xml:space="preserve">
+    <value>Décret présidentiel n°20-441 du 15 Joumada El Oula 1442 correspondant au 20 décembre 2020 relatif au soutien à l’emploi des jeunes.  </value>
+  </data>
+  <data name="decrets4,2" xml:space="preserve">
+    <value>Décret exécutif n° 03-288 du 9 Rajab 1424 correspondant au 6 septembre 2003, portant création et fixant les statuts de l’agence nationale d’appui et de développement d’entrepreneuriat</value>
+  </data>
+  <data name="decrets5,1" xml:space="preserve">
+    <value> Décret présidentiel n°22-42 du 16 Joumada Ethania 1443 correspondant au 19 janvier 2022 relatif au soutien à l’emploi des jeunes.  </value>
+  </data>
+  <data name="decrets5,2" xml:space="preserve">
+    <value>Décret exécutif n° 11-102 du 1er Rabie El Thani 1432 correspondant au 6 mars 2011, portant création et fixant les statuts de l’agence nationale d’appui et de développement d’entrepreneuriat. </value>
+  </data>
+  <data name="decrets6,2" xml:space="preserve">
+    <value>Décret exécutif n° 18-201 du 20 Dhou El Kaâda 1439 correspondant au 2 août 2018, portant création et fixant les statuts de l’agence nationale d’appui et de développement d’entrepreneuriat. </value>
+  </data>
+  <data name="decrets7,2" xml:space="preserve">
+    <value>Décret exécutif n° 20-329 du 6 Rabie El Thani 1442 correspondant au 22 novembre 2020, portant création et fixant les statuts de l’agence nationale d’appui et de développement d’entrepreneuriat. </value>
+  </data>
+  <data name="decrets8,2" xml:space="preserve">
+    <value>Décret exécutif n° 23-330 du 1er Rabie El Aouel 1445 correspondant au 17 septembre 2023, portant création et fixant les statuts de l’agence nationale d’appui et de développement d’entrepreneuriat. </value>
+  </data>
+  <data name="decrets9,2" xml:space="preserve">
+    <value>Décret exécutif n° 24-197 du 5 Dhou El Hidja 1445 correspondant au 11 juin 2024, portant création et fixant les statuts de l’agence nationale d’appui et de développement d’entrepreneuriat. </value>
+  </data>
+  <data name="decretsAnnule1" xml:space="preserve">
+    <value>Décret exécutif n° 96-297 du 24 Rabie El Thani 1417 correspondant au 8 septembre 1996, fixant les conditions et le niveau d’aide apportée aux porteurs de projets.</value>
+  </data>
+  <data name="ElementFonctionnementFG1" xml:space="preserve">
+    <value> Le Fonds reçoit une demande officielle de la banque après la déclaration du non-paiement de trois échéances semestrielles.</value>
+  </data>
+  <data name="ElementFonctionnementFG2" xml:space="preserve">
+    <value>Le Fonds effectue une visite sur le terrain afin de vérifier la situation de la micro-entreprise et d’évaluer son incapacité de remboursement.</value>
+  </data>
+  <data name="ElementFonctionnementFG3P1" xml:space="preserve">
+    <value> La banque est indemnisée à hauteur de </value>
+  </data>
+  <data name="ElementFonctionnementFG4" xml:space="preserve">
+    <value>Après indemnisation, la banque cède les droits sur la créance restante au profit du Fonds.</value>
+  </data>
+  <data name="ElementFonctionnementFG5" xml:space="preserve">
+    <value>Le Fonds se charge d’accompagner et de suivre la micro-entreprise en difficulté après indemnisation, en vue de relancer son activité et de lui permettre de s’acquitter de ses engagements financiers.</value>
+  </data>
+  <data name="ElementParticipationFG2P1" xml:space="preserve">
+    <value> Le montant de la cotisation de la micro-entreprise au Fonds est fixé à hauteur de </value>
+  </data>
+  <data name="ElementParticipationFG2P2" xml:space="preserve">
+    <value>par an, calculé sur la base du montant du crédit bancaire, et payable en une seule fois.</value>
+  </data>
+  <data name="ElementParticipationFG3P1" xml:space="preserve">
+    <value> Le taux de cotisation des banques est fixé à </value>
+  </data>
+  <data name="ElementParticipationFG3P2" xml:space="preserve">
+    <value>par an, calculée sur les créances restantes du crédit.</value>
+  </data>
+  <data name="ElementParticipationFG4" xml:space="preserve">
+    <value> En cas de défaillance de paiement (trois échéances semestrielles impayées) :</value>
+  </data>
+  <data name="ElementParticipationFG4,1" xml:space="preserve">
+    <value>Le Fonds effectue une visite sur le terrain ;</value>
+  </data>
+  <data name="ElementParticipationFG4,2P1" xml:space="preserve">
+    <value> Il indemnise la banque à hauteur de </value>
+  </data>
+  <data name="ElementParticipationFG4,2P2" xml:space="preserve">
+    <value>du montant restant dû ;</value>
+  </data>
+  <data name="ElementParticipationFG4,3" xml:space="preserve">
+    <value>Il assure le suivi de la micro-entreprise en difficulté</value>
+  </data>
+  <data name="FonctionnementFGDescription" xml:space="preserve">
+    <value>Le fonds de caution mutuelle de garantie intervient en cas de défaut de paiement, selon une série de procédures réglementées, comme suit :</value>
+  </data>
+  <data name="InfoGenerale" xml:space="preserve">
+    <value>Contactez-nous pour obtenir davantage de détails sur le Fonds de garantie et découvrir comment bénéficier de ses services.</value>
+  </data>
+  <data name="InfoTextJuridique" xml:space="preserve">
+    <value>Contactez-nous pour obtenir une assistance ou un conseil juridique concernant ces textes.</value>
+  </data>
+  <data name="QuestionGenerale" xml:space="preserve">
+    <value>Avez-vous besoin de plus d’informations ?</value>
+  </data>
+  <data name="TaxDescription" xml:space="preserve">
+    <value>Le porteur de projet bénéficie d’avantages fiscaux pendant les phases de création et d’extension de sa capacité de production, ce qui contribue à réduire les charges financières et à encourager l’investissement dans divers projets économiques.</value>
+  </data>
+  <data name="TaxPhase1,1" xml:space="preserve">
+    <value>Exemption du droit de mutation à titre onéreux pour les acquisitions immobilières effectuées dans le cadre de la création d'une activité industrielle.</value>
+  </data>
+  <data name="TaxPhase1,2" xml:space="preserve">
+    <value>Franchise de la taxe sur la valeur ajoutée (TVA) pour les acquisitions d’équipements et services entrant directement dans la réalisation de l’investissement de création et d’extension, pour les activités relevant du régime fiscal réel (Les véhicules de tourisme ne sont concernés par cette disposition que lorsqu’ils représentent l’outil principal de l’activité).</value>
+  </data>
+  <data name="TaxPhase1,3" xml:space="preserve">
+    <value>Application d’un taux réduit de 5% en matière des droits de douanes relatifs aux équipements importés et entrant directement dans la réalisation de l’investissement.</value>
+  </data>
+  <data name="TaxPhase2,1" xml:space="preserve">
+    <value> Exonération de la taxe foncière sur les constructions et additions de constructions pour une durée de trois (3) ans, six (6) ans ou dix (10) ans, selon l’emplacement du projet, à compter de la date de leur achèvement.</value>
+  </data>
+  <data name="TaxPhase2,2" xml:space="preserve">
+    <value>Exonération de l’impôt forfaitaire unique (IFU), ou selon le cas, (de l’impôt sur le revenu global (IRG) ou de l’impôt sur les bénéfices des sociétés (IBS)) pour une durée de trois (3) ans, six (6) ans ou dix (10) ans, selon la localisation du projet, à compter de la mise en exploitation.</value>
+  </data>
+  <data name="TaxPhase2,3" xml:space="preserve">
+    <value>À l’issue de la période d’exonération mentionnée au point précédent, celle-ci peut être prolongée de deux (02) années, lorsque l’investisseur s’engage à recruter au moins trois (03) employés à durée indéterminée.</value>
+  </data>
+  <data name="TaxWarningMsg" xml:space="preserve">
+    <value>Le non-respect de l’engagement relatif à la création d’emplois entraîne le retrait des avantages accordés et le rappel des droits et taxes qui auraient dû être acquittés.</value>
+  </data>
+  <data name="TextJuridiqueDescription" xml:space="preserve">
+    <value>Un recueil complet de textes juridiques relatifs à l’Agence et à son dispositif, disponible pour consultation et téléchargement.</value>
+  </data>
+  <data name="ElementFonctionnementFG3P2" xml:space="preserve">
+    <value>de la créance restante (principal + intérêts).</value>
+  </data>
+  <data name="AvantageProgramme1,1" xml:space="preserve">
+    <value> Financement des projets pouvant atteindre </value>
+  </data>
+  <data name="AvantageProgramme1,2" xml:space="preserve">
+    <value>10 000 000 DA</value>
+  </data>
+  <data name="AvantageProgramme2,1" xml:space="preserve">
+    <value>Formation en entrepreneuriat d’une durée de </value>
+  </data>
+  <data name="AvantageProgramme2,2" xml:space="preserve">
+    <value>5 jours </value>
+  </data>
+  <data name="AvantageProgramme2,3" xml:space="preserve">
+    <value>au niveau de l’Agence.</value>
+  </data>
+  <data name="AvantageProgramme3" xml:space="preserve">
+    <value> Formules de financement conjointe mixte entre le promoteur du projet et l’Agence et triangulaire entre le promoteur du projet, l’Agence et la Banque.</value>
+  </data>
+  <data name="AvantageProgramme4,1" xml:space="preserve">
+    <value> Prêts à taux d’intérêt bonifiés à </value>
+  </data>
+  <data name="AvantageProgramme4,2" xml:space="preserve">
+    <value>100 %</value>
+  </data>
+  <data name="AvantageProgramme5" xml:space="preserve">
+    <value>Durée de remboursement des prêts attractive</value>
+  </data>
+  <data name="AvantageProgramme6" xml:space="preserve">
+    <value>Avantages fiscaux selon les conditions prévues par la législation fiscale en vigueur.</value>
+  </data>
+  <data name="Conditionbeneficier1,1,1" xml:space="preserve">
+    <value> Ne pas avoir radié le registre de commerce, la carte d’artisan, l’autorisation.</value>
+  </data>
+  <data name="Conditionbeneficier1,1,2" xml:space="preserve">
+    <value> Être à jour par rapport à l’échéancier de remboursement (crédit bancaire et PNR), sans retard excédant cinq (5) ans.</value>
+  </data>
+  <data name="Conditionbeneficier1,1,3" xml:space="preserve">
+    <value> Avoir remboursé la totalité du crédit bancaire et/ou le prêt non rémunéré, selon le cas (financement mixte, triangulaire ou changement de banque)</value>
+  </data>
+  <data name="Conditionbeneficier1,1,4" xml:space="preserve">
+    <value> Disposer de la totalité des équipements nécessaires à l’activité, acquis lors de la (phase de création) ou remplacés durant l’exploitation, en cas de remboursement total du crédit bancaire et du prêt non rémunéré.</value>
+  </data>
+  <data name="ConditionbeneficierCommun1" xml:space="preserve">
+    <value>Être âgé de 20 à 58 ans </value>
+  </data>
+  <data name="ConditionbeneficierCommun2" xml:space="preserve">
+    <value> Être en activité durant les deux dernières années dûment justifiée (bilans comptables, déclarations fiscales G12, C20).</value>
+  </data>
+  <data name="ConditionBeneficierDesc" xml:space="preserve">
+    <value>Pour bénéficier des avantages du dispositif de l’Agence en matière d’extension d’activité, le promoteur doit remplir les conditions suivantes :</value>
+  </data>
+  <data name="EnvironementProgrammeParag1" xml:space="preserve">
+    <value>Ce programme vise à renforcer l’extension des activités des micro-entreprise et à leur offrir davantage d’opportunités de développement et de réussite, dans le cadre des efforts de réforme du dispositif de l’Agence, en tenant compte des critères de formation en entrepreneuriat et de maîtrise des risques liés au financement de l’activité.</value>
+  </data>
+  <data name="EnvironementProgrammeParag2" xml:space="preserve">
+    <value>Le programme est destiné aux chefs de micro-entreprises, qu’ils aient ou non bénéficié auparavant du soutien du dispositif de l’Agence lors de la phase de création. Il concerne également les bénéficiaires du dispositif de l’Agence nationale de gestion du microcrédit (ANGEM) ou du dispositif de la Caisse nationale d’assurance chômage (CNAC), ainsi que les agriculteurs, les artisans, et les détenteurs d’autorisations et/ou d’un registre de commerce.</value>
+  </data>
+  <data name="EnvironementProgrammeParag3" xml:space="preserve">
+    <value>L’extension de l’activité couvre l’ensemble des secteurs économiques et comprend :</value>
+  </data>
+  <data name="EnvironementProgrammeParag3P1" xml:space="preserve">
+    <value> Le développement d’une activité principale ou le lancement d’une activité secondaire : nouvelle ligne de production, nouvelle machine, nouveau produit complémentaire ou lié à l’activité principale.</value>
+  </data>
+  <data name="EnvironementProgrammeParag3P2" xml:space="preserve">
+    <value>Lancement d’une nouvelle activité :
+à travers la diversification d’une activité principale et la découverte d’autres domaines d’activité.</value>
+  </data>
+  <data name="NesdaExtensionDescription" xml:space="preserve">
+    <value>Le programme d’extension d’activité « NESDA EXTENSION » est un programme spécial de l’Agence nationale d’appui et de développement de l’entrepreneuriat (NESDA), destiné aux micro-entreprises souhaitant élargir leurs activités.</value>
+  </data>
+  <data name="AvantageProgramme4,3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Conditionbeneficier1,2,1" xml:space="preserve">
+    <value>Avoir une qualification (le gérant, l’associé ou l’employé) dans le domaine sollicité à l’extension ;</value>
+  </data>
+  <data name="Conditionbeneficier1,2,2" xml:space="preserve">
+    <value>Avoir remboursé la totalité du crédit bancaire et/ou du PNR accordé au titre de la création de l’activité ;</value>
+  </data>
+  <data name="Conditionbeneficier1,2,3" xml:space="preserve">
+    <value>Être en activité dans l’activité initiale ou une autre activité (changement d’activité sans radiation du registre de commerce, de la carte d’artisan ou de l’autorisation) créée dans le cadre du dispositif.</value>
+  </data>
+  <data name="Conditionbeneficier2,1" xml:space="preserve">
+    <value>Ne pas avoir bénéficié des aides et avantages de l’extension auprès de l’un des dispositifs d’aide publics (ANGEM (Agence nationale de gestion de microcrédit) ou CNAC (Caisse nationale d’assurances chômage)).</value>
+  </data>
+  <data name="Conditionbeneficier2,2" xml:space="preserve">
+    <value>Ne pas avoir bénéficié des aides et avantages de création d’activité dans le cadre de l’AAPI (Agence algérienne de promotion de l’investissement).</value>
+  </data>
+  <data name="Conditionbeneficier2,3" xml:space="preserve">
+    <value>Qualification en relation avec l’activité objet de l’extension (du gérant, de l’associé ou d’un employé).</value>
+  </data>
+  <data name="EtapesBeneficier1" xml:space="preserve">
+    <value>Inscription électronique via la plateforme numérique dédiée au dispositif de l’Agence. </value>
+  </data>
+  <data name="EtapesBeneficier2" xml:space="preserve">
+    <value>Évaluation du projet d’extension par les services de l’Agence selon le système d’évaluation des risques (scoring), sur la base des critères suivants : </value>
+  </data>
+  <data name="EtapesBeneficier2,1" xml:space="preserve">
+    <value> La viabilité du projet ;</value>
+  </data>
+  <data name="EtapesBeneficier2,2" xml:space="preserve">
+    <value> L’efficacité et le financement</value>
+  </data>
+  <data name="EtapesBeneficier2,3" xml:space="preserve">
+    <value>c. L’orientation du porteur de projet vers la formation lorsque sa note d’évaluation dépasse </value>
+  </data>
+  <data name="EtapesBeneficier3P1" xml:space="preserve">
+    <value> Organisation d’une formation spécifique de </value>
+  </data>
+  <data name="EtapesBeneficier3P2" xml:space="preserve">
+    <value>5 jours </value>
+  </data>
+  <data name="EtapesBeneficier3P3" xml:space="preserve">
+    <value>sur les compétences et les bases de la gestion, au niveau de l’Agence.</value>
+  </data>
+  <data name="EtapesBeneficier4" xml:space="preserve">
+    <value> Présentation du projet d’extension par son porteur devant la commission de sélection, de validation et de financement des projets d’investissement au niveau de la wilaya.</value>
+  </data>
+  <data name="EtapesBeneficier5" xml:space="preserve">
+    <value> Délivrance, par les services de l’Agence de l’attestation d’éligibilité et de financement au porteur de projet, en cas d’approbation par la commission, et le lancement des démarches administratives relatives à l’extension de l’activité, selon le cas, auprès :</value>
+  </data>
+  <data name="EtapesBeneficier5,1" xml:space="preserve">
+    <value>Des différentes administrations concernées (impôts, sécurité sociale) </value>
+  </data>
+  <data name="EtapesBeneficier5,2" xml:space="preserve">
+    <value>Des fournisseurs (local, équipements).</value>
+  </data>
+  <data name="EtapesBeneficier6" xml:space="preserve">
+    <value> Démarrage de la nouvelle activité après l’accomplissement de l’ensemble des démarches, en coordination avec les services de l’Agence</value>
+  </data>
+  <data name="EtapesBeneficierdESC" xml:space="preserve">
+    <value>Les étapes pour bénéficier de l’extension d’activité dans le cadre du dispositif de l’Agence comprennent ce qui suit :</value>
+  </data>
+  <data name="InfoProgrammeExtension" xml:space="preserve">
+    <value>Contactez-nous pour obtenir davantage de détails sur le programme d’extension d’activité et les modalités de bénéficier de ses services.</value>
   </data>
 </root>

@@ -691,7 +691,10 @@
     <value />
   </data>
   <data name="ContactUs" xml:space="preserve">
-    <value>Contactez-nous</value>
+    <value>Prenez contact avec nous</value>
+  </data>
+  <data name="Principal" xml:space="preserve">
+    <value> </value>
   </data>
   <data name="bienvenue" xml:space="preserve">
     <value>Bienvenue sur le site officiel de l’Agence, votre espace d’accompagnement pour transformer vos idées en projets réussis.</value>
@@ -704,5 +707,611 @@
   </data>
   <data name="CentreComunication" xml:space="preserve">
     <value>Centre de contact </value>
+  </data>
+  <data name="Accompagnement" xml:space="preserve">
+    <value>Accompagnement en amont et en aval de la création de projet</value>
+  </data>
+  <data name="AccompagnementTitre1" xml:space="preserve">
+    <value>Un accompagnement intégral pour la réussite de votre projet</value>
+  </data>
+  <data name="AccompagnementTitre1Text" xml:space="preserve">
+    <value>
+L’Agence Nationale d’Appui et de Développement de l’Entrepreneuriat vous accompagne à toutes les étapes de votre projet, de l’émergence de l’idée jusqu’à la stabilité de l’entreprise.
+Que vous soyez à la recherche d’idées de projets ou en quête de financement, nous sommes à vos côtés pour vous apporter l’appui nécessaire à travers un accompagnement spécialisé et intégral.
+</value>
+  </data>
+  <data name="AccompagnementTitre1TextP1" xml:space="preserve">
+    <value>Accompagnement de l’idée à la concrétisation</value>
+  </data>
+  <data name="AccompagnementTitre1TextP2" xml:space="preserve">
+    <value>Soutien spécialisé et continu</value>
+  </data>
+  <data name="AccompagnementTitre1TextP3" xml:space="preserve">
+    <value>Suivi de la croissance et de la pérennité du projet</value>
+  </data>
+  <data name="AccompagnementTitre2" xml:space="preserve">
+    <value>Les étapes de l’accompagnement intégral</value>
+  </data>
+  <data name="AccompagnementTitre2SousTitre1" xml:space="preserve">
+    <value>Phase de préparation</value>
+  </data>
+  <data name="AccompagnementTitre2SousTitre2" xml:space="preserve">
+    <value>Après la création</value>
+  </data>
+  <data name="AccompagnementTitre2Text" xml:space="preserve">
+    <value>Nous vous soutenons à chaque étape de votre projet à travers un accompagnement spécialisé et étudié.</value>
+  </data>
+  <data name="AccompCreaText" xml:space="preserve">
+    <value>L’accompagnement de l’Agence ne s’arrête pas à la création de l’entreprise , nous poursuivons notre soutien afin d’assurer la pérennité et l’extension du projet.</value>
+  </data>
+  <data name="AccompCreaTextP1" xml:space="preserve">
+    <value>Visites de terrain périodiques</value>
+  </data>
+  <data name="AccompCreaTextP2" xml:space="preserve">
+    <value>Aide à la résolution des difficultés</value>
+  </data>
+  <data name="AccompCreaTextP3" xml:space="preserve">
+    <value>Soutien à l’extension et au financement supplémentaire</value>
+  </data>
+  <data name="AccompCreaTextP4" xml:space="preserve">
+    <value> Encouragement de l’initiative et de l’innovation</value>
+  </data>
+  <data name="AccompCreaTitre" xml:space="preserve">
+    <value>Accompagnement post-création</value>
+  </data>
+  <data name="AccompPrepText" xml:space="preserve">
+    <value>Nous accordons une importance particulière à l’accompagnement des porteurs d’idées de projets avant la phase de création, afin de transformer les ambitions en entreprises effectives reposant sur des bases solides</value>
+  </data>
+  <data name="AccompPrepTextP1" xml:space="preserve">
+    <value> Sensibilisation à l’esprit entrepreneurial</value>
+  </data>
+  <data name="AccompPrepTextP2" xml:space="preserve">
+    <value>Accueil et orientation spécialisés</value>
+  </data>
+  <data name="AccompPrepTextP3" xml:space="preserve">
+    <value>Sessions de formation courtes </value>
+  </data>
+  <data name="AccompPrepTextP4" xml:space="preserve">
+    <value>nitiation à la comptabilité et au marketing</value>
+  </data>
+  <data name="AccompPrepTitre" xml:space="preserve">
+    <value>Accompagnement lors de la phase de préparation et d’encadrement</value>
+  </data>
+  <data name="FormationIntroP1" xml:space="preserve">
+    <value>
+Programmes de formation spécialisés et intégrés.
+</value>
+  </data>
+  <data name="FormationIntroP2" xml:space="preserve">
+    <value> Formateurs agréés par l’Organisation Internationale du Travail (OIT)</value>
+  </data>
+  <data name="FormationIntroP3" xml:space="preserve">
+    <value> Transformation des idées en projets performants.</value>
+  </data>
+  <data name="FormationSousTitre1" xml:space="preserve">
+    <value>Organisation Internationale du Travail (OIT)</value>
+  </data>
+  <data name="FormationSousTitre1Text" xml:space="preserve">
+    <value>Des programmes de formation certifiés par l’Organisation Internationale du Travail, visant à développer les compétences entrepreneuriales et la gestion des micro-entreprises.</value>
+  </data>
+  <data name="FormationSousTitre1TextP1" xml:space="preserve">
+    <value> Session « Trouvez votre idée de projet » – 3 jours
+</value>
+  </data>
+  <data name="FormationSousTitre1TextP2" xml:space="preserve">
+    <value>Session « Lancez et améliorez votre projet » – 7 jours</value>
+  </data>
+  <data name="FormationSousTitre1TextP3" xml:space="preserve">
+    <value> Plus de 107 formateurs agréés</value>
+  </data>
+  <data name="FormationSousTitre1TextP4" xml:space="preserve">
+    <value>Suivi post-formation</value>
+  </data>
+  <data name="FormationSousTitre1Titre" xml:space="preserve">
+    <value>Sessions selon les programmes de l’OIT </value>
+  </data>
+  <data name="FormationSousTitre2" xml:space="preserve">
+    <value>Centres de Développement de l’Entrepreneuriat CDE </value>
+  </data>
+  <data name="FormationSousTitre2Text" xml:space="preserve">
+    <value>Des sessions de formation organisées en partenariat avec les établissements de l’enseignement supérieur et de la formation professionnelle, destinées à développer les compétences fondamentales.</value>
+  </data>
+  <data name="FormationSousTitre2TextP1" xml:space="preserve">
+    <value> Durée de la formation : de 5 à 15 jours</value>
+  </data>
+  <data name="FormationSousTitre2TextP2" xml:space="preserve">
+    <value> Planification stratégique</value>
+  </data>
+  <data name="FormationSousTitre2TextP3" xml:space="preserve">
+    <value>Gestion opérationnelle</value>
+  </data>
+  <data name="FormationSousTitre2TextP4" xml:space="preserve">
+    <value>Aspects juridiques</value>
+  </data>
+  <data name="FormationSousTitre2TextP5" xml:space="preserve">
+    <value> Stratégies de croissance et d’innovation</value>
+  </data>
+  <data name="FormationSousTitre2Titre" xml:space="preserve">
+    <value>Centres de Développement de l’Entrepreneuriat CDE </value>
+  </data>
+  <data name="FormationSousTitre3" xml:space="preserve">
+    <value>Sessions spécialisées </value>
+  </data>
+  <data name="FormationSousTitre3Text" xml:space="preserve">
+    <value>Des sessions spécialisées organisées en partenariat avec les services publics autour de thématiques d’intérêt pour les micro-entreprises :</value>
+  </data>
+  <data name="FormationSousTitre3TextP1" xml:space="preserve">
+    <value> Fiscalité et contentieux fiscaux</value>
+  </data>
+  <data name="FormationSousTitre3TextP2" xml:space="preserve">
+    <value>Sécurité sociale</value>
+  </data>
+  <data name="FormationSousTitre3TextP3" xml:space="preserve">
+    <value>Assurance agricole</value>
+  </data>
+  <data name="FormationSousTitre3TextP4" xml:space="preserve">
+    <value>En partenariat avec les services publics</value>
+  </data>
+  <data name="FormationSousTitre3Titre" xml:space="preserve">
+    <value>Sessions de formations thématiques</value>
+  </data>
+  <data name="FormationTitre" xml:space="preserve">
+    <value>Programmes de formation spécialisés et intégrés</value>
+  </data>
+  <data name="ProgFormation" xml:space="preserve">
+    <value>Programmes de formation</value>
+  </data>
+  <data name="ActiviteNesda" xml:space="preserve">
+    <value>Activités de l’Agence Nationale d’Appui et de Développement de l’Entrepreneuriat</value>
+  </data>
+  <data name="ActiviteNesdaText" xml:space="preserve">
+    <value>Les avantages du dispositif de l’Agence Nationale d’Appui et de Développement de l’Entrepreneuriat couvrent les étapes de création des micro-entreprises ainsi que l’extension de leurs activités. Le dispositif comprend également divers secteurs économiques stratégiques, afin d’encourager l’entrepreneuriat et de l’investissement en Algérie.</value>
+  </data>
+  <data name="ActiviteP2" xml:space="preserve">
+    <value>Extension de l’activité de la micro-entreprise</value>
+  </data>
+  <data name="ActiviteP2Text" xml:space="preserve">
+    <value>Elle vise à développer l’activité existante des micro-entreprises par l’ajout de nouvelles lignes de production, la diversification des produits ou le lancement de nouvelles activités complémentaires ou indépendantes, afin d’élargir le champ d’activité et d’augmenter les revenus.</value>
+  </data>
+  <data name="ActiviteTitre" xml:space="preserve">
+    <value>Création d’une micro-entreprise   </value>
+  </data>
+  <data name="ActiviteTitre1" xml:space="preserve">
+    <value>Conditions d’éligibilité</value>
+  </data>
+  <data name="ActiviteTitre1P1" xml:space="preserve">
+    <value> Âge : </value>
+  </data>
+  <data name="ActiviteTitre1P12" xml:space="preserve">
+    <value>18 – 55 ans</value>
+  </data>
+  <data name="ActiviteTitre1P2" xml:space="preserve">
+    <value>Ne pas avoir bénéficié auparavant d’un dispositif de soutien à la création d’une micro-entreprise.</value>
+  </data>
+  <data name="ActiviteTitre1P3" xml:space="preserve">
+    <value> Être titulaire d’un diplôme ou d’une qualification professionnelle et/ou posséder un savoir-faire reconnu par une attestation.</value>
+  </data>
+  <data name="ActiviteTitre1P4" xml:space="preserve">
+    <value>Mobiliser un apport personnel financier conforme à l’une des formules de financement choisies.</value>
+  </data>
+  <data name="ActiviteTitre2" xml:space="preserve">
+    <value>Étapes de création</value>
+  </data>
+  <data name="ActiviteTitre2P1" xml:space="preserve">
+    <value>Inscription via la plateforme numérique après une formation au niveau d’un centre de développement de l’entrepreneuriat.</value>
+  </data>
+  <data name="ActiviteTitre2P1Titre" xml:space="preserve">
+    <value>Inscription électronique et formation</value>
+  </data>
+  <data name="ActiviteTitre2P2" xml:space="preserve">
+    <value>Évaluation par les services de l’Agence selon un système d’évaluation des risques basé sur les critères de faisabilité, d’efficacité et de financement. Le projet est soumis à la commission de wilaya lorsque le score d’évaluation dépasse 50 %.</value>
+  </data>
+  <data name="ActiviteTitre2P2Titre" xml:space="preserve">
+    <value>Évaluation du projet</value>
+  </data>
+  <data name="ActiviteTitre2P3" xml:space="preserve">
+    <value>Présentation du projet par son promoteur devant le comité de sélection, de validation et de financement des projets d’investissement (CSVF) au niveau de la wilaya.</value>
+  </data>
+  <data name="ActiviteTitre2P3Titre" xml:space="preserve">
+    <value>Présentation du projet devant le comité</value>
+  </data>
+  <data name="ActiviteTitre2P4" xml:space="preserve">
+    <value>En cas d’accord du comité, l’Agence délivre l’attestation d’éligibilité et de financement et engage les démarches administratives avec les différents services et fournisseurs.</value>
+  </data>
+  <data name="ActiviteTitre2P4Titre" xml:space="preserve">
+    <value>Délivrance de l’attestation d’éligibilité et de financement</value>
+  </data>
+  <data name="ActiviteTitre2P5" xml:space="preserve">
+    <value>Démarrage de l’activité après l’achèvement de toutes les procédures, avec l’accompagnement des services de l’Agence. </value>
+  </data>
+  <data name="ActiviteTitre2P5Titre" xml:space="preserve">
+    <value> Démarrage de l’activité</value>
+  </data>
+  <data name="ActiviteTitre2P6" xml:space="preserve">
+    <value>En cas de rejet du projet, un recours peut être introduit auprès du secrétariat du comité dans un délai de 15 jours à compter de la notification. En cas de rejet définitif, le porteur de projet peut saisir la commission nationale de recours.</value>
+  </data>
+  <data name="ActiviteTitre2P6Titre" xml:space="preserve">
+    <value>Procédure de recours </value>
+  </data>
+  <data name="ActiviteTitre3" xml:space="preserve">
+    <value>Extension de l’activité d’une micro-entreprise</value>
+  </data>
+  <data name="ActiviteTitre3-1" xml:space="preserve">
+    <value>Développement de l’activité actuelle</value>
+  </data>
+  <data name="ActiviteTitre3-1P1" xml:space="preserve">
+    <value> Une nouvelle ligne de production</value>
+  </data>
+  <data name="ActiviteTitre3-1P2" xml:space="preserve">
+    <value> Une nouvelle machine</value>
+  </data>
+  <data name="ActiviteTitre3-1P3" xml:space="preserve">
+    <value>Un nouveau produit complémentaire</value>
+  </data>
+  <data name="ActiviteTitre3-1P4" xml:space="preserve">
+    <value>Une activité liée à l’activité principale</value>
+  </data>
+  <data name="ActiviteTitre3-2" xml:space="preserve">
+    <value>Lancement d’une nouvelle activité</value>
+  </data>
+  <data name="ActiviteTitre3-2P1" xml:space="preserve">
+    <value>Diversification de l’activité principale</value>
+  </data>
+  <data name="ActiviteTitre3-2P2" xml:space="preserve">
+    <value>Exploration de nouveaux domaines d’activité</value>
+  </data>
+  <data name="ActiviteTitre3-2P3" xml:space="preserve">
+    <value>Nouvelles activités indépendantes </value>
+  </data>
+  <data name="ActiviteTitre4" xml:space="preserve">
+    <value>Catégories ciblées</value>
+  </data>
+  <data name="ActiviteTitre4P1" xml:space="preserve">
+    <value> Promoteurs de micro-entreprises ayant déjà bénéficié du soutien du dispositif de l’Agence.</value>
+  </data>
+  <data name="ActiviteTitre4P2" xml:space="preserve">
+    <value>Bénéficiaires du dispositif de l’Agence nationale de gestion du microcrédit (ANGEM)</value>
+  </data>
+  <data name="ActiviteTitre4P3" xml:space="preserve">
+    <value> Bénéficiaires du dispositif de la Caisse nationale d’assurance chômage (CNAC).</value>
+  </data>
+  <data name="ActiviteTitre4P4" xml:space="preserve">
+    <value>Agriculteurs, artisans et détenteurs d’agréments et de registres de commerce.</value>
+  </data>
+  <data name="ActiviteTitre5" xml:space="preserve">
+    <value>Conditions générales</value>
+  </data>
+  <data name="ActiviteTitre5P1" xml:space="preserve">
+    <value>20 – 58 ans</value>
+  </data>
+  <data name="ActiviteTitre5P2" xml:space="preserve">
+    <value>Être en activité durant les deux dernières années dûment justifiées.</value>
+  </data>
+  <data name="ActiviteTitre5P3" xml:space="preserve">
+    <value>Présenter les bilans comptables et les déclarations fiscales (G12, C20)</value>
+  </data>
+  <data name="ActiviteTitre6" xml:space="preserve">
+    <value>Étapes de l’extension</value>
+  </data>
+  <data name="ActiviteTitre6P1" xml:space="preserve">
+    <value>Inscription via la plateforme numérique dédiée au dispositif de l’Agence.</value>
+  </data>
+  <data name="ActiviteTitre6P1Titre" xml:space="preserve">
+    <value>Inscription électronique</value>
+  </data>
+  <data name="ActiviteTitre6P2" xml:space="preserve">
+    <value>Évaluation selon le système d’évaluation des risques et orientation du porteur du projet vers la formation lorsque le taux dépasse 50 %.</value>
+  </data>
+  <data name="ActiviteTitre6P2Titre" xml:space="preserve">
+    <value>Évaluation du projet d’extension</value>
+  </data>
+  <data name="ActiviteTitre6P3" xml:space="preserve">
+    <value>Organisation d’une formation spécialisée de 5 jours sur les compétences et les principes fondamentaux de la gestion au niveau de l'agence. </value>
+  </data>
+  <data name="ActiviteTitre6P3Titre" xml:space="preserve">
+    <value>Formation spécifique</value>
+  </data>
+  <data name="ActiviteTitre6P4" xml:space="preserve">
+    <value>Présentation du projet d’extension devant le comité de sélection, de validation et de financement des projets d’investissement au niveau de la wilaya.</value>
+  </data>
+  <data name="ActiviteTitre6P4Titre" xml:space="preserve">
+    <value> Présentation du projet devant le comité</value>
+  </data>
+  <data name="ActiviteTitre6P5" xml:space="preserve">
+    <value>Délivrance de l’attestation d’éligibilité et de financement, accomplissement des démarches administratives et lancement de la nouvelle activité.</value>
+  </data>
+  <data name="ActiviteTitre6P5Titre" xml:space="preserve">
+    <value>Obtention de l’attestation et démarrage de l’activité</value>
+  </data>
+  <data name="ActiviteTitre7" xml:space="preserve">
+    <value>Secteurs d’activité soutenus</value>
+  </data>
+  <data name="ActiviteTitre7Text" xml:space="preserve">
+    <value>L’agence veille à financer et à encourager les projets dans différents secteurs économiques, en particulier ceux qui contribuent à la création de richesse et d’emplois :</value>
+  </data>
+  <data name="ActiviteTitre7TextP1" xml:space="preserve">
+    <value>Agriculture</value>
+  </data>
+  <data name="ActiviteTitre7TextP2" xml:space="preserve">
+    <value>Bâtiment et travaux publics</value>
+  </data>
+  <data name="ActiviteTitre7TextP3" xml:space="preserve">
+    <value>Industrie</value>
+  </data>
+  <data name="ActiviteTitre7TextP4" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="ActiviteTitre7TextP5" xml:space="preserve">
+    <value>Pêche maritime</value>
+  </data>
+  <data name="ActiviteTitre7TextP6" xml:space="preserve">
+    <value>Hydraulique </value>
+  </data>
+  <data name="ActiviteTitre7TextP7" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="ActiviteTitre7TextP8" xml:space="preserve">
+    <value>Professions libérales</value>
+  </data>
+  <data name="ActiviteTitre7TextP9" xml:space="preserve">
+    <value> Artisanat</value>
+  </data>
+  <data name="annee" xml:space="preserve">
+    <value>ans</value>
+  </data>
+  <data name="BouttonInscription" xml:space="preserve">
+    <value>Plateforme d’inscription électronique</value>
+  </data>
+  <data name="FinancementExploitation" xml:space="preserve">
+    <value>Financement de l’exploitation et de la location</value>
+  </data>
+  <data name="FinancementExploitationT1" xml:space="preserve">
+    <value>Prêt non rémunéré supplémentaire pour la location d’un local</value>
+  </data>
+  <data name="FinancementExploitationT1Text1" xml:space="preserve">
+    <value>En cas de nécessité, les porteurs de projets peuvent bénéficier d’un prêt non rémunéré supplémentaire pour la prise en charge du loyer du local ou du poste à quai au niveau des ports, destiné à la création d’activités de production de biens et de services, à l’exception des activités non sédentaires.</value>
+  </data>
+  <data name="FinancementExploitationT1Text2" xml:space="preserve">
+    <value>ce prêt est accordé lorsque le porteur de projet sollicite un financement bancaire à  la phase de création de l’activité.</value>
+  </data>
+  <data name="FinancementExploitationT1Text2Titre" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="FinancementExploitationT2" xml:space="preserve">
+    <value>Prêt non rémunéré supplémentaire pour l’exploitation</value>
+  </data>
+  <data name="FinancementExploitationT2Text1" xml:space="preserve">
+    <value>Les porteurs de projets peuvent, à titre exceptionnel, bénéficier d’un prêt non rémunéré supplémentaire pour l’exploitation.</value>
+  </data>
+  <data name="FinancementExploitationT2Text2" xml:space="preserve">
+    <value>exceptionnel, destiné à couvrir les besoins liés à l’exploitation et au fonctionnement.</value>
+  </data>
+  <data name="FinancementExploitationT2Text2Titre" xml:space="preserve">
+    <value> Nature du prêt </value>
+  </data>
+  <data name="FinancementExploitationText" xml:space="preserve">
+    <value>Prêts non rémunérés supplémentaires destinés à couvrir des besoins spécifiques</value>
+  </data>
+  <data name="FinancementTitre1" xml:space="preserve">
+    <value>Le financement : de l’idée à la concrétisation du projet</value>
+  </data>
+  <data name="FinancementTitre1Text" xml:space="preserve">
+    <value>Les solutions de financement proposées par l’Agence se distinguent par les caractéristiques suivantes :</value>
+  </data>
+  <data name="FinancementTitre1TextP1" xml:space="preserve">
+    <value> Prêt non rémunéré pour le financement des projets de création et d’extension des micro-entreprises.</value>
+  </data>
+  <data name="FinancementTitre1TextP2" xml:space="preserve">
+    <value>Financement des projets pouvant atteindre jusqu’à 10 000 000 DA.</value>
+  </data>
+  <data name="FinancementTitre1TextP3" xml:space="preserve">
+    <value>Formules de financement conjointes, mixte et triangulaire, entre le porteur de projet, l’Agence et la banque.</value>
+  </data>
+  <data name="FinancementTitre1TextP4" xml:space="preserve">
+    <value>Prêts à taux d’intérêt bonifié à 100 %.</value>
+  </data>
+  <data name="FinancementTitre1TextP5" xml:space="preserve">
+    <value>Durée de remboursement des prêts attractive.</value>
+  </data>
+  <data name="FinancementTitre1TextP6" xml:space="preserve">
+    <value> Prêts non rémunérés supplémentaires : pour l’exploitation et la location.</value>
+  </data>
+  <data name="FinancementTitre2" xml:space="preserve">
+    <value>Formules de financement</value>
+  </data>
+  <data name="FinancementTitre2p1" xml:space="preserve">
+    <value> Auto-financement </value>
+  </data>
+  <data name="FinancementTitre2p1Text" xml:space="preserve">
+    <value>Le porteur de projet finance l'intégralité de l’investissement de manière autonome, sans recourir à des sources externes.</value>
+  </data>
+  <data name="FinancementTitre2p1TextD" xml:space="preserve">
+    <value>Apport personnel</value>
+  </data>
+  <data name="FinancementTitre2p2" xml:space="preserve">
+    <value>Financement mixte</value>
+  </data>
+  <data name="FinancementTitre2p2Text" xml:space="preserve">
+    <value>Le porteur de projet et l’Agence contribuent chacun à hauteur de 50 % du montant de l’investissement.</value>
+  </data>
+  <data name="FinancementTitre2p2TextD" xml:space="preserve">
+    <value>Porteur de projet + Agence</value>
+  </data>
+  <data name="FinancementTitre2p3" xml:space="preserve">
+    <value>Financement triangulaire</value>
+  </data>
+  <data name="FinancementTitre2p3Text" xml:space="preserve">
+    <value>Le porteur de projet contribue à hauteur de 5 % à 15 %, l’Agence à hauteur de 15 % à 25 %, tandis que la banque prend en charge les 70 % restants.</value>
+  </data>
+  <data name="FinancementTitre2p3TextD" xml:space="preserve">
+    <value>Porteur de projet + Agence + Banque</value>
+  </data>
+  <data name="FinancementTitre2Text" xml:space="preserve">
+    <value>L’Agence propose plusieurs formules de financement pour la création et l’extension des micro-entreprises, à travers trois montages financiers :</value>
+  </data>
+  <data name="LesTypesFinancement" xml:space="preserve">
+    <value>Auto-financement, mixte, triangulaire</value>
+  </data>
+  <data name="poucentage" xml:space="preserve">
+    <value>Taux d’évaluation requis</value>
+  </data>
+  <data name="SolutionFinancement" xml:space="preserve">
+    <value>Solutions de financement</value>
+  </data>
+  <data name="SolutionFinancementText" xml:space="preserve">
+    <value>L’Agence nationale d’appui et de développement de l’entrepreneuriat joue un rôle essentiel dans le financement des micro-entreprises, à travers l’accompagnement des porteurs d’idées entrepreneuriales désireux de les transformer en projets concrets, créateurs de richesse et d’emplois, selon l’approche économique adoptée visant à renforcer les mécanismes de financement et la gestion des risques y afférents, dans le but de dynamiser le développement national.</value>
+  </data>
+  <data name="TableauTypeFinanement" xml:space="preserve">
+    <value>Tableau des formules de financement</value>
+  </data>
+  <data name="TableauTypeFinanementColonne1" xml:space="preserve">
+    <value>Type de financement</value>
+  </data>
+  <data name="TableauTypeFinanementColonne2" xml:space="preserve">
+    <value>Apport personnel</value>
+  </data>
+  <data name="TableauTypeFinanementColonne3" xml:space="preserve">
+    <value>Agence (prêt non rémunéré)</value>
+  </data>
+  <data name="TableauTypeFinanementColonne4" xml:space="preserve">
+    <value>Banque (crédit bancaire)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne1" xml:space="preserve">
+    <value>Financement triangulaire – étudiants et chômeurs</value>
+  </data>
+  <data name="TableauTypeFinanementLigne2" xml:space="preserve">
+    <value>Financement triangulaire – non chômeurs (zones du Sud)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne3" xml:space="preserve">
+    <value>Financement triangulaire – non chômeurs (Hauts-Plateaux et zones spécifiques)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne4" xml:space="preserve">
+    <value>Financement triangulaire – non chômeurs (autres régions)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne5" xml:space="preserve">
+    <value>Financement mixte</value>
+  </data>
+  <data name="TableauTypeFinanementLigne6" xml:space="preserve">
+    <value>Auto-financement</value>
+  </data>
+  <data name="TableauTypeFinanementText" xml:space="preserve">
+    <value>Détails des taux de contribution pour chaque type de financement</value>
+  </data>
+  <data name="TrancheAgeCreation" xml:space="preserve">
+    <value>Âge requis pour la création </value>
+  </data>
+  <data name="TrancheAgeExtension" xml:space="preserve">
+    <value>Âge requis pour l'extension </value>
+  </data>
+  <data name="ActiviteP1Text" xml:space="preserve">
+    <value>Elle comprend le soutien à la création de micro-entreprises au profit des jeunes porteurs de projets, à travers le financement, l’accompagnement administratif et technique, la mise à disposition de la formation nécessaire, ainsi que le suivi du projet depuis son lancement jusqu’au démarrage effectif de l’activité.</value>
+  </data>
+  <data name="fond" xml:space="preserve">
+    <value>Fonds </value>
+  </data>
+  <data name="garantie" xml:space="preserve">
+    <value>garantie</value>
+  </data>
+  <data name="ParticipationFG" xml:space="preserve">
+    <value>Modalités d’adhésion au Fonds de garantie</value>
+  </data>
+  <data name="TachesFG" xml:space="preserve">
+    <value>Missions du Fonds de garantie</value>
+  </data>
+  <data name="ContactUsNow" xml:space="preserve">
+    <value>Prenez contact avec nous maintenant </value>
+  </data>
+  <data name="decrets1" xml:space="preserve">
+    <value>Décrets présidentiels (soutien à l’emploi des jeunes)</value>
+  </data>
+  <data name="decrets2" xml:space="preserve">
+    <value>Décrets exécutifs (création de l’Agence</value>
+  </data>
+  <data name="decrets3" xml:space="preserve">
+    <value>Décrets exécutifs (conditions et niveau d’aide apportée aux porteurs de projets)</value>
+  </data>
+  <data name="FonctionnementFG" xml:space="preserve">
+    <value>Fonctionnement du Fonds de garantie</value>
+  </data>
+  <data name="NesdaExtensionTitre" xml:space="preserve">
+    <value>Programme d’extension d’activité </value>
+  </data>
+  <data name="TaxPhase1" xml:space="preserve">
+    <value>Phase 1 : Phase de réalisation</value>
+  </data>
+  <data name="TaxPhase2" xml:space="preserve">
+    <value>Phase 2 : Phase d’exploitation</value>
+  </data>
+  <data name="TaxTitre1" xml:space="preserve">
+    <value>Avantages</value>
+  </data>
+  <data name="TaxTitre2" xml:space="preserve">
+    <value>fiscaux</value>
+  </data>
+  <data name="telecharger" xml:space="preserve">
+    <value>Téléchargement</value>
+  </data>
+  <data name="TexteJuridiqueTitre1" xml:space="preserve">
+    <value>Textes </value>
+  </data>
+  <data name="TexteJuridiqueTitre2" xml:space="preserve">
+    <value>juridiques</value>
+  </data>
+  <data name="annule" xml:space="preserve">
+    <value>Abrogé </value>
+  </data>
+  <data name="legistaliveText" xml:space="preserve">
+    <value>Textes juridiques</value>
+  </data>
+  <data name="AvantageProgrammeTitre" xml:space="preserve">
+    <value>Avantages du programme</value>
+  </data>
+  <data name="EnvironementProgrammeTitre" xml:space="preserve">
+    <value>Cadre et périmètre du programme</value>
+  </data>
+  <data name="Condition-Beneficier1" xml:space="preserve">
+    <value>Les porteurs de projets ayant déjà bénéficié du dispositif de l’Agence</value>
+  </data>
+  <data name="Condition-Beneficier1,1" xml:space="preserve">
+    <value>Conditions pour bénéficier de « l’extension pour la même activité ou dans une activité connexe »</value>
+  </data>
+  <data name="ConditionBeneficier-Commun" xml:space="preserve">
+    <value>Conditions communes:</value>
+  </data>
+  <data name="TitreConditionBeneficier" xml:space="preserve">
+    <value>Conditions d’accès </value>
+  </data>
+  <data name="ContributionATitre" xml:space="preserve">
+    <value>Contribution de l’Agence (prêt non rémunéré)</value>
+  </data>
+  <data name="ContributionBTitre" xml:space="preserve">
+    <value>Contribution de la banque (crédit bancaire)</value>
+  </data>
+  <data name="ContributionPTitre" xml:space="preserve">
+    <value>Apport personnel</value>
+  </data>
+  <data name="ModeFinancementTitre" xml:space="preserve">
+    <value>Formules de financement</value>
+  </data>
+  <data name="MotLiaison" xml:space="preserve">
+    <value>à </value>
+  </data>
+  <data name="TypeFinancemet1" xml:space="preserve">
+    <value>Autofinancement </value>
+  </data>
+  <data name="TypeFinancemet2" xml:space="preserve">
+    <value>Financement mixte</value>
+  </data>
+  <data name="TypeFinancemet3" xml:space="preserve">
+    <value>Financement triangulaire</value>
+  </data>
+  <data name="Condition-Beneficier1,2" xml:space="preserve">
+    <value>Conditions pour bénéficier de « l’extension pour une nouvelle activité »</value>
+  </data>
+  <data name="Condition-Beneficier2" xml:space="preserve">
+    <value>Personnes n’ayant pas bénéficié auparavant du dispositif de l’Agence </value>
+  </data>
+  <data name="Etapes-Beneficier" xml:space="preserve">
+    <value>Les étapes pour bénéficier du programme</value>
   </data>
 </root>
