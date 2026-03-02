@@ -7,6 +7,7 @@
 
     // Vérifie si c'est de l'arabe
     bool isArabic = currentLanguage.StartsWith("ar");
+    bool isEnglish = currentLanguage.StartsWith("en");
 }
 
 
@@ -365,39 +366,47 @@
                     <tbody>
                         @foreach (var consultation in Model)
                         {
-                            <tr>
+                        <tr>
 
-                                @if (isArabic)
-                                {
-                                    <td>@consultation.StructureManager?.NameAr</td>
-                                }
-                                else
-                                {
-                                    <td>@consultation.StructureManager?.NameEn</td>
-                                }
+                            @if (isArabic)
+                            {
+                                <td>@consultation.StructureManager?.NameAr</td>
+                            }
+                            else if(isEnglish)
+                            {
+                                <td>@consultation.StructureManager?.NameEn</td>
+                            }
+                            else
+                            {
+                            <td>@consultation.StructureManager?.NameFr</td>
+                            }
 
-                                <td class="date-cell">@consultation.PublishDate.ToString("dd/MM/yyyy")</td>
+                            <td class="date-cell">@consultation.PublishDate.ToString("dd/MM/yyyy")</td>
 
-                                @if (isArabic)
-                                {
-                                    <td class="title-cell">@consultation.TitleAr</td>
-                                }
-                                else
-                                {
-                                    <td class="title-cell">@consultation.TitleEn</td>
-                                }
+                            @if (isArabic)
+                            {
+                                <td class="title-cell">@consultation.TitleAr</td>
+                            }
+                            else if (isEnglish)
+                            {
+                                <td class="title-cell">@consultation.TitleEn</td>
+                            }
+                            else
+                            {
+                                <td class="title-cell">@consultation.TitleFr</td>
+                            }
 
-                                <td>
-                                    <a href="@consultation.FilePath" class="document-btn" target="_blank">
-                                        @localizer["AfficherDoc"]
-                                    </a>
-                                </td>
-                            </tr>
+                            <td>
+                                <a href="@consultation.FilePath" class="document-btn" target="_blank">
+                                    @localizer["AfficherDoc"]
+                                </a>
+                            </td>
+                        </tr>
                         }
                         </tbody>
                 </table>
             </div>
-        }
+        
     </div>
 </div>
 @section scripts {

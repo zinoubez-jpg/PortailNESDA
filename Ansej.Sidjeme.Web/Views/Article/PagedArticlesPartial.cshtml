@@ -7,6 +7,7 @@
 
     // Vérifie si c'est de l'arabe
     bool isArabic = currentLanguage.StartsWith("ar");
+    bool isEnglish = currentLanguage.StartsWith("en");
 }
 
 
@@ -93,11 +94,18 @@
                                         "جويلية", "أوت", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"
                                         };
                             }
-                            else
+                            else if(isEnglish)
                             {
                                 months = new[] {
                                         "January", "February", "March", "April", "May", "June",
                                         "July", "August", "September", "October", "November", "December"
+                                        };
+                            }
+                            else
+                            {
+                                months = new[] {
+                                        "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+                                        "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
                                         };
                             }
                             var formattedDate = $"{date.Day} {months[date.Month - 1]} {date.Year}";

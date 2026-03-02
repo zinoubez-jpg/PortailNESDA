@@ -789,6 +789,9 @@
   <data name="Beneficiaire_11" xml:space="preserve">
     <value>Titulaires d'une licence</value>
   </data>
+  <data name="callCenter" xml:space="preserve">
+    <value>Centre d’appel</value>
+  </data>
   <data name="CDE_Dans_Education_FormationProfessionnelle_Titre" xml:space="preserve">
     <value>Centres de développement de l'entrepreneuriat (CDE) dans le secteur de la formation et de l'enseignement professionnels</value>
   </data>
@@ -798,8 +801,14 @@
   <data name="CentreCDE" xml:space="preserve">
     <value>Centres de Développement de l’Entrepreneuriat (CDE)</value>
   </data>
+  <data name="CleRecherche" xml:space="preserve">
+    <value>Entrez un mot-clé pour rechercher…</value>
+  </data>
   <data name="ComiteSuivi" xml:space="preserve">
     <value>Comité de Surveillance</value>
+  </data>
+  <data name="CommunicationCell" xml:space="preserve">
+    <value>Cellule de communication</value>
   </data>
   <data name="CompositionConseilAdmin" xml:space="preserve">
     <value>Composition du Conseil d’Administration</value>
@@ -840,14 +849,23 @@
   <data name="ConseilAdministration" xml:space="preserve">
     <value>Conseil d’Administration</value>
   </data>
+  <data name="consultation" xml:space="preserve">
+    <value>Consultations</value>
+  </data>
   <data name="Creation_Micro_Enterprise_Lien" xml:space="preserve">
     <value>Inscription pour créer une micro-entreprise</value>
   </data>
   <data name="Creation_Micro_Enterprise_Titre" xml:space="preserve">
     <value>Création d'une micro-entreprise</value>
   </data>
+  <data name="DatePublication" xml:space="preserve">
+    <value>Date de publication</value>
+  </data>
   <data name="DeclarationHonneur" xml:space="preserve">
     <value>Bénéficier de l’importation des équipements, des opérations et des services</value>
+  </data>
+  <data name="DetailArticle" xml:space="preserve">
+    <value>Détails de l’article</value>
   </data>
   <data name="Directeur" xml:space="preserve">
     <value>Bilal Achacha</value>
@@ -873,11 +891,17 @@
   <data name="Inscription_NESDA_Titre" xml:space="preserve">
     <value>Inscription au dispositif</value>
   </data>
+  <data name="latest" xml:space="preserve">
+    <value>Dernières</value>
+  </data>
   <data name="Lien_CDE" xml:space="preserve">
     <value>Lien d'inscription : www.cde.dz</value>
   </data>
   <data name="Lien_FPCDE" xml:space="preserve">
     <value>Lien d'inscription : www.fp.cde.dz</value>
+  </data>
+  <data name="LireEncore" xml:space="preserve">
+    <value>[Lire la suite]</value>
   </data>
   <data name="mission1" xml:space="preserve">
     <value>Mission</value>
@@ -929,6 +953,12 @@
   </data>
   <data name="NesdaRating" xml:space="preserve">
     <value>“NESDA Rating”</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Actualités</value>
+  </data>
+  <data name="News&amp;MAJ" xml:space="preserve">
+    <value>Nouvelles et mises à jour</value>
   </data>
   <data name="Objectives_Portail_MPDZ_Titre" xml:space="preserve">
     <value>Objectifs du portail électronique pour les marchés publics</value>
@@ -1005,6 +1035,9 @@
   <data name="PosteDirecteur" xml:space="preserve">
     <value>Directeur Général</value>
   </data>
+  <data name="precedent" xml:space="preserve">
+    <value>Précédent</value>
+  </data>
   <data name="ProgCoopérations" xml:space="preserve">
     <value>Programme de coopération</value>
   </data>
@@ -1016,6 +1049,9 @@
   </data>
   <data name="ProgCoopérationsTitre3" xml:space="preserve">
     <value>Programme de l’économie sociale et solidaire</value>
+  </data>
+  <data name="Programme" xml:space="preserve">
+    <value>Programme</value>
   </data>
   <data name="Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
     <value>Est-il possible de s'inscrire en ligne ou faut-il se présenter en personne?</value>
@@ -1031,6 +1067,18 @@
   </data>
   <data name="Questions_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
     <value>Questions fréquemment posées sur les Centres de développement de l'entrepreneuriat (CDE)</value>
+  </data>
+  <data name="Recherche" xml:space="preserve">
+    <value>Recherche</value>
+  </data>
+  <data name="RechercheArticleNews" xml:space="preserve">
+    <value>Rechercher un article ou une actualité…</value>
+  </data>
+  <data name="RechercheDansArticle" xml:space="preserve">
+    <value>Rechercher des articles et des actualités</value>
+  </data>
+  <data name="RechercheSujet" xml:space="preserve">
+    <value>Rechercher par sujet…</value>
   </data>
   <data name="RegisterNow" xml:space="preserve">
     <value>Inscrivez-vous maintenant</value>
@@ -1067,6 +1115,24 @@
   </data>
   <data name="Services_Portail_MPDZ_Titre" xml:space="preserve">
     <value>Services disponibles via le portail</value>
+  </data>
+  <data name="Structure" xml:space="preserve">
+    <value>Agence</value>
+  </data>
+  <data name="suivant" xml:space="preserve">
+    <value>Suivant</value>
+  </data>
+  <data name="TitreConsultation" xml:space="preserve">
+    <value>Titre de la consultation</value>
+  </data>
+  <data name="TitreRecherche" xml:space="preserve">
+    <value>Entrez le titre de l’article ici…</value>
+  </data>
+  <data name="ToutLesArticles" xml:space="preserve">
+    <value>Tous les articles</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value> mises à jour</value>
   </data>
   <data name="URL" xml:space="preserve">
     <value>Lien d'inscription en ligne</value>

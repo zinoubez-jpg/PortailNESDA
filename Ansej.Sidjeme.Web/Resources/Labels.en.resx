@@ -2064,4 +2064,7 @@
   <data name="CommunicationCell" xml:space="preserve">
     <value>Communication cell</value>
   </data>
+  <data name="Structure" xml:space="preserve">
+    <value>The Agency</value>
+  </data>
 </root>

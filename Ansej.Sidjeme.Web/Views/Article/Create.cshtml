@@ -304,6 +304,16 @@
                    required />
             <span asp-validation-for="Article.TitleEn" class="text-danger"></span>
         </div>
+        <div class="mb-3">
+            <label asp-for="Article.TitleFr" class="form-label">عنوان المقال بالفرنسية *</label>
+            <input asp-for="Article.TitleFr" class="form-control"
+                   placeholder=" باللغة الفرنسية أدخل عنوان المقال..."
+                   pattern="^[A-Za-z0-9\s.,!?-]+$"
+                   oninput="this.value = this.value.replace(/[^\x00-\x7F]/g, '');"
+                   title="Veuillez utiliser des lettres francaises et une ponctuation standard uniquement."
+                   required />
+            <span asp-validation-for="Article.TitleFr" class="text-danger"></span>
+        </div>
 
         <div class="mb-3">
             <label asp-for="Article.Summary" class="form-label">ملخص المقال بالعربية *</label>
@@ -327,6 +337,17 @@
             <div class="character-count" id="summary-count">0 حرف</div>
             <span asp-validation-for="Article.SummaryEn" class="text-danger"></span>
         </div>
+        <div class="mb-3">
+            <label asp-for="Article.SummaryFr" class="form-label">ملخص المقال  بالفرنسية *</label>
+            <textarea asp-for="Article.SummaryFr" class="form-control" rows="3"
+                      placeholder="أدخل ملخصاً مختصراً للمقال باللغة الفرنسية ..."
+                      pattern="^[A-Za-z0-9\s.,!?-]+$"
+                      oninput="this.value = this.value.replace(/[^\x00-\x7F]/g, '');"
+                      title="Veuillez utiliser des lettres francaises et une ponctuation standard uniquement."
+                      required></textarea>
+            <div class="character-count" id="summary-count">0 حرف</div>
+            <span asp-validation-for="Article.SummaryFr" class="text-danger"></span>
+        </div>
 
         <div class="mb-3">
             <label asp-for="Article.Content" class="form-label">محتوى المقال  بالعربية *</label>
@@ -349,6 +370,17 @@
                       required></textarea>
             <div class="character-count" id="content-count">0 حرف</div>
             <span asp-validation-for="Article.ContentEn" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Article.ContentFr" class="form-label">محتوى المقال  بالفرنسية *</label>
+            <textarea asp-for="Article.ContentFr" class="form-control content-textarea" rows="10"
+                      placeholder="أدخل المحتوى الكامل للمقال باللغة الفرنسية..."
+                      pattern="^[A-Za-z0-9\s.,!?-]+$"
+                      oninput="this.value = this.value.replace(/[^\x00-\x7F]/g, '');"
+                      title="Veuillez utiliser des lettres francaises et une ponctuation standard uniquement."
+                      required></textarea>
+            <div class="character-count" id="content-count">0 حرف</div>
+            <span asp-validation-for="Article.ContentFr" class="text-danger"></span>
         </div>
 
 
