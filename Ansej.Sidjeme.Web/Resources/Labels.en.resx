@@ -456,132 +456,6 @@
   <data name="CentreComunication" xml:space="preserve">
     <value>Contact Center</value>
   </data>
-  <data name="MotDG" xml:space="preserve">
-    <value>The Director General 's Speech</value>
-  </data>
-  <data name="AgenceNesda" xml:space="preserve">
-    <value>the National Entrepreneurship Support and Development Agency (NESDA)</value>
-  </data>
-  <data name="CentreCDE" xml:space="preserve">
-    <value>Entrepreneurship Development Centers (CDE)</value>
-  </data>
-  <data name="Directeur" xml:space="preserve">
-    <value>Bilal Achacha</value>
-  </data>
-  <data name="MotAgence" xml:space="preserve">
-    <value>the agency</value>
-  </data>
-  <data name="MotVisiteurs" xml:space="preserve">
-    <value>Dear visitors of our website</value>
-  </data>
-  <data name="NesdaKPI" xml:space="preserve">
-    <value>“NESDA KPI”</value>
-  </data>
-  <data name="NesdaRating" xml:space="preserve">
-    <value>“NESDA Rating”</value>
-  </data>
-  <data name="OutilsNumeriques" xml:space="preserve">
-    <value>Digital Business Plan, a call center,</value>
-  </data>
-  <data name="PosteDirecteur" xml:space="preserve">
-    <value>The Director General</value>
-  </data>
-  <data name="verbepresentation" xml:space="preserve">
-    <value />
-  </data>
-  <data name="VerbePresentation1" xml:space="preserve">
-    <value>In this regard</value>
-  </data>
-  <data name="axesStrategique" xml:space="preserve">
-    <value>Strategic axes</value>
-  </data>
-  <data name="axesStrategique1" xml:space="preserve">
-    <value>Enhancing support for project holders</value>
-  </data>
-  <data name="axesStrategique2" xml:space="preserve">
-    <value>Contributing to the development of an entrepreneurial ecosystem</value>
-  </data>
-  <data name="axesStrategique3" xml:space="preserve">
-    <value>Strengthening the Agency's capabilities and improving its risk management</value>
-  </data>
-  <data name="mission1" xml:space="preserve">
-    <value>Mission</value>
-  </data>
-  <data name="mission2" xml:space="preserve">
-    <value>Principles</value>
-  </data>
-  <data name="mission2-1" xml:space="preserve">
-    <value>Inclusivity</value>
-  </data>
-  <data name="mission2-2" xml:space="preserve">
-    <value>Credibility</value>
-  </data>
-  <data name="mission2-3" xml:space="preserve">
-    <value>Resilience</value>
-  </data>
-  <data name="mission2-4" xml:space="preserve">
-    <value>Innovation</value>
-  </data>
-  <data name="organisationNesda" xml:space="preserve">
-    <value>the National Entrepreneurship Support and Development Agency’s Organization</value>
-  </data>
-  <data name="AvantageProgrammeTitre" xml:space="preserve">
-    <value>Program advantages</value>
-  </data>
-  <data name="ContactUsNow" xml:space="preserve">
-    <value>Contact us now</value>
-  </data>
-  <data name="decrets1" xml:space="preserve">
-    <value>Presidential Decrees (youth employment support)</value>
-  </data>
-  <data name="decrets2" xml:space="preserve">
-    <value>Executive decrees (establishment of the Agency)</value>
-  </data>
-  <data name="decrets3" xml:space="preserve">
-    <value>Executive decrees (conditions and levels of assistance provided to project holders)</value>
-  </data>
-  <data name="EnvironementProgrammeTitre" xml:space="preserve">
-    <value>Program Framework and context</value>
-  </data>
-  <data name="FonctionnementFG" xml:space="preserve">
-    <value>How the Guarantee Fund works</value>
-  </data>
-  <data name="fond" xml:space="preserve">
-    <value>Fund</value>
-  </data>
-  <data name="garantie" xml:space="preserve">
-    <value>Guarantee</value>
-  </data>
-  <data name="NesdaExtensionTitre" xml:space="preserve">
-    <value>Activity Expansion Program</value>
-  </data>
-  <data name="ParticipationFG" xml:space="preserve">
-    <value>Enrollment in the guarantee fund</value>
-  </data>
-  <data name="TachesFG" xml:space="preserve">
-    <value>Tasks of the Guarantee Fund</value>
-  </data>
-  <data name="TaxPhase1" xml:space="preserve">
-    <value>First phase: Implementation Phase</value>
-  </data>
-  <data name="TaxPhase2" xml:space="preserve">
-    <value>Second Phase: Operational Phase</value>
-  </data>
-  <data name="TaxTitre1" xml:space="preserve">
-    <value>TAX</value>
-  </data>
-  <data name="TaxTitre2" xml:space="preserve">
-    <value>PRIVILEGES</value>
-  </data>
-  <data name="telecharger" xml:space="preserve">
-    <value>download</value>
-  </data>
-  <data name="TexteJuridiqueTitre1" xml:space="preserve">
-    <value>Legal</value>
-  </data>
-  <data name="TexteJuridiqueTitre2" xml:space="preserve">
-    <value>texts</value>
-  </data>
   <data name="Accompagnement" xml:space="preserve">
     <value>Support before and after project launch</value>
   </data>
@@ -647,51 +521,6 @@
   </data>
   <data name="AccompPrepTitre" xml:space="preserve">
     <value>Accompaniment during the preparation and framing phase</value>
-  </data>
-  <data name="ComiteSuivi" xml:space="preserve">
-    <value>Monitoring Committee</value>
-  </data>
-  <data name="CompositionConseilAdmin" xml:space="preserve">
-    <value>Board of Directors’ composition</value>
-  </data>
-  <data name="CompositionConseilAdmin1" xml:space="preserve">
-    <value>Two (2) representatives of the Minister in charge of Micro-Enterprises, one of whom is the Chairperson;</value>
-  </data>
-  <data name="CompositionConseilAdmin10" xml:space="preserve">
-    <value>The president of the association of banks and financial institutions or his representative;</value>
-  </data>
-  <data name="CompositionConseilAdmin11" xml:space="preserve">
-    <value>Representative of the organization of young entrepreneurs, the most representative at the national level.</value>
-  </data>
-  <data name="CompositionConseilAdmin12" xml:space="preserve">
-    <value>Representative of the organization of young entrepreneurs, the most representative at the national level.</value>
-  </data>
-  <data name="CompositionConseilAdmin2" xml:space="preserve">
-    <value>Representative of the Minister in charge of Foreign Affairs,</value>
-  </data>
-  <data name="CompositionConseilAdmin3" xml:space="preserve">
-    <value>Representative of the minister in charge of the Interior and Local authorities;</value>
-  </data>
-  <data name="CompositionConseilAdmin4" xml:space="preserve">
-    <value>Two (2) representatives of the Minister in charge of finance;</value>
-  </data>
-  <data name="CompositionConseilAdmin5" xml:space="preserve">
-    <value>Representative of the minister in charge of Trade;</value>
-  </data>
-  <data name="CompositionConseilAdmin6" xml:space="preserve">
-    <value>Representative of the minister in charge of Labor, Employment and Social Security;</value>
-  </data>
-  <data name="CompositionConseilAdmin7" xml:space="preserve">
-    <value>Representative of the minister in charge of National Solidarity and Women’s Affairs;</value>
-  </data>
-  <data name="CompositionConseilAdmin8" xml:space="preserve">
-    <value>Representative of the minister in charge of industry,</value>
-  </data>
-  <data name="CompositionConseilAdmin9" xml:space="preserve">
-    <value>The Permanent Secretary of the Joint Guarantee Fund to guarantee the risks of loans granted to young entrepreneurs, or his representative;</value>
-  </data>
-  <data name="ConseilAdministration" xml:space="preserve">
-    <value>Board of directors</value>
   </data>
   <data name="FormationIntroP1" xml:space="preserve">
     <value>Specialized and integrated training programs;</value>
@@ -771,305 +600,14 @@
   <data name="FormationTitre" xml:space="preserve">
     <value>Specialized and integrated training programs</value>
   </data>
-  <data name="MissionConseilSuivi" xml:space="preserve">
-    <value>Tasks of the Monitoring Committee</value>
-  </data>
-  <data name="MissionConseilSuivi1" xml:space="preserve">
-    <value>Exercising post-implementation oversight of board decisions;</value>
-  </data>
-  <data name="MissionConseilSuivi2" xml:space="preserve">
-    <value>Providing feedback and recommendations to the Director General;</value>
-  </data>
-  <data name="MissionConseilSuivi3" xml:space="preserve">
-    <value>Providing feedback on periodic reports on follow-up, implementation, and evaluation;</value>
-  </data>
-  <data name="MissionConseilSuivi4" xml:space="preserve">
-    <value>Monitoring and auditing the accounts for the use of Agency funds;</value>
-  </data>
-  <data name="MissionConseilSuivi5" xml:space="preserve">
-    <value>Providing feedback on the estimated revenue and expenditure data.</value>
-  </data>
   <data name="ProgFormation" xml:space="preserve">
     <value>Training programs</value>
-  </data>
-  <data name="ReunionConseilAdmin" xml:space="preserve">
-    <value>Board meetings</value>
-  </data>
-  <data name="CDE_Dans_Education_FormationProfessionnelle_Titre" xml:space="preserve">
-    <value>Entrepreneurship Development Centers (CDE) in Vocational Education and Training sector</value>
-  </data>
-  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Titre" xml:space="preserve">
-    <value>Entrepreneurship Development Centers (CDE) in the Higher Education and Scientific Research sector</value>
-  </data>
-  <data name="Inscription_CDE_Titre" xml:space="preserve">
-    <value>Registration at Entrepreneurship Development Centers (CDE)</value>
-  </data>
-  <data name="Lien_CDE" xml:space="preserve">
-    <value>Registration Link : www.cde.dz</value>
-  </data>
-  <data name="Lien_FPCDE" xml:space="preserve">
-    <value>Registration Link: www.fp.cde.dz</value>
-  </data>
-  <data name="Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>Is it possible to register online or is it required to attend in person?</value>
-  </data>
-  <data name="Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>What sessions or programs are available at the center? and does the center provide a practical training?</value>
-  </data>
-  <data name="Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>Can all students register at Entrepreneurship Development Centers (CDE), or just is it limited to graduates only?</value>
-  </data>
-  <data name="Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>Should registration at centers be based on the training wilaya?</value>
-  </data>
-  <data name="Questions_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>Frequently asked questions about Entrepreneurship Development Centers (CDE)</value>
-  </data>
-  <data name="Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>The registration process and application review are done electronically without the need to travel to Entrepreneurship Development Centers (CDE).</value>
-  </data>
-  <data name="Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>Programs may include entrepreneurship sessions, project management, marketing, and others, and usually include practical training.</value>
-  </data>
-  <data name="Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>The student must graduate to register at Entrepreneurship Development Centers (CDE).</value>
-  </data>
-  <data name="Réponse_Pour_Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>Registration at Entrepreneurship Development Centers (CDE) is possible regardless of the training institute where you studied. This depends on the center's policy and registration rules.</value>
-  </data>
-  <data name="AxesProgramme" xml:space="preserve">
-    <value>Program Axes and Activities:</value>
-  </data>
-  <data name="ButProgramme" xml:space="preserve">
-    <value>Program Goal:</value>
-  </data>
-  <data name="CadreProgramme" xml:space="preserve">
-    <value>Program Framework:</value>
-  </data>
-  <data name="ConditionBeneficier1" xml:space="preserve">
-    <value>1. Previous beneficiaries of the Agency’s mechanism:</value>
-  </data>
-  <data name="ConditionBeneficier1,1" xml:space="preserve">
-    <value>1.1 Conditions for benefiting from “Expansion of the same or subsidiary activity”:</value>
-  </data>
-  <data name="ConditionBeneficier1,2" xml:space="preserve">
-    <value>1.2 Conditions for benefiting from “New activity expansion”:</value>
-  </data>
-  <data name="ConditionBeneficier2" xml:space="preserve">
-    <value>2. Previous non-beneficiaries of the Agency’s mechanism:</value>
-  </data>
-  <data name="ConditionBeneficierCommun" xml:space="preserve">
-    <value>Common Conditions:</value>
-  </data>
-  <data name="ConditionBeneficierTitre" xml:space="preserve">
-    <value>Program Eligibility Requirements</value>
-  </data>
-  <data name="ContributionATitre" xml:space="preserve">
-    <value>Agency Contribution (unremunerated Loan)</value>
-  </data>
-  <data name="ContributionBTitre" xml:space="preserve">
-    <value>Bank Contribution (Bank Loan)</value>
-  </data>
-  <data name="ContributionPTitre" xml:space="preserve">
-    <value>Personal Contribution</value>
-  </data>
-  <data name="DeclarationHonneur" xml:space="preserve">
-    <value>Benefiting from the importation of equipment, operations, and services</value>
-  </data>
-  <data name="DefinitionProgramme" xml:space="preserve">
-    <value>Presentation of the IMPACT 70 Program</value>
-  </data>
-  <data name="EnvironementProgramme" xml:space="preserve">
-    <value>Program scope:</value>
-  </data>
-  <data name="EtapesBeneficier" xml:space="preserve">
-    <value>The steps to benefit from the program</value>
-  </data>
-  <data name="ModeFinancementTitre" xml:space="preserve">
-    <value>Modes of financing</value>
-  </data>
-  <data name="MotLiaison" xml:space="preserve">
-    <value>To</value>
-  </data>
-  <data name="Partenaire1" xml:space="preserve">
-    <value>Higher Education and Scientific Research Institutions</value>
-  </data>
-  <data name="Partenaire2" xml:space="preserve">
-    <value>Education and Vocational Training Institutions</value>
-  </data>
-  <data name="Partenaire3" xml:space="preserve">
-    <value>Banking Institutions</value>
-  </data>
-  <data name="Partenaire4" xml:space="preserve">
-    <value>Economic institutions</value>
-  </data>
-  <data name="Partenaire5" xml:space="preserve">
-    <value>Public Institutions and Bodies</value>
-  </data>
-  <data name="Partenariat1" xml:space="preserve">
-    <value>PARTNERSHIPS</value>
-  </data>
-  <data name="Partenariat2" xml:space="preserve">
-    <value>PROGRAM</value>
-  </data>
-  <data name="Programme" xml:space="preserve">
-    <value>PROGRAM</value>
-  </data>
-  <data name="RegisterNow" xml:space="preserve">
-    <value>“Register now”</value>
-  </data>
-  <data name="SousTraitance1" xml:space="preserve">
-    <value>Subcontracting</value>
-  </data>
-  <data name="SousTraitance2" xml:space="preserve">
-    <value>Program</value>
-  </data>
-  <data name="SousTraitanceAvantages1" xml:space="preserve">
-    <value>Main Advantages of Subcontracting for Large Enterprises</value>
-  </data>
-  <data name="SousTraitanceAvantages2" xml:space="preserve">
-    <value>Main Advantages of Subcontracting for Micro-Enterprises</value>
-  </data>
-  <data name="SousTraitanceModels" xml:space="preserve">
-    <value>Some subcontracting models through micro-enterprises</value>
-  </data>
-  <data name="SousTraitanceSupport" xml:space="preserve">
-    <value>Agency support for subcontracting</value>
-  </data>
-  <data name="TypeFinancemet1" xml:space="preserve">
-    <value>Self-financing</value>
-  </data>
-  <data name="TypeFinancemet2" xml:space="preserve">
-    <value>Mixed financing</value>
-  </data>
-  <data name="TypeFinancemet3" xml:space="preserve">
-    <value>Triangular financing</value>
-  </data>
-  <data name="URL" xml:space="preserve">
-    <value>Electronic registration link</value>
-  </data>
-  <data name="Avantages_Plateforme_Numerique_02" xml:space="preserve">
-    <value>saves time and effort in traveling</value>
-  </data>
-  <data name="Avantages_Plateforme_Numerique_04" xml:space="preserve">
-    <value>transparency and security</value>
-  </data>
-  <data name="Avantages_Plateforme_Numerique_Titre" xml:space="preserve">
-    <value>Advantages of the Digital Platform</value>
-  </data>
-  <data name="Beneficiaires_Titre" xml:space="preserve">
-    <value>Beneficiaries</value>
-  </data>
-  <data name="Beneficiaire_01" xml:space="preserve">
-    <value>Youth with project ideas</value>
-  </data>
-  <data name="Beneficiaire_02" xml:space="preserve">
-    <value>Trainees in Entrepreneurship Development Centers (CDE)</value>
-  </data>
-  <data name="Beneficiaire_03" xml:space="preserve">
-    <value>University graduates</value>
-  </data>
-  <data name="Beneficiaire_04" xml:space="preserve">
-    <value>Graduates of vocational training institutes</value>
-  </data>
-  <data name="Beneficiaire_05" xml:space="preserve">
-    <value>The Agency's previous beneficiaries</value>
-  </data>
-  <data name="Beneficiaire_06" xml:space="preserve">
-    <value>ANGEM beneficiaries</value>
-  </data>
-  <data name="Beneficiaire_07" xml:space="preserve">
-    <value>CNAC beneficiaries</value>
-  </data>
-  <data name="Beneficiaire_08" xml:space="preserve">
-    <value>Farmers</value>
-  </data>
-  <data name="Beneficiaire_09" xml:space="preserve">
-    <value>Craftsmen</value>
-  </data>
-  <data name="Beneficiaire_10" xml:space="preserve">
-    <value>Holders of commercial registers</value>
-  </data>
-  <data name="Beneficiaire_11" xml:space="preserve">
-    <value>Licence holders</value>
-  </data>
-  <data name="Creation_Micro_Enterprise_Lien" xml:space="preserve">
-    <value>Registration to Create a micro-enterprise</value>
-  </data>
-  <data name="Creation_Micro_Enterprise_Titre" xml:space="preserve">
-    <value>Creating a micro-enterprise</value>
-  </data>
-  <data name="Extension_Micro_Enterprise_Lien" xml:space="preserve">
-    <value>Registration to expand the activity</value>
-  </data>
-  <data name="Extension_Micro_Enterprise_Titre" xml:space="preserve">
-    <value>Expansion of activity</value>
-  </data>
-  <data name="Inscription_CNRC_Titre" xml:space="preserve">
-    <value>Registration at the National Center for Commercial Register (CNRC)</value>
-  </data>
-  <data name="Inscription_MPDZ_Titre" xml:space="preserve">
-    <value>Electronic Portal for Public Procurement</value>
-  </data>
-  <data name="Inscription_NESDA_Titre" xml:space="preserve">
-    <value>Mechanism Registration</value>
-  </data>
-  <data name="Objectives_Portail_MPDZ_Titre" xml:space="preserve">
-    <value>Objectives of the Electronic Portal for Public Procurement</value>
-  </data>
-  <data name="Objective_Portail_MPDZ_01" xml:space="preserve">
-    <value>Implementing more modern and simplified procedures in dealing with the situation</value>
-  </data>
-  <data name="Objective_Portail_MPDZ_02" xml:space="preserve">
-    <value>Ensuring equality among all candidates and stakeholders</value>
-  </data>
-  <data name="Objective_Portail_MPDZ_03" xml:space="preserve">
-    <value>Providing full transparency in all procedures</value>
-  </data>
-  <data name="Objective_Portail_MPDZ_04" xml:space="preserve">
-    <value>Facilitating access to public demand for all users</value>
-  </data>
-  <data name="Objective_Portail_MPDZ_05" xml:space="preserve">
-    <value>Accelerating contracting and public tendering processes</value>
-  </data>
-  <data name="Portail_Electronique_lien" xml:space="preserve">
-    <value>Registration link : sidjilcom-entreprise.cnrc.dz/ar/accueil2</value>
-  </data>
-  <data name="Portail_Electronique_Texte" xml:space="preserve">
-    <value>To access the electronic portal for establishing institutions, follow this link:</value>
-  </data>
-  <data name="Portail_Electronique_Titre" xml:space="preserve">
-    <value>Accessing the Electronic Portal</value>
-  </data>
-  <data name="Portail_Inscription_CNRC_Coordination_01" xml:space="preserve">
-    <value>The General Directorate of Taxes (DGI)</value>
-  </data>
-  <data name="Portail_Inscription_CNRC_Coordination_02" xml:space="preserve">
-    <value>The National Social Security Fund for the Self-Employed (CASNOS)</value>
-  </data>
-  <data name="Portail_Inscription_CNRC_Coordination_03" xml:space="preserve">
-    <value>The National Social Security Fund for Salaried Workers (CNAS)</value>
-  </data>
-  <data name="Portail_Inscription_CNRC_Coordination_04" xml:space="preserve">
-    <value>The National Statistics Office (ONS)</value>
-  </data>
-  <data name="Portail_Inscription_CNRC_Titre" xml:space="preserve">
-    <value>Electronic portal for establishing institutions</value>
-  </data>
-  <data name="Portail_Services_Titre" xml:space="preserve">
-    <value>Portal services</value>
   </data>
   <data name="ActiviteNesda" xml:space="preserve">
     <value>Activities of the National Entrepreneurship Support and Development Agency</value>
   </data>
   <data name="ActiviteNesdaText" xml:space="preserve">
     <value>The privileges of the NESDA’s mechanism cover the phases of setting up micro-enterprises and expanding their activity. The mechanism also includes various vital economic sectors to encourage entrepreneurship and investment in Algeria.</value>
-  </data>
-  <data name="ActiviteP1" xml:space="preserve">
-    <value>Creation of micro-enterprise</value>
-  </data>
-  <data name="Elle comprend le soutien à la création de micro-entreprises au profit des jeunes porteurs de projets, à travers le financement, l’accompagnement administratif et technique, la mise à disposition de la formation nécessaire, ainsi que le suivi du projet depuis son lancement jusqu’au démarrage effectif de l’activité." xml:space="preserve">
-    <value>Support for the creation of micro-enterprises for young entrepreneurs includes financing, administrative and technical assistance, providing the necessary training and ensuring project follow-up from the beginning until the start of activity.</value>
   </data>
   <data name="ActiviteP2" xml:space="preserve">
     <value>Expansion of the enterprise activity</value>
@@ -1260,32 +798,11 @@
   <data name="ActiviteTitre7TextP9" xml:space="preserve">
     <value>traditional industry</value>
   </data>
-  <data name="Agrandir" xml:space="preserve">
-    <value>Zoom</value>
-  </data>
   <data name="annee" xml:space="preserve">
     <value>years</value>
   </data>
-  <data name="auteur" xml:space="preserve">
-    <value>Author</value>
-  </data>
   <data name="BouttonInscription" xml:space="preserve">
     <value>Digital Registration Platform</value>
-  </data>
-  <data name="DatePublication" xml:space="preserve">
-    <value>Publication date</value>
-  </data>
-  <data name="DecouvrirMag1" xml:space="preserve">
-    <value>Discover the First Issue</value>
-  </data>
-  <data name="DecouvrirMag1Text" xml:space="preserve">
-    <value>Explore “NESDA Mag” now and discover the latest content in the world of entrepreneurship.</value>
-  </data>
-  <data name="DernierNews" xml:space="preserve">
-    <value>Latest updates and news</value>
-  </data>
-  <data name="Electronique" xml:space="preserve">
-    <value>Electronic</value>
   </data>
   <data name="FinancementExploitation" xml:space="preserve">
     <value>Operational and Rent Financing</value>
@@ -1374,6 +891,552 @@
   <data name="FinancementTitre2Text" xml:space="preserve">
     <value>The agency offers several financing options for creating and expanding micro-enterprises through 3 financial structures.</value>
   </data>
+  <data name="LesTypesFinancement" xml:space="preserve">
+    <value>Self-financing, mixed financing,triangular financing</value>
+  </data>
+  <data name="poucentage" xml:space="preserve">
+    <value>REQUIRED EVALUATION RATE</value>
+  </data>
+  <data name="SolutionFinancement" xml:space="preserve">
+    <value>Financing Solutions</value>
+  </data>
+  <data name="SolutionFinancementText" xml:space="preserve">
+    <value>The National Entrepreneurship Support and Development Agency plays a pivotal role in financing micro-enterprises, by accompanying entrepreneurial idea holders who wish to transform their ideas into real projects that generate wealth and create jobs, in accordance with the adopted economic approach aimed at strengthening financing mechanisms and managing related risks, with the goal of driving national development.</value>
+  </data>
+  <data name="TableauTypeFinanement" xml:space="preserve">
+    <value>Table of financing formulas</value>
+  </data>
+  <data name="TableauTypeFinanementColonne1" xml:space="preserve">
+    <value>Type of financing</value>
+  </data>
+  <data name="TableauTypeFinanementColonne2" xml:space="preserve">
+    <value>Personal contribution</value>
+  </data>
+  <data name="TableauTypeFinanementColonne3" xml:space="preserve">
+    <value>Agency (unremunerated loan)</value>
+  </data>
+  <data name="TableauTypeFinanementColonne4" xml:space="preserve">
+    <value>Bank (bank loan)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne1" xml:space="preserve">
+    <value>Triangular financing – students &amp; unemployed</value>
+  </data>
+  <data name="TableauTypeFinanementLigne2" xml:space="preserve">
+    <value>Triangular financing – non-unemployed (southern regions)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne3" xml:space="preserve">
+    <value>Triangular financing – non-unemployed (High Plateaus &amp; Special Regions)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne4" xml:space="preserve">
+    <value>Triangular financing – non-unemployed (other regions)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne5" xml:space="preserve">
+    <value>Mixed  financing</value>
+  </data>
+  <data name="TableauTypeFinanementLigne6" xml:space="preserve">
+    <value>Self-financing</value>
+  </data>
+  <data name="TableauTypeFinanementText" xml:space="preserve">
+    <value>Details of contribution ratios for each type of available financing formula</value>
+  </data>
+  <data name="TrancheAgeCreation" xml:space="preserve">
+    <value>AGE OF CREATION</value>
+  </data>
+  <data name="TrancheAgeExtension" xml:space="preserve">
+    <value>AGE OF EXPANSION</value>
+  </data>
+  <data name="ActiviteP1Text" xml:space="preserve">
+    <value>Support for the creation of micro-enterprises for young entrepreneurs includes financing, administrative and technical assistance, providing the necessary training and ensuring project follow-up from the beginning until the start of activity.</value>
+  </data>
+  <data name="fond" xml:space="preserve">
+    <value>Fund</value>
+  </data>
+  <data name="garantie" xml:space="preserve">
+    <value>Guarantee</value>
+  </data>
+  <data name="ParticipationFG" xml:space="preserve">
+    <value>Enrollment in the guarantee fund</value>
+  </data>
+  <data name="TachesFG" xml:space="preserve">
+    <value>Tasks of the Guarantee Fund</value>
+  </data>
+  <data name="ContactUsNow" xml:space="preserve">
+    <value>Contact us now</value>
+  </data>
+  <data name="decrets1" xml:space="preserve">
+    <value>Presidential Decrees (youth employment support)</value>
+  </data>
+  <data name="decrets2" xml:space="preserve">
+    <value>Executive decrees (establishment of the Agency)</value>
+  </data>
+  <data name="decrets3" xml:space="preserve">
+    <value>Executive decrees (conditions and levels of assistance provided to project holders)</value>
+  </data>
+  <data name="FonctionnementFG" xml:space="preserve">
+    <value>How the Guarantee Fund works</value>
+  </data>
+  <data name="NesdaExtensionTitre" xml:space="preserve">
+    <value>Activity Expansion Program</value>
+  </data>
+  <data name="TaxPhase1" xml:space="preserve">
+    <value>First phase: Implementation Phase</value>
+  </data>
+  <data name="TaxPhase2" xml:space="preserve">
+    <value>Second Phase: Operational Phase</value>
+  </data>
+  <data name="TaxTitre1" xml:space="preserve">
+    <value>TAX</value>
+  </data>
+  <data name="TaxTitre2" xml:space="preserve">
+    <value>PRIVILEGES</value>
+  </data>
+  <data name="telecharger" xml:space="preserve">
+    <value>download</value>
+  </data>
+  <data name="TexteJuridiqueTitre1" xml:space="preserve">
+    <value>Legal</value>
+  </data>
+  <data name="TexteJuridiqueTitre2" xml:space="preserve">
+    <value>texts</value>
+  </data>
+  <data name="annule" xml:space="preserve">
+    <value>Canceled</value>
+  </data>
+  <data name="legistaliveText" xml:space="preserve">
+    <value>Legal Texts</value>
+  </data>
+  <data name="AvantageProgrammeTitre" xml:space="preserve">
+    <value>Program advantages</value>
+  </data>
+  <data name="EnvironementProgrammeTitre" xml:space="preserve">
+    <value>Program Framework and context</value>
+  </data>
+  <data name="Condition-Beneficier1" xml:space="preserve">
+    <value>1. Previous beneficiaries of the Agency’s mechanism:</value>
+  </data>
+  <data name="Condition-Beneficier1,1" xml:space="preserve">
+    <value>1.1 Conditions for benefiting from “Expansion of the same or subsidiary activity”:</value>
+  </data>
+  <data name="ConditionBeneficier-Commun" xml:space="preserve">
+    <value>Common Conditions:</value>
+  </data>
+  <data name="TitreConditionBeneficier" xml:space="preserve">
+    <value>Program Eligibility Requirements</value>
+  </data>
+  <data name="ContributionATitre" xml:space="preserve">
+    <value>Agency Contribution (unremunerated Loan)</value>
+  </data>
+  <data name="ContributionBTitre" xml:space="preserve">
+    <value>Bank Contribution (Bank Loan)</value>
+  </data>
+  <data name="ContributionPTitre" xml:space="preserve">
+    <value>Personal Contribution</value>
+  </data>
+  <data name="ModeFinancementTitre" xml:space="preserve">
+    <value>Modes of financing</value>
+  </data>
+  <data name="MotLiaison" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="TypeFinancemet1" xml:space="preserve">
+    <value>Self-financing</value>
+  </data>
+  <data name="TypeFinancemet2" xml:space="preserve">
+    <value>Mixed financing</value>
+  </data>
+  <data name="TypeFinancemet3" xml:space="preserve">
+    <value>Triangular financing</value>
+  </data>
+  <data name="MotDG" xml:space="preserve">
+    <value>The Director General 's Speech</value>
+  </data>
+  <data name="AgenceNesda" xml:space="preserve">
+    <value>the National Entrepreneurship Support and Development Agency (NESDA)</value>
+  </data>
+  <data name="CentreCDE" xml:space="preserve">
+    <value>Entrepreneurship Development Centers (CDE)</value>
+  </data>
+  <data name="Directeur" xml:space="preserve">
+    <value>Bilal Achacha</value>
+  </data>
+  <data name="MotAgence" xml:space="preserve">
+    <value>the agency</value>
+  </data>
+  <data name="MotVisiteurs" xml:space="preserve">
+    <value>Dear visitors of our website</value>
+  </data>
+  <data name="NesdaKPI" xml:space="preserve">
+    <value>“NESDA KPI”</value>
+  </data>
+  <data name="NesdaRating" xml:space="preserve">
+    <value>“NESDA Rating”</value>
+  </data>
+  <data name="OutilsNumeriques" xml:space="preserve">
+    <value>Digital Business Plan, a call center,</value>
+  </data>
+  <data name="PosteDirecteur" xml:space="preserve">
+    <value>The Director General</value>
+  </data>
+  <data name="verbepresentation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VerbePresentation1" xml:space="preserve">
+    <value>In this regard</value>
+  </data>
+  <data name="axesStrategique" xml:space="preserve">
+    <value>Strategic axes</value>
+  </data>
+  <data name="axesStrategique1" xml:space="preserve">
+    <value>Enhancing support for project holders</value>
+  </data>
+  <data name="axesStrategique2" xml:space="preserve">
+    <value>Contributing to the development of an entrepreneurial ecosystem</value>
+  </data>
+  <data name="axesStrategique3" xml:space="preserve">
+    <value>Strengthening the Agency's capabilities and improving its risk management</value>
+  </data>
+  <data name="mission1" xml:space="preserve">
+    <value>Mission</value>
+  </data>
+  <data name="mission2" xml:space="preserve">
+    <value>Principles</value>
+  </data>
+  <data name="mission2-1" xml:space="preserve">
+    <value>Inclusivity</value>
+  </data>
+  <data name="mission2-2" xml:space="preserve">
+    <value>Credibility</value>
+  </data>
+  <data name="mission2-3" xml:space="preserve">
+    <value>Resilience</value>
+  </data>
+  <data name="mission2-4" xml:space="preserve">
+    <value>Innovation</value>
+  </data>
+  <data name="organisationNesda" xml:space="preserve">
+    <value>the National Entrepreneurship Support and Development Agency’s Organization</value>
+  </data>
+  <data name="ComiteSuivi" xml:space="preserve">
+    <value>Monitoring Committee</value>
+  </data>
+  <data name="CompositionConseilAdmin" xml:space="preserve">
+    <value>Board of Directors’ composition</value>
+  </data>
+  <data name="CompositionConseilAdmin1" xml:space="preserve">
+    <value>Two (2) representatives of the Minister in charge of Micro-Enterprises, one of whom is the Chairperson;</value>
+  </data>
+  <data name="CompositionConseilAdmin10" xml:space="preserve">
+    <value>The president of the association of banks and financial institutions or his representative;</value>
+  </data>
+  <data name="CompositionConseilAdmin11" xml:space="preserve">
+    <value>Representative of the organization of young entrepreneurs, the most representative at the national level.</value>
+  </data>
+  <data name="CompositionConseilAdmin12" xml:space="preserve">
+    <value>Representative of the organization of young entrepreneurs, the most representative at the national level.</value>
+  </data>
+  <data name="CompositionConseilAdmin2" xml:space="preserve">
+    <value>Representative of the Minister in charge of Foreign Affairs,</value>
+  </data>
+  <data name="CompositionConseilAdmin3" xml:space="preserve">
+    <value>Representative of the minister in charge of the Interior and Local authorities;</value>
+  </data>
+  <data name="CompositionConseilAdmin4" xml:space="preserve">
+    <value>Two (2) representatives of the Minister in charge of finance;</value>
+  </data>
+  <data name="CompositionConseilAdmin5" xml:space="preserve">
+    <value>Representative of the minister in charge of Trade;</value>
+  </data>
+  <data name="CompositionConseilAdmin6" xml:space="preserve">
+    <value>Representative of the minister in charge of Labor, Employment and Social Security;</value>
+  </data>
+  <data name="CompositionConseilAdmin7" xml:space="preserve">
+    <value>Representative of the minister in charge of National Solidarity and Women’s Affairs;</value>
+  </data>
+  <data name="CompositionConseilAdmin8" xml:space="preserve">
+    <value>Representative of the minister in charge of industry,</value>
+  </data>
+  <data name="CompositionConseilAdmin9" xml:space="preserve">
+    <value>The Permanent Secretary of the Joint Guarantee Fund to guarantee the risks of loans granted to young entrepreneurs, or his representative;</value>
+  </data>
+  <data name="ConseilAdministration" xml:space="preserve">
+    <value>Board of directors</value>
+  </data>
+  <data name="MissionConseilSuivi" xml:space="preserve">
+    <value>Tasks of the Monitoring Committee</value>
+  </data>
+  <data name="MissionConseilSuivi1" xml:space="preserve">
+    <value>Exercising post-implementation oversight of board decisions;</value>
+  </data>
+  <data name="MissionConseilSuivi2" xml:space="preserve">
+    <value>Providing feedback and recommendations to the Director General;</value>
+  </data>
+  <data name="MissionConseilSuivi3" xml:space="preserve">
+    <value>Providing feedback on periodic reports on follow-up, implementation, and evaluation;</value>
+  </data>
+  <data name="MissionConseilSuivi4" xml:space="preserve">
+    <value>Monitoring and auditing the accounts for the use of Agency funds;</value>
+  </data>
+  <data name="MissionConseilSuivi5" xml:space="preserve">
+    <value>Providing feedback on the estimated revenue and expenditure data.</value>
+  </data>
+  <data name="ReunionConseilAdmin" xml:space="preserve">
+    <value>Board meetings</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Titre" xml:space="preserve">
+    <value>Entrepreneurship Development Centers (CDE) in Vocational Education and Training sector</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Titre" xml:space="preserve">
+    <value>Entrepreneurship Development Centers (CDE) in the Higher Education and Scientific Research sector</value>
+  </data>
+  <data name="Inscription_CDE_Titre" xml:space="preserve">
+    <value>Registration at Entrepreneurship Development Centers (CDE)</value>
+  </data>
+  <data name="Lien_CDE" xml:space="preserve">
+    <value>Registration Link : www.cde.dz</value>
+  </data>
+  <data name="Lien_FPCDE" xml:space="preserve">
+    <value>Registration Link: www.fp.cde.dz</value>
+  </data>
+  <data name="Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Is it possible to register online or is it required to attend in person?</value>
+  </data>
+  <data name="Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>What sessions or programs are available at the center? and does the center provide a practical training?</value>
+  </data>
+  <data name="Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Can all students register at Entrepreneurship Development Centers (CDE), or just is it limited to graduates only?</value>
+  </data>
+  <data name="Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Should registration at centers be based on the training wilaya?</value>
+  </data>
+  <data name="Questions_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Frequently asked questions about Entrepreneurship Development Centers (CDE)</value>
+  </data>
+  <data name="Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>The registration process and application review are done electronically without the need to travel to Entrepreneurship Development Centers (CDE).</value>
+  </data>
+  <data name="Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Programs may include entrepreneurship sessions, project management, marketing, and others, and usually include practical training.</value>
+  </data>
+  <data name="Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>The student must graduate to register at Entrepreneurship Development Centers (CDE).</value>
+  </data>
+  <data name="Réponse_Pour_Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Registration at Entrepreneurship Development Centers (CDE) is possible regardless of the training institute where you studied. This depends on the center's policy and registration rules.</value>
+  </data>
+  <data name="AxesProgramme" xml:space="preserve">
+    <value>Program Axes and Activities:</value>
+  </data>
+  <data name="ButProgramme" xml:space="preserve">
+    <value>Program Goal:</value>
+  </data>
+  <data name="CadreProgramme" xml:space="preserve">
+    <value>Program Framework:</value>
+  </data>
+  <data name="Condition-Beneficier1,2" xml:space="preserve">
+    <value>1.2 Conditions for benefiting from “New activity expansion”:</value>
+  </data>
+  <data name="Condition-Beneficier2" xml:space="preserve">
+    <value>2. Previous non-beneficiaries of the Agency’s mechanism:</value>
+  </data>
+  <data name="DeclarationHonneur" xml:space="preserve">
+    <value>Benefiting from the importation of equipment, operations, and services</value>
+  </data>
+  <data name="DefinitionProgramme" xml:space="preserve">
+    <value>Presentation of the IMPACT 70 Program</value>
+  </data>
+  <data name="EnvironementProgramme" xml:space="preserve">
+    <value>Program scope:</value>
+  </data>
+  <data name="Etapes-Beneficier" xml:space="preserve">
+    <value>The steps to benefit from the program</value>
+  </data>
+  <data name="Partenaire1" xml:space="preserve">
+    <value>Higher Education and Scientific Research Institutions</value>
+  </data>
+  <data name="Partenaire2" xml:space="preserve">
+    <value>Education and Vocational Training Institutions</value>
+  </data>
+  <data name="Partenaire3" xml:space="preserve">
+    <value>Banking Institutions</value>
+  </data>
+  <data name="Partenaire4" xml:space="preserve">
+    <value>Economic institutions</value>
+  </data>
+  <data name="Partenaire5" xml:space="preserve">
+    <value>Public Institutions and Bodies</value>
+  </data>
+  <data name="Partenariat1" xml:space="preserve">
+    <value>PARTNERSHIPS</value>
+  </data>
+  <data name="Partenariat2" xml:space="preserve">
+    <value>PROGRAM</value>
+  </data>
+  <data name="Programme" xml:space="preserve">
+    <value>PROGRAM</value>
+  </data>
+  <data name="RegisterNow" xml:space="preserve">
+    <value>“Register now”</value>
+  </data>
+  <data name="SousTraitance1" xml:space="preserve">
+    <value>Subcontracting</value>
+  </data>
+  <data name="SousTraitance2" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="SousTraitanceAvantages1" xml:space="preserve">
+    <value>Main Advantages of Subcontracting for Large Enterprises</value>
+  </data>
+  <data name="SousTraitanceAvantages2" xml:space="preserve">
+    <value>Main Advantages of Subcontracting for Micro-Enterprises</value>
+  </data>
+  <data name="SousTraitanceModels" xml:space="preserve">
+    <value>Some subcontracting models through micro-enterprises</value>
+  </data>
+  <data name="SousTraitanceSupport" xml:space="preserve">
+    <value>Agency support for subcontracting</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>Electronic registration link</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_02" xml:space="preserve">
+    <value>saves time and effort in traveling</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_04" xml:space="preserve">
+    <value>transparency and security</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_Titre" xml:space="preserve">
+    <value>Advantages of the Digital Platform</value>
+  </data>
+  <data name="Beneficiaires_Titre" xml:space="preserve">
+    <value>Beneficiaries</value>
+  </data>
+  <data name="Beneficiaire_01" xml:space="preserve">
+    <value>Youth with project ideas</value>
+  </data>
+  <data name="Beneficiaire_02" xml:space="preserve">
+    <value>Trainees in Entrepreneurship Development Centers (CDE)</value>
+  </data>
+  <data name="Beneficiaire_03" xml:space="preserve">
+    <value>University graduates</value>
+  </data>
+  <data name="Beneficiaire_04" xml:space="preserve">
+    <value>Graduates of vocational training institutes</value>
+  </data>
+  <data name="Beneficiaire_05" xml:space="preserve">
+    <value>The Agency's previous beneficiaries</value>
+  </data>
+  <data name="Beneficiaire_06" xml:space="preserve">
+    <value>ANGEM beneficiaries</value>
+  </data>
+  <data name="Beneficiaire_07" xml:space="preserve">
+    <value>CNAC beneficiaries</value>
+  </data>
+  <data name="Beneficiaire_08" xml:space="preserve">
+    <value>Farmers</value>
+  </data>
+  <data name="Beneficiaire_09" xml:space="preserve">
+    <value>Craftsmen</value>
+  </data>
+  <data name="Beneficiaire_10" xml:space="preserve">
+    <value>Holders of commercial registers</value>
+  </data>
+  <data name="Beneficiaire_11" xml:space="preserve">
+    <value>Licence holders</value>
+  </data>
+  <data name="Creation_Micro_Enterprise_Lien" xml:space="preserve">
+    <value>Registration to Create a micro-enterprise</value>
+  </data>
+  <data name="Creation_Micro_Enterprise_Titre" xml:space="preserve">
+    <value>Creating a micro-enterprise</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Lien" xml:space="preserve">
+    <value>Registration to expand the activity</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Titre" xml:space="preserve">
+    <value>Expansion of activity</value>
+  </data>
+  <data name="Inscription_CNRC_Titre" xml:space="preserve">
+    <value>Registration at the National Center for Commercial Register (CNRC)</value>
+  </data>
+  <data name="Inscription_MPDZ_Titre" xml:space="preserve">
+    <value>Electronic Portal for Public Procurement</value>
+  </data>
+  <data name="Inscription_NESDA_Titre" xml:space="preserve">
+    <value>Mechanism Registration</value>
+  </data>
+  <data name="Objectives_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>Objectives of the Electronic Portal for Public Procurement</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_01" xml:space="preserve">
+    <value>Implementing more modern and simplified procedures in dealing with the situation</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_02" xml:space="preserve">
+    <value>Ensuring equality among all candidates and stakeholders</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_03" xml:space="preserve">
+    <value>Providing full transparency in all procedures</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_04" xml:space="preserve">
+    <value>Facilitating access to public demand for all users</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_05" xml:space="preserve">
+    <value>Accelerating contracting and public tendering processes</value>
+  </data>
+  <data name="Portail_Electronique_lien" xml:space="preserve">
+    <value>Registration link : sidjilcom-entreprise.cnrc.dz/ar/accueil2</value>
+  </data>
+  <data name="Portail_Electronique_Texte" xml:space="preserve">
+    <value>To access the electronic portal for establishing institutions, follow this link:</value>
+  </data>
+  <data name="Portail_Electronique_Titre" xml:space="preserve">
+    <value>Accessing the Electronic Portal</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_01" xml:space="preserve">
+    <value>The General Directorate of Taxes (DGI)</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_02" xml:space="preserve">
+    <value>The National Social Security Fund for the Self-Employed (CASNOS)</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_03" xml:space="preserve">
+    <value>The National Social Security Fund for Salaried Workers (CNAS)</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_04" xml:space="preserve">
+    <value>The National Statistics Office (ONS)</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Titre" xml:space="preserve">
+    <value>Electronic portal for establishing institutions</value>
+  </data>
+  <data name="Portail_Services_Titre" xml:space="preserve">
+    <value>Portal services</value>
+  </data>
+  <data name="ActiviteP1" xml:space="preserve">
+    <value>Creation of micro-enterprise</value>
+  </data>
+  <data name="Elle comprend le soutien à la création de micro-entreprises au profit des jeunes porteurs de projets, à travers le financement, l’accompagnement administratif et technique, la mise à disposition de la formation nécessaire, ainsi que le suivi du projet depuis son lancement jusqu’au démarrage effectif de l’activité." xml:space="preserve">
+    <value>Support for the creation of micro-enterprises for young entrepreneurs includes financing, administrative and technical assistance, providing the necessary training and ensuring project follow-up from the beginning until the start of activity.</value>
+  </data>
+  <data name="Agrandir" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="auteur" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="DatePublication" xml:space="preserve">
+    <value>Publication date</value>
+  </data>
+  <data name="DecouvrirMag1" xml:space="preserve">
+    <value>Discover the First Issue</value>
+  </data>
+  <data name="DecouvrirMag1Text" xml:space="preserve">
+    <value>Explore “NESDA Mag” now and discover the latest content in the world of entrepreneurship.</value>
+  </data>
+  <data name="DernierNews" xml:space="preserve">
+    <value>Latest updates and news</value>
+  </data>
+  <data name="Electronique" xml:space="preserve">
+    <value>Electronic</value>
+  </data>
   <data name="Format" xml:space="preserve">
     <value>Formula</value>
   </data>
@@ -1385,9 +1448,6 @@
   </data>
   <data name="LeMag" xml:space="preserve">
     <value>Magazine</value>
-  </data>
-  <data name="LesTypesFinancement" xml:space="preserve">
-    <value>Self-financing, mixed financing,triangular financing</value>
   </data>
   <data name="Mag" xml:space="preserve">
     <value>Magazine</value>
@@ -1434,9 +1494,6 @@
   <data name="PosteDirecteurNesda" xml:space="preserve">
     <value>Director General of the National Entrepreneurship Support and Development Agency (NESDA)</value>
   </data>
-  <data name="poucentage" xml:space="preserve">
-    <value>REQUIRED EVALUATION RATE</value>
-  </data>
   <data name="precedent" xml:space="preserve">
     <value>Previous</value>
   </data>
@@ -1461,62 +1518,14 @@
   <data name="retourListe" xml:space="preserve">
     <value>Back to list</value>
   </data>
-  <data name="SolutionFinancement" xml:space="preserve">
-    <value>Financing Solutions</value>
-  </data>
-  <data name="SolutionFinancementText" xml:space="preserve">
-    <value>The National Entrepreneurship Support and Development Agency plays a pivotal role in financing micro-enterprises, by accompanying entrepreneurial idea holders who wish to transform their ideas into real projects that generate wealth and create jobs, in accordance with the adopted economic approach aimed at strengthening financing mechanisms and managing related risks, with the goal of driving national development.</value>
-  </data>
   <data name="SousDirectionCommunication" xml:space="preserve">
     <value>Sub-Directorate of Communication</value>
   </data>
   <data name="suivant" xml:space="preserve">
     <value>Next</value>
   </data>
-  <data name="TableauTypeFinanement" xml:space="preserve">
-    <value>Table of financing formulas</value>
-  </data>
-  <data name="TableauTypeFinanementColonne1" xml:space="preserve">
-    <value>Type of financing</value>
-  </data>
-  <data name="TableauTypeFinanementColonne2" xml:space="preserve">
-    <value>Personal contribution</value>
-  </data>
-  <data name="TableauTypeFinanementColonne3" xml:space="preserve">
-    <value>Agency (unremunerated loan)</value>
-  </data>
-  <data name="TableauTypeFinanementColonne4" xml:space="preserve">
-    <value>Bank (bank loan)</value>
-  </data>
-  <data name="TableauTypeFinanementLigne1" xml:space="preserve">
-    <value>Triangular financing – students &amp; unemployed</value>
-  </data>
-  <data name="TableauTypeFinanementLigne2" xml:space="preserve">
-    <value>Triangular financing – non-unemployed (southern regions)</value>
-  </data>
-  <data name="TableauTypeFinanementLigne3" xml:space="preserve">
-    <value>Triangular financing – non-unemployed (High Plateaus &amp; Special Regions)</value>
-  </data>
-  <data name="TableauTypeFinanementLigne4" xml:space="preserve">
-    <value>Triangular financing – non-unemployed (other regions)</value>
-  </data>
-  <data name="TableauTypeFinanementLigne5" xml:space="preserve">
-    <value>Mixed  financing</value>
-  </data>
-  <data name="TableauTypeFinanementLigne6" xml:space="preserve">
-    <value>Self-financing</value>
-  </data>
-  <data name="TableauTypeFinanementText" xml:space="preserve">
-    <value>Details of contribution ratios for each type of available financing formula</value>
-  </data>
   <data name="TelechargerMag" xml:space="preserve">
     <value>Download</value>
-  </data>
-  <data name="TrancheAgeCreation" xml:space="preserve">
-    <value>AGE OF CREATION</value>
-  </data>
-  <data name="TrancheAgeExtension" xml:space="preserve">
-    <value>AGE OF EXPANSION</value>
   </data>
   <data name="AdresseDG" xml:space="preserve">
     <value>Mohamed Arezki Ben Bouzid Street, El Anasser, Algiers, Algeria</value>
@@ -2046,12 +2055,6 @@
   <data name="Share" xml:space="preserve">
     <value>Share article</value>
   </data>
-  <data name="annule" xml:space="preserve">
-    <value>Canceled</value>
-  </data>
-  <data name="legistaliveText" xml:space="preserve">
-    <value>Legal Texts</value>
-  </data>
   <data name="CommunicationCell" xml:space="preserve">
     <value>Communication cell</value>
   </data>
@@ -2066,8 +2069,5 @@
   </data>
   <data name="bienvenuContact" xml:space="preserve">
     <value>Welcome</value>
-  </data>
-  <data name="ActiviteP1Text" xml:space="preserve">
-    <value>Support for the creation of micro-enterprises for young entrepreneurs includes financing, administrative and technical assistance, providing the necessary training and ensuring project follow-up from the beginning until the start of activity.</value>
   </data>
 </root>

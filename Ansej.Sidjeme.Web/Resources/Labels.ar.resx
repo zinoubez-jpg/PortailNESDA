@@ -702,135 +702,6 @@
   <data name="CentreComunication" xml:space="preserve">
     <value>مركز الإتصالات</value>
   </data>
-  <data name="MotDG" xml:space="preserve">
-    <value>كلمة المدير العام</value>
-  </data>
-  <data name="Structure" xml:space="preserve">
-    <value>الوكالة</value>
-  </data>
-  <data name="AgenceNesda" xml:space="preserve">
-    <value>الوكالة الوطنية لدعم وتنمية المقاولاتية (NESDA)</value>
-  </data>
-  <data name="CentreCDE" xml:space="preserve">
-    <value>مراكز تطوير المقاولاتية (CDE)</value>
-  </data>
-  <data name="Directeur" xml:space="preserve">
-    <value>بلال عشاشة</value>
-  </data>
-  <data name="MotAgence" xml:space="preserve">
-    <value>الوكالة</value>
-  </data>
-  <data name="MotVisiteurs" xml:space="preserve">
-    <value>زوّار موقعنا الأعزاء</value>
-  </data>
-  <data name="NesdaKPI" xml:space="preserve">
-    <value>NESDA KPI,</value>
-  </data>
-  <data name="NesdaRating" xml:space="preserve">
-    <value>NESDA Rating</value>
-  </data>
-  <data name="OutilsNumeriques" xml:space="preserve">
-    <value>مخطط الاعمال الرقمي، مركز الاتصال، منصات رقمية</value>
-  </data>
-  <data name="PosteDirecteur" xml:space="preserve">
-    <value>المدير العام</value>
-  </data>
-  <data name="verbepresentation" xml:space="preserve">
-    <value>تشهد</value>
-  </data>
-  <data name="VerbePresentation1" xml:space="preserve">
-    <value>في هذا الصدد، تضع</value>
-  </data>
-  <data name="axesStrategique" xml:space="preserve">
-    <value>المحاور الاستراتيجية</value>
-  </data>
-  <data name="axesStrategique1" xml:space="preserve">
-    <value>تعزيز مرافقة حاملي المشاريع</value>
-  </data>
-  <data name="axesStrategique2" xml:space="preserve">
-    <value>المساهمة في ترقية نظام بيئي للمقاولاتية</value>
-  </data>
-  <data name="axesStrategique3" xml:space="preserve">
-    <value>تعزيز قدرات الوكالة وتحسين تسييرها للمخاطر</value>
-  </data>
-  <data name="mission1" xml:space="preserve">
-    <value>المهمة</value>
-  </data>
-  <data name="mission2" xml:space="preserve">
-    <value>المبادئ</value>
-  </data>
-  <data name="mission2-1" xml:space="preserve">
-    <value>الشمولية</value>
-  </data>
-  <data name="mission2-2" xml:space="preserve">
-    <value>المصداقية</value>
-  </data>
-  <data name="mission2-3" xml:space="preserve">
-    <value>الصمود</value>
-  </data>
-  <data name="mission2-4" xml:space="preserve">
-    <value>الابتكار</value>
-  </data>
-  <data name="organisationNesda" xml:space="preserve">
-    <value>تنظيم الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
-  </data>
-  <data name="AvantageProgrammeTitre" xml:space="preserve">
-    <value>مزايا البرنامج</value>
-  </data>
-  <data name="ContactUsNow" xml:space="preserve">
-    <value>تواصل معنا الآن</value>
-  </data>
-  <data name="decrets1" xml:space="preserve">
-    <value>المراسيم الرئاسية (دعم تشغيل الشباب)</value>
-  </data>
-  <data name="decrets2" xml:space="preserve">
-    <value>المراسيم التنفيذية (إنشاء الوكالة)</value>
-  </data>
-  <data name="decrets3" xml:space="preserve">
-    <value>المراسيم التنفيذية (شروط الإعانة المقدمة لحاملي المشاريع ومستواها)</value>
-  </data>
-  <data name="EnvironementProgrammeTitre" xml:space="preserve">
-    <value>إطار ومحيط البرنامج</value>
-  </data>
-  <data name="FonctionnementFG" xml:space="preserve">
-    <value>آلية عمل صندوق الضمان</value>
-  </data>
-  <data name="fond" xml:space="preserve">
-    <value>صندوق</value>
-  </data>
-  <data name="garantie" xml:space="preserve">
-    <value>الضمان</value>
-  </data>
-  <data name="NesdaExtensionTitre" xml:space="preserve">
-    <value>برنامج</value>
-  </data>
-  <data name="ParticipationFG" xml:space="preserve">
-    <value>كيفية الاشتراك في صندوق الضمان</value>
-  </data>
-  <data name="TachesFG" xml:space="preserve">
-    <value>مهام صندوق الضمان</value>
-  </data>
-  <data name="TaxPhase1" xml:space="preserve">
-    <value>المرحلة الأولى: مرحلة الإنجاز</value>
-  </data>
-  <data name="TaxPhase2" xml:space="preserve">
-    <value>المرحلة الثانية: مرحلة الاستغلال</value>
-  </data>
-  <data name="TaxTitre1" xml:space="preserve">
-    <value>المزايا </value>
-  </data>
-  <data name="TaxTitre2" xml:space="preserve">
-    <value>الضريبية</value>
-  </data>
-  <data name="telecharger" xml:space="preserve">
-    <value>تحميل</value>
-  </data>
-  <data name="TexteJuridiqueTitre1" xml:space="preserve">
-    <value>النصوص</value>
-  </data>
-  <data name="TexteJuridiqueTitre2" xml:space="preserve">
-    <value>القانونية</value>
-  </data>
   <data name="Accompagnement" xml:space="preserve">
     <value>المرافقةالقبلية والبعدية</value>
   </data>
@@ -896,51 +767,6 @@
   </data>
   <data name="AccompPrepTitre" xml:space="preserve">
     <value>المرافقة في مرحلة الإعداد والتأطير</value>
-  </data>
-  <data name="ComiteSuivi" xml:space="preserve">
-    <value>لجنة المراقبة</value>
-  </data>
-  <data name="CompositionConseilAdmin" xml:space="preserve">
-    <value>تشكيلة مجلس الإدارة</value>
-  </data>
-  <data name="CompositionConseilAdmin1" xml:space="preserve">
-    <value>ممثلان (2) عن الوزير المكلف بالمؤسسات المصغرة، أحدهما رئيس</value>
-  </data>
-  <data name="CompositionConseilAdmin10" xml:space="preserve">
-    <value>رئيس جمعية البنوك والمؤسسات المالية، أو ممثله</value>
-  </data>
-  <data name="CompositionConseilAdmin11" xml:space="preserve">
-    <value>ممثل عن منظمة الشباب ذوي المشاريع، الأكثر تمثيلا على المستوى الوطني</value>
-  </data>
-  <data name="CompositionConseilAdmin12" xml:space="preserve">
-    <value />
-  </data>
-  <data name="CompositionConseilAdmin2" xml:space="preserve">
-    <value>ممثل الوزير المكلف بالشؤون الخارجية</value>
-  </data>
-  <data name="CompositionConseilAdmin3" xml:space="preserve">
-    <value>ممثل الوزير المكلف بالداخلية والجماعات المحلية</value>
-  </data>
-  <data name="CompositionConseilAdmin4" xml:space="preserve">
-    <value>ممثلان (2) عن الوزير المكلف بالمالية</value>
-  </data>
-  <data name="CompositionConseilAdmin5" xml:space="preserve">
-    <value>ممثل الوزير المكلف بالتجارة</value>
-  </data>
-  <data name="CompositionConseilAdmin6" xml:space="preserve">
-    <value>ممثل الوزير المكلف بالعمل والتشغيل والضمان الاجتماعي</value>
-  </data>
-  <data name="CompositionConseilAdmin7" xml:space="preserve">
-    <value>ممثل الوزير المكلف بالتضامن الوطني وشؤون المرأة</value>
-  </data>
-  <data name="CompositionConseilAdmin8" xml:space="preserve">
-    <value>ممثل الوزير المكلف بالصناعة</value>
-  </data>
-  <data name="CompositionConseilAdmin9" xml:space="preserve">
-    <value>الأمين الدائم لصندوق الكفالة المشتركة لضمان أخطار القروض الممنوحة للشباب ذوو المشاريع، أو ممثله</value>
-  </data>
-  <data name="ConseilAdministration" xml:space="preserve">
-    <value>مجلس الإدارة</value>
   </data>
   <data name="FormationIntroP1" xml:space="preserve">
     <value>برامج تكوينية متخصصة ومتكاملة</value>
@@ -1020,305 +846,14 @@
   <data name="FormationTitre" xml:space="preserve">
     <value>برامج تكوينية متخصصة ومتكاملة</value>
   </data>
-  <data name="MissionConseilSuivi" xml:space="preserve">
-    <value>مهام لجنة المراقبة</value>
-  </data>
-  <data name="MissionConseilSuivi1" xml:space="preserve">
-    <value>ممارسة الرقابة اللاحقة لتطبيق قرارات مجلس الإدارة؛</value>
-  </data>
-  <data name="MissionConseilSuivi2" xml:space="preserve">
-    <value>تقديم الملاحظات والتوصيات للمدير العام؛</value>
-  </data>
-  <data name="MissionConseilSuivi3" xml:space="preserve">
-    <value>إبداء الرأي في التقارير الدورية عن المتابعة والتنفيذ والتقييم؛</value>
-  </data>
-  <data name="MissionConseilSuivi4" xml:space="preserve">
-    <value>مراقبة وتدقيق الحسابات لاستعمال أموال الوكالة؛</value>
-  </data>
-  <data name="MissionConseilSuivi5" xml:space="preserve">
-    <value>تقديم الملاحظات حول البيانات التقديرية للإيرادات والنفقات.</value>
-  </data>
   <data name="ProgFormation" xml:space="preserve">
     <value>برامج التكوين</value>
-  </data>
-  <data name="ReunionConseilAdmin" xml:space="preserve">
-    <value>اجتماعات مجلس الإدارة</value>
-  </data>
-  <data name="CDE_Dans_Education_FormationProfessionnelle_Titre" xml:space="preserve">
-    <value>مراكز تطوير المقاولاتية في قطاع التعليم والتكوين المهني</value>
-  </data>
-  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Titre" xml:space="preserve">
-    <value>مراكز تطوير المقاولاتية في قطاع التعليم العالي والبحث العلمي</value>
-  </data>
-  <data name="Inscription_CDE_Titre" xml:space="preserve">
-    <value>التسجيل في مراكز تطوير المقاولاتية</value>
-  </data>
-  <data name="Lien_CDE" xml:space="preserve">
-    <value>رابط التسجيل: www.cde.dz</value>
-  </data>
-  <data name="Lien_FPCDE" xml:space="preserve">
-    <value>رابط التسجيل: www.fp.cde.dz</value>
-  </data>
-  <data name="Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>هل يمكن التسجيل عبر الإنترنت أم يتطلب الحضور شخصياً؟</value>
-  </data>
-  <data name="Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>ما هي الدورات أو البرامج المتاحة في المركز؟ وهل يوفر المركز تدريباً عملياً؟</value>
-  </data>
-  <data name="Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>هل يمكن لجميع الطلاب التسجيل في مراكز تطوير المقاولاتية، أم يقتصر الأمر على المتخرجين فقط؟</value>
-  </data>
-  <data name="Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>هل يجب التسجيل في المراكز حسب ولاية التكوين؟</value>
-  </data>
-  <data name="Questions_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>الأسئلة الشائعة حول مراكز تطوير المقاولاتية</value>
-  </data>
-  <data name="Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>تتم عملية التسجيل ودراسة الطلب الكترونيا دون الحاجة الى التنقل الى مراكز تطوير المقاولاتية.</value>
-  </data>
-  <data name="Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>يمكن أن تشمل البرامج دورات في المقاولاتية، وإدارة المشاريع، والتسويق، وغيرها، وعادةً ما يتم تضمين تدريب عملي ضمن البرنامج</value>
-  </data>
-  <data name="Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>يجب أن يكون الطالب متخرجًا للتسجيل في مراكز تطوير المقاولاتية.</value>
-  </data>
-  <data name="Réponse_Pour_Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
-    <value>يمكن التسجيل في مراكز تطوير المقاولاتية بغض النظر عن معهد التكوين التي درس فيها. يعتمد هذا على سياسة المركز وقواعد التسجيل التي يحددها</value>
-  </data>
-  <data name="AxesProgramme" xml:space="preserve">
-    <value>محاور وأنشطة البرنامج</value>
-  </data>
-  <data name="ButProgramme" xml:space="preserve">
-    <value>غاية البرنامج</value>
-  </data>
-  <data name="CadreProgramme" xml:space="preserve">
-    <value>إطار البرنامج</value>
-  </data>
-  <data name="ConditionBeneficier1" xml:space="preserve">
-    <value>1. المستفيدين من جهاز الوكالة سابقا:</value>
-  </data>
-  <data name="ConditionBeneficier1,1" xml:space="preserve">
-    <value>1.1. شروط الاستفادة من "توسعة نفس النشاط او نشاط فرعي"</value>
-  </data>
-  <data name="ConditionBeneficier1,2" xml:space="preserve">
-    <value>1.2. شروط الاستفادة من "توسعة نشاط جديد"</value>
-  </data>
-  <data name="ConditionBeneficier2" xml:space="preserve">
-    <value>2. الغير مستفيدين من جهاز الوكالة سابقا:</value>
-  </data>
-  <data name="ConditionBeneficierCommun" xml:space="preserve">
-    <value>الشروط المشتركة:</value>
-  </data>
-  <data name="ConditionBeneficierTitre" xml:space="preserve">
-    <value>شروط الاستفادة من البرنامج</value>
-  </data>
-  <data name="ContributionATitre" xml:space="preserve">
-    <value>مساهمة الوكالة (قرض غير مكافئ)</value>
-  </data>
-  <data name="ContributionBTitre" xml:space="preserve">
-    <value>مساهمة البنك (القرض البنكي)</value>
-  </data>
-  <data name="ContributionPTitre" xml:space="preserve">
-    <value>المساهمة الشخصية</value>
-  </data>
-  <data name="DeclarationHonneur" xml:space="preserve">
-    <value>الاستفادة من استراد المعدات و العمليات و الخدمات</value>
-  </data>
-  <data name="DefinitionProgramme" xml:space="preserve">
-    <value>تعريف البرنامج</value>
-  </data>
-  <data name="EnvironementProgramme" xml:space="preserve">
-    <value>محيط البرنامج</value>
-  </data>
-  <data name="EtapesBeneficier" xml:space="preserve">
-    <value>مراحل الاستفادة من البرنامج</value>
-  </data>
-  <data name="ModeFinancementTitre" xml:space="preserve">
-    <value>صيغ التمويل</value>
-  </data>
-  <data name="MotLiaison" xml:space="preserve">
-    <value>الى</value>
-  </data>
-  <data name="Partenaire1" xml:space="preserve">
-    <value>مؤسسات التعليم العالي والبحث العلمي</value>
-  </data>
-  <data name="Partenaire2" xml:space="preserve">
-    <value>مؤسسات التعليم والتكوين المهني</value>
-  </data>
-  <data name="Partenaire3" xml:space="preserve">
-    <value>المؤسسات البنكية</value>
-  </data>
-  <data name="Partenaire4" xml:space="preserve">
-    <value>المؤسسات الاقتصادية</value>
-  </data>
-  <data name="Partenaire5" xml:space="preserve">
-    <value>المؤسسات والهيئات العمومية</value>
-  </data>
-  <data name="Partenariat1" xml:space="preserve">
-    <value>برنامج</value>
-  </data>
-  <data name="Partenariat2" xml:space="preserve">
-    <value>الشراكات</value>
-  </data>
-  <data name="Programme" xml:space="preserve">
-    <value>برنامج</value>
-  </data>
-  <data name="RegisterNow" xml:space="preserve">
-    <value>سجل الآن!</value>
-  </data>
-  <data name="SousTraitance1" xml:space="preserve">
-    <value>برنامج</value>
-  </data>
-  <data name="SousTraitance2" xml:space="preserve">
-    <value>المناولة</value>
-  </data>
-  <data name="SousTraitanceAvantages1" xml:space="preserve">
-    <value>أهم مزايا المناولة بالنسبة للمؤسسات الكبرى</value>
-  </data>
-  <data name="SousTraitanceAvantages2" xml:space="preserve">
-    <value>أهم مزايا المناولة بالنسبة للمؤسسات المصغرة</value>
-  </data>
-  <data name="SousTraitanceModels" xml:space="preserve">
-    <value>بعض نماذج المناولة عبر المؤسسات المصغرة</value>
-  </data>
-  <data name="SousTraitanceSupport" xml:space="preserve">
-    <value>دعم الوكالة للمناولة</value>
-  </data>
-  <data name="TypeFinancemet1" xml:space="preserve">
-    <value>التمويل الذاتي</value>
-  </data>
-  <data name="TypeFinancemet2" xml:space="preserve">
-    <value>التمويل الثنائي</value>
-  </data>
-  <data name="TypeFinancemet3" xml:space="preserve">
-    <value>التمويل الثلاثي</value>
-  </data>
-  <data name="URL" xml:space="preserve">
-    <value>رابط التسجيل الإلكتروني</value>
-  </data>
-  <data name="Avantages_Plateforme_Numerique_02" xml:space="preserve">
-    <value>ربح الوقت وتوفير جهد التنقل</value>
-  </data>
-  <data name="Avantages_Plateforme_Numerique_04" xml:space="preserve">
-    <value>الشفافية والأمان</value>
-  </data>
-  <data name="Avantages_Plateforme_Numerique_Titre" xml:space="preserve">
-    <value>مزايا المنصة الرقمية</value>
-  </data>
-  <data name="Beneficiaires_Titre" xml:space="preserve">
-    <value>المستفيدون:</value>
-  </data>
-  <data name="Beneficiaire_01" xml:space="preserve">
-    <value>الشباب حاملو أفكار المشاريع</value>
-  </data>
-  <data name="Beneficiaire_02" xml:space="preserve">
-    <value>المتكونون في مراكز تطوير المقاولاتية</value>
-  </data>
-  <data name="Beneficiaire_03" xml:space="preserve">
-    <value>خريجو الجامعات</value>
-  </data>
-  <data name="Beneficiaire_04" xml:space="preserve">
-    <value>خريجو معاهد التكوين المهني</value>
-  </data>
-  <data name="Beneficiaire_05" xml:space="preserve">
-    <value>المستفيدون السابقون من الوكالة</value>
-  </data>
-  <data name="Beneficiaire_06" xml:space="preserve">
-    <value>مستفيدو أونجام (ANGEM)</value>
-  </data>
-  <data name="Beneficiaire_07" xml:space="preserve">
-    <value>مستفيدو كناك (CNAC)</value>
-  </data>
-  <data name="Beneficiaire_08" xml:space="preserve">
-    <value>الفلاحون</value>
-  </data>
-  <data name="Beneficiaire_09" xml:space="preserve">
-    <value>الحرفيون</value>
-  </data>
-  <data name="Beneficiaire_10" xml:space="preserve">
-    <value>أصحاب السجلات التجارية</value>
-  </data>
-  <data name="Beneficiaire_11" xml:space="preserve">
-    <value>أصحاب التراخيص</value>
-  </data>
-  <data name="Creation_Micro_Enterprise_Lien" xml:space="preserve">
-    <value>التسجيل لإنشاء مؤسسة مصغرة</value>
-  </data>
-  <data name="Creation_Micro_Enterprise_Titre" xml:space="preserve">
-    <value>إنشاء مؤسسة مصغرة</value>
-  </data>
-  <data name="Extension_Micro_Enterprise_Lien" xml:space="preserve">
-    <value>التسجيل لتوسعة النشاط</value>
-  </data>
-  <data name="Extension_Micro_Enterprise_Titre" xml:space="preserve">
-    <value>توسعة النشاط</value>
-  </data>
-  <data name="Inscription_CNRC_Titre" xml:space="preserve">
-    <value>التسجيل في المركز الوطني للسجل التجاري</value>
-  </data>
-  <data name="Inscription_MPDZ_Titre" xml:space="preserve">
-    <value>البوابة الإلكترونية للصفقات العمومية</value>
-  </data>
-  <data name="Inscription_NESDA_Titre" xml:space="preserve">
-    <value>التسجيل في الجهاز</value>
-  </data>
-  <data name="Objectives_Portail_MPDZ_Titre" xml:space="preserve">
-    <value>أهداف البوابة الإلكترونية للصفقات العمومية</value>
-  </data>
-  <data name="Objective_Portail_MPDZ_01" xml:space="preserve">
-    <value>تكريس إجراءات أكثر حداثة وبساطة في التعامل</value>
-  </data>
-  <data name="Objective_Portail_MPDZ_02" xml:space="preserve">
-    <value>ضمان المساواة بين جميع المرشحين والمتعاملين</value>
-  </data>
-  <data name="Objective_Portail_MPDZ_03" xml:space="preserve">
-    <value>توفير الشفافية الكاملة في جميع الإجراءات</value>
-  </data>
-  <data name="Objective_Portail_MPDZ_04" xml:space="preserve">
-    <value>تسهيل الوصول إلى الطلب العمومي لجميع المتعاملين</value>
-  </data>
-  <data name="Objective_Portail_MPDZ_05" xml:space="preserve">
-    <value>تسريع عمليات التعاقد والمناقصات العمومية</value>
-  </data>
-  <data name="Portail_Electronique_lien" xml:space="preserve">
-    <value>رابط التسجيل: sidjilcom-entreprise.cnrc.dz/ar/acceuil2</value>
-  </data>
-  <data name="Portail_Electronique_Texte" xml:space="preserve">
-    <value>للولوج الى البوابة الإلكترونية لإنشاء المؤسسات الرابط التالي:</value>
-  </data>
-  <data name="Portail_Electronique_Titre" xml:space="preserve">
-    <value>الوصول إلى البوابة الإلكترونية</value>
-  </data>
-  <data name="Portail_Inscription_CNRC_Coordination_01" xml:space="preserve">
-    <value>المديرية العامة للضرائب</value>
-  </data>
-  <data name="Portail_Inscription_CNRC_Coordination_02" xml:space="preserve">
-    <value>الصندوق الوطني للضمان الخاص بغير الأجراء</value>
-  </data>
-  <data name="Portail_Inscription_CNRC_Coordination_03" xml:space="preserve">
-    <value>الصندوق الوطني للضمان الإجتماعي للعمال الأجراء</value>
-  </data>
-  <data name="Portail_Inscription_CNRC_Coordination_04" xml:space="preserve">
-    <value>الديوان الوطني للإحصائيات</value>
-  </data>
-  <data name="Portail_Inscription_CNRC_Titre" xml:space="preserve">
-    <value>البوابة الإلكترونية لإنشاء المؤسسات</value>
-  </data>
-  <data name="Portail_Services_Titre" xml:space="preserve">
-    <value>خدمات البوابة</value>
   </data>
   <data name="ActiviteNesda" xml:space="preserve">
     <value>أنشطة الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
   </data>
   <data name="ActiviteNesdaText" xml:space="preserve">
     <value>تغطي مزايا جهاز الوكالة الوطنية لدعم وتنمية المقاولاتية مراحل إنشاء المؤسسات المصغرة وتوسعة نشاطها، كما يشمل الجهاز مختلف القطاعات الاقتصادية الحيوية لتشجيع ريادة الأعمال والاستثمار في الجزائر.</value>
-  </data>
-  <data name="ActiviteP1" xml:space="preserve">
-    <value>إنشاء مؤسسة مصغرة</value>
-  </data>
-  <data name="Elle comprend le soutien à la création de micro-entreprises au profit des jeunes porteurs de projets, à travers le financement, l’accompagnement administratif et technique, la mise à disposition de la formation nécessaire, ainsi que le suivi du projet depuis son lancement jusqu’au démarrage effectif de l’activité." xml:space="preserve">
-    <value>يشمل دعم إنشاء المؤسسات المصغرة للشباب أصحاب المشاريع من خلال التمويل والمرافقة الإدارية والتقنية، مع توفير التكوين اللازم وضمان متابعة المشروع من البداية حتى بدء النشاط.</value>
   </data>
   <data name="ActiviteP2" xml:space="preserve">
     <value>توسعة نشاط المؤسسة</value>
@@ -1509,32 +1044,11 @@
   <data name="ActiviteTitre7TextP9" xml:space="preserve">
     <value>الصناعة التقليدية</value>
   </data>
-  <data name="Agrandir" xml:space="preserve">
-    <value>تكبير</value>
-  </data>
   <data name="annee" xml:space="preserve">
     <value>سنة</value>
   </data>
-  <data name="auteur" xml:space="preserve">
-    <value>المؤلف</value>
-  </data>
   <data name="BouttonInscription" xml:space="preserve">
     <value>منصة التسجيل الإلكتروني</value>
-  </data>
-  <data name="DatePublication" xml:space="preserve">
-    <value>تاريخ النشر</value>
-  </data>
-  <data name="DecouvrirMag1" xml:space="preserve">
-    <value>اكتشف العدد الأول</value>
-  </data>
-  <data name="DecouvrirMag1Text" xml:space="preserve">
-    <value>تصفح مجلة ناسدا Mag الآن واطلع على أحدث المحتويات في عالم المقاولاتية وريادة الأعمال</value>
-  </data>
-  <data name="DernierNews" xml:space="preserve">
-    <value>آخر التحديثات والأخبار</value>
-  </data>
-  <data name="Electronique" xml:space="preserve">
-    <value>الإلكترونية</value>
   </data>
   <data name="FinancementExploitation" xml:space="preserve">
     <value>تمويل الاستغلال والكراء</value>
@@ -1623,6 +1137,555 @@
   <data name="FinancementTitre2Text" xml:space="preserve">
     <value>تعرض الوكالة عدة صيغ تمويلية لانشاء وتوسعة المؤسسات المُصغّرة عبر 3 تركيبات مالية</value>
   </data>
+  <data name="LesTypesFinancement" xml:space="preserve">
+    <value>التمويل الذاتي، الثنائي، الثلاثي</value>
+  </data>
+  <data name="poucentage" xml:space="preserve">
+    <value>نسبة التقييم المطلوبة</value>
+  </data>
+  <data name="SolutionFinancement" xml:space="preserve">
+    <value>حلول التمويل</value>
+  </data>
+  <data name="SolutionFinancementText" xml:space="preserve">
+    <value>تلعب الوكالة الوطنية لدعم وتنمية المقاولاتية دوراً محورياً في تمويل المؤسسات المصغرة، عبر مرافقة حاملي الأفكار الريادية الراغبين في تحويلها إلى مشاريع واقعية تخلق الثروة ومناصب الشغل، وفقا للمقاربة الاقتصادية المنتهجة الرامية الى تعزيز آليات التمويل وتسيير المخاطر المتعلقة بها، بهدف تحريك عجلة التنمية الوطنية.</value>
+  </data>
+  <data name="TableauTypeFinanement" xml:space="preserve">
+    <value>جدول صيغ التمويل</value>
+  </data>
+  <data name="TableauTypeFinanementColonne1" xml:space="preserve">
+    <value>نوع التمويل</value>
+  </data>
+  <data name="TableauTypeFinanementColonne2" xml:space="preserve">
+    <value>المساهمة الشخصية</value>
+  </data>
+  <data name="TableauTypeFinanementColonne3" xml:space="preserve">
+    <value>الوكالة (قرض غير مكافئ)</value>
+  </data>
+  <data name="TableauTypeFinanementColonne4" xml:space="preserve">
+    <value>البنك (قرض بنكي)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne1" xml:space="preserve">
+    <value>التمويل الثلاثي - الطلبة والبطالين</value>
+  </data>
+  <data name="TableauTypeFinanementLigne2" xml:space="preserve">
+    <value>التمويل الثلاثي - غير البطالين (مناطق الجنوب)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne3" xml:space="preserve">
+    <value>التمويل الثلاثي - غير البطالين (الهضاب العليا والمناطق الخاصة)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne4" xml:space="preserve">
+    <value>التمويل الثلاثي - غير البطالين (باقي المناطق)</value>
+  </data>
+  <data name="TableauTypeFinanementLigne5" xml:space="preserve">
+    <value>التمويل الثنائي</value>
+  </data>
+  <data name="TableauTypeFinanementLigne6" xml:space="preserve">
+    <value>التمويل الذاتي</value>
+  </data>
+  <data name="TableauTypeFinanementText" xml:space="preserve">
+    <value>تفاصيل نسب المساهمة لكل نوع من صيغ التمويل المتاحة</value>
+  </data>
+  <data name="TrancheAgeCreation" xml:space="preserve">
+    <value>سن الإنشاء</value>
+  </data>
+  <data name="TrancheAgeExtension" xml:space="preserve">
+    <value>سن التوسعة</value>
+  </data>
+  <data name="ActiviteP1Text" xml:space="preserve">
+    <value>يشمل دعم إنشاء المؤسسات المصغرة للشباب أصحاب المشاريع من خلال التمويل والمرافقة الإدارية والتقنية، مع توفير التكوين اللازم وضمان متابعة المشروع من البداية حتى بدء النشاط.</value>
+  </data>
+  <data name="fond" xml:space="preserve">
+    <value>صندوق</value>
+  </data>
+  <data name="garantie" xml:space="preserve">
+    <value>الضمان</value>
+  </data>
+  <data name="ParticipationFG" xml:space="preserve">
+    <value>كيفية الاشتراك في صندوق الضمان</value>
+  </data>
+  <data name="TachesFG" xml:space="preserve">
+    <value>مهام صندوق الضمان</value>
+  </data>
+  <data name="ContactUsNow" xml:space="preserve">
+    <value>تواصل معنا الآن</value>
+  </data>
+  <data name="decrets1" xml:space="preserve">
+    <value>المراسيم الرئاسية (دعم تشغيل الشباب)</value>
+  </data>
+  <data name="decrets2" xml:space="preserve">
+    <value>المراسيم التنفيذية (إنشاء الوكالة)</value>
+  </data>
+  <data name="decrets3" xml:space="preserve">
+    <value>المراسيم التنفيذية (شروط الإعانة المقدمة لحاملي المشاريع ومستواها)</value>
+  </data>
+  <data name="FonctionnementFG" xml:space="preserve">
+    <value>آلية عمل صندوق الضمان</value>
+  </data>
+  <data name="NesdaExtensionTitre" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="TaxPhase1" xml:space="preserve">
+    <value>المرحلة الأولى: مرحلة الإنجاز</value>
+  </data>
+  <data name="TaxPhase2" xml:space="preserve">
+    <value>المرحلة الثانية: مرحلة الاستغلال</value>
+  </data>
+  <data name="TaxTitre1" xml:space="preserve">
+    <value>المزايا </value>
+  </data>
+  <data name="TaxTitre2" xml:space="preserve">
+    <value>الضريبية</value>
+  </data>
+  <data name="telecharger" xml:space="preserve">
+    <value>تحميل</value>
+  </data>
+  <data name="TexteJuridiqueTitre1" xml:space="preserve">
+    <value>النصوص</value>
+  </data>
+  <data name="TexteJuridiqueTitre2" xml:space="preserve">
+    <value>القانونية</value>
+  </data>
+  <data name="annule" xml:space="preserve">
+    <value>ملغى</value>
+  </data>
+  <data name="legistaliveText" xml:space="preserve">
+    <value>النصوص القانونية</value>
+  </data>
+  <data name="AvantageProgrammeTitre" xml:space="preserve">
+    <value>مزايا البرنامج</value>
+  </data>
+  <data name="EnvironementProgrammeTitre" xml:space="preserve">
+    <value>إطار ومحيط البرنامج</value>
+  </data>
+  <data name="Condition-Beneficier1" xml:space="preserve">
+    <value>1. المستفيدين من جهاز الوكالة سابقا:</value>
+  </data>
+  <data name="Condition-Beneficier1,1" xml:space="preserve">
+    <value>1.1. شروط الاستفادة من "توسعة نفس النشاط او نشاط فرعي"</value>
+  </data>
+  <data name="ConditionBeneficier-Commun" xml:space="preserve">
+    <value>الشروط المشتركة:</value>
+  </data>
+  <data name="TitreConditionBeneficier" xml:space="preserve">
+    <value>شروط الاستفادة من البرنامج</value>
+  </data>
+  <data name="ContributionATitre" xml:space="preserve">
+    <value>مساهمة الوكالة (قرض غير مكافئ)</value>
+  </data>
+  <data name="ContributionBTitre" xml:space="preserve">
+    <value>مساهمة البنك (القرض البنكي)</value>
+  </data>
+  <data name="ContributionPTitre" xml:space="preserve">
+    <value>المساهمة الشخصية</value>
+  </data>
+  <data name="ModeFinancementTitre" xml:space="preserve">
+    <value>صيغ التمويل</value>
+  </data>
+  <data name="MotLiaison" xml:space="preserve">
+    <value>الى</value>
+  </data>
+  <data name="TypeFinancemet1" xml:space="preserve">
+    <value>التمويل الذاتي</value>
+  </data>
+  <data name="TypeFinancemet2" xml:space="preserve">
+    <value>التمويل الثنائي</value>
+  </data>
+  <data name="TypeFinancemet3" xml:space="preserve">
+    <value>التمويل الثلاثي</value>
+  </data>
+  <data name="MotDG" xml:space="preserve">
+    <value>كلمة المدير العام</value>
+  </data>
+  <data name="Structure" xml:space="preserve">
+    <value>الوكالة</value>
+  </data>
+  <data name="AgenceNesda" xml:space="preserve">
+    <value>الوكالة الوطنية لدعم وتنمية المقاولاتية (NESDA)</value>
+  </data>
+  <data name="CentreCDE" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية (CDE)</value>
+  </data>
+  <data name="Directeur" xml:space="preserve">
+    <value>بلال عشاشة</value>
+  </data>
+  <data name="MotAgence" xml:space="preserve">
+    <value>الوكالة</value>
+  </data>
+  <data name="MotVisiteurs" xml:space="preserve">
+    <value>زوّار موقعنا الأعزاء</value>
+  </data>
+  <data name="NesdaKPI" xml:space="preserve">
+    <value>NESDA KPI,</value>
+  </data>
+  <data name="NesdaRating" xml:space="preserve">
+    <value>NESDA Rating</value>
+  </data>
+  <data name="OutilsNumeriques" xml:space="preserve">
+    <value>مخطط الاعمال الرقمي، مركز الاتصال، منصات رقمية</value>
+  </data>
+  <data name="PosteDirecteur" xml:space="preserve">
+    <value>المدير العام</value>
+  </data>
+  <data name="verbepresentation" xml:space="preserve">
+    <value>تشهد</value>
+  </data>
+  <data name="VerbePresentation1" xml:space="preserve">
+    <value>في هذا الصدد، تضع</value>
+  </data>
+  <data name="axesStrategique" xml:space="preserve">
+    <value>المحاور الاستراتيجية</value>
+  </data>
+  <data name="axesStrategique1" xml:space="preserve">
+    <value>تعزيز مرافقة حاملي المشاريع</value>
+  </data>
+  <data name="axesStrategique2" xml:space="preserve">
+    <value>المساهمة في ترقية نظام بيئي للمقاولاتية</value>
+  </data>
+  <data name="axesStrategique3" xml:space="preserve">
+    <value>تعزيز قدرات الوكالة وتحسين تسييرها للمخاطر</value>
+  </data>
+  <data name="mission1" xml:space="preserve">
+    <value>المهمة</value>
+  </data>
+  <data name="mission2" xml:space="preserve">
+    <value>المبادئ</value>
+  </data>
+  <data name="mission2-1" xml:space="preserve">
+    <value>الشمولية</value>
+  </data>
+  <data name="mission2-2" xml:space="preserve">
+    <value>المصداقية</value>
+  </data>
+  <data name="mission2-3" xml:space="preserve">
+    <value>الصمود</value>
+  </data>
+  <data name="mission2-4" xml:space="preserve">
+    <value>الابتكار</value>
+  </data>
+  <data name="organisationNesda" xml:space="preserve">
+    <value>تنظيم الوكالة الوطنية لدعم وتنمية المقاولاتية</value>
+  </data>
+  <data name="ComiteSuivi" xml:space="preserve">
+    <value>لجنة المراقبة</value>
+  </data>
+  <data name="CompositionConseilAdmin" xml:space="preserve">
+    <value>تشكيلة مجلس الإدارة</value>
+  </data>
+  <data name="CompositionConseilAdmin1" xml:space="preserve">
+    <value>ممثلان (2) عن الوزير المكلف بالمؤسسات المصغرة، أحدهما رئيس</value>
+  </data>
+  <data name="CompositionConseilAdmin10" xml:space="preserve">
+    <value>رئيس جمعية البنوك والمؤسسات المالية، أو ممثله</value>
+  </data>
+  <data name="CompositionConseilAdmin11" xml:space="preserve">
+    <value>ممثل عن منظمة الشباب ذوي المشاريع، الأكثر تمثيلا على المستوى الوطني</value>
+  </data>
+  <data name="CompositionConseilAdmin12" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CompositionConseilAdmin2" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالشؤون الخارجية</value>
+  </data>
+  <data name="CompositionConseilAdmin3" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالداخلية والجماعات المحلية</value>
+  </data>
+  <data name="CompositionConseilAdmin4" xml:space="preserve">
+    <value>ممثلان (2) عن الوزير المكلف بالمالية</value>
+  </data>
+  <data name="CompositionConseilAdmin5" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالتجارة</value>
+  </data>
+  <data name="CompositionConseilAdmin6" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالعمل والتشغيل والضمان الاجتماعي</value>
+  </data>
+  <data name="CompositionConseilAdmin7" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالتضامن الوطني وشؤون المرأة</value>
+  </data>
+  <data name="CompositionConseilAdmin8" xml:space="preserve">
+    <value>ممثل الوزير المكلف بالصناعة</value>
+  </data>
+  <data name="CompositionConseilAdmin9" xml:space="preserve">
+    <value>الأمين الدائم لصندوق الكفالة المشتركة لضمان أخطار القروض الممنوحة للشباب ذوو المشاريع، أو ممثله</value>
+  </data>
+  <data name="ConseilAdministration" xml:space="preserve">
+    <value>مجلس الإدارة</value>
+  </data>
+  <data name="MissionConseilSuivi" xml:space="preserve">
+    <value>مهام لجنة المراقبة</value>
+  </data>
+  <data name="MissionConseilSuivi1" xml:space="preserve">
+    <value>ممارسة الرقابة اللاحقة لتطبيق قرارات مجلس الإدارة؛</value>
+  </data>
+  <data name="MissionConseilSuivi2" xml:space="preserve">
+    <value>تقديم الملاحظات والتوصيات للمدير العام؛</value>
+  </data>
+  <data name="MissionConseilSuivi3" xml:space="preserve">
+    <value>إبداء الرأي في التقارير الدورية عن المتابعة والتنفيذ والتقييم؛</value>
+  </data>
+  <data name="MissionConseilSuivi4" xml:space="preserve">
+    <value>مراقبة وتدقيق الحسابات لاستعمال أموال الوكالة؛</value>
+  </data>
+  <data name="MissionConseilSuivi5" xml:space="preserve">
+    <value>تقديم الملاحظات حول البيانات التقديرية للإيرادات والنفقات.</value>
+  </data>
+  <data name="ReunionConseilAdmin" xml:space="preserve">
+    <value>اجتماعات مجلس الإدارة</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Titre" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية في قطاع التعليم والتكوين المهني</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Titre" xml:space="preserve">
+    <value>مراكز تطوير المقاولاتية في قطاع التعليم العالي والبحث العلمي</value>
+  </data>
+  <data name="Inscription_CDE_Titre" xml:space="preserve">
+    <value>التسجيل في مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="Lien_CDE" xml:space="preserve">
+    <value>رابط التسجيل: www.cde.dz</value>
+  </data>
+  <data name="Lien_FPCDE" xml:space="preserve">
+    <value>رابط التسجيل: www.fp.cde.dz</value>
+  </data>
+  <data name="Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>هل يمكن التسجيل عبر الإنترنت أم يتطلب الحضور شخصياً؟</value>
+  </data>
+  <data name="Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>ما هي الدورات أو البرامج المتاحة في المركز؟ وهل يوفر المركز تدريباً عملياً؟</value>
+  </data>
+  <data name="Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>هل يمكن لجميع الطلاب التسجيل في مراكز تطوير المقاولاتية، أم يقتصر الأمر على المتخرجين فقط؟</value>
+  </data>
+  <data name="Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>هل يجب التسجيل في المراكز حسب ولاية التكوين؟</value>
+  </data>
+  <data name="Questions_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>الأسئلة الشائعة حول مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>تتم عملية التسجيل ودراسة الطلب الكترونيا دون الحاجة الى التنقل الى مراكز تطوير المقاولاتية.</value>
+  </data>
+  <data name="Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>يمكن أن تشمل البرامج دورات في المقاولاتية، وإدارة المشاريع، والتسويق، وغيرها، وعادةً ما يتم تضمين تدريب عملي ضمن البرنامج</value>
+  </data>
+  <data name="Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>يجب أن يكون الطالب متخرجًا للتسجيل في مراكز تطوير المقاولاتية.</value>
+  </data>
+  <data name="Réponse_Pour_Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>يمكن التسجيل في مراكز تطوير المقاولاتية بغض النظر عن معهد التكوين التي درس فيها. يعتمد هذا على سياسة المركز وقواعد التسجيل التي يحددها</value>
+  </data>
+  <data name="AxesProgramme" xml:space="preserve">
+    <value>محاور وأنشطة البرنامج</value>
+  </data>
+  <data name="ButProgramme" xml:space="preserve">
+    <value>غاية البرنامج</value>
+  </data>
+  <data name="CadreProgramme" xml:space="preserve">
+    <value>إطار البرنامج</value>
+  </data>
+  <data name="Condition-Beneficier1,2" xml:space="preserve">
+    <value>1.2. شروط الاستفادة من "توسعة نشاط جديد"</value>
+  </data>
+  <data name="Condition-Beneficier2" xml:space="preserve">
+    <value>2. الغير مستفيدين من جهاز الوكالة سابقا:</value>
+  </data>
+  <data name="DeclarationHonneur" xml:space="preserve">
+    <value>الاستفادة من استراد المعدات و العمليات و الخدمات</value>
+  </data>
+  <data name="DefinitionProgramme" xml:space="preserve">
+    <value>تعريف البرنامج</value>
+  </data>
+  <data name="EnvironementProgramme" xml:space="preserve">
+    <value>محيط البرنامج</value>
+  </data>
+  <data name="Etapes-Beneficier" xml:space="preserve">
+    <value>مراحل الاستفادة من البرنامج</value>
+  </data>
+  <data name="Partenaire1" xml:space="preserve">
+    <value>مؤسسات التعليم العالي والبحث العلمي</value>
+  </data>
+  <data name="Partenaire2" xml:space="preserve">
+    <value>مؤسسات التعليم والتكوين المهني</value>
+  </data>
+  <data name="Partenaire3" xml:space="preserve">
+    <value>المؤسسات البنكية</value>
+  </data>
+  <data name="Partenaire4" xml:space="preserve">
+    <value>المؤسسات الاقتصادية</value>
+  </data>
+  <data name="Partenaire5" xml:space="preserve">
+    <value>المؤسسات والهيئات العمومية</value>
+  </data>
+  <data name="Partenariat1" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="Partenariat2" xml:space="preserve">
+    <value>الشراكات</value>
+  </data>
+  <data name="Programme" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="RegisterNow" xml:space="preserve">
+    <value>سجل الآن!</value>
+  </data>
+  <data name="SousTraitance1" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="SousTraitance2" xml:space="preserve">
+    <value>المناولة</value>
+  </data>
+  <data name="SousTraitanceAvantages1" xml:space="preserve">
+    <value>أهم مزايا المناولة بالنسبة للمؤسسات الكبرى</value>
+  </data>
+  <data name="SousTraitanceAvantages2" xml:space="preserve">
+    <value>أهم مزايا المناولة بالنسبة للمؤسسات المصغرة</value>
+  </data>
+  <data name="SousTraitanceModels" xml:space="preserve">
+    <value>بعض نماذج المناولة عبر المؤسسات المصغرة</value>
+  </data>
+  <data name="SousTraitanceSupport" xml:space="preserve">
+    <value>دعم الوكالة للمناولة</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>رابط التسجيل الإلكتروني</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_02" xml:space="preserve">
+    <value>ربح الوقت وتوفير جهد التنقل</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_04" xml:space="preserve">
+    <value>الشفافية والأمان</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_Titre" xml:space="preserve">
+    <value>مزايا المنصة الرقمية</value>
+  </data>
+  <data name="Beneficiaires_Titre" xml:space="preserve">
+    <value>المستفيدون:</value>
+  </data>
+  <data name="Beneficiaire_01" xml:space="preserve">
+    <value>الشباب حاملو أفكار المشاريع</value>
+  </data>
+  <data name="Beneficiaire_02" xml:space="preserve">
+    <value>المتكونون في مراكز تطوير المقاولاتية</value>
+  </data>
+  <data name="Beneficiaire_03" xml:space="preserve">
+    <value>خريجو الجامعات</value>
+  </data>
+  <data name="Beneficiaire_04" xml:space="preserve">
+    <value>خريجو معاهد التكوين المهني</value>
+  </data>
+  <data name="Beneficiaire_05" xml:space="preserve">
+    <value>المستفيدون السابقون من الوكالة</value>
+  </data>
+  <data name="Beneficiaire_06" xml:space="preserve">
+    <value>مستفيدو أونجام (ANGEM)</value>
+  </data>
+  <data name="Beneficiaire_07" xml:space="preserve">
+    <value>مستفيدو كناك (CNAC)</value>
+  </data>
+  <data name="Beneficiaire_08" xml:space="preserve">
+    <value>الفلاحون</value>
+  </data>
+  <data name="Beneficiaire_09" xml:space="preserve">
+    <value>الحرفيون</value>
+  </data>
+  <data name="Beneficiaire_10" xml:space="preserve">
+    <value>أصحاب السجلات التجارية</value>
+  </data>
+  <data name="Beneficiaire_11" xml:space="preserve">
+    <value>أصحاب التراخيص</value>
+  </data>
+  <data name="Creation_Micro_Enterprise_Lien" xml:space="preserve">
+    <value>التسجيل لإنشاء مؤسسة مصغرة</value>
+  </data>
+  <data name="Creation_Micro_Enterprise_Titre" xml:space="preserve">
+    <value>إنشاء مؤسسة مصغرة</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Lien" xml:space="preserve">
+    <value>التسجيل لتوسعة النشاط</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Titre" xml:space="preserve">
+    <value>توسعة النشاط</value>
+  </data>
+  <data name="Inscription_CNRC_Titre" xml:space="preserve">
+    <value>التسجيل في المركز الوطني للسجل التجاري</value>
+  </data>
+  <data name="Inscription_MPDZ_Titre" xml:space="preserve">
+    <value>البوابة الإلكترونية للصفقات العمومية</value>
+  </data>
+  <data name="Inscription_NESDA_Titre" xml:space="preserve">
+    <value>التسجيل في الجهاز</value>
+  </data>
+  <data name="Objectives_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>أهداف البوابة الإلكترونية للصفقات العمومية</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_01" xml:space="preserve">
+    <value>تكريس إجراءات أكثر حداثة وبساطة في التعامل</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_02" xml:space="preserve">
+    <value>ضمان المساواة بين جميع المرشحين والمتعاملين</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_03" xml:space="preserve">
+    <value>توفير الشفافية الكاملة في جميع الإجراءات</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_04" xml:space="preserve">
+    <value>تسهيل الوصول إلى الطلب العمومي لجميع المتعاملين</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_05" xml:space="preserve">
+    <value>تسريع عمليات التعاقد والمناقصات العمومية</value>
+  </data>
+  <data name="Portail_Electronique_lien" xml:space="preserve">
+    <value>رابط التسجيل: sidjilcom-entreprise.cnrc.dz/ar/acceuil2</value>
+  </data>
+  <data name="Portail_Electronique_Texte" xml:space="preserve">
+    <value>للولوج الى البوابة الإلكترونية لإنشاء المؤسسات الرابط التالي:</value>
+  </data>
+  <data name="Portail_Electronique_Titre" xml:space="preserve">
+    <value>الوصول إلى البوابة الإلكترونية</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_01" xml:space="preserve">
+    <value>المديرية العامة للضرائب</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_02" xml:space="preserve">
+    <value>الصندوق الوطني للضمان الخاص بغير الأجراء</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_03" xml:space="preserve">
+    <value>الصندوق الوطني للضمان الإجتماعي للعمال الأجراء</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_04" xml:space="preserve">
+    <value>الديوان الوطني للإحصائيات</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Titre" xml:space="preserve">
+    <value>البوابة الإلكترونية لإنشاء المؤسسات</value>
+  </data>
+  <data name="Portail_Services_Titre" xml:space="preserve">
+    <value>خدمات البوابة</value>
+  </data>
+  <data name="ActiviteP1" xml:space="preserve">
+    <value>إنشاء مؤسسة مصغرة</value>
+  </data>
+  <data name="Elle comprend le soutien à la création de micro-entreprises au profit des jeunes porteurs de projets, à travers le financement, l’accompagnement administratif et technique, la mise à disposition de la formation nécessaire, ainsi que le suivi du projet depuis son lancement jusqu’au démarrage effectif de l’activité." xml:space="preserve">
+    <value>يشمل دعم إنشاء المؤسسات المصغرة للشباب أصحاب المشاريع من خلال التمويل والمرافقة الإدارية والتقنية، مع توفير التكوين اللازم وضمان متابعة المشروع من البداية حتى بدء النشاط.</value>
+  </data>
+  <data name="Agrandir" xml:space="preserve">
+    <value>تكبير</value>
+  </data>
+  <data name="auteur" xml:space="preserve">
+    <value>المؤلف</value>
+  </data>
+  <data name="DatePublication" xml:space="preserve">
+    <value>تاريخ النشر</value>
+  </data>
+  <data name="DecouvrirMag1" xml:space="preserve">
+    <value>اكتشف العدد الأول</value>
+  </data>
+  <data name="DecouvrirMag1Text" xml:space="preserve">
+    <value>تصفح مجلة ناسدا Mag الآن واطلع على أحدث المحتويات في عالم المقاولاتية وريادة الأعمال</value>
+  </data>
+  <data name="DernierNews" xml:space="preserve">
+    <value>آخر التحديثات والأخبار</value>
+  </data>
+  <data name="Electronique" xml:space="preserve">
+    <value>الإلكترونية</value>
+  </data>
   <data name="Format" xml:space="preserve">
     <value>الصيغة</value>
   </data>
@@ -1634,9 +1697,6 @@
   </data>
   <data name="LeMag" xml:space="preserve">
     <value>المجلة</value>
-  </data>
-  <data name="LesTypesFinancement" xml:space="preserve">
-    <value>التمويل الذاتي، الثنائي، الثلاثي</value>
   </data>
   <data name="Mag" xml:space="preserve">
     <value>مجلة</value>
@@ -1683,9 +1743,6 @@
   <data name="PosteDirecteurNesda" xml:space="preserve">
     <value>المدير العام للوكالة الوطنية لدعم وتنمية المقاولاتية</value>
   </data>
-  <data name="poucentage" xml:space="preserve">
-    <value>نسبة التقييم المطلوبة</value>
-  </data>
   <data name="precedent" xml:space="preserve">
     <value>السابق</value>
   </data>
@@ -1710,62 +1767,14 @@
   <data name="retourListe" xml:space="preserve">
     <value>العودة للقائمة</value>
   </data>
-  <data name="SolutionFinancement" xml:space="preserve">
-    <value>حلول التمويل</value>
-  </data>
-  <data name="SolutionFinancementText" xml:space="preserve">
-    <value>تلعب الوكالة الوطنية لدعم وتنمية المقاولاتية دوراً محورياً في تمويل المؤسسات المصغرة، عبر مرافقة حاملي الأفكار الريادية الراغبين في تحويلها إلى مشاريع واقعية تخلق الثروة ومناصب الشغل، وفقا للمقاربة الاقتصادية المنتهجة الرامية الى تعزيز آليات التمويل وتسيير المخاطر المتعلقة بها، بهدف تحريك عجلة التنمية الوطنية.</value>
-  </data>
   <data name="SousDirectionCommunication" xml:space="preserve">
     <value>المديرية الفرعية للإتصال</value>
   </data>
   <data name="suivant" xml:space="preserve">
     <value>التالي</value>
   </data>
-  <data name="TableauTypeFinanement" xml:space="preserve">
-    <value>جدول صيغ التمويل</value>
-  </data>
-  <data name="TableauTypeFinanementColonne1" xml:space="preserve">
-    <value>نوع التمويل</value>
-  </data>
-  <data name="TableauTypeFinanementColonne2" xml:space="preserve">
-    <value>المساهمة الشخصية</value>
-  </data>
-  <data name="TableauTypeFinanementColonne3" xml:space="preserve">
-    <value>الوكالة (قرض غير مكافئ)</value>
-  </data>
-  <data name="TableauTypeFinanementColonne4" xml:space="preserve">
-    <value>البنك (قرض بنكي)</value>
-  </data>
-  <data name="TableauTypeFinanementLigne1" xml:space="preserve">
-    <value>التمويل الثلاثي - الطلبة والبطالين</value>
-  </data>
-  <data name="TableauTypeFinanementLigne2" xml:space="preserve">
-    <value>التمويل الثلاثي - غير البطالين (مناطق الجنوب)</value>
-  </data>
-  <data name="TableauTypeFinanementLigne3" xml:space="preserve">
-    <value>التمويل الثلاثي - غير البطالين (الهضاب العليا والمناطق الخاصة)</value>
-  </data>
-  <data name="TableauTypeFinanementLigne4" xml:space="preserve">
-    <value>التمويل الثلاثي - غير البطالين (باقي المناطق)</value>
-  </data>
-  <data name="TableauTypeFinanementLigne5" xml:space="preserve">
-    <value>التمويل الثنائي</value>
-  </data>
-  <data name="TableauTypeFinanementLigne6" xml:space="preserve">
-    <value>التمويل الذاتي</value>
-  </data>
-  <data name="TableauTypeFinanementText" xml:space="preserve">
-    <value>تفاصيل نسب المساهمة لكل نوع من صيغ التمويل المتاحة</value>
-  </data>
   <data name="TelechargerMag" xml:space="preserve">
     <value>تحميل المجلة</value>
-  </data>
-  <data name="TrancheAgeCreation" xml:space="preserve">
-    <value>سن الإنشاء</value>
-  </data>
-  <data name="TrancheAgeExtension" xml:space="preserve">
-    <value>سن التوسعة</value>
   </data>
   <data name="AdresseDG" xml:space="preserve">
     <value>شارع محمد ارزقي بن بوزيد، العناصر-   الجزائر العاصمة، الجزائر</value>
@@ -2296,19 +2305,10 @@
   <data name="Share" xml:space="preserve">
     <value>مشاركة المقال</value>
   </data>
-  <data name="annule" xml:space="preserve">
-    <value>ملغى</value>
-  </data>
-  <data name="legistaliveText" xml:space="preserve">
-    <value>النصوص القانونية</value>
-  </data>
   <data name="CommunicationCell" xml:space="preserve">
     <value>خلية الإتصال</value>
   </data>
   <data name="nomWilaya" xml:space="preserve">
     <value>اسم الولاية</value>
-  </data>
-  <data name="ActiviteP1Text" xml:space="preserve">
-    <value>يشمل دعم إنشاء المؤسسات المصغرة للشباب أصحاب المشاريع من خلال التمويل والمرافقة الإدارية والتقنية، مع توفير التكوين اللازم وضمان متابعة المشروع من البداية حتى بدء النشاط.</value>
   </data>
 </root>

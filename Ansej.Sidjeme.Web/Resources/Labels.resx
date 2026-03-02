@@ -1263,4 +1263,55 @@ Programmes de formation spécialisés et intégrés.
   <data name="legistaliveText" xml:space="preserve">
     <value>Textes juridiques</value>
   </data>
+  <data name="AvantageProgrammeTitre" xml:space="preserve">
+    <value>Avantages du programme</value>
+  </data>
+  <data name="EnvironementProgrammeTitre" xml:space="preserve">
+    <value>Cadre et périmètre du programme</value>
+  </data>
+  <data name="Condition-Beneficier1" xml:space="preserve">
+    <value>Les porteurs de projets ayant déjà bénéficié du dispositif de l’Agence</value>
+  </data>
+  <data name="Condition-Beneficier1,1" xml:space="preserve">
+    <value>Conditions pour bénéficier de « l’extension pour la même activité ou dans une activité connexe »</value>
+  </data>
+  <data name="ConditionBeneficier-Commun" xml:space="preserve">
+    <value>Conditions communes:</value>
+  </data>
+  <data name="TitreConditionBeneficier" xml:space="preserve">
+    <value>Conditions d’accès </value>
+  </data>
+  <data name="ContributionATitre" xml:space="preserve">
+    <value>Contribution de l’Agence (prêt non rémunéré)</value>
+  </data>
+  <data name="ContributionBTitre" xml:space="preserve">
+    <value>Contribution de la banque (crédit bancaire)</value>
+  </data>
+  <data name="ContributionPTitre" xml:space="preserve">
+    <value>Apport personnel</value>
+  </data>
+  <data name="ModeFinancementTitre" xml:space="preserve">
+    <value>Formules de financement</value>
+  </data>
+  <data name="MotLiaison" xml:space="preserve">
+    <value>à </value>
+  </data>
+  <data name="TypeFinancemet1" xml:space="preserve">
+    <value>Autofinancement </value>
+  </data>
+  <data name="TypeFinancemet2" xml:space="preserve">
+    <value>Financement mixte</value>
+  </data>
+  <data name="TypeFinancemet3" xml:space="preserve">
+    <value>Financement triangulaire</value>
+  </data>
+  <data name="Condition-Beneficier1,2" xml:space="preserve">
+    <value>Conditions pour bénéficier de « l’extension pour une nouvelle activité »</value>
+  </data>
+  <data name="Condition-Beneficier2" xml:space="preserve">
+    <value>Personnes n’ayant pas bénéficié auparavant du dispositif de l’Agence </value>
+  </data>
+  <data name="Etapes-Beneficier" xml:space="preserve">
+    <value>Les étapes pour bénéficier du programme</value>
+  </data>
 </root>
