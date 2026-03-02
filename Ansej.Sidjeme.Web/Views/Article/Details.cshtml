@@ -8,6 +8,7 @@
 
     // Vérifie si c'est de l'arabe
     bool isArabic = currentLanguage.StartsWith("ar");
+    bool isEnglish = currentLanguage.StartsWith("en");
 }
 @section Head {
 }
@@ -65,13 +66,18 @@
                             <span><i class="bi bi-calendar4-week"></i> @Model.CreatedAt.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("ar-DZ"))</span>
 
                         }
-                        else
+                        else if(isEnglish)
                         {
                             <span><i class="bi bi-calendar4-week"></i> @Model.CreatedAt.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("en-US"))</span>
 
                         }
+                        else
+                        {
+                        <span><i class="bi bi-calendar4-week"></i> @Model.CreatedAt.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("fr-FR"))</span>
+
+                        }
                         @*<span><i class="bi bi-clock"></i> 10 min read</span>
-                    <span><i class="bi bi-chat-square-text"></i> 32 Comments</span>*@
+        <span><i class="bi bi-chat-square-text"></i> 32 Comments</span>*@
                     </div>
                 </div>
             </div>
@@ -115,7 +121,7 @@
                                 @Html.Raw(Model.Content)
                             </p>
                         }
-                        else
+                        else if(isEnglish)
                         {
                             <div class="highlight-quote">
                                 <blockquote>
@@ -130,6 +136,22 @@
                             <p class="lead">
                                 @Html.Raw(Model.ContentEn)
                             </p>
+                        }
+                        else
+                        {
+                        <div class="highlight-quote">
+                            <blockquote>
+                                @if (!string.IsNullOrWhiteSpace(Model.SummaryFr))
+                                {
+                                    <p>@Model.SummaryFr</p>
+                                }
+
+                            </blockquote>
+                        </div>
+
+                        <p class="lead">
+                            @Html.Raw(Model.ContentFr)
+                        </p>
                         }
 
                     </div>

@@ -142,7 +142,7 @@
     <value>Agence</value>
   </data>
   <data name="Agences" xml:space="preserve">
-    <value>Agences</value>
+    <value>L’Agence Nationale d’appui et de Développement de l’Entrepreneuriat</value>
   </data>
   <data name="Annuaire" xml:space="preserve">
     <value>Annuaire</value>
@@ -1313,5 +1313,443 @@ Programmes de formation spécialisés et intégrés.
   </data>
   <data name="Etapes-Beneficier" xml:space="preserve">
     <value>Les étapes pour bénéficier du programme</value>
+  </data>
+  <data name="AccesPortal" xml:space="preserve">
+    <value>Accès au portail électronique</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_01" xml:space="preserve">
+    <value>Accès direct à toutes les opportunités commerciales gouvernementales.</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_02" xml:space="preserve">
+    <value>Gain de temps et d'efforts dans la recherche d'appels d'offres.</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_03" xml:space="preserve">
+    <value>Garantie de ne manquer aucune opportunité d'investissement importante</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_04" xml:space="preserve">
+    <value>Soumission électronique facile des offres et suivi</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_05" xml:space="preserve">
+    <value>Notifications instantanées pour les nouveaux appels d'offres</value>
+  </data>
+  <data name="Advantages_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>Avantages de l'inscription sur le portail</value>
+  </data>
+  <data name="AgenceNesda" xml:space="preserve">
+    <value>l’Agence Nationale d’appui et de Développement de l’Entrepreneuriat (NESDA)</value>
+  </data>
+  <data name="Assistance" xml:space="preserve">
+    <value>Appui et assistance</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_02" xml:space="preserve">
+    <value>gagner du temps et d'économiser des efforts</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_04" xml:space="preserve">
+    <value>la transparence et la sécurité</value>
+  </data>
+  <data name="Avantages_Plateforme_Numerique_Titre" xml:space="preserve">
+    <value>Avantages de la plateforme numérique</value>
+  </data>
+  <data name="axesStrategique" xml:space="preserve">
+    <value>Axes stratégiques</value>
+  </data>
+  <data name="axesStrategique1" xml:space="preserve">
+    <value>Renforcer l’accompagnement des porteurs de projets</value>
+  </data>
+  <data name="axesStrategique2" xml:space="preserve">
+    <value>Contribuer au développement de l’écosystème entrepreneurial</value>
+  </data>
+  <data name="axesStrategique3" xml:space="preserve">
+    <value>Renforcer les capacités de l’Agence et améliorer la gestion des risques</value>
+  </data>
+  <data name="Beneficiaires_Titre" xml:space="preserve">
+    <value>Bénéficiaires</value>
+  </data>
+  <data name="Beneficiaire_01" xml:space="preserve">
+    <value>Jeunes ayant des idées de projets</value>
+  </data>
+  <data name="Beneficiaire_02" xml:space="preserve">
+    <value>Stagiaires dans les centres de développement de l'entrepreneuriat (CDE)</value>
+  </data>
+  <data name="Beneficiaire_03" xml:space="preserve">
+    <value>Diplômés universitaires</value>
+  </data>
+  <data name="Beneficiaire_04" xml:space="preserve">
+    <value>Diplômés d'instituts de formation professionnelle</value>
+  </data>
+  <data name="Beneficiaire_05" xml:space="preserve">
+    <value>Anciens bénéficiaires de l'agence</value>
+  </data>
+  <data name="Beneficiaire_06" xml:space="preserve">
+    <value>Bénéficiaires - ANGEM</value>
+  </data>
+  <data name="Beneficiaire_07" xml:space="preserve">
+    <value>Bénéficiaires du CNAC</value>
+  </data>
+  <data name="Beneficiaire_08" xml:space="preserve">
+    <value>Agriculteurs</value>
+  </data>
+  <data name="Beneficiaire_09" xml:space="preserve">
+    <value>Artisans</value>
+  </data>
+  <data name="Beneficiaire_10" xml:space="preserve">
+    <value>Titulaires d'un registre commercial</value>
+  </data>
+  <data name="Beneficiaire_11" xml:space="preserve">
+    <value>Titulaires d'une licence</value>
+  </data>
+  <data name="callCenter" xml:space="preserve">
+    <value>Centre d’appel</value>
+  </data>
+  <data name="CDE_Dans_Education_FormationProfessionnelle_Titre" xml:space="preserve">
+    <value>Centres de développement de l'entrepreneuriat (CDE) dans le secteur de la formation et de l'enseignement professionnels</value>
+  </data>
+  <data name="CDE_Dans_EnseignementSup_RechercheScientifique_Titre" xml:space="preserve">
+    <value>Centres de développement de l'entrepreneuriat (CDE) dans le secteur de l'enseignement supérieur et de la recherche scientifique</value>
+  </data>
+  <data name="CentreCDE" xml:space="preserve">
+    <value>Centres de Développement de l’Entrepreneuriat (CDE)</value>
+  </data>
+  <data name="CleRecherche" xml:space="preserve">
+    <value>Entrez un mot-clé pour rechercher…</value>
+  </data>
+  <data name="ComiteSuivi" xml:space="preserve">
+    <value>Comité de Surveillance</value>
+  </data>
+  <data name="CommunicationCell" xml:space="preserve">
+    <value>Cellule de communication</value>
+  </data>
+  <data name="CompositionConseilAdmin" xml:space="preserve">
+    <value>Composition du Conseil d’Administration</value>
+  </data>
+  <data name="CompositionConseilAdmin1" xml:space="preserve">
+    <value>Deux (02) représentants du ministre chargé des micro-entreprises, dont l’un assure la présidence ;</value>
+  </data>
+  <data name="CompositionConseilAdmin10" xml:space="preserve">
+    <value>Le président de l’Association des banques et établissements financiers, ou son représentant ;</value>
+  </data>
+  <data name="CompositionConseilAdmin11" xml:space="preserve">
+    <value>Un représentant de l’organisation des jeunes entrepreneurs la plus représentative au niveau national.</value>
+  </data>
+  <data name="CompositionConseilAdmin2" xml:space="preserve">
+    <value>Un représentant du ministre chargé des Affaires étrangères ;</value>
+  </data>
+  <data name="CompositionConseilAdmin3" xml:space="preserve">
+    <value>Un représentant du ministre chargé de l’Intérieur et des Collectivités locales ;</value>
+  </data>
+  <data name="CompositionConseilAdmin4" xml:space="preserve">
+    <value>Deux (02) représentants du ministre chargé des Finances ;</value>
+  </data>
+  <data name="CompositionConseilAdmin5" xml:space="preserve">
+    <value>Un représentant du ministre chargé du Commerce ;</value>
+  </data>
+  <data name="CompositionConseilAdmin6" xml:space="preserve">
+    <value>Un représentant du ministre chargé du Travail, de l’Emploi et de la Sécurité sociale ;</value>
+  </data>
+  <data name="CompositionConseilAdmin7" xml:space="preserve">
+    <value>Un représentant du ministre chargé de la Solidarité nationale et des Affaires de la femme ;</value>
+  </data>
+  <data name="CompositionConseilAdmin8" xml:space="preserve">
+    <value>Un représentant du ministre chargé de l’Industrie ;</value>
+  </data>
+  <data name="CompositionConseilAdmin9" xml:space="preserve">
+    <value>Le Secrétaire permanent du Fonds de Garantie Mutuelle des crédits accordés aux jeunes porteurs de projets, ou son représentant ;</value>
+  </data>
+  <data name="ConseilAdministration" xml:space="preserve">
+    <value>Conseil d’Administration</value>
+  </data>
+  <data name="consultation" xml:space="preserve">
+    <value>Consultations</value>
+  </data>
+  <data name="Creation_Micro_Enterprise_Lien" xml:space="preserve">
+    <value>Inscription pour créer une micro-entreprise</value>
+  </data>
+  <data name="Creation_Micro_Enterprise_Titre" xml:space="preserve">
+    <value>Création d'une micro-entreprise</value>
+  </data>
+  <data name="DatePublication" xml:space="preserve">
+    <value>Date de publication</value>
+  </data>
+  <data name="DeclarationHonneur" xml:space="preserve">
+    <value>Bénéficier de l’importation des équipements, des opérations et des services</value>
+  </data>
+  <data name="DetailArticle" xml:space="preserve">
+    <value>Détails de l’article</value>
+  </data>
+  <data name="Directeur" xml:space="preserve">
+    <value>Bilal Achacha</value>
+  </data>
+  <data name="EtapesInscription" xml:space="preserve">
+    <value>Processus d'inscription</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Lien" xml:space="preserve">
+    <value>Inscription pour développer l'activité</value>
+  </data>
+  <data name="Extension_Micro_Enterprise_Titre" xml:space="preserve">
+    <value>Extension de l'activité</value>
+  </data>
+  <data name="Inscription_CDE_Titre" xml:space="preserve">
+    <value>Inscription aux Centres de développement de l'entrepreneuriat (CDE)</value>
+  </data>
+  <data name="Inscription_CNRC_Titre" xml:space="preserve">
+    <value>Enregistrement auprès du Centre national du registre du commerce (CNRC)</value>
+  </data>
+  <data name="Inscription_MPDZ_Titre" xml:space="preserve">
+    <value>Portail électronique pour les marchés publics</value>
+  </data>
+  <data name="Inscription_NESDA_Titre" xml:space="preserve">
+    <value>Inscription au dispositif</value>
+  </data>
+  <data name="latest" xml:space="preserve">
+    <value>Dernières</value>
+  </data>
+  <data name="Lien_CDE" xml:space="preserve">
+    <value>Lien d'inscription : www.cde.dz</value>
+  </data>
+  <data name="Lien_FPCDE" xml:space="preserve">
+    <value>Lien d'inscription : www.fp.cde.dz</value>
+  </data>
+  <data name="LireEncore" xml:space="preserve">
+    <value>[Lire la suite]</value>
+  </data>
+  <data name="mission1" xml:space="preserve">
+    <value>Mission</value>
+  </data>
+  <data name="mission2" xml:space="preserve">
+    <value>Principes</value>
+  </data>
+  <data name="mission2-1" xml:space="preserve">
+    <value>Inclusivité</value>
+  </data>
+  <data name="mission2-2" xml:space="preserve">
+    <value>Crédibilité</value>
+  </data>
+  <data name="mission2-3" xml:space="preserve">
+    <value>Résilience</value>
+  </data>
+  <data name="mission2-4" xml:space="preserve">
+    <value>Innovation</value>
+  </data>
+  <data name="MissionConseilSuivi" xml:space="preserve">
+    <value>Missions du Comité de Surveillance</value>
+  </data>
+  <data name="MissionConseilSuivi1" xml:space="preserve">
+    <value>Assurer le contrôle a posteriori de l’exécution des décisions du Conseil d’Administration ;</value>
+  </data>
+  <data name="MissionConseilSuivi2" xml:space="preserve">
+    <value>Formuler des observations et recommandations au Directeur Général ;</value>
+  </data>
+  <data name="MissionConseilSuivi3" xml:space="preserve">
+    <value>Émettre un avis sur les rapports périodiques de suivi, d’exécution et d’évaluation ;</value>
+  </data>
+  <data name="MissionConseilSuivi4" xml:space="preserve">
+    <value>Contrôler et auditer les comptes relatifs à l’utilisation des fonds de l’Agence ;</value>
+  </data>
+  <data name="MissionConseilSuivi5" xml:space="preserve">
+    <value>Émettre des observations sur les prévisions de recettes et de dépenses.</value>
+  </data>
+  <data name="MotAgence" xml:space="preserve">
+    <value>l’Agence</value>
+  </data>
+  <data name="MotDG" xml:space="preserve">
+    <value>Mot du Directeur Général</value>
+  </data>
+  <data name="MotVisiteurs" xml:space="preserve">
+    <value>Chers visiteurs de notre site</value>
+  </data>
+  <data name="NesdaKPI" xml:space="preserve">
+    <value>“NESDA KPI”</value>
+  </data>
+  <data name="NesdaRating" xml:space="preserve">
+    <value>“NESDA Rating”</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Actualités</value>
+  </data>
+  <data name="News&amp;MAJ" xml:space="preserve">
+    <value>Nouvelles et mises à jour</value>
+  </data>
+  <data name="Objectives_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>Objectifs du portail électronique pour les marchés publics</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_01" xml:space="preserve">
+    <value>Mettre en œuvre des procédures plus modernes et simplifiées pour traiter la situation ;</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_02" xml:space="preserve">
+    <value>Garantir l'égalité entre tous les candidats et toutes les parties prenantes;</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_03" xml:space="preserve">
+    <value>Assurer une transparence totale dans toutes les procédures ;</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_04" xml:space="preserve">
+    <value>Faciliter l'accès à la demande publique pour tous les utilisateurs ;</value>
+  </data>
+  <data name="Objective_Portail_MPDZ_05" xml:space="preserve">
+    <value>Accélérer les processus de passation de marchés et d'appels d'offres publics.</value>
+  </data>
+  <data name="organisationNesda" xml:space="preserve">
+    <value>Organisation de l’Agence Nationale d’appui et de Développement de l’Entrepreneuriat</value>
+  </data>
+  <data name="OutilsNumeriques" xml:space="preserve">
+    <value>le Business Plan Digital, un centre d’appel,</value>
+  </data>
+  <data name="Partenaire1" xml:space="preserve">
+    <value>Établissements de l’enseignement supérieur et de la recherche scientifique</value>
+  </data>
+  <data name="Partenaire2" xml:space="preserve">
+    <value>Établissements de la formation et de l’enseignement professionnels</value>
+  </data>
+  <data name="Partenaire3" xml:space="preserve">
+    <value>Institutions bancaires</value>
+  </data>
+  <data name="Partenaire4" xml:space="preserve">
+    <value>Entreprises économiques</value>
+  </data>
+  <data name="Partenaire5" xml:space="preserve">
+    <value>Institutions et organismes publics</value>
+  </data>
+  <data name="Partenariat1" xml:space="preserve">
+    <value>Programme</value>
+  </data>
+  <data name="Partenariat2" xml:space="preserve">
+    <value>des partenariats</value>
+  </data>
+  <data name="Portail_Electronique_lien" xml:space="preserve">
+    <value>Lien d'inscription : sidjilcom-entreprise.cnrc.dz/ar/accueil2</value>
+  </data>
+  <data name="Portail_Electronique_Texte" xml:space="preserve">
+    <value>Pour accéder au portail électronique destiné à la création d'établissements, suivez ce lien :</value>
+  </data>
+  <data name="Portail_Electronique_Titre" xml:space="preserve">
+    <value>Accès au portail électronique</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_01" xml:space="preserve">
+    <value>La Direction générale des impôts (DGI)</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_02" xml:space="preserve">
+    <value>La Caisse nationale de sécurité sociale des travailleurs indépendants (CASNOS)</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_03" xml:space="preserve">
+    <value>La Caisse nationale de sécurité sociale des travailleurs salariés (CNAS)</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Coordination_04" xml:space="preserve">
+    <value>L'Office national des statistiques (ONS)</value>
+  </data>
+  <data name="Portail_Inscription_CNRC_Titre" xml:space="preserve">
+    <value>Portail électronique pour la création d'institutions</value>
+  </data>
+  <data name="Portail_Services_Titre" xml:space="preserve">
+    <value>Services du portail</value>
+  </data>
+  <data name="PosteDirecteur" xml:space="preserve">
+    <value>Directeur Général</value>
+  </data>
+  <data name="precedent" xml:space="preserve">
+    <value>Précédent</value>
+  </data>
+  <data name="ProgCoopérations" xml:space="preserve">
+    <value>Programme de coopération</value>
+  </data>
+  <data name="ProgCoopérationsTitre1" xml:space="preserve">
+    <value>Programme d’autonomisation des jeunes entrepreneurs dans le domaine agricole (ProAgro Jeunes)</value>
+  </data>
+  <data name="ProgCoopérationsTitre2" xml:space="preserve">
+    <value>Programme du dialogue social pour la formalisation et l’employabilité dans la région du voisinage sud (SOLIFEM)</value>
+  </data>
+  <data name="ProgCoopérationsTitre3" xml:space="preserve">
+    <value>Programme de l’économie sociale et solidaire</value>
+  </data>
+  <data name="Programme" xml:space="preserve">
+    <value>Programme</value>
+  </data>
+  <data name="Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Est-il possible de s'inscrire en ligne ou faut-il se présenter en personne?</value>
+  </data>
+  <data name="Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Quelles sont les sessions ou les programmes proposés par le centre ? Le centre propose-t-il une formation pratique?</value>
+  </data>
+  <data name="Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Tous les étudiants peuvent-ils s'inscrire aux Centres de développement de l'entrepreneuriat (CDE), ou cette inscription est-elle réservée aux diplômés?</value>
+  </data>
+  <data name="Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>L'inscription aux centres doit-elle se faire en fonction de la wilaya de formation ?</value>
+  </data>
+  <data name="Questions_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Questions fréquemment posées sur les Centres de développement de l'entrepreneuriat (CDE)</value>
+  </data>
+  <data name="Recherche" xml:space="preserve">
+    <value>Recherche</value>
+  </data>
+  <data name="RechercheArticleNews" xml:space="preserve">
+    <value>Rechercher un article ou une actualité…</value>
+  </data>
+  <data name="RechercheDansArticle" xml:space="preserve">
+    <value>Rechercher des articles et des actualités</value>
+  </data>
+  <data name="RechercheSujet" xml:space="preserve">
+    <value>Rechercher par sujet…</value>
+  </data>
+  <data name="RegisterNow" xml:space="preserve">
+    <value>Inscrivez-vous maintenant</value>
+  </data>
+  <data name="ReunionConseilAdmin" xml:space="preserve">
+    <value>Réunions du Conseil d’Administration</value>
+  </data>
+  <data name="Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Le processus d'inscription et l'examen des candidatures se font par voie électronique, sans qu'il soit nécessaire de se rendre dans les Centres de développement de l'entrepreneuriat (CDE).</value>
+  </data>
+  <data name="Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Les programmes peuvent inclure des sessions sur l'entrepreneuriat, la gestion de projet, le marketing et autres, et comprennent généralement une formation pratique.</value>
+  </data>
+  <data name="Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>Les étudiants doivent être diplômés pour s'inscrire aux Centres de développement de l'entrepreneuriat (CDE).</value>
+  </data>
+  <data name="Réponse_Pour_Questions_04_Fréquemment_Posées_Sur_CDE" xml:space="preserve">
+    <value>L'inscription aux Centres de développement de l'entrepreneuriat (CDE) est possible quel que soit l'établissement de formation où vous avez étudié. Cela dépend de la politique du centre et des règles d'inscription.</value>
+  </data>
+  <data name="Services_Portail_MPDZ_01" xml:space="preserve">
+    <value>Accéder à toutes les consultations publiques et appels d'offres au niveau national ;</value>
+  </data>
+  <data name="Services_Portail_MPDZ_02" xml:space="preserve">
+    <value>Suivre les appels d'offres et les soumissions en cours ;</value>
+  </data>
+  <data name="Services_Portail_MPDZ_03" xml:space="preserve">
+    <value>Télécharger toutes les conditions générales et les documents requis ;</value>
+  </data>
+  <data name="Services_Portail_MPDZ_04" xml:space="preserve">
+    <value>Soumettre des propositions et participer à des appels d'offres par voie électronique ;</value>
+  </data>
+  <data name="Services_Portail_MPDZ_05" xml:space="preserve">
+    <value>Suivre l'état d'avancement des propositions soumises et les résultats.</value>
+  </data>
+  <data name="Services_Portail_MPDZ_Titre" xml:space="preserve">
+    <value>Services disponibles via le portail</value>
+  </data>
+  <data name="Structure" xml:space="preserve">
+    <value>Agence</value>
+  </data>
+  <data name="suivant" xml:space="preserve">
+    <value>Suivant</value>
+  </data>
+  <data name="TitreConsultation" xml:space="preserve">
+    <value>Titre de la consultation</value>
+  </data>
+  <data name="TitreRecherche" xml:space="preserve">
+    <value>Entrez le titre de l’article ici…</value>
+  </data>
+  <data name="ToutLesArticles" xml:space="preserve">
+    <value>Tous les articles</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value> mises à jour</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>Lien d'inscription en ligne</value>
+  </data>
+  <data name="verbepresentation" xml:space="preserve">
+    <value>Depuis 2024,</value>
+  </data>
+  <data name="VerbePresentation1" xml:space="preserve">
+    <value>À cet égard,</value>
   </data>
 </root>
