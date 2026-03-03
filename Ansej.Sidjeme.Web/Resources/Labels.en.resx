@@ -1158,50 +1158,8 @@
   <data name="organisationNesda" xml:space="preserve">
     <value>the National Entrepreneurship Support and Development Agency’s Organization</value>
   </data>
-  <data name="ComiteSuivi" xml:space="preserve">
-    <value>Monitoring Committee</value>
-  </data>
-  <data name="CompositionConseilAdmin" xml:space="preserve">
-    <value>Board of Directors’ composition</value>
-  </data>
-  <data name="CompositionConseilAdmin1" xml:space="preserve">
-    <value>Two (2) representatives of the Minister in charge of Micro-Enterprises, one of whom is the Chairperson;</value>
-  </data>
-  <data name="CompositionConseilAdmin10" xml:space="preserve">
-    <value>The president of the association of banks and financial institutions or his representative;</value>
-  </data>
-  <data name="CompositionConseilAdmin11" xml:space="preserve">
-    <value>Representative of the organization of young entrepreneurs, the most representative at the national level.</value>
-  </data>
   <data name="CompositionConseilAdmin12" xml:space="preserve">
     <value>Representative of the organization of young entrepreneurs, the most representative at the national level.</value>
-  </data>
-  <data name="CompositionConseilAdmin2" xml:space="preserve">
-    <value>Representative of the Minister in charge of Foreign Affairs,</value>
-  </data>
-  <data name="CompositionConseilAdmin3" xml:space="preserve">
-    <value>Representative of the minister in charge of the Interior and Local authorities;</value>
-  </data>
-  <data name="CompositionConseilAdmin4" xml:space="preserve">
-    <value>Two (2) representatives of the Minister in charge of finance;</value>
-  </data>
-  <data name="CompositionConseilAdmin5" xml:space="preserve">
-    <value>Representative of the minister in charge of Trade;</value>
-  </data>
-  <data name="CompositionConseilAdmin6" xml:space="preserve">
-    <value>Representative of the minister in charge of Labor, Employment and Social Security;</value>
-  </data>
-  <data name="CompositionConseilAdmin7" xml:space="preserve">
-    <value>Representative of the minister in charge of National Solidarity and Women’s Affairs;</value>
-  </data>
-  <data name="CompositionConseilAdmin8" xml:space="preserve">
-    <value>Representative of the minister in charge of industry,</value>
-  </data>
-  <data name="CompositionConseilAdmin9" xml:space="preserve">
-    <value>The Permanent Secretary of the Joint Guarantee Fund to guarantee the risks of loans granted to young entrepreneurs, or his representative;</value>
-  </data>
-  <data name="ConseilAdministration" xml:space="preserve">
-    <value>Board of directors</value>
   </data>
   <data name="MissionConseilSuivi" xml:space="preserve">
     <value>Tasks of the Monitoring Committee</value>
@@ -2114,5 +2072,8 @@
   </data>
   <data name="Structure" xml:space="preserve">
     <value>The Agency</value>
+  </data>
+  <data name="devise" xml:space="preserve">
+    <value>DA</value>
   </data>
 </root>

@@ -193,7 +193,7 @@ Elle est chargée de gérer un dispositif fondé sur une approche économique, v
     <value>comment peut-on vous aider?</value>
   </data>
   <data name="Contact" xml:space="preserve">
-    <value>Contact</value>
+    <value>Contactez-nous</value>
   </data>
   <data name="Coopérations" xml:space="preserve">
     <value>Coopération</value>
@@ -340,7 +340,7 @@ Le programme contribue également au renforcement du rôle des collectivités lo
     <value>Réussite Assurée.</value>
   </data>
   <data name="Politique" xml:space="preserve">
-    <value>Politique</value>
+    <value>Politique de traitement des données</value>
   </data>
   <data name="Principal" xml:space="preserve">
     <value> Accueil</value>
@@ -1096,5 +1096,107 @@ Il constitue une garantie complémentaire au profit des banques, en plus des gar
   </data>
   <data name="InfoProgrammeExtension" xml:space="preserve">
     <value>Contactez-nous pour obtenir davantage de détails sur le programme d’extension d’activité et les modalités de bénéficier de ses services.</value>
+  </data>
+  <data name="accord" xml:space="preserve">
+    <value>j’autorise NESDA à traiter mes données personnelles conformément aux dispositions de la loi 18-07 relative à la protection des personnes physiques à l’égard du traitement des données à caractère personnel.</value>
+  </data>
+  <data name="AxesProgramme1P1" xml:space="preserve">
+    <value>Axe « Perception » :</value>
+  </data>
+  <data name="AxesProgramme1P2" xml:space="preserve">
+    <value>qui vise à la sensibilisation de l’importance de l’entreprenariat et du rôle des micro-entreprises dans le développement de l’économie locale pour inculquer dans la société́ la perception des opportunités offertes par le dispositif de l’Agence dans sa nouvelle formule et marquer la rupture avec les précédentes idées à son sujet.</value>
+  </data>
+  <data name="AxesProgramme2P1" xml:space="preserve">
+    <value>Axe « Mindset » :</value>
+  </data>
+  <data name="AxesProgramme2P2" xml:space="preserve">
+    <value>qui a pour but de développer la pensée entrepreneuriale chez les jeunes de catégories et de niveaux différents et encourager leur esprit d'entreprenariat et leur fournir des connaissances de base pour les aider à surmonter les défis inhérents à la création et à la gestion de micro-entreprises.</value>
+  </data>
+  <data name="AxesProgramme3P1" xml:space="preserve">
+    <value>Axe « Création » :</value>
+  </data>
+  <data name="AxesProgramme3P2" xml:space="preserve">
+    <value>qui vise à soutenir la création des micro-entreprises dans divers secteurs économiques du développement local, en fonction avec des spécificités, des capacités et des besoins de chaque Wilaya, tout en mobilisant les différentes ressources et potentialités disponibles dans l’écosystème entrepreneurial.</value>
+  </data>
+  <data name="AxesProgramme4P1" xml:space="preserve">
+    <value>Axe « Développement » :</value>
+  </data>
+  <data name="AxesProgramme4P2" xml:space="preserve">
+    <value>qui a pour objet de soutenir le développement des micro-entreprises à travers l’extension de leurs activités dans les différents secteurs économiques du développement local, en considérant les particularités, les capacités et les besoins de chaque Wilaya, tout en exploitant les diverses ressources et potentialités disponibles dans l’écosystème entrepreneurial.</value>
+  </data>
+  <data name="AxesProgramme5P1" xml:space="preserve">
+    <value>Axe « Emploi » :</value>
+  </data>
+  <data name="AxesProgramme5P2" xml:space="preserve">
+    <value>micro-entreprises au marché du travail au niveau local, à travers la création d’emplois directs et indirects selon les caractéristiques des chaines de valeur des secteurs économiques.</value>
+  </data>
+  <data name="AxesProgrammeDesc" xml:space="preserve">
+    <value>Le programme est composé de cinq axes ci-après, qui représentent au même titre ses objectifs :</value>
+  </data>
+  <data name="ButProgrammeDesc1" xml:space="preserve">
+    <value>Le programme repose sur une approche holistique pour inclure les différents acteurs de l’écosystème entrepreneurial local : Wilaya, Commune, Services déconcentrés, organismes et institutions en relation, dans la mesure où la réussite du programme dépend des efforts conjugués de tous les acteurs du développement local, pour concrétiser les orientations du Président de la République M. Abdelmadjid Tebboune visant à la création de 450 000 postes d’emploi et instaurer un développement local durable, pour atteindre l’année 2027, qui sera une année charnière pour l’Algérie avec le parachèvement du processus de numérisation et la récolte des fruits du développement de l’économie nationale.</value>
+  </data>
+  <data name="ButProgrammeDesc2" xml:space="preserve">
+    <value>En effet, promouvoir les micro-entreprises locales c’est promouvoir la chaine de valeur la production nationale et la voie pour l’autosuffisance pour réaliser un « produit algérien pour les algériens »</value>
+  </data>
+  <data name="CadreProgramme1" xml:space="preserve">
+    <value>Le programme traduit la mise en œuvre des engagements du Président de la République M. Abdelmadjid Tebboune pour le développement du « nouveau modèle économique basé sur la diversification de la croissance et de l’économie de la connaissance », les engagements qui résultent de son attachement et son intérêt accordés aux jeunes ainsi qu’à la promotion de l’entreprenariat auprès d’eux et son encouragement à leurs projets.</value>
+  </data>
+  <data name="CadreProgramme2" xml:space="preserve">
+    <value>Il constitue l’exécution de ses hautes orientations qui visent à relever le défi de la relance économique pour bâtir une économie productive et diversifiée créatrice de valeur et d’emploi de qualité et promouvoir un développement local durable.</value>
+  </data>
+  <data name="CadreProgramme3" xml:space="preserve">
+    <value>Le programme représente une participation au renforcement du rôle des collectivités locales comme locomotive au développement national.</value>
+  </data>
+  <data name="contactFormText" xml:space="preserve">
+    <value>Veuillez remplir soigneusement le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais. Tous les champs sont obligatoires afin de vous offrir le meilleur service possible.</value>
+  </data>
+  <data name="ContactInfoText" xml:space="preserve">
+    <value>Nous serons ravis de répondre à vos questions et demandes d'informations concernant nos services et programmes. Vous pouvez nous contacter par les moyens suivants ou remplir le formulaire ci-dessous ; nous vous répondrons dans les plus brefs délais.</value>
+  </data>
+  <data name="DefinitionProgrammeImpact70P1" xml:space="preserve">
+    <value>C’est le nouveau programme de l’Agence Nationale d’Appui et de Développement de l’Entrepreneuriat (NESDA) pour les microentreprises intéressées au développement local, dénommé́ IMPACT 70.</value>
+  </data>
+  <data name="DefinitionProgrammeImpact70P2" xml:space="preserve">
+    <value>Cette dénomination provient de l’impact de la microentreprise sur son environnement : économique (création de valeur ajoutée, transformation de matières premières, …), social (postes d’emploi, services de proximité, …) et sur l’individu (réalisation de soi, entreprenariat, …), quant au numéro 70, il vise à marquer la commémoration de l’anniversaire du déclenchement de la glorieuse révolution du 1er novembre 1954 qui correspondait au lancement du programme.</value>
+  </data>
+  <data name="EnvironementProgramme1" xml:space="preserve">
+    <value>Opportunités d’investissement </value>
+  </data>
+  <data name="EnvironementProgramme2" xml:space="preserve">
+    <value>Potentiel économique </value>
+  </data>
+  <data name="EnvironementProgramme3" xml:space="preserve">
+    <value>Secteurs stratégiques et prioritaires </value>
+  </data>
+  <data name="EnvironementProgramme4" xml:space="preserve">
+    <value>Besoins de développement</value>
+  </data>
+  <data name="EnvironementProgrammeP1" xml:space="preserve">
+    <value>Le programme couvre l’ensemble des secteurs économiques en relation avec le développement local, notamment : l’agriculture, le bâtiment et les travaux publics, l’industrie, la pêche, l’hydraulique, les services, le transport, la maintenance, les professions libérales et l’artisanat.</value>
+  </data>
+  <data name="EnvironementProgrammeP2" xml:space="preserve">
+    <value>Et ce, en considérant les caractéristiques et spécifications de chaque Wilaya :</value>
+  </data>
+  <data name="EnvironementProgrammeP3" xml:space="preserve">
+    <value>Dans le but d’assoir les prémices d’un développement durable et équitable sur l’ensemble du territoire du pays, suivant les schémas d’aménagement du territoire retenus, à l’instar du schéma de la structure urbaine du littoral, des hauts plateaux, du sud, des zones d’intervention prioritaire et développement des frontières, des pôles d’attractivité et des zones intégrées de développement industriel.</value>
+  </data>
+  <data name="Impact70Desc" xml:space="preserve">
+    <value>C’est le nouveau programme de l’Agence Nationale d’Appui et de Développement de l’Entrepreneuriat (NESDA) pour les microentreprises intéressées au développement local.</value>
+  </data>
+  <data name="LectureMag" xml:space="preserve">
+    <value>Le magazine électronique de l'Agence</value>
+  </data>
+  <data name="lienAccord" xml:space="preserve">
+    <value>Vous pouvez consulter la politique Générale de l’agence en matière de protection des données personnelles.</value>
+  </data>
+  <data name="MagDeclarationDG" xml:space="preserve">
+    <value>Dans une déclaration à cette occasion, M. Bilal Achacha, directeur général de l'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA), a souligné que la publication de ce magazine représente un ajout qualitatif à la scène économique nationale et une étape fondamentale dans la nouvelle stratégie basée sur la formation, l'accompagnement et l'autonomisation des porteurs d'idées et de projets grâce à des outils favorisant la réussite. Ce magazine est notre engagement à suivre le rythme de la transformation numérique et à garantir que des informations précises et motivantes parviennent à tous les entrepreneurs à travers le pays.</value>
+  </data>
+  <data name="MagText" xml:space="preserve">
+    <value>L'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA) annonce la sortie officielle du premier numéro de son magazine spécialisé, qui devient ainsi le premier magazine complet consacré à l'entrepreneuriat en Algérie. Cette initiative stratégique s'inscrit dans le cadre de l'engagement de l'agence à promouvoir une culture de l'entrepreneuriat et à fournir une base de connaissances et une plateforme interactive à tous les acteurs de l'écosystème entrepreneurial.</value>
+  </data>
+  <data name="MagTitre1Text" xml:space="preserve">
+    <value>Le magazine, intitulé « NESDA Mag », vise à présenter un contenu de qualité alliant aspects académiques et pratiques et mettant en avant des opportunités d'investissement prometteuses dans divers secteurs économiques.</value>
   </data>
 </root>
