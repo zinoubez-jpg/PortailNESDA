@@ -2311,4 +2311,7 @@
   <data name="nomWilaya" xml:space="preserve">
     <value>اسم الولاية</value>
   </data>
+  <data name="devise" xml:space="preserve">
+    <value>دج</value>
+  </data>
 </root>

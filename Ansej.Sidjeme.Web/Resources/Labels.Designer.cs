@@ -19,7 +19,7 @@ namespace Ansej.Sidjeme.Web.Resources {
     // à l'aide d'un outil, tel que ResGen ou Visual Studio.
     // Pour ajouter ou supprimer un membre, modifiez votre fichier .ResX, puis réexécutez ResGen
     // avec l'option /str ou régénérez votre projet VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Labels {
@@ -57,6 +57,15 @@ namespace Ansej.Sidjeme.Web.Resources {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Accès au portail électronique.
+        /// </summary>
+        public static string AccesPortal {
+            get {
+                return ResourceManager.GetString("AccesPortal", resourceCulture);
             }
         }
         
@@ -919,11 +928,74 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rue Mohamed Arezki Ben Bouzid, El Anasser, Alger, Algerie.
+        /// </summary>
+        public static string AdresseDG {
+            get {
+                return ResourceManager.GetString("AdresseDG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Adresse en Français.
         /// </summary>
         public static string AdressFr {
             get {
                 return ResourceManager.GetString("AdressFr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Accès direct à toutes les opportunités commerciales gouvernementales..
+        /// </summary>
+        public static string Advantages_Portail_MPDZ_01 {
+            get {
+                return ResourceManager.GetString("Advantages_Portail_MPDZ_01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Gain de temps et d&apos;efforts dans la recherche d&apos;appels d&apos;offres..
+        /// </summary>
+        public static string Advantages_Portail_MPDZ_02 {
+            get {
+                return ResourceManager.GetString("Advantages_Portail_MPDZ_02", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Garantie de ne manquer aucune opportunité d&apos;investissement importante.
+        /// </summary>
+        public static string Advantages_Portail_MPDZ_03 {
+            get {
+                return ResourceManager.GetString("Advantages_Portail_MPDZ_03", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Soumission électronique facile des offres et suivi.
+        /// </summary>
+        public static string Advantages_Portail_MPDZ_04 {
+            get {
+                return ResourceManager.GetString("Advantages_Portail_MPDZ_04", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Notifications instantanées pour les nouveaux appels d&apos;offres.
+        /// </summary>
+        public static string Advantages_Portail_MPDZ_05 {
+            get {
+                return ResourceManager.GetString("Advantages_Portail_MPDZ_05", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Avantages de l&apos;inscription sur le portail.
+        /// </summary>
+        public static string Advantages_Portail_MPDZ_Titre {
+            get {
+                return ResourceManager.GetString("Advantages_Portail_MPDZ_Titre", resourceCulture);
             }
         }
         
@@ -955,7 +1027,16 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Agences.
+        ///   Recherche une chaîne localisée semblable à l’Agence Nationale d’appui et de Développement de l’Entrepreneuriat (NESDA).
+        /// </summary>
+        public static string AgenceNesda {
+            get {
+                return ResourceManager.GetString("AgenceNesda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à L’Agence Nationale d’appui et de Développement de l’Entrepreneuriat.
         /// </summary>
         public static string Agences {
             get {
@@ -991,6 +1072,15 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Appui et assistance.
+        /// </summary>
+        public static string Assistance {
+            get {
+                return ResourceManager.GetString("Assistance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Associe une demande a la Session.
         /// </summary>
         public static string AssocieDemandeSession {
@@ -1005,6 +1095,78 @@ namespace Ansej.Sidjeme.Web.Resources {
         public static string AvantageProgrammeTitre {
             get {
                 return ResourceManager.GetString("AvantageProgrammeTitre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à gagner du temps et d&apos;économiser des efforts.
+        /// </summary>
+        public static string Avantages_Plateforme_Numerique_02 {
+            get {
+                return ResourceManager.GetString("Avantages_Plateforme_Numerique_02", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à la transparence et la sécurité.
+        /// </summary>
+        public static string Avantages_Plateforme_Numerique_04 {
+            get {
+                return ResourceManager.GetString("Avantages_Plateforme_Numerique_04", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Avantages de la plateforme numérique.
+        /// </summary>
+        public static string Avantages_Plateforme_Numerique_Titre {
+            get {
+                return ResourceManager.GetString("Avantages_Plateforme_Numerique_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Axes et actions du programme:.
+        /// </summary>
+        public static string AxesProgramme {
+            get {
+                return ResourceManager.GetString("AxesProgramme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Axes stratégiques.
+        /// </summary>
+        public static string axesStrategique {
+            get {
+                return ResourceManager.GetString("axesStrategique", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Renforcer l’accompagnement des porteurs de projets.
+        /// </summary>
+        public static string axesStrategique1 {
+            get {
+                return ResourceManager.GetString("axesStrategique1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Contribuer au développement de l’écosystème entrepreneurial.
+        /// </summary>
+        public static string axesStrategique2 {
+            get {
+                return ResourceManager.GetString("axesStrategique2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Renforcer les capacités de l’Agence et améliorer la gestion des risques.
+        /// </summary>
+        public static string axesStrategique3 {
+            get {
+                return ResourceManager.GetString("axesStrategique3", resourceCulture);
             }
         }
         
@@ -1036,6 +1198,114 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Jeunes ayant des idées de projets.
+        /// </summary>
+        public static string Beneficiaire_01 {
+            get {
+                return ResourceManager.GetString("Beneficiaire_01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Stagiaires dans les centres de développement de l&apos;entrepreneuriat (CDE).
+        /// </summary>
+        public static string Beneficiaire_02 {
+            get {
+                return ResourceManager.GetString("Beneficiaire_02", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Diplômés universitaires.
+        /// </summary>
+        public static string Beneficiaire_03 {
+            get {
+                return ResourceManager.GetString("Beneficiaire_03", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Diplômés d&apos;instituts de formation professionnelle.
+        /// </summary>
+        public static string Beneficiaire_04 {
+            get {
+                return ResourceManager.GetString("Beneficiaire_04", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Anciens bénéficiaires de l&apos;agence.
+        /// </summary>
+        public static string Beneficiaire_05 {
+            get {
+                return ResourceManager.GetString("Beneficiaire_05", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Bénéficiaires - ANGEM.
+        /// </summary>
+        public static string Beneficiaire_06 {
+            get {
+                return ResourceManager.GetString("Beneficiaire_06", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Bénéficiaires du CNAC.
+        /// </summary>
+        public static string Beneficiaire_07 {
+            get {
+                return ResourceManager.GetString("Beneficiaire_07", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Agriculteurs.
+        /// </summary>
+        public static string Beneficiaire_08 {
+            get {
+                return ResourceManager.GetString("Beneficiaire_08", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Artisans.
+        /// </summary>
+        public static string Beneficiaire_09 {
+            get {
+                return ResourceManager.GetString("Beneficiaire_09", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Titulaires d&apos;un registre commercial.
+        /// </summary>
+        public static string Beneficiaire_10 {
+            get {
+                return ResourceManager.GetString("Beneficiaire_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Titulaires d&apos;une licence.
+        /// </summary>
+        public static string Beneficiaire_11 {
+            get {
+                return ResourceManager.GetString("Beneficiaire_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Bénéficiaires.
+        /// </summary>
+        public static string Beneficiaires_Titre {
+            get {
+                return ResourceManager.GetString("Beneficiaires_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Bienvenue sur le site officiel de l’Agence, votre espace d’accompagnement pour transformer vos idées en projets réussis..
         /// </summary>
         public static string bienvenue {
@@ -1050,6 +1320,69 @@ namespace Ansej.Sidjeme.Web.Resources {
         public static string BouttonInscription {
             get {
                 return ResourceManager.GetString("BouttonInscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Finalité du programme:.
+        /// </summary>
+        public static string ButProgramme {
+            get {
+                return ResourceManager.GetString("ButProgramme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cadre du programme:.
+        /// </summary>
+        public static string CadreProgramme {
+            get {
+                return ResourceManager.GetString("CadreProgramme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Centre d’appel.
+        /// </summary>
+        public static string callCenter {
+            get {
+                return ResourceManager.GetString("callCenter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Centres de développement de l&apos;entrepreneuriat (CDE) dans le secteur de la formation et de l&apos;enseignement professionnels.
+        /// </summary>
+        public static string CDE_Dans_Education_FormationProfessionnelle_Titre {
+            get {
+                return ResourceManager.GetString("CDE_Dans_Education_FormationProfessionnelle_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Centres de développement de l&apos;entrepreneuriat (CDE) dans le secteur de l&apos;enseignement supérieur et de la recherche scientifique.
+        /// </summary>
+        public static string CDE_Dans_EnseignementSup_RechercheScientifique_Titre {
+            get {
+                return ResourceManager.GetString("CDE_Dans_EnseignementSup_RechercheScientifique_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Centre.
+        /// </summary>
+        public static string Centre {
+            get {
+                return ResourceManager.GetString("Centre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Centres de Développement de l’Entrepreneuriat (CDE).
+        /// </summary>
+        public static string CentreCDE {
+            get {
+                return ResourceManager.GetString("CentreCDE", resourceCulture);
             }
         }
         
@@ -1072,11 +1405,29 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Entrez un mot-clé pour rechercher….
+        /// </summary>
+        public static string CleRecherche {
+            get {
+                return ResourceManager.GetString("CleRecherche", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Code.
         /// </summary>
         public static string Code {
             get {
                 return ResourceManager.GetString("Code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Comité de Surveillance.
+        /// </summary>
+        public static string ComiteSuivi {
+            get {
+                return ResourceManager.GetString("ComiteSuivi", resourceCulture);
             }
         }
         
@@ -1162,29 +1513,218 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cellule de communication.
+        /// </summary>
+        public static string CommunicationCell {
+            get {
+                return ResourceManager.GetString("CommunicationCell", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Composition du Conseil d’Administration.
+        /// </summary>
+        public static string CompositionConseilAdmin {
+            get {
+                return ResourceManager.GetString("CompositionConseilAdmin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Deux (02) représentants du ministre chargé des micro-entreprises, dont l’un assure la présidence ;.
+        /// </summary>
+        public static string CompositionConseilAdmin1 {
+            get {
+                return ResourceManager.GetString("CompositionConseilAdmin1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le président de l’Association des banques et établissements financiers, ou son représentant ;.
+        /// </summary>
+        public static string CompositionConseilAdmin10 {
+            get {
+                return ResourceManager.GetString("CompositionConseilAdmin10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Un représentant de l’organisation des jeunes entrepreneurs la plus représentative au niveau national..
+        /// </summary>
+        public static string CompositionConseilAdmin11 {
+            get {
+                return ResourceManager.GetString("CompositionConseilAdmin11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Un représentant du ministre chargé des Affaires étrangères ;.
+        /// </summary>
+        public static string CompositionConseilAdmin2 {
+            get {
+                return ResourceManager.GetString("CompositionConseilAdmin2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Un représentant du ministre chargé de l’Intérieur et des Collectivités locales ;.
+        /// </summary>
+        public static string CompositionConseilAdmin3 {
+            get {
+                return ResourceManager.GetString("CompositionConseilAdmin3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Deux (02) représentants du ministre chargé des Finances ;.
+        /// </summary>
+        public static string CompositionConseilAdmin4 {
+            get {
+                return ResourceManager.GetString("CompositionConseilAdmin4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Un représentant du ministre chargé du Commerce ;.
+        /// </summary>
+        public static string CompositionConseilAdmin5 {
+            get {
+                return ResourceManager.GetString("CompositionConseilAdmin5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Un représentant du ministre chargé du Travail, de l’Emploi et de la Sécurité sociale ;.
+        /// </summary>
+        public static string CompositionConseilAdmin6 {
+            get {
+                return ResourceManager.GetString("CompositionConseilAdmin6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Un représentant du ministre chargé de la Solidarité nationale et des Affaires de la femme ;.
+        /// </summary>
+        public static string CompositionConseilAdmin7 {
+            get {
+                return ResourceManager.GetString("CompositionConseilAdmin7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Un représentant du ministre chargé de l’Industrie ;.
+        /// </summary>
+        public static string CompositionConseilAdmin8 {
+            get {
+                return ResourceManager.GetString("CompositionConseilAdmin8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le Secrétaire permanent du Fonds de Garantie Mutuelle des crédits accordés aux jeunes porteurs de projets, ou son représentant ;.
+        /// </summary>
+        public static string CompositionConseilAdmin9 {
+            get {
+                return ResourceManager.GetString("CompositionConseilAdmin9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Les porteurs de projets ayant déjà bénéficié du dispositif de l’Agence.
         /// </summary>
-        public static string ConditionBeneficier1 {
+        public static string Condition_Beneficier1 {
             get {
-                return ResourceManager.GetString("ConditionBeneficier1", resourceCulture);
+                return ResourceManager.GetString("Condition-Beneficier1", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Conditions pour bénéficier de « l’extension pour la même activité ou dans une activité connexe ».
         /// </summary>
-        public static string ConditionBeneficier1_1 {
+        public static string Condition_Beneficier1_1 {
             get {
-                return ResourceManager.GetString("ConditionBeneficier1,1", resourceCulture);
+                return ResourceManager.GetString("Condition-Beneficier1,1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Conditions pour bénéficier de « l’extension pour une nouvelle activité ».
+        /// </summary>
+        public static string Condition_Beneficier1_2 {
+            get {
+                return ResourceManager.GetString("Condition-Beneficier1,2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Personnes n’ayant pas bénéficié auparavant du dispositif de l’Agence .
+        /// </summary>
+        public static string Condition_Beneficier2 {
+            get {
+                return ResourceManager.GetString("Condition-Beneficier2", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Conditions communes:.
         /// </summary>
-        public static string ConditionBeneficierCommun {
+        public static string ConditionBeneficier_Commun {
             get {
-                return ResourceManager.GetString("ConditionBeneficierCommun", resourceCulture);
+                return ResourceManager.GetString("ConditionBeneficier-Commun", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Conseil d’Administration.
+        /// </summary>
+        public static string ConseilAdministration {
+            get {
+                return ResourceManager.GetString("ConseilAdministration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Consultations.
+        /// </summary>
+        public static string consultation {
+            get {
+                return ResourceManager.GetString("consultation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Formulaire de contact.
+        /// </summary>
+        public static string contactForm {
+            get {
+                return ResourceManager.GetString("contactForm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Coordonnées.
+        /// </summary>
+        public static string ContactInfo {
+            get {
+                return ResourceManager.GetString("ContactInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pour obtenir des informations détaillées, cliquez sur la wilaya..
+        /// </summary>
+        public static string contactsAgences {
+            get {
+                return ResourceManager.GetString("contactsAgences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Coordonnées des agences de wilaya.
+        /// </summary>
+        public static string contactTitre {
+            get {
+                return ResourceManager.GetString("contactTitre", resourceCulture);
             }
         }
         
@@ -1203,6 +1743,24 @@ namespace Ansej.Sidjeme.Web.Resources {
         public static string ContactUsNow {
             get {
                 return ResourceManager.GetString("ContactUsNow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Message.
+        /// </summary>
+        public static string ContenuEmail {
+            get {
+                return ResourceManager.GetString("ContenuEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à écrivez votre message ici.
+        /// </summary>
+        public static string ContenuEmailD {
+            get {
+                return ResourceManager.GetString("ContenuEmailD", resourceCulture);
             }
         }
         
@@ -1261,6 +1819,24 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Inscription pour créer une micro-entreprise.
+        /// </summary>
+        public static string Creation_Micro_Enterprise_Lien {
+            get {
+                return ResourceManager.GetString("Creation_Micro_Enterprise_Lien", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Création d&apos;une micro-entreprise.
+        /// </summary>
+        public static string Creation_Micro_Enterprise_Titre {
+            get {
+                return ResourceManager.GetString("Creation_Micro_Enterprise_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Date.
         /// </summary>
         public static string Date {
@@ -1306,11 +1882,47 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Date de publication.
+        /// </summary>
+        public static string DatePublication {
+            get {
+                return ResourceManager.GetString("DatePublication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à .
         /// </summary>
         public static string DateSortie {
             get {
                 return ResourceManager.GetString("DateSortie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Bénéficier de l’importation des équipements, des opérations et des services.
+        /// </summary>
+        public static string DeclarationHonneur {
+            get {
+                return ResourceManager.GetString("DeclarationHonneur", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Découvrez le premier numéro.
+        /// </summary>
+        public static string DecouvrirMag1 {
+            get {
+                return ResourceManager.GetString("DecouvrirMag1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Explorez dès maintenant « NESDA Mag » et découvrez les derniers contenus dans le monde de l&apos;entrepreneuriat..
+        /// </summary>
+        public static string DecouvrirMag1Text {
+            get {
+                return ResourceManager.GetString("DecouvrirMag1Text", resourceCulture);
             }
         }
         
@@ -1338,6 +1950,15 @@ namespace Ansej.Sidjeme.Web.Resources {
         public static string decrets3 {
             get {
                 return ResourceManager.GetString("decrets3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Présentation du programme IMPACT 70 .
+        /// </summary>
+        public static string DefinitionProgramme {
+            get {
+                return ResourceManager.GetString("DefinitionProgramme", resourceCulture);
             }
         }
         
@@ -1459,6 +2080,15 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dernières actualités et mises à jour.
+        /// </summary>
+        public static string DernierNews {
+            get {
+                return ResourceManager.GetString("DernierNews", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à .
         /// </summary>
         public static string Designation {
@@ -1495,6 +2125,15 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Détails de l’article.
+        /// </summary>
+        public static string DetailArticle {
+            get {
+                return ResourceManager.GetString("DetailArticle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Details {0}.
         /// </summary>
         public static string DetailsA {
@@ -1509,6 +2148,24 @@ namespace Ansej.Sidjeme.Web.Resources {
         public static string DetailsOf {
             get {
                 return ResourceManager.GetString("DetailsOf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à DA.
+        /// </summary>
+        public static string devise {
+            get {
+                return ResourceManager.GetString("devise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Bilal Achacha.
+        /// </summary>
+        public static string Directeur {
+            get {
+                return ResourceManager.GetString("Directeur", resourceCulture);
             }
         }
         
@@ -1558,11 +2215,29 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Email.
+        ///   Recherche une chaîne localisée semblable à électronique.
+        /// </summary>
+        public static string Electronique {
+            get {
+                return ResourceManager.GetString("Electronique", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à E-mail.
         /// </summary>
         public static string Email {
             get {
                 return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à saisissez votre adresse e-mail.
+        /// </summary>
+        public static string EmailD {
+            get {
+                return ResourceManager.GetString("EmailD", resourceCulture);
             }
         }
         
@@ -1576,11 +2251,38 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Périmètre du programme.
+        /// </summary>
+        public static string EnvironementProgramme {
+            get {
+                return ResourceManager.GetString("EnvironementProgramme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Cadre et périmètre du programme.
         /// </summary>
         public static string EnvironementProgrammeTitre {
             get {
                 return ResourceManager.GetString("EnvironementProgrammeTitre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Envoyer un message.
+        /// </summary>
+        public static string envoyerMessage {
+            get {
+                return ResourceManager.GetString("envoyerMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Est.
+        /// </summary>
+        public static string Est {
+            get {
+                return ResourceManager.GetString("Est", resourceCulture);
             }
         }
         
@@ -1594,6 +2296,24 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Les étapes pour bénéficier du programme.
+        /// </summary>
+        public static string Etapes_Beneficier {
+            get {
+                return ResourceManager.GetString("Etapes-Beneficier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Processus d&apos;inscription.
+        /// </summary>
+        public static string EtapesInscription {
+            get {
+                return ResourceManager.GetString("EtapesInscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Verrouiller.
         /// </summary>
         public static string Etat {
@@ -1603,11 +2323,38 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Inscription pour développer l&apos;activité.
+        /// </summary>
+        public static string Extension_Micro_Enterprise_Lien {
+            get {
+                return ResourceManager.GetString("Extension_Micro_Enterprise_Lien", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Extension de l&apos;activité.
+        /// </summary>
+        public static string Extension_Micro_Enterprise_Titre {
+            get {
+                return ResourceManager.GetString("Extension_Micro_Enterprise_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à .
         /// </summary>
         public static string FactureId {
             get {
                 return ResourceManager.GetString("FactureId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fax.
+        /// </summary>
+        public static string Fax {
+            get {
+                return ResourceManager.GetString("Fax", resourceCulture);
             }
         }
         
@@ -2146,7 +2893,7 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Nom Complet Français.
+        ///   Recherche une chaîne localisée semblable à Nom et prénom.
         /// </summary>
         public static string FullName {
             get {
@@ -2160,6 +2907,15 @@ namespace Ansej.Sidjeme.Web.Resources {
         public static string FullNameAr {
             get {
                 return ResourceManager.GetString("FullNameAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à veuillez saisir votre nom complet.
+        /// </summary>
+        public static string FullNameD {
+            get {
+                return ResourceManager.GetString("FullNameD", resourceCulture);
             }
         }
         
@@ -2236,6 +2992,69 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Des données complètes sont disponibles.
+        /// </summary>
+        public static string infoComplet {
+            get {
+                return ResourceManager.GetString("infoComplet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Information.
+        /// </summary>
+        public static string informations {
+            get {
+                return ResourceManager.GetString("informations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Inscription aux Centres de développement de l&apos;entrepreneuriat (CDE).
+        /// </summary>
+        public static string Inscription_CDE_Titre {
+            get {
+                return ResourceManager.GetString("Inscription_CDE_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Enregistrement auprès du Centre national du registre du commerce (CNRC).
+        /// </summary>
+        public static string Inscription_CNRC_Titre {
+            get {
+                return ResourceManager.GetString("Inscription_CNRC_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Portail électronique pour les marchés publics.
+        /// </summary>
+        public static string Inscription_MPDZ_Titre {
+            get {
+                return ResourceManager.GetString("Inscription_MPDZ_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Inscription au dispositif.
+        /// </summary>
+        public static string Inscription_NESDA_Titre {
+            get {
+                return ResourceManager.GetString("Inscription_NESDA_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dernières.
+        /// </summary>
+        public static string latest {
+            get {
+                return ResourceManager.GetString("latest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Textes juridiques.
         /// </summary>
         public static string legistaliveText {
@@ -2245,11 +3064,47 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Magazine.
+        /// </summary>
+        public static string LeMag {
+            get {
+                return ResourceManager.GetString("LeMag", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Auto-financement, mixte, triangulaire.
         /// </summary>
         public static string LesTypesFinancement {
             get {
                 return ResourceManager.GetString("LesTypesFinancement", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Lien d&apos;inscription : www.cde.dz.
+        /// </summary>
+        public static string Lien_CDE {
+            get {
+                return ResourceManager.GetString("Lien_CDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Lien d&apos;inscription : www.fp.cde.dz.
+        /// </summary>
+        public static string Lien_FPCDE {
+            get {
+                return ResourceManager.GetString("Lien_FPCDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à [Lire la suite].
+        /// </summary>
+        public static string LireEncore {
+            get {
+                return ResourceManager.GetString("LireEncore", resourceCulture);
             }
         }
         
@@ -2281,6 +3136,105 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à NESDA.
+        /// </summary>
+        public static string Mag {
+            get {
+                return ResourceManager.GetString("Mag", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Magazine Mag.
+        /// </summary>
+        public static string MagNesda {
+            get {
+                return ResourceManager.GetString("MagNesda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Problème n°.
+        /// </summary>
+        public static string MagNumero {
+            get {
+                return ResourceManager.GetString("MagNumero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Vision du magazine .
+        /// </summary>
+        public static string MagTitre1 {
+            get {
+                return ResourceManager.GetString("MagTitre1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ce que propose le magazine .
+        /// </summary>
+        public static string MagTitre2 {
+            get {
+                return ResourceManager.GetString("MagTitre2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ce magazine est un espace de connaissances nouveau et unique, qui sera votre principale source d&apos;information sur :.
+        /// </summary>
+        public static string MagTitre2Text {
+            get {
+                return ResourceManager.GetString("MagTitre2Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Les derniers développements en matière d&apos;entrepreneuriat..
+        /// </summary>
+        public static string MagTitre2TextP1 {
+            get {
+                return ResourceManager.GetString("MagTitre2TextP1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Les réussites inspirantes d&apos;entrepreneurs algériens..
+        /// </summary>
+        public static string MagTitre2TextP2 {
+            get {
+                return ResourceManager.GetString("MagTitre2TextP2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Une analyse approfondie de l&apos;état actuel et de l&apos;avenir du secteur en Algérie..
+        /// </summary>
+        public static string MagTitre2TextP3 {
+            get {
+                return ResourceManager.GetString("MagTitre2TextP3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Des conseils pratiques et des orientations pour accompagner et soutenir les micro-entreprises..
+        /// </summary>
+        public static string MagTitre2TextP4 {
+            get {
+                return ResourceManager.GetString("MagTitre2TextP4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Des interviews avec divers acteurs du domaine de l&apos;entrepreneuriat..
+        /// </summary>
+        public static string MagTitre2TextP5 {
+            get {
+                return ResourceManager.GetString("MagTitre2TextP5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Matricule ERP.
         /// </summary>
         public static string MatriculeERP {
@@ -2304,6 +3258,114 @@ namespace Ansej.Sidjeme.Web.Resources {
         public static string Membres {
             get {
                 return ResourceManager.GetString("Membres", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Mission.
+        /// </summary>
+        public static string mission1 {
+            get {
+                return ResourceManager.GetString("mission1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Principes.
+        /// </summary>
+        public static string mission2 {
+            get {
+                return ResourceManager.GetString("mission2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Inclusivité.
+        /// </summary>
+        public static string mission2_1 {
+            get {
+                return ResourceManager.GetString("mission2-1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Crédibilité.
+        /// </summary>
+        public static string mission2_2 {
+            get {
+                return ResourceManager.GetString("mission2-2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Résilience.
+        /// </summary>
+        public static string mission2_3 {
+            get {
+                return ResourceManager.GetString("mission2-3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Innovation.
+        /// </summary>
+        public static string mission2_4 {
+            get {
+                return ResourceManager.GetString("mission2-4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Missions du Comité de Surveillance.
+        /// </summary>
+        public static string MissionConseilSuivi {
+            get {
+                return ResourceManager.GetString("MissionConseilSuivi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Assurer le contrôle a posteriori de l’exécution des décisions du Conseil d’Administration ;.
+        /// </summary>
+        public static string MissionConseilSuivi1 {
+            get {
+                return ResourceManager.GetString("MissionConseilSuivi1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Formuler des observations et recommandations au Directeur Général ;.
+        /// </summary>
+        public static string MissionConseilSuivi2 {
+            get {
+                return ResourceManager.GetString("MissionConseilSuivi2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Émettre un avis sur les rapports périodiques de suivi, d’exécution et d’évaluation ;.
+        /// </summary>
+        public static string MissionConseilSuivi3 {
+            get {
+                return ResourceManager.GetString("MissionConseilSuivi3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Contrôler et auditer les comptes relatifs à l’utilisation des fonds de l’Agence ;.
+        /// </summary>
+        public static string MissionConseilSuivi4 {
+            get {
+                return ResourceManager.GetString("MissionConseilSuivi4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Émettre des observations sur les prévisions de recettes et de dépenses..
+        /// </summary>
+        public static string MissionConseilSuivi5 {
+            get {
+                return ResourceManager.GetString("MissionConseilSuivi5", resourceCulture);
             }
         }
         
@@ -2380,6 +3442,24 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à l’Agence.
+        /// </summary>
+        public static string MotAgence {
+            get {
+                return ResourceManager.GetString("MotAgence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Mot du Directeur Général.
+        /// </summary>
+        public static string MotDG {
+            get {
+                return ResourceManager.GetString("MotDG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Motif.
         /// </summary>
         public static string Motif {
@@ -2394,6 +3474,15 @@ namespace Ansej.Sidjeme.Web.Resources {
         public static string MotLiaison {
             get {
                 return ResourceManager.GetString("MotLiaison", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Chers visiteurs de notre site.
+        /// </summary>
+        public static string MotVisiteurs {
+            get {
+                return ResourceManager.GetString("MotVisiteurs", resourceCulture);
             }
         }
         
@@ -2461,6 +3550,42 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à “NESDA KPI”.
+        /// </summary>
+        public static string NesdaKPI {
+            get {
+                return ResourceManager.GetString("NesdaKPI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à “NESDA Rating”.
+        /// </summary>
+        public static string NesdaRating {
+            get {
+                return ResourceManager.GetString("NesdaRating", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Actualités.
+        /// </summary>
+        public static string News {
+            get {
+                return ResourceManager.GetString("News", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Nouvelles et mises à jour.
+        /// </summary>
+        public static string News_MAJ {
+            get {
+                return ResourceManager.GetString("News&MAJ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à NIN.
         /// </summary>
         public static string NIN {
@@ -2511,6 +3636,15 @@ namespace Ansej.Sidjeme.Web.Resources {
         public static string NomAr {
             get {
                 return ResourceManager.GetString("NomAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 61 agences de wilaya.
+        /// </summary>
+        public static string nombreAgences {
+            get {
+                return ResourceManager.GetString("nombreAgences", resourceCulture);
             }
         }
         
@@ -2596,6 +3730,78 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Mettre en œuvre des procédures plus modernes et simplifiées pour traiter la situation ;.
+        /// </summary>
+        public static string Objective_Portail_MPDZ_01 {
+            get {
+                return ResourceManager.GetString("Objective_Portail_MPDZ_01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Garantir l&apos;égalité entre tous les candidats et toutes les parties prenantes;.
+        /// </summary>
+        public static string Objective_Portail_MPDZ_02 {
+            get {
+                return ResourceManager.GetString("Objective_Portail_MPDZ_02", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Assurer une transparence totale dans toutes les procédures ;.
+        /// </summary>
+        public static string Objective_Portail_MPDZ_03 {
+            get {
+                return ResourceManager.GetString("Objective_Portail_MPDZ_03", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Faciliter l&apos;accès à la demande publique pour tous les utilisateurs ;.
+        /// </summary>
+        public static string Objective_Portail_MPDZ_04 {
+            get {
+                return ResourceManager.GetString("Objective_Portail_MPDZ_04", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Accélérer les processus de passation de marchés et d&apos;appels d&apos;offres publics..
+        /// </summary>
+        public static string Objective_Portail_MPDZ_05 {
+            get {
+                return ResourceManager.GetString("Objective_Portail_MPDZ_05", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Objectifs du portail électronique pour les marchés publics.
+        /// </summary>
+        public static string Objectives_Portail_MPDZ_Titre {
+            get {
+                return ResourceManager.GetString("Objectives_Portail_MPDZ_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Sujet du message.
+        /// </summary>
+        public static string ObjetEmail {
+            get {
+                return ResourceManager.GetString("ObjetEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à veuillez indiquer l’Objet de votre message.
+        /// </summary>
+        public static string ObjetEmailD {
+            get {
+                return ResourceManager.GetString("ObjetEmailD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Observation.
         /// </summary>
         public static string Observation {
@@ -2605,11 +3811,110 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Organisation de l’Agence Nationale d’appui et de Développement de l’Entrepreneuriat.
+        /// </summary>
+        public static string organisationNesda {
+            get {
+                return ResourceManager.GetString("organisationNesda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ouest.
+        /// </summary>
+        public static string Ouest {
+            get {
+                return ResourceManager.GetString("Ouest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à le Business Plan Digital, un centre d’appel,.
+        /// </summary>
+        public static string OutilsNumeriques {
+            get {
+                return ResourceManager.GetString("OutilsNumeriques", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Explorez le magazine dès maintenant.
+        /// </summary>
+        public static string ParcourirMag {
+            get {
+                return ResourceManager.GetString("ParcourirMag", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à .
         /// </summary>
         public static string ParentId {
             get {
                 return ResourceManager.GetString("ParentId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Établissements de l’enseignement supérieur et de la recherche scientifique.
+        /// </summary>
+        public static string Partenaire1 {
+            get {
+                return ResourceManager.GetString("Partenaire1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Établissements de la formation et de l’enseignement professionnels.
+        /// </summary>
+        public static string Partenaire2 {
+            get {
+                return ResourceManager.GetString("Partenaire2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Institutions bancaires.
+        /// </summary>
+        public static string Partenaire3 {
+            get {
+                return ResourceManager.GetString("Partenaire3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Entreprises économiques.
+        /// </summary>
+        public static string Partenaire4 {
+            get {
+                return ResourceManager.GetString("Partenaire4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Institutions et organismes publics.
+        /// </summary>
+        public static string Partenaire5 {
+            get {
+                return ResourceManager.GetString("Partenaire5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Programme.
+        /// </summary>
+        public static string Partenariat1 {
+            get {
+                return ResourceManager.GetString("Partenariat1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à des partenariats.
+        /// </summary>
+        public static string Partenariat2 {
+            get {
+                return ResourceManager.GetString("Partenariat2", resourceCulture);
             }
         }
         
@@ -2668,6 +3973,24 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Numéro de téléphone.
+        /// </summary>
+        public static string Phone {
+            get {
+                return ResourceManager.GetString("Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à saisissez votre numéro de téléphone.
+        /// </summary>
+        public static string PhoneD {
+            get {
+                return ResourceManager.GetString("PhoneD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Photo personlle.
         /// </summary>
         public static string Photo {
@@ -2677,11 +4000,785 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à La protection de vos données personnelles est un engagement absolu de notre part. Cette politique vise à vous informer de manière claire et transparente sur la façon dont vos données personnelles sont collectées et traitées par l’Agence nationale d’appui et de développement de l’entrepreneuriat (NESDA)..
+        /// </summary>
+        public static string PolitiqueText {
+            get {
+                return ResourceManager.GetString("PolitiqueText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Politique relative aux données personnelles et aux cookies.
+        /// </summary>
+        public static string PolitiqueTitre {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 1. Introduction et engagement :.
+        /// </summary>
+        public static string PolitiqueTitre1 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Contact:.
+        /// </summary>
+        public static string PolitiqueTitre10 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pour toute question concernant notre politique actuelle en matière de confidentialité et de cookies, ou pour exercer vos droits, vous pouvez contacter NESDA :.
+        /// </summary>
+        public static string PolitiqueTitre10Text {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre10Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dans le cadre de ses activités, l’Agence nationale d’appui et de développement de l’entrepreneuriat (NESDA), ci-après dénommée « NESDA », collecte, traite et conserve des données personnelles. La protection de ces données constitue une obligation absolue pour tous les employés de la NESDA, conformément aux dispositions de la loi n° 18-07 du 10 juin 2018 relative à la protection des personnes physiques à l’égard du traitement des données à caractère personnel..
+        /// </summary>
+        public static string PolitiqueTitre1P1 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre1P1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à NESDA, dont le siège social est situé au 8 rue Arzki Ben Bouzid - El Anasser - Alger, agit en qualité de sous-traitant pour les données collectées via son site web..
+        /// </summary>
+        public static string PolitiqueTitre1P2 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre1P2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 2. Approbation et acceptation de la politique :.
+        /// </summary>
+        public static string PolitiqueTitre2 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à En utilisant le site web « www.nesda.dz » et les liens disponibles sur celui-ci, vous reconnaissez avoir lu et compris la présente politique et vous consentez à la collecte, au traitement, à l&apos;utilisation et au stockage de vos informations conformément aux méthodes décrites ci-dessous, en conformité avec les dispositions de la loi n° 18-07 du 25 Ramadan 1439 correspondant au 10 juin 2018 relative à la protection des personnes physiques à l&apos;égard du traitement des données à caractère personnel..
+        /// </summary>
+        public static string PolitiqueTitre2P {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre2P", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 3. Principes de protection des données personnelles :.
+        /// </summary>
+        public static string PolitiqueTitre3 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La légitimité, l&apos;intégrité et la transparence du processus .
+        /// </summary>
+        public static string PolitiqueTitre3P1 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre3P1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Définir et limiter les objectifs du traitement.
+        /// </summary>
+        public static string PolitiqueTitre3P2 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre3P2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Réduction des données collectées.
+        /// </summary>
+        public static string PolitiqueTitre3P3 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre3P3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Exactitude des données et mises à jour régulières.
+        /// </summary>
+        public static string PolitiqueTitre3P4 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre3P4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Détermination de la durée de conservation des données.
+        /// </summary>
+        public static string PolitiqueTitre3P5 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre3P5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Intégrité et confidentialité des données, y compris la sécurité du traitement.
+        /// </summary>
+        public static string PolitiqueTitre3P6 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre3P6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Respecter les droits des personnes concernées.
+        /// </summary>
+        public static string PolitiqueTitre3P7 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre3P7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à NESDA s’engage à respecter tous les principes fondamentaux relatifs à la protection des données personnelles conformément à la législation applicable, et notamment en ce qui concerne les points suivants :.
+        /// </summary>
+        public static string PolitiqueTitre3Text {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre3Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 4. Catégories de données personnelles collectées :.
+        /// </summary>
+        public static string PolitiqueTitre4 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Données d’identification :.
+        /// </summary>
+        public static string PolitiqueTitre4P1 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre4P1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Nom, prénom, surnom, date de naissance, numéro d&apos;identification national (NIN), numéro de compte bancaire (RIB) / numéro de compte courant postal (CCP), numéro de sécurité sociale..
+        /// </summary>
+        public static string PolitiqueTitre4P1Text {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre4P1Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Coordonnées :.
+        /// </summary>
+        public static string PolitiqueTitre4P2 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre4P2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Numéro de téléphone fixe ou portable, adresse postale, adresse e-mail.
+        /// </summary>
+        public static string PolitiqueTitre4P2Text {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre4P2Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Données sur les opérations et transactions bancaires :.
+        /// </summary>
+        public static string PolitiqueTitre4P3 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre4P3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La nature des transactions, la date, les détails des paiements par carte, les virements, les déductions, le montant et le relevé..
+        /// </summary>
+        public static string PolitiqueTitre4P3Text {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre4P3Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Informations de contact technique :.
+        /// </summary>
+        public static string PolitiqueTitre4P4 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre4P4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Vos identifiants d&apos;authentification et les données de vos espaces connectés, les journaux de connexion, les cookies et autres outils de suivi, les données de navigation sur le site web (adresse IP, type de navigateur, pages visitées, etc.).
+        /// </summary>
+        public static string PolitiqueTitre4P4Text {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre4P4Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Lorsque vous utilisez les services et le site web de NESDA, les catégories de données personnelles suivantes peuvent être collectées :.
+        /// </summary>
+        public static string PolitiqueTitre4Text {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre4Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 5. Finalités du traitement des données personnelles :.
+        /// </summary>
+        public static string PolitiqueTitre5 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Respect des obligations légales et réglementaires.
+        /// </summary>
+        public static string PolitiqueTitre5P1 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5P1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Sauvegarde et archivage des informations.
+        /// </summary>
+        public static string PolitiqueTitre5P10 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5P10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Bon fonctionnement du système d&apos;information.
+        /// </summary>
+        public static string PolitiqueTitre5P11 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5P11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Collaboration avec les partenaires de NESDA.
+        /// </summary>
+        public static string PolitiqueTitre5P12 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5P12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Formation, soutien, création et promotion des micro-entreprises.
+        /// </summary>
+        public static string PolitiqueTitre5P2 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5P2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Gestion de comptes et relations avec les promoteurs et les partenaires.
+        /// </summary>
+        public static string PolitiqueTitre5P3 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5P3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Évaluation et gestion des risques.
+        /// </summary>
+        public static string PolitiqueTitre5P4 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5P4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Prévenir, détecter et enquêter sur les cas de non-paiement et de fraude.
+        /// </summary>
+        public static string PolitiqueTitre5P5 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5P5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Acquisition.
+        /// </summary>
+        public static string PolitiqueTitre5P6 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5P6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Recrutement et gestion du personnel.
+        /// </summary>
+        public static string PolitiqueTitre5P7 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5P7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Fournir des conseils et des informations.
+        /// </summary>
+        public static string PolitiqueTitre5P8 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5P8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Systèmes d&apos;information, personnel et sécurité des biens.
+        /// </summary>
+        public static string PolitiqueTitre5P9 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5P9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à NESDA traite les données personnelles collectées afin de remplir ses missions et dans le cadre d&apos;un ou plusieurs des objectifs suivants :.
+        /// </summary>
+        public static string PolitiqueTitre5Text {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre5Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 6. Cookies :.
+        /// </summary>
+        public static string PolitiqueTitre6 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Types de cookies utilisés :.
+        /// </summary>
+        public static string PolitiqueTitre6ST {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre6ST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cookies nécessaires :.
+        /// </summary>
+        public static string PolitiqueTitre6ST11 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre6ST11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ces cookies sont indispensables au bon fonctionnement du site web et vous permettent d’utiliser ses fonctions de base..
+        /// </summary>
+        public static string PolitiqueTitre6ST12 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre6ST12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cookies analytiques :.
+        /// </summary>
+        public static string PolitiqueTitre6ST21 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre6ST21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ces cookies collectent des informations sur la façon dont les visiteurs utilisent notre site web..
+        /// </summary>
+        public static string PolitiqueTitre6ST22 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre6ST22", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cookies fonctionnels :.
+        /// </summary>
+        public static string PolitiqueTitre6ST31 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre6ST31", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à ceux-ci permettent au site web de mémoriser vos choix et préférences..
+        /// </summary>
+        public static string PolitiqueTitre6ST32 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre6ST32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cookies publicitaires :.
+        /// </summary>
+        public static string PolitiqueTitre6ST41 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre6ST41", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à utilisés pour vous afficher des publicités plus pertinentes..
+        /// </summary>
+        public static string PolitiqueTitre6ST42 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre6ST42", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le site web “www.nesda.dz“ utilise des cookies et d&apos;autres technologies de suivi pour améliorer l&apos;expérience utilisateur, personnaliser le contenu et analyser le trafic du site web..
+        /// </summary>
+        public static string PolitiqueTitre6Text {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre6Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 7. Droits des personnes concernées :.
+        /// </summary>
+        public static string PolitiqueTitre7 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Conformément à la loi n° 18-07 relative à la protection des données personnelles, vous disposez des droits suivants concernant vos données personnelles :.
+        /// </summary>
+        public static string PolitiqueTitre7Text {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Droit d’accès :.
+        /// </summary>
+        public static string PolitiqueTitre7TextP11 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à obtenir la confirmation que des données personnelles vous concernant sont traitées..
+        /// </summary>
+        public static string PolitiqueTitre7TextP12 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Droit de rectification :.
+        /// </summary>
+        public static string PolitiqueTitre7TextP21 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Demande de correction de données personnelles inexactes ou incomplètes..
+        /// </summary>
+        public static string PolitiqueTitre7TextP22 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP22", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Droit à l&apos;effacement :.
+        /// </summary>
+        public static string PolitiqueTitre7TextP31 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP31", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Demander l&apos;effacement de vos données personnelles dans certains cas..
+        /// </summary>
+        public static string PolitiqueTitre7TextP32 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Droit à la limitation du traitement :.
+        /// </summary>
+        public static string PolitiqueTitre7TextP41 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP41", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Demande de limitation du traitement de vos données dans certaines circonstances..
+        /// </summary>
+        public static string PolitiqueTitre7TextP42 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP42", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Droit d’opposition :.
+        /// </summary>
+        public static string PolitiqueTitre7TextP51 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP51", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Vous pouvez vous opposer au traitement de vos données pour des raisons légitimes..
+        /// </summary>
+        public static string PolitiqueTitre7TextP52 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP52", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Droit à la portabilité des données :.
+        /// </summary>
+        public static string PolitiqueTitre7TextP61 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP61", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à obtenir vos données dans un format structuré et lisible par machine..
+        /// </summary>
+        public static string PolitiqueTitre7TextP62 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP62", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Droit de retirer son consentement :.
+        /// </summary>
+        public static string PolitiqueTitre7TextP71 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP71", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Vous pouvez retirer votre consentement à tout moment lorsque le traitement est fondé sur celui-ci..
+        /// </summary>
+        public static string PolitiqueTitre7TextP72 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre7TextP72", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 8. Sécurité des données personnelles :.
+        /// </summary>
+        public static string PolitiqueTitre8 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à NESDA prend les mesures techniques et organisationnelles appropriées pour assurer un niveau de sécurité proportionné aux risques, afin de protéger vos données personnelles contre la destruction, la perte, l&apos;altération ou la divulgation non autorisée..
+        /// </summary>
+        public static string PolitiqueTitre8P1 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre8P1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ces mesures comprennent le recours à des techniques d&apos;anonymisation et de chiffrement des données, garantissant la confidentialité et l&apos;intégrité des systèmes de traitement, des procédures de récupération des données, ainsi que des clauses de confidentialité strictes pour les employés..
+        /// </summary>
+        public static string PolitiqueTitre8P2 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre8P2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 9. Durée de conservation des données :.
+        /// </summary>
+        public static string PolitiqueTitre9 {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à NESDA conserve vos données personnelles uniquement pendant la durée nécessaire aux fins pour lesquelles elles ont été collectées et traitées, conformément aux obligations légales et réglementaires applicables. Cette durée de conservation est déterminée en fonction des finalités du traitement, des contraintes opérationnelles et des délais de prescription légaux..
+        /// </summary>
+        public static string PolitiqueTitre9Text {
+            get {
+                return ResourceManager.GetString("PolitiqueTitre9Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dernière mise à jour : mars 2025.
+        /// </summary>
+        public static string PolitiqueUpdate {
+            get {
+                return ResourceManager.GetString("PolitiqueUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Lien d&apos;inscription : sidjilcom-entreprise.cnrc.dz/ar/accueil2.
+        /// </summary>
+        public static string Portail_Electronique_lien {
+            get {
+                return ResourceManager.GetString("Portail_Electronique_lien", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pour accéder au portail électronique destiné à la création d&apos;établissements, suivez ce lien :.
+        /// </summary>
+        public static string Portail_Electronique_Texte {
+            get {
+                return ResourceManager.GetString("Portail_Electronique_Texte", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Accès au portail électronique.
+        /// </summary>
+        public static string Portail_Electronique_Titre {
+            get {
+                return ResourceManager.GetString("Portail_Electronique_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La Direction générale des impôts (DGI).
+        /// </summary>
+        public static string Portail_Inscription_CNRC_Coordination_01 {
+            get {
+                return ResourceManager.GetString("Portail_Inscription_CNRC_Coordination_01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La Caisse nationale de sécurité sociale des travailleurs indépendants (CASNOS).
+        /// </summary>
+        public static string Portail_Inscription_CNRC_Coordination_02 {
+            get {
+                return ResourceManager.GetString("Portail_Inscription_CNRC_Coordination_02", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La Caisse nationale de sécurité sociale des travailleurs salariés (CNAS).
+        /// </summary>
+        public static string Portail_Inscription_CNRC_Coordination_03 {
+            get {
+                return ResourceManager.GetString("Portail_Inscription_CNRC_Coordination_03", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à L&apos;Office national des statistiques (ONS).
+        /// </summary>
+        public static string Portail_Inscription_CNRC_Coordination_04 {
+            get {
+                return ResourceManager.GetString("Portail_Inscription_CNRC_Coordination_04", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Portail électronique pour la création d&apos;institutions.
+        /// </summary>
+        public static string Portail_Inscription_CNRC_Titre {
+            get {
+                return ResourceManager.GetString("Portail_Inscription_CNRC_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Services du portail.
+        /// </summary>
+        public static string Portail_Services_Titre {
+            get {
+                return ResourceManager.GetString("Portail_Services_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Poste.
         /// </summary>
         public static string Poste {
             get {
                 return ResourceManager.GetString("Poste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Directeur Général.
+        /// </summary>
+        public static string PosteDirecteur {
+            get {
+                return ResourceManager.GetString("PosteDirecteur", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Directeur général de l&apos;Agence nationale d’appui et de développement de l&apos;entrepreneuriat (NESDA).
+        /// </summary>
+        public static string PosteDirecteurNesda {
+            get {
+                return ResourceManager.GetString("PosteDirecteurNesda", resourceCulture);
             }
         }
         
@@ -2700,6 +4797,15 @@ namespace Ansej.Sidjeme.Web.Resources {
         public static string poucentage {
             get {
                 return ResourceManager.GetString("poucentage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Précédent.
+        /// </summary>
+        public static string precedent {
+            get {
+                return ResourceManager.GetString("precedent", resourceCulture);
             }
         }
         
@@ -2767,11 +4873,56 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Programme de coopération.
+        /// </summary>
+        public static string ProgCoopérations {
+            get {
+                return ResourceManager.GetString("ProgCoopérations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Programme d’autonomisation des jeunes entrepreneurs dans le domaine agricole (ProAgro Jeunes).
+        /// </summary>
+        public static string ProgCoopérationsTitre1 {
+            get {
+                return ResourceManager.GetString("ProgCoopérationsTitre1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Programme du dialogue social pour la formalisation et l’employabilité dans la région du voisinage sud (SOLIFEM).
+        /// </summary>
+        public static string ProgCoopérationsTitre2 {
+            get {
+                return ResourceManager.GetString("ProgCoopérationsTitre2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Programme de l’économie sociale et solidaire.
+        /// </summary>
+        public static string ProgCoopérationsTitre3 {
+            get {
+                return ResourceManager.GetString("ProgCoopérationsTitre3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Programmes de formation.
         /// </summary>
         public static string ProgFormation {
             get {
                 return ResourceManager.GetString("ProgFormation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Programme.
+        /// </summary>
+        public static string Programme {
+            get {
+                return ResourceManager.GetString("Programme", resourceCulture);
             }
         }
         
@@ -2848,6 +4999,132 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Est-il possible de s&apos;inscrire en ligne ou faut-il se présenter en personne?.
+        /// </summary>
+        public static string Questions_01_Fréquemment_Posées_Sur_CDE {
+            get {
+                return ResourceManager.GetString("Questions_01_Fréquemment_Posées_Sur_CDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Quelles sont les sessions ou les programmes proposés par le centre ? Le centre propose-t-il une formation pratique?.
+        /// </summary>
+        public static string Questions_02_Fréquemment_Posées_Sur_CDE {
+            get {
+                return ResourceManager.GetString("Questions_02_Fréquemment_Posées_Sur_CDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tous les étudiants peuvent-ils s&apos;inscrire aux Centres de développement de l&apos;entrepreneuriat (CDE), ou cette inscription est-elle réservée aux diplômés?.
+        /// </summary>
+        public static string Questions_03_Fréquemment_Posées_Sur_CDE {
+            get {
+                return ResourceManager.GetString("Questions_03_Fréquemment_Posées_Sur_CDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à L&apos;inscription aux centres doit-elle se faire en fonction de la wilaya de formation ?.
+        /// </summary>
+        public static string Questions_04_Fréquemment_Posées_Sur_CDE {
+            get {
+                return ResourceManager.GetString("Questions_04_Fréquemment_Posées_Sur_CDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Questions fréquemment posées sur les Centres de développement de l&apos;entrepreneuriat (CDE).
+        /// </summary>
+        public static string Questions_Fréquemment_Posées_Sur_CDE {
+            get {
+                return ResourceManager.GetString("Questions_Fréquemment_Posées_Sur_CDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Recherche.
+        /// </summary>
+        public static string Recherche {
+            get {
+                return ResourceManager.GetString("Recherche", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rechercher un article ou une actualité….
+        /// </summary>
+        public static string RechercheArticleNews {
+            get {
+                return ResourceManager.GetString("RechercheArticleNews", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rechercher des articles et des actualités.
+        /// </summary>
+        public static string RechercheDansArticle {
+            get {
+                return ResourceManager.GetString("RechercheDansArticle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Rechercher par sujet….
+        /// </summary>
+        public static string RechercheSujet {
+            get {
+                return ResourceManager.GetString("RechercheSujet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Inscrivez-vous maintenant.
+        /// </summary>
+        public static string RegisterNow {
+            get {
+                return ResourceManager.GetString("RegisterNow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Le processus d&apos;inscription et l&apos;examen des candidatures se font par voie électronique, sans qu&apos;il soit nécessaire de se rendre dans les Centres de développement de l&apos;entrepreneuriat (CDE)..
+        /// </summary>
+        public static string Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE {
+            get {
+                return ResourceManager.GetString("Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Les programmes peuvent inclure des sessions sur l&apos;entrepreneuriat, la gestion de projet, le marketing et autres, et comprennent généralement une formation pratique..
+        /// </summary>
+        public static string Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE {
+            get {
+                return ResourceManager.GetString("Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Les étudiants doivent être diplômés pour s&apos;inscrire aux Centres de développement de l&apos;entrepreneuriat (CDE)..
+        /// </summary>
+        public static string Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE {
+            get {
+                return ResourceManager.GetString("Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à L&apos;inscription aux Centres de développement de l&apos;entrepreneuriat (CDE) est possible quel que soit l&apos;établissement de formation où vous avez étudié. Cela dépend de la politique du centre et des règles d&apos;inscription..
+        /// </summary>
+        public static string Réponse_Pour_Questions_04_Fréquemment_Posées_Sur_CDE {
+            get {
+                return ResourceManager.GetString("Réponse_Pour_Questions_04_Fréquemment_Posées_Sur_CDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à {0} est requis !.
         /// </summary>
         public static string RequiredMessage {
@@ -2898,6 +5175,15 @@ namespace Ansej.Sidjeme.Web.Resources {
         public static string Return {
             get {
                 return ResourceManager.GetString("Return", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Réunions du Conseil d’Administration.
+        /// </summary>
+        public static string ReunionConseilAdmin {
+            get {
+                return ResourceManager.GetString("ReunionConseilAdmin", resourceCulture);
             }
         }
         
@@ -2983,6 +5269,60 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Accéder à toutes les consultations publiques et appels d&apos;offres au niveau national ;.
+        /// </summary>
+        public static string Services_Portail_MPDZ_01 {
+            get {
+                return ResourceManager.GetString("Services_Portail_MPDZ_01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Suivre les appels d&apos;offres et les soumissions en cours ;.
+        /// </summary>
+        public static string Services_Portail_MPDZ_02 {
+            get {
+                return ResourceManager.GetString("Services_Portail_MPDZ_02", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Télécharger toutes les conditions générales et les documents requis ;.
+        /// </summary>
+        public static string Services_Portail_MPDZ_03 {
+            get {
+                return ResourceManager.GetString("Services_Portail_MPDZ_03", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Soumettre des propositions et participer à des appels d&apos;offres par voie électronique ;.
+        /// </summary>
+        public static string Services_Portail_MPDZ_04 {
+            get {
+                return ResourceManager.GetString("Services_Portail_MPDZ_04", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Suivre l&apos;état d&apos;avancement des propositions soumises et les résultats..
+        /// </summary>
+        public static string Services_Portail_MPDZ_05 {
+            get {
+                return ResourceManager.GetString("Services_Portail_MPDZ_05", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Services disponibles via le portail.
+        /// </summary>
+        public static string Services_Portail_MPDZ_Titre {
+            get {
+                return ResourceManager.GetString("Services_Portail_MPDZ_Titre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à .
         /// </summary>
         public static string Sessions {
@@ -3064,6 +5404,15 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Sous-direction de la communication.
+        /// </summary>
+        public static string SousDirectionCommunication {
+            get {
+                return ResourceManager.GetString("SousDirectionCommunication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Sous Type Demande.
         /// </summary>
         public static string SousTypeDemande {
@@ -3109,11 +5458,38 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Agence.
+        /// </summary>
+        public static string Structure {
+            get {
+                return ResourceManager.GetString("Structure", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à .
         /// </summary>
         public static string StructureId {
             get {
                 return ResourceManager.GetString("StructureId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Sud.
+        /// </summary>
+        public static string Sud {
+            get {
+                return ResourceManager.GetString("Sud", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Suivant.
+        /// </summary>
+        public static string suivant {
+            get {
+                return ResourceManager.GetString("suivant", resourceCulture);
             }
         }
         
@@ -3343,6 +5719,33 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Titre de la consultation.
+        /// </summary>
+        public static string TitreConsultation {
+            get {
+                return ResourceManager.GetString("TitreConsultation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Entrez le titre de l’article ici….
+        /// </summary>
+        public static string TitreRecherche {
+            get {
+                return ResourceManager.GetString("TitreRecherche", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Tous les articles.
+        /// </summary>
+        public static string ToutLesArticles {
+            get {
+                return ResourceManager.GetString("ToutLesArticles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Âge requis pour la création .
         /// </summary>
         public static string TrancheAgeCreation {
@@ -3550,6 +5953,24 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à  mises à jour.
+        /// </summary>
+        public static string update {
+            get {
+                return ResourceManager.GetString("update", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Lien d&apos;inscription en ligne.
+        /// </summary>
+        public static string URL {
+            get {
+                return ResourceManager.GetString("URL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Utilisateur.
         /// </summary>
         public static string UserId {
@@ -3568,11 +5989,38 @@ namespace Ansej.Sidjeme.Web.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Depuis 2024,.
+        /// </summary>
+        public static string verbepresentation {
+            get {
+                return ResourceManager.GetString("verbepresentation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à À cet égard,.
+        /// </summary>
+        public static string VerbePresentation1 {
+            get {
+                return ResourceManager.GetString("VerbePresentation1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Wilaya.
         /// </summary>
         public static string Wilaya {
             get {
                 return ResourceManager.GetString("Wilaya", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à sélectionnez la wilaya.
+        /// </summary>
+        public static string WilayaD {
+            get {
+                return ResourceManager.GetString("WilayaD", resourceCulture);
             }
         }
         

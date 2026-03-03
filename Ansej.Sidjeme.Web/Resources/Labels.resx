@@ -268,7 +268,7 @@
     <value>Modifier {0}</value>
   </data>
   <data name="Email" xml:space="preserve">
-    <value>Email</value>
+    <value>E-mail</value>
   </data>
   <data name="EndDate" xml:space="preserve">
     <value>Date Expiration</value>
@@ -280,7 +280,7 @@
     <value>Verrouiller</value>
   </data>
   <data name="FullName" xml:space="preserve">
-    <value>Nom Complet Français</value>
+    <value>Nom et prénom</value>
   </data>
   <data name="FullNameAr" xml:space="preserve">
     <value>Nom Complet Arab</value>
@@ -1751,5 +1751,374 @@ Programmes de formation spécialisés et intégrés.
   </data>
   <data name="VerbePresentation1" xml:space="preserve">
     <value>À cet égard,</value>
+  </data>
+  <data name="devise" xml:space="preserve">
+    <value>DA</value>
+  </data>
+  <data name="AdresseDG" xml:space="preserve">
+    <value>Rue Mohamed Arezki Ben Bouzid, El Anasser, Alger, Algerie</value>
+  </data>
+  <data name="AxesProgramme" xml:space="preserve">
+    <value>Axes et actions du programme:</value>
+  </data>
+  <data name="ButProgramme" xml:space="preserve">
+    <value>Finalité du programme:</value>
+  </data>
+  <data name="CadreProgramme" xml:space="preserve">
+    <value>Cadre du programme:</value>
+  </data>
+  <data name="Centre" xml:space="preserve">
+    <value>Centre</value>
+  </data>
+  <data name="contactForm" xml:space="preserve">
+    <value>Formulaire de contact</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>Coordonnées</value>
+  </data>
+  <data name="contactsAgences" xml:space="preserve">
+    <value>Pour obtenir des informations détaillées, cliquez sur la wilaya.</value>
+  </data>
+  <data name="contactTitre" xml:space="preserve">
+    <value>Coordonnées des agences de wilaya</value>
+  </data>
+  <data name="ContenuEmail" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="ContenuEmailD" xml:space="preserve">
+    <value>écrivez votre message ici</value>
+  </data>
+  <data name="DecouvrirMag1" xml:space="preserve">
+    <value>Découvrez le premier numéro</value>
+  </data>
+  <data name="DecouvrirMag1Text" xml:space="preserve">
+    <value>Explorez dès maintenant « NESDA Mag » et découvrez les derniers contenus dans le monde de l'entrepreneuriat.</value>
+  </data>
+  <data name="DefinitionProgramme" xml:space="preserve">
+    <value>Présentation du programme IMPACT 70 </value>
+  </data>
+  <data name="DernierNews" xml:space="preserve">
+    <value>Dernières actualités et mises à jour</value>
+  </data>
+  <data name="Electronique" xml:space="preserve">
+    <value>électronique</value>
+  </data>
+  <data name="EmailD" xml:space="preserve">
+    <value>saisissez votre adresse e-mail</value>
+  </data>
+  <data name="EnvironementProgramme" xml:space="preserve">
+    <value>Périmètre du programme</value>
+  </data>
+  <data name="envoyerMessage" xml:space="preserve">
+    <value>Envoyer un message</value>
+  </data>
+  <data name="Est" xml:space="preserve">
+    <value>Est</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="FullNameD" xml:space="preserve">
+    <value>veuillez saisir votre nom complet</value>
+  </data>
+  <data name="infoComplet" xml:space="preserve">
+    <value>Des données complètes sont disponibles</value>
+  </data>
+  <data name="informations" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="LeMag" xml:space="preserve">
+    <value>Magazine</value>
+  </data>
+  <data name="Mag" xml:space="preserve">
+    <value>NESDA</value>
+  </data>
+  <data name="MagNesda" xml:space="preserve">
+    <value>Magazine Mag</value>
+  </data>
+  <data name="MagNumero" xml:space="preserve">
+    <value>Problème n°</value>
+  </data>
+  <data name="MagTitre1" xml:space="preserve">
+    <value>Vision du magazine </value>
+  </data>
+  <data name="MagTitre2" xml:space="preserve">
+    <value>Ce que propose le magazine </value>
+  </data>
+  <data name="MagTitre2Text" xml:space="preserve">
+    <value>Ce magazine est un espace de connaissances nouveau et unique, qui sera votre principale source d'information sur :</value>
+  </data>
+  <data name="MagTitre2TextP1" xml:space="preserve">
+    <value>Les derniers développements en matière d'entrepreneuriat.</value>
+  </data>
+  <data name="MagTitre2TextP2" xml:space="preserve">
+    <value>Les réussites inspirantes d'entrepreneurs algériens.</value>
+  </data>
+  <data name="MagTitre2TextP3" xml:space="preserve">
+    <value>Une analyse approfondie de l'état actuel et de l'avenir du secteur en Algérie.</value>
+  </data>
+  <data name="MagTitre2TextP4" xml:space="preserve">
+    <value>Des conseils pratiques et des orientations pour accompagner et soutenir les micro-entreprises.</value>
+  </data>
+  <data name="MagTitre2TextP5" xml:space="preserve">
+    <value>Des interviews avec divers acteurs du domaine de l'entrepreneuriat.</value>
+  </data>
+  <data name="nombreAgences" xml:space="preserve">
+    <value>61 agences de wilaya</value>
+  </data>
+  <data name="ObjetEmail" xml:space="preserve">
+    <value>Sujet du message</value>
+  </data>
+  <data name="ObjetEmailD" xml:space="preserve">
+    <value>veuillez indiquer l’Objet de votre message</value>
+  </data>
+  <data name="Ouest" xml:space="preserve">
+    <value>Ouest</value>
+  </data>
+  <data name="ParcourirMag" xml:space="preserve">
+    <value>Explorez le magazine dès maintenant</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Numéro de téléphone</value>
+  </data>
+  <data name="PhoneD" xml:space="preserve">
+    <value>saisissez votre numéro de téléphone</value>
+  </data>
+  <data name="PolitiqueText" xml:space="preserve">
+    <value>La protection de vos données personnelles est un engagement absolu de notre part. Cette politique vise à vous informer de manière claire et transparente sur la façon dont vos données personnelles sont collectées et traitées par l’Agence nationale d’appui et de développement de l’entrepreneuriat (NESDA).</value>
+  </data>
+  <data name="PolitiqueTitre" xml:space="preserve">
+    <value>Politique relative aux données personnelles et aux cookies</value>
+  </data>
+  <data name="PolitiqueTitre1" xml:space="preserve">
+    <value>1. Introduction et engagement :</value>
+  </data>
+  <data name="PolitiqueTitre10" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="PolitiqueTitre10Text" xml:space="preserve">
+    <value>Pour toute question concernant notre politique actuelle en matière de confidentialité et de cookies, ou pour exercer vos droits, vous pouvez contacter NESDA :</value>
+  </data>
+  <data name="PolitiqueTitre1P1" xml:space="preserve">
+    <value>Dans le cadre de ses activités, l’Agence nationale d’appui et de développement de l’entrepreneuriat (NESDA), ci-après dénommée « NESDA », collecte, traite et conserve des données personnelles. La protection de ces données constitue une obligation absolue pour tous les employés de la NESDA, conformément aux dispositions de la loi n° 18-07 du 10 juin 2018 relative à la protection des personnes physiques à l’égard du traitement des données à caractère personnel.</value>
+  </data>
+  <data name="PolitiqueTitre1P2" xml:space="preserve">
+    <value>NESDA, dont le siège social est situé au 8 rue Arzki Ben Bouzid - El Anasser - Alger, agit en qualité de sous-traitant pour les données collectées via son site web.</value>
+  </data>
+  <data name="PolitiqueTitre2" xml:space="preserve">
+    <value>2. Approbation et acceptation de la politique :</value>
+  </data>
+  <data name="PolitiqueTitre2P" xml:space="preserve">
+    <value>En utilisant le site web « www.nesda.dz » et les liens disponibles sur celui-ci, vous reconnaissez avoir lu et compris la présente politique et vous consentez à la collecte, au traitement, à l'utilisation et au stockage de vos informations conformément aux méthodes décrites ci-dessous, en conformité avec les dispositions de la loi n° 18-07 du 25 Ramadan 1439 correspondant au 10 juin 2018 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel.</value>
+  </data>
+  <data name="PolitiqueTitre3" xml:space="preserve">
+    <value>3. Principes de protection des données personnelles :</value>
+  </data>
+  <data name="PolitiqueTitre3P1" xml:space="preserve">
+    <value>La légitimité, l'intégrité et la transparence du processus </value>
+  </data>
+  <data name="PolitiqueTitre3P2" xml:space="preserve">
+    <value>Définir et limiter les objectifs du traitement</value>
+  </data>
+  <data name="PolitiqueTitre3P3" xml:space="preserve">
+    <value>Réduction des données collectées</value>
+  </data>
+  <data name="PolitiqueTitre3P4" xml:space="preserve">
+    <value>Exactitude des données et mises à jour régulières</value>
+  </data>
+  <data name="PolitiqueTitre3P5" xml:space="preserve">
+    <value>Détermination de la durée de conservation des données</value>
+  </data>
+  <data name="PolitiqueTitre3P6" xml:space="preserve">
+    <value>Intégrité et confidentialité des données, y compris la sécurité du traitement</value>
+  </data>
+  <data name="PolitiqueTitre3P7" xml:space="preserve">
+    <value>Respecter les droits des personnes concernées</value>
+  </data>
+  <data name="PolitiqueTitre3Text" xml:space="preserve">
+    <value>NESDA s’engage à respecter tous les principes fondamentaux relatifs à la protection des données personnelles conformément à la législation applicable, et notamment en ce qui concerne les points suivants :</value>
+  </data>
+  <data name="PolitiqueTitre4" xml:space="preserve">
+    <value>4. Catégories de données personnelles collectées :</value>
+  </data>
+  <data name="PolitiqueTitre4P1" xml:space="preserve">
+    <value>Données d’identification :</value>
+  </data>
+  <data name="PolitiqueTitre4P1Text" xml:space="preserve">
+    <value>Nom, prénom, surnom, date de naissance, numéro d'identification national (NIN), numéro de compte bancaire (RIB) / numéro de compte courant postal (CCP), numéro de sécurité sociale.</value>
+  </data>
+  <data name="PolitiqueTitre4P2" xml:space="preserve">
+    <value>Coordonnées :</value>
+  </data>
+  <data name="PolitiqueTitre4P2Text" xml:space="preserve">
+    <value>Numéro de téléphone fixe ou portable, adresse postale, adresse e-mail</value>
+  </data>
+  <data name="PolitiqueTitre4P3" xml:space="preserve">
+    <value>Données sur les opérations et transactions bancaires :</value>
+  </data>
+  <data name="PolitiqueTitre4P3Text" xml:space="preserve">
+    <value>La nature des transactions, la date, les détails des paiements par carte, les virements, les déductions, le montant et le relevé.</value>
+  </data>
+  <data name="PolitiqueTitre4P4" xml:space="preserve">
+    <value>Informations de contact technique :</value>
+  </data>
+  <data name="PolitiqueTitre4P4Text" xml:space="preserve">
+    <value>Vos identifiants d'authentification et les données de vos espaces connectés, les journaux de connexion, les cookies et autres outils de suivi, les données de navigation sur le site web (adresse IP, type de navigateur, pages visitées, etc.)</value>
+  </data>
+  <data name="PolitiqueTitre4Text" xml:space="preserve">
+    <value>Lorsque vous utilisez les services et le site web de NESDA, les catégories de données personnelles suivantes peuvent être collectées :</value>
+  </data>
+  <data name="PolitiqueTitre5" xml:space="preserve">
+    <value>5. Finalités du traitement des données personnelles :</value>
+  </data>
+  <data name="PolitiqueTitre5P1" xml:space="preserve">
+    <value>Respect des obligations légales et réglementaires</value>
+  </data>
+  <data name="PolitiqueTitre5P10" xml:space="preserve">
+    <value>Sauvegarde et archivage des informations</value>
+  </data>
+  <data name="PolitiqueTitre5P11" xml:space="preserve">
+    <value>Bon fonctionnement du système d'information</value>
+  </data>
+  <data name="PolitiqueTitre5P12" xml:space="preserve">
+    <value>Collaboration avec les partenaires de NESDA</value>
+  </data>
+  <data name="PolitiqueTitre5P2" xml:space="preserve">
+    <value>Formation, soutien, création et promotion des micro-entreprises</value>
+  </data>
+  <data name="PolitiqueTitre5P3" xml:space="preserve">
+    <value>Gestion de comptes et relations avec les promoteurs et les partenaires</value>
+  </data>
+  <data name="PolitiqueTitre5P4" xml:space="preserve">
+    <value>Évaluation et gestion des risques</value>
+  </data>
+  <data name="PolitiqueTitre5P5" xml:space="preserve">
+    <value>Prévenir, détecter et enquêter sur les cas de non-paiement et de fraude</value>
+  </data>
+  <data name="PolitiqueTitre5P6" xml:space="preserve">
+    <value>Acquisition</value>
+  </data>
+  <data name="PolitiqueTitre5P7" xml:space="preserve">
+    <value>Recrutement et gestion du personnel</value>
+  </data>
+  <data name="PolitiqueTitre5P8" xml:space="preserve">
+    <value>Fournir des conseils et des informations</value>
+  </data>
+  <data name="PolitiqueTitre5P9" xml:space="preserve">
+    <value>Systèmes d'information, personnel et sécurité des biens</value>
+  </data>
+  <data name="PolitiqueTitre5Text" xml:space="preserve">
+    <value>NESDA traite les données personnelles collectées afin de remplir ses missions et dans le cadre d'un ou plusieurs des objectifs suivants :</value>
+  </data>
+  <data name="PolitiqueTitre6" xml:space="preserve">
+    <value>6. Cookies :</value>
+  </data>
+  <data name="PolitiqueTitre6ST" xml:space="preserve">
+    <value>Types de cookies utilisés :</value>
+  </data>
+  <data name="PolitiqueTitre6ST11" xml:space="preserve">
+    <value>Cookies nécessaires :</value>
+  </data>
+  <data name="PolitiqueTitre6ST12" xml:space="preserve">
+    <value>Ces cookies sont indispensables au bon fonctionnement du site web et vous permettent d’utiliser ses fonctions de base.</value>
+  </data>
+  <data name="PolitiqueTitre6ST21" xml:space="preserve">
+    <value>Cookies analytiques :</value>
+  </data>
+  <data name="PolitiqueTitre6ST22" xml:space="preserve">
+    <value>Ces cookies collectent des informations sur la façon dont les visiteurs utilisent notre site web.</value>
+  </data>
+  <data name="PolitiqueTitre6ST31" xml:space="preserve">
+    <value>Cookies fonctionnels :</value>
+  </data>
+  <data name="PolitiqueTitre6ST32" xml:space="preserve">
+    <value>ceux-ci permettent au site web de mémoriser vos choix et préférences.</value>
+  </data>
+  <data name="PolitiqueTitre6ST41" xml:space="preserve">
+    <value>Cookies publicitaires :</value>
+  </data>
+  <data name="PolitiqueTitre6ST42" xml:space="preserve">
+    <value>utilisés pour vous afficher des publicités plus pertinentes.</value>
+  </data>
+  <data name="PolitiqueTitre6Text" xml:space="preserve">
+    <value>Le site web “www.nesda.dz“ utilise des cookies et d'autres technologies de suivi pour améliorer l'expérience utilisateur, personnaliser le contenu et analyser le trafic du site web.</value>
+  </data>
+  <data name="PolitiqueTitre7" xml:space="preserve">
+    <value>7. Droits des personnes concernées :</value>
+  </data>
+  <data name="PolitiqueTitre7Text" xml:space="preserve">
+    <value>Conformément à la loi n° 18-07 relative à la protection des données personnelles, vous disposez des droits suivants concernant vos données personnelles :</value>
+  </data>
+  <data name="PolitiqueTitre7TextP11" xml:space="preserve">
+    <value>Droit d’accès :</value>
+  </data>
+  <data name="PolitiqueTitre7TextP12" xml:space="preserve">
+    <value>obtenir la confirmation que des données personnelles vous concernant sont traitées.</value>
+  </data>
+  <data name="PolitiqueTitre7TextP21" xml:space="preserve">
+    <value>Droit de rectification :</value>
+  </data>
+  <data name="PolitiqueTitre7TextP22" xml:space="preserve">
+    <value>Demande de correction de données personnelles inexactes ou incomplètes.</value>
+  </data>
+  <data name="PolitiqueTitre7TextP31" xml:space="preserve">
+    <value>Droit à l'effacement :</value>
+  </data>
+  <data name="PolitiqueTitre7TextP32" xml:space="preserve">
+    <value>Demander l'effacement de vos données personnelles dans certains cas.</value>
+  </data>
+  <data name="PolitiqueTitre7TextP41" xml:space="preserve">
+    <value>Droit à la limitation du traitement :</value>
+  </data>
+  <data name="PolitiqueTitre7TextP42" xml:space="preserve">
+    <value>Demande de limitation du traitement de vos données dans certaines circonstances.</value>
+  </data>
+  <data name="PolitiqueTitre7TextP51" xml:space="preserve">
+    <value>Droit d’opposition :</value>
+  </data>
+  <data name="PolitiqueTitre7TextP52" xml:space="preserve">
+    <value>Vous pouvez vous opposer au traitement de vos données pour des raisons légitimes.</value>
+  </data>
+  <data name="PolitiqueTitre7TextP61" xml:space="preserve">
+    <value>Droit à la portabilité des données :</value>
+  </data>
+  <data name="PolitiqueTitre7TextP62" xml:space="preserve">
+    <value>obtenir vos données dans un format structuré et lisible par machine.</value>
+  </data>
+  <data name="PolitiqueTitre7TextP71" xml:space="preserve">
+    <value>Droit de retirer son consentement :</value>
+  </data>
+  <data name="PolitiqueTitre7TextP72" xml:space="preserve">
+    <value>Vous pouvez retirer votre consentement à tout moment lorsque le traitement est fondé sur celui-ci.</value>
+  </data>
+  <data name="PolitiqueTitre8" xml:space="preserve">
+    <value>8. Sécurité des données personnelles :</value>
+  </data>
+  <data name="PolitiqueTitre8P1" xml:space="preserve">
+    <value>NESDA prend les mesures techniques et organisationnelles appropriées pour assurer un niveau de sécurité proportionné aux risques, afin de protéger vos données personnelles contre la destruction, la perte, l'altération ou la divulgation non autorisée.</value>
+  </data>
+  <data name="PolitiqueTitre8P2" xml:space="preserve">
+    <value>Ces mesures comprennent le recours à des techniques d'anonymisation et de chiffrement des données, garantissant la confidentialité et l'intégrité des systèmes de traitement, des procédures de récupération des données, ainsi que des clauses de confidentialité strictes pour les employés.</value>
+  </data>
+  <data name="PolitiqueTitre9" xml:space="preserve">
+    <value>9. Durée de conservation des données :</value>
+  </data>
+  <data name="PolitiqueTitre9Text" xml:space="preserve">
+    <value>NESDA conserve vos données personnelles uniquement pendant la durée nécessaire aux fins pour lesquelles elles ont été collectées et traitées, conformément aux obligations légales et réglementaires applicables. Cette durée de conservation est déterminée en fonction des finalités du traitement, des contraintes opérationnelles et des délais de prescription légaux.</value>
+  </data>
+  <data name="PolitiqueUpdate" xml:space="preserve">
+    <value>Dernière mise à jour : mars 2025</value>
+  </data>
+  <data name="PosteDirecteurNesda" xml:space="preserve">
+    <value>Directeur général de l'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA)</value>
+  </data>
+  <data name="SousDirectionCommunication" xml:space="preserve">
+    <value>Sous-direction de la communication</value>
+  </data>
+  <data name="Sud" xml:space="preserve">
+    <value>Sud</value>
+  </data>
+  <data name="WilayaD" xml:space="preserve">
+    <value>sélectionnez la wilaya</value>
   </data>
 </root>
