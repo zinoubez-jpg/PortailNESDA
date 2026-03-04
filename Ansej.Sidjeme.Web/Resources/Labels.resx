@@ -1752,4 +1752,96 @@ Programmes de formation spécialisés et intégrés.
   <data name="VerbePresentation1" xml:space="preserve">
     <value>À cet égard,</value>
   </data>
+  <data name="SousTraitance1" xml:space="preserve">
+    <value>Programme </value>
+  </data>
+  <data name="SousTraitance2" xml:space="preserve">
+    <value>de sous-traitance</value>
+  </data>
+  <data name="SousTraitanceAvantages1" xml:space="preserve">
+    <value>Principaux avantages de la sous-traitance pour les grandes entreprises</value>
+  </data>
+  <data name="SousTraitanceAvantages2" xml:space="preserve">
+    <value>Principaux avantages de la sous-traitance pour les micro-entreprises</value>
+  </data>
+  <data name="SousTraitanceModels" xml:space="preserve">
+    <value>Quelques exemples de sous-traitance via les micro-entreprises</value>
+  </data>
+  <data name="SousTraitanceSupport" xml:space="preserve">
+    <value>Soutien de l’Agence à la sous-traitance</value>
+  </data>
+  <data name="auteur" xml:space="preserve">
+    <value>Auteur </value>
+  </data>
+  <data name="DecouvrirMag1" xml:space="preserve">
+    <value>
+Découvrez le premier numéro
+</value>
+  </data>
+  <data name="DecouvrirMag1Text" xml:space="preserve">
+    <value>Explorez dès maintenant « NESDA Mag » et découvrez les derniers contenus dans le monde de l'entrepreneuriat.</value>
+  </data>
+  <data name="DernierNews" xml:space="preserve">
+    <value>Dernières actualités et mises à jour </value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>Format </value>
+  </data>
+  <data name="FullScreen" xml:space="preserve">
+    <value>Afficher Plein écran </value>
+  </data>
+  <data name="ImprimerMag" xml:space="preserve">
+    <value>Imprimer </value>
+  </data>
+  <data name="LeMag" xml:space="preserve">
+    <value>Magazine</value>
+  </data>
+  <data name="Mag" xml:space="preserve">
+    <value>Magazine</value>
+  </data>
+  <data name="MagNesda" xml:space="preserve">
+    <value>NESDA  Mag </value>
+  </data>
+  <data name="MagTitre1" xml:space="preserve">
+    <value>Vision du magazine </value>
+  </data>
+  <data name="MagTitre2" xml:space="preserve">
+    <value>Ce que propose le magazine </value>
+  </data>
+  <data name="MagTitre2Text" xml:space="preserve">
+    <value>Ce magazine est un espace de connaissances nouveau et unique, qui sera votre principale source d'information sur :</value>
+  </data>
+  <data name="MagTitre2TextP1" xml:space="preserve">
+    <value>Les derniers développements en matière d'entrepreneuriat ,</value>
+  </data>
+  <data name="MagTitre2TextP2" xml:space="preserve">
+    <value>Les réussites inspirantes d'entrepreneurs algériens ,</value>
+  </data>
+  <data name="MagTitre2TextP3" xml:space="preserve">
+    <value> Une analyse approfondie de l'état actuel et de l'avenir du secteur en Algérie ,</value>
+  </data>
+  <data name="MagTitre2TextP4" xml:space="preserve">
+    <value>Des conseils pratiques et des orientations pour accompagner et soutenir les micro-entreprises ,</value>
+  </data>
+  <data name="MagTitre2TextP5" xml:space="preserve">
+    <value> Des interviews avec divers acteurs du domaine de l'entrepreneuriat.</value>
+  </data>
+  <data name="ParcourirMag" xml:space="preserve">
+    <value>Explorez le magazine dès maintenant</value>
+  </data>
+  <data name="partage" xml:space="preserve">
+    <value>Partager</value>
+  </data>
+  <data name="PosteDirecteurNesda" xml:space="preserve">
+    <value>Directeur général de l'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA)</value>
+  </data>
+  <data name="retourListe" xml:space="preserve">
+    <value>Retour </value>
+  </data>
+  <data name="SousDirectionCommunication" xml:space="preserve">
+    <value>Sous-direction de la communication</value>
+  </data>
+  <data name="TelechargerMag" xml:space="preserve">
+    <value>Télécharger </value>
+  </data>
 </root>

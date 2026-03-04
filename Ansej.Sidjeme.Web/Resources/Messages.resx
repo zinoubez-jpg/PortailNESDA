@@ -1097,4 +1097,81 @@ Il constitue une garantie complémentaire au profit des banques, en plus des gar
   <data name="InfoProgrammeExtension" xml:space="preserve">
     <value>Contactez-nous pour obtenir davantage de détails sur le programme d’extension d’activité et les modalités de bénéficier de ses services.</value>
   </data>
+  <data name="LectureMag" xml:space="preserve">
+    <value>Le magazine électronique de l'Agence</value>
+  </data>
+  <data name="Mag" xml:space="preserve">
+    <value>NESDA Magazine Mag</value>
+  </data>
+  <data name="MagDeclarationDG" xml:space="preserve">
+    <value>Dans une déclaration à cette occasion, M. Bilal Achacha, directeur général de l'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA), a souligné que la publication de ce magazine représente un ajout qualitatif à la scène économique nationale et une étape fondamentale dans la nouvelle stratégie basée sur la formation, l'accompagnement et l'autonomisation des porteurs d'idées et de projets grâce à des outils favorisant la réussite. Ce magazine est notre engagement à suivre le rythme de la transformation numérique et à garantir que des informations précises et motivantes parviennent à tous les entrepreneurs à travers le pays.</value>
+  </data>
+  <data name="MagText" xml:space="preserve">
+    <value>L'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA) annonce la sortie officielle du premier numéro de son magazine spécialisé, qui devient ainsi le premier magazine complet consacré à l'entrepreneuriat en Algérie. Cette initiative stratégique s'inscrit dans le cadre de l'engagement de l'agence à promouvoir une culture de l'entrepreneuriat et à fournir une base de connaissances et une plateforme interactive à tous les acteurs de l'écosystème entrepreneurial.
+
+</value>
+  </data>
+  <data name="MagTitre1Text" xml:space="preserve">
+    <value>Le magazine, intitulé « NESDA Mag », vise à présenter un contenu de qualité alliant aspects académiques et pratiques et mettant en avant des opportunités d'investissement prometteuses dans divers secteurs économiques. </value>
+  </data>
+  <data name="SousTraitanceAvantage1,1" xml:space="preserve">
+    <value>Réduction des coûts, en particulier des dépenses fixes et des charges fiscales .</value>
+  </data>
+  <data name="SousTraitanceAvantage1,2" xml:space="preserve">
+    <value> Concentration sur les activités principales de l’entreprise et accès à des compétences de haut niveau ;</value>
+  </data>
+  <data name="SousTraitanceAvantage1,3" xml:space="preserve">
+    <value> Amélioration de la qualité des services ou de la production </value>
+  </data>
+  <data name="SousTraitanceAvantage1,4" xml:space="preserve">
+    <value>Bénéfice d’expertises ou de technologies non disponibles en interne </value>
+  </data>
+  <data name="SousTraitanceAvantage1,5" xml:space="preserve">
+    <value> Augmentation de la flexibilité opérationnelle et capacité d’adaptation à la demande.</value>
+  </data>
+  <data name="SousTraitanceAvantage2,1" xml:space="preserve">
+    <value> Opportunités de croissance et génération d’un flux financier stable grâce aux contrats avec de grandes entreprises </value>
+  </data>
+  <data name="SousTraitanceAvantage2,2" xml:space="preserve">
+    <value> Réduction du risque de dépendance vis-à-vis de clients individuels et concentration sur des partenariats à long terme .</value>
+  </data>
+  <data name="SousTraitanceAvantage2,3" xml:space="preserve">
+    <value>  Développement de relations et de réseaux professionnels, et renforcement de la confiance sur le marché .</value>
+  </data>
+  <data name="SousTraitanceAvantage2,4" xml:space="preserve">
+    <value>  Optimisation de l’utilisation des ressources dans les projets sous-traités et réduction des périodes d’arrêt de travail ou de production .</value>
+  </data>
+  <data name="SousTraitanceAvantage2,5" xml:space="preserve">
+    <value> Amélioration de l’efficacité et de la productivité au cœur de l’activité.</value>
+  </data>
+  <data name="SousTraitanceDescP1" xml:space="preserve">
+    <value>L’Agence nationale d’appui et de développement de l’entrepreneuriat met en œuvre un programme spécifique visant à promouvoir et encourager la sous-traitance au sein des micro-entreprises, en valorisant leurs capacités et compétences dans divers domaines à travers les différentes activités des chaînes de valeur des secteurs économiques.</value>
+  </data>
+  <data name="SousTraitanceDescP2" xml:space="preserve">
+    <value>L’Agence veille à promouvoir la sous-traitance au sein du secteur économique de l’état, auprès des grands groupes publics, des entreprises publiques économiques, ainsi que des grandes entreprises privées, afin de mettre en avant les micro-entreprises et les avantages qu’elles offrent dans ce domaine.</value>
+  </data>
+  <data name="SousTraitanceModels1" xml:space="preserve">
+    <value>Contracter avec des micro-entreprises actives dans le secteur des services, tels que : maintenance des équipements et machines, transport de marchandises, formation, études et ingénierie, restauration, nettoyage, etc.</value>
+  </data>
+  <data name="SousTraitanceModels2" xml:space="preserve">
+    <value>Faire appel à des micro-entreprises spécialisées dans les services numériques, tels que : programmation, analyse de données, marketing digital, etc.</value>
+  </data>
+  <data name="SousTraitanceModels3" xml:space="preserve">
+    <value> Contracter avec des micro-entreprises produisant des matières premières et des produits semi-finis, tels que : produits agricoles, matériaux d’emballage et de conditionnement, pièces de rechange, produits chimiques, etc.</value>
+  </data>
+  <data name="SousTraitanceModels4" xml:space="preserve">
+    <value> Faire appel à des micro-entreprises actives dans le recyclage et la réutilisation des matériaux, tels que : papier, plastique et métaux.</value>
+  </data>
+  <data name="SousTraitanceModels5" xml:space="preserve">
+    <value>  Faire appel à des micro-entreprises spécialisées dans la distribution et le marketing, le service client, le recouvrement des factures, etc.</value>
+  </data>
+  <data name="SousTraitanceQuestion" xml:space="preserve">
+    <value>Souhaitez-vous bénéficier du programme de sous-traitance ?</value>
+  </data>
+  <data name="SousTraitanceSupportP1" xml:space="preserve">
+    <value>Dans le cadre de son soutien à la sous-traitance via les micro-entreprises, l’Agence a veillé à la signature de plusieurs accords avec des opérateurs économiques publics et privés, en faveur des micro-entreprises, tant au niveau local que national.</value>
+  </data>
+  <data name="SousTraitanceSupportP2" xml:space="preserve">
+    <value>L’Agence veille également à promouvoir les capacités et les potentialités des micro-entreprises dans le domaine de la sous-traitance, sous toutes ses formes, à travers différentes occasions et opportunités, afin de conclure des accords et de les concrétiser sur le terrain pour contribuer à la dynamique de la croissance économique.</value>
+  </data>
 </root>
