@@ -980,43 +980,7 @@ namespace Ansej.Sidjeme.Web.Resources {
                 return ResourceManager.GetString("Advantages_Portail_MPDZ_04", resourceCulture);
             }
         }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Accès direct à toutes les opportunités commerciales gouvernementales..
-        /// </summary>
-        public static string Advantages_Portail_MPDZ_01 {
-            get {
-                return ResourceManager.GetString("Advantages_Portail_MPDZ_01", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Gain de temps et d&apos;efforts dans la recherche d&apos;appels d&apos;offres..
-        /// </summary>
-        public static string Advantages_Portail_MPDZ_02 {
-            get {
-                return ResourceManager.GetString("Advantages_Portail_MPDZ_02", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Garantie de ne manquer aucune opportunité d&apos;investissement importante.
-        /// </summary>
-        public static string Advantages_Portail_MPDZ_03 {
-            get {
-                return ResourceManager.GetString("Advantages_Portail_MPDZ_03", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Soumission électronique facile des offres et suivi.
-        /// </summary>
-        public static string Advantages_Portail_MPDZ_04 {
-            get {
-                return ResourceManager.GetString("Advantages_Portail_MPDZ_04", resourceCulture);
-            }
-        }
-        
+                
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Notifications instantanées pour les nouveaux appels d&apos;offres.
         /// </summary>
@@ -1701,23 +1665,6 @@ namespace Ansej.Sidjeme.Web.Resources {
             }
         }
         
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Conditions pour bénéficier de « l’extension pour une nouvelle activité ».
-        /// </summary>
-        public static string Condition_Beneficier1_2 {
-            get {
-                return ResourceManager.GetString("Condition-Beneficier1,2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Personnes n’ayant pas bénéficié auparavant du dispositif de l’Agence .
-        /// </summary>
-        public static string Condition_Beneficier2 {
-            get {
-                return ResourceManager.GetString("Condition-Beneficier2", resourceCulture);
-            }
-        }
         
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Conditions communes:.
@@ -2224,16 +2171,7 @@ namespace Ansej.Sidjeme.Web.Resources {
                 return ResourceManager.GetString("Directeur", resourceCulture);
             }
         }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Bilal Achacha.
-        /// </summary>
-        public static string Directeur {
-            get {
-                return ResourceManager.GetString("Directeur", resourceCulture);
-            }
-        }
-        
+                
         /// <summary>
         ///   Recherche une chaîne localisée semblable à .
         /// </summary>
@@ -3164,16 +3102,7 @@ namespace Ansej.Sidjeme.Web.Resources {
                 return ResourceManager.GetString("LeMag", resourceCulture);
             }
         }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Magazine.
-        /// </summary>
-        public static string LeMag {
-            get {
-                return ResourceManager.GetString("LeMag", resourceCulture);
-            }
-        }
-        
+                
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Auto-financement, mixte, triangulaire.
         /// </summary>
@@ -3201,24 +3130,7 @@ namespace Ansej.Sidjeme.Web.Resources {
             }
         }
         
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Lien d&apos;inscription : www.cde.dz.
-        /// </summary>
-        public static string Lien_CDE {
-            get {
-                return ResourceManager.GetString("Lien_CDE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Lien d&apos;inscription : www.fp.cde.dz.
-        /// </summary>
-        public static string Lien_FPCDE {
-            get {
-                return ResourceManager.GetString("Lien_FPCDE", resourceCulture);
-            }
-        }
-        
+
         /// <summary>
         ///   Recherche une chaîne localisée semblable à [Lire la suite].
         /// </summary>
@@ -5244,123 +5156,7 @@ namespace Ansej.Sidjeme.Web.Resources {
             }
         }
         
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Est-il possible de s&apos;inscrire en ligne ou faut-il se présenter en personne?.
-        /// </summary>
-        public static string Questions_01_Fréquemment_Posées_Sur_CDE {
-            get {
-                return ResourceManager.GetString("Questions_01_Fréquemment_Posées_Sur_CDE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Quelles sont les sessions ou les programmes proposés par le centre ? Le centre propose-t-il une formation pratique?.
-        /// </summary>
-        public static string Questions_02_Fréquemment_Posées_Sur_CDE {
-            get {
-                return ResourceManager.GetString("Questions_02_Fréquemment_Posées_Sur_CDE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Tous les étudiants peuvent-ils s&apos;inscrire aux Centres de développement de l&apos;entrepreneuriat (CDE), ou cette inscription est-elle réservée aux diplômés?.
-        /// </summary>
-        public static string Questions_03_Fréquemment_Posées_Sur_CDE {
-            get {
-                return ResourceManager.GetString("Questions_03_Fréquemment_Posées_Sur_CDE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à L&apos;inscription aux centres doit-elle se faire en fonction de la wilaya de formation ?.
-        /// </summary>
-        public static string Questions_04_Fréquemment_Posées_Sur_CDE {
-            get {
-                return ResourceManager.GetString("Questions_04_Fréquemment_Posées_Sur_CDE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Questions fréquemment posées sur les Centres de développement de l&apos;entrepreneuriat (CDE).
-        /// </summary>
-        public static string Questions_Fréquemment_Posées_Sur_CDE {
-            get {
-                return ResourceManager.GetString("Questions_Fréquemment_Posées_Sur_CDE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Recherche.
-        /// </summary>
-        public static string Recherche {
-            get {
-                return ResourceManager.GetString("Recherche", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Rechercher un article ou une actualité….
-        /// </summary>
-        public static string RechercheArticleNews {
-            get {
-                return ResourceManager.GetString("RechercheArticleNews", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Rechercher des articles et des actualités.
-        /// </summary>
-        public static string RechercheDansArticle {
-            get {
-                return ResourceManager.GetString("RechercheDansArticle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Rechercher par sujet….
-        /// </summary>
-        public static string RechercheSujet {
-            get {
-                return ResourceManager.GetString("RechercheSujet", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Inscrivez-vous maintenant.
-        /// </summary>
-        public static string RegisterNow {
-            get {
-                return ResourceManager.GetString("RegisterNow", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Le processus d&apos;inscription et l&apos;examen des candidatures se font par voie électronique, sans qu&apos;il soit nécessaire de se rendre dans les Centres de développement de l&apos;entrepreneuriat (CDE)..
-        /// </summary>
-        public static string Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE {
-            get {
-                return ResourceManager.GetString("Réponse_Pour_Questions_01_Fréquemment_Posées_Sur_CDE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Les programmes peuvent inclure des sessions sur l&apos;entrepreneuriat, la gestion de projet, le marketing et autres, et comprennent généralement une formation pratique..
-        /// </summary>
-        public static string Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE {
-            get {
-                return ResourceManager.GetString("Réponse_Pour_Questions_02_Fréquemment_Posées_Sur_CDE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Les étudiants doivent être diplômés pour s&apos;inscrire aux Centres de développement de l&apos;entrepreneuriat (CDE)..
-        /// </summary>
-        public static string Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE {
-            get {
-                return ResourceManager.GetString("Réponse_Pour_Questions_03_Fréquemment_Posées_Sur_CDE", resourceCulture);
-            }
-        }
-        
+           
         /// <summary>
         ///   Recherche une chaîne localisée semblable à L&apos;inscription aux Centres de développement de l&apos;entrepreneuriat (CDE) est possible quel que soit l&apos;établissement de formation où vous avez étudié. Cela dépend de la politique du centre et des règles d&apos;inscription..
         /// </summary>
@@ -5721,14 +5517,6 @@ namespace Ansej.Sidjeme.Web.Resources {
             }
         }
         
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Sous-direction de la communication.
-        /// </summary>
-        public static string SousDirectionCommunication {
-            get {
-                return ResourceManager.GetString("SousDirectionCommunication", resourceCulture);
-            }
-        }
         
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Sous Type Demande.
