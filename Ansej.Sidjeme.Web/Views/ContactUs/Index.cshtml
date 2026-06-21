@@ -478,7 +478,7 @@
                     <div class="contact-icon">
                         <i class="fas fa-phone-alt"></i>
                     </div>
-                    <h3 class="contact-title">  @localizer["callCenter"] </h3>
+                    <h3 class="contact-title">  @localizer["CommunicationCell"] </h3>
 
                     <div class="contact-info" style="direction:ltr;">
                         <h3 class="contact-title"> 0770 033 033</h3>
@@ -535,11 +535,12 @@
 
                     <div class="form-section">
 
-                        <div class="form-group">                           
+                        <div class="form-group">
                             <div class="g-recaptcha"
                                  data-sitekey="6LcN3q4qAAAAAEFq86pRnXIr1ROxvFnB1PzCBdoB"
                                  data-callback="onRecaptchaComplete">
                             </div>
+
                             <input type="hidden" asp-for="RecaptchaResponse" id="recaptchaResponse" required />
                             <span asp-validation-for="RecaptchaResponse" class="text-danger"></span>
                         </div>

@@ -451,7 +451,7 @@
     <value>Frequently asked</value>
   </data>
   <data name="question" xml:space="preserve">
-    <value>questions</value>
+    <value>Questions</value>
   </data>
   <data name="CentreComunication" xml:space="preserve">
     <value>Contact Center</value>
@@ -1027,10 +1027,10 @@
     <value>Second Phase: Operational Phase</value>
   </data>
   <data name="TaxTitre1" xml:space="preserve">
-    <value>TAX</value>
+    <value>Tax</value>
   </data>
   <data name="TaxTitre2" xml:space="preserve">
-    <value>PRIVILEGES</value>
+    <value>Advantages</value>
   </data>
   <data name="telecharger" xml:space="preserve">
     <value>download</value>
@@ -1894,7 +1894,7 @@
     <value>updates</value>
   </data>
   <data name="WilayaD" xml:space="preserve">
-    <value>select wilaya</value>
+    <value>select the state</value>
   </data>
   <data name="AgenceDepot" xml:space="preserve">
     <value>Depository Agency</value>

@@ -352,7 +352,7 @@ Le programme contribue également au renforcement du rôle des collectivités lo
     <value>Projets Microentreprises Financés</value>
   </data>
   <data name="Q1" xml:space="preserve">
-    <value>1. Puis-je créer une entreprise uniquement dans ma wilaya de résidence ou dans n’importe quelle wilaya ?</value>
+    <value>Puis-je créer une entreprise uniquement dans ma wilaya de résidence ou dans n’importe quelle wilaya ?</value>
   </data>
   <data name="Q2" xml:space="preserve">
     <value> Quels secteurs et activités sont éligibles au financement de NESDA ?</value>
@@ -364,13 +364,13 @@ Le programme contribue également au renforcement du rôle des collectivités lo
     <value> Existe-t-il un accompagnement après le lancement du projet pour en assurer la réussite ?</value>
   </data>
   <data name="R1" xml:space="preserve">
-    <value> Oui, le porteur de projet a le droit de créer son projet dans la wilaya de son choix, à condition de fournir un document prouvant sa présence dans ladite wilaya.</value>
+    <value>Oui, le porteur de projet a le droit de créer son projet dans la wilaya de son choix, à condition de fournir un document prouvant sa présence dans ladite wilaya.</value>
   </data>
   <data name="R2" xml:space="preserve">
     <value> NESDA est chargée de financer toutes les activités relevant de différents secteurs (industrie, production, agriculture, services, artisanat, professions libérales, etc.).</value>
   </data>
   <data name="R3" xml:space="preserve">
-    <value> Oui, la formation en entrepreneuriat dispensée par les centres de développement de l’entrepreneuriat (CDE) est une condition préalable pour bénéficier des subventions et avantages accordés dans le cadre du dispositif de l’agence.</value>
+    <value>Oui, la formation en entrepreneuriat dispensée par les centres de développement de l’entrepreneuriat (CDE) est une condition préalable pour bénéficier des subventions et avantages accordés dans le cadre du dispositif de l’agence.</value>
   </data>
   <data name="R4" xml:space="preserve">
     <value>L’une des principales missions de l’agence est d’assurer l’accompagnement des porteurs de projets avant et après la mise en œuvre de leurs projets.</value>
@@ -1194,27 +1194,15 @@ Il constitue une garantie complémentaire au profit des banques, en plus des gar
     <value>Dans une déclaration à cette occasion, M. Bilal Achacha, directeur général de l'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA), a souligné que la publication de ce magazine représente un ajout qualitatif à la scène économique nationale et une étape fondamentale dans la nouvelle stratégie basée sur la formation, l'accompagnement et l'autonomisation des porteurs d'idées et de projets grâce à des outils favorisant la réussite. Ce magazine est notre engagement à suivre le rythme de la transformation numérique et à garantir que des informations précises et motivantes parviennent à tous les entrepreneurs à travers le pays.</value>
   </data>
   <data name="MagText" xml:space="preserve">
-    <value>L'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA) annonce la sortie officielle du premier numéro de son magazine spécialisé, qui devient ainsi le premier magazine complet consacré à l'entrepreneuriat en Algérie. Cette initiative stratégique s'inscrit dans le cadre de l'engagement de l'agence à promouvoir une culture de l'entrepreneuriat et à fournir une base de connaissances et une plateforme interactive à tous les acteurs de l'écosystème entrepreneurial.</value>
-  </data>
-  <data name="MagTitre1Text" xml:space="preserve">
-    <value>Le magazine, intitulé « NESDA Mag », vise à présenter un contenu de qualité alliant aspects académiques et pratiques et mettant en avant des opportunités d'investissement prometteuses dans divers secteurs économiques.</value>
-  </data>
-  <data name="LectureMag" xml:space="preserve">
-    <value>Le magazine électronique de l'Agence</value>
-  </data>
-  <data name="Mag" xml:space="preserve">
-    <value>NESDA Magazine Mag</value>
-  </data>
-  <data name="MagDeclarationDG" xml:space="preserve">
-    <value>Dans une déclaration à cette occasion, M. Bilal Achacha, directeur général de l'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA), a souligné que la publication de ce magazine représente un ajout qualitatif à la scène économique nationale et une étape fondamentale dans la nouvelle stratégie basée sur la formation, l'accompagnement et l'autonomisation des porteurs d'idées et de projets grâce à des outils favorisant la réussite. Ce magazine est notre engagement à suivre le rythme de la transformation numérique et à garantir que des informations précises et motivantes parviennent à tous les entrepreneurs à travers le pays.</value>
-  </data>
-  <data name="MagText" xml:space="preserve">
     <value>L'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA) annonce la sortie officielle du premier numéro de son magazine spécialisé, qui devient ainsi le premier magazine complet consacré à l'entrepreneuriat en Algérie. Cette initiative stratégique s'inscrit dans le cadre de l'engagement de l'agence à promouvoir une culture de l'entrepreneuriat et à fournir une base de connaissances et une plateforme interactive à tous les acteurs de l'écosystème entrepreneurial.
 
 </value>
   </data>
   <data name="MagTitre1Text" xml:space="preserve">
     <value>Le magazine, intitulé « NESDA Mag », vise à présenter un contenu de qualité alliant aspects académiques et pratiques et mettant en avant des opportunités d'investissement prometteuses dans divers secteurs économiques. </value>
+  </data>
+  <data name="Mag" xml:space="preserve">
+    <value>NESDA Magazine Mag</value>
   </data>
   <data name="SousTraitanceAvantage1,1" xml:space="preserve">
     <value>Réduction des coûts, en particulier des dépenses fixes et des charges fiscales .</value>

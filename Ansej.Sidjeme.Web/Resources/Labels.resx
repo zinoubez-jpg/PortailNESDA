@@ -1093,7 +1093,7 @@ Programmes de formation spécialisés et intégrés.
     <value>Prêts non rémunérés supplémentaires destinés à couvrir des besoins spécifiques</value>
   </data>
   <data name="FinancementTitre1" xml:space="preserve">
-    <value>Le financement : de l’idée à la concrétisation du projet</value>
+    <value>Le financement vous accompagne de l’idée à la concrétisation du projet</value>
   </data>
   <data name="FinancementTitre1Text" xml:space="preserve">
     <value>Les solutions de financement proposées par l’Agence se distinguent par les caractéristiques suivantes :</value>
@@ -1774,15 +1774,13 @@ Programmes de formation spécialisés et intégrés.
     <value>Auteur </value>
   </data>
   <data name="DecouvrirMag1" xml:space="preserve">
-    <value>
-Découvrez le premier numéro
-</value>
+    <value>Découvrez le premier numéro</value>
   </data>
   <data name="DecouvrirMag1Text" xml:space="preserve">
     <value>Explorez dès maintenant « NESDA Mag » et découvrez les derniers contenus dans le monde de l'entrepreneuriat.</value>
   </data>
   <data name="DernierNews" xml:space="preserve">
-    <value>Dernières actualités et mises à jour </value>
+    <value>Dernières actualités et mises à jour</value>
   </data>
   <data name="Format" xml:space="preserve">
     <value>Format </value>
@@ -1797,10 +1795,10 @@ Découvrez le premier numéro
     <value>Magazine</value>
   </data>
   <data name="Mag" xml:space="preserve">
-    <value>Magazine</value>
+    <value>NESDA</value>
   </data>
   <data name="MagNesda" xml:space="preserve">
-    <value>NESDA  Mag </value>
+    <value>Magazine Mag</value>
   </data>
   <data name="MagTitre1" xml:space="preserve">
     <value>Vision du magazine </value>
@@ -1812,19 +1810,19 @@ Découvrez le premier numéro
     <value>Ce magazine est un espace de connaissances nouveau et unique, qui sera votre principale source d'information sur :</value>
   </data>
   <data name="MagTitre2TextP1" xml:space="preserve">
-    <value>Les derniers développements en matière d'entrepreneuriat ,</value>
+    <value>Les derniers développements en matière d'entrepreneuriat.</value>
   </data>
   <data name="MagTitre2TextP2" xml:space="preserve">
-    <value>Les réussites inspirantes d'entrepreneurs algériens ,</value>
+    <value>Les réussites inspirantes d'entrepreneurs algériens.</value>
   </data>
   <data name="MagTitre2TextP3" xml:space="preserve">
-    <value> Une analyse approfondie de l'état actuel et de l'avenir du secteur en Algérie ,</value>
+    <value>Une analyse approfondie de l'état actuel et de l'avenir du secteur en Algérie.</value>
   </data>
   <data name="MagTitre2TextP4" xml:space="preserve">
-    <value>Des conseils pratiques et des orientations pour accompagner et soutenir les micro-entreprises ,</value>
+    <value>Des conseils pratiques et des orientations pour accompagner et soutenir les micro-entreprises.</value>
   </data>
   <data name="MagTitre2TextP5" xml:space="preserve">
-    <value> Des interviews avec divers acteurs du domaine de l'entrepreneuriat.</value>
+    <value>Des interviews avec divers acteurs du domaine de l'entrepreneuriat.</value>
   </data>
   <data name="ParcourirMag" xml:space="preserve">
     <value>Explorez le magazine dès maintenant</value>
@@ -1880,17 +1878,8 @@ Découvrez le premier numéro
   <data name="ContenuEmailD" xml:space="preserve">
     <value>écrivez votre message ici</value>
   </data>
-  <data name="DecouvrirMag1" xml:space="preserve">
-    <value>Découvrez le premier numéro</value>
-  </data>
-  <data name="DecouvrirMag1Text" xml:space="preserve">
-    <value>Explorez dès maintenant « NESDA Mag » et découvrez les derniers contenus dans le monde de l'entrepreneuriat.</value>
-  </data>
   <data name="DefinitionProgramme" xml:space="preserve">
     <value>Présentation du programme IMPACT 70 </value>
-  </data>
-  <data name="DernierNews" xml:space="preserve">
-    <value>Dernières actualités et mises à jour</value>
   </data>
   <data name="Electronique" xml:space="preserve">
     <value>électronique</value>
@@ -1919,41 +1908,8 @@ Découvrez le premier numéro
   <data name="informations" xml:space="preserve">
     <value>Information</value>
   </data>
-  <data name="LeMag" xml:space="preserve">
-    <value>Magazine</value>
-  </data>
-  <data name="Mag" xml:space="preserve">
-    <value>NESDA</value>
-  </data>
-  <data name="MagNesda" xml:space="preserve">
-    <value>Magazine Mag</value>
-  </data>
   <data name="MagNumero" xml:space="preserve">
     <value>Problème n°</value>
-  </data>
-  <data name="MagTitre1" xml:space="preserve">
-    <value>Vision du magazine </value>
-  </data>
-  <data name="MagTitre2" xml:space="preserve">
-    <value>Ce que propose le magazine </value>
-  </data>
-  <data name="MagTitre2Text" xml:space="preserve">
-    <value>Ce magazine est un espace de connaissances nouveau et unique, qui sera votre principale source d'information sur :</value>
-  </data>
-  <data name="MagTitre2TextP1" xml:space="preserve">
-    <value>Les derniers développements en matière d'entrepreneuriat.</value>
-  </data>
-  <data name="MagTitre2TextP2" xml:space="preserve">
-    <value>Les réussites inspirantes d'entrepreneurs algériens.</value>
-  </data>
-  <data name="MagTitre2TextP3" xml:space="preserve">
-    <value>Une analyse approfondie de l'état actuel et de l'avenir du secteur en Algérie.</value>
-  </data>
-  <data name="MagTitre2TextP4" xml:space="preserve">
-    <value>Des conseils pratiques et des orientations pour accompagner et soutenir les micro-entreprises.</value>
-  </data>
-  <data name="MagTitre2TextP5" xml:space="preserve">
-    <value>Des interviews avec divers acteurs du domaine de l'entrepreneuriat.</value>
   </data>
   <data name="nombreAgences" xml:space="preserve">
     <value>61 agences de wilaya</value>
@@ -1966,9 +1922,6 @@ Découvrez le premier numéro
   </data>
   <data name="Ouest" xml:space="preserve">
     <value>Ouest</value>
-  </data>
-  <data name="ParcourirMag" xml:space="preserve">
-    <value>Explorez le magazine dès maintenant</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>Numéro de téléphone</value>
@@ -2201,16 +2154,25 @@ Découvrez le premier numéro
   <data name="PolitiqueUpdate" xml:space="preserve">
     <value>Dernière mise à jour : mars 2025</value>
   </data>
-  <data name="PosteDirecteurNesda" xml:space="preserve">
-    <value>Directeur général de l'Agence nationale d’appui et de développement de l'entrepreneuriat (NESDA)</value>
-  </data>
-  <data name="SousDirectionCommunication" xml:space="preserve">
-    <value>Sous-direction de la communication</value>
-  </data>
   <data name="Sud" xml:space="preserve">
     <value>Sud</value>
   </data>
   <data name="WilayaD" xml:space="preserve">
     <value>sélectionnez la wilaya</value>
+  </data>
+  <data name="ActiviteP1" xml:space="preserve">
+    <value>Création d'une micro-entreprise</value>
+  </data>
+  <data name="organigrammeNesda" xml:space="preserve">
+    <value>La structure organique de l'Agence nationale chargée du soutien et du développement de l'entrepreneuriat</value>
+  </data>
+  <data name="organigrammeNesdaText" xml:space="preserve">
+    <value>Décision du 23 Shawwal 1446 (22 avril 2025) relative à l'organisation intérieure de l'Agence Nationale d'Appui et de Développement de l'Entreprise.</value>
+  </data>
+  <data name="organigrammeNesdaTitre1" xml:space="preserve">
+    <value>Organigramme et structure organisationnelle de l'Agence Nationale de Soutien et de Développement de l'Entrepreneuriat</value>
+  </data>
+  <data name="organigrammeNesdaTitre1Text" xml:space="preserve">
+    <value>La décision du 23 Shawwal 1446 (22 avril 2025) portant organisation interne de l'Agence nationale de soutien et de développement de l'entreprise en définit la structure organisationnelle.</value>
   </data>
 </root>

@@ -218,11 +218,29 @@
     }
 
         .list-item:before {
-            content: "•";
+            /*content: "•";
             color: var(--accent-color);
             font-weight: bold;
             position: absolute;
-            right: 0;
+            right: 0;*/
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+            margin-left: 0;
+        }
+
+    /* Arabic - RTL */
+    [dir="rtl"] .list-item {
+        padding-left: 0;
+        padding-right: 1.5em;
+        text-indent: 0;
+    }
+
+        [dir="rtl"] .list-item::before {
+            margin-left: 0;
+            margin-right: -1.5em;
         }
 
     .conditions-list {
@@ -233,6 +251,7 @@
     }
 
     .process-step {
+        
         background-color: var(--surface-color);
         border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
         border-radius: 10px;
@@ -250,7 +269,7 @@
         .process-step .step-number {
             position: absolute;
             top: -10px;
-            right: 15px;
+            left: 15px;
             background-color: var(--accent-color);
             color: var(--contrast-color);
             width: 25px;
@@ -262,6 +281,17 @@
             font-size: 0.875rem;
             font-weight: 700;
         }
+
+       
+        /*//////////////////////////////////////*/
+
+
+    /*[dir="rtl"] .process-step .step-number {
+        left: auto;
+        right: 15px;
+    }*/
+
+    /*//////////////////////////////////////*/
 
     .sectors-grid {
         display: grid;
@@ -371,7 +401,7 @@
 
 
 <section class="about">
-    <div class="container">
+    <div class="container ">
 
         <!-- Statistics -->
         <div class="row text-center mb-5">
@@ -413,7 +443,7 @@
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3>@localizer["ActiviteP2"]</h3>
-                    <p>@localizer["ActiviteP2text"]
+                    <p>@localizer["ActiviteP2Text"]</p>
                 </div>
             </div>
         </div>

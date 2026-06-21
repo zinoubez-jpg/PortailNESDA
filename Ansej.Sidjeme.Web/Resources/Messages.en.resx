@@ -133,7 +133,7 @@
     <value>Le Wali de Tissemsilt inaugaure le nouveau siège de l'Antenne locale de Tissemsilt.</value>
   </data>
   <data name="Activite" xml:space="preserve">
-    <value>Activité</value>
+    <value>Activity</value>
   </data>
   <data name="Actualités" xml:space="preserve">
     <value>News</value>
@@ -167,7 +167,7 @@ et Antennes Locales</value>
     <value>The National Entrepreneurship Support and Development Agency is a government body of a special nature, placed under the tutelage of the Ministry of Knowledge Economy, Start-ups, and Micro-Enterprises. It manages a mechanism with an economic approach, aimed at supporting project holders in creating and expanding micro-enterprises in the production of goods and services, with the goal of generating wealth and sustainable employment opportunities. The Agency’s tasks focus on the following core activities</value>
   </data>
   <data name="Avantage" xml:space="preserve">
-    <value>Privileges</value>
+    <value>Advantages</value>
   </data>
   <data name="Avril2025" xml:space="preserve">
     <value>April 2025</value>
@@ -215,7 +215,7 @@ et Antennes Locales</value>
     <value>Expérience</value>
   </data>
   <data name="FCMG" xml:space="preserve">
-    <value>Fonds de Garantie</value>
+    <value>Guarantee Fund</value>
   </data>
   <data name="Financement" xml:space="preserve">
     <value>Funding</value>
@@ -264,13 +264,13 @@ The programme is a contribution to strengthening the role of local communities a
     <value>Inscriptions CDE</value>
   </data>
   <data name="InscriptionsCNRC" xml:space="preserve">
-    <value>Inscriptions CNRC</value>
+    <value>Registration at the National Center for Commercial Register (CNRC)</value>
   </data>
   <data name="Inscriptionsdispositif" xml:space="preserve">
-    <value>Inscriptions dispositif</value>
+    <value>Mechanism Registration</value>
   </data>
   <data name="InscriptionsMPDZ" xml:space="preserve">
-    <value>Inscriptions marchés publique</value>
+    <value>Electronic Portal for Public Procurement</value>
   </data>
   <data name="Lancement" xml:space="preserve">
     <value>Launch</value>
@@ -399,7 +399,7 @@ The programme is a contribution to strengthening the role of local communities a
     <value>Reach out to us directly—we’ll be glad to answer all your questions.</value>
   </data>
   <data name="CentreComunicationD1" xml:space="preserve">
-    <value>Nasda’s call center provides a direct communication channel, and works to respond quickly to your concerns and guidance</value>
+    <value>Nesda’s call center provides a direct communication channel, and works to respond quickly to your concerns and guidance</value>
   </data>
   <data name="CentreComunicationD2" xml:space="preserve">
     <value>Through this channel, we seek to enhance transparency and improve the user experience</value>
