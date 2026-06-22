@@ -191,7 +191,7 @@ et Antennes Locales</value>
     <value>Contact us</value>
   </data>
   <data name="Coopérations" xml:space="preserve">
-    <value>COOPERATION</value>
+    <value>Cooperation</value>
   </data>
   <data name="CreationAgence" xml:space="preserve">
     <value>la création de l'Agence</value>
@@ -321,7 +321,7 @@ The programme is a contribution to strengthening the role of local communities a
     <value>Organization</value>
   </data>
   <data name="Partenariat" xml:space="preserve">
-    <value>Partenariats</value>
+    <value>Partnerships</value>
   </data>
   <data name="Partenariats" xml:space="preserve">
     <value>Partenariats</value>
@@ -387,7 +387,7 @@ The programme is a contribution to strengthening the role of local communities a
     <value>Sous-traitence</value>
   </data>
   <data name="SousTraitance" xml:space="preserve">
-    <value>Nesda Sous-Traitance</value>
+    <value>Nesda Subcontracting</value>
   </data>
   <data name="Suivivotredemande" xml:space="preserve">
     <value>Track your application</value>
@@ -1274,5 +1274,8 @@ NESDA_Declaration.pdf</value>
   </data>
   <data name="ElementFonctionnementFG3P2" xml:space="preserve">
     <value> of the remaining debt (principal + interest).</value>
+  </data>
+  <data name="DeclarationHonneurMI" xml:space="preserve">
+    <value>Benefiting from the importation of equipment, operations, and services</value>
   </data>
 </root>

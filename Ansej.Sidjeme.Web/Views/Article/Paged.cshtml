@@ -401,18 +401,22 @@
                             <div class="post-img position-relative">
                                 <img src="@post.ImageUrl" alt="" class="img-fluid" loading="lazy">
                                 <div class="post-content">
-                                    <p class="post-category">  @localizer["callCenter"]</p>
+                                    <p class="post-category">  @localizer["CommunicationCell"]</p>
                                     <h2 class="title">
                                         @if (isArabic)
                                         {
                                             <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">@post.Title</a>
 
                                         }
-                                        else
-                                        {
-                                            <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">@post.TitleEn</a>
+                                        else if (isEnglish)
+                                        { <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">@post.TitleEn</a>
 
-                                        }
+                                    }
+                                    else
+                                    {
+                                        <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">@post.TitleFr</a>
+
+                                    }
                                     </h2>
                                     <div class="post-meta">
 

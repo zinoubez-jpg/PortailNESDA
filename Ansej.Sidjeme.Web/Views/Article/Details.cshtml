@@ -43,9 +43,13 @@
                 {
                     <h1 class="title" data-aos="fade-up" data-aos-delay="100">@Model.Title</h1>
                 }
-                else
+                else if(isEnglish)
                 {
                     <h1 class="title" data-aos="fade-up" data-aos-delay="100">@Model.TitleEn</h1>
+                }
+                else
+                {
+                <h1 class="title" data-aos="fade-up" data-aos-delay="100">@Model.TitleFr</h1>
                 }
 
 
@@ -66,18 +70,18 @@
                             <span><i class="bi bi-calendar4-week"></i> @Model.CreatedAt.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("ar-DZ"))</span>
 
                         }
-                        else if(isEnglish)
+                        else if (isEnglish)
                         {
                             <span><i class="bi bi-calendar4-week"></i> @Model.CreatedAt.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("en-US"))</span>
 
                         }
                         else
                         {
-                        <span><i class="bi bi-calendar4-week"></i> @Model.CreatedAt.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("fr-FR"))</span>
+                            <span><i class="bi bi-calendar4-week"></i> @Model.CreatedAt.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("fr-FR"))</span>
 
                         }
                         @*<span><i class="bi bi-clock"></i> 10 min read</span>
-        <span><i class="bi bi-chat-square-text"></i> 32 Comments</span>*@
+                <span><i class="bi bi-chat-square-text"></i> 32 Comments</span>*@
                     </div>
                 </div>
             </div>
@@ -86,17 +90,21 @@
             {
 
 
-                <div class="article-featured-image" data-aos="zoom-in">
-                    @if (isArabic)
-                    {
-                        <img src="@Model.ImageUrl" alt="@Model.Title" class="img-fluid">
-                    }
-                    else
-                    {
-                        <img src="@Model.ImageUrl" alt="@Model.TitleEn" class="img-fluid">
-                    }
+        <div class="article-featured-image" data-aos="zoom-in">
+            @if (isArabic)
+            {
+                <img src="@Model.ImageUrl" alt="@Model.Title" class="img-fluid">
+            }
+            else if(isEnglish)
+            {
+                <img src="@Model.ImageUrl" alt="@Model.TitleEn" class="img-fluid">
+            }
+            else
+            {
+            <img src="@Model.ImageUrl" alt="@Model.TitleFr" class="img-fluid">
+            }
 
-                </div>
+        </div>
             }
 
 
