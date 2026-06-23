@@ -1777,7 +1777,7 @@
     <value>تحميل المجلة</value>
   </data>
   <data name="AdresseDG" xml:space="preserve">
-    <value>شارع محمد ارزقي بن بوزيد، العناصر-   الجزائر العاصمة، الجزائر</value>
+    <value>شارع محمد ارزقي بن بوزيد، العناصر</value>
   </data>
   <data name="AfficherDoc" xml:space="preserve">
     <value>عرض الوثيقة</value>
@@ -2313,5 +2313,11 @@
   </data>
   <data name="devise" xml:space="preserve">
     <value>دج</value>
+  </data>
+  <data name="centreAppel" xml:space="preserve">
+    <value>رقم مركز الاتصال : 033  033 0770 </value>
+  </data>
+  <data name="WilayaDG" xml:space="preserve">
+    <value>الجزائر,الجزائر</value>
   </data>
 </root>

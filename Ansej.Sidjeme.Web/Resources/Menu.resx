@@ -246,4 +246,7 @@
   <data name="DeclarationHonneurMI" xml:space="preserve">
     <value>Déclaration sur l’honneur</value>
   </data>
+  <data name="DroitsReserve" xml:space="preserve">
+    <value>Tous droits réservés 2025</value>
+  </data>
 </root>

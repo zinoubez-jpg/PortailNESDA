@@ -6,6 +6,8 @@
 
     // Vérifie si c'est de l'arabe
     bool isArabic = currentLanguage.StartsWith("ar");
+    // Vérifie si c'est anglais
+    bool isEnglish = currentLanguage.StartsWith("en");
 }
 
 <!-- Page Title -->
@@ -51,7 +53,15 @@
                 }
                 else
                 {
-                    <img src="~/NesdaTMP/assets/img/NesdaImg/DG-ENG.png" alt="UI Design Evolution" class="img-fluid" style=" object-fit: contain;">
+                    @if (isEnglish)
+                    {
+                        <img src="~/NesdaTMP/assets/img/NesdaImg/DG-ENG.png" alt="UI Design Evolution" class="img-fluid" style=" object-fit: contain;">
+                    }
+                    else
+                    {
+                        <img src="~/NesdaTMP/assets/img/NesdaImg/DGFr.png" alt="UI Design Evolution" class="img-fluid" style=" object-fit: none;">
+                    }
+
                 }
 
             </div>
@@ -76,7 +86,15 @@
                 }
                 else
                 {
-                    <img src="~/NesdaTMP/assets/img/NesdaImg/AW-ENG.png" alt="UI Design Evolution" class="img-fluid " style=" object-fit:contain;">
+                    if (isEnglish)
+                    {
+                        <img src="~/NesdaTMP/assets/img/NesdaImg/AW-ENG.png" alt="UI Design Evolution" class="img-fluid " style=" object-fit:contain;">
+                    }
+                    else
+                    {
+                        <img src="~/NesdaTMP/assets/img/NesdaImg/AWFr.png" alt="UI Design Evolution" class="img-fluid " style=" object-fit:none;">
+
+                    }
                 }
 
             </div>

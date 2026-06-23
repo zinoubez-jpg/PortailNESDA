@@ -1528,7 +1528,7 @@
     <value>Download</value>
   </data>
   <data name="AdresseDG" xml:space="preserve">
-    <value>Mohamed Arezki Ben Bouzid Street, El Anasser, Algiers, Algeria</value>
+    <value>Mohamed Arezki Ben Bouzid Street, El Anasser</value>
   </data>
   <data name="AfficherDoc" xml:space="preserve">
     <value>View document</value>
@@ -2059,7 +2059,7 @@
     <value>Communication cell</value>
   </data>
   <data name="centreAppel" xml:space="preserve">
-    <value>Contact Center</value>
+    <value>Contact Center : 0770 033 033</value>
   </data>
   <data name="wilayaAdresse" xml:space="preserve">
     <value>El Anasser – Algiers</value>
@@ -2075,5 +2075,8 @@
   </data>
   <data name="devise" xml:space="preserve">
     <value>DA</value>
+  </data>
+  <data name="WilayaDG" xml:space="preserve">
+    <value>Algiers, Algeria</value>
   </data>
 </root>

@@ -117,20 +117,24 @@
                                         "جويلية", "أوت", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"
                                         };
                             }
-                            else if (isEnglish)
+                            else
                             {
-                                months = new[] {
+                                if (isEnglish)
+                                {
+                                    months = new[] {
                                         "January", "February", "March", "April", "May", "June",
                                         "July", "August", "September", "October", "November", "December"
                                         };
-                            }
-                            else
-                            {
-                                months = new[] {
+                                }
+                                else
+                                {
+                                    months = new[] {
                                         "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
                                         "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
                                         };
+                                }
                             }
+
                             var formattedDate = $"{date.Day} {months[date.Month - 1]} {date.Year}";
                         }
 

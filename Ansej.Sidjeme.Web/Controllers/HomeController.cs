@@ -33,7 +33,7 @@ namespace Ansej.Sidjeme.Web.Controllers
 
         public IActionResult Index()
         {
-            var articles = _articleBusinessService.GetAllFiltered(article => article.IsPublished && !article.IsDeleted && article.IsPinned, _articleBusinessService.GetDefaultLoadProperties());
+            var articles = _articleBusinessService.GetAllFiltered(article => article.IsPublished && !article.IsDeleted && article.IsPinned, _articleBusinessService.GetDefaultLoadProperties()).Take(6).ToList();
            
 
 

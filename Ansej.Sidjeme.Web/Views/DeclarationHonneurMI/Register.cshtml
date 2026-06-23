@@ -8,6 +8,9 @@
 
     // Vérifie si c'est de l'arabe
     bool isArabic = currentLanguage.StartsWith("ar");
+    // Vérifie si c'est de l'arabe
+    bool isEnglish = currentLanguage.StartsWith("en");
+}
 }
 
 @section head{
@@ -484,7 +487,7 @@
     }
 
         .step.active {
-            background-color: #0d6efd;
+            background-color: #41c1ba;
             color: #fff;
         }
 
@@ -655,10 +658,21 @@
                     }
                     else
                     {
-                        <select asp-for="Registrant.GenderId" asp-items="ViewBag.genreEn" class="form-select select2" required>
-                            <option value="">@localizer["ChoisirGenre"]</option>
+                        if (isEnglish)
+                        {
+                            <select asp-for="Registrant.GenderId" asp-items="ViewBag.genreEn" class="form-select select2" required>
+                                <option value="">@localizer["ChoisirGenre"]</option>
 
-                        </select>
+                            </select>
+                        }
+                        else
+                        {
+                            <select asp-for="Registrant.GenderId" asp-items="ViewBag.genreFr" class="form-select select2" required>
+                                <option value="">@localizer["ChoisirGenre"]</option>
+
+                            </select>
+                        }
+
                     }
 
                     <span asp-validation-for="Registrant.GenderId" class="text-danger small"></span>
@@ -710,7 +724,7 @@
                 <br />
 
                 <div class="d-flex justify-content-between">
-                    <button type="button" class="btn btn-primary next-step">@localizer["suivant"]</button>
+                    <button type="button" class="btn btn-outline-success next-step">@localizer["suivant"]</button>
                 </div>
             </div>
 
@@ -793,7 +807,7 @@
                 <div class="form-group">
                     <label class="form-label">@localizer["CertificatNIF"]</label>
                     <div class="file-input-wrapper">
-                        <input asp-for="CertificateNifFile" type="file" id="file" class="form-control-file" required accept=".pdf, .jpg, .jpeg"/>
+                        <input asp-for="CertificateNifFile" type="file" id="file" class="form-control-file" required accept=".pdf, .jpg, .jpeg" />
                         <label for="file" class="file-input-display" id="fileDisplay">
                             @messageslocalizer["Taille"]
                         </label>
@@ -836,10 +850,21 @@
                     }
                     else
                     {
-                        <select id="ActivitySectorId" name="ActivitySectorId" asp-items="ViewBag.secteursEn" onchange="loadActivity(this.value)" class="form-select select2" required>
-                            <option value="">@localizer["ChoisirSA"]</option>
+                        if (isEnglish)
+                        {
+                            <select id="ActivitySectorId" name="ActivitySectorId" asp-items="ViewBag.secteursEn" onchange="loadActivity(this.value)" class="form-select select2" required>
+                                <option value="">@localizer["ChoisirSA"]</option>
 
-                        </select>
+                            </select>
+                        }
+                        else
+                        {
+                            <select id="ActivitySectorId" name="ActivitySectorId" asp-items="ViewBag.secteursFr" onchange="loadActivity(this.value)" class="form-select select2" required>
+                                <option value="">@localizer["ChoisirSA"]</option>
+
+                            </select>
+                        }
+
                     }
 
                     <span style="color:red; display:none;" id="msg">@localizer["champObligatoir"]</span>
@@ -869,10 +894,20 @@
                     }
                     else
                     {
-                        <select asp-for="Registrant.TypeOfNeedId" asp-items="ViewBag.typeOfNeedEn" class="form-select select2" required>
-                            <option value="">@localizer["ChoisirTypeBesoin"]</option>
+                        if (isEnglish)
+                        {
+                            <select asp-for="Registrant.TypeOfNeedId" asp-items="ViewBag.typeOfNeedEn" class="form-select select2" required>
+                                <option value="">@localizer["ChoisirTypeBesoin"]</option>
 
-                        </select>
+                            </select>
+                        }
+                        else
+                        {
+                            <select asp-for="Registrant.TypeOfNeedId" asp-items="ViewBag.typeOfNeedFr" class="form-select select2" required>
+                                <option value="">@localizer["ChoisirTypeBesoin"]</option>
+
+                            </select>
+                        }
                     }
 
                     <span asp-validation-for="Registrant.TypeOfNeedId" class="text-danger small"></span>
@@ -881,8 +916,8 @@
                 <br>
 
                 <div class="d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary prev-step">@localizer["precedent"]</button>
-                    <button type="button" class="btn btn-primary next-step">@localizer["Suivant"]</button>
+                    <button type="button" class="btn btn-outline-secondary prev-step">@localizer["precedent"]</button>
+                    <button type="button" class="btn btn-outline-success next-step">@localizer["Suivant"]</button>
                 </div>
 
             </div>
@@ -930,8 +965,8 @@
 
 
                 <div class="d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary prev-step">@localizer["precedent"]</button>
-                    <button type="submit"  class="btn btn-success"> <span>@localizer["Envoyer"] </span></button>
+                    <button type="button" class="btn btn-outline-secondary prev-step">@localizer["precedent"]</button>
+                    <button type="submit" class="btn btn-outline-success"> <span>@localizer["Envoyer"] </span></button>
                 </div>
             </div>
         </form>
@@ -1045,18 +1080,18 @@
 
                 return;
             }
-            
+
             $.ajax({
                 url: '/DeclarationHonneurMI/GetActivitiesBySector',
                 type: 'GET',
                 data: { sectorId: selectedId },
                 success: function (data) {
-                    
+
                     if (data.length > 0) {
                         let options = isArabic ? '<option value="">اختر </option>' : '<option value="">Select </option>';
 
                         data.forEach(function (item) {
-                            
+
                             let text = isArabic ? item.designationAr : item.designationEn;
 
                             if (text === undefined) {

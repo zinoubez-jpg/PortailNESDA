@@ -610,7 +610,7 @@ Par ailleurs, l’Agence a lancé plusieurs outils numériques, dont</value>
     <value>et la plateforme de suivi de la performance</value>
   </data>
   <data name="DescriptionAgenceP3,4" xml:space="preserve">
-    <value>, en plus de son site web institutionnel</value>
+    <value>en plus de son site web institutionnel</value>
   </data>
   <data name="DescriptionAgenceP4" xml:space="preserve">
     <value>L’Agence entend poursuivre cette dynamique de développement et de transformation de son cadre opérationnel, avec pour objectif de renforcer la confiance des porteurs de projets et de favoriser l’intégration des micros et petites entreprises dans les chaînes de valeur nationales. L’objectif ultime est de permettre à l’Agence de jouer pleinement son rôle de levier de la transformation économique au service du développement national.</value>
@@ -884,7 +884,7 @@ Il constitue une garantie complémentaire au profit des banques, en plus des gar
     <value>Le Fonds effectue une visite sur le terrain afin de vérifier la situation de la micro-entreprise et d’évaluer son incapacité de remboursement.</value>
   </data>
   <data name="ElementFonctionnementFG3P1" xml:space="preserve">
-    <value> La banque est indemnisée à hauteur de </value>
+    <value>La banque est indemnisée à hauteur de </value>
   </data>
   <data name="ElementFonctionnementFG4" xml:space="preserve">
     <value>Après indemnisation, la banque cède les droits sur la créance restante au profit du Fonds.</value>
@@ -893,7 +893,7 @@ Il constitue une garantie complémentaire au profit des banques, en plus des gar
     <value>Le Fonds se charge d’accompagner et de suivre la micro-entreprise en difficulté après indemnisation, en vue de relancer son activité et de lui permettre de s’acquitter de ses engagements financiers.</value>
   </data>
   <data name="ElementParticipationFG2P1" xml:space="preserve">
-    <value> Le montant de la cotisation de la micro-entreprise au Fonds est fixé à hauteur de </value>
+    <value>Le montant de la cotisation de la micro-entreprise au Fonds est fixé à hauteur de </value>
   </data>
   <data name="ElementParticipationFG2P2" xml:space="preserve">
     <value>par an, calculé sur la base du montant du crédit bancaire, et payable en une seule fois.</value>
@@ -905,7 +905,7 @@ Il constitue une garantie complémentaire au profit des banques, en plus des gar
     <value>par an, calculée sur les créances restantes du crédit.</value>
   </data>
   <data name="ElementParticipationFG4" xml:space="preserve">
-    <value> En cas de défaillance de paiement (trois échéances semestrielles impayées) :</value>
+    <value>En cas de défaillance de paiement (trois échéances semestrielles impayées) :</value>
   </data>
   <data name="ElementParticipationFG4,1" xml:space="preserve">
     <value>Le Fonds effectue une visite sur le terrain ;</value>
@@ -1263,5 +1263,23 @@ Il constitue une garantie complémentaire au profit des banques, en plus des gar
   </data>
   <data name="SousTraitanceSupportP2" xml:space="preserve">
     <value>L’Agence veille également à promouvoir les capacités et les potentialités des micro-entreprises dans le domaine de la sous-traitance, sous toutes ses formes, à travers différentes occasions et opportunités, afin de conclure des accords et de les concrétiser sur le terrain pour contribuer à la dynamique de la croissance économique.</value>
+  </data>
+  <data name="NesdaPolitique1" xml:space="preserve">
+    <value>J'autorise la NESDA à traiter mes données personnelles conformément aux conditions prévues par la loi n° 18-07 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel. Vous pouvez consulter</value>
+  </data>
+  <data name="NesdaPolitique2" xml:space="preserve">
+    <value>la politique générale de protection des données à caractère personnel de l'Agence</value>
+  </data>
+  <data name="QuestionDepot" xml:space="preserve">
+    <value>Dans quelle agence avez vous déposer votre dossier?</value>
+  </data>
+  <data name="Taille" xml:space="preserve">
+    <value>Le fichier doit être au format PDF ou JPG. La taille maximale est de 2 Mo</value>
+  </data>
+  <data name="TailleDH" xml:space="preserve">
+    <value>Le fichier de la déclaration sur l'honneur doit être au format PDF et sa taille ne doit pas dépasser 2 Mo</value>
+  </data>
+  <data name="TaillePDF" xml:space="preserve">
+    <value>Le fichier doit être au format PDF. La taille maximale est de 2 Mo</value>
   </data>
 </root>

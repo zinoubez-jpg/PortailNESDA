@@ -208,7 +208,7 @@
     <value>Date Embauche</value>
   </data>
   <data name="DateNaissance" xml:space="preserve">
-    <value>Date Naissance</value>
+    <value>Date de Naissance</value>
   </data>
   <data name="Delete" xml:space="preserve">
     <value>Supprimer</value>
@@ -532,16 +532,16 @@
     <value />
   </data>
   <data name="Nom" xml:space="preserve">
-    <value />
+    <value>Nom</value>
   </data>
   <data name="Prenom" xml:space="preserve">
-    <value />
+    <value>Prénom</value>
   </data>
   <data name="Sessions" xml:space="preserve">
     <value />
   </data>
   <data name="Activite" xml:space="preserve">
-    <value />
+    <value>Activite</value>
   </data>
   <data name="ActiviteId" xml:space="preserve">
     <value />
@@ -640,7 +640,7 @@
     <value />
   </data>
   <data name="SecteurActivite" xml:space="preserve">
-    <value />
+    <value>Secteur d'activité</value>
   </data>
   <data name="SecteurActiviteId" xml:space="preserve">
     <value />
@@ -1846,7 +1846,7 @@ Programmes de formation spécialisés et intégrés.
     <value>DA</value>
   </data>
   <data name="AdresseDG" xml:space="preserve">
-    <value>Rue Mohamed Arezki Ben Bouzid, El Anasser, Alger, Algerie</value>
+    <value>Rue Mohamed Arezki Ben Bouzid, El Anasser</value>
   </data>
   <data name="AxesProgramme" xml:space="preserve">
     <value>Axes et actions du programme:</value>
@@ -1909,7 +1909,7 @@ Programmes de formation spécialisés et intégrés.
     <value>Information</value>
   </data>
   <data name="MagNumero" xml:space="preserve">
-    <value>Problème n°</value>
+    <value>Le numéro</value>
   </data>
   <data name="nombreAgences" xml:space="preserve">
     <value>61 agences de wilaya</value>
@@ -2174,5 +2174,92 @@ Programmes de formation spécialisés et intégrés.
   </data>
   <data name="organigrammeNesdaTitre1Text" xml:space="preserve">
     <value>La décision du 23 Shawwal 1446 (22 avril 2025) portant organisation interne de l'Agence nationale de soutien et de développement de l'entreprise en définit la structure organisationnelle.</value>
+  </data>
+  <data name="AgenceDepot" xml:space="preserve">
+    <value>L'agence de dépôt</value>
+  </data>
+  <data name="centreAppel" xml:space="preserve">
+    <value>Numéro centre d'appel : 0770 033 033</value>
+  </data>
+  <data name="CertificatNIF" xml:space="preserve">
+    <value>Téléverser l'attestation d'attribution du NIF</value>
+  </data>
+  <data name="champObligatoir" xml:space="preserve">
+    <value>Champ obligatoire</value>
+  </data>
+  <data name="ChampTitre" xml:space="preserve">
+    <value>"Veuillez saisir uniquement des caractères latins"</value>
+  </data>
+  <data name="Choisir" xml:space="preserve">
+    <value>Choisir</value>
+  </data>
+  <data name="ChoisirActivite" xml:space="preserve">
+    <value>Choisir l'Activite</value>
+  </data>
+  <data name="ChoisirSA" xml:space="preserve">
+    <value>Choisir le secteur d'activité</value>
+  </data>
+  <data name="ChoisirTypeBesoin" xml:space="preserve">
+    <value>Choisir le Type du Besoin</value>
+  </data>
+  <data name="ChoisirWilaya" xml:space="preserve">
+    <value>Choisir la wilaya</value>
+  </data>
+  <data name="DeclarationHonneurTitre" xml:space="preserve">
+    <value>Declaration sur l'honneur</value>
+  </data>
+  <data name="Ecrire" xml:space="preserve">
+    <value>Ecrire ici en latin</value>
+  </data>
+  <data name="Envoyer" xml:space="preserve">
+    <value>Envoyer</value>
+  </data>
+  <data name="FormeJuridique" xml:space="preserve">
+    <value>Forme Juridique</value>
+  </data>
+  <data name="InformationPersonnel" xml:space="preserve">
+    <value>Information Personnel</value>
+  </data>
+  <data name="InformationSociete" xml:space="preserve">
+    <value>Information Micro-Entreprise</value>
+  </data>
+  <data name="NIF" xml:space="preserve">
+    <value>Numéro d'Identification Fiscal</value>
+  </data>
+  <data name="NIN1" xml:space="preserve">
+    <value>Numero d'Identification National</value>
+  </data>
+  <data name="Nombre" xml:space="preserve">
+    <value>Numéro obligatoire</value>
+  </data>
+  <data name="NomSociete" xml:space="preserve">
+    <value>Raison sociale</value>
+  </data>
+  <data name="NumDossier" xml:space="preserve">
+    <value>N°Dossier</value>
+  </data>
+  <data name="NumRegistreCommerce" xml:space="preserve">
+    <value>N° Registre Commerce</value>
+  </data>
+  <data name="responsabilite" xml:space="preserve">
+    <value>Responsabilité et Engagement</value>
+  </data>
+  <data name="TaillePDF" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TelechargeProgrammeDetection" xml:space="preserve">
+    <value>Téléversé le programme de prévision des équipements ou des services</value>
+  </data>
+  <data name="TelechargerDH" xml:space="preserve">
+    <value>Téléversé la déclaration sur l'honneur signé</value>
+  </data>
+  <data name="TelechargerRC" xml:space="preserve">
+    <value>Téleverser le Registre de Commerce</value>
+  </data>
+  <data name="TypeBesoin" xml:space="preserve">
+    <value>Type du Besoin</value>
+  </data>
+  <data name="WilayaDG" xml:space="preserve">
+    <value>Alger, Algerie</value>
   </data>
 </root>
