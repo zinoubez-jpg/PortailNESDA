@@ -7,6 +7,7 @@
 
     // Vérifie si c'est de l'arabe
     bool isArabic = currentLanguage.StartsWith("ar");
+    bool isEnglish = currentLanguage.StartsWith("en");
 }
 
 
@@ -35,14 +36,14 @@
             @if (isArabic)
             {
                 <h2 class="title">
-                    <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug" >
+                    <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">
                         @post.Title
                     </a>
                 </h2>
                 <!-- Catégorie -->
                 <p class="post-category">
                     @{
-                        var summary = !string.IsNullOrWhiteSpace(post.Summary) ? post.Summary : localizer["callCenter"];
+                        var summary = !string.IsNullOrWhiteSpace(post.Summary) ? post.Summary : localizer["CommunicationCell"];
                         var truncated = summary.Length > 100 ? summary.Substring(0, 100) : summary;
                     }
                     @truncated
@@ -53,23 +54,46 @@
                 </p>
 
             }
-            else
+
+            @if (isEnglish)
             {
                 <h2 class="title">
-                    <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug" >
+                    <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">
                         @post.TitleEn
                     </a>
                 </h2>
                 <!-- Catégorie -->
                 <p class="post-category">
                     @{
-                        var summary = !string.IsNullOrWhiteSpace(post.SummaryEn) ? post.SummaryEn : localizer["callCenter"];
+                        var summary = !string.IsNullOrWhiteSpace(post.SummaryEn) ? post.SummaryEn : localizer["CommunicationCell"];
                         var truncated = summary.Length > 100 ? summary.Substring(0, 100) : summary;
                     }
                     @truncated
                     @if (post.SummaryEn != null && post.SummaryEn.Length > 100)
                     {
-                        <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug"  class="read-more-link"> @localizer["LireEncore"]  </a>
+                        <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug" class="read-more-link"> @localizer["LireEncore"]  </a>
+                    }
+                </p>
+
+            }
+
+            else
+            {
+                <h2 class="title">
+                    <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug">
+                        @post.TitleFr
+                    </a>
+                </h2>
+                <!-- Catégorie -->
+                <p class="post-category">
+                    @{
+                        var summary = !string.IsNullOrWhiteSpace(post.SummaryFr) ? post.SummaryFr : localizer["CommunicationCell"];
+                        var truncated = summary.Length > 100 ? summary.Substring(0, 100) : summary;
+                    }
+                    @truncated
+                    @if (post.SummaryFr != null && post.SummaryFr.Length > 100)
+                    {
+                        <a asp-controller="Article" asp-action="Details" asp-route-name="@post.Slug" class="read-more-link"> @localizer["LireEncore"]  </a>
                     }
                 </p>
             }
@@ -81,7 +105,7 @@
                 <img src="~/NesdaTMP/assets/img/NesdaImg/LogoNesda.png" alt="nesdaLogo" class="img-fluid post-author-img flex-shrink-0">
 
                 <div class="post-meta">
-                    <p class="post-author">@localizer["callCenter"]</p>
+                    <p class="post-author">@localizer["CommunicationCell"]</p>
                     <p class="post-date">
                         @{
                             var date = post.CreatedAt;
@@ -95,11 +119,22 @@
                             }
                             else
                             {
-                                months = new[] {
+                                if (isEnglish)
+                                {
+                                    months = new[] {
                                         "January", "February", "March", "April", "May", "June",
                                         "July", "August", "September", "October", "November", "December"
                                         };
+                                }
+                                else
+                                {
+                                    months = new[] {
+                                        "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+                                        "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
+                                        };
+                                }
                             }
+
                             var formattedDate = $"{date.Day} {months[date.Month - 1]} {date.Year}";
                         }
 

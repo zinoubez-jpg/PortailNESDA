@@ -252,4 +252,7 @@
   <data name="Langage" xml:space="preserve">
     <value>Language</value>
   </data>
+  <data name="DroitsReserve" xml:space="preserve">
+    <value>All Rights Reserved 2025</value>
+  </data>
 </root>

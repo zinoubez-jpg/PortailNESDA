@@ -10,6 +10,8 @@
 
     // Vérifie si c'est de l'arabe
     bool isArabic = currentLanguage.StartsWith("ar");
+
+    bool isEnglish = currentLanguage.StartsWith("en");
 }
 <style>
 
@@ -376,7 +378,7 @@
         <h1>@ViewData["Title"]</h1>
         <nav class="breadcrumbs">
             <ol>
-                <li><a asp-controller="Home" asp-action="Index"> @localizer["Principal"]</a></li>
+                <li><a asp-controller="Home" asp-action="Index"> @messageslocalizer["Principal"]</a></li>
                 <li class="current">@ViewData["Title"]</li>
             </ol>
         </nav>
@@ -420,19 +422,25 @@
                                         string[] months;
                                         if (isArabic)
                                         {
-                                            months = new[] {
-                                        "جانفي", "فيفري", "مارس", "أفريل", "ماي", "جوان",
-                                        "جويلية", "أوت", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"
-                                        };
+                                            months = new[] { "جانفي", "فيفري", "مارس", "أفريل", "ماي", "جوان",
+                                                                 "جويلية", "أوت", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"
+                                                };
                                         }
                                         else
                                         {
-                                            months = new[] {
-                                        "January", "February", "March", "April", "May", "June",
-                                        "July", "August", "September", "October", "November", "December"
-                                        };
+                                            if (isEnglish)
+                                            {
+                                                months = new[] {"January", "February", "March", "April", "May", "June",
+                                                                "July", "August", "September", "October", "November", "December"
+                                                };
+                                            }
+                                            else
+                                            {
+                                                months = new[] {"Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+                                                                "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
+                                                };
+                                            }
                                         }
-
 
 
                                         var formattedDate = $"{date.Day} {months[date.Month - 1]} {date.Year}";

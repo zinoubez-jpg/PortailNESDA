@@ -255,4 +255,7 @@
   <data name="Arabe" xml:space="preserve">
     <value>العربية</value>
   </data>
+  <data name="DroitsReserve" xml:space="preserve">
+    <value> 2025 جميع الحقوق محفوظة</value>
+  </data>
 </root>

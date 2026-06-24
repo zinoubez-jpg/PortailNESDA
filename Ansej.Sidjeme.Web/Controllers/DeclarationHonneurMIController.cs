@@ -880,9 +880,12 @@ namespace Ansej.Sidjeme.Web.Controllers
             ViewBag.WilayasEn = new SelectList(wilayas, nameof(Wilaya.Id), nameof(Wilaya.DisplayNameEn));
             ViewBag.structuresEn = new SelectList(structures, nameof(StructureManager.Id), nameof(StructureManager.NameEn));
             ViewBag.secteursEn = new SelectList(secteurs, nameof(SecteurActivite.Id), nameof(SecteurActivite.DesignationEn));
+            ViewBag.secteursFr = new SelectList(secteurs, nameof(SecteurActivite.Id), nameof(SecteurActivite.DesignationFr));
             ViewBag.formesJuridiqueEn = new SelectList(formesJuridique, nameof(FormeJuridique.Id), nameof(FormeJuridique.DesignationEn));
             ViewBag.genreEn = new SelectList(genre, nameof(Genre.Id), nameof(Genre.DesignationEn));
+            ViewBag.genreFr = new SelectList(genre, nameof(Genre.Id), nameof(Genre.DesignationFr));
             ViewBag.typeOfNeedEn = new SelectList(typeOfNeed, nameof(TypeOfNeed.Id), nameof(TypeOfNeed.DesignationEn));
+            ViewBag.typeOfNeedFr = new SelectList(typeOfNeed, nameof(TypeOfNeed.Id), nameof(TypeOfNeed.DesignationFr));
 
         }
 

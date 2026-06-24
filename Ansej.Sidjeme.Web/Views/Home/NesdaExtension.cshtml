@@ -1,6 +1,7 @@
 ﻿@using System.Globalization
 @{
     ViewData["Title"] = messageslocalizer["NesdaExtension"];
+
 }
 
 
@@ -207,7 +208,8 @@
                 content: counter(step-counter);
                 position: absolute;
                 top: -10px;
-                right: 20px;
+                /*right: 20px;*/
+                inset-inline-start: 20px;
                 background-color: var(--accent-color);
                 color: var(--contrast-color);
                 width: 40px;
@@ -243,7 +245,7 @@
 
                 .nesda-extension .process-step li:before {
                     content: "•";
-                    position: absolute;
+                    /*position: absolute;*/
                     right: 0;
                     color: var(--accent-color);
                     font-weight: bold;
@@ -367,7 +369,7 @@
                         <p><strong>@messageslocalizer["EnvironementProgrammeParag3"]</strong></p>
                         <ul>
                             <li>@messageslocalizer["EnvironementProgrammeParag3P1"]</li>
-                            <li>@messageslocalizer["EnvironementProgrammeParag3P1"]</li>
+                            <li>@messageslocalizer["EnvironementProgrammeParag3P2"]</li>
                         </ul>
                     </div>
                 </div>
@@ -437,7 +439,7 @@
                 <!-- شروط الاستفادة من البرنامج -->
                 <div class="info-item">
                     <div class="info-header">
-                        <h5>@localizer["ConditionbeneficierTitre"]</h5>
+                        <h5>@localizer["TitreConditionBeneficier"]</h5>
                         <div class="info-icon">
                             <i class="fas fa-list-check"></i>
                         </div>
@@ -445,14 +447,14 @@
                     <div class="info-content">
                         <p>@messageslocalizer["ConditionBeneficierDesc"]</p>
 
-                        <p><strong>@localizer["ConditionbeneficierCommun"]</strong></p>
+                        <p><strong>@localizer["ConditionBeneficier-Commun"]</strong></p>
                         <ul>
                             <li>@messageslocalizer["ConditionbeneficierCommun1"]</li>
                             <li>@messageslocalizer["ConditionbeneficierCommun2"]</li>
                         </ul>
 
-                        <p><strong>@localizer["Conditionbeneficier1"]</strong></p>
-                        <p><em>@localizer["Conditionbeneficier1,1"]</em></p>
+                        <p><strong>@localizer["Condition-Beneficier1"]</strong></p>
+                        <p><em>@localizer["Condition-Beneficier1,1"]</em></p>
                         <ul>
                             <li>@messageslocalizer["Conditionbeneficier1,1,1"]</li>
                             <li>@messageslocalizer["Conditionbeneficier1,1,2"]</li>
@@ -460,14 +462,14 @@
                             <li>@messageslocalizer["Conditionbeneficier1,1,4"]</li>
                         </ul>
 
-                        <p><em>@localizer["Conditionbeneficier1,2"]</em></p>
+                        <p><em>@localizer["Condition-Beneficier1,2"]</em></p>
                         <ul>
                             <li>@messageslocalizer["Conditionbeneficier1,2,1"]</li>
                             <li>@messageslocalizer["Conditionbeneficier1,2,2"]</li>
                             <li>@messageslocalizer["Conditionbeneficier1,2,3"]</li>
                         </ul>
 
-                        <p><strong>@localizer["Conditionbeneficier2"]</strong></p>
+                        <p><strong>@localizer["Condition-Beneficier2"]</strong></p>
                         <ul>
                             <li>@messageslocalizer["Conditionbeneficier2,1"]</li>
                             <li>@messageslocalizer["Conditionbeneficier2,2"]</li>
@@ -479,7 +481,7 @@
                 <!-- مراحل الاستفادة من البرنامج -->
                 <div class="info-item">
                     <div class="info-header">
-                        <h5>@localizer["EtapesBeneficier"]</h5>
+                        <h5>@localizer["Etapes-Beneficier"]</h5>
                         <div class="info-icon">
                             <i class="fas fa-road"></i>
                         </div>
