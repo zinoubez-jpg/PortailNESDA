@@ -1126,10 +1126,10 @@
     <value>صاحب المشروع + الوكالة</value>
   </data>
   <data name="FinancementTitre2p3" xml:space="preserve">
-    <value>تمويل ثلاثي</value>
+    <value>تمويل الثلاثي</value>
   </data>
   <data name="FinancementTitre2p3Text" xml:space="preserve">
-    <value>حيث يساهم كل من صاحب المشروع والوكالة بنسبة 50% من مبلغ الاستثمار</value>
+    <value>حيث يساهم صاحب المشروع بنسبة تتراوح بين 5% و15%، بينما تساهم الوكالة بنسبة تتراوح بين 15% و25%، في حين يتولى البنك تغطية النسبة المتبقية البالغة 70%</value>
   </data>
   <data name="FinancementTitre2p3TextD" xml:space="preserve">
     <value>صاحب المشروع + الوكالة + البنك</value>
